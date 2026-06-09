@@ -180,7 +180,7 @@ def _link(url: str, text: str) -> str:
     return (
         f'<a href="{url}" '
         f'target="_blank" rel="noopener noreferrer" '
-        f'data-link="true">{text}</a>'
+        f'style="color: inherit; text-decoration: underline;">{text}</a>'
     )
 
 
@@ -270,9 +270,9 @@ class WeChatFormatter:
         )
         if body:
             parts.append(
-                '<p style="margin: 0; font-size: 14px; line-height: 1.7; '
-                'color: #87867F;">'
-                f'{body}</p>'
+'<p style="margin: 0; font-size: 15px; line-height: 1.7; '
+'color: #87867F;">'
+f'{body}</p>'
             )
         parts.append('</section>')
         return "\n".join(parts)
@@ -310,14 +310,16 @@ class WeChatFormatter:
             url = str(item.url) if item.url else ""
             detail = item.metadata.get("detailed_summary_zh") or ""
             lines.append(
-                '<p style="margin: 8px 0 0; padding-left: 18px; '
-                'font-size: 15px; line-height: 1.7; color: rgb(44,44,42);">'
-                f'▶ {_link(url, html.escape(title))}</p>'
+'<p style="margin: 8px 0 0; padding-left: 18px; '
+'font-family: \'PingFang SC\', -apple-system, sans-serif; '
+'font-size: 14px; font-weight: 550; '
+'letter-spacing: 0.04em; line-height: 1.7; color: #3A5A6B;">'
+f'<span style="color:#D1CFC5;font-size:13px">▸</span> {_link(url, html.escape(title))}</p>'
             )
             if detail:
                 lines.append(
-                    '<p style="margin: 4px 0 0; padding-left: 34px; '
-                    'font-size: 14px; line-height: 1.6; color: #555555;">'
+'<p style="margin: 4px 0 0; border-left: 2px solid #D1CFC5; padding-left: 14px; '
+'font-size: 14px; line-height: 1.7; color: #87867F;">'
                     f'{html.escape(detail)}</p>'
                 )
 
@@ -332,7 +334,7 @@ class WeChatFormatter:
             '<p style="margin: 0 0 16px;"><span style="color: #D1CFC5;">'
             '─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span></p>'
             '<p style="margin: 0;">'
-            f'<span style="font-size: 12px; color: #87867F;">📮 明天见。</span></p>'
+            f'<span style="font-size: 13px; color: #87867F;">📮 明天见。</span></p>'
             '</section>'
         )
 
