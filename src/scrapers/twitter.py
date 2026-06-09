@@ -1,4 +1,4 @@
-"""Twitter scraper using Apify altimis/scweet actor."""
+"""Twitter scraper using Apify apidojo/twitter-scraper-lite actor."""
 
 import asyncio
 import logging
@@ -21,7 +21,7 @@ _MAX_WAIT = 180
 
 
 class TwitterScraper(BaseScraper):
-    """Fetch tweets via the Apify altimis/scweet actor."""
+    """Fetch tweets via the Apify apidojo/twitter-scraper-lite actor."""
 
     def __init__(self, config: TwitterConfig, http_client: httpx.AsyncClient):
         super().__init__(config, http_client)
@@ -32,20 +32,37 @@ class TwitterScraper(BaseScraper):
             return []
 
         users = [u.strip().lstrip("@") for u in self.config.users if u.strip()]
-        if not users:
-            logger.debug("No Twitter users configured, skipping.")
-            return []
+        keywords = [k.strip() for k in self.config.keywords if k.strip()]
 
-        token = os.environ.get(self.config.apify_token_env)
-        if not token:
-            logger.warning(
-                f"Apify token not found in env var '{self.config.apify_token_env}'. Skipping Twitter."
-            )
-            return []
+        all_items: List[ContentItem] = []
 
-        logger.info(f"Fetching Twitter (Apify) for users: {users}")
+        if users:
+            logger.info(f"Fetching Twitter (Apify) for users: {users}")
+            items = await self._fetch_with_actor(token, users, "profiles", since)
+            all_items.extend(items)
 
-        run_id, dataset_id = await self._start_run(token, users)
+        if keywords:
+            query = " OR ".join(keywords)
+            logger.info(f"Fetching Twitter (Apify) for keywords: {query}")
+            items = await self._fetch_with_actor(token, [query], "search", since)
+            all_items.extend(items)
+
+        seen_ids: set[str] = set()
+        deduped = []
+        for item in all_items:
+            if item.id not in seen_ids:
+                seen_ids.add(item.id)
+                deduped.append(item)
+
+        if len(deduped) < len(all_items):
+            logger.info(f"Deduplicated {len(all_items) - len(deduped)} Twitter items")
+
+        return deduped
+
+    async def _fetch_with_actor(
+        self, token: str, params: List[str], mode: str, since: datetime
+    ) -> List[ContentItem]:
+        run_id, dataset_id = await self._start_run(token, params, mode)
         if not run_id:
             return []
 
@@ -62,18 +79,26 @@ class TwitterScraper(BaseScraper):
             if parsed:
                 items.append(parsed)
 
-        logger.info(f"Fetched {len(items)} tweets via Apify.")
+        logger.info(f"Fetched {len(items)} tweets via Apify ({mode}).")
         return items
 
     async def _start_run(
-        self, token: str, users: List[str]
+        self, token: str, params: List[str], mode: str
     ) -> tuple[Optional[str], Optional[str]]:
-        payload = {
-            "source_mode": "profiles",
-            "profile_urls": users,
-            "search_sort": "Latest",
-            "max_items": max(100, self.config.fetch_limit),
-        }
+        if mode == "search":
+            payload = {
+                "source_mode": "search",
+                "search_query": params[0] if params else "",
+                "search_sort": "Latest",
+                "max_items": max(100, self.config.fetch_limit),
+            }
+        else:
+            payload = {
+                "source_mode": "profiles",
+                "profile_urls": params,
+                "search_sort": "Latest",
+                "max_items": max(100, self.config.fetch_limit),
+            }
         url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
         try:
             resp = await self.client.post(url, json=payload, timeout=30.0)
@@ -142,7 +167,7 @@ class TwitterScraper(BaseScraper):
             "max_items": max_items,
         }
 
-        url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
+        url = f"{_APIFY_BASE}/acts/altimis~scweet/runs?token={token}"
         try:
             resp = await self.client.post(url, json=payload, timeout=30.0)
             resp.raise_for_status()
@@ -226,7 +251,7 @@ class TwitterScraper(BaseScraper):
 
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
         try:
-            created_at_str = item.get("created_at")
+            created_at_str = item.get("created_at") or item.get("createdAt")
             if not created_at_str:
                 return None
 
@@ -256,6 +281,7 @@ class TwitterScraper(BaseScraper):
             )
             conversation_id = str(
                 item.get("conversation_id")
+                or item.get("conversationId")
                 or item.get("tweet", {}).get("conversation_id")
                 or numeric_id
             )
@@ -263,13 +289,14 @@ class TwitterScraper(BaseScraper):
             user = item.get("user") or {}
             screen_name = (
                 user.get("screen_name")
+                or user.get("userName")
                 or user.get("username")
                 or user.get("handle")
                 or item.get("handle")
                 or item.get("username")
                 or "unknown"
             )
-            author = user.get("name") or screen_name
+            author = user.get("name") or user.get("displayName") or screen_name
 
             text = item.get("full_text") or item.get("text") or ""
             if not text:
@@ -299,12 +326,12 @@ class TwitterScraper(BaseScraper):
                 metadata={
                     "tweet_id": numeric_id,
                     "conversation_id": conversation_id,
-                    "favorite_count": item.get("favorite_count", 0),
-                    "retweet_count": item.get("retweet_count", 0),
-                    "reply_count": item.get("reply_count", 0),
-                    "view_count": item.get("view_count"),
-                    "is_reply": item.get("is_reply", False),
-                    "in_reply_to_status_id": item.get("in_reply_to_status_id"),
+                    "favorite_count": item.get("favorite_count") or item.get("likeCount", 0),
+                    "retweet_count": item.get("retweet_count") or item.get("retweetCount", 0),
+                    "reply_count": item.get("reply_count") or item.get("replyCount", 0),
+                    "view_count": item.get("view_count") or item.get("viewCount"),
+                    "is_reply": item.get("is_reply") or item.get("isReply", False),
+                    "in_reply_to_status_id": item.get("in_reply_to_status_id") or item.get("inReplyToStatusId"),
                     "in_reply_to_screen_name": item.get("in_reply_to_screen_name"),
                 },
             )

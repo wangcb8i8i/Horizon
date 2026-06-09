@@ -37,6 +37,8 @@ horizon = "src.main:main"
 horizon-mcp = "src.mcp.server:main"
 horizon-wizard = "src.setup.wizard:main"
 horizon-webhook = "src.services.webhook_cli:main"
+horizon-source-config = "src.setup.source_config:main"
+horizon-wechat = "src.ai.wechat_cli:main"
 
 [build-system]
 requires = ["hatchling"]

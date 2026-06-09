@@ -2,9 +2,9 @@
   "version": "1.0",
   "ai": {
     "provider": "openai",
-    "model": "deepseek-v4-flash",
-    "base_url": "${LLM_BASE_URL}",
-    "api_key_env": "LLM_API_KEY",
+    "model": "deepseek-chat",
+    "base_url": null,
+    "api_key_env": "OPENAI_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 0.0,
@@ -162,42 +162,6 @@
         "category": ""
       },
       {
-        "name": "Last Week in AI",
-        "url": "https://lastweekin.ai/feed",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Lilian Weng",
-        "url": "https://lilianweng.github.io/index.xml",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Lobsters",
-        "url": "https://lobste.rs/rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "The Pragmatic Engineer",
-        "url": "https://newsletter.pragmaticengineer.com/feed",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "AINews (Buttondown)",
-        "url": "https://buttondown.com/ainews/rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Nature",
-        "url": "https://www.nature.com/nature.rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
         "enabled": false,
@@ -244,38 +208,6 @@
           "time_filter": "day",
           "fetch_limit": 15,
           "min_score": 60
-        },
-        {
-          "subreddit": "OpenAI",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "ChatGPTCoding",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "technology",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "ChatGPT",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
         }
       ],
       "users": [],
@@ -307,15 +239,5 @@
     "time_window_hours": 24
   },
   "email": null,
-  "webhook": null,
-  "wechat": {
-    "enabled": true,
-    "max_items": 3,
-    "output_dir": "data/wechat",
-    "brand_name": "技术信号",
-    "brand_color": "#FF6B35",
-    "show_opening": true,
-    "show_closing": true,
-    "show_footer": true
-  }
+  "webhook": null
 }

@@ -336,6 +336,14 @@ def merge_configs(new_config: Config, existing_config: Config) -> Config:
     new_subs.extend(existing_subs.values())
     merged.sources.reddit.subreddits = new_subs
 
+    # Preserve optional sources not touched by build_config
+    if existing_config.sources.twitter is not None:
+        merged.sources.twitter = existing_config.sources.twitter
+    if existing_config.sources.openbb is not None:
+        merged.sources.openbb = existing_config.sources.openbb
+    if existing_config.sources.ossinsight is not None:
+        merged.sources.ossinsight = existing_config.sources.ossinsight
+
     return merged
 
 

@@ -51,17 +51,22 @@ class AnthropicClient(AIClient):
 
         api_key = os.getenv(config.api_key_env)
         if not api_key:
+            api_key = os.getenv("LLM_API_KEY")
+        if not api_key:
             if config.provider.value == "ollama":
                 api_key = "ollama"
             else:
-                raise ValueError(f"Missing API key: {config.api_key_env}")
+                raise ValueError(
+                    f"Missing API key: {config.api_key_env} (or LLM_API_KEY)"
+                )
 
+        base_url = os.getenv("LLM_BASE_URL") or config.base_url
         kwargs = {"api_key": api_key}
-        if config.base_url:
-            kwargs["base_url"] = config.base_url
+        if base_url:
+            kwargs["base_url"] = base_url
 
         self.client = AsyncAnthropic(**kwargs)
-        self.model = config.model
+        self.model = os.getenv("LLM_MODEL") or config.model
         self.temperature = config.temperature
         self.max_tokens = config.max_tokens
 
@@ -131,18 +136,22 @@ class OpenAIClient(AIClient):
 
         api_key = os.getenv(config.api_key_env)
         if not api_key:
+            api_key = os.getenv("LLM_API_KEY")
+        if not api_key:
             if config.provider == AIProvider.OLLAMA:
                 api_key = "no_key"  # Ollama doesn't require an API key
             else:
-                raise ValueError(f"Missing API key: {config.api_key_env}")
+                raise ValueError(
+                    f"Missing API key: {config.api_key_env} (or LLM_API_KEY)"
+                )
 
         kwargs = {"api_key": api_key}
-        base_url = config.base_url or self._DEFAULT_BASE_URLS.get(config.provider.value)
+        base_url = os.getenv("LLM_BASE_URL") or config.base_url or self._DEFAULT_BASE_URLS.get(config.provider.value)
         if base_url:
             kwargs["base_url"] = base_url
 
         self.client = AsyncOpenAI(**kwargs)
-        self.model = config.model
+        self.model = os.getenv("LLM_MODEL") or config.model
         self.temperature = config.temperature
         self.max_tokens = config.max_tokens
         self.provider = config.provider.value
@@ -262,15 +271,24 @@ class AzureOpenAIClient(AIClient):
 
         api_key = os.getenv(config.api_key_env)
         if not api_key:
+            api_key = os.getenv("LLM_API_KEY")
+        if not api_key:
             if config.provider.value == "ollama":
                 api_key = "ollama"
             else:
-                raise ValueError(f"Missing API key: {config.api_key_env}")
+                raise ValueError(
+                    f"Missing API key: {config.api_key_env} (or LLM_API_KEY)"
+                )
         if not config.azure_endpoint_env:
             raise ValueError("azure_endpoint_env is required for azure provider")
-        azure_endpoint = os.getenv(config.azure_endpoint_env)
+        azure_endpoint = (
+            os.getenv("LLM_BASE_URL")
+            or os.getenv(config.azure_endpoint_env)
+        )
         if not azure_endpoint:
-            raise ValueError(f"Missing Azure endpoint: {config.azure_endpoint_env}")
+            raise ValueError(
+                f"Missing Azure endpoint: {config.azure_endpoint_env} (or LLM_BASE_URL)"
+            )
         if not config.api_version:
             raise ValueError("api_version is required for azure provider")
 
@@ -279,7 +297,7 @@ class AzureOpenAIClient(AIClient):
             azure_endpoint=azure_endpoint,
             api_version=config.api_version,
         )
-        self.model = config.model
+        self.model = os.getenv("LLM_MODEL") or config.model
         self.temperature = config.temperature
         self.max_tokens = config.max_tokens
         self._use_max_completion_tokens = any(
@@ -387,13 +405,17 @@ class GeminiClient(AIClient):
 
         api_key = os.getenv(config.api_key_env)
         if not api_key:
+            api_key = os.getenv("LLM_API_KEY")
+        if not api_key:
             if config.provider.value == "ollama":
                 api_key = "ollama"
             else:
-                raise ValueError(f"Missing API key: {config.api_key_env}")
+                raise ValueError(
+                    f"Missing API key: {config.api_key_env} (or LLM_API_KEY)"
+                )
 
         self.client = genai.Client(api_key=api_key)
-        self.model = config.model
+        self.model = os.getenv("LLM_MODEL") or config.model
         self.temperature = config.temperature
         self.max_tokens = config.max_tokens
 

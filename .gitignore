@@ -60,3 +60,9 @@ logs/*.log
 todo.txt
 .ruff_cache
 .pytest_cache
+data/raw/2026-06-02.json
+data/raw/
+data/wechat/
+data/summaries/
+docs/
+present-horizon-0602

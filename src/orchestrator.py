@@ -10,8 +10,7 @@ from rich.console import Console
 
 from .models import Config, ContentItem
 from .storage.manager import StorageManager
-from .services.email import EmailManager
-from .services.webhook import WebhookNotifier
+
 from .scrapers.github import GitHubScraper
 from .scrapers.hackernews import HackerNewsScraper
 from .scrapers.rss import RSSScraper
@@ -40,12 +39,8 @@ class HorizonOrchestrator:
         self.config = config
         self.storage = storage
         self.console = Console()
-        self.email_manager = EmailManager(config.email, console=self.console) if config.email else None
-        self.webhook_notifier = (
-            WebhookNotifier(config.webhook, console=self.console)
-            if config.webhook and config.webhook.enabled
-            else None
-        )
+        self.email_manager = None
+        self.webhook_notifier = None
 
     async def run(self, force_hours: int = None) -> None:
         """Execute the complete workflow.
@@ -86,6 +81,11 @@ class HorizonOrchestrator:
                     f"→ {len(merged_items)} unique items\n"
                 )
 
+            # Dump deduplicated items to data/raw/{date}.json
+            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            raw_path = self.storage.save_raw_items(today, merged_items)
+            self.console.print(f"📦 Deduplicated raw data saved to: {raw_path}\n")
+
             # 4. Analyze with AI
             analyzed_items = await self._analyze_content(merged_items)
             self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
@@ -114,6 +114,9 @@ class HorizonOrchestrator:
             # 5.6 Optional second-stage Twitter reply expansion + targeted re-analysis
             await self._expand_twitter_discussion(important_items)
 
+            # 6. Enrich important items with background knowledge (3rd AI pass)
+            await self._enrich_important_items(important_items)
+
             # Show per-sub-source selection breakdown
             selected_counts: Dict[str, int] = defaultdict(int)
             for item in important_items:
@@ -123,71 +126,82 @@ class HorizonOrchestrator:
                 self.console.print(f"      • {source_key}: {count}")
             self.console.print("")
 
-            # 6. Search related stories + enrich with background knowledge (2nd AI pass)
-            await self._enrich_important_items(important_items)
+            # 7. Generate and save daily summary
+            summarizer = DailySummarizer()
+            summary = await summarizer.generate_summary(important_items, today, len(all_items), language="zh")
 
-            # 7. Generate and save daily summaries for each configured language
-            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-            for lang in self.config.ai.languages:
-                summarizer = DailySummarizer()
-                summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
+            # Save to data/summaries/
+            summary_path = self.storage.save_daily_summary(today, summary, language="zh")
+            self.console.print(f"💾 Saved zh summary to: {summary_path}\n")
 
-                # Save to data/summaries/
-                summary_path = self.storage.save_daily_summary(today, summary, language=lang)
-                self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
+            items_path = self.storage.save_summary_items(today, important_items, language="zh")
+            self.console.print(f"📦 Saved summary items to: {items_path}")
 
-                # Copy to docs/ for GitHub Pages
-                try:
-                    from pathlib import Path
+            # 7.5 Generate WeChat article
+            if self.config.wechat and self.config.wechat.enabled:
+                from .ai.wechat import WeChatClassifier, WeChatFormatter
+                from .ai.client import create_ai_client
 
-                    post_filename = f"{today}-summary-{lang}.md"
-                    posts_dir = Path("docs/_posts")
-                    posts_dir.mkdir(parents=True, exist_ok=True)
+                ai_client = create_ai_client(self.config.ai)
+                classifier = WeChatClassifier(ai_client)
+                classification = await classifier.classify(important_items)
 
-                    dest_path = posts_dir / post_filename
-
-                    # Add Jekyll front matter
-                    front_matter = (
-                        "---\n"
-                        "layout: default\n"
-                        f"title: \"Horizon Summary: {today} ({lang.upper()})\"\n"
-                        f"date: {today}\n"
-                        f"lang: {lang}\n"
-                        "---\n\n"
+                total_classified = sum(len(c.items) for c in classification.groups)
+                excluded = len(classification.excluded)
+                if classification.groups:
+                    self.console.print(
+                        f"🔀 Classified {total_classified} items into "
+                        f"{len(classification.groups)} group/s "
+                        f"({excluded} excluded)\n"
                     )
 
-                    # Strip leading H1 header to avoid duplication with Jekyll title
-                    summary_content = summary
-                    first_line = summary_content.strip().split("\n")[0]
-                    if first_line.startswith("# "):
-                        parts = summary_content.split("\n", 1)
-                        if len(parts) > 1:
-                            summary_content = parts[1].strip()
-
-                    with open(dest_path, "w", encoding="utf-8") as f:
-                        f.write(front_matter + summary_content)
-
-                    self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
-                except Exception as e:
-                    self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
-
-                # Send email if configured
-                if self.email_manager and self.config.email and self.config.email.enabled:
-                    self.console.print(f"📧 Sending {lang.upper()} email summary...")
-                    subscribers = self.storage.load_subscribers()
-                    subject = f"Horizon Summary ({lang.upper()}) - {today}"
-                    self.email_manager.send_daily_summary(summary, subject, subscribers)
-
-                # Send webhook notification if configured
-                if self.webhook_notifier:
-                    await self.webhook_notifier.send_daily_summary(
-                        summary=summary,
-                        important_items=important_items,
-                        all_items_count=len(all_items),
-                        date=today,
-                        lang=lang,
-                        summarizer=summarizer,
+                formatter = WeChatFormatter(
+                    brand_name=self.config.wechat.brand_name,
+                )
+                wechat_html = formatter.generate_article(
+                    classification,
+                    today,
+                )
+                if wechat_html:
+                    wechat_path = self.storage.save_wechat_article(
+                        today, wechat_html, output_dir=self.config.wechat.output_dir
                     )
+                    self.console.print(f"💬 Saved WeChat article to: {wechat_path}\n")
+
+            # Copy to docs/ for GitHub Pages
+            try:
+                from pathlib import Path
+
+                post_filename = f"{today}-summary-zh.md"
+                posts_dir = Path("docs/_posts")
+                posts_dir.mkdir(parents=True, exist_ok=True)
+
+                dest_path = posts_dir / post_filename
+
+                # Add Jekyll front matter
+                front_matter = (
+                    "---\n"
+                    "layout: default\n"
+                    f"title: \"Horizon Summary: {today} (ZH)\"\n"
+                    f"date: {today}\n"
+                    "lang: zh\n"
+                    "---\n\n"
+                )
+
+                # Strip leading H1 header to avoid duplication with Jekyll title
+                summary_content = summary
+                first_line = summary_content.strip().split("\n")[0]
+                if first_line.startswith("# "):
+                    parts = summary_content.split("\n", 1)
+                    if len(parts) > 1:
+                        summary_content = parts[1].strip()
+
+                with open(dest_path, "w", encoding="utf-8") as f:
+                    f.write(front_matter + summary_content)
+
+                self.console.print(f"📄 Copied zh summary to GitHub Pages: {dest_path}\n")
+            except Exception as e:
+                self.console.print(f"[yellow]⚠️  Failed to copy zh summary to docs/: {e}[/yellow]\n")
 
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
@@ -207,14 +221,6 @@ class HorizonOrchestrator:
 
         except Exception as e:
             self.console.print(f"[bold red]❌ Error: {e}[/bold red]")
-
-            # Send webhook failure notification if configured
-            if self.webhook_notifier:
-                await self.webhook_notifier.send_failure(
-                    date=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-                    error_message=str(e),
-                )
-
             raise
 
     def _determine_time_window(self, force_hours: int = None) -> datetime:
@@ -515,14 +521,6 @@ class HorizonOrchestrator:
         await analyzer.analyze_batch(expanded)
 
     async def _enrich_important_items(self, items: List[ContentItem]) -> None:
-        """Enrich items with background knowledge (2nd AI pass).
-
-        For each item that passed the score threshold, call AI to generate
-        background knowledge based on the item's actual content.
-
-        Args:
-            items: Important items to enrich (modified in-place)
-        """
         if not items:
             return
 

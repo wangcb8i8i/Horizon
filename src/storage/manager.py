@@ -5,11 +5,11 @@ import os
 import re
 import shutil
 from pathlib import Path
-from typing import Any
+from typing import Any, List
 
 from pydantic import ValidationError
 
-from ..models import Config
+from ..models import Config, ContentItem
 
 
 # Matches ${VAR_NAME} in string config values. Names follow env-var rules
@@ -61,6 +61,23 @@ class StorageManager:
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.summaries_dir.mkdir(parents=True, exist_ok=True)
 
+    def save_wechat_article(self, date: str, html: str, output_dir: str = "data/wechat") -> str:
+        """Save WeChat-compatible HTML article to disk.
+
+        Args:
+            date: Date string (YYYY-MM-DD).
+            html: WeChat article HTML content.
+            output_dir: Output directory path.
+
+        Returns:
+            str: Path to the saved file.
+        """
+        dir_path = Path(output_dir)
+        dir_path.mkdir(parents=True, exist_ok=True)
+        file_path = dir_path / f"{date}.html"
+        file_path.write_text(html, encoding="utf-8")
+        return str(file_path)
+
     def load_config(self) -> Config:
         if not self.config_path.exists():
             raise FileNotFoundError(
@@ -108,6 +125,16 @@ class StorageManager:
 
         return self.config_path
 
+    def save_raw_items(self, date: str, items: list) -> Path:
+        raw_dir = self.data_dir / "raw"
+        raw_dir.mkdir(parents=True, exist_ok=True)
+
+        filepath = raw_dir / f"{date}.json"
+        with open(filepath, "w", encoding="utf-8") as f:
+            data = [item.model_dump(mode="json") for item in items]
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        return filepath
+
     def save_daily_summary(self, date: str, markdown: str, language: str = "en") -> Path:
         filename = f"horizon-{date}-{language}.md"
         filepath = self.summaries_dir / filename
@@ -115,6 +142,18 @@ class StorageManager:
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(markdown)
 
+        return filepath
+
+    def save_summary_items(self, date: str, items: List[ContentItem], language: str = "en") -> Path:
+        """Save ContentItems as a JSON sidecar alongside the daily summary markdown.
+
+        This provides a stable structured data source for downstream consumers
+        (e.g. WeChat article generation) without fragile markdown parsing.
+        """
+        filename = f"horizon-{date}-{language}.json"
+        filepath = self.summaries_dir / filename
+        data = [item.model_dump(mode="json") for item in items]
+        filepath.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
         return filepath
 
     def load_subscribers(self) -> list:

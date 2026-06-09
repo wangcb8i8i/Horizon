@@ -127,6 +127,8 @@ class RedditConfig(BaseModel):
     subreddits: List[RedditSubredditConfig] = Field(default_factory=list)
     users: List[RedditUserConfig] = Field(default_factory=list)
     fetch_comments: int = 5  # top comments per post, 0 to disable
+    client_id: Optional[str] = None
+    client_secret_env: Optional[str] = None  # env var name for Reddit client secret
 
 
 class TelegramChannelConfig(BaseModel):
@@ -151,6 +153,7 @@ class TwitterConfig(BaseModel):
     apify_token_env: str = "APIFY_TOKEN"
     actor_id: str = "altimis~scweet"
     users: List[str] = Field(default_factory=list)
+    keywords: List[str] = Field(default_factory=list)
     fetch_limit: int = 10
     fetch_reply_text: bool = False
     max_replies_per_tweet: int = 3
@@ -316,6 +319,19 @@ class FilteringConfig(BaseModel):
     time_window_hours: int = 24
 
 
+class WeChatConfig(BaseModel):
+    """WeChat Official Account article configuration."""
+
+    enabled: bool = True
+    max_items: int = 3
+    output_dir: str = "data/wechat"
+    brand_name: str = "技术信号"
+    brand_color: str = "#FF6B35"
+    show_opening: bool = True
+    show_closing: bool = True
+    show_footer: bool = True
+
+
 class Config(BaseModel):
     """Main configuration model."""
 
@@ -325,3 +341,4 @@ class Config(BaseModel):
     filtering: FilteringConfig
     email: Optional[EmailConfig] = None
     webhook: Optional[WebhookConfig] = None
+    wechat: Optional[WeChatConfig] = None

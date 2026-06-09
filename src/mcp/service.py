@@ -429,6 +429,7 @@ class HorizonPipelineService:
         if save_to_horizon_data:
             storage = make_storage(ctx.runtime, ctx.config_path)
             published_path = storage.save_daily_summary(date_str, summary, language=language)
+            storage.save_summary_items(date_str, items, language=language)
 
         summary_meta = {
             "summary_stage": stage,
