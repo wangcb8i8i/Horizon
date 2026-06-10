@@ -89,7 +89,9 @@ class WeChatAPIClient:
           - Reduce side padding (WeChat viewer has its own margins).
           - Replace serif group-name font with sans-serif for mobile clarity.
         """
-        html = html.replace("padding: 24px 20px 32px", "padding: 24px 0 32px")
+        html = html.replace("padding: 24px 20px 32px", "padding: 0 0 32px")
+        html = html.replace("margin: 24px 0;", "margin: 0 0 24px;")
+        html = html.replace("; background: #FAF9F5", "")
         html = html.replace(
             "Georgia, 'Times New Roman', 'PingFang SC', serif",
             "-apple-system-font, BlinkMacSystemFont, Helvetica Neue, "
@@ -131,6 +133,7 @@ class WeChatAPIClient:
         Returns:
             The draft ``media_id``.
         """
+        author = author or brand_name
         dot_date = date.replace("-", ".")
         title = f"{dot_date} · {insight_headline}" if insight_headline else f"{brand_name} · {dot_date}"
         digest = insight_body if insight_body else f"{brand_name} · {dot_date}"
