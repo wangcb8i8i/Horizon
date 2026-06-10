@@ -1,0 +1,47 @@
+name: Manual — Generate WeChat HTML
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date (YYYY-MM-DD)"
+        required: true
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: fetch-mine
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: astral-sh/setup-uv@v5
+
+      - run: uv sync
+
+      - name: Generate WeChat HTML
+        run: |
+          JSON="data/summaries/horizon-${{ inputs.date }}-zh.json"
+          if [ ! -f "$JSON" ]; then
+            echo "Summary JSON not found for ${{ inputs.date }}"
+            exit 1
+          fi
+          uv run horizon-wechat "$JSON"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit generated HTML
+        run: |
+          git config user.name "horizon-bot"
+          git config user.email "bot@example.com"
+          git add data/wechat/${{ inputs.date }}.html
+          git diff --staged --quiet || git commit -m "WeChat HTML (manual): ${{ inputs.date }} [skip ci]"
+          git push

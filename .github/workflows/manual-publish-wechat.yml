@@ -1,0 +1,38 @@
+name: Manual — Publish WeChat Draft
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date (YYYY-MM-DD)"
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: fetch-mine
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: astral-sh/setup-uv@v5
+
+      - run: uv sync
+
+      - name: Publish WeChat draft
+        run: |
+          HTML="data/wechat/${{ inputs.date }}.html"
+          if [ ! -f "$HTML" ]; then
+            echo "WeChat HTML not found for ${{ inputs.date }}"
+            exit 1
+          fi
+          uv run horizon-wechat "$HTML" --publish
+        env:
+          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}

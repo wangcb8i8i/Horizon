@@ -1,0 +1,69 @@
+name: Daily Horizon + WeChat
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+env:
+  DATE: ""
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: fetch-mine
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: astral-sh/setup-uv@v5
+
+      - run: uv sync
+
+      - name: Set date
+        run: echo "DATE=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Run Horizon
+        run: uv run horizon --hours 24
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish WeChat draft
+        run: |
+          if [ -f "data/wechat/${{ env.DATE }}.html" ]; then
+            uv run horizon-wechat "data/wechat/${{ env.DATE }}.html" --publish
+          else
+            echo "No WeChat HTML found — skipping publish"
+          fi
+        env:
+          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
+
+      - name: Copy WeChat HTML to docs/
+        run: |
+          mkdir -p docs/wechat
+          cp data/wechat/*.html docs/wechat/ 2>/dev/null || true
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: true
+
+      - name: Commit generated files
+        run: |
+          git config user.name "horizon-bot"
+          git config user.email "bot@example.com"
+          git add data/wechat/
+          git add data/summaries/horizon-${{ env.DATE }}-zh.json
+          git diff --staged --quiet || git commit -m "WeChat: ${{ env.DATE }} [skip ci]"
+          git push
