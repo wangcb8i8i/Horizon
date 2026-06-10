@@ -24,4 +24,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           keep_files: true
+          enable_jekyll: true
           publish_branch: gh-pages
