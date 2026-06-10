@@ -36,7 +36,8 @@ jobs:
           fi
           uv run horizon-wechat "$JSON"
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
 
       - name: Commit generated HTML
         run: |
