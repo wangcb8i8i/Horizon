@@ -37,17 +37,6 @@ jobs:
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish WeChat draft
-        run: |
-          if [ -f "data/wechat/${{ env.DATE }}.html" ]; then
-            uv run horizon-wechat "data/wechat/${{ env.DATE }}.html" --publish
-          else
-            echo "No WeChat HTML found — skipping publish"
-          fi
-        env:
-          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
-          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
-
       - name: Copy WeChat HTML to docs/
         run: |
           mkdir -p docs/wechat
@@ -68,3 +57,14 @@ jobs:
           git add data/summaries/horizon-${{ env.DATE }}-zh.json
           git diff --staged --quiet || git commit -m "WeChat: ${{ env.DATE }} [skip ci]"
           git push
+
+      - name: Publish WeChat draft
+        run: |
+          if [ -f "data/wechat/${{ env.DATE }}.html" ]; then
+            uv run horizon-wechat "data/wechat/${{ env.DATE }}.html" --publish
+          else
+            echo "No WeChat HTML found — skipping publish"
+          fi
+        env:
+          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
