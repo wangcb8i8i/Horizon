@@ -83,7 +83,7 @@ class TestWeChatFormatter:
         classification = _classification([("动态", "解读", [item])])
         result = formatter.generate_article(classification, "2026-06-07")
 
-        assert "🔗" in result
+        assert "▸" in result
         assert "example.com" in result
         assert "重要消息 1" in result
 

@@ -173,15 +173,24 @@ Write a headline and optional body that capture today's overall signal landscape
 - If today has strong signals: headline is a sharp insight, body expands (1-2 sentences)
 - If today is quiet: headline can be a casual phrase ("平平无奇的一天"), body can be empty
 - Headline: conversational, not formal. 4-20 Chinese characters.
+- All text MUST be written in Simplified Chinese (中文).
 
 ## Part 2: 信号组 (groups[])
 Group related signals together. Each group is a mini-report.
 
 ### Group name (required)
-Must answer "why should the reader care" — NOT describe the topic.
-  GOOD: "你的系统可能正在裸奔", "两个被忽视的性能盲区"
+The group name is the reader's **value hook** — it must make the reader feel
+"I need to read this".  Do NOT describe the topic; instead appeal to
+self-interest, urgency, or curiosity.
+
+Patterns:
+- 痛点警告型: "你的系统可能正在裸奔", "两个被忽视的性能盲区"
+- 利害对比型: "为什么小团队正在取代大厂方案"
+- 认知颠覆型: "你每天都在犯的错误思维"
+
+  GOOD: "你的系统可能正在裸奔", "为什么小团队正在取代大厂方案"
   BAD:  "/proc验证", "新动态", "技术更新"
-4-15 Chinese characters, conversational, slightly provocative.
+4-15 Chinese characters, in Simplified Chinese.
 
 ### Report (required)
 3-5 sentences or a short paragraph. Write directly — no meta-description like "本文探讨了" or "核心信号是".
@@ -203,11 +212,11 @@ Items:
 Respond with valid JSON only:
 
 {{
-  "insight_headline": "<当期洞察标题，4-20字>",
-  "insight_body": "<当期洞察展开，1-2句，可为空>",
+  "insight_headline": "<用中文写当期洞察标题，4-20字>",
+  "insight_body": "<用中文写当期洞察展开，1-2句，可为空>",
   "groups": [
     {{
-      "name": "<痛点标题，4-15字>",
+      "name": "<用中文写痛点型价值标题，4-15字>",
       "report": "<3-5句报道正文，具体分析组内信号>",
       "item_indices": [<0-based indices of items in this group>]
     }}

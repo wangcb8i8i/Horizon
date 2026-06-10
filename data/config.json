@@ -1,321 +1,323 @@
 {
-  "version": "1.0",
-  "ai": {
-    "provider": "openai",
-    "model": "deepseek-v4-flash",
-    "base_url": "${LLM_BASE_URL}",
-    "api_key_env": "LLM_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 8192,
-    "throttle_sec": 0.0,
-    "analysis_concurrency": 1,
-    "enrichment_concurrency": 1,
-    "languages": [
-      "zh"
-    ],
-    "azure_endpoint_env": null,
-    "api_version": null
-  },
-  "sources": {
-    "github": [
-      {
-        "type": "repo_releases",
-        "username": null,
-        "owner": "sgl-project",
-        "repo": "sglang",
-        "enabled": false
-      },
-      {
-        "type": "repo_releases",
-        "username": null,
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": false
-      },
-      {
-        "type": "user_events",
-        "username": "karpathy",
-        "owner": null,
-        "repo": null,
-        "enabled": false
-      },
-      {
-        "type": "repo_releases",
-        "username": null,
-        "owner": "triton-lang",
-        "repo": "triton",
-        "enabled": false
-      }
-    ],
-    "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 100
+    "version": "1.0",
+    "ai": {
+        "provider": "openai",
+        "model": "deepseek-v4-flash",
+        "base_url": "${LLM_BASE_URL}",
+        "api_key_env": "LLM_API_KEY",
+        "temperature": 0.3,
+        "max_tokens": 8192,
+        "throttle_sec": 0.0,
+        "analysis_concurrency": 1,
+        "enrichment_concurrency": 1,
+        "languages": [
+            "zh"
+        ],
+        "azure_endpoint_env": null,
+        "api_version": null
     },
-    "rss": [
-      {
-        "name": "Anthropic Research",
-        "url": "https://www.anthropic.com/research/rss",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "量子位",
-        "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "新智元",
-        "url": "https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "BAIR Blog",
-        "url": "https://bair.berkeley.edu/blog/feed.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Latent Space",
-        "url": "https://www.latent.space/feed",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Chip Huyen",
-        "url": "https://huyenchip.com/feed.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Jay Alammar",
-        "url": "https://jalammar.github.io/feed.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Ahead of AI (Sebastian Raschka)",
-        "url": "https://magazine.sebastianraschka.com/feed",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Interconnects",
-        "url": "https://www.interconnects.ai/feed",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Machine Learning Mastery",
-        "url": "https://machinelearningmastery.com/feed/",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/blog/rss.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Sebastian Raschka",
-        "url": "https://sebastianraschka.com/rss_feed.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "The Batch",
-        "url": "https://www.deeplearning.ai/the-batch/feed/",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "The Gradient",
-        "url": "https://thegradient.pub/rss/",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Stanford AI Lab (SAIL) Blog",
-        "url": "https://ai.stanford.edu/blog/feed.xml",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Ars Technica AI",
-        "url": "http://feeds.arstechnica.com/arstechnica/artificial-intelligence",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "AI Weekly",
-        "url": "https://aiweekly.co/issues.rss",
-        "enabled": false,
-        "category": ""
-      },
-      {
-        "name": "Last Week in AI",
-        "url": "https://lastweekin.ai/feed",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Lilian Weng",
-        "url": "https://lilianweng.github.io/index.xml",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Lobsters",
-        "url": "https://lobste.rs/rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "The Pragmatic Engineer",
-        "url": "https://newsletter.pragmaticengineer.com/feed",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "AINews (Buttondown)",
-        "url": "https://buttondown.com/ainews/rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "Nature",
-        "url": "https://www.nature.com/nature.rss",
-        "enabled": true,
-        "category": ""
-      },
-      {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": false,
-        "category": "github-trending"
-      },
-      {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": false,
-        "category": "linux-kernel"
-      }
-    ],
-    "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "MachineLearning",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+    "sources": {
+        "github": [
+            {
+                "type": "repo_releases",
+                "username": null,
+                "owner": "sgl-project",
+                "repo": "sglang",
+                "enabled": false
+            },
+            {
+                "type": "repo_releases",
+                "username": null,
+                "owner": "vllm-project",
+                "repo": "vllm",
+                "enabled": false
+            },
+            {
+                "type": "user_events",
+                "username": "karpathy",
+                "owner": null,
+                "repo": null,
+                "enabled": false
+            },
+            {
+                "type": "repo_releases",
+                "username": null,
+                "owner": "triton-lang",
+                "repo": "triton",
+                "enabled": false
+            }
+        ],
+        "hackernews": {
+            "enabled": true,
+            "fetch_top_stories": 30,
+            "min_score": 100
         },
-        {
-          "subreddit": "LocalLLaMA",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+        "rss": [
+            {
+                "name": "Anthropic Research",
+                "url": "https://www.anthropic.com/research/rss",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "量子位",
+                "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "新智元",
+                "url": "https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "BAIR Blog",
+                "url": "https://bair.berkeley.edu/blog/feed.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Simon Willison",
+                "url": "https://simonwillison.net/atom/everything/",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Latent Space",
+                "url": "https://www.latent.space/feed",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Chip Huyen",
+                "url": "https://huyenchip.com/feed.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Jay Alammar",
+                "url": "https://jalammar.github.io/feed.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Ahead of AI (Sebastian Raschka)",
+                "url": "https://magazine.sebastianraschka.com/feed",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Interconnects",
+                "url": "https://www.interconnects.ai/feed",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Machine Learning Mastery",
+                "url": "https://machinelearningmastery.com/feed/",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "OpenAI Blog",
+                "url": "https://openai.com/blog/rss.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Sebastian Raschka",
+                "url": "https://sebastianraschka.com/rss_feed.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "The Batch",
+                "url": "https://www.deeplearning.ai/the-batch/feed/",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "The Gradient",
+                "url": "https://thegradient.pub/rss/",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Stanford AI Lab (SAIL) Blog",
+                "url": "https://ai.stanford.edu/blog/feed.xml",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Ars Technica AI",
+                "url": "http://feeds.arstechnica.com/arstechnica/artificial-intelligence",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "AI Weekly",
+                "url": "https://aiweekly.co/issues.rss",
+                "enabled": false,
+                "category": ""
+            },
+            {
+                "name": "Last Week in AI",
+                "url": "https://lastweekin.ai/feed",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "Lilian Weng",
+                "url": "https://lilianweng.github.io/index.xml",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "Lobsters",
+                "url": "https://lobste.rs/rss",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "The Pragmatic Engineer",
+                "url": "https://newsletter.pragmaticengineer.com/feed",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "AINews (Buttondown)",
+                "url": "https://buttondown.com/ainews/rss",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "Nature",
+                "url": "https://www.nature.com/nature.rss",
+                "enabled": true,
+                "category": ""
+            },
+            {
+                "name": "GitHub Trending - Daily",
+                "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+                "enabled": false,
+                "category": "github-trending"
+            },
+            {
+                "name": "LWN.net",
+                "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
+                "enabled": false,
+                "category": "linux-kernel"
+            }
+        ],
+        "reddit": {
+            "enabled": true,
+            "subreddits": [
+                {
+                    "subreddit": "MachineLearning",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "LocalLLaMA",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "StableDiffusion",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "artificial",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "OpenAI",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "ChatGPTCoding",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "technology",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                },
+                {
+                    "subreddit": "ChatGPT",
+                    "enabled": true,
+                    "sort": "hot",
+                    "time_filter": "day",
+                    "fetch_limit": 15,
+                    "min_score": 60
+                }
+            ],
+            "users": [],
+            "fetch_comments": 10,
+            "client_id": null,
+            "client_secret_env": null
         },
-        {
-          "subreddit": "StableDiffusion",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+        "telegram": {
+            "enabled": false,
+            "channels": []
         },
-        {
-          "subreddit": "artificial",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "OpenAI",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "ChatGPTCoding",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "technology",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
-        },
-        {
-          "subreddit": "ChatGPT",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+        "twitter": null,
+        "openbb": null,
+        "ossinsight": {
+            "enabled": false,
+            "period": "past_24_hours",
+            "languages": [
+                "All",
+                "Python",
+                "TypeScript"
+            ],
+            "keywords": [],
+            "min_stars": 5,
+            "max_items": 30
         }
-      ],
-      "users": [],
-      "fetch_comments": 10,
-      "client_id": null,
-      "client_secret_env": null
     },
-    "telegram": {
-      "enabled": false,
-      "channels": []
+    "filtering": {
+        "ai_score_threshold": 7.0,
+        "time_window_hours": 24
     },
-    "twitter": null,
-    "openbb": null,
-    "ossinsight": {
-      "enabled": false,
-      "period": "past_24_hours",
-      "languages": [
-        "All",
-        "Python",
-        "TypeScript"
-      ],
-      "keywords": [],
-      "min_stars": 5,
-      "max_items": 30
+    "email": null,
+    "webhook": null,
+    "wechat": {
+        "enabled": true,
+        "max_items": 3,
+        "output_dir": "data/wechat",
+        "brand_name": "技术信号",
+        "brand_color": "#FF6B35",
+        "show_opening": true,
+        "show_closing": true,
+        "show_footer": true,
+        "api_enabled": true,
+        "link_noopener": true
     }
-  },
-  "filtering": {
-    "ai_score_threshold": 7.0,
-    "time_window_hours": 24
-  },
-  "email": null,
-  "webhook": null,
-  "wechat": {
-    "enabled": true,
-    "max_items": 3,
-    "output_dir": "data/wechat",
-    "brand_name": "技术信号",
-    "brand_color": "#FF6B35",
-    "show_opening": true,
-    "show_closing": true,
-    "show_footer": true
-  }
 }

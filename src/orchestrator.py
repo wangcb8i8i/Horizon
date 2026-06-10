@@ -157,6 +157,7 @@ class HorizonOrchestrator:
 
                 formatter = WeChatFormatter(
                     brand_name=self.config.wechat.brand_name,
+                    link_noopener=self.config.wechat.link_noopener,
                 )
                 wechat_html = formatter.generate_article(
                     classification,

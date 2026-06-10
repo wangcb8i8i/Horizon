@@ -1,7 +1,13 @@
-"""CLI entry point for WeChat article generation from a summary items JSON file."""
+"""CLI entry point for WeChat article generation and publishing.
+
+Usage:
+  Generate HTML from summary items JSON:  horizon-wechat data/items.json
+  Publish existing HTML:                   horizon-wechat data/wechat/2026-06-09.html --publish
+"""
 
 import argparse
 import asyncio
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -16,9 +22,10 @@ from ..storage.manager import ConfigError, StorageManager
 console = Console()
 
 
-async def _run(json_path: str, date: str, brand: str, output: str | None) -> None:
-    if not Path(json_path).exists():
-        console.print(f"[bold red]File not found: {json_path}[/bold red]")
+async def _run(input_path: str, date: str, brand: str, output: str | None, publish: bool = False) -> None:
+    path = Path(input_path)
+    if not path.exists():
+        console.print(f"[bold red]File not found: {input_path}[/bold red]")
         sys.exit(1)
 
     load_dotenv()
@@ -33,38 +40,77 @@ async def _run(json_path: str, date: str, brand: str, output: str | None) -> Non
         console.print(f"[bold red]Error loading configuration: {e}[/bold red]")
         sys.exit(1)
 
-    ai_client = create_ai_client(config.ai)
-    html = await generate_article_from_file(json_path, date, ai_client, brand)
-
-    if not html:
-        console.print("[yellow]No article generated (no classified items).[/yellow]")
-        sys.exit(0)
-
-    if output:
-        out_path = Path(output)
+    # ── Read or generate HTML ───────────────────────────────────────────
+    headline = ""
+    body = ""
+    if path.suffix == ".html":
+        html = path.read_text(encoding="utf-8")
+        console.print(f"[dim]Read existing HTML from {input_path}[/dim]\n")
     else:
-        default_dir = (config.wechat.output_dir if config.wechat else "data/wechat")
-        stem = Path(json_path).stem
-        out_path = Path(default_dir) / f"{stem}.html"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(html, encoding="utf-8")
-    console.print(f"[green]Article saved to {out_path}[/green]")
+        ai_client = create_ai_client(config.ai)
+        link_noopener = config.wechat.link_noopener if config.wechat else True
+        html, headline, body = await generate_article_from_file(input_path, date, ai_client, brand, link_noopener=link_noopener)
+
+        if not html:
+            console.print("[yellow]No article generated (no classified items).[/yellow]")
+            sys.exit(0)
+
+    if not path.suffix == ".html":
+        if output:
+            out_path = Path(output)
+        else:
+            default_dir = (config.wechat.output_dir if config.wechat else "data/wechat")
+            stem = path.stem
+            out_path = Path(default_dir) / f"{stem}.html"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(html, encoding="utf-8")
+        console.print(f"[green]Article saved to {out_path}[/green]")
+
+    # ── Publish via WeChat API ──────────────────────────────────────────
+    if publish:
+        if not config.wechat or not config.wechat.api_enabled:
+            console.print("[yellow]--publish requires wechat.api_enabled = true in config[/yellow]")
+            sys.exit(1)
+
+        from .wechat_api import WeChatAPIClient, WeChatAPIError
+
+        wc = config.wechat
+        client = WeChatAPIClient(
+            app_id=os.environ[wc.app_id_env],
+            app_secret=os.environ[wc.app_secret_env],
+        )
+        try:
+            thumb_media_id = await client.resolve_thumb_media_id(config)
+            media_id = await client.create_draft(
+                content=html,
+                author=wc.author,
+                thumb_media_id=thumb_media_id,
+                insight_headline=headline,
+                insight_body=body,
+                date=date,
+                brand_name=wc.brand_name,
+            )
+            console.print(f"[green]Draft published  media_id: {media_id}[/green]")
+        except WeChatAPIError as e:
+            console.print(f"[red]Publish failed: {e}[/red]")
+            sys.exit(1)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate a WeChat article from a summary items JSON file",
+        description="Generate and/or publish a WeChat article",
     )
-    parser.add_argument("json_path", help="Path to the .json file from save_summary_items")
+    parser.add_argument("input", help="Path to .json (generate + save) or .html (read + publish)")
     parser.add_argument("--date", default=None, help="Date string (YYYY-MM-DD, defaults to today)")
     parser.add_argument("--brand", default="技术信号", help="Brand name for the article")
     parser.add_argument("-o", "--output", default=None, help="Output HTML file path (default: data/wechat/{stem}.html)")
+    parser.add_argument("--publish", action="store_true", help="Publish via WeChat API")
     args = parser.parse_args()
 
     date = args.date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     try:
-        asyncio.run(_run(args.json_path, date, args.brand, args.output))
+        asyncio.run(_run(args.input, date, args.brand, args.output, publish=args.publish))
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted by user[/yellow]")
         sys.exit(0)

@@ -330,6 +330,14 @@ class WeChatConfig(BaseModel):
     show_opening: bool = True
     show_closing: bool = True
     show_footer: bool = True
+    # ── HTML rendering ──────────────────────────────────────────────
+    link_noopener: bool = True
+    # ── API publishing ──────────────────────────────────────────────
+    api_enabled: bool = False
+    app_id_env: str = "WECHAT_APP_ID"
+    app_secret_env: str = "WECHAT_APP_SECRET"
+    author: str = ""
+    thumb_media_id_env: Optional[str] = None
 
 
 class Config(BaseModel):

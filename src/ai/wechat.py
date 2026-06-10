@@ -11,13 +11,12 @@ import html
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 from ..models import ContentItem
 from .client import AIClient
 from .prompts import CLASSIFICATION_SYSTEM, CLASSIFICATION_USER
 from .utils import parse_json_response
-
 
 # ── Transient result types ──────────────────────────────────────────────
 
@@ -146,7 +145,9 @@ class WeChatClassifier:
                 grp_items.append(items[idx])
             if not grp_items:
                 continue
-            candidate_groups.append(GroupResult(name=name, report=report, items=grp_items))
+            candidate_groups.append(
+                GroupResult(name=name, report=report, items=grp_items)
+            )
 
         # Sort by group value (descending) and prune by density
         candidate_groups.sort(key=lambda g: self._group_value(g, items), reverse=True)
@@ -173,25 +174,21 @@ class WeChatClassifier:
         )
 
 
-# ── HTML rendering helpers ──────────────────────────────────────────────
-
-
-def _link(url: str, text: str) -> str:
-    return (
-        f'<a href="{url}" '
-        f'target="_blank" rel="noopener noreferrer" '
-        f'style="color: inherit; text-decoration: underline;">{text}</a>'
-    )
-
-
 # ── Formatter ───────────────────────────────────────────────────────────
 
 
 class WeChatFormatter:
     """Renders a ClassificationResult into WeChat-compatible HTML."""
 
-    def __init__(self, brand_name: str = "技术信号"):
+    def __init__(self, brand_name: str = "技术信号", link_noopener: bool = True):
         self.brand_name = brand_name
+        self.link_noopener = link_noopener
+
+    def _link(self, url: str, text: str) -> str:
+        attr = f'href="{url}" style="color:inherit;text-decoration:underline;"'
+        if self.link_noopener:
+            attr += ' target="_blank" rel="noopener noreferrer"'
+        return f"<a {attr}>{text}</a>"
 
     # ── Article generation ────────────────────────────────────────────
 
@@ -209,10 +206,10 @@ class WeChatFormatter:
         # ── Outer container ──
         parts.append(
             '<section style="padding: 24px 20px 32px; '
-            'font-size: 16px; line-height: 1.75; '
-            'color: rgb(44,44,42); '
-            'font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, '
-            'PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, '
+            "font-size: 16px; line-height: 1.75; "
+            "color: rgb(44,44,42); "
+            "font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, "
+            "PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, "
             'Arial, sans-serif; background: #FAF9F5;">'
         )
 
@@ -221,14 +218,21 @@ class WeChatFormatter:
 
         # Layer 2: Insight
         if classification.insight_headline:
-            parts.append(self._render_insight(
-                classification.insight_headline,
-                classification.insight_body,
-            ))
+            parts.append(
+                self._render_insight(
+                    classification.insight_headline,
+                    classification.insight_body,
+                )
+            )
 
         # Layer 3: Signal groups
         for gi, group in enumerate(groups):
             parts.append(self._render_group(group, gi + 1))
+            if gi < len(groups) - 1:
+                parts.append(
+                    '<section style="height:1px;background:#EAE8E3;'
+                    'margin:32px 0;"></section>'
+                )
 
         # Layer 4: Footer (includes separator)
         parts.append(self._render_footer())
@@ -241,13 +245,15 @@ class WeChatFormatter:
     def _render_masthead(self, date: str) -> str:
         formatted_date = date.replace("-", ".")
         return (
-            '<section style="text-align: center; padding: 0 0 4px;">'
+            '<section data-masthead style="text-align: center; padding: 0 0 4px;">'
+            '<p style="margin: 0 0 6px;">'
+            '<span style="font-size: 11px; color: #D1CFC5; letter-spacing: 0.08em;">每日信号精选</span></p>'
             '<p style="margin: 0 0 16px;">'
             f'<span style="font-size: 13px; color: #87867F;">'
-            f'{self.brand_name} · {formatted_date}</span></p>'
+            f"{self.brand_name} · {formatted_date}</span></p>"
             '<p style="margin: 0;"><span style="color: #D1CFC5;">'
-            '─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span></p>'
-            '</section>'
+            "─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span></p>"
+            "</section>"
         )
 
     # ── Layer 2: Insight ──────────────────────────────────────────────
@@ -256,25 +262,25 @@ class WeChatFormatter:
         parts: List[str] = []
         parts.append(
             '<section style="padding: 20px 24px; '
-            'border-left: 4px solid #0F4C81; '
-            'border-radius: 8px; '
-            'background: rgba(15,76,129,0.04); '
+            "border-left: 4px solid #87867F; "
+            "border-radius: 8px; "
+            "background: rgba(15,76,129,0.04); "
             'margin: 24px 0;">'
         )
         parts.append(
             '<p style="margin: 0 0 10px; '
-            'font-family: Georgia, \'Times New Roman\', \'PingFang SC\', serif; '
-            'font-size: 22px; line-height: 1.3; font-weight: 550; '
+            "font-family: Georgia, 'Times New Roman', 'PingFang SC', serif; "
+            "font-size: 22px; line-height: 1.3; font-weight: 550; "
             'letter-spacing: -0.01em; color: rgb(44,44,42);">'
-            f'{headline}</p>'
+            f"{headline}</p>"
         )
         if body:
             parts.append(
-'<p style="margin: 0; font-size: 15px; line-height: 1.7; '
-'color: #87867F;">'
-f'{body}</p>'
+                '<p style="margin: 0; font-size: 15px; line-height: 1.7; '
+                'color: #87867F;">'
+                f"{body}</p>"
             )
-        parts.append('</section>')
+        parts.append("</section>")
         return "\n".join(parts)
 
     # ── Layer 3: Group ────────────────────────────────────────────────
@@ -289,19 +295,19 @@ f'{body}</p>'
             '<p style="margin: 0 0 12px; padding-left: 14px; '
             'border-left: 4px solid #0F4C81;">'
             f'<span style="font-size: 16px; color: #555555; '
-            f'font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, '
-            f'PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, '
+            f"font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, "
+            f"PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, "
             f'Arial, sans-serif;">━ {numeral} ━</span> '
-            f'<span style="font-family: Georgia, \'Times New Roman\', \'PingFang SC\', serif; '
-            f'font-size: 17px; font-weight: 550; color: rgb(44,44,42);">'
-            f'{html.escape(group.name)}</span></p>'
+            f"<span style=\"font-family: Georgia, 'Times New Roman', 'PingFang SC', serif; "
+            f"font-size: 17px; font-weight: 550; color: rgb(44,44,42);\">"
+            f"{html.escape(group.name)}</span></p>"
         )
 
         # Report body
         lines.append(
-            '<p style="margin: 0 0 14px; padding-left: 18px; '
+            '<p style="margin: 0 0 18px; padding-left: 18px; '
             'font-size: 15px; line-height: 1.8; color: rgb(44,44,42);">'
-            f'{html.escape(group.report)}</p>'
+            f"{html.escape(group.report)}</p>"
         )
 
         # Item links with enriched detail
@@ -310,20 +316,20 @@ f'{body}</p>'
             url = str(item.url) if item.url else ""
             detail = item.metadata.get("detailed_summary_zh") or ""
             lines.append(
-'<p style="margin: 8px 0 0; padding-left: 18px; '
-'font-family: \'PingFang SC\', -apple-system, sans-serif; '
-'font-size: 14px; font-weight: 550; '
-'letter-spacing: 0.04em; line-height: 1.7; color: #3A5A6B;">'
-f'<span style="color:#D1CFC5;font-size:13px">▸</span> {_link(url, html.escape(title))}</p>'
+                '<p style="margin: 14px 0 0; padding-left: 12px; '
+                "font-family: 'PingFang SC', -apple-system, sans-serif; "
+                "font-size: 14px; font-weight: 550; "
+                'letter-spacing: 0.04em; line-height: 1.7; color: #3A5A6B;">'
+                f'<span style="color:#D1CFC5;font-size:13px">▸</span> {self._link(url, html.escape(title))}</p>'
             )
             if detail:
                 lines.append(
-'<p style="margin: 4px 0 0; border-left: 2px solid #D1CFC5; padding-left: 14px; '
-'font-size: 14px; line-height: 1.7; color: #87867F;">'
-                    f'{html.escape(detail)}</p>'
+                    '<p style="margin: 4px 10px 0; border-left: 2px solid #D1CFC5; padding-left: 15px; '
+                    'font-size: 14px; line-height: 1.7; color: #87867F;">'
+                    f"{html.escape(detail)}</p>"
                 )
 
-        lines.append('</section>')
+        lines.append("</section>")
         return "\n".join(lines)
 
     # ── Layer 4: Footer ───────────────────────────────────────────────
@@ -332,10 +338,11 @@ f'<span style="color:#D1CFC5;font-size:13px">▸</span> {_link(url, html.escape(
         return (
             '<section style="text-align: center; padding: 24px 0 0;">'
             '<p style="margin: 0 0 16px;"><span style="color: #D1CFC5;">'
-            '─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span></p>'
+            "─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span></p>"
+            '<p style="margin: 0 0 10px;">'
             '<p style="margin: 0;">'
             f'<span style="font-size: 13px; color: #87867F;">📮 明天见。</span></p>'
-            '</section>'
+            "</section>"
         )
 
 
@@ -347,12 +354,18 @@ async def generate_article(
     date: str,
     ai_client: AIClient,
     brand_name: str = "技术信号",
-) -> str:
-    """Convenience wrapper: classify then render in one call."""
+    link_noopener: bool = True,
+) -> Tuple[str, str, str]:
+    """Convenience wrapper: classify then render in one call.
+
+    Returns:
+        Tuple of (html, insight_headline, insight_body).
+    """
     classifier = WeChatClassifier(ai_client)
     classification = await classifier.classify(items)
-    fmt = WeChatFormatter(brand_name=brand_name)
-    return fmt.generate_article(classification, date)
+    fmt = WeChatFormatter(brand_name=brand_name, link_noopener=link_noopener)
+    html = fmt.generate_article(classification, date)
+    return html, classification.insight_headline, classification.insight_body
 
 
 async def generate_article_from_file(
@@ -360,10 +373,15 @@ async def generate_article_from_file(
     date: str,
     ai_client: AIClient,
     brand_name: str = "技术信号",
-) -> str:
-    """Parse a summary items JSON file and generate a WeChat article."""
+    link_noopener: bool = True,
+) -> Tuple[str, str, str]:
+    """Parse a summary items JSON file and generate a WeChat article.
+
+    Returns:
+        Tuple of (html, insight_headline, insight_body).
+    """
     items = load_summary_items(filepath)
-    return await generate_article(items, date, ai_client, brand_name)
+    return await generate_article(items, date, ai_client, brand_name, link_noopener=link_noopener)
 
 
 # ── Load summary items ──────────────────────────────────────────────────
