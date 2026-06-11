@@ -65,3 +65,5 @@ data/raw/
 
 docs/
 present-horizon-0602
+data/wechat/*.html
+data/summaries/*.json
