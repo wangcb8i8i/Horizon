@@ -19,29 +19,29 @@
       {
         "type": "user_events",
         "username": "karpathy",
-        "enabled": true
+        "enabled": false
       },
       {
         "type": "repo_releases",
         "owner": "vllm-project",
         "repo": "vllm",
-        "enabled": true
+        "enabled": false
       },
       {
         "type": "repo_releases",
         "owner": "sgl-project",
         "repo": "sglang",
-        "enabled": true
+        "enabled": false
       },
       {
         "type": "repo_releases",
         "owner": "triton-lang",
         "repo": "triton",
-        "enabled": true
+        "enabled": false
       }
     ],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 30,
       "min_score": 150
     },
@@ -53,20 +53,140 @@
         "category": "ai-tools"
       },
       {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "name": "Julia Evans",
+        "url": "https://jvns.ca/atom.xml",
         "enabled": true,
-        "category": "github-trending"
+        "category": "systems"
       },
       {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
+        "name": "fasterthanli.me",
+        "url": "https://fasterthanli.me/index.xml",
         "enabled": true,
-        "category": "linux-kernel"
+        "category": "systems"
+      },
+      {
+        "name": "Martin Fowler",
+        "url": "https://martinfowler.com/feed.atom",
+        "enabled": true,
+        "category": "architecture"
+      },
+      {
+        "name": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/rss",
+        "enabled": true,
+        "category": "networking"
+      },
+      {
+        "name": "Tailscale Blog",
+        "url": "https://tailscale.com/blog/index.xml",
+        "enabled": true,
+        "category": "networking"
+      },
+      {
+        "name": "Hillel Wayne",
+        "url": "https://buttondown.com/hillelwayne/rss",
+        "enabled": true,
+        "category": "software-design"
+      },
+      {
+        "name": "Jeff Geerling",
+        "url": "https://www.jeffgeerling.com/blog.xml",
+        "enabled": true,
+        "category": "devops"
+      },
+      {
+        "name": "Mitchell Hashimoto",
+        "url": "https://mitchellh.com/feed.xml",
+        "enabled": true,
+        "category": "rust-infra"
+      },
+      {
+        "name": "Gwern",
+        "url": "https://gwern.net/index.xml",
+        "enabled": true,
+        "category": "ai-research"
+      },
+      {
+        "name": "Geohot",
+        "url": "https://geohot.github.io/blog/feed.xml",
+        "enabled": true,
+        "category": "ai-systems"
+      },
+      {
+        "name": "Ben Eater",
+        "url": "https://eater.net/feed.xml",
+        "enabled": true,
+        "category": "low-level"
+      },
+      {
+        "name": "Lobsters",
+        "url": "https://lobste.rs/rss",
+        "enabled": false,
+        "category": "aggregator"
+      },
+      {
+        "name": "danluu.com",
+        "url": "https://danluu.com/atom.xml",
+        "enabled": true,
+        "category": "systems-perf"
+      },
+      {
+        "name": "blog.nelhage.com",
+        "url": "https://blog.nelhage.com/atom.xml",
+        "enabled": true,
+        "category": "systems-design"
+      },
+      {
+        "name": "Nicholas Carlini",
+        "url": "https://nicholas.carlini.com/writing/feed.xml",
+        "enabled": true,
+        "category": "ai-security"
+      },
+      {
+        "name": "pointersgonewild",
+        "url": "https://pointersgonewild.com/feed.xml",
+        "enabled": true,
+        "category": "concurrency"
+      },
+      {
+        "name": "borretti.me",
+        "url": "https://borretti.me/feed.xml",
+        "enabled": true,
+        "category": "pl-systems"
+      },
+      {
+        "name": "ratfactor",
+        "url": "https://ratfactor.com/atom.xml",
+        "enabled": true,
+        "category": "low-level"
+      },
+      {
+        "name": "pythonspeed",
+        "url": "https://pythonspeed.com/feed.xml",
+        "enabled": true,
+        "category": "perf-python"
+      },
+      {
+        "name": "sunfishcode",
+        "url": "https://blog.sunfishcode.online/rss.xml",
+        "enabled": true,
+        "category": "wasm-systems"
+      },
+      {
+        "name": "Increment",
+        "url": "https://increment.com/feed/",
+        "enabled": true,
+        "category": "systems-eng"
+      },
+      {
+        "name": "Morning Paper",
+        "url": "https://blog.acolyer.org/feed/",
+        "enabled": true,
+        "category": "paper-summary"
       }
     ],
     "reddit": {
-      "enabled": true,
+      "enabled": false,
       "subreddits": [
         {
           "subreddit": "MachineLearning",
@@ -88,11 +208,48 @@
       "users": [],
       "fetch_comments": 10
     },
+    "twitter": {
+      "enabled": true,
+      "apify_token_env": "APIFY_TOKEN",
+      "actor_id": "altimis~scweet",
+      "users": [
+        "jxnl_co",
+        "nicholas_carlini",
+        "chris_lattner",
+        "pathelland",
+        "realworldtech"
+      ],
+      "fetch_limit": 10,
+      "fetch_reply_text": false,
+      "max_replies_per_tweet": 3,
+      "max_tweets_to_expand": 10,
+      "reply_min_likes": 0
+    },
     "telegram": {
       "enabled": true,
       "channels": [
         {
           "channel": "zaihuapd",
+          "enabled": true,
+          "fetch_limit": 20
+        },
+        {
+          "channel": "ml_sys_ru",
+          "enabled": true,
+          "fetch_limit": 20
+        },
+        {
+          "channel": "llm_papers",
+          "enabled": true,
+          "fetch_limit": 20
+        },
+        {
+          "channel": "systems_papers",
+          "enabled": true,
+          "fetch_limit": 20
+        },
+        {
+          "channel": "rust_internals",
           "enabled": true,
           "fetch_limit": 20
         }

@@ -309,6 +309,21 @@ class EmailConfig(BaseModel):
     enabled: bool = False
 
 
+class CuratedTopic(BaseModel):
+    name: str
+    relevance: str
+    curation_score: float = 5.0
+    item_ids: List[str]
+    top_pick_id: Optional[str] = None
+    search_queries: List[str] = Field(default_factory=list)
+
+
+class CurationResult(BaseModel):
+    date: str
+    total_items: int
+    topics: List[CuratedTopic]
+
+
 class FilteringConfig(BaseModel):
     """Content filtering configuration."""
 

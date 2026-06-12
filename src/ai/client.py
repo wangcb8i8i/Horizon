@@ -23,6 +23,7 @@ class AIClient(ABC):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        json_mode: bool = True,
     ) -> str:
         """Generate completion from AI model.
 
@@ -31,6 +32,8 @@ class AIClient(ABC):
             user: User prompt
             temperature: Optional sampling temperature override
             max_tokens: Optional maximum tokens override
+            json_mode: When True (default), instruct API to return valid JSON.
+                       Set to False for free-form text (e.g. Markdown).
 
         Returns:
             str: Generated completion text
@@ -71,6 +74,7 @@ class AnthropicClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        json_mode: bool = True,
     ) -> str:
         """Generate completion using Claude.
 
@@ -79,6 +83,7 @@ class AnthropicClient(AIClient):
             user: User prompt
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
+            json_mode: Ignored for Anthropic (no structured output mode).
 
         Returns:
             str: Generated text
@@ -156,6 +161,7 @@ class OpenAIClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        json_mode: bool = True,
     ) -> str:
         """Generate completion using OpenAI-compatible API.
 
@@ -164,6 +170,8 @@ class OpenAIClient(AIClient):
             user: User prompt
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
+            json_mode: When True, set response_format to json_object.
+                       Set to False for free-form text output.
 
         Returns:
             str: Generated text
@@ -182,6 +190,7 @@ class OpenAIClient(AIClient):
                 temperature=temperature,
                 max_tokens=max_tokens,
                 include_temperature=self._supports_temperature,
+                json_mode=json_mode,
             )
         except Exception as exc:
             if self._supports_temperature and self._is_temperature_unsupported(
@@ -214,6 +223,7 @@ class OpenAIClient(AIClient):
         temperature: float,
         max_tokens: int,
         include_temperature: bool,
+        json_mode: bool = True,
     ):
         request_kwargs = {
             "model": self.model,
@@ -225,7 +235,7 @@ class OpenAIClient(AIClient):
         }
         if include_temperature:
             request_kwargs["temperature"] = temperature
-        if self.provider not in self._NO_RESPONSE_FORMAT:
+        if json_mode and self.provider not in self._NO_RESPONSE_FORMAT:
             request_kwargs["response_format"] = {"type": "json_object"}
         return await self.client.chat.completions.create(**request_kwargs)
 
@@ -293,6 +303,7 @@ class AzureOpenAIClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        json_mode: bool = True,
     ) -> str:
         """Generate completion using Azure OpenAI.
 
@@ -301,6 +312,8 @@ class AzureOpenAIClient(AIClient):
             user: User prompt
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
+            json_mode: When True, set response_format to json_object.
+                       Set to False for free-form text output.
 
         Returns:
             str: Generated text
@@ -315,6 +328,7 @@ class AzureOpenAIClient(AIClient):
                 temperature=temperature,
                 max_tokens=max_tokens,
                 use_max_completion_tokens=self._use_max_completion_tokens,
+                json_mode=json_mode,
             )
         except Exception as exc:
             fallback = self._token_fallback_mode(str(exc))
@@ -347,22 +361,25 @@ class AzureOpenAIClient(AIClient):
         temperature: float,
         max_tokens: int,
         use_max_completion_tokens: bool,
+        json_mode: bool = True,
     ):
         tokens_kwarg = (
             {"max_completion_tokens": max_tokens}
             if use_max_completion_tokens
             else {"max_tokens": max_tokens}
         )
-        return await self.client.chat.completions.create(
-            model=self.model,
-            messages=[
+        kwargs = {
+            "model": self.model,
+            "messages": [
                 {"role": "system", "content": system},
                 {"role": "user", "content": user},
             ],
-            temperature=temperature,
-            response_format={"type": "json_object"},
+            "temperature": temperature,
             **tokens_kwarg,
-        )
+        }
+        if json_mode:
+            kwargs["response_format"] = {"type": "json_object"}
+        return await self.client.chat.completions.create(**kwargs)
 
     @staticmethod
     def _token_fallback_mode(message: str) -> Optional[bool]:
@@ -403,6 +420,7 @@ class GeminiClient(AIClient):
         user: str,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        json_mode: bool = True,
     ) -> str:
         """Generate completion using Gemini.
 
@@ -411,6 +429,8 @@ class GeminiClient(AIClient):
             user: User prompt
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
+            json_mode: When True, set response_mime_type to application/json.
+                       Set to False for free-form text output.
 
         Returns:
             str: Generated text
@@ -418,15 +438,18 @@ class GeminiClient(AIClient):
         temperature = self.temperature if temperature is None else temperature
         max_tokens = self.max_tokens if max_tokens is None else max_tokens
 
+        generate_config = types.GenerateContentConfig(
+            system_instruction=system,
+            temperature=temperature,
+            max_output_tokens=max_tokens,
+        )
+        if json_mode:
+            generate_config.response_mime_type = "application/json"
+
         response = await self.client.aio.models.generate_content(
             model=self.model,
             contents=user,
-            config=types.GenerateContentConfig(
-                system_instruction=system,
-                temperature=temperature,
-                max_output_tokens=max_tokens,
-                response_mime_type="application/json"
-            )
+            config=generate_config,
         )
         usage = getattr(response, "usage_metadata", None)
         if usage is not None:

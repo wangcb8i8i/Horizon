@@ -168,5 +168,132 @@ Respond with valid JSON only. Each _en field must be in English; each _zh field 
   "background_zh": "<用中文写2-4句话，或空字符串>",
   "community_discussion_en": "<1-3 sentences in English, or empty string>",
   "community_discussion_zh": "<用中文写1-3句话，或空字符串>",
-  "sources": ["<url from search results>", "..."]
+    "sources": ["<url from search results>", "..."]
 }}"""
+
+CURATION_SYSTEM = """You are an expert technical curator. Your job is to identify the most worthwhile topics for curation from a collection of tech news items.
+
+Given a list of items, group them into 0-2 topics that are most worth curating.
+
+For each topic, provide:
+
+1. **name**: A concise topic title (e.g. "LLM Inference Optimization", "Rust in the Linux Kernel")
+2. **relevance**: Why this topic deserves curation right now — what makes it timely, impactful, or insightful
+3. **curation_score**: 0-10
+   - 8-10: Multiple high-quality items with strong narrative arc, genuine insight, or significant trend
+   - 5-7: Worth curating, has substance, but may be narrower in scope
+   - 0-4: Material too thin, low quality, or not suitable for curation
+4. **item_ids**: Which items belong to this topic (list their IDs)
+5. **top_pick_id**: The single must-read item within this topic
+Rules:
+- Return 0, 1, or 2 topics. Do NOT force topics if nothing is curation-worthy.
+- If only one topic is strong, return just 1 topic.
+- If no topics have curation_score >= 5, return an empty list.
+- Every topic must have at least 1 item assigned.
+- Keep topic names short and specific.
+
+Hard constraints (apply to EVERY candidate topic):
+- Deduplication: If a topic appears in >=3 sources with similar titles/content -> treat as over-covered, DEPRIORITIZE or EXCLUDE.
+- Hype filter: If topic is highly viral on HN/Reddit/X (HN score >500, Reddit comments >200) -> treat as over-exposed, EXCLUDE.
+- Recency: If core information is >14 days old with no new development -> treat as stale, EXCLUDE.
+- Niche filter: If topic only appears in one ultra-niche source AND cannot connect to known industry trends -> treat as too narrow, EXCLUDE.
+- Depth gate: Source content MUST contain at least TWO of: mechanistic analysis, empirical data/benchmarks, architectural trade-offs, failure postmortem, code-level detail. Pure announcements, tutorials, opinion pieces -> EXCLUDE.
+- Second-hand curation: If the source item itself is a curated list/weekly/awesome-xxx/aggregator summary -> treat as meta-curation, EXCLUDE."""
+
+CURATION_USER = """From the following {count} tech news items, identify the 0-2 topics most worth curating.
+
+Items:
+{items}
+
+Return valid JSON only:
+{{
+  "topics": [
+    {{
+      "name": "<topic name>",
+      "relevance": "<why this matters now>",
+      "curation_score": <0-10>,
+      "item_ids": ["<item_id_1>", "<item_id_2>", ...],
+      "top_pick_id": "<item_id>"
+    }}
+  ]
+}}"""
+
+CURATION_SEARCH_SYSTEM = """You are a research assistant helping to find supplementary materials for a curation topic.
+
+Given the topic and its source articles (full content), generate 2-3 specific search queries for DuckDuckGo that will find:
+
+1. Official announcements or release notes related to the topic
+2. Alternative viewpoints, comparisons, or deeper technical analysis
+3. Complementary resources that add context (tutorials, benchmarks, case studies)
+
+Rules:
+- Queries must be specific, not generic (avoid "what is X" style)
+- Include project names, version numbers, and key technical terms
+- Do NOT duplicate the titles of the source articles
+- Each query should return results not already present in the source material
+
+Hard source constraints (MUST apply to EVERY query):
+- Each query MUST include at least ONE high-quality source specifier:
+  * site:github.com           (source code, issues, PRs, discussions, RFCs)
+  * site:gitlab.com           (source code, issues, MRs)
+  * filetype:pdf              (papers, whitepapers, specs, RFCs)
+  * site:arxiv.org            (preprints)
+  * site:docs.* OR inurl:docs (official documentation)
+  * inurl:blog AND (site:*.dev OR site:*.io OR site:*.tech OR site:*.com) (technical deep-dive blogs)
+  * site:lwn.net              (Linux kernel / systems deep dives)
+  * site:queue.acm.org        (ACM Queue articles)
+  * site:increment.com        (Increment magazine)
+- Avoid generic web results: NO bare terms without source specifier
+- Prefer combining: e.g. "vllm PagedAttention site:github.com filetype:pdf"
+- Each of the 2-3 queries should target DIFFERENT source types for coverage"""
+
+CURATION_SEARCH_USER = """Generate 2-3 specific DuckDuckGo search queries to find supplementary materials for this curation topic.
+
+Topic: {topic_name}
+Relevance: {topic_relevance}
+
+Source articles:
+{source_articles}
+
+Return valid JSON only:
+{{
+  "search_queries": ["<specific query 1>", "<specific query 2>", "<specific query 3>"]
+}}"""
+
+CURATION_GUIDE_SYSTEM = """You are a senior technical editor writing a curation direction guide. Given a topic, its source articles, and supplementary web search results, produce a concise curation guide in Markdown.
+
+The guide helps a writer understand:
+- Why this topic matters right now
+- What the key insights are
+- How to structure the curation piece
+- Which materials to prioritize
+
+Write in the same language as the majority of the source material. Be opinionated and specific — avoid generic filler."""
+
+CURATION_GUIDE_USER = """Write a curation direction guide for the following topic.
+
+Topic: {topic_name}
+Why it matters: {topic_relevance}
+
+Source Articles:
+{source_articles}
+
+Web Supplementary Results:
+{web_results}
+
+Return the guide as Markdown with these sections:
+
+# 策展方向：{topic_name}
+
+## 为什么选择这个主题
+(2-3 paragraphs explaining why this topic deserves curation, what makes it timely, what narrative arc ties the materials together)
+
+## 核心洞察
+(3-5 bullet points with the key technical insights, trends, or takeaways)
+
+## 素材清单及策展笔记
+For each source article, write: title, link, and 1-2 sentences of curation notes (what angle to use, what data to highlight, how it fits the narrative).
+For each web result, write: title, link, and whether it's useful as background, counterpoint, or deeper reference.
+
+## 编撰方向建议
+(2-3 paragraphs with suggested article structure, emphasis points, target reader assumptions, and any caveats or debates to address)"""

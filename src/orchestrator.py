@@ -217,6 +217,43 @@ class HorizonOrchestrator:
 
             raise
 
+    async def run_fetch_only(self, force_hours: int = None):
+        """Execute only the fetch pipeline (steps 1-4) and return merged items.
+
+        Args:
+            force_hours: Optional override for time window in hours
+
+        Returns:
+            List of merged ContentItem, or empty list if nothing was fetched
+        """
+        if (
+            self.email_manager
+            and self.config.email
+            and self.config.email.enabled
+            and self.config.email.imap_enabled
+        ):
+            self.console.print("📧 Checking for new email subscriptions...")
+            self.email_manager.check_subscriptions(self.storage)
+
+        since = self._determine_time_window(force_hours)
+        self.console.print(f"📅 Fetching content since: {since.strftime('%Y-%m-%d %H:%M:%S')}\n")
+
+        all_items = await self.fetch_all_sources(since)
+        self.console.print(f"📥 Fetched {len(all_items)} items from all sources\n")
+
+        if not all_items:
+            self.console.print("[yellow]No new content found. Exiting.[/yellow]")
+            return []
+
+        merged_items = self.merge_cross_source_duplicates(all_items)
+        if len(merged_items) < len(all_items):
+            self.console.print(
+                f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
+                f"→ {len(merged_items)} unique items\n"
+            )
+
+        return merged_items
+
     def _determine_time_window(self, force_hours: int = None) -> datetime:
         if force_hours:
             since = datetime.now(timezone.utc) - timedelta(hours=force_hours)
