@@ -22,7 +22,7 @@ from ..storage.manager import ConfigError, StorageManager
 console = Console()
 
 
-async def _run(input_path: str, date: str, brand: str, output: str | None, publish: bool = False) -> None:
+async def _run(input_path: str, date: str, brand: str, output: str | None, publish: bool = False, proxy: str | None = None) -> None:
     path = Path(input_path)
     if not path.exists():
         console.print(f"[bold red]File not found: {input_path}[/bold red]")
@@ -78,6 +78,7 @@ async def _run(input_path: str, date: str, brand: str, output: str | None, publi
         client = WeChatAPIClient(
             app_id=os.environ[wc.app_id_env],
             app_secret=os.environ[wc.app_secret_env],
+            proxy=proxy,
         )
         try:
             thumb_media_id = await client.resolve_thumb_media_id(config)
@@ -105,12 +106,13 @@ def main() -> None:
     parser.add_argument("--brand", default="技术信号", help="Brand name for the article")
     parser.add_argument("-o", "--output", default=None, help="Output HTML file path (default: data/wechat/{stem}.html)")
     parser.add_argument("--publish", action="store_true", help="Publish via WeChat API")
+    parser.add_argument("--proxy", default=None, help="Proxy URL, e.g. http://127.0.0.1:7890")
     args = parser.parse_args()
 
     date = args.date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     try:
-        asyncio.run(_run(args.input, date, args.brand, args.output, publish=args.publish))
+        asyncio.run(_run(args.input, date, args.brand, args.output, publish=args.publish, proxy=args.proxy))
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted by user[/yellow]")
         sys.exit(0)

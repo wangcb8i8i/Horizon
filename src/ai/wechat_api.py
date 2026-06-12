@@ -5,6 +5,7 @@ Decoupled from wechat.py (page rendering).  Callers pass in pre-rendered HTML.
 
 import os
 import re
+from html import unescape
 from datetime import datetime, timedelta
 from typing import Optional
 
@@ -24,17 +25,23 @@ class WeChatAPIClient:
 
     BASE = "https://api.weixin.qq.com/cgi-bin"
 
-    def __init__(self, app_id: str, app_secret: str):
+    def __init__(
+        self,
+        app_id: str,
+        app_secret: str,
+        proxy: Optional[str] = None,
+    ):
         self.app_id = app_id
         self.app_secret = app_secret
         self._token: Optional[str] = None
         self._token_expires_at: Optional[datetime] = None
+        self.proxy = proxy or os.environ.get("HTTPS_PROXY") or os.environ.get("HTTP_PROXY")
 
     async def _ensure_token(self) -> str:
         """Obtain or refresh an access_token (cached until 5 min before expiry)."""
         if self._token and self._token_expires_at and datetime.now() < self._token_expires_at:
             return self._token
-        async with httpx.AsyncClient() as c:
+        async with httpx.AsyncClient(proxy=self.proxy) as c:
             r = await c.get(
                 f"{self.BASE}/token",
                 params=dict(grant_type="client_credential", appid=self.app_id, secret=self.app_secret),
@@ -62,7 +69,7 @@ class WeChatAPIClient:
 
         token = await self._ensure_token()
 
-        async with httpx.AsyncClient() as c:
+        async with httpx.AsyncClient(proxy=self.proxy) as c:
             r = await c.post(
                 f"{self.BASE}/material/batchget_material",
                 params=dict(access_token=token),
@@ -109,6 +116,23 @@ class WeChatAPIClient:
             flags=re.DOTALL,
         )
 
+    @staticmethod
+    def _extract_insight(html: str) -> tuple[str, str]:
+        """Parse insight_headline and insight_body from a rendered article's HTML.
+
+        Relies on ``data-insight-headline`` / ``data-insight-body`` attributes
+        written by ``WeChatFormatter._render_insight()``.
+        """
+        h = re.search(
+            r'<p\s+data-insight-headline[^>]*>(.*?)</p>', html, re.DOTALL
+        )
+        headline = unescape(h.group(1).strip()) if h else ""
+        b = re.search(
+            r'<p\s+data-insight-body[^>]*>(.*?)</p>', html, re.DOTALL
+        )
+        body = unescape(b.group(1).strip()) if b else ""
+        return headline, body
+
     async def create_draft(
         self,
         content: str,
@@ -135,6 +159,12 @@ class WeChatAPIClient:
         """
         author = author or brand_name
         dot_date = date.replace("-", ".")
+
+        if not insight_headline or not insight_body:
+            extracted_h, extracted_b = self._extract_insight(content)
+            insight_headline = insight_headline or extracted_h
+            insight_body = insight_body or extracted_b
+
         title = f"{dot_date} · {insight_headline}" if insight_headline else f"{brand_name} · {dot_date}"
         digest = insight_body if insight_body else f"{brand_name} · {dot_date}"
 
@@ -152,7 +182,7 @@ class WeChatAPIClient:
         )
         if thumb_media_id:
             article["thumb_media_id"] = thumb_media_id
-        async with httpx.AsyncClient() as c:
+        async with httpx.AsyncClient(proxy=self.proxy) as c:
             r = await c.post(
                 f"{self.BASE}/draft/add",
                 params=dict(access_token=token),

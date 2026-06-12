@@ -261,24 +261,24 @@ class WeChatFormatter:
     def _render_insight(self, headline: str, body: str) -> str:
         parts: List[str] = []
         parts.append(
-            '<section style="padding: 20px 24px; '
+            '<section data-insight style="padding: 20px 24px; '
             "border-left: 4px solid #87867F; "
             "border-radius: 8px; "
             "background: rgba(15,76,129,0.04); "
             'margin: 24px 0;">'
         )
         parts.append(
-            '<p style="margin: 0 0 10px; '
+            '<p data-insight-headline style="margin: 0 0 10px; '
             "font-family: Georgia, 'Times New Roman', 'PingFang SC', serif; "
             "font-size: 22px; line-height: 1.3; font-weight: 550; "
             'letter-spacing: -0.01em; color: rgb(44,44,42);">'
-            f"{headline}</p>"
+            f"{html.escape(headline)}</p>"
         )
         if body:
             parts.append(
-                '<p style="margin: 0; font-size: 15px; line-height: 1.7; '
+                '<p data-insight-body style="margin: 0; font-size: 15px; line-height: 1.7; '
                 'color: #87867F;">'
-                f"{body}</p>"
+                f"{html.escape(body)}</p>"
             )
         parts.append("</section>")
         return "\n".join(parts)
