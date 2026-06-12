@@ -41,7 +41,7 @@ class WeChatAPIClient:
         """Obtain or refresh an access_token (cached until 5 min before expiry)."""
         if self._token and self._token_expires_at and datetime.now() < self._token_expires_at:
             return self._token
-        async with httpx.AsyncClient(proxy=self.proxy) as c:
+        async with httpx.AsyncClient(proxy=self.proxy, timeout=15.0) as c:
             r = await c.get(
                 f"{self.BASE}/token",
                 params=dict(grant_type="client_credential", appid=self.app_id, secret=self.app_secret),
@@ -69,7 +69,7 @@ class WeChatAPIClient:
 
         token = await self._ensure_token()
 
-        async with httpx.AsyncClient(proxy=self.proxy) as c:
+        async with httpx.AsyncClient(proxy=self.proxy, timeout=15.0) as c:
             r = await c.post(
                 f"{self.BASE}/material/batchget_material",
                 params=dict(access_token=token),
@@ -142,7 +142,7 @@ class WeChatAPIClient:
         insight_body: str = "",
         date: str = "",
         brand_name: str = "",
-    ) -> str:
+    ) -> tuple[str, str, str]:
         """Create a draft in the WeChat Official Account.
 
         Args:
@@ -155,7 +155,7 @@ class WeChatAPIClient:
             brand_name: Brand name for fallback title/digest.
 
         Returns:
-            The draft ``media_id``.
+            Tuple of ``(media_id, title, digest)``.
         """
         author = author or brand_name
         dot_date = date.replace("-", ".")
@@ -182,7 +182,7 @@ class WeChatAPIClient:
         )
         if thumb_media_id:
             article["thumb_media_id"] = thumb_media_id
-        async with httpx.AsyncClient(proxy=self.proxy) as c:
+        async with httpx.AsyncClient(proxy=self.proxy, timeout=15.0) as c:
             r = await c.post(
                 f"{self.BASE}/draft/add",
                 params=dict(access_token=token),
@@ -191,4 +191,4 @@ class WeChatAPIClient:
         body = r.json()
         if body.get("errcode"):
             raise WeChatAPIError(f"draft/add failed: {body}")
-        return body["media_id"]
+        return body["media_id"], title, digest

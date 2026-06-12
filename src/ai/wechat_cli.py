@@ -82,7 +82,7 @@ async def _run(input_path: str, date: str, brand: str, output: str | None, publi
         )
         try:
             thumb_media_id = await client.resolve_thumb_media_id(config)
-            media_id = await client.create_draft(
+            media_id, title, digest = await client.create_draft(
                 content=html,
                 author=wc.author,
                 thumb_media_id=thumb_media_id,
@@ -91,7 +91,14 @@ async def _run(input_path: str, date: str, brand: str, output: str | None, publi
                 date=date,
                 brand_name=wc.brand_name,
             )
-            console.print(f"[green]Draft published  media_id: {media_id}[/green]")
+            console.print()
+            console.print("[bold cyan]📰  标题[/bold cyan]")
+            console.print(f"[white]{title}[/white]")
+            console.print()
+            console.print("[bold cyan]📝  摘要[/bold cyan]")
+            console.print(f"[white]{digest}[/white]")
+            console.print()
+            console.print(f"[green]✅ 草稿已发布  media_id: {media_id}[/green]")
         except WeChatAPIError as e:
             console.print(f"[red]Publish failed: {e}[/red]")
             sys.exit(1)
