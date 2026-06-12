@@ -60,8 +60,7 @@ async def _run(input_path: str, date: str, brand: str, output: str | None, publi
             out_path = Path(output)
         else:
             default_dir = (config.wechat.output_dir if config.wechat else "data/wechat")
-            stem = path.stem
-            out_path = Path(default_dir) / f"{stem}.html"
+            out_path = Path(default_dir) / f"{date}.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(html, encoding="utf-8")
         console.print(f"[green]Article saved to {out_path}[/green]")
