@@ -60,9 +60,7 @@
 
 ### 4. 阈值调整
 
-`ai_score_threshold: 8.0 → 6.0`
-
-候选池从 top ~5% 扩大到 top ~30%。
+`ai_score_threshold` 保持当前值——候选池质量优先，不通过降低阈值来扩宽输入。
 
 ### 5. 清洗调整
 
@@ -78,7 +76,7 @@
 | `src/orchestrator.py` | `fetch_all_sources()` 新增 ArXiv 分支；`_sub_source_label()` 加 arxiv 处理 |
 | `src/ai/prompts.py` | `ITEM_EVALUATION_SYSTEM` 重写 |
 | `src/ai/curator.py` | `evaluate_items()` 截断 800 → 1500 |
-| `data/config.json` | 加 arxiv 配置、启用 twitter、阈值 8.0→6.0 |
+| `data/config.json` | 加 arxiv 配置、启用 twitter |
 
 **不修改**：`src/fetch_cli.py`、`src/ai/utils.py`、`src/scrapers/twitter.py`
 
