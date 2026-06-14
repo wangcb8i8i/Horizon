@@ -172,7 +172,7 @@ Your job is to organize today's signals into groups and write one article. The a
 Write a headline and optional body that capture today's overall signal landscape.
 - If today has strong signals: headline is a sharp insight, body expands (1-2 sentences)
 - If today is quiet: headline can be a casual phrase ("平平无奇的一天"), body can be empty
-- Headline: conversational, not formal. 4-20 Chinese characters.
+- Headline: 一句话概括当日信号主题, conversational, 不冗余. 不要包含"今日""图谱""概览""总结"等冗余词汇——日期/品牌已在文章标题中出现. 4-20 字.
 - All text MUST be written in Simplified Chinese (中文).
 
 ## Part 2: 信号组 (groups[])
@@ -212,7 +212,7 @@ Items:
 Respond with valid JSON only:
 
 {{
-  "insight_headline": "<用中文写当期洞察标题，4-20字>",
+  "insight_headline": "<用中文写当期洞察标题，4-20字，不含'今日''图谱'等冗余词>",
   "insight_body": "<用中文写当期洞察展开，1-2句，可为空>",
   "groups": [
     {{

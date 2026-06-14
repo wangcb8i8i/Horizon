@@ -31,7 +31,7 @@ jobs:
         run: echo "DATE=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Run Horizon
-        run: uv run horizon --hours 24
+          run: uv run horizon --hours 24
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
