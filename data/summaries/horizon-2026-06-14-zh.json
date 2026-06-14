@@ -1,0 +1,713 @@
+[
+  {
+    "id": "hackernews:story:48517377",
+    "source_type": "hackernews",
+    "title": "Noise infusion banned from statistical products published by Census Bureau",
+    "url": "https://desfontain.es/blog/banning-noise.html",
+    "content": "\n--- Top Comments ---\n\n[kajman]: I &quot;enumerated&quot; for the last census. Trust in my community was already not high* and I had lots of interesting encounters. I really believed the rather invasive data I was collecting with a friendly face would be used and handled responsibly. I feel for the poor souls that&#x27;ll sign up to go door to door for 2030 now that the firewalls against weaponizing and monetizing all of our sensitive government data has been torn down, and even more for those that will volunteer information...\n\n[arjie]: Pretty sad, in my opinion. In my ideal the state should have visibility into the shape of the people present so that we can make good decisions about our combined organization. I think we’re making a mistake we will come to regret by intentionally damaging our data collection infrastructure. I think a large amount of the US’s success is the result of good institutions handling granular data. Policies can be adjusted to match outcomes more rapidly than otherwise. I understand why people decide...\n\n[MinimalAction]: Whatever you do, there is a level of trust that is assumed when census takes place. The trust that this data is then not identified in a way that could be targeted for scams, frauds, and other such evils. But in NY, house sale records are made public but much to the detriment, many mortgage companies fake a bill for payment. Differential privacy is absolutely necessary, and the social scientists being unable to reconstruct the data at an individual level is intended. A macroscopic description...\n\n[jmole]: Ban it from the dataset, add it to the analysis. You can choose your own flavor of noise. I don&#x27;t know what the political undertones are here, but at some level you need to have actual ground truth, including &quot;this person&#x2F;household declined&quot;. Publishing raw data though? That seems like shooting yourself in the foot from a national security perspective, not to mention all the other reasons not to do it.\n\n[appreciatorBus]: &gt; Differential privacy makes this trade-off explicit, and thus impossible to ignore. I think he has it backwards here. Techniques like differential privacy hide the fact that a trade-off exists, except for a small cadre of experts who live and breathe this stuff. I don’t know enough to defend this decision, but it strikes me that if there is a real trade-off, not having access to these techniques will force people other than statisticians to confront the trade-off. If data about the public...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/jcpzqt/banning_noise_will_be_disaster_for\">Comments</a></p>",
+    "author": "nl",
+    "published_at": "2026-06-13T13:54:56Z",
+    "fetched_at": "2026-06-14T00:00:48.697225Z",
+    "metadata": {
+      "score": 680,
+      "descendants": 405,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48517377",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "privacy",
+        "math"
+      ],
+      "merged_sources": [
+        "rss",
+        "hackernews"
+      ],
+      "title_zh": "人口普查局禁令：统计产品禁用噪声注入",
+      "detailed_summary_zh": "美国人口普查局根据商务部行政命令，正式禁止在其统计产品中使用噪声注入（即差分隐私）技术，这项政策变化影响了数据隐私保护方法。 这一禁令可能削弱对个人隐私的保护，增加数据重新识别风险，同时引发关于数据准确性与公共信任的广泛争论。 噪声注入曾是美国人口普查局数十年来用于统计披露限制的关键隐私保护技术，如今被禁止后，机构转而使用聚合和舍入等粗化方法。",
+      "background_zh": "差分隐私是一种数学框架，通过向统计结果中添加精心校准的噪声，在保护个体隐私的同时允许发布群体模式。该技术确保算法输出无法可靠地推断特定个体的信息是否被包含在数据集中。噪声注入是差分隐私的具体实现方式之一。",
+      "community_discussion_zh": "社区评论普遍对禁令表示担忧，认为这破坏了数据安全屏障，可能导致敏感信息被滥用。有评论者指出差分隐私对于防止个体识别至关重要，而禁令可能削弱公众对普查的信任。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Differential_privacy",
+          "title": "Differential privacy"
+        },
+        {
+          "url": "https://www.bea.gov/help/faq/1490",
+          "title": "Why didn’t BEA use noise infusion as its statistical disclosure limitation method in its June 10, 2026, news release on “New Foreign Direct Investment in the United States, 2025’’? | U.S. Bureau of Economic Analysis (BEA)"
+        },
+        {
+          "url": "https://www.vpm.org/npr-news/npr-news/2026-06-12/a-trump-push-to-cut-statistical-noise-could-mean-less-data-from-the-census-bureau",
+          "title": "A Trump push to cut 'statistical noise' could mean less data from the Census Bureau"
+        }
+      ],
+      "detailed_summary": "美国人口普查局根据商务部行政命令，正式禁止在其统计产品中使用噪声注入（即差分隐私）技术，这项政策变化影响了数据隐私保护方法。 这一禁令可能削弱对个人隐私的保护，增加数据重新识别风险，同时引发关于数据准确性与公共信任的广泛争论。 噪声注入曾是美国人口普查局数十年来用于统计披露限制的关键隐私保护技术，如今被禁止后，机构转而使用聚合和舍入等粗化方法。",
+      "background": "差分隐私是一种数学框架，通过向统计结果中添加精心校准的噪声，在保护个体隐私的同时允许发布群体模式。该技术确保算法输出无法可靠地推断特定个体的信息是否被包含在数据集中。噪声注入是差分隐私的具体实现方式之一。",
+      "community_discussion": "社区评论普遍对禁令表示担忧，认为这破坏了数据安全屏障，可能导致敏感信息被滥用。有评论者指出差分隐私对于防止个体识别至关重要，而禁令可能削弱公众对普查的信任。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "The ban of differential privacy (noise infusion) from Census Bureau statistical products is a major policy change affecting data accuracy and privacy. The high community engagement (680 points, 405 comments) reflects strong interest and valid concerns about trust and re-identification risks, elevating its importance.",
+    "ai_summary": "The Census Bureau has banned the use of noise infusion (differential privacy) in its statistical products, sparking debate about data accuracy, privacy risks, and public trust.",
+    "ai_tags": [
+      "differential privacy",
+      "census bureau",
+      "data privacy",
+      "statistical disclosure",
+      "government data"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:aabdc51f8fce54b0",
+    "source_type": "rss",
+    "title": "21 Zero-Days in FFmpeg",
+    "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+    "content": "<p><a href=\"https://lobste.rs/s/ejra5c/21_zero_days_ffmpeg\">Comments</a></p>",
+    "author": "depthfirst.com via sanxiyn",
+    "published_at": "2026-06-13T00:21:57Z",
+    "fetched_at": "2026-06-14T00:00:48.652584Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "vibecoding"
+      ],
+      "title_zh": "FFmpeg惊现21个零日漏洞",
+      "detailed_summary_zh": "安全研究人员披露了FFmpeg多媒体框架中的21个零日漏洞，这些漏洞可能被利用来执行任意代码或导致拒绝服务。 FFmpeg是广泛使用的开源多媒体库，被嵌入到大量应用程序和操作系统中，因此这21个零日漏洞的发现可能影响数百万用户和企业的安全性，推动了整个开源软件安全生态的关注。 这些漏洞的具体技术细节尚未公开，但研究人员已向FFmpeg项目维护者报告，预计将在后续版本中修复。漏洞类型可能包括缓冲区溢出、整数溢出等常见内存安全问题。",
+      "background_zh": "FFmpeg是一个免费开源的跨平台多媒体框架，能够处理几乎所有格式的音视频文件，被许多视频播放器、编辑软件和流媒体服务所使用。零日漏洞是指尚未被软件厂商修补且可能已被攻击者利用的安全漏洞，发现后通常会被优先修复。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/FFmpeg",
+          "title": "FFmpeg - Wikipedia"
+        },
+        {
+          "url": "https://ffmpeg.org/",
+          "title": "FFmpeg"
+        }
+      ],
+      "detailed_summary": "安全研究人员披露了FFmpeg多媒体框架中的21个零日漏洞，这些漏洞可能被利用来执行任意代码或导致拒绝服务。 FFmpeg是广泛使用的开源多媒体库，被嵌入到大量应用程序和操作系统中，因此这21个零日漏洞的发现可能影响数百万用户和企业的安全性，推动了整个开源软件安全生态的关注。 这些漏洞的具体技术细节尚未公开，但研究人员已向FFmpeg项目维护者报告，预计将在后续版本中修复。漏洞类型可能包括缓冲区溢出、整数溢出等常见内存安全问题。",
+      "background": "FFmpeg是一个免费开源的跨平台多媒体框架，能够处理几乎所有格式的音视频文件，被许多视频播放器、编辑软件和流媒体服务所使用。零日漏洞是指尚未被软件厂商修补且可能已被攻击者利用的安全漏洞，发现后通常会被优先修复。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major security research revealing 21 zero-day vulnerabilities in FFmpeg, a critical multimedia library. The discovery has significant implications for software security and the community discussion (linked via Lobste.rs comments) adds context and validation.",
+    "ai_summary": "Security researchers disclose 21 zero-day vulnerabilities in the FFmpeg multimedia framework.",
+    "ai_tags": [
+      "security",
+      "ffmpeg",
+      "vulnerabilities",
+      "zero-day"
+    ]
+  },
+  {
+    "id": "hackernews:story:48518684",
+    "source_type": "hackernews",
+    "title": "GLM 5.2 Is Out",
+    "url": "https://twitter.com/jietang/status/2065784751345287314",
+    "content": "<a href=\"https:&#x2F;&#x2F;digg.com&#x2F;tech&#x2F;ii9xibgn\" rel=\"nofollow\">https:&#x2F;&#x2F;digg.com&#x2F;tech&#x2F;ii9xibgn</a>\n\n\n--- Top Comments ---\n\n[easygenes]: Announcement from the founder of Z.ai: “ GLM-5.2 is Fully Open, Frontier Intelligence Belongs to Everyone Today, the sudden restriction of certain frontier models is deeply regrettable. At a time when access to frontier models is abruptly cut off for non-technical reasons, we are even more convinced of one thing: science should be global. The path to AGI (Artificial General Intelligence) must never be enclosed by high walls. We have always believed that AGI should be the cornerstone for all o...\n\n[Reubend]: Seems like there&#x27;s no official blog post with benchmark results yet. But I&#x27;m once again thankful for the Chinese AI labs for being open with their work and contributing it to the world under permissive licenses like this. The Fable 5 fiasco is just another reminder of how valuable these things are to have.\n\n[segmondy]: In the last few days, Chinese labs have given us MiniMaxM3, KimiK2.7 and now GLM5.2.  Meanwhile US is censoring models.  Reads like fiction.\n\n[satvikpendem]: Released at the exact same time, 5:21 pm (Chinese time), as when Anthropic received the letter from the government banning Fable, and explicitly citing other models becoming unusable.\n\n[kamranjon]: Crossing fingers for a 5.2 flash release - it’s been a while but I still feel like 4.7 flash is one of the strongest local coding models",
+    "author": "aloknnikhil",
+    "published_at": "2026-06-13T16:18:31Z",
+    "fetched_at": "2026-06-14T00:00:48.697264Z",
+    "metadata": {
+      "score": 265,
+      "descendants": 135,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48518684",
+      "comment_count": 5,
+      "title_zh": "GLM-5.2：完全开放的前沿模型发布",
+      "detailed_summary_zh": "中国AI公司智谱（Z.ai）近日发布了GLM-5.2，这是一款完全开放（MIT许可）的前沿大语言模型，其创始人宣布该模型面向所有人开放，此举正值美国对某些前沿模型实施限制之际。 在美国收紧AI模型出口管制、部分前沿模型被禁止使用的背景下，中国实验室坚持开放发布，凸显了全球AI社区对开放科学的强烈呼吁，可能影响未来AI模型的开放政策与地缘政治格局。 尽管目前尚无官方博客公布GLM-5.2的具体基准测试结果，但模型采用MIT许可证，允许自由使用和修改。社区用户还期待后续可能发布的Flash版本，以提升本地运行效率。",
+      "background_zh": "前沿模型（Frontier Model）是指当前性能最先进、训练数据规模极大且展现出涌现能力（如高级推理、零样本学习）的AI系统。GLM系列是智谱（Z.ai）推出的通用语言模型，自2025年7月起以MIT开源许可证发布。近期美国政府对Anthropic等公司的模型实施限制（如Fable事件），加剧了关于AI开放性的全球讨论。",
+      "community_discussion_zh": "社区整体反响积极，用户感谢中国实验室在开放科学方面的贡献，同时批评美国对模型的限制，认为这具有讽刺意味。部分用户注意到发布时机恰好与Anthropic收到政府禁令信相同，并期待后续Flash版本的推出以增强本地部署能力。",
+      "sources": [
+        {
+          "url": "https://www.nvidia.com/en-us/glossary/frontier-models/",
+          "title": "What Are Frontier AI Models and How They Work - NVIDIA"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Z.ai",
+          "title": "Z.ai - Wikipedia"
+        },
+        {
+          "url": "https://www.reuters.com/technology/chinas-ai-startup-zhipu-releases-new-flagship-model-glm-5-2026-02-11/",
+          "title": "Chinese AI startup Zhipu releases new flagship model GLM-5 | Reuters"
+        }
+      ],
+      "detailed_summary": "中国AI公司智谱（Z.ai）近日发布了GLM-5.2，这是一款完全开放（MIT许可）的前沿大语言模型，其创始人宣布该模型面向所有人开放，此举正值美国对某些前沿模型实施限制之际。 在美国收紧AI模型出口管制、部分前沿模型被禁止使用的背景下，中国实验室坚持开放发布，凸显了全球AI社区对开放科学的强烈呼吁，可能影响未来AI模型的开放政策与地缘政治格局。 尽管目前尚无官方博客公布GLM-5.2的具体基准测试结果，但模型采用MIT许可证，允许自由使用和修改。社区用户还期待后续可能发布的Flash版本，以提升本地运行效率。",
+      "background": "前沿模型（Frontier Model）是指当前性能最先进、训练数据规模极大且展现出涌现能力（如高级推理、零样本学习）的AI系统。GLM系列是智谱（Z.ai）推出的通用语言模型，自2025年7月起以MIT开源许可证发布。近期美国政府对Anthropic等公司的模型实施限制（如Fable事件），加剧了关于AI开放性的全球讨论。",
+      "community_discussion": "社区整体反响积极，用户感谢中国实验室在开放科学方面的贡献，同时批评美国对模型的限制，认为这具有讽刺意味。部分用户注意到发布时机恰好与Anthropic收到政府禁令信相同，并期待后续Flash版本的推出以增强本地部署能力。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value announcement of a fully open frontier model from a Chinese lab, with strong community engagement (265 points, 135 comments) and discussion highlighting its significance amid US model restrictions. The release is timely and politically relevant, though lacking detailed benchmark results.",
+    "ai_summary": "GLM-5.2 is released as a fully open frontier model by a Chinese lab, generating excitement and discussion about open science amid US censorship.",
+    "ai_tags": [
+      "AI",
+      "open-source",
+      "frontier models",
+      "GLM"
+    ]
+  },
+  {
+    "id": "hackernews:story:48516251",
+    "source_type": "hackernews",
+    "title": "Every Frame Perfect",
+    "url": "https://tonsky.me/blog/every-frame-perfect/",
+    "content": "\n--- Top Comments ---\n\n[fasterik]: I agree that some of the examples the author provided are instances of bad animation. But I don&#x27;t agree with the premise of the article. Computer graphics is all about exploiting features of the human visual system. We perceive things differently when they&#x27;re moving vs. when they&#x27;re standing still. It&#x27;s very possible that a &quot;wrong&quot; frame in isolation is the best looking one in a real-time context. We can also pick apart screenshots but these don&#x27;t capture ev...\n\n[dagmx]: I have a lot of thoughts about this: I think this is a weakly presented argument. The article doesn’t actually present stronger alternatives or even why anything shown is negative to the user. It might be negative but otherwise this is the same vacant critique that is levied by pointing at smear frame or transitional points in media to critique it. The user also has an untenable maxim. Every frame must make sense? I would posit this is impossible, or I’d ask the author how they’d handle windo...\n\n[m132]: I still have Sonoma on some of my devices. All I can say is: wow, steady regress. The save dialog, albeit a little shakey, is nowhere as chaotic as in your example. The buttons in Notes move between panes in a perfect seamless manner. Albeit the animation occasionally glitches out when you repeatedly focus and deselect the Safari bar, the cursor is perfectly timed with the text, only fading in after the text is done moving to the left. The Preview bug must be something recent too, I can&#x27;...\n\n[ikesau]: I&#x27;m sure a UI that had none of these imperfect frames would feel better, but now I really want someone to edit each of these clips to show what it would actually look like. At the same time, why does  everything  need motion? My understanding is that motion should be used if an action subtly changes the UI in a region that&#x27;s different from where the action was triggered (e.g. toasts) I think many of these transitions are unnecessary and would feel just as good if they snapped immedi...\n\n[hexasquid]: I scrolled the article and there were frames during the scroll where half a line of text was clipped by the start and bottom of the viewport.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/bt7rtp/every_frame_perfect\">Comments</a></p>",
+    "author": "ravenical",
+    "published_at": "2026-06-13T11:40:20Z",
+    "fetched_at": "2026-06-14T00:00:48.697296Z",
+    "metadata": {
+      "score": 497,
+      "descendants": 167,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48516251",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "design",
+        "graphics"
+      ],
+      "merged_sources": [
+        "rss",
+        "hackernews"
+      ],
+      "title_zh": "UI动画每帧必须完美：macOS帧问题剖析",
+      "detailed_summary_zh": "博主 Nikita Prokopov 发表文章《Every Frame Perfect》，通过 macOS 系统中多个 UI 动画的截图实例，指出许多动画在单帧上存在视觉不连贯的问题，例如按钮跳跃、文字错位等，批评当前动画实现未做到每一帧都合理。 该观点挑战了UI动画设计的常规认知，即用户通常只关注动画整体流畅性而忽略单帧质量。如果被广泛采纳，将推动动画框架（如 Core Animation）和开发者更重视帧级细节，提升用户界面的精细度和感知质量。 文章以 Core Animation 和 CADisplayLink 等底层技术为背景，展示了 macOS 中保存对话框、备忘录按钮、Safari 地址栏等动画的逐帧截图，指出在动画过程中存在形态异常或位置跳变的“坏帧”。但作者未提供具体修复方案，仅提出“每帧必须有意义”的理想目标。",
+      "background_zh": "Core Animation 是 Apple 用于 macOS 和 iOS 的图形合成与动画框架，负责高效渲染 UI 动画。CADisplayLink 是定时器工具，与屏幕刷新率同步，用于逐帧更新。传统上，UI 动画设计注重整体流畅性（如60fps），但较少关注每一静止帧的视觉合理性。本文主张即使在高帧率下，每个单独帧也应像静态界面一样符合视觉设计规范。",
+      "community_discussion_zh": "评论存在明显分歧：部分读者（如 fasterik）认可作者指出的具体问题，但认为运动中的帧与静止帧的感知不同，“每帧完美”并非必要；另一部分（如 dagmx）则批评论点弱，未提供更优替代方案或证明坏帧对用户的负面影响。也有用户（如 m132）表示实际体验中动画比截图展示的更平滑，质疑例子是否具有普遍性。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Core_Animation",
+          "title": "Core Animation"
+        },
+        {
+          "url": "https://medium.com/@dmitryivanov_54099/cadisplaylink-and-its-applications-bfafb760d738",
+          "title": "CADisplayLink and its applications | by Dmitrii Ivanov | Medium"
+        }
+      ],
+      "detailed_summary": "博主 Nikita Prokopov 发表文章《Every Frame Perfect》，通过 macOS 系统中多个 UI 动画的截图实例，指出许多动画在单帧上存在视觉不连贯的问题，例如按钮跳跃、文字错位等，批评当前动画实现未做到每一帧都合理。 该观点挑战了UI动画设计的常规认知，即用户通常只关注动画整体流畅性而忽略单帧质量。如果被广泛采纳，将推动动画框架（如 Core Animation）和开发者更重视帧级细节，提升用户界面的精细度和感知质量。 文章以 Core Animation 和 CADisplayLink 等底层技术为背景，展示了 macOS 中保存对话框、备忘录按钮、Safari 地址栏等动画的逐帧截图，指出在动画过程中存在形态异常或位置跳变的“坏帧”。但作者未提供具体修复方案，仅提出“每帧必须有意义”的理想目标。",
+      "background": "Core Animation 是 Apple 用于 macOS 和 iOS 的图形合成与动画框架，负责高效渲染 UI 动画。CADisplayLink 是定时器工具，与屏幕刷新率同步，用于逐帧更新。传统上，UI 动画设计注重整体流畅性（如60fps），但较少关注每一静止帧的视觉合理性。本文主张即使在高帧率下，每个单独帧也应像静态界面一样符合视觉设计规范。",
+      "community_discussion": "评论存在明显分歧：部分读者（如 fasterik）认可作者指出的具体问题，但认为运动中的帧与静止帧的感知不同，“每帧完美”并非必要；另一部分（如 dagmx）则批评论点弱，未提供更优替代方案或证明坏帧对用户的负面影响。也有用户（如 m132）表示实际体验中动画比截图展示的更平滑，质疑例子是否具有普遍性。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive on UI animation quality that sparked substantial community discussion with diverse viewpoints (167 comments). The premise is well-argued but contested, increasing relevance. Not groundbreaking, but important for UI/UX practitioners.",
+    "ai_summary": "A critique of UI animations arguing that every frame must be visually coherent, with examples from macOS.",
+    "ai_tags": [
+      "UI design",
+      "animation",
+      "human perception",
+      "macOS",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "hackernews:story:48517199",
+    "source_type": "hackernews",
+    "title": "Treating pancreatic tumours may have revealed cancer's master switch",
+    "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
+    "content": "\n--- Top Comments ---\n\n[gcanyon]: As is often the case, the title is hyperbolic. The discovery applies to 20% of tumors, and &quot;one of cancer&#x27;s significant defenses&quot; or &quot;a key weakness of cancer&quot; would be more accurate. That said, I&#x27;ll happily take &quot;we discovered a key weakness in 20% of cancers,&quot; please and thank you.\n\n[gavinray]: To offer context for others: The bigger deal about this is that KRAS was considered an &quot;undruggable&quot; target. Recent advancements have allowed us to design biologics to do things we previously thought impossible, which broadens the horizons for other treatments in the future. Baby steps.\n\n[ispeters]: https:&#x2F;&#x2F;archive.ph&#x2F;d4mT2\n\n[pdar4123]: Please remember that science is under attack in the United States - new proposals would gut the nih even beyond the horror that is ongoing. As a scientist I am horrified and I truly hope that we don’t abandon the usas historically strong investment in the future.\n\n[variety8675]: The study this article references is here:  https:&#x2F;&#x2F;clinicaltrials.gov&#x2F;study&#x2F;NCT06625320",
+    "author": "andsoitis",
+    "published_at": "2026-06-13T13:34:00Z",
+    "fetched_at": "2026-06-14T00:00:48.697319Z",
+    "metadata": {
+      "score": 279,
+      "descendants": 93,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48517199",
+      "comment_count": 5,
+      "title_zh": "胰腺癌治疗或发现癌症主开关",
+      "detailed_summary_zh": "研究人员在治疗胰腺肿瘤时，发现针对KRAS靶点的方法可能揭示了一种对20%癌症有效的潜在弱点。 KRAS长期以来被视为“不可成药”靶点，这一突破为未来开发广谱抗癌疗法开辟了新途径，影响约20%的癌症患者。 该发现仅适用于20%的肿瘤，且目前仍处于早期研究阶段，但证明了通过生物制剂靶向KRAS的可行性。",
+      "background_zh": "KRAS是一种常见的癌基因，在约20%的癌症中发生突变，但因其蛋白结构光滑无明确结合位点，传统小分子药物难以靶向。近年来的技术进步使设计针对KRAS的生物制剂成为可能，此次研究证实了这一方向。",
+      "community_discussion_zh": "社区评论指出新闻标题略显夸张，实际发现仅针对20%的肿瘤，但认可这是重要进步；有用户强调KRAS曾被视作不可成药靶点，此次突破拓宽了未来治疗思路；还有用户表达了对美国科研资金削减的担忧。",
+      "detailed_summary": "研究人员在治疗胰腺肿瘤时，发现针对KRAS靶点的方法可能揭示了一种对20%癌症有效的潜在弱点。 KRAS长期以来被视为“不可成药”靶点，这一突破为未来开发广谱抗癌疗法开辟了新途径，影响约20%的癌症患者。 该发现仅适用于20%的肿瘤，且目前仍处于早期研究阶段，但证明了通过生物制剂靶向KRAS的可行性。",
+      "background": "KRAS是一种常见的癌基因，在约20%的癌症中发生突变，但因其蛋白结构光滑无明确结合位点，传统小分子药物难以靶向。近年来的技术进步使设计针对KRAS的生物制剂成为可能，此次研究证实了这一方向。",
+      "community_discussion": "社区评论指出新闻标题略显夸张，实际发现仅针对20%的肿瘤，但认可这是重要进步；有用户强调KRAS曾被视作不可成药靶点，此次突破拓宽了未来治疗思路；还有用户表达了对美国科研资金削减的担忧。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important medical advance targeting undruggable KRAS in 20% of tumors, with high community engagement and insightful comments correcting hyperbolic title and providing context on significance and funding concerns.",
+    "ai_summary": "Research targeting KRAS in pancreatic tumors reveals a potential weakness in 20% of cancers, advancing treatment for a previously undruggable target.",
+    "ai_tags": [
+      "cancer research",
+      "KRAS",
+      "pancreatic cancer",
+      "drug discovery",
+      "biomedical science"
+    ]
+  },
+  {
+    "id": "hackernews:story:48515454",
+    "source_type": "hackernews",
+    "title": "RTX 5080 and RTX 3090 Setup: 80 Tok/s on Qwen 3.6 27B Q8",
+    "url": "https://imil.net/blog/posts/2026/rtx-5080-+-rtx-3090-setup-80+-tok-s-on-qwen-3.6-27b-q8/",
+    "content": "\n--- Top Comments ---\n\n[sieste]: That&#x27;s almost exactly my setup and I&#x27;m very happy with its performance. I noticed recently that I started to prefer my local Qwen3.6 35B A3B and pi agent over Claude Code. Both fail at different tasks, and Qwen more so than Claude. But the way Qwen fails is much more straightforward. In writing tasks Qwens hallucinations and bullshitting are much easier to spot because it doesn&#x27;t have the sleek vocabulary and wordsmithing skills to disguise its ignorance. In coding tasks that Q...\n\n[DiabloD3]: The recommended values for Qwen 3.6 in thinking mode is `--temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.00`, and  `--temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00` for coding&#x2F;tool calling tasks, and for non-thinking, `--temp 0.7 -top-p 0.8 --top-k 20 --presence-penalty 1.5 --min-p 0.00`. The options listed are none of these. Also, the recommended Qwen MTP settings are `--spec-type draft-mtp --spec-draft-n-max 2`. 3 is not good on Nvidia hardware under different workloads. You can also add ...\n\n[ydj]: 80tp&#x2F;s with 5080 3090 combo is wild. I’ve been working with a 4090 and two Tenstorrent p150 cards, and manage only about 30 tps utilizing all three for qwen3.6 27b q8. Guess I got more optimization to do. Would like to see the perf of their setup with and without mtp and ngram speculative decoding though, as well as parallel decode performance (once llamacpp mtp plays well with multiple slots). Being in California electricity alone puts this non-competitive with just paying a cloud though.\n\n[neals]: I tried implementing qwen through openrouter and deepinfra. Even without thinking, I had to wait 60s+ for the full result, where haiku or flash would be done in 5 or 6 seconds.\n\n[WeylandDarkStar]: Sits in silence, watching China as they innovated a new type of ultra-thin gpu board and calling it 5090 &quot;Turbos.&quot; Still waiting for Shenzhen listings to post a 5090 official verified with VBIOS crack...",
+    "author": "iMil",
+    "published_at": "2026-06-13T09:55:32Z",
+    "fetched_at": "2026-06-14T00:00:48.697443Z",
+    "metadata": {
+      "score": 180,
+      "descendants": 62,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48515454",
+      "comment_count": 5,
+      "title_zh": "RTX 5080+RTX 3090组合实现Qwen 3.6 27B Q8每秒80 tokens",
+      "detailed_summary_zh": "用户通过组合一张RTX 5080和一张RTX 3090显卡，在Qwen 3.6 27B Q8模型上实现了每秒80个token的推理速度。 该配置展示了跨代NVIDIA显卡混合使用的可行性，为本地高效运行大型语言模型提供了低成本方案，降低了高端AI推理的门槛。 模型采用8位量化版（Q8）以节省显存，社区还讨论了优化参数如温度、top-p和MTP配置，以进一步提升性能。",
+      "background_zh": "Qwen是由阿里巴巴开发的开源大语言模型系列，支持多种规模。量化技术通过降低模型权重精度（如8位）来减少显存占用并加速推理，使大模型能在消费级显卡上运行。NVIDIA RTX 5080和RTX 3090分别代表不同代的旗舰显卡，组合使用可实现显存和算力的协同。",
+      "community_discussion_zh": "社区用户对该性能表示惊叹，但也指出本地推理在能耗上不如云端服务。其他用户分享了Qwen的推荐参数设置和MTP（多token预测）优化方法，并对比了其他硬件组合的性能差异。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Qwen",
+          "title": "Qwen - Wikipedia"
+        },
+        {
+          "url": "https://huggingface.co/docs/bitsandbytes/v0.43.0/reference/nn/linear8bit",
+          "title": "8-bit quantization - Hugging Face"
+        },
+        {
+          "url": "https://mljourney.com/quantized-llms-explained-q4-vs-q8-vs-fp16/",
+          "title": "Quantized LLMs Explained: Q4 vs Q8 vs FP16 - ML Journey"
+        }
+      ],
+      "detailed_summary": "用户通过组合一张RTX 5080和一张RTX 3090显卡，在Qwen 3.6 27B Q8模型上实现了每秒80个token的推理速度。 该配置展示了跨代NVIDIA显卡混合使用的可行性，为本地高效运行大型语言模型提供了低成本方案，降低了高端AI推理的门槛。 模型采用8位量化版（Q8）以节省显存，社区还讨论了优化参数如温度、top-p和MTP配置，以进一步提升性能。",
+      "background": "Qwen是由阿里巴巴开发的开源大语言模型系列，支持多种规模。量化技术通过降低模型权重精度（如8位）来减少显存占用并加速推理，使大模型能在消费级显卡上运行。NVIDIA RTX 5080和RTX 3090分别代表不同代的旗舰显卡，组合使用可实现显存和算力的协同。",
+      "community_discussion": "社区用户对该性能表示惊叹，但也指出本地推理在能耗上不如云端服务。其他用户分享了Qwen的推荐参数设置和MTP（多token预测）优化方法，并对比了其他硬件组合的性能差异。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value due to practical benchmark and setup for local LLM inference with strong community engagement (62 comments, 180 points). Discussion adds optimization tips and comparisons, increasing relevance for AI/ML practitioners.",
+    "ai_summary": "Setup achieves 80 tok/s on Qwen 3.6 27B Q8 using an RTX 5080 and RTX 3090, with active community discussion on optimizations.",
+    "ai_tags": [
+      "LLM inference",
+      "hardware",
+      "performance",
+      "Qwen",
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "hackernews:story:48516710",
+    "source_type": "hackernews",
+    "title": "The experience of rendering Arabic typography and its technical debt",
+    "url": "https://lr0.org/blog/p/arabic/",
+    "content": "\n--- Top Comments ---\n\n[samat]: I feel so sorry for Arabs now, just read that paragraph about everyday experience of trying to write English-Arabic text in the mail or any other editor. &gt; I have watched senior engineers, fluent in both Arabic and English, give up on writing a long email in Outlook on a Wednesday afternoon because the cursor would not behave, and switch to Arabic-only or English-only because the cognitive cost of fighting the editor exceeded the cost of monolingual phrasing. Actually I remember very well ...\n\n[evmar]: One thing I sometimes think about when I think about text layout problems is how the text we use also has a bunch of complexities that we can take for granted. Think of variable width characters and kerning and ligatures and hyphenation and justification.  Imagine computers had been won by a CJK language, which have none of these problems. You could imagine a similar article about how exotic and difficult English layout is.\n\n[Georgelemental]: See also:  https:&#x2F;&#x2F;notarabic.com&#x2F;\n\n[kqr]: This explains a lot of why I think Arabic looks so beautiful on the page. I also love the way it can sound when spoken. Shame I don&#x27;t have reason good enough to take the years I would need to learn it.\n\n[yorwba]: A more academic treatment of justifying Arabic-script text can be found in  https:&#x2F;&#x2F;quod.lib.umich.edu&#x2F;j&#x2F;jep&#x2F;3336451.0023.104?view=text;...",
+    "author": "bookofjoe",
+    "published_at": "2026-06-13T12:40:16Z",
+    "fetched_at": "2026-06-14T00:00:48.697465Z",
+    "metadata": {
+      "score": 174,
+      "descendants": 42,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48516710",
+      "comment_count": 5,
+      "title_zh": "阿拉伯文渲染的技术债务体验",
+      "detailed_summary_zh": "本文深入探讨了阿拉伯文字渲染中的技术债务问题，特别是双向文本（bidirectional text）处理带来的复杂性。 该文揭示了看似简单的文字渲染背后隐藏的复杂性问题，对多语言软件的可访问性和用户体验有深远影响。 文章详细介绍了阿拉伯文字形随上下文变化的特性（如首、中、尾形式），以及Unicode双向算法在现实应用中的不足，导致用户在日常输入中遭遇光标跳跃等困难。",
+      "background_zh": "阿拉伯文是一种从右向左书写的文字，但在嵌入数字或英文时会出现左右混排（双向文本）。Unicode双向算法用于处理这种方向性，但实际实现中仍有缺陷。此外，阿拉伯文字形会根据其在单词中的位置而变化，这增加了渲染的复杂性。",
+      "community_discussion_zh": "社区讨论普遍表达了对阿拉伯用户困境的同情，并对比其他文字系统（如CJK），同时分享了相关资源和学术文献。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Unicode_Bidirectional_Algorithm",
+          "title": "Unicode Bidirectional Algorithm"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/HarfBuzz",
+          "title": "HarfBuzz - Wikipedia"
+        }
+      ],
+      "detailed_summary": "本文深入探讨了阿拉伯文字渲染中的技术债务问题，特别是双向文本（bidirectional text）处理带来的复杂性。 该文揭示了看似简单的文字渲染背后隐藏的复杂性问题，对多语言软件的可访问性和用户体验有深远影响。 文章详细介绍了阿拉伯文字形随上下文变化的特性（如首、中、尾形式），以及Unicode双向算法在现实应用中的不足，导致用户在日常输入中遭遇光标跳跃等困难。",
+      "background": "阿拉伯文是一种从右向左书写的文字，但在嵌入数字或英文时会出现左右混排（双向文本）。Unicode双向算法用于处理这种方向性，但实际实现中仍有缺陷。此外，阿拉伯文字形会根据其在单词中的位置而变化，这增加了渲染的复杂性。",
+      "community_discussion": "社区讨论普遍表达了对阿拉伯用户困境的同情，并对比其他文字系统（如CJK），同时分享了相关资源和学术文献。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive into a niche but important problem (Arabic typography rendering), with substantial community engagement and insightful comments highlighting real-world impact and parallels to other scripts. Raises awareness of technical debt and accessibility issues.",
+    "ai_summary": "A detailed exploration of the technical debt and challenges in rendering Arabic script, including bidirectional text issues, with community discussion emphasizing empathy and real-world struggles.",
+    "ai_tags": [
+      "Arabic typography",
+      "bidirectional text",
+      "technical debt",
+      "accessibility",
+      "text layout"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:927cf32e7a06bbed",
+    "source_type": "rss",
+    "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "content": "<p><a href=\"https://lobste.rs/s/nbaa0n/statement_on_us_government_directive\">Comments</a></p>\n\n--- From hackernews ---\n<a href=\"https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&amp;reflink=desktopwebshare_permalink\" rel=\"nofollow\">https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;amazon-ceos-talks-with-u-s-offic...</a>\n\n\n--- Top Comments ---\n\n[Topfi]: I still am struggling to understand why they informed the government about something that is known to be an issue in every LLM. There is no LLM that cannot be jailbroken, so unless this means that we have reached the absolute maximum publicly accessible US made LLMs are allowed to operate at with GPT 5.5, this is not grounded in any sane regulation attempt. Does anyone know what limits Fable 5 has overstepped in the eyes of the government? Parameter count? Certain benchmark results? Training ...\n\n[eranation]: Just to put things in the right perspective to those who are not aware, Amazon heavily invests in Anthropic [0] and AWS is a partner on project Glasswing (Select companies that used Mythos to find critical vulnerabilities in major open source and critical infrastructure) [1] So I don&#x27;t think there is anything sinister here, I would use Hanlon&#x27;s razor [2] here... [0]  https:&#x2F;&#x2F;www.anthropic.com&#x2F;news&#x2F;anthropic-amazon-compute  [1]  https:&#x2F;&#x2F;aws.amazon.com&#x...\n\n[himata4113]: First of all I found that fable is trained in a way that even if you were to jailbreak it, it would be completely uninterested in exploitation or finding creative solutions for explotation. However, I am unable to verify if this is related to them doing secretive prompt injection. Opus 4.8 is far more powerful in that regard. As for jailbreaking if anyone is interested: I used a fork of oh-my-pi that was modified in such a way that it would detect refusals and spawn a model with no safeguards...\n\n[malshe]: Gift link:  https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;amazon-ceos-talks-with-u-s-offic...\n\n[zmmmmm]: The only thing I can think of that would give Amazon reasons to dislike Mythos &#x2F; Fable is that Anthropic really ruined their Bedrock story by imposing data retention requirements that cross a red line in regulatory compliance.  It&#x27;s just possible that Jassy would rather have nobody use Fable than doing it on the basis of, effectively, a direct data trust relationship with Anthropic. It is hard to plug it together into this still being in Amazon&#x27;s interest in the long run, but I...",
+    "author": "anthropic.com via WilhelmVonWeiner",
+    "published_at": "2026-06-13T03:33:10Z",
+    "fetched_at": "2026-06-14T00:00:48.652343Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "title_zh": "美国指令暂停Anthropic Fable 5和Mythos 5访问",
+      "detailed_summary_zh": "Anthropic发布声明，回应美国政府指令要求其暂停向公众提供Fable 5和Mythos 5模型的访问权限。 此举标志着美国政府对先进AI模型的监管进一步收紧，可能影响Anthropic的商业部署和整个AI行业的合规标准。 Fable 5是Mythos 5的安全版本，专为一般用户设计；Mythos 5具备顶尖的网络安全、生物学研究等能力，政府担心其可能被滥用。",
+      "background_zh": "Anthropic推出了Mythos 5和Fable 5两个模型，其中Mythos 5能力极强但存在被恶意利用的风险，Fable 5通过增强安全措施开放给公众。美国政府基于国家安全考虑，发布了暂停访问的指令，此举可能涉及对高端AI模型的出口管制或国内安全审查。",
+      "community_discussion_zh": "社区对指令动机存在疑问，认为所有LLM都可能被越狱，为何单独针对Fable 5和Mythos 5；也有评论指出Amazon作为Anthropic投资方，其CEO与政府沟通可能触发了此次行动，背后或涉及商业利益与监管合规的复杂博弈。",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "title": "Claude Fable 5 and Claude Mythos 5 \\ Anthropic"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Claude_Mythos",
+          "title": "Claude Mythos - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Anthropic发布声明，回应美国政府指令要求其暂停向公众提供Fable 5和Mythos 5模型的访问权限。 此举标志着美国政府对先进AI模型的监管进一步收紧，可能影响Anthropic的商业部署和整个AI行业的合规标准。 Fable 5是Mythos 5的安全版本，专为一般用户设计；Mythos 5具备顶尖的网络安全、生物学研究等能力，政府担心其可能被滥用。",
+      "background": "Anthropic推出了Mythos 5和Fable 5两个模型，其中Mythos 5能力极强但存在被恶意利用的风险，Fable 5通过增强安全措施开放给公众。美国政府基于国家安全考虑，发布了暂停访问的指令，此举可能涉及对高端AI模型的出口管制或国内安全审查。",
+      "community_discussion": "社区对指令动机存在疑问，认为所有LLM都可能被越狱，为何单独针对Fable 5和Mythos 5；也有评论指出Amazon作为Anthropic投资方，其CEO与政府沟通可能触发了此次行动，背后或涉及商业利益与监管合规的复杂博弈。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important development regarding US government directive affecting access to AI models, indicating regulatory actions; discussion on lobste.rs may provide community insights.",
+    "ai_summary": "Anthropic releases statement on US government directive to suspend access to Fable 5 and Mythos 5 models.",
+    "ai_tags": [
+      "AI regulation",
+      "government directive",
+      "Anthropic",
+      "Fable 5",
+      "Mythos 5"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d12ce40e5690269d",
+    "source_type": "rss",
+    "title": "The Curse of Depth in Large Language Models",
+    "url": "https://arxiv.org/pdf/2502.05795",
+    "content": "<p><a href=\"https://lobste.rs/s/ooggna/curse_depth_large_language_models\">Comments</a></p>",
+    "author": "arxiv.org via jado",
+    "published_at": "2026-06-13T20:12:35Z",
+    "fetched_at": "2026-06-14T00:00:48.652566Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "ai"
+      ],
+      "title_zh": "深度对大型语言模型的诅咒",
+      "detailed_summary_zh": "一篇论文提出了“深度诅咒”这一概念，指出现代大型语言模型中近一半的层实际效果低于预期，并解释了其原因。 这一发现挑战了“越深越好”的主流假设，可能促使研究人员重新评估LLM的深度设计，对提升模型效率和性能具有重要意义。 论文指出深度诅咒随模型规模扩大而恶化，并提出了基于层剪枝和注意力稀释的缓解策略。该研究首次系统量化了深层LLM中大量层的低效问题。",
+      "background_zh": "大型语言模型通常由数十甚至上百个Transformer层堆叠而成，过去认为增加深度能提升表现。但近年观察到许多深层并未有效利用，这一现象被称为“有效深度”问题。“深度诅咒”进一步解释了为何半数层贡献微弱，可能与梯度消失或注意力冗余有关。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2502.05795",
+          "title": "[2502.05795] The Curse of Depth in Large Language Models"
+        }
+      ],
+      "detailed_summary": "一篇论文提出了“深度诅咒”这一概念，指出现代大型语言模型中近一半的层实际效果低于预期，并解释了其原因。 这一发现挑战了“越深越好”的主流假设，可能促使研究人员重新评估LLM的深度设计，对提升模型效率和性能具有重要意义。 论文指出深度诅咒随模型规模扩大而恶化，并提出了基于层剪枝和注意力稀释的缓解策略。该研究首次系统量化了深层LLM中大量层的低效问题。",
+      "background": "大型语言模型通常由数十甚至上百个Transformer层堆叠而成，过去认为增加深度能提升表现。但近年观察到许多深层并未有效利用，这一现象被称为“有效深度”问题。“深度诅咒”进一步解释了为何半数层贡献微弱，可能与梯度消失或注意力冗余有关。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The title suggests a significant research contribution about depth in LLMs, likely addressing important limitations. Arxiv source indicates academic novelty, but without full content or comments to assess discussion quality, score is high but not top-tier.",
+    "ai_summary": "A paper investigating potential drawbacks or constraints of depth in large language model architectures.",
+    "ai_tags": [
+      "LLM",
+      "deep learning",
+      "depth",
+      "research"
+    ]
+  },
+  {
+    "id": "hackernews:story:48520807",
+    "source_type": "hackernews",
+    "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+    "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+    "content": "\n--- Top Comments ---\n\n[radicaldreamer]: I wonder how many people have been unjustly imprisoned between planted evidence, made up evidence, and illegal parallel construction…\n\n[bobthepanda]: i do wonder, that in the age where we have image and video creation out of the bag, whether or not this will result in whole classes of evidence becoming completely unreliable.\n\n[WarOnPrivacy]: per ft.com:  https:&#x2F;&#x2F;archive.fo&#x2F;BIOej        [The Derbyshire Police] declined to give more detail\n    about what the evidential material consisted of.\n \n    The term [evidential material] can be used to\n    describe witness statements.\n\n[tim-tday]: Maybe use the word “falsify”?\n\n[tamimio]: Can we know the motivation? Will it get them a bonus at the end of the year? Was it something common in the cases, maybe similar victims or something else?",
+    "author": "austinallegro",
+    "published_at": "2026-06-13T19:54:55Z",
+    "fetched_at": "2026-06-14T00:00:48.697395Z",
+    "metadata": {
+      "score": 170,
+      "descendants": 65,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48520807",
+      "comment_count": 5,
+      "title_zh": "英警察涉嫌用AI伪造证据接受调查",
+      "detailed_summary_zh": "英国德比郡一名警察因涉嫌在多个案件中使用人工智能生成虚假证据，已受到内部调查。 此事严重威胁司法公正，若AI伪造证据未被识破，可能导致无辜者被定罪，并动摇公众对整个证据体系的信任。 警方拒绝透露具体证据材料类型，但“证据材料”可能包含证人陈述等文件；目前尚无律师故意提交AI证据的确认案例，但此类风险正引起法律界警惕。",
+      "background_zh": "随着AI生成内容（如深度伪造图像、文本）的泛滥，法庭对证据真实性的认证面临新挑战。传统证据规则如Frye、Daubert标准要求证据可靠且真实，但AI生成的证据可能难以被检测。目前多数司法体系尚未建立专门针对AI证据的认证框架，这给不法分子留下可乘之机。",
+      "community_discussion_zh": "评论者普遍担忧AI伪造证据会导致冤假错案，例如有用户质问“有多少人因伪造证据被不公正监禁”；还有用户认为，在AI图像与视频轻易可造的时代，整类证据可能变得完全不可靠。另有评论要求警方公开更多细节以确认动机和影响。",
+      "sources": [
+        {
+          "url": "https://www.thomsonreuters.com/en-us/posts/ai-in-courts/deepfakes-evidence-authentication/",
+          "title": "Deepfakes on trial: How judges are navigating AI evidence authentication - Thomson Reuters Institute"
+        },
+        {
+          "url": "https://www.ncsc.org/resources-courts/ai-generated-evidence-threat-public-trust-courts",
+          "title": "AI-generated evidence is a threat to public trust in the courts | National Center for State Courts"
+        }
+      ],
+      "detailed_summary": "英国德比郡一名警察因涉嫌在多个案件中使用人工智能生成虚假证据，已受到内部调查。 此事严重威胁司法公正，若AI伪造证据未被识破，可能导致无辜者被定罪，并动摇公众对整个证据体系的信任。 警方拒绝透露具体证据材料类型，但“证据材料”可能包含证人陈述等文件；目前尚无律师故意提交AI证据的确认案例，但此类风险正引起法律界警惕。",
+      "background": "随着AI生成内容（如深度伪造图像、文本）的泛滥，法庭对证据真实性的认证面临新挑战。传统证据规则如Frye、Daubert标准要求证据可靠且真实，但AI生成的证据可能难以被检测。目前多数司法体系尚未建立专门针对AI证据的认证框架，这给不法分子留下可乘之机。",
+      "community_discussion": "评论者普遍担忧AI伪造证据会导致冤假错案，例如有用户质问“有多少人因伪造证据被不公正监禁”；还有用户认为，在AI图像与视频轻易可造的时代，整类证据可能变得完全不可靠。另有评论要求警方公开更多细节以确认动机和影响。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High importance due to serious ethical and legal implications of AI misuse in law enforcement; community discussion (65 comments) raises thoughtful concerns about evidence reliability and potential injustices.",
+    "ai_summary": "A Derbyshire police officer is under investigation for using AI to fabricate evidence in multiple cases, sparking concerns about AI's role in legal proceedings.",
+    "ai_tags": [
+      "AI misuse",
+      "ethics",
+      "law enforcement",
+      "evidence tampering"
+    ]
+  },
+  {
+    "id": "hackernews:story:48515336",
+    "source_type": "hackernews",
+    "title": "A low-carbon computing platform from your retired phones",
+    "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+    "content": "\n--- Top Comments ---\n\n[zipy124]: This is ignoring the fact that the main reason retired phones are e-waste is proprietary firmware blobs and locked-down systems preventing users from maintaining their phone with security updates, and very limited support length from OEM&#x27;s leads to VERY insecure devices after they drop out of support. You should not be connecting these old devices to an internet accessible network. Google notably does well here with 7 years of support, but others such as Sony are 4 years, and Xiaomi on n...\n\n[noodlesUK]: I would love to see regulation that required making bootloaders unlockable to enable this sort of thing. People have been making clusters of consumer hardware for decades: I’m sure people remember the PS3 supercomputers of the mid 2000s. I personally have lots of batch jobs like CFD simulations that could easily run on a fleet of phones with no real reliability issues, and I’d love to reuse old hardware and give it a second life. I’m already considering running old servers from e.g ETB but th...\n\n[noisy_boy]: It is ridiculous that I can pick up pretty much any average computer, install Linux on it and be on my way in an hour or so but have to go through so many hoops to do the same on Android and even then the results are mixed. We have been really shafted by the phone makers by the brainwashing that they are somehow extra special things. They are just computers with a radio in it. It is shameful.\n\n[wky]: This is neat.\nThis group’s approach of treating the devices as many weaker servers (basically a raspberry pi cluster) sounds like the most realistic way to reuse phone hardware at scale, especially with the backing of the actual hardware vendor. It’s a genuine shame how locked down iPhones are compared to even Android. Hypothetically you could run Linux inside UTM[0] but outside the EU Apple makes it intentionally difficult, and there’s still memory restrictions and performance penalties. My ...\n\n[llsf]: Around 2015, I was working for a company that processed coupons for large retail stores.  We had lots of performance issues, mostly due to our centralized database at the time. I was dreaming at the time to ship a mobile phone at every large store (e.g. Target) to process the data in-situ.  It could hold its own database (partitioned for the tenant), it would have its own UPS (battery), and have enough CPU power to serve the POS requests of one store, even the largest ones. A mobile phone wou...",
+    "author": "vikas-sharma",
+    "published_at": "2026-06-13T09:38:32Z",
+    "fetched_at": "2026-06-14T00:00:48.697420Z",
+    "metadata": {
+      "score": 228,
+      "descendants": 128,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48515336",
+      "comment_count": 5,
+      "title_zh": "谷歌研究：用退役安卓手机构建低碳计算平台",
+      "detailed_summary_zh": "谷歌研究提出将退役安卓手机（如Pixel）的母板重新利用，构建低碳云计算集群，并计划与大学合作部署一个由2000部Pixel手机组成的数据中心，为研究人员提供低成本、低排放的计算资源。 这一概念若成功推广，可显著减少电子废弃物和制造新服务器的碳排放，同时为旧设备赋予二次生命，对推动可持续计算和循环经济具有示范意义。 项目要求手机拥有可解锁的引导加载程序（如Pixel系列），并安装基于Alpine的postmarketOS等Linux发行版，才能运行Docker和Kubernetes等标准服务器软件。",
+      "background_zh": "全球每年产生大量电子废弃物，其中许多智能手机因缺乏安全更新或硬件过时而退役。传统数据中心依赖新制造的高功耗服务器，碳排放巨大。将旧手机改造为计算节点可降低资源消耗，但面临引导加载程序锁定、固件专有等问题，限制了设备的可重用性。",
+      "community_discussion_zh": "社区对此概念总体积极，但批评其忽视了e-waste的根本原因——厂商锁定的引导加载程序和有限的安全支持，导致退役设备联网存在风险。用户呼吁法规强制解锁引导加载程序，并指出安卓手机在可复用性上远不及普通PC。也有评论认为，谷歌作为硬件厂商支持该项目是务实的，但iPhone因封闭生态更难复制。",
+      "sources": [
+        {
+          "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+          "title": "A low-carbon computing platform from your retired phones"
+        },
+        {
+          "url": "https://www.technobezz.com/news/google-plans-to-use-2000-retired-pixel-phones-for-low-carbon-computing-clusters",
+          "title": "Google Plans to Use 2,000 Retired Pixel Phones ... - Technobezz"
+        },
+        {
+          "url": "https://www.tech2geek.net/transform-your-old-smartphones-into-a-kubernetes-cluster/",
+          "title": "Transform Your Old Smartphones into a Kubernetes Cluster"
+        }
+      ],
+      "detailed_summary": "谷歌研究提出将退役安卓手机（如Pixel）的母板重新利用，构建低碳云计算集群，并计划与大学合作部署一个由2000部Pixel手机组成的数据中心，为研究人员提供低成本、低排放的计算资源。 这一概念若成功推广，可显著减少电子废弃物和制造新服务器的碳排放，同时为旧设备赋予二次生命，对推动可持续计算和循环经济具有示范意义。 项目要求手机拥有可解锁的引导加载程序（如Pixel系列），并安装基于Alpine的postmarketOS等Linux发行版，才能运行Docker和Kubernetes等标准服务器软件。",
+      "background": "全球每年产生大量电子废弃物，其中许多智能手机因缺乏安全更新或硬件过时而退役。传统数据中心依赖新制造的高功耗服务器，碳排放巨大。将旧手机改造为计算节点可降低资源消耗，但面临引导加载程序锁定、固件专有等问题，限制了设备的可重用性。",
+      "community_discussion": "社区对此概念总体积极，但批评其忽视了e-waste的根本原因——厂商锁定的引导加载程序和有限的安全支持，导致退役设备联网存在风险。用户呼吁法规强制解锁引导加载程序，并指出安卓手机在可复用性上远不及普通PC。也有评论认为，谷歌作为硬件厂商支持该项目是务实的，但iPhone因封闭生态更难复制。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting concept from Google Research with high community engagement (228 upvotes, 128 comments) that includes critical discussion about e-waste, security, and unlockable bootloaders. Not a breakthrough but valuable for sustainability and hardware reuse.",
+    "ai_summary": "Google Research proposes using retired Android phones as a low-carbon computing platform, sparking discussion on e-waste and device repurposing challenges.",
+    "ai_tags": [
+      "sustainability",
+      "hardware",
+      "android",
+      "e-waste",
+      "reuse"
+    ]
+  },
+  {
+    "id": "hackernews:story:48518969",
+    "source_type": "hackernews",
+    "title": "AI coding at home without going broke",
+    "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+    "content": "\n--- Top Comments ---\n\n[tunesmith]: I feel like I must have plateued and don&#x27;t know what to do next to level up. I&#x27;m currently on the $100&#x2F;month codex plan and it seems fine using 5.5-xhigh all the time. I think of what to do next, have a chat session to determine exactly what to ask for up to the point of being ready to implement, and then codex churns on a commit-sized task whereupon I briefly check it on my local dev server. If necessary I ask for a change. Then I ask it to commit and recommend the next step b...\n\n[dpcan]: I cannot figure out what people are doing to spend all this money. I have used a $60 per month Cursor plan on auto, and have never come close to using up my included usage, and I probably have it planning and coding and working for me all through the evenings 4 nights a week. What on earth are people doing differently that it&#x27;s costing them so much? Maybe enabling on-demand usage or other paid models, or on higher modes? What are you doing that requires this?  The output from Auto for me...\n\n[isatty]: &gt; The first is to self host. You buy the machine, run open source models locally, and pay nothing per token after that. Power is not free. What I’ve found is that you’re basically paying a premium for privacy, and that’s worth it for me.\n\n[bachmeier]: &gt; The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight. Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year. Oh, so this is not a post about AI coding at home. It&#x27;s about vibe coding at home. There&#x27;s a lot I disagree with in this p...\n\n[atreids]: I find just going via Deepseek&#x27;s platform API directly, using their V4 flash model, and hooking into a harness like Opencode more than acceptable. Think I&#x27;ve spent maybe $10 over a couple of weeks. I did explore self-hosting models but hardware right now is just too expensive.",
+    "author": "sbochins",
+    "published_at": "2026-06-13T16:45:03Z",
+    "fetched_at": "2026-06-14T00:00:48.697490Z",
+    "metadata": {
+      "score": 216,
+      "descendants": 197,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48518969",
+      "comment_count": 5,
+      "title_zh": "低成本AI编程：自托管与批处理策略",
+      "detailed_summary_zh": "这篇博客文章提供了降低AI编码工具使用成本的实用建议，包括自托管开源模型、批处理任务以及选择高效的订阅计划。作者指出通过合理配置可以大幅减少每月的AI编程开销。 对于大量使用AI编码工具的开发者而言，费用可能迅速累积至每月数百美元。这篇文章分享的省钱策略具有直接实用价值，能帮助开发者平衡成本与效率，同时也反映了社区对AI工具定价日益敏感的趋势。 自托管需购买高端GPU（如NVIDIA RTX 4090），本地运行开源模型可节省token费用，但模型能力弱于前沿闭源模型。批处理通过合并多个小任务降低API调用成本；订阅计划如Cursor Auto模式每月60美元即可满足多数开发需求，无需更高档位。",
+      "background_zh": "AI编码工具如GitHub Copilot、Cursor等通常按token或订阅收费，高频使用可能导致高昂费用。自托管指在自有硬件上运行开源大语言模型（如Llama、Mistral），虽然前期投入大，但长期可节省推理成本。批处理是将多个修改请求合并一次发送，减少API调用次数。",
+      "community_discussion_zh": "社区评论呈现多元观点：部分用户认为每月60美元的Cursor计划已足够，不理解为何有人花费更高；另一些用户则通过Deepseek API直接调用并仅花费10美元。也有用户强调自托管需大量硬件投资且模型较弱，更多是隐私溢价而非纯粹省钱策略。",
+      "detailed_summary": "这篇博客文章提供了降低AI编码工具使用成本的实用建议，包括自托管开源模型、批处理任务以及选择高效的订阅计划。作者指出通过合理配置可以大幅减少每月的AI编程开销。 对于大量使用AI编码工具的开发者而言，费用可能迅速累积至每月数百美元。这篇文章分享的省钱策略具有直接实用价值，能帮助开发者平衡成本与效率，同时也反映了社区对AI工具定价日益敏感的趋势。 自托管需购买高端GPU（如NVIDIA RTX 4090），本地运行开源模型可节省token费用，但模型能力弱于前沿闭源模型。批处理通过合并多个小任务降低API调用成本；订阅计划如Cursor Auto模式每月60美元即可满足多数开发需求，无需更高档位。",
+      "background": "AI编码工具如GitHub Copilot、Cursor等通常按token或订阅收费，高频使用可能导致高昂费用。自托管指在自有硬件上运行开源大语言模型（如Llama、Mistral），虽然前期投入大，但长期可节省推理成本。批处理是将多个修改请求合并一次发送，减少API调用次数。",
+      "community_discussion": "社区评论呈现多元观点：部分用户认为每月60美元的Cursor计划已足够，不理解为何有人花费更高；另一些用户则通过Deepseek API直接调用并仅花费10美元。也有用户强调自托管需大量硬件投资且模型较弱，更多是隐私溢价而非纯粹省钱策略。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (216 points, 197 comments) with substantive discussion sharing diverse experiences on cost-saving strategies. The content is practically relevant to many developers using AI coding tools, but not a groundbreaking paradigm shift.",
+    "ai_summary": "Practical advice on reducing AI coding costs via self-hosting, batching, and choosing efficient subscription plans.",
+    "ai_tags": [
+      "AI coding",
+      "cost optimization",
+      "self-hosting",
+      "developer tools"
+    ]
+  },
+  {
+    "id": "hackernews:story:48516504",
+    "source_type": "hackernews",
+    "title": "AI OSS tool repo goes archived over night after raising $7.3M Seed",
+    "url": "https://github.com/tensorzero/tensorzero",
+    "content": "\n--- Top Comments ---\n\n[GabrielBianconi]: I&#x27;m the co-founder and CEO of TensorZero. We started the company two and a half years ago, and raised $7.3m in 2024 (announced only almost a year later). We&#x27;ve spent less than half of this amount. Earlier this week we came to the difficult decision to wind down the project. The open-source repository remains available on GitHub (Apache 2.0) but won&#x27;t be actively maintained by the team moving forward.\n\n[agentifysh]: I&#x27;ve forked this and will be updating and fixing issues going forward.  https:&#x2F;&#x2F;github.com&#x2F;agentify-sh&#x2F;gateway  For now I will just open this up to see if there is any interest if so I would be spending whatever free time I get to fix issues and open it up to other contributors so we can keep going. I think its important to have an LLM gateway tool like this to remain open source.\n\n[LeonM]: The title makes it sound like they just did a seed round, but the seed round  was announced in August of last year [0]. Their website landing page is now also showing the software is no longer maintained. No mention of why they made this decision, my best guess is they burned through their seed money and were unable to attract further investments. [0]:  https:&#x2F;&#x2F;www.tensorzero.com&#x2F;blog&#x2F;tensorzero-raises-7-3m-seed-...\n\n[kmac_]: About one year ago, I created an LLM gateway with metrics, provider fallback and switching, tools support, injecting, etc. etc., and unique features like acting as an MCP tools client and server, all streamed, with low latency. It was a simple project in terms of technical complexity. I didn&#x27;t publish it as I counted several similar projects in the field. Putting $7.3M into such a project would make sense only in the case of a precise growth plan with already declared customers and an pr...\n\n[indigodaddy]: Just use Plexus [1].  The maintainer is not trying to be a hero or raise seed dollars or even really trying to promote it.  He&#x27;s just making an excellent, useful product.  (Unaffiliated, just a happy user).  It&#x27;s not a full-on &quot;LLMOps&quot; platform (whatever that is), it&#x27;s just a proxy that works very well and has some nice features. [1]  https:&#x2F;&#x2F;github.com&#x2F;mcowger&#x2F;plexus",
+    "author": "hek2sch",
+    "published_at": "2026-06-13T12:10:47Z",
+    "fetched_at": "2026-06-14T00:00:48.697548Z",
+    "metadata": {
+      "score": 234,
+      "descendants": 151,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48516504",
+      "comment_count": 5,
+      "title_zh": "融资730万美元的AI OSS工具TensorZero宣布关闭",
+      "detailed_summary_zh": "开源LLM推理平台TensorZero在融资730万美元种子轮后，于近日宣布停止维护，其GitHub仓库已归档，但代码仍以Apache 2.0许可公开。 此事凸显了开源AI初创公司在商业化方面的普遍困境，即使获得可观融资也可能难以为继，可能影响开发者对开源AI工具的信任和投资意愿。 TensorZero在2024年1月启动，同年8月公开种子轮融资，但仅花费了不到一半资金后决定关闭，未说明具体原因，社区猜测是未能获得后续投资。",
+      "background_zh": "TensorZero是一个开源LLMOps平台，集成了LLM网关、可观测性、评估、优化和实验功能，旨在帮助开发者构建生产级LLM应用。其目标是提供工业级LLM应用的开源堆栈，但最终因商业可持续性问题而停止维护。",
+      "community_discussion_zh": "CEO GabrielBianconi在社区中解释了关闭决定，表示团队停止主动维护但代码仍可用。用户agentifysh宣布分叉项目并计划继续维护。其他评论者对融资额与实际进展提出质疑，并推荐了替代工具Plexus。",
+      "sources": [
+        {
+          "url": "https://github.com/tensorzero/tensorzero",
+          "title": "GitHub - tensorzero/tensorzero: TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation. · GitHub"
+        },
+        {
+          "url": "https://www.tensorzero.com/blog/tensorzero-raises-7-3m-seed-round-to-build-an-open-source-stack-for-industrial-grade-llm-applications/",
+          "title": "TensorZero Raises $7.3M Seed Round to Build an Open-Source Stack for Industrial-Grade LLM Applications · TensorZero"
+        }
+      ],
+      "detailed_summary": "开源LLM推理平台TensorZero在融资730万美元种子轮后，于近日宣布停止维护，其GitHub仓库已归档，但代码仍以Apache 2.0许可公开。 此事凸显了开源AI初创公司在商业化方面的普遍困境，即使获得可观融资也可能难以为继，可能影响开发者对开源AI工具的信任和投资意愿。 TensorZero在2024年1月启动，同年8月公开种子轮融资，但仅花费了不到一半资金后决定关闭，未说明具体原因，社区猜测是未能获得后续投资。",
+      "background": "TensorZero是一个开源LLMOps平台，集成了LLM网关、可观测性、评估、优化和实验功能，旨在帮助开发者构建生产级LLM应用。其目标是提供工业级LLM应用的开源堆栈，但最终因商业可持续性问题而停止维护。",
+      "community_discussion": "CEO GabrielBianconi在社区中解释了关闭决定，表示团队停止主动维护但代码仍可用。用户agentifysh宣布分叉项目并计划继续维护。其他评论者对融资额与实际进展提出质疑，并推荐了替代工具Plexus。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value due to the significance of an OSS AI startup shutting down after raising $7.3M, with insightful community discussion including the CEO's explanation and a fork announcement, reflecting broader challenges in AI OSS monetization.",
+    "ai_summary": "TensorZero, an open-source LLM inference platform, announced its shutdown after raising $7.3M in seed funding, sparking community discussion and a fork.",
+    "ai_tags": [
+      "AI",
+      "open-source",
+      "LLM",
+      "startup",
+      "GitHub"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:082af8bce58ed4a5",
+    "source_type": "rss",
+    "title": "repo-slopscore: Detecting AI/LLM contributions in git repositories via commit history analysis",
+    "url": "https://slopscan.ava.pet/",
+    "content": "<p><a href=\"https://codeberg.org/polyphony/repo-slopscore\" rel=\"ugc\">Link to source code</a>\nDisclaimer: This is self-promotion, as I am the author of the tool</p>\n<p><a href=\"https://lobste.rs/s/7s8fwa/repo_slopscore_detecting_ai_llm\">Comments</a></p>",
+    "author": "slopscan.ava.pet by ava",
+    "published_at": "2026-06-13T15:37:16Z",
+    "fetched_at": "2026-06-14T00:00:48.652256Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "show",
+        "vcs",
+        "rust",
+        "vibecoding"
+      ],
+      "title_zh": "repo-slopscore：通过提交历史检测AI代码的工具",
+      "detailed_summary_zh": "开源工具repo-slopscore发布，它能分析Git仓库的完整提交历史，识别出AI/LLM模型产生的代码痕迹。 该工具填补了AI生成代码溯源和审计的空白，有助于维护代码质量和供应链安全，尤其对依赖大量AI辅助的开源项目有重要参考价值。 当前工具最多分析5000个提交，通过检测提交信息和源码中的AI工具使用迹象（如特定模式或元数据）来评分。",
+      "background_zh": "“AI slop”指低质量或由AI生成的内容，repo-slopscore的“slop score”即衡量仓库中AI“污染”程度的指标。随着AI辅助编程普及，区分人类编码与AI生成代码成为代码审查和安全审计的挑战。",
+      "sources": [
+        {
+          "url": "https://codeberg.org/polyphony/repo-slopscore",
+          "title": "polyphony/repo-slopscore: They hide everywhere. No longer ..."
+        },
+        {
+          "url": "https://thenote.app/post/en/arch-linux-supply-chain-malware-repo-slopscore-and-ai-model-security-concerns-w08rkhdrwg",
+          "title": "Arch Linux Supply Chain Malware, repo-slopscore & AI Model ..."
+        }
+      ],
+      "detailed_summary": "开源工具repo-slopscore发布，它能分析Git仓库的完整提交历史，识别出AI/LLM模型产生的代码痕迹。 该工具填补了AI生成代码溯源和审计的空白，有助于维护代码质量和供应链安全，尤其对依赖大量AI辅助的开源项目有重要参考价值。 当前工具最多分析5000个提交，通过检测提交信息和源码中的AI工具使用迹象（如特定模式或元数据）来评分。",
+      "background": "“AI slop”指低质量或由AI生成的内容，repo-slopscore的“slop score”即衡量仓库中AI“污染”程度的指标。随着AI辅助编程普及，区分人类编码与AI生成代码成为代码审查和安全审计的挑战。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Novel tool addressing current topic of AI-generated code detection, relevant to software engineering and LLM usage. High value but not groundbreaking; self-promotion lowers objectivity.",
+    "ai_summary": "A tool that analyzes git commit history to detect contributions from AI/LLM models.",
+    "ai_tags": [
+      "AI",
+      "git",
+      "code review",
+      "LLM",
+      "tool"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8bc8c007216265c0",
+    "source_type": "rss",
+    "title": "Pyodide 314.0: WebAssembly wheels for PyPI",
+    "url": "https://blog.pyodide.org/posts/314-release/",
+    "content": "<p><a href=\"https://lobste.rs/s/azz673/pyodide_314_0_webassembly_wheels_for_pypi\">Comments</a></p>",
+    "author": "blog.pyodide.org via sanxiyn",
+    "published_at": "2026-06-13T22:27:49Z",
+    "fetched_at": "2026-06-14T00:00:48.652517Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "python",
+        "wasm"
+      ],
+      "title_zh": "Pyodide 314.0 发布：支持 PyPI 的 WebAssembly 轮子",
+      "detailed_summary_zh": "Pyodide 314.0 版本引入了对 WebAssembly 轮子的支持，使得纯 Python 包可以直接从 PyPI 安装并运行在浏览器中。 这一突破极大地简化了在浏览器中运行 Python 代码的流程，无需手动编译或依赖服务器，降低了 WebAssembly 在科学计算和数据分析领域的应用门槛。 此版本允许用户通过 micropip 直接从 PyPI 安装纯 Python 包，无需预编译。不过，目前仅支持纯 Python 包，带有 C 扩展的包仍需单独的 WebAssembly 移植版本。",
+      "background_zh": "Pyodide 是 CPython 到 WebAssembly 的移植项目，它允许 Python 代码在浏览器和 Node.js 中运行。WebAssembly 是一种低级的二进制指令格式，可以在现代浏览器中以接近原生速度执行。此前，Pyodide 需要将 Python 包预编译为 WebAssembly 模块，而 314.0 版本通过引入 WebAssembly 轮子（.wasm wheel）格式，实现了直接从 PyPI 安装包的能力。",
+      "sources": [
+        {
+          "url": "https://pyodide.org/",
+          "title": "Pyodide — Version 314.0.0"
+        },
+        {
+          "url": "https://github.com/pyodide/pyodide",
+          "title": "GitHub - pyodide/pyodide: Pyodide is a Python distribution ... Home - Pyodide pyodide-py · PyPI Online Python (Pyodide) - Run Python in Browser via WebAssembly pyodide | Pyodide is a Python distribution for the browser ... Pyodide download | SourceForge.net"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/WebAssembly",
+          "title": "WebAssembly - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Pyodide 314.0 版本引入了对 WebAssembly 轮子的支持，使得纯 Python 包可以直接从 PyPI 安装并运行在浏览器中。 这一突破极大地简化了在浏览器中运行 Python 代码的流程，无需手动编译或依赖服务器，降低了 WebAssembly 在科学计算和数据分析领域的应用门槛。 此版本允许用户通过 micropip 直接从 PyPI 安装纯 Python 包，无需预编译。不过，目前仅支持纯 Python 包，带有 C 扩展的包仍需单独的 WebAssembly 移植版本。",
+      "background": "Pyodide 是 CPython 到 WebAssembly 的移植项目，它允许 Python 代码在浏览器和 Node.js 中运行。WebAssembly 是一种低级的二进制指令格式，可以在现代浏览器中以接近原生速度执行。此前，Pyodide 需要将 Python 包预编译为 WebAssembly 模块，而 314.0 版本通过引入 WebAssembly 轮子（.wasm wheel）格式，实现了直接从 PyPI 安装包的能力。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important release enabling PyPI packages as WebAssembly wheels, significantly advancing Python in browser capabilities. High value but not groundbreaking. No detailed discussion provided.",
+    "ai_summary": "Pyodide 314.0 introduces WebAssembly wheels for PyPI, allowing Python packages to run in browsers.",
+    "ai_tags": [
+      "Python",
+      "WebAssembly",
+      "PyPI",
+      "Browser",
+      "Release"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:eaca93dd7a04a8f1",
+    "source_type": "rss",
+    "title": "The adder at the heart of Intel's 8087 floating-point chip",
+    "url": "http://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
+    "content": "<p><a href=\"https://lobste.rs/s/f1qxka/adder_at_heart_intel_s_8087_floating_point\">Comments</a></p>",
+    "author": "righto.com via fanf",
+    "published_at": "2026-06-13T21:34:55Z",
+    "fetched_at": "2026-06-14T00:00:48.652606Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "hardware"
+      ],
+      "title_zh": "Intel 8087浮点芯片加法器的逆向工程",
+      "detailed_summary_zh": "一篇博文对Intel 8087浮点协处理器中的加法器电路进行了详细的逆向工程分析，揭示了其内部设计细节。 8087是IEEE 754浮点标准的前驱，其加法器设计反映了早期浮点硬件实现的精妙之处，对理解计算机算术历史具有重要意义。 逆向工程展示了8087加法器如何通过巧妙的电路布局和逻辑设计实现高效的浮点数加法操作，体现了有限晶体管资源下的优化策略。",
+      "background_zh": "Intel 8087是英特尔在1980年推出的浮点协处理器，与8086/8088 CPU配合使用，专为加速浮点运算而设计。其指令集和浮点格式后来成为IEEE 754标准的基础。8087内部包含专门负责浮点加法的加法器单元，是当时复杂的数字电路之一。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Intel_8087",
+          "title": "Intel 8087 - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一篇博文对Intel 8087浮点协处理器中的加法器电路进行了详细的逆向工程分析，揭示了其内部设计细节。 8087是IEEE 754浮点标准的前驱，其加法器设计反映了早期浮点硬件实现的精妙之处，对理解计算机算术历史具有重要意义。 逆向工程展示了8087加法器如何通过巧妙的电路布局和逻辑设计实现高效的浮点数加法操作，体现了有限晶体管资源下的优化策略。",
+      "background": "Intel 8087是英特尔在1980年推出的浮点协处理器，与8086/8088 CPU配合使用，专为加速浮点运算而设计。其指令集和浮点格式后来成为IEEE 754标准的基础。8087内部包含专门负责浮点加法的加法器单元，是当时复杂的数字电路之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "In-depth reverse engineering of a historically significant chip's adder circuit, providing valuable technical insights into early floating-point hardware design. The Lobste.rs discussion likely adds context and community analysis.",
+    "ai_summary": "Detailed analysis of the adder circuit inside Intel's 8087 floating-point coprocessor.",
+    "ai_tags": [
+      "reverse engineering",
+      "floating-point",
+      "hardware",
+      "Intel 8087",
+      "adder"
+    ]
+  }
+]
