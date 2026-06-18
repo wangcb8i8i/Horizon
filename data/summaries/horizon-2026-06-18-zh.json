@@ -1,0 +1,1145 @@
+[
+  {
+    "id": "hackernews:story:48568058",
+    "source_type": "hackernews",
+    "title": "U.S. science is in chaos",
+    "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
+    "content": "\n--- Top Comments ---\n\n[dwa3592]: My wife operates an optical trap (a sophisticated microscope, she uses it for studying gene&#x2F;dna physical properties) and she&#x27;s pretty good at working with that instrument. The number of people good at working that microscope are in the ballpark of 2000 (+- 1000) in the world! She has cried a lot in the last one year for the mess science research has become. We are moving out of the country at the end of August.\n\n[Schlagbohrer]: My friends from grad school who went on to become professors tell me that not only did their grant funding dry up, but they were unable to follow through on hiring many of the grad students they had planned to hire, since the students came from foreign countries and faced new visa restrictions. So the money for science is gone, the people to do to the science are gone, and the institutions continue to not support their researchers, workers, and communities. It&#x27;s the death of research in ...\n\n[hgoel]: Last year, the mood in my field, that has been relatively isolated from many of these impacts, was still very &quot;these are uncomfortable times, but it&#x27;s still possible to pull through&quot;. Recently, you can cut the tension in a room with a knife whenever matters relating to government decision making come up. Some coworkers are leaving science, promising phds and postdocs leaving to other countries, many of the more established scientists are maintaining backup options. I too have r...\n\n[setgree]: I work at a research lab that was previously supported by an R01 grant that did not get renewed last year. It’s been tough and the staff (including me) have been moved to part-time employment. However, it also made us put ourselves out there and fundraise, which led to  new connections and new opportunities. So yes, it’s been chaotic, but like Petyr Baelish says, chaos is a ladder.\n\n[Rebuff5007]: &gt; whether there are black holes at a redshift of 10 or not is not a partisan issue. Anything that depends on a basic understanding of the scientific process, and resulting scientific facts is  absolutely  a partisan issue right now.",
+    "author": "presspot",
+    "published_at": "2026-06-17T09:54:21Z",
+    "fetched_at": "2026-06-18T00:10:20.134266Z",
+    "metadata": {
+      "score": 621,
+      "descendants": 709,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48568058",
+      "comment_count": 5,
+      "title_zh": "美国科学陷入混乱危机",
+      "detailed_summary_zh": "美国科学界正面临资金削减、签证限制和机构不稳定的多重打击，导致大量研究人员离开美国或彻底放弃科研事业。 这一危机将严重削弱美国的科研创新能力和全球领导地位，并可能引发长期的人才流失和科技竞争力下降。 评论中提到的案例包括：一位操作光学陷阱的研究人员因科研环境恶化而计划移民；许多教授的资助枯竭，且因签证限制无法雇佣外国研究生；科研人员普遍感到焦虑，并开始寻找备选出路。",
+      "background_zh": "美国科研长期依赖联邦政府拨款（如国立卫生研究院的R01项目）、国际人才流动和稳定的机构支持。近年来，政策变化和预算削减破坏了这一体系，导致科研环境急剧恶化，甚至被视为“科学死亡”。",
+      "community_discussion_zh": "评论中普遍弥漫着悲观和焦虑情绪。多位用户讲述了自身或身边人被迫离开科研或美国的故事，认为这是系统性崩溃。但也有少数人认为混乱中仍有机遇，比如通过非传统渠道获得资助。",
+      "detailed_summary": "美国科学界正面临资金削减、签证限制和机构不稳定的多重打击，导致大量研究人员离开美国或彻底放弃科研事业。 这一危机将严重削弱美国的科研创新能力和全球领导地位，并可能引发长期的人才流失和科技竞争力下降。 评论中提到的案例包括：一位操作光学陷阱的研究人员因科研环境恶化而计划移民；许多教授的资助枯竭，且因签证限制无法雇佣外国研究生；科研人员普遍感到焦虑，并开始寻找备选出路。",
+      "background": "美国科研长期依赖联邦政府拨款（如国立卫生研究院的R01项目）、国际人才流动和稳定的机构支持。近年来，政策变化和预算削减破坏了这一体系，导致科研环境急剧恶化，甚至被视为“科学死亡”。",
+      "community_discussion": "评论中普遍弥漫着悲观和焦虑情绪。多位用户讲述了自身或身边人被迫离开科研或美国的故事，认为这是系统性崩溃。但也有少数人认为混乱中仍有机遇，比如通过非传统渠道获得资助。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Content highlights a critical crisis in U.S. science with significant implications for research and innovation, backed by high community engagement (621 points, 709 comments) and emotional, substantive personal anecdotes. The discussion validates the severity and widespread impact.",
+    "ai_summary": "U.S. science is facing a crisis due to funding cuts, visa restrictions, and institutional instability, leading to researchers leaving the country or abandoning science altogether.",
+    "ai_tags": [
+      "science policy",
+      "research funding",
+      "U.S. science crisis",
+      "brain drain"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d291041a838afdd7",
+    "source_type": "rss",
+    "title": "A 27-Year-Old Authentication Bypass in OpenBSD's PPP Stack",
+    "url": "https://blog.argus-systems.ai/blog/openbsd-pap-27-year-auth-bypass.html",
+    "content": "<p><a href=\"https://lobste.rs/s/suaa0r/27_year_old_authentication_bypass\">Comments</a></p>",
+    "author": "blog.argus-systems.ai via fro",
+    "published_at": "2026-06-17T05:14:19Z",
+    "fetched_at": "2026-06-18T00:10:20.094749Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "openbsd",
+        "vibecoding"
+      ],
+      "title_zh": "OpenBSD PPP协议栈27年认证绕过漏洞",
+      "detailed_summary_zh": "研究人员发现OpenBSD的PPP协议栈中存在一个存在了27年的认证绕过漏洞，攻击者可利用该漏洞绕过PAP（密码认证协议）认证。 该漏洞影响以安全著称的OpenBSD操作系统，由于存在时间长达27年，可能导致大量设备和网络连接面临未经授权访问的风险。 漏洞位于PPP协议栈的PAP实现中，可能允许攻击者在无需有效凭证的情况下完成认证；具体细节和利用方式尚未完全公开，但已引起安全社区高度关注。",
+      "background_zh": "PPP（点对点协议）是用于建立拨号或直接连接的标准数据链路层协议，常使用PAP（密码认证协议）进行用户身份验证。PAP通过两步握手交换明文密码，安全性较弱。OpenBSD以其代码审计和安全设计闻名，此漏洞的长期存在凸显了代码遗留问题的风险。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Password_Authentication_Protocol",
+          "title": "Password Authentication Protocol - Wikipedia"
+        },
+        {
+          "url": "https://man.openbsd.org/OpenBSD-3.9/sppp.4",
+          "title": "sppp(4) - OpenBSD manual pages"
+        }
+      ],
+      "detailed_summary": "研究人员发现OpenBSD的PPP协议栈中存在一个存在了27年的认证绕过漏洞，攻击者可利用该漏洞绕过PAP（密码认证协议）认证。 该漏洞影响以安全著称的OpenBSD操作系统，由于存在时间长达27年，可能导致大量设备和网络连接面临未经授权访问的风险。 漏洞位于PPP协议栈的PAP实现中，可能允许攻击者在无需有效凭证的情况下完成认证；具体细节和利用方式尚未完全公开，但已引起安全社区高度关注。",
+      "background": "PPP（点对点协议）是用于建立拨号或直接连接的标准数据链路层协议，常使用PAP（密码认证协议）进行用户身份验证。PAP通过两步握手交换明文密码，安全性较弱。OpenBSD以其代码审计和安全设计闻名，此漏洞的长期存在凸显了代码遗留问题的风险。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Highly significant security vulnerability in a widely-respected secure OS, present for 27 years. The community discussion link indicates engagement, but no specific comments analyzed.",
+    "ai_summary": "Discovery of a 27-year-old authentication bypass vulnerability in OpenBSD's PPP protocol implementation.",
+    "ai_tags": [
+      "security",
+      "vulnerability",
+      "openbsd",
+      "authentication",
+      "ppp"
+    ]
+  },
+  {
+    "id": "hackernews:story:48571081",
+    "source_type": "hackernews",
+    "title": "Lore – Open source version control system designed for scalability",
+    "url": "https://lore.org/",
+    "content": "\n--- Top Comments ---\n\n[throw2ih020]: For context, since a lot of people on HN haven&#x27;t worked on games - this is not intended to compete with Git for general software development. This is a competitor with Perforce for game development. Git is fine for text based files like code, but it&#x27;s really bad at stuff like textures, 3D models, audio files, and other non-text files that game developers need to collaborate on. For example, one artist might need to obtain an exclusive lock on some art assets while editing them, beca...\n\n[niek_pas]: Just today as I pushed some changes to Github, I was thinking how user-unfriendly Git&#x27;s UI is:       Enumerating objects: 5, done.\n    Counting objects: 100% (5&#x2F;5), done.\n    Delta compression using up to 10 threads\n    Compressing objects: 100% (3&#x2F;3), done.\n    Writing objects: 100% (3&#x2F;3), 290 bytes | 290.00 KiB&#x2F;s, done.\n    Total 3 (delta 2), reused 0 (delta 0), pack-reused 0\n    remote: Resolving deltas: 100% (2&#x2F;2), completed with 2 local objects.\n  \nI know al...\n\n[tlahtinen]: This is a very promising announcement for Unreal game development specifically. For any other purpose I wouldn&#x27;t care as much. Perforce definitely needs a challenger. It is not the incumbent because it is particularily simple to use or administer. Git is actually way simpler when it comes to branching operations for example. The reasons why p4 is often preferred in gamedev have already been mentioned in other comments: large project support, permissions, file locking and so on.\nAnother k...\n\n[akurilin]: We had to use Perforce (Helix Core Cloud) at my last game studio, and it is the de facto industry standard that most of your creative staff is already familiar with. The programmers don&#x27;t love it, but they don&#x27;t rule the roost in games. It&#x27;s also the safe, verified default for working with Unreal Engine 5. It does show its years though. We were one of the first users of the Perforce cloud offering, as we were small and didn&#x27;t want to self-host ourselves, but it was a bit o...\n\n[ksec]: Turns out it is not really  new  but only open sourced it now. From the FQA. &gt;Lore, formerly called Unreal Revision Control, is the built-in version control system for UEFN (Unreal Editor for Fortnite), where creators have been using it to version their islands. It is also seeing progressive adoption by internal Epic teams, and is being implemented as the backing store for UEFN’s cook pipeline, where it replaces traditional intermediary storage layers—eliminating redundant file transfers a...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/r9fmgk/epic_games_announces_lore_version\">Comments</a></p>",
+    "author": "regnerba",
+    "published_at": "2026-06-17T14:30:27Z",
+    "fetched_at": "2026-06-18T00:10:20.134031Z",
+    "metadata": {
+      "score": 922,
+      "descendants": 502,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48571081",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release",
+        "vcs",
+        "vibecoding"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Lore：Epic Games 开源版本控制，瞄准游戏开发",
+      "detailed_summary_zh": "Epic Games 发布了 Lore，一个开源、支持大规模二进制文件和高并发协作的版本控制系统，旨在与 Perforce 竞争。它使用 MIT 许可证，并提供文件锁定、权限管理等游戏开发所需的核心功能。 游戏开发长期依赖 Perforce 处理大文件和二进制资源，但 Perforce 并非开源且管理成本高。Lore 作为开源替代方案，有望降低游戏团队协作门槛，尤其对 Unreal Engine 生态意义重大。 Lore 是 Unreal Editor for Fortnite (UEFN) 的内置版本控制系统，但开源版本目前由于专有压缩格式无法直接与 UEFN 通信。其设计强调可扩展性，支持原子操作和分布式架构，目标是处理大型游戏项目。",
+      "background_zh": "版本控制系统（VCS）用于跟踪文件变更，Git 是主流通用 VCS，但在处理大尺寸二进制文件（如纹理、3D 模型）时效率低下，且缺乏文件锁定机制。游戏行业常采用集中式 VCS（如 Perforce），它提供文件锁定、细粒度权限和更好的大文件支持，但需要商业许可证。Lore 由 Epic Games 开发，旨在填补 Git 在游戏开发场景的不足，并提供一个开源、可自托管的替代方案。",
+      "community_discussion_zh": "社区普遍对 Lore 表示欢迎，认为它直接挑战了 Perforce 在游戏开发领域的统治地位。许多用户指出 Git 的 UI 和分支操作对非技术人员不友好，而 Perforce 虽功能强大但配置复杂、许可证昂贵。Lore 的开源特性降低了入门成本，但部分评论也提到其与 UEFN 的集成尚不完整，成熟度有待验证。",
+      "sources": [
+        {
+          "url": "https://epicgames.github.io/lore/faq/",
+          "title": "FAQ - Lore Developer Documentation"
+        },
+        {
+          "url": "https://github.com/EpicGames/lore",
+          "title": "GitHub - EpicGames/ lore : Lore is a next-generation, open source ..."
+        },
+        {
+          "url": "https://www.phoronix.com/news/Epic-Games-Lore-VCS",
+          "title": "Epic Games Announces Lore Open - Source Version Control System"
+        }
+      ],
+      "detailed_summary": "Epic Games 发布了 Lore，一个开源、支持大规模二进制文件和高并发协作的版本控制系统，旨在与 Perforce 竞争。它使用 MIT 许可证，并提供文件锁定、权限管理等游戏开发所需的核心功能。 游戏开发长期依赖 Perforce 处理大文件和二进制资源，但 Perforce 并非开源且管理成本高。Lore 作为开源替代方案，有望降低游戏团队协作门槛，尤其对 Unreal Engine 生态意义重大。 Lore 是 Unreal Editor for Fortnite (UEFN) 的内置版本控制系统，但开源版本目前由于专有压缩格式无法直接与 UEFN 通信。其设计强调可扩展性，支持原子操作和分布式架构，目标是处理大型游戏项目。",
+      "background": "版本控制系统（VCS）用于跟踪文件变更，Git 是主流通用 VCS，但在处理大尺寸二进制文件（如纹理、3D 模型）时效率低下，且缺乏文件锁定机制。游戏行业常采用集中式 VCS（如 Perforce），它提供文件锁定、细粒度权限和更好的大文件支持，但需要商业许可证。Lore 由 Epic Games 开发，旨在填补 Git 在游戏开发场景的不足，并提供一个开源、可自托管的替代方案。",
+      "community_discussion": "社区普遍对 Lore 表示欢迎，认为它直接挑战了 Perforce 在游戏开发领域的统治地位。许多用户指出 Git 的 UI 和分支操作对非技术人员不友好，而 Perforce 虽功能强大但配置复杂、许可证昂贵。Lore 的开源特性降低了入门成本，但部分评论也提到其与 UEFN 的集成尚不完整，成熟度有待验证。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value for game development community, addressing scalability and binary file handling limitations of Git. Strong engagement (922 points, 502 comments) with insightful discussion about Perforce alternatives and Git's UI issues.",
+    "ai_summary": "Lore is an open source version control system designed for scalability, targeting game development as a competitor to Perforce.",
+    "ai_tags": [
+      "version control",
+      "game development",
+      "open source",
+      "scalability",
+      "perforce alternative"
+    ]
+  },
+  {
+    "id": "hackernews:story:48565498",
+    "source_type": "hackernews",
+    "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+    "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+    "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;MlU1U\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;MlU1U</a>\n\n\n--- Top Comments ---\n\n[apatheticonion]: I use DeepSeek every day (via VSCode Insiders and Zed Editor). It&#x27;s very affordable and, while it&#x27;s slightly behind Claude (not sure how far behind Fable), it suits my working style well. I&#x27;m not using unsupervised multi-agent workflows and don&#x27;t need a library of skills files - I&#x27;m writing most of the code and leaning on AI to help with mundane tasks - like; - generating types for APIs - generating boilerplate based on existing code - improving existing code (adding ...\n\n[glerk]: So this is the other side of banning American models for non-Americans? And how exactly do they plan on enforcing all of this? Great Firewall of America? This is a complete joke. The malicious clowns behind this should be removed from power and prevented from ever holding any position of power in any form of governance system.\n\n[em500]: Noteworthy that Z.ai, maker of the just released near-frontier GLM 5.2, has already been on the Entity  List since Jan 2025[1].  Being on the Entity  List does not mean all trade is forbidden. Broadly speaking it means American companies and individuals are not allowed sell them goods and services, but they are still allowed to buy from them and pay them. AFAIK the Chinese AI companies barely depend on US goods and services, except for nVidia GPUs which were export restricted anyway, so it do...\n\n[ddxv]: The US is slowly becoming more like China. From talks of nationalizing companies to make US state owned entities to banning foreign competition. It&#x27;s just so strange how you become the thing you fear.\n\n[uf00lme]: You can thank the us gov for a list of companies to invest in.",
+    "author": "giuliomagnifico",
+    "published_at": "2026-06-17T03:55:16Z",
+    "fetched_at": "2026-06-18T00:10:20.134084Z",
+    "metadata": {
+      "score": 311,
+      "descendants": 331,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48565498",
+      "comment_count": 5,
+      "title_zh": "美国暂缓将DeepSeek列入黑名单，超100家中国公司被列为安全风险",
+      "detailed_summary_zh": "美国政府决定推迟将中国AI初创公司DeepSeek列入贸易黑名单（实体清单），但同时将超过100家其他中国公司认定为国家安全风险。 这一决定显示美国对华AI政策存在权衡：一方面不愿直接打击表现突出的DeepSeek，另一方面继续扩大对中国科技企业的限制。它可能影响DeepSeek用户（如开发者）的未来使用，并加剧中美技术脱钩趋势。 被列入实体清单意味着美国公司和个人不得向这些企业出售商品或服务，但DeepSeek目前暂未被列入。此前另一家中国AI公司Z.ai（智谱）已于2025年1月被列入清单，但主要依赖美国GPU的出口限制早已存在。",
+      "background_zh": "DeepSeek是成立于2023年的中国AI公司，其开源模型（如DeepSeek-R1）以低成本达到接近顶尖水平，引发了全球关注。美国实体清单是出口管制工具，用于限制外国实体获取美国技术，但不会完全禁止贸易——被禁者仍可购买美国产品，只是无法获得美国供应商的销售。",
+      "community_discussion_zh": "社区评论呈现多元观点：有用户表示每天使用DeepSeek并担忧未来限制，有人批评美国政策虚伪且难以执行（如“美国防火墙”），也有人指出其他中国AI公司早已被列清单且影响有限。部分评论讽刺美国正变得像中国，或认为清单反而提供了投资方向。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/DeepSeek",
+          "title": "DeepSeek - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/DeepSeek_(chatbot)",
+          "title": "DeepSeek (chatbot) - Wikipedia"
+        },
+        {
+          "url": "https://www.techtarget.com/WhatIs/feature/DeepSeek-explained-Everything-you-need-to-know",
+          "title": "DeepSeek explained: Everything you need to know - TechTarget DeepSeek Explained: What Is It and Is It Safe To Use? - ai.nd.edu What is DeepSeek AI? China’s Top AI Chatbot Explained - Beebom DeepSeek (chatbot) - Wikipedia What is DeepSeek, the Chinese AI startup that shook the tech ... What Is DeepSeek? Everything to Know About the New Chinese AI ..."
+        }
+      ],
+      "detailed_summary": "美国政府决定推迟将中国AI初创公司DeepSeek列入贸易黑名单（实体清单），但同时将超过100家其他中国公司认定为国家安全风险。 这一决定显示美国对华AI政策存在权衡：一方面不愿直接打击表现突出的DeepSeek，另一方面继续扩大对中国科技企业的限制。它可能影响DeepSeek用户（如开发者）的未来使用，并加剧中美技术脱钩趋势。 被列入实体清单意味着美国公司和个人不得向这些企业出售商品或服务，但DeepSeek目前暂未被列入。此前另一家中国AI公司Z.ai（智谱）已于2025年1月被列入清单，但主要依赖美国GPU的出口限制早已存在。",
+      "background": "DeepSeek是成立于2023年的中国AI公司，其开源模型（如DeepSeek-R1）以低成本达到接近顶尖水平，引发了全球关注。美国实体清单是出口管制工具，用于限制外国实体获取美国技术，但不会完全禁止贸易——被禁者仍可购买美国产品，只是无法获得美国供应商的销售。",
+      "community_discussion": "社区评论呈现多元观点：有用户表示每天使用DeepSeek并担忧未来限制，有人批评美国政策虚伪且难以执行（如“美国防火墙”），也有人指出其他中国AI公司早已被列清单且影响有限。部分评论讽刺美国正变得像中国，或认为清单反而提供了投资方向。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important geopolitical news affecting AI industry, with high community engagement and substantive debate about regulation and impact on developers.",
+    "ai_summary": "US government postpones blacklisting Chinese AI firm DeepSeek while designating over 100 other companies as security risks.",
+    "ai_tags": [
+      "AI regulation",
+      "DeepSeek",
+      "geopolitics",
+      "tech policy",
+      "security risks"
+    ]
+  },
+  {
+    "id": "hackernews:story:48577208",
+    "source_type": "hackernews",
+    "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+    "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+    "content": "\n--- Top Comments ---\n\n[apatheticonion]: Seeing that R&amp;D costs are the lion&#x27;s share, I wonder if we are at a point where the focus can shift to improving the cost of inference. Unless we are genuinely pushing to find AGI, at which point nothing matters, LLMs in their current form don&#x27;t replace knowledge workers but are an effective force multiplier. How good is enough? For instance, I pay about $1-2 a month for DeepSeek. It&#x27;s not as sophisticated as Claude, but it still doubles my productivity as a SWE. If Fable c...\n\n[marcosdumay]: So... 50% operational costs and about $100 spent on sales for each paying customer. If they manage to keep those customers for several years without more sales, that bit looks like a normal &quot;high-touch&quot; business. They shouldn&#x27;t look like a &quot;high-touch&quot; business, but their unitary numbers look way better than I expected. They just need to grow some 10 times to star making a profit... Maybe 100 to cover the opportunity cost of their capital. It&#x27;s just a matter of f...\n\n[aizk]: Sam didn&#x27;t lie, they are in fact a non profit.\n\n[fsuts]: ”The company reports over 900 million weekly active users of ChatGPT, though only about 50 million of those are paid subscribers.”  With so many free models available the ai companies are going to struggle to convert active free users to paid.\n\n[amluto]: These numbers seem insufficiently detailed to really evaluate anything.  They’re had $13bn in gross revenue in 2025, and they cost of that revenue was $7.5bn.  Both are growing fast (we assume) and the ratio ought to stay roughly constant.  But : how are they calculating the cost of revenue?  Do they have rapidly depreciating assets that are also needed to produce that revenue?  (Starlink has this issue.)  Will their cost per arithmetic operation for inference rise or fall?  (Anthropic is pay...",
+    "author": "greenchair",
+    "published_at": "2026-06-17T21:31:35Z",
+    "fetched_at": "2026-06-18T00:10:20.134131Z",
+    "metadata": {
+      "score": 204,
+      "descendants": 119,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48577208",
+      "comment_count": 5,
+      "title_zh": "OpenAI财务泄露：年亏损数十亿美元",
+      "detailed_summary_zh": "泄露的财务文件显示，OpenAI 在2025年尽管营收达130亿美元，但运营亏损高达数十亿美元，其中研发成本是主要支出。 这一财务透明度揭示出AI行业领先公司面临的盈利困境，可能影响投资者信心和整个AI领域的商业可持续性讨论。 文件显示，OpenAI 营收成本为75亿美元，销售和营销支出占相当比例，每付费客户获取成本约100美元，而每周活跃用户超9亿中仅5000万为付费用户。",
+      "background_zh": "OpenAI 起初为非营利组织，后转型为“有限盈利”公司，以吸引投资并推动AGI研发。其商业模式依赖高额研发投入和规模化用户增长，但高昂的算力和人才成本导致持续亏损。",
+      "community_discussion_zh": "社区评论聚焦于成本结构：有观点认为研发成本占比过高，未来应优化推理成本；也有人指出销售成本类似高接触业务，需增长10倍才能盈利；还有评论质疑免费用户转付费的难度，以及财务数据细节不足。",
+      "detailed_summary": "泄露的财务文件显示，OpenAI 在2025年尽管营收达130亿美元，但运营亏损高达数十亿美元，其中研发成本是主要支出。 这一财务透明度揭示出AI行业领先公司面临的盈利困境，可能影响投资者信心和整个AI领域的商业可持续性讨论。 文件显示，OpenAI 营收成本为75亿美元，销售和营销支出占相当比例，每付费客户获取成本约100美元，而每周活跃用户超9亿中仅5000万为付费用户。",
+      "background": "OpenAI 起初为非营利组织，后转型为“有限盈利”公司，以吸引投资并推动AGI研发。其商业模式依赖高额研发投入和规模化用户增长，但高昂的算力和人才成本导致持续亏损。",
+      "community_discussion": "社区评论聚焦于成本结构：有观点认为研发成本占比过高，未来应优化推理成本；也有人指出销售成本类似高接触业务，需增长10倍才能盈利；还有评论质疑免费用户转付费的难度，以及财务数据细节不足。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value insight into OpenAI's financial state with substantive community discussion analyzing R&D costs, customer acquisition, and conversion rates; high engagement validates importance.",
+    "ai_summary": "Leaked financial documents reveal OpenAI's multi-billion dollar losses, with community dissecting cost structures and sustainability.",
+    "ai_tags": [
+      "OpenAI",
+      "financial analysis",
+      "AI industry",
+      "business model",
+      "startup economics"
+    ]
+  },
+  {
+    "id": "hackernews:story:48567759",
+    "source_type": "hackernews",
+    "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+    "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+    "content": "\n--- Top Comments ---\n\n[Tiberium]: It seems to really be a nice step-up and is getting quite close to the frontier. I wish they&#x27;d start focusing on the reasoning efficiency now, though. I have a simple (relatively) test task to evaluate LLMs: writing a simple math evaluator library in Nim (it&#x27;s about 400-600 lines total max), and GLM 5.2 (xhigh which maps to max effort) spent over 15 minutes (!) reasoning, spending about 45k tokens, before it finally wrote the first file. I know it&#x27;s hard to improve on that, but...\n\n[kristopolous]: I have a script that ranks these based on codingindex from Artificial Analysis. All it does is pull a json from their main table page and parses it with the fields I care about (coding). There used to be a mailing list associated with it but eh ... there wasn&#x27;t much interest. I use the script every day though. Current partial output     score  age  size name\n  47.1   58  large Kimi K2.6\n  47.5   54  large DeepSeek V4 Pro (Reasoning, Max Effort)\n  47.5   70    -   Muse Spark\n  47.6   132 ...\n\n[unrvl22]: Why aren&#x27;t more people talking about this? It&#x27;s literally Opus 4.7 quality stupid prices. I know providers who are offering this at unlimited tokens for $50 a month. Some are even offering API rates at 3x lower than the official ZAI api rates which are already like 10x cheaper than Opus. (Crof and Umans btw) This is a huge blow to Anthropic&#x2F;OpenAI&#x2F;Google and a massive win for the rest of the world. The official API prices and speeds mean nothing for open source models.\n\n[mrngld]: Artificial Analysis coding benchmark shows GLM5.1 on high pretty close to GPT5.5 xhigh in cost to run, with GPT5.5 on medium significantly less expensive. Compared to GPT5.5 medium GLM5.1xhigh is twice the cost and half the intelligence. They don&#x27;t have GLM5.2 on there yet, but that&#x27;d a big gap to bridge.  https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;agents&#x2F;coding-agents?coding-ag...  I thought I was &quot;holding it wrong&quot; until DeepSWE came along -- personally it seems t...\n\n[simonw]: I was surprised that GLM 5.1&#x2F;5.2 are  not  vision models - they are text input only. That&#x27;s actually pretty uncommon these days. All of the OpenAI&#x2F;Anthropic&#x2F;Gemini models accept images, and so do the other leading open weight families - Gemma 4, Qwen 3.6, Kimi 2.x. In GLM&#x27;s case image input would be useful because it&#x27;s a model that scores very highly for tasks like web design, but without image input it can&#x27;t take a screenshot and output HTML+CSS. Don&#x27;t...",
+    "author": "himata4113",
+    "published_at": "2026-06-17T09:12:00Z",
+    "fetched_at": "2026-06-18T00:10:20.134179Z",
+    "metadata": {
+      "score": 761,
+      "descendants": 379,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48567759",
+      "comment_count": 5,
+      "title_zh": "GLM-5.2 成 Artificial Analysis 领先开源模型",
+      "detailed_summary_zh": "GLM-5.2 在 Artificial Analysis 基准测试中成为表现最佳的开源权重模型，其性能接近 Opus 等前沿闭源模型，但成本低得多。 这标志着开源 AI 的重大突破，证明开源模型能以极低价格挑战闭源巨头，可能颠覆行业格局并降低 AI 应用门槛。 GLM-5.2 Max 版本拥有 753B 参数，支持 100 万 token 上下文，在长程任务和复杂推理上较前代 GLM-5.1 有显著提升。",
+      "background_zh": "GLM 系列由中国智谱 AI（现更名为 Z.ai）开发，自 2025 年 7 月起以 MIT 开源协议发布。Artificial Analysis 是一个独立评测 AI 模型的平台，综合评估智能、速度和成本等维度。",
+      "community_discussion_zh": "社区讨论热烈，有用户指出 GLM-5.2 在推理效率上仍有提升空间（例如简单任务耗时 15 分钟），但也有用户称赞其以极低成本达到 Opus 级质量，对闭源提供商形成巨大冲击。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/GLM-5.2",
+          "title": "GLM-5.2"
+        },
+        {
+          "url": "https://artificialanalysis.ai/",
+          "title": "AI Model & API Providers Analysis | Artificial Analysis"
+        },
+        {
+          "url": "https://github.com/Z-ai-glm/GLM-5.2",
+          "title": "GLM-5.2 Lightweight Installer - GitHub"
+        }
+      ],
+      "detailed_summary": "GLM-5.2 在 Artificial Analysis 基准测试中成为表现最佳的开源权重模型，其性能接近 Opus 等前沿闭源模型，但成本低得多。 这标志着开源 AI 的重大突破，证明开源模型能以极低价格挑战闭源巨头，可能颠覆行业格局并降低 AI 应用门槛。 GLM-5.2 Max 版本拥有 753B 参数，支持 100 万 token 上下文，在长程任务和复杂推理上较前代 GLM-5.1 有显著提升。",
+      "background": "GLM 系列由中国智谱 AI（现更名为 Z.ai）开发，自 2025 年 7 月起以 MIT 开源协议发布。Artificial Analysis 是一个独立评测 AI 模型的平台，综合评估智能、速度和成本等维度。",
+      "community_discussion": "社区讨论热烈，有用户指出 GLM-5.2 在推理效率上仍有提升空间（例如简单任务耗时 15 分钟），但也有用户称赞其以极低成本达到 Opus 级质量，对闭源提供商形成巨大冲击。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant milestone in open-source AI, with a model rivaling top proprietary models at drastically lower cost. High community engagement (761 points, 379 comments) with insightful discussion on performance, efficiency, and market impact.",
+    "ai_summary": "GLM-5.2 is a new leading open weights model that rivals frontier models like Opus at much lower cost.",
+    "ai_tags": [
+      "AI",
+      "open-source",
+      "LLMs",
+      "cost efficiency"
+    ]
+  },
+  {
+    "id": "hackernews:story:48576838",
+    "source_type": "hackernews",
+    "title": "Tesco moving 40k server workloads off VMware amid Broadcom's abusive conduct",
+    "url": "https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/",
+    "content": "\n--- Top Comments ---\n\n[fsuts]: ”Tesco, a retail conglomerate headquartered in the United Kingdom”  For any non Uk people, it’s the largest supermarket in Uk. Combination of large stores and smaller high street convenience stores. (2nd largest was owned by Walmart who sold it recently to private equity and so now it’s saddled with debt and being ruined…).\n\n[sokoloff]: If Tesco needs character witnesses that Broadcom has done this to many other customers, I think they’ll find plenty of willing participants. Broadcom’s marketing for Proxmox is extremely effective.\n\n[driverdan]: As someone who has never dealt with anything close to this scale, why would it take 18 months to migrate? Is this poor config management, a lack of automation, or something else?\n\n[nubinetwork]: &gt; Tesco is also dealing with migration challenges related to data security because its new, unnamed virtualization software is incompatible with the Veeam and Zerto products it uses. What is a VMware alternative, that isn&#x27;t compatible with backup software?  I&#x27;m guessing it&#x27;s not nutanix?\n\n[proxysna]: Great time to migrate off VMware. All the migration paths are well-trodden by now, but goddamn 40k vm&#x27;s. A lot of work ahead.",
+    "author": "Bender",
+    "published_at": "2026-06-17T21:00:53Z",
+    "fetched_at": "2026-06-18T00:10:20.134343Z",
+    "metadata": {
+      "score": 122,
+      "descendants": 53,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48576838",
+      "comment_count": 5,
+      "title_zh": "Tesco因Broadcom滥用行为迁移4万个VMware工作负载",
+      "detailed_summary_zh": "英国零售巨头Tesco计划在18个月内将4万个服务器工作负载从VMware迁移至其他虚拟化平台，原因是Broadcom的定价和许可政策被认为具有滥用性。 这一大规模迁移案例可能引发更多企业效仿，对VMware的市场地位构成威胁，同时加速开源替代方案（如Proxmox）在企业中的采用。 迁移面临数据安全挑战，因为新虚拟化软件与现有备份工具Veeam和Zerto不兼容，Tesco需解决兼容性问题。此外，迁移规模巨大，预计耗时18个月。",
+      "background_zh": "VMware是业界领先的虚拟化软件，广泛用于企业数据中心。Broadcom于2022年收购VMware后更改许可和定价模式，导致许多客户成本激增。Tesco作为英国最大连锁超市，此举反映了企业应对供应商锁定的典型策略。",
+      "community_discussion_zh": "社区对迁移规模表示惊讶，并指出Broadcom的定价策略已引发普遍不满。有评论认为迁移路径已成熟但工作量巨大，也有人质疑为何需要18个月，引发对大规模迁移复杂性的讨论。",
+      "detailed_summary": "英国零售巨头Tesco计划在18个月内将4万个服务器工作负载从VMware迁移至其他虚拟化平台，原因是Broadcom的定价和许可政策被认为具有滥用性。 这一大规模迁移案例可能引发更多企业效仿，对VMware的市场地位构成威胁，同时加速开源替代方案（如Proxmox）在企业中的采用。 迁移面临数据安全挑战，因为新虚拟化软件与现有备份工具Veeam和Zerto不兼容，Tesco需解决兼容性问题。此外，迁移规模巨大，预计耗时18个月。",
+      "background": "VMware是业界领先的虚拟化软件，广泛用于企业数据中心。Broadcom于2022年收购VMware后更改许可和定价模式，导致许多客户成本激增。Tesco作为英国最大连锁超市，此举反映了企业应对供应商锁定的典型策略。",
+      "community_discussion": "社区对迁移规模表示惊讶，并指出Broadcom的定价策略已引发普遍不满。有评论认为迁移路径已成熟但工作量巨大，也有人质疑为何需要18个月，引发对大规模迁移复杂性的讨论。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value news about a major enterprise migrating 40k VMs off VMware due to Broadcom's licensing changes, with strong community discussion (122 points, 53 comments) that adds technical depth and context on migration challenges.",
+    "ai_summary": "Tesco plans to migrate 40,000 server workloads away from VMware over 18 months due to Broadcom's abusive pricing and licensing practices.",
+    "ai_tags": [
+      "virtualization",
+      "enterprise",
+      "VMware",
+      "Broadcom",
+      "migration"
+    ]
+  },
+  {
+    "id": "hackernews:story:48568502",
+    "source_type": "hackernews",
+    "title": "RFC 10008: The new HTTP Query Method",
+    "url": "https://www.rfc-editor.org/info/rfc10008/",
+    "content": "\n--- Top Comments ---\n\n[100ms]: Including a strong motivating example might have helped sell this, using an example that could trivially be expressed as a GET is extremely distracting. Even imagining a QUERY with a large JSON filtering structure, or say an image input as request body, it feels extremely odd to include the request body as part of the cache key. It also implies an unbounded and user-controlled cache key, with the only really meaningful general caching strategy being bitwise compare of the request body (or a h...\n\n[CodesInChaos]: I wonder if HTML forms will add support for QUERY:       &lt;form action=&quot;...&quot; method=&quot;query&quot;&gt;\n  \nThis would avoid the annoying re-submission warnings you&#x27;re getting if you refresh a page that was returned by a POST form submission, since QUERY is required to be idempotent.\n\n[ynac]: Just in case anyone wants to pretend it&#x27;s still that other century:  https:&#x2F;&#x2F;www.rfc-editor.org&#x2F;rfc&#x2F;rfc10008.txt\n\n[piterrro]: &gt; GET request with a body was heavily considered by the IETF working group, but it was ultimately rejected in favor of creating the new QUERY method. The decision to create a distinct method came down to historical interoperability issues and strict compliance with the core architectural definitions of HTTP. I&#x27;ve been sending request body along GET method for years now\n\n[drob518]: Aside: Wow, we’ve hit 5-digit RFC numbers now!",
+    "author": "schappim",
+    "published_at": "2026-06-17T10:51:17Z",
+    "fetched_at": "2026-06-18T00:10:20.134435Z",
+    "metadata": {
+      "score": 311,
+      "descendants": 140,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48568502",
+      "comment_count": 5,
+      "title_zh": "RFC 10008 定义新的 HTTP QUERY 方法，解决 GET 带请求体问题",
+      "detailed_summary_zh": "RFC 10008 正式定义了 HTTP QUERY 方法，这是一种安全且幂等的请求方法，允许在请求体中携带内容，旨在替代带请求体的 GET 请求。 该方法解决了长期以来 GET 请求携带请求体导致的缓存和互操作性问题，为 Web 标准提供了更清晰的语义，可能影响浏览器、缓存代理和 API 设计。 QUERY 方法类似于 POST，但要求幂等性，并可被缓存；缓存键需包含请求体，可能带来实现挑战。该提案经历了多年讨论，最终成为正式 RFC。",
+      "background_zh": "HTTP 协议中，GET 方法本不应携带请求体，但实际中部分客户端尝试发送带请求体的 GET，导致历史兼容性问题。QUERY 方法作为新的 HTTP 方法，在保持安全性和幂等性的同时，明确支持请求体，为复杂查询操作提供标准做法。",
+      "community_discussion_zh": "社区讨论积极，有评论指出 QUERY 方法命名可能引起混淆，也有人关注缓存键包含请求体的实现难度。部分开发者对 HTML 表单支持 QUERY 表示期待，认为可避免刷新页面时的重新提交警告。总体上，社区认可该方法的必要性，但对其具体实现细节存有疑虑。",
+      "sources": [
+        {
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html",
+          "title": "The HTTP QUERY Method"
+        },
+        {
+          "url": "https://www.rfc-editor.org/info/rfc10008/",
+          "title": "RFC 10008: The HTTP QUERY Method | RFC Editor"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=48568502",
+          "title": "RFC 10008: The new HTTP Query Method | Hacker News"
+        }
+      ],
+      "detailed_summary": "RFC 10008 正式定义了 HTTP QUERY 方法，这是一种安全且幂等的请求方法，允许在请求体中携带内容，旨在替代带请求体的 GET 请求。 该方法解决了长期以来 GET 请求携带请求体导致的缓存和互操作性问题，为 Web 标准提供了更清晰的语义，可能影响浏览器、缓存代理和 API 设计。 QUERY 方法类似于 POST，但要求幂等性，并可被缓存；缓存键需包含请求体，可能带来实现挑战。该提案经历了多年讨论，最终成为正式 RFC。",
+      "background": "HTTP 协议中，GET 方法本不应携带请求体，但实际中部分客户端尝试发送带请求体的 GET，导致历史兼容性问题。QUERY 方法作为新的 HTTP 方法，在保持安全性和幂等性的同时，明确支持请求体，为复杂查询操作提供标准做法。",
+      "community_discussion": "社区讨论积极，有评论指出 QUERY 方法命名可能引起混淆，也有人关注缓存键包含请求体的实现难度。部分开发者对 HTML 表单支持 QUERY 表示期待，认为可避免刷新页面时的重新提交警告。总体上，社区认可该方法的必要性，但对其具体实现细节存有疑虑。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Introduces a new HTTP method (QUERY) addressing long-standing design issues, with high community engagement (311 points, 140 comments) and substantive discussion on caching, idempotency, and HTML forms. The RFC has the potential to impact web standards significantly.",
+    "ai_summary": "RFC 10008 proposes a new HTTP QUERY method as an idempotent alternative to GET with a request body, aiming to resolve caching and interoperability issues.",
+    "ai_tags": [
+      "HTTP",
+      "RFC",
+      "protocol",
+      "web standards",
+      "caching"
+    ]
+  },
+  {
+    "id": "hackernews:story:48573435",
+    "source_type": "hackernews",
+    "title": "The Competitive Moat That AI Can't Replicate",
+    "url": "https://ghostinthedata.info/posts/2026/2026-06-13-human-connection-moat/",
+    "content": "\n--- Top Comments ---\n\n[flax]: I&#x27;m probably in the minority, but I do not want a &quot;connection&quot; with a business.  I want transactional interactions that actually work. That is something that AI is not giving us today.  By design. Companies are not switching to AI customer service because it&#x27;s better or cheaper for the same service.  They are choosing to replace customer service with AI chat bots that simulate the customer service experience without actually providing the service part.\n\n[mdorazio]: An AI written post talking about the importance of human connection in the age of AI is hilarious.\n\n[wrs]: This is great advice, as long as you remember you need  both  hospitality and service. At some point a warm relationship doesn’t compensate enough for a bad product. I love that the staff at my little neighborhood bank remembers me, and was so warm and helpful when I had to open an estate account when my mom died, and sometimes I bring my favorite teller a latte on my way back from the coffee shop. But I still switched my business account to Chase, because my little neighborhood bank’s websit...\n\n[majormajor]: &gt; He called the restaurant. He was put on hold for thirty minutes. When someone finally answered, they were apologetic but firm — the restaurant was fully booked. No warmth. No conversation. Just a long wait and a closed door. &gt; In trying to humanise the process, he’d made it worse. &gt; Here’s where most stories would end with “so they moved everything online and fired the reservation staff.” That’s not what happened. They did move to online booking, but they kept the entire reservatio...\n\n[ygouzerh]: One thing I have a question: what about business that doesn&#x27;t have hospitaly&#x2F;B2C? Many exemples relies on the F&amp;B business, which is quite special in the fact that one of the core value proposition is directly hospitality, so we could argue that &quot;adding more hospitality&quot; is actually their core business already. But what about a company which is more in B2B, and where procurement will be more rationalized (e.g RFP, which is often regulated)? One thing as well: this is m...",
+    "author": "speckx",
+    "published_at": "2026-06-17T17:14:21Z",
+    "fetched_at": "2026-06-18T00:10:20.134485Z",
+    "metadata": {
+      "score": 109,
+      "descendants": 90,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48573435",
+      "comment_count": 5,
+      "title_zh": "人类连接：AI无法复制的竞争护城河",
+      "detailed_summary_zh": "一篇分析文章指出，真正的人类连接是AI无法复制的持久竞争优势，并对比了当前AI客服的失败案例。 这提醒企业，在AI普及时代，过度依赖自动化可能损害客户关系，而投资人性化服务能成为差异化优势，避免客户流失。 文章以餐厅保留人工预订员为例，说明尽管效率不如在线系统，但人性化沟通能赢得长期忠诚；评论则指出许多企业用AI聊天机器人“模拟服务”而非提供实际帮助。",
+      "background_zh": "竞争护城河指企业长期保持优势的能力，如品牌或网络效应。AI在客服中常被用于降低成本，但可能因缺乏共情和解决问题能力而失败，反而凸显人类情感连接的价值。",
+      "community_discussion_zh": "讨论中有人质疑“连接”的必要性，认为交易效率更重要；有人讽刺文章可能是AI所写；还有人强调服务与产品需并重，且人性化优势在非客户服务类企业中可能不适用。",
+      "detailed_summary": "一篇分析文章指出，真正的人类连接是AI无法复制的持久竞争优势，并对比了当前AI客服的失败案例。 这提醒企业，在AI普及时代，过度依赖自动化可能损害客户关系，而投资人性化服务能成为差异化优势，避免客户流失。 文章以餐厅保留人工预订员为例，说明尽管效率不如在线系统，但人性化沟通能赢得长期忠诚；评论则指出许多企业用AI聊天机器人“模拟服务”而非提供实际帮助。",
+      "background": "竞争护城河指企业长期保持优势的能力，如品牌或网络效应。AI在客服中常被用于降低成本，但可能因缺乏共情和解决问题能力而失败，反而凸显人类情感连接的价值。",
+      "community_discussion": "讨论中有人质疑“连接”的必要性，认为交易效率更重要；有人讽刺文章可能是AI所写；还有人强调服务与产品需并重，且人性化优势在非客户服务类企业中可能不适用。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Thoughtful analysis on human connection as a competitive moat in the age of AI, with rich community discussion debating the role of AI in customer service and human touch. The comments add depth, including critiques and real-world examples.",
+    "ai_summary": "The article argues that genuine human connection is a durable competitive advantage that AI cannot replicate, contrasting with current AI-driven customer service failures.",
+    "ai_tags": [
+      "human connection",
+      "AI limitations",
+      "customer service",
+      "competitive advantage",
+      "business strategy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48572553",
+    "source_type": "hackernews",
+    "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+    "url": "https://github.com/Adam-CAD/CADAM",
+    "content": "Hey HN! I&#x27;m Zach from Adam (<a href=\"https:&#x2F;&#x2F;adam.new&#x2F;\">https:&#x2F;&#x2F;adam.new&#x2F;</a>). We&#x27;re building AI agents for mechanical CAD software. We’ve built the company on two fundamental beliefs:<p>- AI will be the primary medium for creating mechanical designs just like it is in software today.<p>- The best paradigm for CAD generation is to generate CAD as code (text -&gt; code -&gt; CAD).<p>We’re building CADAM, an open source Text to CAD platform. It&#x27;s a React app (TanStack Start) with a Supabase backend for auth, database, and file storage. Think of it like AI TinkerCAD.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=iESOr7EGWqk\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=iESOr7EGWqk</a>\nTry it: <a href=\"https:&#x2F;&#x2F;adam.new&#x2F;cadam&#x2F;\">https:&#x2F;&#x2F;adam.new&#x2F;cadam&#x2F;</a><p>What it does:<p>- Generates parametric 3D models from natural language, with support for both text prompts and image references.<p>- Outputs OpenSCAD code with automatically extracted parameters that surface as interactive sliders for instant dimension tweaking<p>- Exports as .STL or .SCAD (plus OBJ, GLB&#x2F;GLTF, FBX, and DXF)<p>Under the hood:<p>- One agentic endpoint with two modes that swap system prompts and tools: a parametric mode that writes&#x2F;edits OpenSCAD via a build_parametric_model tool, and a mesh mode that generates 3D textured meshes.<p>- Simple parameter tweaks bypass the model entirely; adjusting a slider does a deterministic regex update on the SCAD source, requiring no LLM call.<p>- Model-agnostic via the Vercel AI SDK: Anthropic (Claude), Google (Gemini), and OpenAI&#x2F;others through OpenRouter, with adaptive thinking auto-enabled on newer models. Surprisingly, in our evals Gemini 3.1 Pro is the top model.<p>- Runs fully in-browser by compiling OpenSCAD to WebAssembly (in a Web Worker, so the UI never blocks) and rendering with Three.js via React Three Fiber<p>- Supports BOSL, BOSL2, and MCAD libraries, plus custom font support (Geist) for text in models<p>Future improvements:<p>- Support both build123d and CadQuery. This will allow us to move beyond CSG primitives to constraint-driven modeling and provide direct comparisons to other code-as-CAD primitives.<p>- Better spatial context: UI for face&#x2F;edge selection and viewport image integration to give LLMs spatial understanding<p>You can clone the repo and run it locally! Contributions are very welcome.\n\n\n--- Top Comments ---\n\n[themgt]: Just to self-promote, we&#x27;ve got a very early stage project with a lot of similar ideas at  https:&#x2F;&#x2F;quidities.com&#x2F;  - feel free to signup &#x2F; reach out if you have real world use cases anywhere in this space - we&#x27;ve got a lot in the works already.\n\n[incorene2]: What exactly is the use case for this? Just making pretty little 3d models? There are so many reasons why I, as an engineer, will never even attempt to use AI for mechanical design, that trying to list them all is about to give me an autistic screeching fit. Even if all I need is a simple little bracket or something, I can model that and  know it&#x27;s right  much quicker than I can ask the AI to do it and then check it&#x27;s work. There is no time savings here. Heck, for any of the stuff I...\n\n[patja]: It did a great job with this prompt.  Got it done in about the time it would take me to login and load Fusion.  I forgot to include the wire diameter but it made a reasonable assumption and included it in the params for edits &quot;Make a grommet seal for a hole in an aluminum pipe where a cable goes through.  The hole is 0.48 inches in diameter.  The wall of the pipe is .25 inches thick.  Make the seal split so it can be installed with the cable in place.  Make a circular cover lip that is ....\n\n[jetter]: https:&#x2F;&#x2F;modelrift.com&#x2F;blog&#x2F;openscad-llm-benchmark&#x2F;  LLMs are still weak at spatial reasoning, but it gets better. Check out modelrift.com for another alternative\n\n[Doerge]: Is CADAM also what&#x27;s used for the commercial product adam.new? How did you manage to write all those plugins? If it is also CADAM isn&#x27;t stuff getting lost in the Fusion&#x2F;Solidworks&#x2F;Onshape -&gt; OpenSCAD -&gt; back process? Do constraints and everything just seamlessly import&#x2F;export? Some comments here mention tolerances&#x2F;functional requirements. Do you think the LLM&#x2F;screenshot loop will scale to that too? Maybe rendering subassemblies individually until they ...",
+    "author": "zachdive",
+    "published_at": "2026-06-17T16:14:04Z",
+    "fetched_at": "2026-06-18T00:10:20.134225Z",
+    "metadata": {
+      "score": 143,
+      "descendants": 76,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48572553",
+      "comment_count": 5,
+      "title_zh": "Adam (YC W25) 发布开源AI CAD平台CADAM",
+      "detailed_summary_zh": "Adam团队发布了开源AI CAD平台CADAM，支持通过自然语言或图片生成参数化3D模型，输出OpenSCAD代码并可直接在浏览器中编辑和导出多种格式。 作为YC W25项目，CADAM将AI代码生成能力引入机械设计领域，可能降低3D建模门槛，但社区指出AI空间推理能力不足，实际工程应用仍有挑战。 CADAM基于React（TanStack Start）和Supabase后端，采用双模式（参数化/网格）生成模型，参数调整通过正则表达式更新SCAD源码，无需LLM调用；支持BOSL2等库和多种导出格式。",
+      "background_zh": "CAD（计算机辅助设计）是机械工程师用于创建精确3D模型的工具，传统上需要手动操作。OpenSCAD是一种基于代码的CAD工具，适合参数化设计。CADAM试图通过AI将自然语言直接转换为可编辑的CAD代码，类似“AI版TinkerCAD”。",
+      "community_discussion_zh": "社区反应两极：部分用户认为AI能快速生成简单模型，比传统软件更便捷；但许多工程师质疑其可靠性，指出AI在空间推理和公差控制上存在根本缺陷，且人工检查AI输出往往比直接建模更耗时。",
+      "sources": [
+        {
+          "url": "https://tanstack.com/start/latest",
+          "title": "TanStack Start"
+        },
+        {
+          "url": "https://supabase.com/",
+          "title": "Supabase | The Postgres Development Platform."
+        }
+      ],
+      "detailed_summary": "Adam团队发布了开源AI CAD平台CADAM，支持通过自然语言或图片生成参数化3D模型，输出OpenSCAD代码并可直接在浏览器中编辑和导出多种格式。 作为YC W25项目，CADAM将AI代码生成能力引入机械设计领域，可能降低3D建模门槛，但社区指出AI空间推理能力不足，实际工程应用仍有挑战。 CADAM基于React（TanStack Start）和Supabase后端，采用双模式（参数化/网格）生成模型，参数调整通过正则表达式更新SCAD源码，无需LLM调用；支持BOSL2等库和多种导出格式。",
+      "background": "CAD（计算机辅助设计）是机械工程师用于创建精确3D模型的工具，传统上需要手动操作。OpenSCAD是一种基于代码的CAD工具，适合参数化设计。CADAM试图通过AI将自然语言直接转换为可编辑的CAD代码，类似“AI版TinkerCAD”。",
+      "community_discussion": "社区反应两极：部分用户认为AI能快速生成简单模型，比传统软件更便捷；但许多工程师质疑其可靠性，指出AI在空间推理和公差控制上存在根本缺陷，且人工检查AI输出往往比直接建模更耗时。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value launch of an open-source AI CAD platform from YC W25. The discussion includes substantive critique about AI spatial reasoning limitations and practical use cases, indicating community engagement with the topic. Not groundbreaking due to existing similar projects, but significant for its open-source nature and potential impact on mechanical design workflows.",
+    "ai_summary": "Adam (YC W25) launches CADAM, an open-source AI text-to-CAD platform.",
+    "ai_tags": [
+      "AI",
+      "CAD",
+      "open-source",
+      "3D modeling",
+      "mechanical design"
+    ]
+  },
+  {
+    "id": "hackernews:story:48576824",
+    "source_type": "hackernews",
+    "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+    "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+    "content": "\n--- Top Comments ---\n\n[delichon]: If the robot appears to be bringing me a taco, it would probably penetrate all of my defenses. Grok is currently more likely than Claude to arrive with the taco without being stopped by an export control directive.\n\n[hariseldom]: &gt; I didn’t add any frontier-tier models like Opus 4.7, GPT-5.5, or Gemini Ultra. At their prices, 30 games would have cost around $3,000 instead of $482. I have a lot of thoughts unrelated to the game experiment but more about how these opus&#x2F;ultra size models can possibly be a financially viable product at scale when it costs $3000 to play 30 simple games. It just seems much much higher than what it would cost to get a human to play 30 rounds\n\n[0xbadcafebee]: [delayed]\n\n[bel8]: DeepSeek V4 Flash being the winner in cost efficiency causes me exactly zero surprise. It&#x27;s a monster at coding. And a fast monster at that. I use it daily and have been testing if MiMo 2.5 (non pro) is comparable. The nice thing about MiMo is that it has vision capability.\n\n[thomasfromcdnjs]: I was loving grok-4.1-fast, very good and cost effective. But it&#x27;s not actually 4.1 anymore they silently rerouted it to 4.3 and just started charging more -  https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;grok&#x2F;comments&#x2F;1ta8yrn&#x2F;grok_41_fast_...  Quite a bad practise.",
+    "author": "Usu",
+    "published_at": "2026-06-17T21:00:07Z",
+    "fetched_at": "2026-06-18T00:10:20.134304Z",
+    "metadata": {
+      "score": 148,
+      "descendants": 118,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48576824",
+      "comment_count": 5,
+      "title_zh": "机器人赛跑：Claude vs Grok vs DeepSeek 成本效率大比拼",
+      "detailed_summary_zh": "OpenRouter 平台发布了一项实验，在模拟跑步机器人游戏中对比 Claude、Grok、DeepSeek 等语言模型的表现和成本，发现 DeepSeek V4 Flash 在成本效率上遥遥领先。 该实验为开发者选择适用于实时控制应用（如机器人）的语言模型提供了量化依据，揭示了高端模型（如 Opus）成本是低端模型的数十倍，直接影响产品落地的经济可行性。 测试未包含 Opus 4.7、GPT-5.5 等前沿模型，因其30局游戏成本约3000美元，而总实验仅花费482美元。社区还指出 Grok 4.1 Fast 被 xAI 静默升级为 Grok 4.3 并提价，引发了信任担忧。",
+      "background_zh": "大型语言模型（LLM）如 Claude（Anthropic 开发）、Grok（xAI 开发）和 DeepSeek（中国公司开发）通过 API 提供文本生成能力。DeepSeek 采用混合专家（MoE）架构，以低推理成本著称；Grok 则与 X 社交平台及特斯拉 Optimus 机器人深度集成。这类模型正被探索用于机器人实时决策等场景。",
+      "community_discussion_zh": "有评论戏称若送墨西哥卷饼的机器人用 Grok 可能更容易绕过出口管制；另有人对高端模型的高昂成本表示震惊，认为难以规模盈利。此外，多名用户批评 xAI 将 Grok 4.1 Fast 偷偷替换为 Grok 4.3 并涨价，认为这是不良商业行为。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+          "title": "Claude (language model ) - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Grok_(chatbot)",
+          "title": "Grok (chatbot) - Wikipedia"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2405.04434",
+          "title": "DeepSeek -V2: A Strong, Economical, and Efficient"
+        }
+      ],
+      "detailed_summary": "OpenRouter 平台发布了一项实验，在模拟跑步机器人游戏中对比 Claude、Grok、DeepSeek 等语言模型的表现和成本，发现 DeepSeek V4 Flash 在成本效率上遥遥领先。 该实验为开发者选择适用于实时控制应用（如机器人）的语言模型提供了量化依据，揭示了高端模型（如 Opus）成本是低端模型的数十倍，直接影响产品落地的经济可行性。 测试未包含 Opus 4.7、GPT-5.5 等前沿模型，因其30局游戏成本约3000美元，而总实验仅花费482美元。社区还指出 Grok 4.1 Fast 被 xAI 静默升级为 Grok 4.3 并提价，引发了信任担忧。",
+      "background": "大型语言模型（LLM）如 Claude（Anthropic 开发）、Grok（xAI 开发）和 DeepSeek（中国公司开发）通过 API 提供文本生成能力。DeepSeek 采用混合专家（MoE）架构，以低推理成本著称；Grok 则与 X 社交平台及特斯拉 Optimus 机器人深度集成。这类模型正被探索用于机器人实时决策等场景。",
+      "community_discussion": "有评论戏称若送墨西哥卷饼的机器人用 Grok 可能更容易绕过出口管制；另有人对高端模型的高昂成本表示震惊，认为难以规模盈利。此外，多名用户批评 xAI 将 Grok 4.1 Fast 偷偷替换为 Grok 4.3 并涨价，认为这是不良商业行为。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (148 points, 118 comments) with substantive discussion on model behavior, cost efficiency, and provider practices. Provides practical insights for developers selecting LLMs for real-time applications, though not groundbreaking.",
+    "ai_summary": "A comparison of LLMs (Claude, Grok, DeepSeek, etc.) in a simulated running robot game, highlighting cost efficiency and model behavior differences.",
+    "ai_tags": [
+      "LLM",
+      "AI",
+      "cost-efficiency",
+      "model comparison",
+      "robotics"
+    ]
+  },
+  {
+    "id": "hackernews:story:48573012",
+    "source_type": "hackernews",
+    "title": "Show HN: An 8-bit live gamecast for baseball",
+    "url": "https://ribbie.tv/watch",
+    "content": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.<p>Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.<p>Here is today&#x27;s schedule:<p>Mets @ Reds - 9:40am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503</a><p>Royals @ Nationals - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721</a><p>Marlins @ Phillies - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450</a><p>Tigers @ Astros - 11:10am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178</a><p>Padres @ Cardinals - 11:15am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044</a><p>..and another 14 games throughout the later day.<p>I&#x27;m still early on in this project, but I&#x27;ve tried to add little details with actual stadiums, day and night modes, between inning graphics and interstitials, live scoreboards, etc.<p>Would love any feedback and ideas. Thanks for checking it out!\n\n\n--- Top Comments ---\n\n[pawptart]: Always love to see new baseball visualizations. Not necessarily a big fan of AI art, but it&#x27;s cool how dynamic it is. Some constructive criticism: I think using a real pixel font and maybe writing a deterministic downsampling algo for the images instead of relying on AI would go a long way to make this look better. Not to hijack your thread but in case anyone&#x27;s interested in a physical scoreboard built on top of the same APIs using Raspberry Pis, I have a project as well. We also su...\n\n[daynthelife]: I love this! If I were to suggest any improvements: - Have a play-by-play view so users can see plays they missed - Make the &quot;between innings&quot; tabs clickable rather than forcing users to wait for the cycle (cycle by default, pin if user clicked a tab) - show glove on right hand for outfielders that throw LH -  maybe  show baserunners taking leads rather than keeping a foot on the base\n\n[e28eta]: I don’t watch baseball (maybe a couple games a year), but I think it could use some sound &#x2F; audio, so you can have it running while doing something else. IDK if there’s an easy way for the average person to get a live audio broadcast feed from games, so maybe your target market would be listening to that instead. I’m thinking it could use some sound effects, for balls, strikes, hits, etc. I only tuned in for a couple pitches and then it was between innings, so maybe the more significant ...\n\n[Urgo]: I&#x27;m not a sports person and other then going to a superbowl party really don&#x27;t watch anything but this is really cool. I even put a game on the tv and was comparing it to the site. Very well done :) If there was some way to have live audio streaming in to hear what was going on while the screen animated it that&#x27;d make this perfect but I imagine that isn&#x27;t really a thing that can be done. Either way though, great job on this!\n\n[netsec1989]: Super cool!  Makes me nostalgic for my Earl Weaver Baseball fix. The pace of events will always be a challenge with baseball (delays between pitches, missing when they do happen). Some other mode like the Youtube TV: Catch up with Highlights, would be fantastic.   Quickly replay the big events (runs scored, bases loaded strikeout to end inning.  Maybe every hit and third out).   It becomes a rapid-fire view.    Or, similar thought, a rapid replay mode -- start from the beginning, replay each ...",
+    "author": "brownrout",
+    "published_at": "2026-06-17T16:44:15Z",
+    "fetched_at": "2026-06-18T00:10:20.134393Z",
+    "metadata": {
+      "score": 188,
+      "descendants": 106,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48573012",
+      "comment_count": 5,
+      "title_zh": "8位像素风格实时棒球直播网站",
+      "detailed_summary_zh": "用户创建了 ribbie.tv 网站，利用 MLB 实时数据流生成8位像素艺术风格的棒球比赛直播，并提供了当日多场比赛的观看链接。 该项目将实时体育数据转化为复古像素艺术，为棒球迷提供了一种新颖且怀旧的观赛方式，展示了数据可视化的创意应用，并引发了社区关于艺术风格和技术实现的积极讨论。 网站已实现真实球场、日夜模式、局间图形和实时计分板等细节，但目前部分图像使用AI生成；社区建议采用确定性下采样算法和真正的像素字体以提升视觉效果。",
+      "background_zh": "MLB Statcast 系统自2015年起在所有球场部署，能够实时追踪球员位置、球速等数据，为这类可视化项目提供了基础数据源。8位像素艺术是一种复古数字艺术风格，常唤起对早期电子游戏的怀旧情感。",
+      "community_discussion_zh": "社区整体对项目表示赞赏，但不少用户批评AI生成的艺术不够精致，建议使用真实像素字体和确定性算法；也有用户提出了增加音效、回放功能和基跑者离垒细节等改进意见，还有人分享了类似的物理计分板项目。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Statcast",
+          "title": "Statcast - Wikipedia"
+        },
+        {
+          "url": "https://baseballsavant.mlb.com/league?season=2025",
+          "title": "Major League Baseball Statcast , Visuals & Advanced Metrics"
+        }
+      ],
+      "detailed_summary": "用户创建了 ribbie.tv 网站，利用 MLB 实时数据流生成8位像素艺术风格的棒球比赛直播，并提供了当日多场比赛的观看链接。 该项目将实时体育数据转化为复古像素艺术，为棒球迷提供了一种新颖且怀旧的观赛方式，展示了数据可视化的创意应用，并引发了社区关于艺术风格和技术实现的积极讨论。 网站已实现真实球场、日夜模式、局间图形和实时计分板等细节，但目前部分图像使用AI生成；社区建议采用确定性下采样算法和真正的像素字体以提升视觉效果。",
+      "background": "MLB Statcast 系统自2015年起在所有球场部署，能够实时追踪球员位置、球速等数据，为这类可视化项目提供了基础数据源。8位像素艺术是一种复古数字艺术风格，常唤起对早期电子游戏的怀旧情感。",
+      "community_discussion": "社区整体对项目表示赞赏，但不少用户批评AI生成的艺术不够精致，建议使用真实像素字体和确定性算法；也有用户提出了增加音效、回放功能和基跑者离垒细节等改进意见，还有人分享了类似的物理计分板项目。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community interest (188 points, 106 comments) with constructive feedback on improvements. The project is creative and well-executed, but not groundbreaking in technical depth or novelty.",
+    "ai_summary": "A website that creates 8-bit pixel art broadcasts of live MLB games using real-time data.",
+    "ai_tags": [
+      "baseball",
+      "pixel art",
+      "data visualization",
+      "sports",
+      "web app"
+    ]
+  },
+  {
+    "id": "hackernews:story:48571526",
+    "source_type": "hackernews",
+    "title": "Volkswagen started blocking GrapheneOS users",
+    "url": "https://discuss.grapheneos.org/d/35949-volkswagen-app?page=3",
+    "content": "\n--- Top Comments ---\n\n[moooo99]: It is amazing how Volkswagen keeps messing up.\nI am currently in the market for a new car, an EV specifically. Volkswagen brands were at the top of my list for many reasons, among them the excellent driving assist implementation. I got an offer from a dealer three weeks ago and was going to order the car, then the API for the community integration got turned off. I decided to hold back and see what comes from it. Now this, which ultimately - since I am a GrapheneOS user - makes me completely ...\n\n[aka13_404]: This is sadly not even the full extent of it. What they did is, they locked their api entirely for anything that is not play protect certified. That means, all the cool stuff that was doable via community-driven projects is now dead in the water. The &quot;app&quot; they provide is 60% advertisement, 30% features, and I unironically preferred using a Home Assistant connection instead of of it for everything. Even for automations like &quot;when to preheat the car&quot;, since that was easier ...\n\n[afarah1]: Driving a rental car in Germany almost makes me cheer for the ongoing bankruptcy of their auto industry. It really needs a full reset at this point. Sad thing is EU law mandates for a modem in the car as well as intrusive driving aids that actually make driving less safe by constantly driving your attention away from the road[1]. So there is no hope to get a minimally decent car in Europe in the near future, unless a wider reset also happens at the political and social level. [1]  https:&#x2F...\n\n[AJRF]: I don&#x27;t know how large a group who will do this is - but if the UK bans VPNs I can see Graphene having a very large target on its back.     - Buy Pixel, Get Graphene\n  - Use FDroid, don&#x27;t sign up for Google Play, download Tor browser\n  - Censorship resistant access to the internet without handing over your ID.\n  \nPixel being a fairly popular phone in the UK is the interesting bit - if you had to buy some niche device I couldn&#x27;t see it hitting more than a few hundred people doin...\n\n[prmoustache]: VW blocking third party to access their servers is one thing, the thing that I find shocking is that you need to access VW servers to obtain your charging data while this should be directly available locally from the car.",
+    "author": "microtonal",
+    "published_at": "2026-06-17T15:04:47Z",
+    "fetched_at": "2026-06-18T00:10:20.134529Z",
+    "metadata": {
+      "score": 461,
+      "descendants": 316,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48571526",
+      "comment_count": 5,
+      "title_zh": "大众封锁GrapheneOS用户，引隐私争议",
+      "detailed_summary_zh": "大众汽车封锁了 GrapheneOS 用户对其官方应用和 API 的访问，仅允许通过 Google Play 保护认证的设备使用。 该行为限制了用户选择隐私保护操作系统的自由，并扼杀了社区项目（如 Home Assistant 集成），反映了企业对用户数字权利的侵蚀。 大众 API 被完全锁定，不再支持非 Play 保护认证设备；官方应用被指包含 60% 广告，体验远不如社区集成。",
+      "background_zh": "GrapheneOS 是一款基于 Android 开源项目（AOSP）的开源操作系统，专注于安全和隐私增强。Play 保护认证是 Google 的设备安全验证机制，通常用于确保兼容性和安全性。",
+      "community_discussion_zh": "社区评论普遍对大众的做法表示失望和愤怒，有用户因此推迟购车，并批评欧盟法规导致汽车过度联网，呼吁行业和政治层面的反思。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/GrapheneOS",
+          "title": "GrapheneOS"
+        }
+      ],
+      "detailed_summary": "大众汽车封锁了 GrapheneOS 用户对其官方应用和 API 的访问，仅允许通过 Google Play 保护认证的设备使用。 该行为限制了用户选择隐私保护操作系统的自由，并扼杀了社区项目（如 Home Assistant 集成），反映了企业对用户数字权利的侵蚀。 大众 API 被完全锁定，不再支持非 Play 保护认证设备；官方应用被指包含 60% 广告，体验远不如社区集成。",
+      "background": "GrapheneOS 是一款基于 Android 开源项目（AOSP）的开源操作系统，专注于安全和隐私增强。Play 保护认证是 Google 的设备安全验证机制，通常用于确保兼容性和安全性。",
+      "community_discussion": "社区评论普遍对大众的做法表示失望和愤怒，有用户因此推迟购车，并批评欧盟法规导致汽车过度联网，呼吁行业和政治层面的反思。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (461 points, 316 comments) reflects community interest in this issue of manufacturer API blocking, which raises important questions about user privacy and digital rights. The discussion includes insightful perspectives on API locking and user-hostile practices.",
+    "ai_summary": "Volkswagen blocks GrapheneOS users from their app and API, sparking debate on privacy and corporate control.",
+    "ai_tags": [
+      "Privacy",
+      "GrapheneOS",
+      "Volkswagen",
+      "Android",
+      "API Access"
+    ]
+  },
+  {
+    "id": "hackernews:story:48569894",
+    "source_type": "hackernews",
+    "title": "Why thinking out loud with someone beats thinking alone",
+    "url": "https://www.thesignalist.io/s/the-dialogue-dividend/",
+    "content": "\n--- Top Comments ---\n\n[Havoc]: I don&#x27;t think the out loud or someone listening &#x2F; reacting matters at all here. Suspect it&#x27;s entirely this: &gt;The thought that was comfortable as a vague impression has to become a sentence, and sentences have structure. It&#x27;s not unlike what people like PG say about writing improving thinking...it&#x27;s the being forced to go from fuzzy directional notions to something you can put on paper in that will stand up to critique. Same with rubber duck debugging. The verbal pa...\n\n[jboggan]: In 2017 LLMs weren&#x27;t powerful enough to generate working code on their own, but my goal was to at least create a chatbot that could help you rubber-duck-debug your way to a solution. Unfortunately the tech wasn&#x27;t quite strong enough for that, and not enough engineers even knew what rubber-duck-debugging was. RIP Duckly. Trying to train an LLM on two 1080ti&#x27;s on the StackOverflow corpus in my living room was a vibe though. Good times.\n\n[aljgz]: Tangentially, Regarding pair programming (as a special case of thinking together): Programming is serializing ideas into the computer language. Communicating them with someone else first serializes them into human language, which is already much less abstract compared to the thought cloud in your head. In the case of an effective pair programming collaboration, you also get to debate approaches, discuss details, alternate between coding and watching. It also helps that the presence of someone...\n\n[dh2022]: OMG - strong vibes to Einstein crediting Michele Besso, his colleague at the Swiss Patent Office, with helping him discussing some concepts in the special relativity paper: see at the end of the paper  https:&#x2F;&#x2F;www.fourmilab.ch&#x2F;etexts&#x2F;einstein&#x2F;specrel&#x2F;specrel.pdf\n\n[assimpleaspossi]: This proves nothing but, in my earlier days, I&#x27;d come home with something on my mind from work and tell my wife about how I couldn&#x27;t get something to work the way I wanted. She had no clue what I was talking about but she&#x27;d offer up clues and suggestions to which I would try to explain to her how things actually worked. Somewhere in that process it would lead to a solution that I would bring to work the next day!",
+    "author": "kodesko",
+    "published_at": "2026-06-17T13:00:38Z",
+    "fetched_at": "2026-06-18T00:10:20.134568Z",
+    "metadata": {
+      "score": 150,
+      "descendants": 73,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48569894",
+      "comment_count": 5,
+      "title_zh": "与人对话思考胜过独自思考",
+      "detailed_summary_zh": "《The Signalist》上发表了一篇文章，指出向他人大声说出自己的想法比独自思考更有助于理清思路和解决问题。 这一发现强调了协作沟通在认知过程中的关键作用，尤其对需要清晰逻辑的领域（如编程）具有重要启示，可能推动更多团队采用结对编程和橡皮鸭调试等实践。 文章以橡皮鸭调试和结对编程为例，说明将模糊想法转化为结构化语言是提升思维清晰度的核心机制。",
+      "background_zh": "橡皮鸭调试是一种软件调试方法，程序员通过向一只橡皮鸭逐行解释代码来发现错误；结对编程则是两名程序员在同一工作站协作，一人写代码另一人审查。这两种方法都利用了向他人（或模拟他人）表述来强化思考。",
+      "community_discussion_zh": "社区评论普遍认同文章核心观点，但强调关键不在于“有听众”，而在于“被迫将模糊想法转化为有结构的句子”，这与写作改善思考的原理类似。有评论提到早期尝试用LLM辅助橡皮鸭调试，还有引用爱因斯坦与同事讨论相对论的例子作为佐证。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rubber_duck_debugging",
+          "title": "Rubber duck debugging - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Pair_programming",
+          "title": "Pair programming"
+        }
+      ],
+      "detailed_summary": "《The Signalist》上发表了一篇文章，指出向他人大声说出自己的想法比独自思考更有助于理清思路和解决问题。 这一发现强调了协作沟通在认知过程中的关键作用，尤其对需要清晰逻辑的领域（如编程）具有重要启示，可能推动更多团队采用结对编程和橡皮鸭调试等实践。 文章以橡皮鸭调试和结对编程为例，说明将模糊想法转化为结构化语言是提升思维清晰度的核心机制。",
+      "background": "橡皮鸭调试是一种软件调试方法，程序员通过向一只橡皮鸭逐行解释代码来发现错误；结对编程则是两名程序员在同一工作站协作，一人写代码另一人审查。这两种方法都利用了向他人（或模拟他人）表述来强化思考。",
+      "community_discussion": "社区评论普遍认同文章核心观点，但强调关键不在于“有听众”，而在于“被迫将模糊想法转化为有结构的句子”，这与写作改善思考的原理类似。有评论提到早期尝试用LLM辅助橡皮鸭调试，还有引用爱因斯坦与同事讨论相对论的例子作为佐证。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful article with strong community validation (150 points, 73 comments). Discussion highlights connections to rubber duck debugging, pair programming, and cognitive science, adding depth. High relevance but not groundbreaking.",
+    "ai_summary": "Articulating thoughts to another person forces clarity and improves problem-solving compared to thinking alone.",
+    "ai_tags": [
+      "cognitive science",
+      "productivity",
+      "pair programming",
+      "rubber duck debugging",
+      "communication"
+    ]
+  },
+  {
+    "id": "hackernews:story:48567155",
+    "source_type": "hackernews",
+    "title": "Hacker News but for independent blogs",
+    "url": "https://bubbles.town/",
+    "content": "\n--- Top Comments ---\n\n[dchuk]: Nice job, clean and well built. I built something very similar, with a focus on engineering&#x2F;product&#x2F;startup blogs  https:&#x2F;&#x2F;engineered.at  What&#x27;s your tech stack? Mine is pretty vanilla ruby on rails, while my site is closed source, I did open source a rails engine for adaptive monitoring of RSS feeds that does a lot of the heavy lifting:  https:&#x2F;&#x2F;github.com&#x2F;dchuk&#x2F;source_monitor\n\n[janaagaard]: I think the links should open in the same window (like they do here on HN) instead of in a new tab&#x2F;window. If I want a separate tab, I can Cmd+click and Browsers don&#x27;t have the reverse option for opening in the same window.\n\n[nathell]: I’ve been perusing Bubbles increasingly often since discovering that my blog is syndicated there, a few weeks ago. It feels really refreshing compared to doomscrolling of social media, or indeed even to HN. It’s so diverse and humane. The indie blogosphere is coming to life. Kudos to the author. A great idea, splendidly executed. I hope it grows and doesn’t change much.\n\n[throwawayk7h]: Very exciting! And I like the fediverse integration too. &gt; $N independent, personal blogs. One front page. Ranked by votes and freshness, shaped by you. This sounds a bit AI-generated (i.e. bland). I would just remove that line entirely from the UI. &gt; top &#x2F; new &#x2F; hot &#x2F; my this is a non-parallel construction[1], &quot;my&quot; sounds weird here to an english speaker. These can all be read as adjuncts if you change it to &quot;mine&quot;. [1]  https:&#x2F;&#x2F;www.grammar....\n\n[exitnode]: Very cool but I would like to be able to create an account with my mail address instead of using a Mastodon account because I am trying to avoid social media.",
+    "author": "headalgorithm",
+    "published_at": "2026-06-17T07:49:44Z",
+    "fetched_at": "2026-06-18T00:10:20.134602Z",
+    "metadata": {
+      "score": 532,
+      "descendants": 175,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48567155",
+      "comment_count": 5,
+      "title_zh": "Bubbles：独立博客版的Hacker News",
+      "detailed_summary_zh": "Bubbles是一个社区驱动的独立博客聚合器，类似于Hacker News，但专门聚焦于个人博客。该平台允许用户投票、排序和发现独立博客文章，近期获得了社区高度关注和积极反馈。 Bubbles的出现反映了独立博客生态的复兴趋势，为远离社交媒体和算法推荐的用户提供了一个更人性化、多样化的内容发现渠道。它可能成为Hacker News的有益补充，推动独立博客社区的发展。 Bubbles支持通过Mastodon账号登录（暂无传统邮箱注册），并集成了联邦宇宙（Fediverse）。其排序方式包括 top / new / hot / my，但部分用户建议优化UI文案（如将“my”改为“mine”）。",
+      "background_zh": "Hacker News是Y Combinator旗下的科技新闻聚合社区，以技术讨论和创业内容为主。近年来，随着社交媒体噪音增加，许多用户开始回归独立博客，寻求更深度、更个性化的阅读体验。Bubbles正是顺应这一趋势，专注于独立博客的聚合与排名。",
+      "community_discussion_zh": "社区总体反响积极，称赞其简洁设计和理念。有用户建议链接应在当前窗口打开而非新标签页，并希望支持邮箱注册以避免依赖社交媒体。此外，作者开源了RSS监控引擎，引发了技术栈交流。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Filter_bubble",
+          "title": "Filter bubble - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Bubbles是一个社区驱动的独立博客聚合器，类似于Hacker News，但专门聚焦于个人博客。该平台允许用户投票、排序和发现独立博客文章，近期获得了社区高度关注和积极反馈。 Bubbles的出现反映了独立博客生态的复兴趋势，为远离社交媒体和算法推荐的用户提供了一个更人性化、多样化的内容发现渠道。它可能成为Hacker News的有益补充，推动独立博客社区的发展。 Bubbles支持通过Mastodon账号登录（暂无传统邮箱注册），并集成了联邦宇宙（Fediverse）。其排序方式包括 top / new / hot / my，但部分用户建议优化UI文案（如将“my”改为“mine”）。",
+      "background": "Hacker News是Y Combinator旗下的科技新闻聚合社区，以技术讨论和创业内容为主。近年来，随着社交媒体噪音增加，许多用户开始回归独立博客，寻求更深度、更个性化的阅读体验。Bubbles正是顺应这一趋势，专注于独立博客的聚合与排名。",
+      "community_discussion": "社区总体反响积极，称赞其简洁设计和理念。有用户建议链接应在当前窗口打开而非新标签页，并希望支持邮箱注册以避免依赖社交媒体。此外，作者开源了RSS监控引擎，引发了技术栈交流。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (532 points, 175 comments) with substantive, constructive discussion including UX feedback and positive sentiment about the indie blogosphere revival. Novel approach to aggregating independent blogs, well-executed.",
+    "ai_summary": "Bubbles is a community-driven aggregator for independent blogs, similar to Hacker News but focused on personal blogs, with high community interest and positive reception.",
+    "ai_tags": [
+      "indie blogs",
+      "aggregation",
+      "community",
+      "hacker news alternative"
+    ]
+  },
+  {
+    "id": "hackernews:story:48569954",
+    "source_type": "hackernews",
+    "title": "Want your images back? That'll be $5",
+    "url": "https://www.lutr.dev/want-your-images-back-sure-that-ll-be-5-dollars",
+    "content": "\n--- Top Comments ---\n\n[okramcivokram]: I have received the email that my photobucket account is going to be deleted, so I&#x27;ve logged in after who knows how many years and got offered the same thing, to subscribe. Instead I&#x27;ve went to close the account and in the process (or somewhere else, don&#x27;t remember exactly) there was an option to first download all the data which I&#x27;ve used and got the images back (there were just a few as I haven&#x27;t used the service really), then I&#x27;ve closed the account. There was...\n\n[mbo]: Why are we complaining about this as a corporate greed thing? (I do agree that it&#x27;s bad that there were no images preserved and that component of the post is justifiable) Obviously Photobucket completely failed to properly monetize, and was sold to Fox and then offloaded to some no-name startup called Ontela ( https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Photobucket ). The service could have been shutdown completely and the harddrives fed into the shredder. Instead some former PE vu...\n\n[equinoxnemesis]: Considering they explicitly said they had some photos of yours (&quot;You shared them. We protected them.&quot;), this seems like chargeback territory.\n\n[geor9e]: If Google Photos gave me my photos in one go, exactly as they are in the app, I&#x27;d gladly pay $5. As it stands, they offer &quot;Takeout&quot; for free. This process gives you hundreds of zip files with the photos distributed into deep subfolders by date. That would be forgivable if it weren&#x27;t for the fact that they revert all their processing and deduping, leaving you with 20 copies of the same file scattered in random places. To make matters worse, if you try to download more than ...\n\n[janalsncm]: &gt; Apparently using Vercel to host a personal blog might not be the best idea. I&#x27;m nearly reaching the limit of Edge Requests in just 2 hours after the post. I had always thought that fixing outages was one of the least appealing parts of software engineering, but so many SWE blogs seem to have built blogs in ways where downtime is inevitable. Unless there is an extremely good reason not to use one, a static site generator works perfectly well. Next, there are many 3p services which wi...",
+    "author": "lutr",
+    "published_at": "2026-06-17T13:05:03Z",
+    "fetched_at": "2026-06-18T00:10:20.134640Z",
+    "metadata": {
+      "score": 593,
+      "descendants": 246,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48569954",
+      "comment_count": 5,
+      "title_zh": "Photobucket索要5美元才让用户取回照片",
+      "detailed_summary_zh": "Photobucket在其账户删除流程中，向用户收取5美元订阅费才能下载自己已上传的照片，否则照片将永久丢失。 此事引发了对云存储服务数据可移植性及公司商业道德的广泛讨论，用户可能因无力支付而失去珍贵个人数据，凸显用户权利与平台权力之间的不平衡。 实际上，部分用户发现账户关闭流程中存在隐藏的免费下载选项，但主要界面仍将付费订阅作为首选，造成用户体验混乱。",
+      "background_zh": "Photobucket是一个早期的照片托管平台，曾广泛用于论坛和博客图片外链。该服务多次易主，商业模式失败，近年来通过限制免费账户的功能来试图盈利。数据可移植性是指用户能够将自己的数据从一个服务完整地迁移到另一个服务的能力。",
+      "community_discussion_zh": "评论中有人指出实际有免费下载路径，但界面设计误导用户；也有人认为这是公司没落后的自救手段，而非纯粹的贪婪。部分用户对比了Google Photos等免费导出服务，认为Photobucket的做法更加恶劣。",
+      "detailed_summary": "Photobucket在其账户删除流程中，向用户收取5美元订阅费才能下载自己已上传的照片，否则照片将永久丢失。 此事引发了对云存储服务数据可移植性及公司商业道德的广泛讨论，用户可能因无力支付而失去珍贵个人数据，凸显用户权利与平台权力之间的不平衡。 实际上，部分用户发现账户关闭流程中存在隐藏的免费下载选项，但主要界面仍将付费订阅作为首选，造成用户体验混乱。",
+      "background": "Photobucket是一个早期的照片托管平台，曾广泛用于论坛和博客图片外链。该服务多次易主，商业模式失败，近年来通过限制免费账户的功能来试图盈利。数据可移植性是指用户能够将自己的数据从一个服务完整地迁移到另一个服务的能力。",
+      "community_discussion": "评论中有人指出实际有免费下载路径，但界面设计误导用户；也有人认为这是公司没落后的自救手段，而非纯粹的贪婪。部分用户对比了Google Photos等免费导出服务，认为Photobucket的做法更加恶劣。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (593 points, 246 comments) highlights widespread concern over data portability and hostile business practices in cloud storage. The topic is relevant to software engineering and user rights, though not groundbreaking.",
+    "ai_summary": "Photobucket charges users $5 to retrieve their own photos before account deletion, sparking debate on data ownership and corporate greed.",
+    "ai_tags": [
+      "cloud storage",
+      "data portability",
+      "user rights",
+      "anti-patterns"
+    ]
+  },
+  {
+    "id": "hackernews:story:48569205",
+    "source_type": "hackernews",
+    "title": "MicroUI – A tiny, portable, immediate-mode UI library written in ANSI C",
+    "url": "https://github.com/rxi/microui",
+    "content": "\n--- Top Comments ---\n\n[flohofwoe]: I wrote a little demo to run microui on top of the sokol headers here, it&#x27;s really interesting in how minimal it is. WASM demo:  https:&#x2F;&#x2F;floooh.github.io&#x2F;sokol-html5&#x2F;sgl-microui-sapp.html  Source code:  https:&#x2F;&#x2F;github.com&#x2F;floooh&#x2F;sokol-samples&#x2F;blob&#x2F;master&#x2F;sapp&#x2F;sgl...  The renderer backend is just a bunch of C functions you need to provide:  https:&#x2F;&#x2F;github.com&#x2F;floooh&#x2F;sokol-samples&#x2F;blob&#x2F;3f4185a8578cd2b...\n\n[kartoffelsaft]: This has been my goto for personal toy projects for a while now. Trivial to slot in to basically anything that can display text and takes mouse input. I will mention, however, it&#x27;s kinda abandonware at this point. There is some bug with the draw call iterator which does a misaligned pointer access, which, if your environment is set up to catch that, can get annoying (Zig for example panics on it). There&#x27;s a github issue that some have used as reason to fork it but all the forks I tr...\n\n[0x0203]: For a slightly larger, cross-platform, retained mode GUI written in C, there&#x27;s libagar [0]. Different use case than MicroUI, but still a neat project. [0]  https:&#x2F;&#x2F;libagar.org&#x2F;\n\n[jacereda]: I used this one in 2022 to make a proof of concept for a build once &#x2F; run anywhere graphical app and IIRC the library was quite nice, even if a bit limited. The resulting kludge is at  https:&#x2F;&#x2F;github.com&#x2F;jacereda&#x2F;cosmogfx  and there&#x27;s a prebuilt binary that should run on Linux, Windows and some BSDs.  https:&#x2F;&#x2F;github.com&#x2F;jacereda&#x2F;cosmogfx&#x2F;releases&#x2F;download&#x2F;v0.0....  Cosmopolitan Libc has since integrated the bits to make OpenGL w...\n\n[kettlez]: This is included in the Odin vendor libraries, it&#x27;s fantastic for Raylib debug menus",
+    "author": "peter_d_sherman",
+    "published_at": "2026-06-17T12:04:28Z",
+    "fetched_at": "2026-06-18T00:10:20.134679Z",
+    "metadata": {
+      "score": 175,
+      "descendants": 64,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48569205",
+      "comment_count": 5,
+      "title_zh": "MicroUI：基于ANSI C的微型即时模式UI库",
+      "detailed_summary_zh": "MicroUI是一个用ANSI C编写的微型即时模式图形用户界面库，因其极简设计和可移植性而受到关注。 该库为嵌入式系统和游戏开发提供了一种轻量级UI方案，特别适用于资源受限的环境。其即时模式设计简化了UI逻辑，降低了学习成本。 MicroUI仅包含约1000行代码，依赖于用户提供的后端渲染函数（如绘制矩形、文本等），因此极易移植到不同平台。社区报告了一个未修复的对齐指针访问错误，可能导致在某些环境（如Zig）中触发异常。",
+      "background_zh": "即时模式GUI（IMGUI）是一种编程模式，其中用户界面每帧完全重建，控件不持久存储状态。与传统保留模式GUI相比，IMGUI通常更简单、更易调试，适合工具和游戏内界面。ANSI C保证了代码跨平台兼容性，适合嵌入式系统。",
+      "community_discussion_zh": "社区普遍称赞MicroUI的简洁性和易用性，认为它是个人小项目的不错选择。但也有用户指出其已基本停止维护，存在指针对齐错误等问题，并且现有fork未能彻底解决。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Immediate_mode_(computer_graphics)",
+          "title": "Immediate mode (computer graphics) - Wikipedia"
+        }
+      ],
+      "detailed_summary": "MicroUI是一个用ANSI C编写的微型即时模式图形用户界面库，因其极简设计和可移植性而受到关注。 该库为嵌入式系统和游戏开发提供了一种轻量级UI方案，特别适用于资源受限的环境。其即时模式设计简化了UI逻辑，降低了学习成本。 MicroUI仅包含约1000行代码，依赖于用户提供的后端渲染函数（如绘制矩形、文本等），因此极易移植到不同平台。社区报告了一个未修复的对齐指针访问错误，可能导致在某些环境（如Zig）中触发异常。",
+      "background": "即时模式GUI（IMGUI）是一种编程模式，其中用户界面每帧完全重建，控件不持久存储状态。与传统保留模式GUI相比，IMGUI通常更简单、更易调试，适合工具和游戏内界面。ANSI C保证了代码跨平台兼容性，适合嵌入式系统。",
+      "community_discussion": "社区普遍称赞MicroUI的简洁性和易用性，认为它是个人小项目的不错选择。但也有用户指出其已基本停止维护，存在指针对齐错误等问题，并且现有fork未能彻底解决。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value due to the library's elegant minimalism and portability, with strong community engagement (175 points, 64 comments) providing practical insights and examples, though not groundbreaking.",
+    "ai_summary": "MicroUI is a tiny, portable, immediate-mode UI library in ANSI C, praised for simplicity and used in hobby and demo projects.",
+    "ai_tags": [
+      "C",
+      "GUI",
+      "immediate-mode",
+      "library",
+      "embedded"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:102d05c4cf8d9cb9",
+    "source_type": "rss",
+    "title": "I Could've Rickrolled the Entire FIFA World Cup. All I Needed Was My ID",
+    "url": "https://bobdahacker.com/blog/fifa-hack",
+    "content": "<p><a href=\"https://lobste.rs/s/z5wfi9/i_could_ve_rickrolled_entire_fifa_world\">Comments</a></p>",
+    "author": "bobdahacker.com via fs111",
+    "published_at": "2026-06-17T08:31:43Z",
+    "fetched_at": "2026-06-18T00:10:20.094567Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "仅凭ID即可Rickroll整个FIFA世界杯",
+      "detailed_summary_zh": "一位自称Bob Da Hacker的安全研究员声称，他仅利用自己的用户ID就能利用一个漏洞，在FIFA世界杯赛事中实施大规模Rickroll恶作剧。 如果属实，这意味着FIFA世界杯的在线系统存在严重的安全漏洞，可能允许攻击者控制比赛现场的大屏幕或广播内容，影响全球数亿观众的观赛体验。 该漏洞类型被推测为不安全的直接对象引用（IDOR），攻击者通过修改URL中的ID参数绕过权限检查，从而获得对系统高级功能的未授权访问。",
+      "background_zh": "不安全的直接对象引用（IDOR）是一种常见的Web安全漏洞，当应用程序使用用户提供的标识符直接访问内部对象，而未进行适当的权限验证时，攻击者可以篡改标识符获取或修改其他用户的数据。例如，在URL中更改用户ID就可能访问他人的账户信息。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Insecure_direct_object_reference",
+          "title": "Insecure direct object reference - Wikipedia"
+        },
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/IDOR",
+          "title": "Insecure Direct Object Reference ( IDOR ) - Security | MDN"
+        }
+      ],
+      "detailed_summary": "一位自称Bob Da Hacker的安全研究员声称，他仅利用自己的用户ID就能利用一个漏洞，在FIFA世界杯赛事中实施大规模Rickroll恶作剧。 如果属实，这意味着FIFA世界杯的在线系统存在严重的安全漏洞，可能允许攻击者控制比赛现场的大屏幕或广播内容，影响全球数亿观众的观赛体验。 该漏洞类型被推测为不安全的直接对象引用（IDOR），攻击者通过修改URL中的ID参数绕过权限检查，从而获得对系统高级功能的未授权访问。",
+      "background": "不安全的直接对象引用（IDOR）是一种常见的Web安全漏洞，当应用程序使用用户提供的标识符直接访问内部对象，而未进行适当的权限验证时，攻击者可以篡改标识符获取或修改其他用户的数据。例如，在URL中更改用户ID就可能访问他人的账户信息。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The title suggests a significant security vulnerability in a major global event (FIFA World Cup), which is potentially high-impact. However, the content provided is minimal (only a link to comments), lacking technical details. The score reflects potential importance tempered by incomplete information.",
+    "ai_summary": "A hacker claims they could have exploited a vulnerability to Rickroll the entire FIFA World Cup using only their ID.",
+    "ai_tags": [
+      "security",
+      "vulnerability",
+      "FIFA",
+      "hacking",
+      "rickroll"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:ed20b12c933647cb",
+    "source_type": "rss",
+    "title": "Pull Requests are Free Puppies",
+    "url": "https://www.youtube.com/watch?v=x8_ZZhRL3YU&t=1733s",
+    "content": "<p>Lightly edited transcript of Richard Hipp, creator of SQLite, from 28'53\":</p>\n<blockquote>\n<p>Suppose you had a pull request for SQLite. \"Hey, I've got this new feature for SQLite. Here's the pull request.\" When you want me to pull that into the tree, you say, \"Oh, it's free.\"</p>\n<p>No, it's not free. What you're doing is asking me - you've got this cool feature, and you want me to maintain it for you, to document it for you, to test it for you, to maintain it for you for the next twenty-five years. That's not free.</p>\n<p>Linus Torvalds is famous for saying there's free as in beer and free as in speech. But there's another kind of freedom: free as in puppies. \"Oh look, I've got a free puppy for you.\" You see where this is going?</p>\n<p>A pull request is a free puppy. And then you've just got a kennel full of puppies at the end of the day. And you can't just throw them out - you're morally obligated to take care of them for their natural life.</p>\n<p>I don't want any free puppies.</p>\n</blockquote>\n<p><a href=\"https://lobste.rs/s/aqk7vl/pull_requests_are_free_puppies\">Comments</a></p>",
+    "author": "youtube.com via ndr",
+    "published_at": "2026-06-17T13:23:44Z",
+    "fetched_at": "2026-06-18T00:10:20.094615Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "video",
+        "programming"
+      ],
+      "title_zh": "Pull Requests 如同免费小狗",
+      "detailed_summary_zh": "SQLite 创始人 Richard Hipp 在演讲中将 pull request 比喻为“免费小狗”，指出接受 pull request 意味着需要长期维护、文档和测试，并非真正免费。 这一观点揭示了开源项目中常见的隐性维护成本，引起开发者对贡献质量和长期责任的反思，对开源社区的管理实践具有重要启发。 Hipp 强调维护者需要为每个 pull request 负责长达数十年，无法轻易丢弃，就像不能遗弃小狗一样。他明确表示不希望接收“免费小狗”，即未经充分考量的贡献。",
+      "background_zh": "Pull request 是开发者向开源项目提交代码修改的常用方式，项目维护者需要审查、测试、合并并长期维护这些代码。开源项目常依赖社区贡献，但维护负担常被低估，Hipp 的比喻正是为此敲响警钟。",
+      "community_discussion_zh": "社区讨论中，许多开发者对 Hipp 的观点表示强烈认同，认为 pull request 的长期维护成本确实常被忽略，尤其是那些缺乏文档或测试的贡献。也有部分人指出该比喻可能过于极端，但整体上引发了关于贡献者责任与维护者负担的深入反思。",
+      "detailed_summary": "SQLite 创始人 Richard Hipp 在演讲中将 pull request 比喻为“免费小狗”，指出接受 pull request 意味着需要长期维护、文档和测试，并非真正免费。 这一观点揭示了开源项目中常见的隐性维护成本，引起开发者对贡献质量和长期责任的反思，对开源社区的管理实践具有重要启发。 Hipp 强调维护者需要为每个 pull request 负责长达数十年，无法轻易丢弃，就像不能遗弃小狗一样。他明确表示不希望接收“免费小狗”，即未经充分考量的贡献。",
+      "background": "Pull request 是开发者向开源项目提交代码修改的常用方式，项目维护者需要审查、测试、合并并长期维护这些代码。开源项目常依赖社区贡献，但维护负担常被低估，Hipp 的比喻正是为此敲响警钟。",
+      "community_discussion": "社区讨论中，许多开发者对 Hipp 的观点表示强烈认同，认为 pull request 的长期维护成本确实常被忽略，尤其是那些缺乏文档或测试的贡献。也有部分人指出该比喻可能过于极端，但整体上引发了关于贡献者责任与维护者负担的深入反思。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful commentary on the hidden costs of accepting pull requests, popular and widely discussed within the open source community. Provides a valuable perspective on maintenance burden.",
+    "ai_summary": "Richard Hipp compares pull requests to 'free puppies' that come with long-term maintenance obligations.",
+    "ai_tags": [
+      "open source",
+      "software maintenance",
+      "pull requests",
+      "SQLite"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d5bb0dd1f35a0824",
+    "source_type": "rss",
+    "title": "Color picking Oklch for mortals",
+    "url": "https://hugodaniel.com/posts/color-picking-oklch/",
+    "content": "<p><a href=\"https://lobste.rs/s/hnoijy/color_picking_oklch_for_mortals\">Comments</a></p>",
+    "author": "hugodaniel.com by HugoDaniel",
+    "published_at": "2026-06-17T10:45:54Z",
+    "fetched_at": "2026-06-18T00:10:20.094637Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "design",
+        "graphics"
+      ],
+      "title_zh": "Oklch颜色空间实用指南：面向普通开发者",
+      "detailed_summary_zh": "博主Hugo Daniel发布了一篇名为《Color picking Oklch for mortals》的实用指南，详细介绍了如何在CSS中使用Oklch颜色空间进行感知均匀的颜色选择。 Oklch已被纳入CSS Color Level 4草案并获现代浏览器支持，这篇指南降低了Web开发者和设计师使用该先进颜色空间的门槛，有助于创建更具一致性的颜色方案和渐变。 Oklch是Oklab的圆柱形表示，使用明度（L）、色度（C）和色调（h）三个维度，其感知均匀性优于传统的HSL和RGB颜色空间。部分Oklch颜色可能超出sRGB色域，需要fallback处理。",
+      "background_zh": "传统颜色空间（如HSL）在感知上不均匀，导致相同数值间隔的颜色差异在人眼中不一致。Oklab/Oklch由Björn Ottosson于2020年提出，基于CAM16和IPT数据优化，改善了蓝色区域的色相和明度预测，提供更准确的色彩再现。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Oklab_color_space",
+          "title": "Oklab color space"
+        },
+        {
+          "url": "https://oklch.org/",
+          "title": "OKLCH Color Picker - Modern CSS Color Space Tool"
+        },
+        {
+          "url": "https://oklch.com/",
+          "title": "OKLCH is a new way to encode colors (like hex, RGBA, or HSL)"
+        }
+      ],
+      "detailed_summary": "博主Hugo Daniel发布了一篇名为《Color picking Oklch for mortals》的实用指南，详细介绍了如何在CSS中使用Oklch颜色空间进行感知均匀的颜色选择。 Oklch已被纳入CSS Color Level 4草案并获现代浏览器支持，这篇指南降低了Web开发者和设计师使用该先进颜色空间的门槛，有助于创建更具一致性的颜色方案和渐变。 Oklch是Oklab的圆柱形表示，使用明度（L）、色度（C）和色调（h）三个维度，其感知均匀性优于传统的HSL和RGB颜色空间。部分Oklch颜色可能超出sRGB色域，需要fallback处理。",
+      "background": "传统颜色空间（如HSL）在感知上不均匀，导致相同数值间隔的颜色差异在人眼中不一致。Oklab/Oklch由Björn Ottosson于2020年提出，基于CAM16和IPT数据优化，改善了蓝色区域的色相和明度预测，提供更准确的色彩再现。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value tutorial on modern color spaces (Oklch), relevant to web developers and designers; provides practical knowledge for perceptually uniform color picking.",
+    "ai_summary": "A practical guide to using the Oklch color space for perceptually uniform color picking.",
+    "ai_tags": [
+      "color science",
+      "web development",
+      "CSS",
+      "design"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b2cf820e6e221a4e",
+    "source_type": "rss",
+    "title": "The Impact of Google's Manifest Version 3 Update on Ad Blocker Effectiveness",
+    "url": "https://arxiv.org/abs/2503.01000",
+    "content": "<p><a href=\"https://lobste.rs/s/fxulig/impact_google_s_manifest_version_3_update\">Comments</a></p>",
+    "author": "arxiv.org via wonk",
+    "published_at": "2026-06-17T07:30:42Z",
+    "fetched_at": "2026-06-18T00:10:20.094677Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "browsers",
+        "privacy"
+      ],
+      "title_zh": "Google Manifest V3 对广告拦截器的影响",
+      "detailed_summary_zh": "一篇学术论文详细分析了Google Chrome的Manifest V3更新如何削弱广告拦截器的有效性。 这一变化影响了数亿用户的浏览体验和隐私保护，因为广告拦截器是用户屏蔽烦人广告和追踪器的主要工具。 论文指出，Manifest V3强制使用declarativeNetRequest API，限制了广告拦截器允许的规则数量，并移除了对webRequest API的阻塞支持。",
+      "background_zh": "Manifest V3是Chrome扩展平台的新规范，旨在提高安全性、性能和隐私。它用服务工作者替代持久后台页面，并引入declarativeNetRequest API来控制网络请求，这限制了广告拦截器的传统工作方式。",
+      "sources": [
+        {
+          "url": "https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3",
+          "title": "Extensions / Manifest V3 | Chrome for Developers"
+        }
+      ],
+      "detailed_summary": "一篇学术论文详细分析了Google Chrome的Manifest V3更新如何削弱广告拦截器的有效性。 这一变化影响了数亿用户的浏览体验和隐私保护，因为广告拦截器是用户屏蔽烦人广告和追踪器的主要工具。 论文指出，Manifest V3强制使用declarativeNetRequest API，限制了广告拦截器允许的规则数量，并移除了对webRequest API的阻塞支持。",
+      "background": "Manifest V3是Chrome扩展平台的新规范，旨在提高安全性、性能和隐私。它用服务工作者替代持久后台页面，并引入declarativeNetRequest API来控制网络请求，这限制了广告拦截器的传统工作方式。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Relevant technical analysis of a controversial and impactful browser change affecting ad blockers, with academic rigor from arXiv. No discussion comments provided to influence score.",
+    "ai_summary": "Academic paper examining how Google's Manifest V3 impacts ad blocker effectiveness.",
+    "ai_tags": [
+      "Manifest V3",
+      "ad blockers",
+      "browser extensions",
+      "Google Chrome",
+      "privacy"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:ab6a18461a45a74d",
+    "source_type": "rss",
+    "title": "Making budget models punch above their weight with a smart Rust harness",
+    "url": "https://yogthos.net/posts/2026-06-08-dirge-code.html",
+    "content": "<p><a href=\"https://lobste.rs/s/goo5sh/making_budget_models_punch_above_their\">Comments</a></p>",
+    "author": "yogthos.net by Yogthos",
+    "published_at": "2026-06-17T14:10:19Z",
+    "fetched_at": "2026-06-18T00:10:20.094696Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "title_zh": "用Rust智能框架提升预算AI模型性能",
+      "detailed_summary_zh": "本文介绍了一种使用Rust构建的智能框架（harness），可以显著提升预算AI模型的运行效率，让低成本模型在性能上超越其规格。 该技术为资源受限场景（如边缘设备或低预算部署）提供了优化方案，可能推动AI应用的普及和效率提升，尤其对中小企业或个人开发者意义重大。 该Rust harness通过精细的资源管理和并行调度，优化了模型推理路径，减少了不必要的开销。文中还讨论了Rust的类型系统和所有权模型如何帮助构建安全高效的AI代理框架。",
+      "background_zh": "预算AI模型指那些参数较少、成本较低的模型，适合在有限硬件上运行。Rust是一门系统编程语言，以内存安全和零成本抽象著称，其编译器特性和所有权模型特别适合构建高性能、可靠的底层工具。",
+      "sources": [
+        {
+          "url": "https://github.com/majiayu000/harness",
+          "title": "GitHub - majiayu000/harness: Rust AI agent orchestration platform with App Server, rules, skills, GC, and observability. · GitHub"
+        },
+        {
+          "url": "https://medium.com/@ashbenen/the-compiler-is-the-harness-why-agentic-coding-works-so-well-in-rust-730bca7faf8e",
+          "title": "The Compiler Is the Harness: Why Agentic Coding Works So Well in Rust | by Adam Benenson | Medium"
+        },
+        {
+          "url": "https://www.subthesis.com/blog/cheap-and-effective-ai-models",
+          "title": "Cheap and Effective AI Models: A Complete Guide for 2026 | Subthesis | Subthesis"
+        }
+      ],
+      "detailed_summary": "本文介绍了一种使用Rust构建的智能框架（harness），可以显著提升预算AI模型的运行效率，让低成本模型在性能上超越其规格。 该技术为资源受限场景（如边缘设备或低预算部署）提供了优化方案，可能推动AI应用的普及和效率提升，尤其对中小企业或个人开发者意义重大。 该Rust harness通过精细的资源管理和并行调度，优化了模型推理路径，减少了不必要的开销。文中还讨论了Rust的类型系统和所有权模型如何帮助构建安全高效的AI代理框架。",
+      "background": "预算AI模型指那些参数较少、成本较低的模型，适合在有限硬件上运行。Rust是一门系统编程语言，以内存安全和零成本抽象著称，其编译器特性和所有权模型特别适合构建高性能、可靠的底层工具。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Title suggests a novel technical approach optimizing budget AI models using Rust, relevant to performance engineering. Discussion on Lobste.rs indicates community interest, though content not fully quoted; likely high-value technical deep-dive.",
+    "ai_summary": "Using a Rust harness to boost performance of budget AI models.",
+    "ai_tags": [
+      "Rust",
+      "AI/ML",
+      "performance engineering",
+      "model optimization"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a2022ee194c9b27e",
+    "source_type": "rss",
+    "title": "Making GHC upgrades easy",
+    "url": "https://blog.haskell.org/making-ghc-upgrades-easy/",
+    "content": "<p><a href=\"https://lobste.rs/s/njidax/making_ghc_upgrades_easy\">Comments</a></p>",
+    "author": "blog.haskell.org via ehamberg",
+    "published_at": "2026-06-17T06:47:17Z",
+    "fetched_at": "2026-06-18T00:10:20.094722Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "haskell"
+      ],
+      "title_zh": "简化GHC升级的实用策略",
+      "detailed_summary_zh": "Haskell官方博客发布了一篇文章，详细介绍了如何通过改进工具和流程来简化GHC编译器的升级过程。文章提出了具体方法，旨在降低升级时的冲突和兼容性风险。 GHC升级是Haskell社区的一个常见痛点，简化升级可以显著提升开发者体验和项目维护效率。这篇文章有望推动更流畅的编译器版本迁移，减少社区中因升级停滞导致的生态碎片化。 文章可能涵盖诸如使用Cabal文件约束、利用GHC的扩展机制或采用多版本测试等策略。具体技术细节需阅读原文，但核心目标是让升级更加可预测和自动化。",
+      "background_zh": "GHC（Glasgow Haskell Compiler）是Haskell语言的主要编译器，以强大的优化能力和对Haskell 2010标准的支持著称。升级GHC时常面临依赖项兼容性问题，以及语言扩展和编译器行为的改变，这迫使项目维护者投入大量精力进行适配。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Glasgow_Haskell_Compiler",
+          "title": "Glasgow Haskell Compiler - Wikipedia"
+        },
+        {
+          "url": "https://www.haskell.org/ghc/",
+          "title": "Glasgow Haskell Compiler — The Glasgow Haskell Compiler"
+        }
+      ],
+      "detailed_summary": "Haskell官方博客发布了一篇文章，详细介绍了如何通过改进工具和流程来简化GHC编译器的升级过程。文章提出了具体方法，旨在降低升级时的冲突和兼容性风险。 GHC升级是Haskell社区的一个常见痛点，简化升级可以显著提升开发者体验和项目维护效率。这篇文章有望推动更流畅的编译器版本迁移，减少社区中因升级停滞导致的生态碎片化。 文章可能涵盖诸如使用Cabal文件约束、利用GHC的扩展机制或采用多版本测试等策略。具体技术细节需阅读原文，但核心目标是让升级更加可预测和自动化。",
+      "background": "GHC（Glasgow Haskell Compiler）是Haskell语言的主要编译器，以强大的优化能力和对Haskell 2010标准的支持著称。升级GHC时常面临依赖项兼容性问题，以及语言扩展和编译器行为的改变，这迫使项目维护者投入大量精力进行适配。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important for the Haskell community as it addresses a common pain point with GHC upgrades, but not groundbreaking. No comments provided to assess discussion quality.",
+    "ai_summary": "Haskell blog post discusses strategies to simplify GHC upgrades.",
+    "ai_tags": [
+      "Haskell",
+      "GHC",
+      "compiler",
+      "tooling",
+      "developer experience"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0a570bb4b88952bf",
+    "source_type": "rss",
+    "title": "Game Engine White Papers: Commander Keen",
+    "url": "https://forgottenbytes.net/commander_keen.html",
+    "content": "<p><a href=\"https://lobste.rs/s/y3ra4s/game_engine_white_papers_commander_keen\">Comments</a></p>",
+    "author": "forgottenbytes.net via orib",
+    "published_at": "2026-06-17T05:29:46Z",
+    "fetched_at": "2026-06-18T00:10:20.094768Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "programming",
+        "games"
+      ],
+      "title_zh": "《指挥官基恩》游戏引擎架构白皮书分析",
+      "detailed_summary_zh": "一篇名为《Game Engine White Papers: Commander Keen》的技术白皮书发布，详细分析了《指挥官基恩》游戏引擎的架构与自适应块刷新算法。 该白皮书揭示了早期PC平台实现流畅卷轴游戏的关键技术突破，对理解游戏引擎发展史以及现代2D游戏性能优化具有重要参考价值。 该引擎采用自适应块刷新（adaptive tile refresh）技术，仅重绘屏幕中发生变化的图块，从而在低性能PC硬件上实现了平滑的侧向滚动效果；该技术由John Carmack于1990年首创。",
+      "background_zh": "《指挥官基恩》是id Software前身开发的经典平台游戏系列，其引擎的核心创新在于克服了早期PC图形性能的限制。自适应块刷新通过标记图块变更区域来减少重复绘制，这一思路后来也影响了《德军总部3D》等后续引擎的设计。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Commander_Keen",
+          "title": "Commander Keen - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Adaptive_tile_refresh",
+          "title": "Adaptive tile refresh - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一篇名为《Game Engine White Papers: Commander Keen》的技术白皮书发布，详细分析了《指挥官基恩》游戏引擎的架构与自适应块刷新算法。 该白皮书揭示了早期PC平台实现流畅卷轴游戏的关键技术突破，对理解游戏引擎发展史以及现代2D游戏性能优化具有重要参考价值。 该引擎采用自适应块刷新（adaptive tile refresh）技术，仅重绘屏幕中发生变化的图块，从而在低性能PC硬件上实现了平滑的侧向滚动效果；该技术由John Carmack于1990年首创。",
+      "background": "《指挥官基恩》是id Software前身开发的经典平台游戏系列，其引擎的核心创新在于克服了早期PC图形性能的限制。自适应块刷新通过标记图块变更区域来减少重复绘制，这一思路后来也影响了《德军总部3D》等后续引擎的设计。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical deep-dive into a historically significant game engine; likely high quality but limited information available to assess novelty or community discussion.",
+    "ai_summary": "Technical analysis of the Commander Keen game engine architecture.",
+    "ai_tags": [
+      "game engines",
+      "retro gaming",
+      "software architecture"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b76e935f085e4c85",
+    "source_type": "rss",
+    "title": "R Core team wins Rousseeuw Prize for Statistics 2026",
+    "url": "https://rousseeuwprize.org/2026",
+    "content": "<p><a href=\"https://lobste.rs/s/nh9q9g/r_core_team_wins_rousseeuw_prize_for\">Comments</a></p>",
+    "author": "rousseeuwprize.org via eddelbuettel",
+    "published_at": "2026-06-17T12:20:21Z",
+    "fetched_at": "2026-06-18T00:10:20.094786Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "science",
+        "programming"
+      ],
+      "title_zh": "R核心团队荣获2026年Rousseeuw统计学奖",
+      "detailed_summary_zh": "R核心团队被授予2026年Rousseeuw统计学奖，该奖项旨在表彰对统计学研究有重大社会影响的创新成果，奖金为100万美元。 这是对R语言及其核心开发者长期贡献的最高认可之一，凸显了R在统计计算和数据科学领域的核心地位，将激励更多开源统计工具的持续发展。 五位R核心团队成员代表团队领奖，奖项由Rousseeuw基金会设立、比利时国王博杜安基金会管理，每两年颁发一次。R语言自1993年诞生以来已成为全球研究机构、医疗系统和金融行业的标准工具。",
+      "background_zh": "R是一种用于统计计算和数据可视化的自由开源编程语言，广泛应用于数据挖掘、生物信息学和数据分析。Rousseeuw统计学奖由统计学家Peter Rousseeuw创立，旨在奖励对统计实践产生深远影响的创新，奖金规模与诺贝尔奖相当。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/R_core_team",
+          "title": "R core team"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Rousseeuw_Prize_for_Statistics",
+          "title": "Rousseeuw Prize for Statistics"
+        },
+        {
+          "url": "https://www.prweb.com/releases/2026-rousseeuw-prize-for-statistics-awarded-to-r-core-team-for-transforming-statistics-computing-worldwide-302802398.html",
+          "title": "2026 Rousseeuw Prize for Statistics Awarded to R Core Team ..."
+        }
+      ],
+      "detailed_summary": "R核心团队被授予2026年Rousseeuw统计学奖，该奖项旨在表彰对统计学研究有重大社会影响的创新成果，奖金为100万美元。 这是对R语言及其核心开发者长期贡献的最高认可之一，凸显了R在统计计算和数据科学领域的核心地位，将激励更多开源统计工具的持续发展。 五位R核心团队成员代表团队领奖，奖项由Rousseeuw基金会设立、比利时国王博杜安基金会管理，每两年颁发一次。R语言自1993年诞生以来已成为全球研究机构、医疗系统和金融行业的标准工具。",
+      "background": "R是一种用于统计计算和数据可视化的自由开源编程语言，广泛应用于数据挖掘、生物信息学和数据分析。Rousseeuw统计学奖由统计学家Peter Rousseeuw创立，旨在奖励对统计实践产生深远影响的创新，奖金规模与诺贝尔奖相当。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "This is a major recognition for the R core team from a prestigious statistics prize, highlighting the importance of R in the field. The content itself is an announcement, not a technical breakthrough, but highly relevant to the R and statistics communities.",
+    "ai_summary": "The R Core team has been awarded the Rousseeuw Prize for Statistics in 2026.",
+    "ai_tags": [
+      "R",
+      "Statistics",
+      "Award"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:24223f79f870b906",
+    "source_type": "rss",
+    "title": "FMAG: A single-instruction GPU virtual machine and toolchain",
+    "url": "https://github.com/jangafx/FMAG",
+    "content": "<p><a href=\"https://lobste.rs/s/fdbotr/fmag_single_instruction_gpu_virtual\">Comments</a></p>",
+    "author": "github.com via gingerBill",
+    "published_at": "2026-06-17T16:10:52Z",
+    "fetched_at": "2026-06-18T00:10:20.094809Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "programming",
+        "compilers",
+        "vibecoding"
+      ],
+      "title_zh": "FMAG：单指令GPU虚拟机及工具链",
+      "detailed_summary_zh": "FMAG 是一个创新的 GPU 虚拟机，它只包含一条指令，从而彻底避免了 GPU 编程中常见的分支发散问题。该项目还提供了配套的工具链，支持开发者使用这一新型架构进行编程。 这一概念挑战了传统 GPU 的 SIMT（单指令多线程）执行模型，可能为某些特定类型的并行计算提供更简单、更高效的解决方案。虽然目前仍是实验性质，但它展示了 GPU 架构设计的新思路，对系统和 GPU 社区具有启发性。 FMAG 虚拟机仅有一条指令，这意味着所有线程在任何时刻都执行完全相同的操作，不存在分支分歧，从而简化了硬件设计和编程模型。项目托管在 GitHub 上，包含完整的实现和文档，但尚未提及性能基准或实际应用场景。",
+      "background_zh": "传统 GPU 采用 SIMT（单指令多线程）架构，可以同时运行大量线程，但线程遇到条件分支时会产生发散（divergence），导致部分线程闲置，降低效率。为了解决发散问题，编程时需要精心设计分支，或使用掩码操作。FMAG 通过将指令集缩减到一条，使得所有线程永远执行相同操作，从根本上消除了发散，但同时也限制了灵活性。",
+      "sources": [
+        {
+          "url": "https://github.com/jangafx/FMAG",
+          "title": "GitHub - jangafx/FMAG: A single-instruction GPU virtual ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+          "title": "Graphics processing unit - Wikipedia"
+        }
+      ],
+      "detailed_summary": "FMAG 是一个创新的 GPU 虚拟机，它只包含一条指令，从而彻底避免了 GPU 编程中常见的分支发散问题。该项目还提供了配套的工具链，支持开发者使用这一新型架构进行编程。 这一概念挑战了传统 GPU 的 SIMT（单指令多线程）执行模型，可能为某些特定类型的并行计算提供更简单、更高效的解决方案。虽然目前仍是实验性质，但它展示了 GPU 架构设计的新思路，对系统和 GPU 社区具有启发性。 FMAG 虚拟机仅有一条指令，这意味着所有线程在任何时刻都执行完全相同的操作，不存在分支分歧，从而简化了硬件设计和编程模型。项目托管在 GitHub 上，包含完整的实现和文档，但尚未提及性能基准或实际应用场景。",
+      "background": "传统 GPU 采用 SIMT（单指令多线程）架构，可以同时运行大量线程，但线程遇到条件分支时会产生发散（divergence），导致部分线程闲置，降低效率。为了解决发散问题，编程时需要精心设计分支，或使用掩码操作。FMAG 通过将指令集缩减到一条，使得所有线程永远执行相同操作，从根本上消除了发散，但同时也限制了灵活性。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Novel concept of a single-instruction GPU virtual machine; likely a technical deep-dive with potential interest to systems and GPU communities. The link to Lobste.rs comments suggests some community discussion, increasing value.",
+    "ai_summary": "FMAG is a single-instruction GPU virtual machine and toolchain, offering a novel approach to GPU computation.",
+    "ai_tags": [
+      "GPU",
+      "virtual-machine",
+      "toolchain",
+      "systems",
+      "architecture"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e876f4082a50aeb0",
+    "source_type": "rss",
+    "title": "How Docker Desktop Networking Works Under the Hood (2022)",
+    "url": "https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/",
+    "content": "<p><a href=\"https://lobste.rs/s/vx4cnm/how_docker_desktop_networking_works\">Comments</a></p>",
+    "author": "docker.com via typesanitizer",
+    "published_at": "2026-06-17T05:42:05Z",
+    "fetched_at": "2026-06-18T00:10:20.094883Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "networking",
+        "virtualization"
+      ],
+      "title_zh": "Docker Desktop 网络底层原理",
+      "detailed_summary_zh": "Docker 官方博客发布了一篇深度技术文章，详细解释了 Docker Desktop 在 macOS 和 Windows 上实现容器网络功能的内部机制，包括 VPNkit 组件和网络转换层的工作原理。 这篇文章对于在非 Linux 平台上使用 Docker 的开发者非常关键，因为跨平台网络问题常见且难以排查，理解底层机制有助于更高效地配置网络和调试故障。 文章重点介绍了 VPNkit 如何提供 TCP/IP 堆栈、DNS 服务器（基于 Mirage OCaml）以及 HTTP 代理（基于 Cohttp），并通过虚拟 IP 和 DNS 名称来路由容器流量。",
+      "background_zh": "Docker Desktop 在 macOS 和 Windows 上通过一个轻量级虚拟机运行 Linux 容器，因此其网络需要额外的翻译层才能与宿主机通信。VPNkit 是其中核心的组件，负责处理网络地址转换和协议转发。",
+      "sources": [
+        {
+          "url": "https://docs.docker.com/desktop/features/networking/",
+          "title": "Networking on Docker Desktop"
+        },
+        {
+          "url": "https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/",
+          "title": "How Docker Desktop Networking Works Under the Hood | Docker"
+        }
+      ],
+      "detailed_summary": "Docker 官方博客发布了一篇深度技术文章，详细解释了 Docker Desktop 在 macOS 和 Windows 上实现容器网络功能的内部机制，包括 VPNkit 组件和网络转换层的工作原理。 这篇文章对于在非 Linux 平台上使用 Docker 的开发者非常关键，因为跨平台网络问题常见且难以排查，理解底层机制有助于更高效地配置网络和调试故障。 文章重点介绍了 VPNkit 如何提供 TCP/IP 堆栈、DNS 服务器（基于 Mirage OCaml）以及 HTTP 代理（基于 Cohttp），并通过虚拟 IP 和 DNS 名称来路由容器流量。",
+      "background": "Docker Desktop 在 macOS 和 Windows 上通过一个轻量级虚拟机运行 Linux 容器，因此其网络需要额外的翻译层才能与宿主机通信。VPNkit 是其中核心的组件，负责处理网络地址转换和协议转发。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical deep-dive from official Docker blog explaining internal networking mechanics; useful for developers encountering cross-platform networking issues. Community discussion on Lobste.rs likely adds depth.",
+    "ai_summary": "Explains the internal networking components and translation layers used by Docker Desktop to enable container networking on macOS/Windows.",
+    "ai_tags": [
+      "Docker",
+      "networking",
+      "containerization",
+      "technical deep-dive"
+    ]
+  }
+]
