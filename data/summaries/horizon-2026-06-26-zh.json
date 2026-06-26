@@ -1,0 +1,481 @@
+[
+  {
+    "id": "hackernews:story:48675179",
+    "source_type": "hackernews",
+    "title": "An entire Herculaneum scroll has been read for the first time",
+    "url": "https://scrollprize.org/firstscroll",
+    "content": "Preprint: <a href=\"https:&#x2F;&#x2F;scrollprize.org&#x2F;pdf&#x2F;main.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;scrollprize.org&#x2F;pdf&#x2F;main.pdf</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;ScrollPrize&#x2F;villa\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ScrollPrize&#x2F;villa</a>\n\n\n--- Top Comments ---\n\n[codeulike]: Lets reflect on Aristocreon, in about 200 BC, putting their thoughts down on a scroll. They would be aware that the scroll might be kept in a library for some time. Maybe they could have imagined it surviving for 300 years. But they never would have imagined that in 300 years a volcano might destroy the scroll, but in some way preserve it. And then that nearly two thousand years later future humans with machines made of materials unimaginable to Aristocreon, but related distantly to sand and ...\n\n[verditelabs]: I am on the vesuvius challenge team that did the segmentation, unwrapping, and ink detection, so feel free to ask any questions.\n\n[proee]: Only about 20% of the Herculaneum site has been excavated, so there is high probability that more scrolls exist. The current scrolls were not part of the main library, but more of a private collection at the time. So imagine how cool it would be to find a full library with thousand of scrolls across many different topics, that can now be read with this technology.\n\n[9dev]: Every time you feel depressed by the state of tech, and how so many intelligent people seem to work on forcing ever more ads down people&#x27;s throats (a common trope around these parts), remember that projects like this do exist too! There are lots of very smart folks working on incredible things, they just aren&#x27;t as loud.\n\n[mattbettinson]: I wonder what the parellel would be 2,000 years for now: A Post-Great Solar Flare of 2484 Step Brothers DVD Has Been Decoded",
+    "author": "verditelabs",
+    "published_at": "2026-06-25T15:48:07Z",
+    "fetched_at": "2026-06-26T00:04:59.830327Z",
+    "metadata": {
+      "score": 887,
+      "descendants": 199,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48675179",
+      "comment_count": 5,
+      "title_zh": "首次完整读取赫库兰尼姆碳化卷轴",
+      "detailed_summary_zh": "通过机器学习和先进成像技术，研究团队首次完整读取了一个赫库兰尼姆卷轴的全部内容，该卷轴在公元79年维苏威火山喷发中被碳化。 这一突破性成就解锁了古代世界失落的知识财富，证明人工智能和技术可以非破坏性地读取极度脆弱的古代文献，可能彻底改变我们对古典文献的研究。 该卷轴来自赫库兰尼姆的“纸莎草别墅”，碳化后无法物理展开；团队采用X射线显微CT扫描结合深度学习模型检测墨水，成功将卷轴内容全部还原。",
+      "background_zh": "赫库兰尼姆卷轴是18世纪在赫库兰尼姆发掘出的超过1800份碳化纸莎草卷轴，藏于维苏威火山灰掩埋的别墅中，内含大量希腊哲学文献。传统方法无法安全展开碳化卷轴，而虚拟展开技术通过3D扫描和计算处理来非破坏性地“展开”并读取内容。",
+      "community_discussion_zh": "社区反响极为热烈，有Vesuvius挑战赛团队成员现身问答，解释了分割、展开和墨水检测的技术细节。用户们对技术应用前景感到兴奋，并指出赫库兰尼姆仅挖掘了20%，期待未来发现完整图书馆。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Herculaneum_scrolls",
+          "title": "Herculaneum scrolls"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Virtual_unwrapping",
+          "title": "Virtual unwrapping"
+        }
+      ],
+      "detailed_summary": "通过机器学习和先进成像技术，研究团队首次完整读取了一个赫库兰尼姆卷轴的全部内容，该卷轴在公元79年维苏威火山喷发中被碳化。 这一突破性成就解锁了古代世界失落的知识财富，证明人工智能和技术可以非破坏性地读取极度脆弱的古代文献，可能彻底改变我们对古典文献的研究。 该卷轴来自赫库兰尼姆的“纸莎草别墅”，碳化后无法物理展开；团队采用X射线显微CT扫描结合深度学习模型检测墨水，成功将卷轴内容全部还原。",
+      "background": "赫库兰尼姆卷轴是18世纪在赫库兰尼姆发掘出的超过1800份碳化纸莎草卷轴，藏于维苏威火山灰掩埋的别墅中，内含大量希腊哲学文献。传统方法无法安全展开碳化卷轴，而虚拟展开技术通过3D扫描和计算处理来非破坏性地“展开”并读取内容。",
+      "community_discussion": "社区反响极为热烈，有Vesuvius挑战赛团队成员现身问答，解释了分割、展开和墨水检测的技术细节。用户们对技术应用前景感到兴奋，并指出赫库兰尼姆仅挖掘了20%，期待未来发现完整图书馆。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking interdisciplinary achievement: first full reading of an ancient Herculaneum scroll using advanced AI and imaging techniques. High community engagement (887 points, 199 comments) with insightful discussion including the team's AMA, indicating significant importance in both AI and archaeology.",
+    "ai_summary": "For the first time, an entire Herculaneum scroll has been read using machine learning and advanced imaging, unlocking ancient texts preserved by the Vesuvius eruption.",
+    "ai_tags": [
+      "AI",
+      "archaeology",
+      "deep learning",
+      "heritage",
+      "imaging"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:114f3d594f6a0623",
+    "source_type": "rss",
+    "title": "Announcing Silk: a silky smooth fiber runtime for ClickHouse",
+    "url": "https://clickhouse.com/blog/silk",
+    "content": "<p><a href=\"https://lobste.rs/s/pd1ftk/announcing_silk_silky_smooth_fiber\">Comments</a></p>",
+    "author": "clickhouse.com via eatonphil",
+    "published_at": "2026-06-25T21:41:27Z",
+    "fetched_at": "2026-06-26T00:05:00.039392Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "c++"
+      ],
+      "title_zh": "ClickHouse 发布 Silk 纤维运行时，提升并发性能",
+      "detailed_summary_zh": "ClickHouse 宣布推出名为 Silk 的新型纤维运行时，旨在通过高效的任务调度和 NUMA 感知的设计，显著提升数据库的并发处理能力和性能。 作为广泛使用的高性能列式数据库，ClickHouse 的并发能力对实时分析场景至关重要；Silk 的引入有望大幅降低查询延迟、提高吞吐量，并为其他系统在异步运行时设计上提供参考。 Silk 是一个基于栈式纤维（stackful fibers）的运行时，采用 NUMA 感知的工作窃取调度器，与 ClickHouse 现有的异步 I/O 和查询引擎深度集成。GitHub 仓库显示，Silk 还提供了精细化日志和调试支持，便于性能调优。",
+      "background_zh": "纤维（fiber）是一种轻量级的用户态线程，允许在一个操作系统线程内高效切换任务，适合高并发 I/O 密集场景。ClickHouse 此前依赖操作系统线程处理并发，但线程切换开销较大；Silk 通过自定义调度器减少上下文切换成本，并利用 NUMA 亲和性优化内存访问。",
+      "sources": [
+        {
+          "url": "https://clickhouse.com/blog/silk",
+          "title": "Announcing Silk: a silky smooth fiber runtime for... | ClickHouse"
+        },
+        {
+          "url": "https://github.com/ClickHouse/silk",
+          "title": "GitHub - ClickHouse/silk: Fast stackful fibers with a NUMA-aware work-stealing scheduler · GitHub"
+        }
+      ],
+      "detailed_summary": "ClickHouse 宣布推出名为 Silk 的新型纤维运行时，旨在通过高效的任务调度和 NUMA 感知的设计，显著提升数据库的并发处理能力和性能。 作为广泛使用的高性能列式数据库，ClickHouse 的并发能力对实时分析场景至关重要；Silk 的引入有望大幅降低查询延迟、提高吞吐量，并为其他系统在异步运行时设计上提供参考。 Silk 是一个基于栈式纤维（stackful fibers）的运行时，采用 NUMA 感知的工作窃取调度器，与 ClickHouse 现有的异步 I/O 和查询引擎深度集成。GitHub 仓库显示，Silk 还提供了精细化日志和调试支持，便于性能调优。",
+      "background": "纤维（fiber）是一种轻量级的用户态线程，允许在一个操作系统线程内高效切换任务，适合高并发 I/O 密集场景。ClickHouse 此前依赖操作系统线程处理并发，但线程切换开销较大；Silk 通过自定义调度器减少上下文切换成本，并利用 NUMA 亲和性优化内存访问。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major announcement of a new fiber runtime for ClickHouse, a widely-used high-performance database, indicating significant performance and concurrency improvements. The official blog post suggests high relevance and impact.",
+    "ai_summary": "ClickHouse announces Silk, a new fiber runtime designed to improve concurrency and performance.",
+    "ai_tags": [
+      "ClickHouse",
+      "fiber runtime",
+      "database",
+      "performance"
+    ]
+  },
+  {
+    "id": "hackernews:story:48679608",
+    "source_type": "hackernews",
+    "title": "The 'papers, please' era of the internet will decimate your privacy",
+    "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+    "content": "\n--- Top Comments ---\n\n[j2kun]: There are at least some technological solutions here, such as anonymous credentials. [1] Modern versions of this technique allow one to associate metadata (like a proof of age exceeding a threshold) in such a way that the verifier can&#x27;t even correlate repeated requests across users. Governments that are serious about age verification and individual privacy (which, doubtful they truly are) should agree on a protocol and set up certificate issuers that are associated with a digital ID. The...\n\n[tqi]: &gt; You’re not happy about it, but you hand over a photo of your passport and hope it doesn’t come back to haunt you. I think for this argument to carry weight with voters, privacy advocates need to be much more specific about what &quot;coming back to haunt you&quot; looks like. They do a little bit of it later on[1], but I think most people do a rough cost benefit in their head and decide that the small benefit outweighs the small risk (to them). [1] &quot;And that creates a lot of risks f...\n\n[miiiiiike]: I’m glad this is finally becoming the cause célèbre du jour. This feels like THE FIGHT or at least one of the TOP 3 THE FIGHTS and it hasn’t had even a fraction of the public’s attention until now.\n\n[flenserboy]: There will be your internet-connected computer which will be assumed to be compromised, &amp; which little, if anything of use will be kept on, &amp; then there will be the airgapped system you do work on, which will probably be the last trusted version of a Linux distro you have multiple copies stashed away of. It will be a very old-fashioned experience, &amp; moving&#x2F;sharing data will become a dicey business.\n\n[HoldOnAMinute]: Assuming no revolutionary changes are coming to the USA, I am planning to opt out of the digital world when I retire.  Physical media only.  No subscriptions.  Spend lots of time in the library.  Find like-minded people and meet in person.  Will only keep the bare minimum for survival, like banking.",
+    "author": "bilsbie",
+    "published_at": "2026-06-25T21:44:55Z",
+    "fetched_at": "2026-06-26T00:04:59.830363Z",
+    "metadata": {
+      "score": 267,
+      "descendants": 124,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48679608",
+      "comment_count": 5,
+      "title_zh": "互联网“证件时代”正摧毁隐私",
+      "detailed_summary_zh": "一篇名为《互联网的“请出示证件”时代将摧毁你的隐私》的文章引发了广泛讨论，文章批判了强制在线身份验证对个人隐私的威胁，并探讨了匿名凭证等潜在技术解决方案。 随着越来越多的平台和政府推行年龄验证、实名制等要求，隐私权面临系统性风险。该文及其讨论推动公众关注此议题，并促使技术界思考如何在不泄露个人信息的前提下实现验证。 文章指出，上传护照等身份文件会带来长期数据泄露风险。社区讨论了匿名凭证和零知识证明等技术，它们允许用户证明年龄等属性而不透露具体身份或关联不同请求。",
+      "background_zh": "匿名凭证是一种数字凭证，可证明持有者的某些属性（如年龄超过阈值），而不泄露具体身份信息。零知识证明则允许一方在不透露秘密本身的情况下向另一方证明陈述的真实性。这些技术可在年龄验证等场景中保护隐私。",
+      "community_discussion_zh": "社区总体上支持文章观点，认为这是当前关键斗争之一。部分评论建议用户准备气隙系统或完全退出数字世界，因为未来设备可能被入侵。也有评论指出隐私倡导者需更具体说明风险后果以说服公众。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Anonymous_credential",
+          "title": "Anonymous credential"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Zero-knowledge_proof",
+          "title": "Zero-knowledge proof"
+        },
+        {
+          "url": "https://tokenzoo.github.io/",
+          "title": "Anonymous credentials zoo - Anonymous Credentials Zoo"
+        }
+      ],
+      "detailed_summary": "一篇名为《互联网的“请出示证件”时代将摧毁你的隐私》的文章引发了广泛讨论，文章批判了强制在线身份验证对个人隐私的威胁，并探讨了匿名凭证等潜在技术解决方案。 随着越来越多的平台和政府推行年龄验证、实名制等要求，隐私权面临系统性风险。该文及其讨论推动公众关注此议题，并促使技术界思考如何在不泄露个人信息的前提下实现验证。 文章指出，上传护照等身份文件会带来长期数据泄露风险。社区讨论了匿名凭证和零知识证明等技术，它们允许用户证明年龄等属性而不透露具体身份或关联不同请求。",
+      "background": "匿名凭证是一种数字凭证，可证明持有者的某些属性（如年龄超过阈值），而不泄露具体身份信息。零知识证明则允许一方在不透露秘密本身的情况下向另一方证明陈述的真实性。这些技术可在年龄验证等场景中保护隐私。",
+      "community_discussion": "社区总体上支持文章观点，认为这是当前关键斗争之一。部分评论建议用户准备气隙系统或完全退出数字世界，因为未来设备可能被入侵。也有评论指出隐私倡导者需更具体说明风险后果以说服公众。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (267 points, 124 comments) with insightful technical discussion on privacy implications of online identity verification, including proposed solutions like anonymous credentials. The community debate adds depth, making this a significant contribution to ongoing privacy discourse.",
+    "ai_summary": "A critical analysis of how mandatory online identity verification threatens privacy, with community discussion exploring technological mitigations.",
+    "ai_tags": [
+      "privacy",
+      "identity verification",
+      "age verification",
+      "anonymous credentials",
+      "internet governance"
+    ]
+  },
+  {
+    "id": "hackernews:story:48673825",
+    "source_type": "hackernews",
+    "title": "Zig's new bitCast semantics and LLVM back end improvements",
+    "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+    "content": "\n--- Top Comments ---\n\n[ozgrakkurt]: &gt; Consider, for instance, bitcasting a [2]u8 to a u16. Under the old semantics, the result of this operation depends on the target endian: on big-endian targets, the first array element became the 8 most significant bits, whereas on little-endian targets, the first array element became the 8 least significant bits. Under the new semantics, because we only care about logical bit representation (which is endian-agnostic), the operation behaves identically on every target: This is a huge mist...\n\n[zamadatix]: This change + the existing packed struct logic will be great for working with bit packed binary headers w&#x2F;o having to manually twiddle so much about the bit handling along the way.\n\n[grayhatter]: &gt; Quite long devlog coming up, apologies—I got a little carried away with this one! mlugg, please don&#x27;t apologize for creating something I actually want to read. I&#x27;m drowning in low effort garbage, the in depth technical explanation is a refreshing breath of fresh air. Might as well apologize for creating a language without a garbage collector, sure most people are unwilling to think, but some of us like nice things and are actually willing to apply effort.\n\n[simonask]: Interesting read, even as someone who isn&#x27;t using Zig. I wonder, these arbitrary-width integers... Is it actually even really worth it? My intuition is to prefer manually packing&#x2F;unpacking things instead (in any language, even C that has bit width for struct fields), because it gives me a better mental picture of the code that is actually generated. Particularly for something like an signed odd-bit integer - what kind of code gets generated for sign-extension, a presumably common op...\n\n[fithisux]: These posts make you want not only to use Zig, but also to marry it. No jokes aside, these posts are the best advertisements of the language. And I truly like their AI stance.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/uge7mm/new_bitcast_semantics_llvm_backend\">Comments</a></p>",
+    "author": "kouosi",
+    "published_at": "2026-06-25T14:19:28Z",
+    "fetched_at": "2026-06-26T00:04:59.830445Z",
+    "metadata": {
+      "score": 207,
+      "descendants": 79,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48673825",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "zig"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Zig 新增端序无关 bitCast 语义并改进 LLVM 后端",
+      "detailed_summary_zh": "Zig 语言在其开发者日志中正式定义了新的端序无关（endian-agnostic）@bitCast 语义，并披露了 LLVM 后端的多项改进，这些改进已经由自托管 x86_64 后端实现。 这一变更使得 bitCast 操作在所有目标平台上的行为完全一致，彻底消除了因端序差异导致的跨平台 bug，对于网络协议、二进制文件解析等底层编程场景尤为重要。同时，LLVM 后端改进将提升 Zig 编译器的性能和代码生成质量。 新语义下，将 [2]u8 数组 bitCast 为 u16 时，不再依赖目标端序，而是根据逻辑位表示进行转换，从而保证一致性。该提案最初由 Jacob Young 于 2024 年提出（#19755），目前已获采纳并实现于自托管 x86_64 后端。",
+      "background_zh": "bitCast 是一种底层类型转换，通常用于在整数、浮点数和数组之间按位重新解释数据。端序（Endianness）描述了多字节数据在内存中的字节排列顺序，不同 CPU 架构（如 x86 的小端序与某些 ARM 的大端序）存在差异。此前 Zig 的 bitCast 行为因端序而异，导致代码在不同平台上可能产生不同结果。新语义使 bitCast 成为纯逻辑位操作，不再依赖硬件端序。",
+      "community_discussion_zh": "社区对此更新反应积极，认为这是提升 Zig 跨平台可靠性的重要步骤。多位开发者称赞该 devlog 技术深度高，并指出新语义结合已有的 packed struct 逻辑将极大简化二进制头部处理。也有用户对任意宽度整数的实用性提出疑问，但整体氛围以赞赏为主。",
+      "sources": [
+        {
+          "url": "https://ziglang.org/devlog/2026/?from_theconsensus=1",
+          "title": "Devlog ⚡ Zig Programming Language - ziglang.org"
+        },
+        {
+          "url": "https://ziggit.dev/t/devlog-new-bitcast-semantics-and-llvm-backend-improvements/16336",
+          "title": "Devlog ⚡ New @bitCast Semantics and LLVM Backend Improvements"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=48673825",
+          "title": "Zig's New BitCast Semantics and LLVM Back End Improvements ..."
+        }
+      ],
+      "detailed_summary": "Zig 语言在其开发者日志中正式定义了新的端序无关（endian-agnostic）@bitCast 语义，并披露了 LLVM 后端的多项改进，这些改进已经由自托管 x86_64 后端实现。 这一变更使得 bitCast 操作在所有目标平台上的行为完全一致，彻底消除了因端序差异导致的跨平台 bug，对于网络协议、二进制文件解析等底层编程场景尤为重要。同时，LLVM 后端改进将提升 Zig 编译器的性能和代码生成质量。 新语义下，将 [2]u8 数组 bitCast 为 u16 时，不再依赖目标端序，而是根据逻辑位表示进行转换，从而保证一致性。该提案最初由 Jacob Young 于 2024 年提出（#19755），目前已获采纳并实现于自托管 x86_64 后端。",
+      "background": "bitCast 是一种底层类型转换，通常用于在整数、浮点数和数组之间按位重新解释数据。端序（Endianness）描述了多字节数据在内存中的字节排列顺序，不同 CPU 架构（如 x86 的小端序与某些 ARM 的大端序）存在差异。此前 Zig 的 bitCast 行为因端序而异，导致代码在不同平台上可能产生不同结果。新语义使 bitCast 成为纯逻辑位操作，不再依赖硬件端序。",
+      "community_discussion": "社区对此更新反应积极，认为这是提升 Zig 跨平台可靠性的重要步骤。多位开发者称赞该 devlog 技术深度高，并指出新语义结合已有的 packed struct 逻辑将极大简化二进制头部处理。也有用户对任意宽度整数的实用性提出疑问，但整体氛围以赞赏为主。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (207 points, 79 comments) with substantive discussion including technical analysis and community praise. The bitCast semantic improvement is a significant, well-explained change that enhances Zig's cross-platform reliability. The devlog provides deep technical detail, indicating high value for the Zig community and language developers.",
+    "ai_summary": "Zig's devlog details endian-agnostic bitCast semantics and LLVM backend improvements, simplifying bit manipulation across platforms.",
+    "ai_tags": [
+      "Zig",
+      "programming-languages",
+      "compiler",
+      "bitCast",
+      "LLVM"
+    ]
+  },
+  {
+    "id": "hackernews:story:48672732",
+    "source_type": "hackernews",
+    "title": "Apple raises prices of MacBooks, iPads",
+    "url": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
+    "content": "<a href=\"https:&#x2F;&#x2F;9to5mac.com&#x2F;2026&#x2F;06&#x2F;25&#x2F;apple-price-increases-mac-ipad-more&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;9to5mac.com&#x2F;2026&#x2F;06&#x2F;25&#x2F;apple-price-increases-mac-ipa...</a>\n\n\n--- Top Comments ---\n\n[primaprashant]: These are the price changes mentioned in the article: Macs     MacBook Neo: $699 (up from $599)\n  13-inch MacBook Air: $1,299 (up from $1,099)\n  15-inch MacBook Air: $1,499 (up from $1,299)\n  M5 MacBook Pro: $1,999 (up from $1,699)\n  M5 Pro MacBook Pro: $2,499 (up from $2,199)\n  M5 Max MacBook Pro: $4,099 (up from $3,599)\n  iMac: $1,499 (up from $1,299)\n  M4 Max Mac Studio: $2,499 (up from $1,999)\n  M3 Ultra Mac Studio: $5,299 (up from $3,999)\n  \niPads     iPad: $449 (up from $349)\n  11-inch ...\n\n[jacobgold]: Some unc perspective: I paid ~$6,000 in inflation-adjusted dollars for a computer in 1996. Today, I can get the same power in a $6 single board computer. A powerful modern mini PC starts at ~$600. However painful these price hikes are, and they are painful, it is worth remembering that computing has become incredibly ubiquitous and cheap.\n\n[tavavex]: Anyone else here enjoy living in the future? Look at us, we get AI megacorporations ruling the world and bestowing us with the power to use their servers for just $20-200&#x2F;month. It&#x27;s practically charity, and all we had to give up for it is all consumer hardware, the quality of the internet and our own jobs. I love it here!\n\n[erxam]: Just yesterday I saw people saying that Apple wouldn&#x27;t increase prices until the next refresh. And I agreed! So… holy shit. I think we&#x27;re going to see even further price increases across the industry. There already were a ton, but it can always get worse, of course. Thank you, OpenAI. What would have we done without your attempts at monopolizing destroying the memory market.\n\n[whatever1]: Apple did not have to be in this situation. Begging for capacity lost to startups. Everyone else can complain, but not Apple. They had a 250B warchest, exactly for such situations. Now somehow openAI has capacity and Apple does not. And think about it Apple is not in a better position than Valve for example. A teeny tiny company in comparison. It is an unprecedented managerial failure.",
+    "author": "virgildotcodes",
+    "published_at": "2026-06-25T13:02:56Z",
+    "fetched_at": "2026-06-26T00:04:59.830485Z",
+    "metadata": {
+      "score": 600,
+      "descendants": 858,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48672732",
+      "comment_count": 5,
+      "title_zh": "苹果全面上调MacBook与iPad售价",
+      "detailed_summary_zh": "苹果公司于2026年6月25日宣布，因内存成本飙升，对MacBook和iPad全系列产品进行价格上调，涨幅从100美元到超过1300美元不等。 此次涨价是苹果近十年来最大规模的价格调整，不仅直接影响消费者购买成本，也反映了全球内存市场因AI需求激增而持续紧张，可能引发整个个人电脑和平板行业的价格连锁反应。 具体价格变化包括：MacBook Neo从599美元涨至699美元，15英寸MacBook Air从1299美元涨至1499美元，M5 Max MacBook Pro从3599美元涨至4099美元；iPad从349美元涨至449美元。涨幅最显著的是M3 Ultra Mac Studio，从3999美元涨至5299美元。",
+      "background_zh": "内存成本上涨主要源于AI大模型训练和推理对高带宽内存（HBM）的旺盛需求，导致DRAM和NAND闪存供应紧张、价格上涨。苹果作为全球最大的硬件采购商之一，也未能避免成本压力，不得不将涨价传导至终端产品。社区评论中提到OpenAI等AI公司大量抢占内存产能，加剧了供应短缺。",
+      "community_discussion_zh": "社区用户对此反应不一。部分用户抱怨苹果作为现金储备雄厚的公司本应承担成本而非转嫁给消费者；也有用户从历史角度认为，即使涨价后计算机价格仍远低于20年前的通胀调整价格。另有用户担忧此举预示着全行业将迎来更多涨价。",
+      "detailed_summary": "苹果公司于2026年6月25日宣布，因内存成本飙升，对MacBook和iPad全系列产品进行价格上调，涨幅从100美元到超过1300美元不等。 此次涨价是苹果近十年来最大规模的价格调整，不仅直接影响消费者购买成本，也反映了全球内存市场因AI需求激增而持续紧张，可能引发整个个人电脑和平板行业的价格连锁反应。 具体价格变化包括：MacBook Neo从599美元涨至699美元，15英寸MacBook Air从1299美元涨至1499美元，M5 Max MacBook Pro从3599美元涨至4099美元；iPad从349美元涨至449美元。涨幅最显著的是M3 Ultra Mac Studio，从3999美元涨至5299美元。",
+      "background": "内存成本上涨主要源于AI大模型训练和推理对高带宽内存（HBM）的旺盛需求，导致DRAM和NAND闪存供应紧张、价格上涨。苹果作为全球最大的硬件采购商之一，也未能避免成本压力，不得不将涨价传导至终端产品。社区评论中提到OpenAI等AI公司大量抢占内存产能，加剧了供应短缺。",
+      "community_discussion": "社区用户对此反应不一。部分用户抱怨苹果作为现金储备雄厚的公司本应承担成本而非转嫁给消费者；也有用户从历史角度认为，即使涨价后计算机价格仍远低于20年前的通胀调整价格。另有用户担忧此举预示着全行业将迎来更多涨价。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (600 points, 858 comments) with substantive discussion about industry-wide implications, inflation context, and future price trends. The price hike is a significant consumer hardware story but not a technical breakthrough.",
+    "ai_summary": "Apple raises prices on MacBooks and iPads across the board due to rising memory costs, with increases ranging from $100 to over $1,300.",
+    "ai_tags": [
+      "Apple",
+      "pricing",
+      "hardware",
+      "MacBooks",
+      "iPads"
+    ]
+  },
+  {
+    "id": "hackernews:story:48674967",
+    "source_type": "hackernews",
+    "title": "IBM debuts sub-1 nanometer chip technology",
+    "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+    "content": "\n--- Top Comments ---\n\n[buran77]: &gt; logic technology can extend for the first time below the 1 nm node, advancing the era of angstrom-level scaling, where dimensions approach the size of individual atoms. While transistor nodes now refer to a generation of manufacturing technology versus an exact physical dimension, IBM’s 0.7 nm technology—also referred to as 7 angstroms—demonstrates how continued scaling remains possible. Continuing the well established trend of making bold claims about physical dimensions that have nothi...\n\n[lizknope]: Remember that IBM paid Global Foundries $1.5 billion to take their fabs and design services group. GF did not pay IBM.  IBM paid GF to take the fabs away.  https:&#x2F;&#x2F;www.reuters.com&#x2F;article&#x2F;technology&#x2F;ibm-to-pay-global...\n\n[IanCutress]: For what it&#x27;s worth, here&#x27;s my 7000+ word deep dive into the technology.  https:&#x2F;&#x2F;morethanmoore.substack.com&#x2F;p&#x2F;ibms-announces-07nm-pro...\n\n[jadar]: Just to be clear, this doesn&#x27;t mean that anything on the die actually measures 0.7nm — it means that it&#x27;s roughly double the density as the previous node generation. At some point the industry decided to keep talking about &quot;nanometers&quot; even though the actual transistor sizes have been decoupled from the node name for years.\n\n[monirmamoun]: Two big problems 1) NOBODY knows what IBM&#x27;s definition of &quot;sub 1nm&quot; means 2) IBM bullshits so much more than anyone including Intel (remember the &quot;teleportation&quot; ads years ago) that nobody is going to waste time researching what they mean in reality",
+    "author": "porridgeraisin",
+    "published_at": "2026-06-25T15:33:37Z",
+    "fetched_at": "2026-06-26T00:04:59.830387Z",
+    "metadata": {
+      "score": 248,
+      "descendants": 144,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48674967",
+      "comment_count": 5,
+      "title_zh": "IBM推出0.7纳米芯片技术，挑战物理极限",
+      "detailed_summary_zh": "IBM于2026年6月25日宣布了全球首个亚1纳米芯片技术，采用0.7纳米（7埃）节点，基于新型三维晶体管架构，据称可实现每平方毫米约1亿个晶体管的密度。 该技术展示了半导体制造向原子尺度继续推进的可能性，尽管节点命名已与实际物理尺寸脱钩。若能被代工厂采用，可能在未来五年内推动更高密度、更高能效的芯片问世。 IBM声称该技术相比2纳米节点密度提升约一倍，但社区指出节点命名不代表实际栅极长度，仅是工艺代际标识。IBM本身已不制造芯片，需依赖代工厂（如与日本Rapidus合作）实现量产。",
+      "background_zh": "芯片工艺节点的纳米数字早已不再对应晶体管的实际物理尺寸，而是成为代表工艺代际的营销术语。IBM于2014年将其半导体制造业务出售给格芯（GlobalFoundries），并支付15亿美元补偿，此后IBM仅从事芯片设计研究，不自行生产。因此，IBM此次宣布的0.7纳米技术是一种研究演示，未来需由其他代工厂转化为商用工艺。",
+      "community_discussion_zh": "社区评论普遍持怀疑态度，认为IBM的“亚1纳米”宣传是营销噱头，实际晶体管尺寸并未真正达到0.7纳米。有用户指出节点命名早已与物理尺寸脱钩，另有用户提及IBM过去的不实宣传历史，并质疑其缺乏制造能力。",
+      "sources": [
+        {
+          "url": "https://techxplore.com/news/2026-06-ibm-unveils-nanometer-chip-tech.html",
+          "title": "IBM unveils 0 . 7 -nanometer chip tech promising 50% higher..."
+        },
+        {
+          "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+          "title": "IBM Debuts World’s First Sub-1 Nanometer Chip Technology"
+        },
+        {
+          "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+          "title": "IBM claims world’s first sub - 1 nanometer chip ... - Ars Technica"
+        }
+      ],
+      "detailed_summary": "IBM于2026年6月25日宣布了全球首个亚1纳米芯片技术，采用0.7纳米（7埃）节点，基于新型三维晶体管架构，据称可实现每平方毫米约1亿个晶体管的密度。 该技术展示了半导体制造向原子尺度继续推进的可能性，尽管节点命名已与实际物理尺寸脱钩。若能被代工厂采用，可能在未来五年内推动更高密度、更高能效的芯片问世。 IBM声称该技术相比2纳米节点密度提升约一倍，但社区指出节点命名不代表实际栅极长度，仅是工艺代际标识。IBM本身已不制造芯片，需依赖代工厂（如与日本Rapidus合作）实现量产。",
+      "background": "芯片工艺节点的纳米数字早已不再对应晶体管的实际物理尺寸，而是成为代表工艺代际的营销术语。IBM于2014年将其半导体制造业务出售给格芯（GlobalFoundries），并支付15亿美元补偿，此后IBM仅从事芯片设计研究，不自行生产。因此，IBM此次宣布的0.7纳米技术是一种研究演示，未来需由其他代工厂转化为商用工艺。",
+      "community_discussion": "社区评论普遍持怀疑态度，认为IBM的“亚1纳米”宣传是营销噱头，实际晶体管尺寸并未真正达到0.7纳米。有用户指出节点命名早已与物理尺寸脱钩，另有用户提及IBM过去的不实宣传历史，并质疑其缺乏制造能力。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Significant announcement in semiconductor manufacturing but met with skepticism in community comments about marketing claims and actual physical dimensions; discussion adds critical depth.",
+    "ai_summary": "IBM announces a 0.7nm chip technology, though community comments question the practical meaning and note historical context of IBM's fab divestiture.",
+    "ai_tags": [
+      "semiconductor",
+      "nanoscale",
+      "IBM",
+      "chip manufacturing"
+    ]
+  },
+  {
+    "id": "hackernews:story:48675435",
+    "source_type": "hackernews",
+    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+    "url": "https://github.com/inkeep/open-knowledge",
+    "content": "Hi HN, Nick here. We’re launching OpenKnowledge (<a href=\"https:&#x2F;&#x2F;openknowledge.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;openknowledge.ai&#x2F;</a>), a “what you see is what you get” markdown editor that has direct integrations with Claude, Codex, and other agents. Available as MacOS app or Web UI+CLI. Fully free&#x2F;local and OSS.<p>We built this because we wanted a Notion-like experience for writing and sharing markdown files across our team. Obsidian is the best alternative we tried, but found it doesn’t have a true WYSWIG UI and it didn’t integrate well with Claude&#x2F;Codex outside of community plugins.<p>So we built OpenKnowledge. It takes shape as:<p>1. A MacOS app with a file navigator, the WYSIWYG editor, and link explorer.<p>2. Integrations with the Claude, Codex, and Cursor desktop apps. The agents can open an OpenKnowledge editor within their embedded web browsers for a side-by-side experience.<p>3. Built-in mcps, skills, and RAG for LLM-wiki and “AI Second Brain” scenarios + spec writing<p>4. An embedded terminal and CLI for TUI-first users<p>OSS stack includes: Tiptap&#x2F;prosemirror, CodeMirror, yjs (CRDT), Electron (MacOS app), Orama, remark&#x2F;rehype&#x2F;micromark&#x2F;mdast, @pierre&#x2F;trees<p>On the architecture side, the interesting eng. challenges included:<p>1. A pipeline to convert ProseMirror to markdown in a bidirectional lossless way. ProseMirror uses ASTs, which are not designed to have byte-fidelity.<p>2. A dual-observer CRDT to keep the ProseMirror and markdown state in-sync.<p>The CRDT + git also power a collaborative experience that shows what Agents are doing in the markdown, have undo&#x2F;redo, and version history. The “Share” and cloud-sync functionality are geared for team collaboration. They feel “no-code” but leverage git&#x2F;GitHub under the hood, which also means data stays fully private.<p>In that spirit, we made OpenKnowledge open source for anybody who’s curious or who’d like to contribute.<p>We’re actively thinking about plugins&#x2F;extensibility and what’s next. If you have suggestions or feedback, would love to hear it.\n\n\n--- Top Comments ---\n\n[pcthrowaway]: Fully local, but can&#x27;t integrate with any local LLM? I do think a fully OSS Obsidian-like that syncs natively is an impressive accomplishment, though the usefulness of this is limited with OSX being the only supported platform. If an Android app is in the works I&#x27;ll definitely follow the project!\n\n[psoulos]: The signature figure on the repo shows file contents alongside a chat window. Is this actually supported by the app? I can&#x27;t figure out how to open a chat window in the app without handing off to an external AI app.\n\n[vitorbaptistaa]: Congratulations on the launch. It looks neat! On a side note, I find it interesting that a few recent projects are going for the Open Knowledge name. The Open Knowledge Foundation ( https:&#x2F;&#x2F;okfn.org ) is one of the first&#x2F;largest proponents of the open data movement (think of it as a Free Software Foundation but for data, not software). They started in 2004 and developed many of the open data licenses and widely used infrastructure tools like CKAN (an open data portal platform)....\n\n[rcarmo]: You should just integrate with pi.dev, like I did for  https:&#x2F;&#x2F;github.com&#x2F;rcarmo&#x2F;piclaw  (which has replaced Obsidian for me). I too integrated a terminal and a WYSIWYG Markdown editor (as well as plugins for a mindmap, kanban, etc.)\n\n[iamacyborg]: Is this following the Open Knowledge Format proposed by Google earlier this month or just a name collision?  https:&#x2F;&#x2F;cloud.google.com&#x2F;blog&#x2F;products&#x2F;data-analytics&#x2F;how-th...",
+    "author": "engomez",
+    "published_at": "2026-06-25T16:04:46Z",
+    "fetched_at": "2026-06-26T00:04:59.830407Z",
+    "metadata": {
+      "score": 177,
+      "descendants": 79,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48675435",
+      "comment_count": 5,
+      "title_zh": "OpenKnowledge：开源AI优先的Markdown编辑器，替代Obsidian/Notion",
+      "detailed_summary_zh": "OpenKnowledge正式发布，这是一款完全开源、本地优先的所见即所得Markdown编辑器，深度集成了Claude、Codex等AI代理，并支持MCP、RAG等高级功能。 该工具填补了现有笔记软件在AI原生集成方面的空白，为知识工作者和团队提供了可自托管、可扩展的协作平台，有望推动AI辅助知识管理的发展。 OpenKnowledge使用ProseMirror和CRDT技术实现双向无损Markdown解析和多人在线协作，目前仅支持macOS原生应用和Web UI，尚未支持本地LLM或Android/iOS平台。",
+      "background_zh": "MCP（模型上下文协议）是Anthropic提出的开放标准，用于连接AI助手与外部数据源；RAG（检索增强生成）则让LLM能够从私有文档中检索信息以生成更准确的回答。OpenKnowledge将两者内建到笔记编辑器中，使得AI可以直接访问和编辑用户的知识库。",
+      "community_discussion_zh": "社区总体持积极态度，但指出两个主要不足：仅支持macOS平台且无法集成本地LLM，限制了实用性和开放性；此外，有用户提及与已有的Open Knowledge Foundation命名冲突，可能造成混淆。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+          "title": "Model Context Protocol - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+          "title": "Retrieval-augmented generation - Wikipedia"
+        }
+      ],
+      "detailed_summary": "OpenKnowledge正式发布，这是一款完全开源、本地优先的所见即所得Markdown编辑器，深度集成了Claude、Codex等AI代理，并支持MCP、RAG等高级功能。 该工具填补了现有笔记软件在AI原生集成方面的空白，为知识工作者和团队提供了可自托管、可扩展的协作平台，有望推动AI辅助知识管理的发展。 OpenKnowledge使用ProseMirror和CRDT技术实现双向无损Markdown解析和多人在线协作，目前仅支持macOS原生应用和Web UI，尚未支持本地LLM或Android/iOS平台。",
+      "background": "MCP（模型上下文协议）是Anthropic提出的开放标准，用于连接AI助手与外部数据源；RAG（检索增强生成）则让LLM能够从私有文档中检索信息以生成更准确的回答。OpenKnowledge将两者内建到笔记编辑器中，使得AI可以直接访问和编辑用户的知识库。",
+      "community_discussion": "社区总体持积极态度，但指出两个主要不足：仅支持macOS平台且无法集成本地LLM，限制了实用性和开放性；此外，有用户提及与已有的Open Knowledge Foundation命名冲突，可能造成混淆。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value open source release addressing a common need (AI-integrated note-taking), with active community discussion pointing out limitations and potential improvements. Score 7 due to incremental nature over existing tools but high community interest (177 points, 79 comments).",
+    "ai_summary": "OpenKnowledge is an open source, AI-first markdown editor designed as an alternative to Obsidian/Notion.",
+    "ai_tags": [
+      "note-taking",
+      "AI",
+      "open-source",
+      "markdown-editor",
+      "knowledge-management"
+    ]
+  },
+  {
+    "id": "hackernews:story:48678852",
+    "source_type": "hackernews",
+    "title": "Om Malik has died",
+    "url": "https://om.co/2026/06/24/1966-2026/",
+    "content": "\n--- Top Comments ---\n\n[grimjeer]: Black bar? My experience of Om was only through his written word, but a new article or post by him was a thing of joy.  Not to agree with, but simply to hear a good, honest voice. As soon as I read this, I thought, &quot;Wait a sec, hasn&#x27;t it been a little while?&quot;\nMy sincere condolences to his family and colleagues.\n\n[aanet]: Oh wow. What?!  Just this morning I had an occasion to go thru his site&#x2F;blog. Still can&#x27;t believe it. 60 is too young. I met Om finally in 2013-ish at one of his GigaOm events in the SF Bay Area. Before that, I had been a long time reader of his GigaOm blogs and other writings  at Fast Company, Red Herring, Light Reading, and elsewhere, including his book  Broadbandits . He was one of the few bloggers &#x2F; reporters who wrote it as he saw it; his takes were often brutally honest a...\n\n[bravura]: &quot;I like to write like a human, steering clear of jargon and B-school speak.&quot;  https:&#x2F;&#x2F;om.co&#x2F;about&#x2F;   https:&#x2F;&#x2F;om.co&#x2F;2020&#x2F;07&#x2F;30&#x2F;write-like-a-human&#x2F;\n\n[cobbzilla]: GigaOM was truly awesome at its best. Om was a special guy, I met him a few times during my years in the Bay Area. He really embodied that selflessly-helping side of the Valley: helping others with no expectations, just because it’s good. He helped one of my startups get some exposure. I keep trying to pay it forward. I will miss him.\n\n[rdl]: I still remember him being one of the best writers about tech (a bit more than &quot;journalism&quot; in that a lot of it was of more evergreen value...) from the dotcom boom and then the peak &quot;interesting&quot; web apps period (2004-~2015 or so, when AJAX&#x2F;etc was still new, and things hadn&#x27;t calcified so much). Didn&#x27;t know about his later health issues, I assumed he had just moved on to other interests naturally. RIP.",
+    "author": "minimaxir",
+    "published_at": "2026-06-25T20:33:37Z",
+    "fetched_at": "2026-06-26T00:04:59.830426Z",
+    "metadata": {
+      "score": 290,
+      "descendants": 30,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48678852",
+      "comment_count": 5,
+      "title_zh": "科技记者奥姆·马利克去世，享年60岁",
+      "detailed_summary_zh": "知名科技记者、GigaOm创始人奥姆·马利克（Om Malik）于2026年6月24日去世，享年60岁，家人和社区纷纷悼念。 马利克是科技新闻领域的重要人物，他的离世意味着行业失去了一位以诚实、人性化写作著称的声音，GigaOm曾深刻影响科技报道和创业生态。 马利克在六十岁去世，此前曾有健康问题；他创办的GigaOm于2015年关闭后被收购，但影响延续至今；社区评论中许多人回忆他的帮助与真挚。",
+      "background_zh": "奥姆·马利克是一位资深科技记者，曾为Fast Company、Red Herring等撰稿，2006年创立科技媒体GigaOm。GigaOm以深度分析和行业活动闻名，2015年3月关闭，6月被收购后重新上线。马利克以其直率、非官方的写作风格受到尊重。",
+      "community_discussion_zh": "社区一片哀悼，许多用户称马利克的文字是“快乐之源”，赞赏他“像人一样写作，避开行话”。有人回忆他无私帮助创业者，体现硅谷乐于助人的精神。评论普遍认为60岁太年轻，并感叹他近年健康问题鲜为人知。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gigaom",
+          "title": "Gigaom"
+        }
+      ],
+      "detailed_summary": "知名科技记者、GigaOm创始人奥姆·马利克（Om Malik）于2026年6月24日去世，享年60岁，家人和社区纷纷悼念。 马利克是科技新闻领域的重要人物，他的离世意味着行业失去了一位以诚实、人性化写作著称的声音，GigaOm曾深刻影响科技报道和创业生态。 马利克在六十岁去世，此前曾有健康问题；他创办的GigaOm于2015年关闭后被收购，但影响延续至今；社区评论中许多人回忆他的帮助与真挚。",
+      "background": "奥姆·马利克是一位资深科技记者，曾为Fast Company、Red Herring等撰稿，2006年创立科技媒体GigaOm。GigaOm以深度分析和行业活动闻名，2015年3月关闭，6月被收购后重新上线。马利克以其直率、非官方的写作风格受到尊重。",
+      "community_discussion": "社区一片哀悼，许多用户称马利克的文字是“快乐之源”，赞赏他“像人一样写作，避开行话”。有人回忆他无私帮助创业者，体现硅谷乐于助人的精神。评论普遍认为60岁太年轻，并感叹他近年健康问题鲜为人知。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The death of Om Malik, a highly influential tech journalist and founder of GigaOm, is an important event in the tech community. The high engagement (290 points, 30 comments) and heartfelt comments reflect his impact and the community's respect. However, this is not a groundbreaking technical development, so it scores a 7.",
+    "ai_summary": "Om Malik, renowned tech journalist and founder of GigaOm, has passed away at age 60, prompting an outpouring of tributes from the community.",
+    "ai_tags": [
+      "obituary",
+      "tech journalism",
+      "GigaOm",
+      "community loss"
+    ]
+  },
+  {
+    "id": "hackernews:story:48674484",
+    "source_type": "hackernews",
+    "title": "OS9Map",
+    "url": "https://yllan.org/software/OS9Map/",
+    "content": "\n--- Top Comments ---\n\n[yllan]: I’m the author. This is an experiment of mine in figuring out how to let Mac OS 9 connect to modern network services and environments. Since Mac OS 9 doesn’t have out-of-the-box support for modern secure networking protocols, you often have to go through a proxy, which is pretty painful. I wanted to make it possible for an old Mac to connect to modern web services on its own. There are also two related projects for connecting to Bluesky and Mastodon:  https:&#x2F;&#x2F;yllan.org&#x2F;software...\n\n[maelito]: Shameless plug : I&#x27;m working on  https:&#x2F;&#x2F;cartes.app , a Web OpenStreetMap app. Far less difficult as coding for an old OS obviously, but still a challenge ! The Web has plenty of potential, but constraints too, mostly because of dominant actors, such as Apple that hid the PWA install button... Or Firefox not having any install banner, whereas chrome does. Can&#x27;t post it yet as a proper subject, it can&#x27;t handle top page load.\n\n[steve-atx-7600]: Reminds me of this guy&#x27;s solid work that includes an LLM integration that works on classic macs 68k and PPC  https:&#x2F;&#x2F;www.macintoshrepository.org&#x2F;68191-legacyai .  Use it on my OS 9 PPC.\n\n[generalpf]: 16 MB RAM required, 32 MB RAM recommended... how refreshing! Great work.\n\n[ccamrobertson]: This is really cool, time to dust off an old PowerPC. I&#x27;ve been thinking about building apps for old Mac OS versions for a while with the advent of LLMs, glad to see someone is doing it.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/t9cawj/os9map_openstreetmap_for_mac_os_9\">Comments</a></p>",
+    "author": "LaSombra",
+    "published_at": "2026-06-25T15:01:06Z",
+    "fetched_at": "2026-06-26T00:04:59.830466Z",
+    "metadata": {
+      "score": 172,
+      "descendants": 25,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48674484",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "retrocomputing"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "OS9Map：让Mac OS 9无需代理浏览在线地图",
+      "detailed_summary_zh": "OS9Map 1.0.0于2026年6月21日发布，让Mac OS 9系统能够直接获取并显示OpenStreetMap的现代地图瓦片，无需借助中间代理服务器。 该工具解决了老旧系统（Mac OS 9）因缺乏现代安全网络协议支持而难以接入现代网络服务的痛点，对复古计算爱好者有重要价值。它展示了在不修改操作系统的情况下，通过本地应用实现与现代Web服务兼容的可能性。 OS9Map需要PowerPC处理器、16 MB RAM（推荐32 MB），并支持通过Nominatim进行地点搜索。地图瓦片来自OpenStreetMap，采用平滑滚动和拖拽操作。",
+      "background_zh": "Mac OS 9是苹果公司于1999年发布的经典操作系统，缺乏对现代加密网络协议（如TLS）的支持，因此访问现代Web服务通常需要经过代理服务器。网络地图服务（如OpenStreetMap）使用预渲染的地图瓦片（tiled web map），通过HTTP请求加载小块图像拼接成完整地图。OS9Map通过直接请求非加密的HTTP瓦片服务，绕过了代理需求。",
+      "community_discussion_zh": "社区反响积极，作者yllan分享了开发动机，其他用户提到了LegaAI等类似项目，以及对内存需求的怀旧评论。还有用户表示受到启发，计划为旧Mac开发应用。",
+      "sources": [
+        {
+          "url": "https://yllan.org/software/OS9Map/",
+          "title": "OS9Map | yllan's stories"
+        },
+        {
+          "url": "https://www.ic.work/article/os9map-1-0-0-brings-online-maps-to-mac-os-9",
+          "title": "OS9Map 1.0.0：2026 年了，Mac OS 9 还能打开一张在线地图"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Tiled_web_map",
+          "title": "Tiled web map - Wikipedia"
+        }
+      ],
+      "detailed_summary": "OS9Map 1.0.0于2026年6月21日发布，让Mac OS 9系统能够直接获取并显示OpenStreetMap的现代地图瓦片，无需借助中间代理服务器。 该工具解决了老旧系统（Mac OS 9）因缺乏现代安全网络协议支持而难以接入现代网络服务的痛点，对复古计算爱好者有重要价值。它展示了在不修改操作系统的情况下，通过本地应用实现与现代Web服务兼容的可能性。 OS9Map需要PowerPC处理器、16 MB RAM（推荐32 MB），并支持通过Nominatim进行地点搜索。地图瓦片来自OpenStreetMap，采用平滑滚动和拖拽操作。",
+      "background": "Mac OS 9是苹果公司于1999年发布的经典操作系统，缺乏对现代加密网络协议（如TLS）的支持，因此访问现代Web服务通常需要经过代理服务器。网络地图服务（如OpenStreetMap）使用预渲染的地图瓦片（tiled web map），通过HTTP请求加载小块图像拼接成完整地图。OS9Map通过直接请求非加密的HTTP瓦片服务，绕过了代理需求。",
+      "community_discussion": "社区反响积极，作者yllan分享了开发动机，其他用户提到了LegaAI等类似项目，以及对内存需求的怀旧评论。还有用户表示受到启发，计划为旧Mac开发应用。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Highly valuable for retro computing enthusiasts, showcasing a novel technical solution to connect an old OS to modern web services. Community discussion includes additional related projects and positive engagement, but the impact is niche and not groundbreaking for the broader field.",
+    "ai_summary": "OS9Map enables Mac OS 9 to fetch and display modern web map tiles without a proxy.",
+    "ai_tags": [
+      "retro-computing",
+      "Mac OS 9",
+      "networking",
+      "map",
+      "proxy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48673671",
+    "source_type": "hackernews",
+    "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+    "url": "https://hackernewstrends.com/",
+    "content": "\n--- Top Comments ---\n\n[zX41ZdbW]: I host a publicly open database with Hacker News data at  https:&#x2F;&#x2F;play.clickhouse.com&#x2F;play?user=play#U0VMRUNUICogRlJPT...  So you can create any sort of similar services in a single SQL query and an HTML page. I also hosted it as a publicly accessible data lake, which you can query from everywhere:  https:&#x2F;&#x2F;github.com&#x2F;ClickHouse&#x2F;ClickHouse&#x2F;issues&#x2F;29693#issuec...  It is also updated in real-time.\n\n[Aachen]: Google Trends is about  searches  This is about  published text . More like if Google Trends counted word occurrences on webpages. Or if Google Ngrams counted webpages instead of books People don&#x27;t write much about non-newsworthy things whereas many people search &quot;burger&quot; anytime they want a burger delivery. The datasets aren&#x27;t usable in the same way Edit: not to say it&#x27;s not a cool product! Just keep this in mind and enjoy using it :)\n\n[simonpure]: Hug of death `\n&#x2F;api&#x2F;hn -&gt; 504 An error occurred with your deployment FUNCTION_INVOCATION_TIMEOUT cle1::c8vgv-1782399959042-aeba3cae05ff\n`\n\n[kaelyx]: Hello, &#x2F;api&#x2F;hn -&gt; 502 {&quot;error&quot;:&quot;Your database has been temporarily rate-limited, please contact support@upstash.com for further details.&quot;}\n\n[gslepak]: Very cool! There seems to be a bug here:  https:&#x2F;&#x2F;hackernewstrends.com&#x2F;?q=vim&amp;q=emacs&amp;q=zed  For some reason the results cut off at 2018-10 even though &quot;Popular Comparisons&quot; preview shows more.",
+    "author": "ytkimirti",
+    "published_at": "2026-06-25T14:08:55Z",
+    "fetched_at": "2026-06-26T00:04:59.830501Z",
+    "metadata": {
+      "score": 637,
+      "descendants": 143,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48673671",
+      "comment_count": 5,
+      "title_zh": "为Hacker News评论创建趋势搜索工具",
+      "detailed_summary_zh": "一款名为Hacker News Trends的新工具上线，它索引了18年的Hacker News评论数据，允许用户像使用Google Trends一样搜索术语的流行度随时间的变化趋势。 该工具提供了一种新颖的方式来探索Hacker News社区中讨论主题的热度演变，对数据分析师、产品经理和开发者理解社区关注点变化具有参考价值。 工具基于数据库查询实现，但用户反馈出现了504和502错误，表明可能因流量过大导致性能问题；此外，还存在一个bug，导致某些搜索的结果在2018年10月之后被截断。",
+      "background_zh": "Google Trends是分析搜索词流行度的工具，而Hacker News是一个以技术话题为核心的新闻与讨论社区，其评论内容蕴含丰富的社区兴趣动态。Hacker News Trends相当于将Google Trends的概念应用于Hacker News评论文本，类似于Google Ngrams但基于网页而非书籍。",
+      "community_discussion_zh": "评论中，有用户提供了一个公开的ClickHouse数据库用于查询HN数据；也有用户指出该工具统计的是发表文本中的词频而非搜索行为，与Google Trends用途不同；此外还报告了错误和bug，社区整体持积极态度但指出了改进空间。",
+      "detailed_summary": "一款名为Hacker News Trends的新工具上线，它索引了18年的Hacker News评论数据，允许用户像使用Google Trends一样搜索术语的流行度随时间的变化趋势。 该工具提供了一种新颖的方式来探索Hacker News社区中讨论主题的热度演变，对数据分析师、产品经理和开发者理解社区关注点变化具有参考价值。 工具基于数据库查询实现，但用户反馈出现了504和502错误，表明可能因流量过大导致性能问题；此外，还存在一个bug，导致某些搜索的结果在2018年10月之后被截断。",
+      "background": "Google Trends是分析搜索词流行度的工具，而Hacker News是一个以技术话题为核心的新闻与讨论社区，其评论内容蕴含丰富的社区兴趣动态。Hacker News Trends相当于将Google Trends的概念应用于Hacker News评论文本，类似于Google Ngrams但基于网页而非书籍。",
+      "community_discussion": "评论中，有用户提供了一个公开的ClickHouse数据库用于查询HN数据；也有用户指出该工具统计的是发表文本中的词频而非搜索行为，与Google Trends用途不同；此外还报告了错误和bug，社区整体持积极态度但指出了改进空间。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (637 points, 143 comments) with technical discussion including alternative approaches and bug reports; novel tool for HN data exploration but not groundbreaking.",
+    "ai_summary": "A tool that indexes 18 years of Hacker News comments to show trending terms over time, similar to Google Trends.",
+    "ai_tags": [
+      "hackernews",
+      "trends",
+      "data analysis",
+      "show hn"
+    ]
+  },
+  {
+    "id": "hackernews:story:48672779",
+    "source_type": "hackernews",
+    "title": "Political bias in AI: Where the AI models stand",
+    "url": "https://trakkr.ai/bias",
+    "content": "\n--- Top Comments ---\n\n[giancarlostoro]: The political compass always felt like the wrong tool to convey something as nuanced as personal politics, I can have views on all four quadrants but you&#x27;d never know that if I end up in any of all four. I do think Grok being where it is sort of makes sense, I&#x27;ve tested &quot;MAGA&quot; views against Grok, it does not agree as much as people blindly assume it does, heck I don&#x27;t even know of a question I&#x27;ve given it where it did agree with &quot;MAGA&quot; offhand, most of ...\n\n[mrhottakes]: The constant issue with these sorts of categorization efforts is that the outcome is entirely dependent on how the responses to &quot;politically charged questions&quot; are graded as left vs. right. You&#x27;re mostly just examining a delta in biases between the model and the investigator.\n\n[Cakez0r]: The overall chart on their page seems politically biased, or at the very least a chart crime. The logos have faint grey lines pointing to their actual data points, conspicuously making Grok look very far right. You wouldn&#x27;t know it from glancing at the chart, but they measured Chatgpt being further to the left than Grok is to the right.\n\n[throw4847285]: The political compass is terrible, full stop. It is a meme in the classic sense. It has colonized some people&#x27;s view on what politics in direct proportion to how stupid it is (stupid is simple and simple is viral).\n\n[cadamsdotcom]: Compressing a huge range of issues onto a one-dimensional axis and then telling everyone they have to land somewhere ON that axis is one of the most confusing and silly things about modern politics. It’d be fascinating research to inspect models’ internal representations in case there’s an emergent structure in there that we can project back on society.",
+    "author": "mektrik",
+    "published_at": "2026-06-25T13:08:31Z",
+    "fetched_at": "2026-06-26T00:04:59.830514Z",
+    "metadata": {
+      "score": 105,
+      "descendants": 216,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48672779",
+      "comment_count": 5,
+      "title_zh": "AI模型政治偏见分析引发方法论争议",
+      "detailed_summary_zh": "一项使用政治罗盘方法衡量多个AI模型政治偏见的分析报告在社区引发热议，报告声称不同模型存在左右倾向差异。 该分析关系到AI模型在实际应用中的中立性和公平性，但测量方法本身可能带有主观偏见，影响公众对AI可靠性的信任。 社区评论指出政治罗盘将复杂的政治立场简化为二维坐标，且报告中的图表设计存在误导性，例如Grok被明显标记为极右，而实际测量中ChatGPT的左倾程度更极端。",
+      "background_zh": "政治罗盘是一种将政治观点映射到经济和社会两个轴上的工具，常被批评为过度简化且易引发歧义。AI模型的政治偏见通常源于训练数据中的倾向，但如何客观评估这些偏见仍是一个开放问题。",
+      "community_discussion_zh": "多数评论者认为政治罗盘不适合衡量AI偏见，结果高度依赖研究者自身对“左”和“右”的评分标准；还有用户指出图表可视化的手法可能故意放大某些模型的极端性，从而扭曲公众认知。",
+      "detailed_summary": "一项使用政治罗盘方法衡量多个AI模型政治偏见的分析报告在社区引发热议，报告声称不同模型存在左右倾向差异。 该分析关系到AI模型在实际应用中的中立性和公平性，但测量方法本身可能带有主观偏见，影响公众对AI可靠性的信任。 社区评论指出政治罗盘将复杂的政治立场简化为二维坐标，且报告中的图表设计存在误导性，例如Grok被明显标记为极右，而实际测量中ChatGPT的左倾程度更极端。",
+      "background": "政治罗盘是一种将政治观点映射到经济和社会两个轴上的工具，常被批评为过度简化且易引发歧义。AI模型的政治偏见通常源于训练数据中的倾向，但如何客观评估这些偏见仍是一个开放问题。",
+      "community_discussion": "多数评论者认为政治罗盘不适合衡量AI偏见，结果高度依赖研究者自身对“左”和“右”的评分标准；还有用户指出图表可视化的手法可能故意放大某些模型的极端性，从而扭曲公众认知。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (105 points, 216 comments) with substantive discussion critiquing the methodology of measuring AI political bias, highlighting issues like the political compass and grading biases. The topic is relevant and generates diverse viewpoints, but the original content's quality is debated.",
+    "ai_summary": "Analysis of political bias in various AI models using a political compass approach, with community critique of the methodology.",
+    "ai_tags": [
+      "AI bias",
+      "political bias",
+      "AI ethics",
+      "model evaluation"
+    ]
+  }
+]
