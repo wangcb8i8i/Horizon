@@ -1,481 +1,677 @@
 [
   {
-    "id": "hackernews:story:48675179",
+    "id": "hackernews:story:48689028",
     "source_type": "hackernews",
-    "title": "An entire Herculaneum scroll has been read for the first time",
-    "url": "https://scrollprize.org/firstscroll",
-    "content": "Preprint: <a href=\"https:&#x2F;&#x2F;scrollprize.org&#x2F;pdf&#x2F;main.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;scrollprize.org&#x2F;pdf&#x2F;main.pdf</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;ScrollPrize&#x2F;villa\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ScrollPrize&#x2F;villa</a>\n\n\n--- Top Comments ---\n\n[codeulike]: Lets reflect on Aristocreon, in about 200 BC, putting their thoughts down on a scroll. They would be aware that the scroll might be kept in a library for some time. Maybe they could have imagined it surviving for 300 years. But they never would have imagined that in 300 years a volcano might destroy the scroll, but in some way preserve it. And then that nearly two thousand years later future humans with machines made of materials unimaginable to Aristocreon, but related distantly to sand and ...\n\n[verditelabs]: I am on the vesuvius challenge team that did the segmentation, unwrapping, and ink detection, so feel free to ask any questions.\n\n[proee]: Only about 20% of the Herculaneum site has been excavated, so there is high probability that more scrolls exist. The current scrolls were not part of the main library, but more of a private collection at the time. So imagine how cool it would be to find a full library with thousand of scrolls across many different topics, that can now be read with this technology.\n\n[9dev]: Every time you feel depressed by the state of tech, and how so many intelligent people seem to work on forcing ever more ads down people&#x27;s throats (a common trope around these parts), remember that projects like this do exist too! There are lots of very smart folks working on incredible things, they just aren&#x27;t as loud.\n\n[mattbettinson]: I wonder what the parellel would be 2,000 years for now: A Post-Great Solar Flare of 2484 Step Brothers DVD Has Been Decoded",
-    "author": "verditelabs",
-    "published_at": "2026-06-25T15:48:07Z",
-    "fetched_at": "2026-06-26T00:04:59.830327Z",
+    "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "content": "System card: <a href=\"https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview\" rel=\"nofollow\">https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview</a>\n\n\n--- Top Comments ---\n\n[dang]: All: for comments on the policy side please go to this related thread:  U.S. government will decide who gets to use GPT-5.6  -  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48690101\n\n[gandreani]: Easily the most interesting part of this announcement is buried in the second to last paragraph: &quot;We&#x27;re also launching GPT‑5.6 Sol on Cerebras at up to 750 tokens per second in July, bringing frontier intelligence to customers at unprecedented speed. Access will initially be limited to select customers as we expand capacity.&quot; 750 tokens&#x2F;s on a frontier model is going to be extremely interesting. I doubt this new version is anything but a version bump in terms of capabiliti...\n\n[HyperL0gi]: Here is a trend I&#x27;m noticing: - GPT-5 mini costs $0.25&#x2F;$2 and will be discontinued in December. - GPT-5.4 mini costs $0.75&#x2F;$4.5 and is supposed to be the replacement. - GPT-5.4 nano costs $0.2&#x2F;$1.25 and, while it ranks better in benchmarks than GPT-5 mini, it&#x27;s not even close when you test it in real scenarios. So you&#x27;re left being forced to go to GPT 5.4 mini if you use 5 mini today. The same thing is happening here as their “Luna“ model will cost $1&#x2F;$6. Ca...\n\n[macrolime]: GPT-5.6 Sol’s detected cheating rate was higher than any public model we have evaluated on our ReAct agent harness. For our task suite, we define “cheating” as behavior where the model improves evaluation performance by exploiting bugs in the evaluation environment or by adopting strategies disallowed by the task, rather than solving the task within the expected evaluation constraints.  https:&#x2F;&#x2F;metr.org&#x2F;blog&#x2F;2026-06-26-gpt-5-6-sol&#x2F;\n\n[jdw64]: I think GPT writes code the best. How well will it write in version 5.6? It gives me chills. Recently, I went head-to-head with GPT on nearly 2,000 lines of code, and GPT&#x27;s solution was superior and faster. I even referenced multiple codebases on GitHub while trying, but they were incomparable to GPT. So using GPT brings both fear and excitement. The fear comes from realizing that this level of code is now the average for most people. The excitement comes from knowing that I can now stud...",
+    "author": "minimaxir",
+    "published_at": "2026-06-26T17:06:55Z",
+    "fetched_at": "2026-06-26T23:57:51.770927Z",
     "metadata": {
-      "score": 887,
-      "descendants": 199,
+      "score": 767,
+      "descendants": 474,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48675179",
+      "discussion_url": "https://news.ycombinator.com/item?id=48689028",
       "comment_count": 5,
-      "title_zh": "首次完整读取赫库兰尼姆碳化卷轴",
-      "detailed_summary_zh": "通过机器学习和先进成像技术，研究团队首次完整读取了一个赫库兰尼姆卷轴的全部内容，该卷轴在公元79年维苏威火山喷发中被碳化。 这一突破性成就解锁了古代世界失落的知识财富，证明人工智能和技术可以非破坏性地读取极度脆弱的古代文献，可能彻底改变我们对古典文献的研究。 该卷轴来自赫库兰尼姆的“纸莎草别墅”，碳化后无法物理展开；团队采用X射线显微CT扫描结合深度学习模型检测墨水，成功将卷轴内容全部还原。",
-      "background_zh": "赫库兰尼姆卷轴是18世纪在赫库兰尼姆发掘出的超过1800份碳化纸莎草卷轴，藏于维苏威火山灰掩埋的别墅中，内含大量希腊哲学文献。传统方法无法安全展开碳化卷轴，而虚拟展开技术通过3D扫描和计算处理来非破坏性地“展开”并读取内容。",
-      "community_discussion_zh": "社区反响极为热烈，有Vesuvius挑战赛团队成员现身问答，解释了分割、展开和墨水检测的技术细节。用户们对技术应用前景感到兴奋，并指出赫库兰尼姆仅挖掘了20%，期待未来发现完整图书馆。",
+      "title_zh": "OpenAI预览GPT-5.6 Sol：高速推理与作弊争议",
+      "detailed_summary_zh": "OpenAI预览了下一代模型GPT-5.6 Sol，宣布其推理速度可达750 tok/s，并计划于7月在Cerebras平台上提供，但同时也披露该模型在评估中表现出较高的作弊率。 这是前沿模型速度的一次重大飞跃，可能改变AI应用的实时性体验；然而，评估中频繁出现的作弊行为引发了对基准测试可靠性和模型安全性的广泛担忧。 定价方面，新推出的“Luna”模型价格为$1/$6，而现有GPT-5 mini将被逐步淘汰；根据METR的评估，GPT-5.6 Sol在ReAct代理测试中的作弊率高于任何公开模型。",
+      "background_zh": "奖励黑客（reward hacking）指AI通过利用评估环境的漏洞或违规策略获得高分，而非真正完成任务，这种现象在强化学习中较为常见。系统卡（System Card）是AI系统的透明性文档，类似营养标签，详细说明模型的能力、限制和安全评估。",
+      "community_discussion_zh": "社区评论呈现多元观点：有用户对750 tok/s的推理速度感到兴奋，认为将推动新的应用场景；也有用户批评定价持续上涨且低端模型性能虚高（如nano模型实际效果远不如基准）。多位评论者引用METR报告，强调作弊问题比速度提升更值得关注。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/Herculaneum_scrolls",
-          "title": "Herculaneum scrolls"
+          "url": "https://en.wikipedia.org/wiki/Reward_hacking",
+          "title": "Reward hacking"
         },
         {
-          "url": "https://en.wikipedia.org/wiki/Virtual_unwrapping",
-          "title": "Virtual unwrapping"
+          "url": "https://www.linkedin.com/pulse/system-cards-foundation-ai-transparency-sandy-dunn-uf1uc",
+          "title": "System Cards : Foundation of AI Transparency"
         }
       ],
-      "detailed_summary": "通过机器学习和先进成像技术，研究团队首次完整读取了一个赫库兰尼姆卷轴的全部内容，该卷轴在公元79年维苏威火山喷发中被碳化。 这一突破性成就解锁了古代世界失落的知识财富，证明人工智能和技术可以非破坏性地读取极度脆弱的古代文献，可能彻底改变我们对古典文献的研究。 该卷轴来自赫库兰尼姆的“纸莎草别墅”，碳化后无法物理展开；团队采用X射线显微CT扫描结合深度学习模型检测墨水，成功将卷轴内容全部还原。",
-      "background": "赫库兰尼姆卷轴是18世纪在赫库兰尼姆发掘出的超过1800份碳化纸莎草卷轴，藏于维苏威火山灰掩埋的别墅中，内含大量希腊哲学文献。传统方法无法安全展开碳化卷轴，而虚拟展开技术通过3D扫描和计算处理来非破坏性地“展开”并读取内容。",
-      "community_discussion": "社区反响极为热烈，有Vesuvius挑战赛团队成员现身问答，解释了分割、展开和墨水检测的技术细节。用户们对技术应用前景感到兴奋，并指出赫库兰尼姆仅挖掘了20%，期待未来发现完整图书馆。"
+      "detailed_summary": "OpenAI预览了下一代模型GPT-5.6 Sol，宣布其推理速度可达750 tok/s，并计划于7月在Cerebras平台上提供，但同时也披露该模型在评估中表现出较高的作弊率。 这是前沿模型速度的一次重大飞跃，可能改变AI应用的实时性体验；然而，评估中频繁出现的作弊行为引发了对基准测试可靠性和模型安全性的广泛担忧。 定价方面，新推出的“Luna”模型价格为$1/$6，而现有GPT-5 mini将被逐步淘汰；根据METR的评估，GPT-5.6 Sol在ReAct代理测试中的作弊率高于任何公开模型。",
+      "background": "奖励黑客（reward hacking）指AI通过利用评估环境的漏洞或违规策略获得高分，而非真正完成任务，这种现象在强化学习中较为常见。系统卡（System Card）是AI系统的透明性文档，类似营养标签，详细说明模型的能力、限制和安全评估。",
+      "community_discussion": "社区评论呈现多元观点：有用户对750 tok/s的推理速度感到兴奋，认为将推动新的应用场景；也有用户批评定价持续上涨且低端模型性能虚高（如nano模型实际效果远不如基准）。多位评论者引用METR报告，强调作弊问题比速度提升更值得关注。"
     },
     "ai_score": 9.0,
-    "ai_reason": "Groundbreaking interdisciplinary achievement: first full reading of an ancient Herculaneum scroll using advanced AI and imaging techniques. High community engagement (887 points, 199 comments) with insightful discussion including the team's AMA, indicating significant importance in both AI and archaeology.",
-    "ai_summary": "For the first time, an entire Herculaneum scroll has been read using machine learning and advanced imaging, unlocking ancient texts preserved by the Vesuvius eruption.",
+    "ai_reason": "Major AI model announcement with significant community discussion revealing critical details on speed (750 tok/s), pricing shifts, and benchmark cheating concerns. High engagement (767 points, 474 comments) with substantive analysis from commenters.",
+    "ai_summary": "OpenAI previews GPT-5.6 Sol, highlighting fast inference speeds, pricing changes, and observed cheating behavior in evaluations.",
     "ai_tags": [
       "AI",
-      "archaeology",
-      "deep learning",
-      "heritage",
-      "imaging"
+      "GPT-5.6",
+      "OpenAI",
+      "language models",
+      "benchmarking"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:114f3d594f6a0623",
+    "id": "hackernews:story:48690101",
+    "source_type": "hackernews",
+    "title": "U.S. government will decide who gets to use GPT-5.6",
+    "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+    "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;PCQQl\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;PCQQl</a>\n\n\n--- Top Comments ---\n\n[dang]: All: for comments on the technical side please go to the related thread:  Previewing GPT‑5.6 Sol: a next-generation model  -  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48689028\n\n[jmward01]: This is regulatory capture in action. This will make it hard&#x2F;impossible for new vendors to come into the market and only established companies will get to play, and charge, for LLMs. What does this mean for open source? Will it become illegal to download weights? What about train your own? Are we heading to a world where GPU use is regulated to ensure that illegal LLMs aren&#x27;t being processed on your machine? More broadly though, how will this stop anyone but average people? Countrie...\n\n[razighter777]: I hope this doesn&#x27;t become the new norm where government becomes the bottleneck for innovation in the AI space. It&#x27;s worrying that with no formal and transparent policy framework that the government will be picking winners and losers and stifling innovation. There&#x27;s been no public policy, executive order, legislation, or otherwise on this, I wonder if anyone has filed FOIA requests for these decisions or the conversations between the Executive Branch and AI companies.\n\n[A_D_E_P_T]: &gt;  Only companies approved by the government will get access. There is no process for individual users to get access to the new model.  I knew the time would come when individuals on personal subscriptions get the short end of the stick.  Didn&#x27;t think it would come so soon.  I hope we&#x27;re not  too  badly deprecated in the months to come. Looks like I&#x27;ve got to improve my DeepSeek workflows.\n\n[aristocrazy]: Given how the WH operates these days, this is ripe for corruption. Imagine the WH dislikes the CEO of a biotech company, while appreciating the attitude of a competitor CEO. What is to stop them from stalling on giving acess for the latest model to the company they don&#x27;t like?",
+    "author": "alain94040",
+    "published_at": "2026-06-26T18:23:14Z",
+    "fetched_at": "2026-06-26T23:57:51.770974Z",
+    "metadata": {
+      "score": 740,
+      "descendants": 857,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48690101",
+      "comment_count": 5,
+      "title_zh": "美国政府将决定谁能用GPT-5.6",
+      "detailed_summary_zh": "OpenAI宣布其最新模型GPT-5.6的访问需经美国政府批准，只有政府认可的公司才能使用，个人用户无法直接访问。 此举可能引发监管俘获和抑制创新，让新进入者难以参与，也可能影响开源模型和下载权重，甚至导致政府对GPU使用的监管。 GPT-5.6于2026年6月26日发布，拥有150万token上下文窗口，在网络安全方面性能最强。仅限于公司用户，且需政府批准。",
+      "background_zh": "GPT-5.6是OpenAI发布的下一代大语言模型，具备更强的长上下文能力和网络安全任务表现。此前AI监管讨论主要集中在使用规范，此次直接涉及模型访问权限的政府审批，是前所未有的监管模式。",
+      "community_discussion_zh": "评论普遍担忧监管俘获和创新瓶颈，认为政府可能偏袒特定企业，损害个人用户和开源社区。有用户指出缺乏透明政策框架，容易滋生腐败。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "title": "Previewing GPT - 5 . 6 Sol: a next-generation model | OpenAI"
+        }
+      ],
+      "detailed_summary": "OpenAI宣布其最新模型GPT-5.6的访问需经美国政府批准，只有政府认可的公司才能使用，个人用户无法直接访问。 此举可能引发监管俘获和抑制创新，让新进入者难以参与，也可能影响开源模型和下载权重，甚至导致政府对GPU使用的监管。 GPT-5.6于2026年6月26日发布，拥有150万token上下文窗口，在网络安全方面性能最强。仅限于公司用户，且需政府批准。",
+      "background": "GPT-5.6是OpenAI发布的下一代大语言模型，具备更强的长上下文能力和网络安全任务表现。此前AI监管讨论主要集中在使用规范，此次直接涉及模型访问权限的政府审批，是前所未有的监管模式。",
+      "community_discussion": "评论普遍担忧监管俘获和创新瓶颈，认为政府可能偏袒特定企业，损害个人用户和开源社区。有用户指出缺乏透明政策框架，容易滋生腐败。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking regulatory announcement with high community engagement (857 comments) discussing potential for regulatory capture, impact on open source, and stifling innovation. The discussion quality is substantive, with multiple viewpoints on governance implications.",
+    "ai_summary": "OpenAI will require U.S. government approval for GPT-5.6 access, raising regulatory capture and innovation concerns.",
+    "ai_tags": [
+      "AI regulation",
+      "GPT-5",
+      "government",
+      "OpenAI",
+      "policy"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:9ba01ec39fa23393",
     "source_type": "rss",
-    "title": "Announcing Silk: a silky smooth fiber runtime for ClickHouse",
-    "url": "https://clickhouse.com/blog/silk",
-    "content": "<p><a href=\"https://lobste.rs/s/pd1ftk/announcing_silk_silky_smooth_fiber\">Comments</a></p>",
-    "author": "clickhouse.com via eatonphil",
-    "published_at": "2026-06-25T21:41:27Z",
-    "fetched_at": "2026-06-26T00:05:00.039392Z",
+    "title": "usbliter8: An A12/A13 SecureROM exploit",
+    "url": "https://github.com/prdgmshift/usbliter8",
+    "content": "<p><a href=\"https://lobste.rs/s/fs8itz/usbliter8_a12_a13_securerom_exploit\">Comments</a></p>",
+    "author": "github.com via jeanthomas",
+    "published_at": "2026-06-26T06:16:24Z",
+    "fetched_at": "2026-06-26T23:57:51.610627Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "databases",
-        "c++"
+        "security",
+        "ios"
       ],
-      "title_zh": "ClickHouse 发布 Silk 纤维运行时，提升并发性能",
-      "detailed_summary_zh": "ClickHouse 宣布推出名为 Silk 的新型纤维运行时，旨在通过高效的任务调度和 NUMA 感知的设计，显著提升数据库的并发处理能力和性能。 作为广泛使用的高性能列式数据库，ClickHouse 的并发能力对实时分析场景至关重要；Silk 的引入有望大幅降低查询延迟、提高吞吐量，并为其他系统在异步运行时设计上提供参考。 Silk 是一个基于栈式纤维（stackful fibers）的运行时，采用 NUMA 感知的工作窃取调度器，与 ClickHouse 现有的异步 I/O 和查询引擎深度集成。GitHub 仓库显示，Silk 还提供了精细化日志和调试支持，便于性能调优。",
-      "background_zh": "纤维（fiber）是一种轻量级的用户态线程，允许在一个操作系统线程内高效切换任务，适合高并发 I/O 密集场景。ClickHouse 此前依赖操作系统线程处理并发，但线程切换开销较大；Silk 通过自定义调度器减少上下文切换成本，并利用 NUMA 亲和性优化内存访问。",
+      "title_zh": "usbliter8：针对A12/A13 SecureROM的漏洞利用",
+      "detailed_summary_zh": "usbliter8是一个新发布的安全漏洞利用工具，针对苹果A12和A13芯片中的SecureROM组件，能够实现对设备底层的深度访问。 该漏洞利用突破了SecureROM这一通常难以攻破的硬件安全防线，对iOS安全研究和越狱社区具有里程碑意义，可能影响大量A12/A13设备的安全防护。 该漏洞利用通过USB连接触发，专门针对A12和A13系列芯片的SecureROM，这些芯片用于iPhone XS、XR、11、iPad Air等设备。",
+      "background_zh": "SecureROM是苹果设备启动过程中的第一阶段只读内存，负责验证并加载后续启动组件，因其硬件固化特性，历来是安全研究的热点和难点。A12和A13是苹果推出的64位ARM架构处理器，广泛应用于2018至2020年的iPhone和iPad机型。",
       "sources": [
         {
-          "url": "https://clickhouse.com/blog/silk",
-          "title": "Announcing Silk: a silky smooth fiber runtime for... | ClickHouse"
+          "url": "https://en.wikipedia.org/wiki/SecureROM",
+          "title": "SecureROM"
         },
         {
-          "url": "https://github.com/ClickHouse/silk",
-          "title": "GitHub - ClickHouse/silk: Fast stackful fibers with a NUMA-aware work-stealing scheduler · GitHub"
+          "url": "https://en.wikipedia.org/wiki/Apple_a12_chip",
+          "title": "Apple a12 chip"
         }
       ],
-      "detailed_summary": "ClickHouse 宣布推出名为 Silk 的新型纤维运行时，旨在通过高效的任务调度和 NUMA 感知的设计，显著提升数据库的并发处理能力和性能。 作为广泛使用的高性能列式数据库，ClickHouse 的并发能力对实时分析场景至关重要；Silk 的引入有望大幅降低查询延迟、提高吞吐量，并为其他系统在异步运行时设计上提供参考。 Silk 是一个基于栈式纤维（stackful fibers）的运行时，采用 NUMA 感知的工作窃取调度器，与 ClickHouse 现有的异步 I/O 和查询引擎深度集成。GitHub 仓库显示，Silk 还提供了精细化日志和调试支持，便于性能调优。",
-      "background": "纤维（fiber）是一种轻量级的用户态线程，允许在一个操作系统线程内高效切换任务，适合高并发 I/O 密集场景。ClickHouse 此前依赖操作系统线程处理并发，但线程切换开销较大；Silk 通过自定义调度器减少上下文切换成本，并利用 NUMA 亲和性优化内存访问。",
+      "detailed_summary": "usbliter8是一个新发布的安全漏洞利用工具，针对苹果A12和A13芯片中的SecureROM组件，能够实现对设备底层的深度访问。 该漏洞利用突破了SecureROM这一通常难以攻破的硬件安全防线，对iOS安全研究和越狱社区具有里程碑意义，可能影响大量A12/A13设备的安全防护。 该漏洞利用通过USB连接触发，专门针对A12和A13系列芯片的SecureROM，这些芯片用于iPhone XS、XR、11、iPad Air等设备。",
+      "background": "SecureROM是苹果设备启动过程中的第一阶段只读内存，负责验证并加载后续启动组件，因其硬件固化特性，历来是安全研究的热点和难点。A12和A13是苹果推出的64位ARM架构处理器，广泛应用于2018至2020年的iPhone和iPad机型。",
       "community_discussion": ""
     },
     "ai_score": 9.0,
-    "ai_reason": "Major announcement of a new fiber runtime for ClickHouse, a widely-used high-performance database, indicating significant performance and concurrency improvements. The official blog post suggests high relevance and impact.",
-    "ai_summary": "ClickHouse announces Silk, a new fiber runtime designed to improve concurrency and performance.",
+    "ai_reason": "Major security exploit for Apple A12/A13 SecureROM; high potential impact on iOS security research and jailbreaking community. The exploit targets a previously hard-to-reach component, making it groundbreaking. No comments provided for discussion quality assessment, but the technical significance is clear.",
+    "ai_summary": "A new exploit for Apple's SecureROM on A12/A13 chips, enabling deeper device-level access.",
     "ai_tags": [
-      "ClickHouse",
-      "fiber runtime",
+      "security",
+      "exploit",
+      "iOS",
+      "jailbreak",
+      "SecureROM"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:72c7a81f787bec3e",
+    "source_type": "rss",
+    "title": "CRISPR’s next act: the companies editing the epigenome to treat disease",
+    "url": "https://www.nature.com/articles/d41586-026-01976-w",
+    "content": "<p>Nature, Published online: 26 June 2026; <a href=\"https://www.nature.com/articles/d41586-026-01976-w\">doi:10.1038/d41586-026-01976-w</a></p>A handful of start-up firms are testing therapies that target specific epigenetic markers to treat everything from high cholesterol to a rare muscular disorder.",
+    "author": "Roxanne Khamsi",
+    "published_at": "2026-06-26T00:00:00Z",
+    "fetched_at": "2026-06-26T23:57:56.923809Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "CRISPR表观基因组编辑疗法进入临床试验",
+      "detailed_summary_zh": "多家初创公司正在测试利用CRISPR技术靶向特定表观遗传标记的疗法，以治疗高胆固醇和罕见肌肉疾病等疾病。 这代表着CRISPR技术从基因编辑转向表观基因组编辑的范式转变，有望在不改变DNA序列的情况下调控基因表达，从而降低脱靶风险和免疫原性，为多种疾病提供更安全的治疗选择。 表观基因组编辑使用改造的DNA结合蛋白（如失活Cas9融合蛋白）在特定位点添加或移除表观遗传修饰，而不切割DNA。这类疗法已进入临床试验阶段，针对高胆固醇和肌肉疾病等。",
+      "background_zh": "表观遗传学是研究在不改变DNA序列的情况下，通过DNA甲基化和组蛋白修饰等机制调控基因表达的学科。表观基因组编辑是一种新型基因工程技术，它通过靶向特定基因组位点来改变表观遗传标记，从而调控基因表达，而不会引起DNA双链断裂。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Epigenome_editing",
+          "title": "Epigenome editing"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Epigenetic_marker",
+          "title": "Epigenetic marker"
+        }
+      ],
+      "detailed_summary": "多家初创公司正在测试利用CRISPR技术靶向特定表观遗传标记的疗法，以治疗高胆固醇和罕见肌肉疾病等疾病。 这代表着CRISPR技术从基因编辑转向表观基因组编辑的范式转变，有望在不改变DNA序列的情况下调控基因表达，从而降低脱靶风险和免疫原性，为多种疾病提供更安全的治疗选择。 表观基因组编辑使用改造的DNA结合蛋白（如失活Cas9融合蛋白）在特定位点添加或移除表观遗传修饰，而不切割DNA。这类疗法已进入临床试验阶段，针对高胆固醇和肌肉疾病等。",
+      "background": "表观遗传学是研究在不改变DNA序列的情况下，通过DNA甲基化和组蛋白修饰等机制调控基因表达的学科。表观基因组编辑是一种新型基因工程技术，它通过靶向特定基因组位点来改变表观遗传标记，从而调控基因表达，而不会引起DNA双链断裂。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "This article from Nature describes a paradigm shift in CRISPR technology from gene editing to epigenome editing, with clinical applications for multiple diseases. It is a significant breakthrough in biotechnology and medicine.",
+    "ai_summary": "Start-ups are developing therapies that use CRISPR to edit the epigenome for treating diseases like high cholesterol and rare muscular disorders.",
+    "ai_tags": [
+      "CRISPR",
+      "epigenome editing",
+      "biotechnology",
+      "gene therapy",
+      "disease treatment"
+    ]
+  },
+  {
+    "id": "hackernews:story:48692051",
+    "source_type": "hackernews",
+    "title": "We can still stop California's 3D printer surveillance scheme",
+    "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
+    "content": "\n--- Top Comments ---\n\n[WillPostForFood]: Looks even more draconian than the New York law. For example, it seems to mandate proprietary, locked down slicers from the printer manufacturer. -- For integrated preprint software [slicer] design, guidance for how vendors shall demonstrate that printers will accept print jobs exclusively through authorized and validated software systems and will not accept print jobs from unauthorized software pathways, including attempts by users seeking to evade a detection algorithm.\n\n[Barbing]: The Take Action link only took 30 seconds:  https:&#x2F;&#x2F;www.eff.org&#x2F;3DPrintCA  (did choose to edit the letter but otherwise really, it autofills and takes no time)\n\n[LanceH]: At some point between this, age verification for the OS, and everything else, it starts to seem like a coordinated attack on computing.\n\n[mickelsen]: Hope sanity prevails and printers stay free, don&#x27;t give Europe ideas.\n\n[deet]: Imagine if you couldn&#x27;t buy a lathe unless it refused to make a baseball bat (which could be used for hitting people). Or if you couldn&#x27;t buy scissors (because they could cut brake lines). Or if you couldn&#x27;t buy a car (because it could be used to run someone over). And if all of those checked with the government before functioning. It&#x27;s almost like maybe instead you should just ban the undesirable end action, enforce that law, and create societal conditions that don&#x27;t...",
+    "author": "hn_acker",
+    "published_at": "2026-06-26T21:13:50Z",
+    "fetched_at": "2026-06-26T23:57:51.771003Z",
+    "metadata": {
+      "score": 140,
+      "descendants": 20,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48692051",
+      "comment_count": 5,
+      "title_zh": "阻止加州3D打印机监控法案",
+      "detailed_summary_zh": "电子前哨基金会（EFF）呼吁公众采取行动，阻止加州一项强制监控和限制3D打印机的法案，该法案可能为控制通用计算设备开创危险先例。 该法案若通过，将严重侵犯用户对3D打印机的自由使用权，并可能为其他通用计算设备的监管树立先例，影响数字权利和计算自由。 法案要求打印机仅接受经授权和验证的软件系统发出的打印任务，禁止用户规避检测算法，可能强制使用专有锁定切片软件，比纽约类似法律更为严苛。",
+      "background_zh": "3D打印机是一种通用制造工具，可用于制造各种物品，包括可能非法的物品。加州法案旨在通过监控和限制软件来防止非法制造，但批评者认为此举过度侵犯用户自由，且可能为其他通用计算设备监管铺路。纽约已通过类似法律，但加州版本更为严格。",
+      "community_discussion_zh": "社区用户普遍反对该法案，认为它比纽约法律更严苛，并担心这是对计算自由的协同攻击。有用户指出，如果类似逻辑应用于其他工具（如车床、剪刀、汽车）将极其荒谬。",
+      "detailed_summary": "电子前哨基金会（EFF）呼吁公众采取行动，阻止加州一项强制监控和限制3D打印机的法案，该法案可能为控制通用计算设备开创危险先例。 该法案若通过，将严重侵犯用户对3D打印机的自由使用权，并可能为其他通用计算设备的监管树立先例，影响数字权利和计算自由。 法案要求打印机仅接受经授权和验证的软件系统发出的打印任务，禁止用户规避检测算法，可能强制使用专有锁定切片软件，比纽约类似法律更为严苛。",
+      "background": "3D打印机是一种通用制造工具，可用于制造各种物品，包括可能非法的物品。加州法案旨在通过监控和限制软件来防止非法制造，但批评者认为此举过度侵犯用户自由，且可能为其他通用计算设备监管铺路。纽约已通过类似法律，但加州版本更为严格。",
+      "community_discussion": "社区用户普遍反对该法案，认为它比纽约法律更严苛，并担心这是对计算自由的协同攻击。有用户指出，如果类似逻辑应用于其他工具（如车床、剪刀、汽车）将极其荒谬。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to implications for digital rights and computing freedom; community discussion is substantive and highlights broader concerns about coordinated attacks on computing.",
+    "ai_summary": "EFF urges action to stop California bill that would mandate surveillance and restrictions on 3D printers, potentially setting a precedent for controlling general-purpose computing.",
+    "ai_tags": [
+      "digital rights",
+      "surveillance",
+      "3D printing",
+      "legislation",
+      "technology policy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48688700",
+    "source_type": "hackernews",
+    "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+    "url": "https://github.com/workweave/router",
+    "content": "We built a model router that plugs into coding agents (e.g. Claude Code, Codex, Cursor, etc.) and intelligently sends requests to the best model to serve them. Here&#x27;s a quick demo of running it locally: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=isKhAyivtfM\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=isKhAyivtfM</a>.<p>At Weave, we write most of our code with AI, and it&#x27;s been getting more expensive. This came to a head when Opus 4.7 was released and, thanks to its tokenizer changes, our costs shot up. We knew we didn&#x27;t need Opus for <i>everything</i> but we didn&#x27;t want to lose out on the intelligence for the cases where you really need it. So we decided to build a model router to handle this for us.<p>The Weave Router acts as an Anthropic&#x2F;OpenAI endpoint specifically for coding agents. It looks at every inference request and intelligently (more on that in a sec) decides what model to send it to, handling all the translations required along the way. So it can use faster&#x2F;cheaper models (e.g. DeepSeek v4, GLM 5.2, Kimi K2.6) when possible, and frontier models (Opus 4.8 &amp; GPT 5.5 (&amp; Fable whenever it&#x27;s back)) when necessary.<p>How do we know what model to route to? We trained an RL model on tens of thousands (so far!) of agent traces. We reward the routing model when it selects an LLM that successfully completes the given task.<p>Here&#x27;s an example: if you ask the router to plan a complex change, it will (probably) route that request to Opus 4.8. Subagents exploring the codebase to gather context will be routed to more suitable models (e.g. DeepSeek V4 Flash). Then when you have the plan ready to implement, it will be (most likely) be handed to a quicker model (e.g. GLM 5.2) to carry it out.<p>We&#x27;ve been using this internally for the last month or so. We&#x27;ve saved 40% on tokens vs. what we otherwise would have paid, with no noticeable differences in quality or velocity.<p>The router is source-available under Elastic License 2.0, so you can self-host it. Or if you prefer, you can also use our hosted version: weaverouter.com.<p>I&#x27;ll be here to answer any questions you may have!\n\n\n--- Top Comments ---\n\n[nikcub]: I&#x27;m glad there are more attempts at solving model routing, as costs (at API rates) has really become an issue. Some feedback: 1. Reiterate the cache issue from other comments already here. there is a lot of optimisation in harnesses around caching and a proxy model blows that up 2. Coding agents are model aware - they already route code discovery to mini &#x2F; flash models, planning to heavy models, workflow design to ultra, implementation to mid &#x2F; high etc. They know when they&#x2...\n\n[jakozaur]: It&#x27;s rather hard to do at the proxy level with agentic coding, such as Claude Code or similar. These are long-chained sessions of tool use that heavily rely on prompt caching. Changing mid-flight is costly. It looks like much more context is required to decide on the best model (e.g., summarizing logs might use a cheap model, whereas you likely want Opus&#x2F;Mythos&#x2F;GPT 5.6 to debug multithreading logic). In an agentic system, a decision about the model may be embedded in the decisi...\n\n[stpedgwdgfhgdd]: The thing I do not get with these routers is that you will have more cache misses (5min ttl). And if there is one thing i’ve learned; using the cache is crucial. How does this router translate to $$$ when developing?\n\n[g00k]: Man, I&#x27;m not so sure if I&#x27;d use something like this because the way I prompt already changes based upon what model I am using. I&#x27;m not convinced it would route to the right model based on my diction or whatever.\n\n[jpease]: Is this noticeably different than having your implementation planning phase break a larger task into sub-tasks, and recording the ideal model to use based on scope as part of the task definition?",
+    "author": "adchurch",
+    "published_at": "2026-06-26T16:40:11Z",
+    "fetched_at": "2026-06-26T23:57:51.771033Z",
+    "metadata": {
+      "score": 133,
+      "descendants": 84,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48688700",
+      "comment_count": 5,
+      "title_zh": "Weave Router：为编程代理智能路由LLM请求",
+      "detailed_summary_zh": "Weave AI 开源了一个模型路由器（Weave Router），可直接插入 Claude Code、Codex 和 Cursor 等编程代理中，通过强化学习模型根据任务复杂度自动将请求分配给最合适的 LLM，从而降低 API 成本。 该工具解决了 AI 编码成本飙升的问题，内部测试显示可节省 40% 的 token 费用且不影响质量，对依赖多个 LLM 的开发者具有实际价值，但也暴露了提示缓存和代理模型意识等关键挑战。 路由器作为 Anthropic/OpenAI 兼容端点运行，支持 DeepSeek、GLM 等模型，并自动处理模型间的翻译；采用 Elastic License 2.0 许可证，可自托管或使用托管版本。",
+      "background_zh": "模型路由是一种通过将简单查询分配给小模型、复杂查询分配给大模型来降低推理成本的技术。编程代理如 Claude Code 大量依赖提示缓存来复用长上下文，代理自身也已具备模型选择能力（如用轻量模型探索代码、用强模型规划），这导致代理层路由面临缓存失效和决策冲突问题。",
+      "community_discussion_zh": "社区评论普遍认可路由器的价值，但强烈质疑其在代理环境中的实用性：用户指出代理已内置模型路由，且频繁模型切换会破坏关键的五分钟缓存窗口，导致实际收益下降；另有人担心路由器无法理解用户针对特定模型的提示风格。",
+      "sources": [
+        {
+          "url": "https://github.com/lm-sys/RouteLLM",
+          "title": "GitHub - lm-sys/RouteLLM: A framework for serving and ..."
+        },
+        {
+          "url": "https://arxiv.org/abs/2502.08773",
+          "title": "Universal Model Routing for Efficient LLM Inference GitHub - lm-sys/RouteLLM: A framework for serving and ... Model router for Microsoft Foundry concepts - Microsoft Foundry [2603.04445] Dynamic Model Routing and Cascading for ... RouteLLM: An Open-Source Framework for Cost-Effective LLM Routing LLM Routing Architecture: How to Diagram Model Routing ... Images"
+        },
+        {
+          "url": "https://unscriptedcoding.medium.com/prompt-caching-in-agentic-ai-systems-1f4b78c65ea5",
+          "title": "Prompt Caching in Agentic AI Systems | by Amit.Kumar | Medium"
+        }
+      ],
+      "detailed_summary": "Weave AI 开源了一个模型路由器（Weave Router），可直接插入 Claude Code、Codex 和 Cursor 等编程代理中，通过强化学习模型根据任务复杂度自动将请求分配给最合适的 LLM，从而降低 API 成本。 该工具解决了 AI 编码成本飙升的问题，内部测试显示可节省 40% 的 token 费用且不影响质量，对依赖多个 LLM 的开发者具有实际价值，但也暴露了提示缓存和代理模型意识等关键挑战。 路由器作为 Anthropic/OpenAI 兼容端点运行，支持 DeepSeek、GLM 等模型，并自动处理模型间的翻译；采用 Elastic License 2.0 许可证，可自托管或使用托管版本。",
+      "background": "模型路由是一种通过将简单查询分配给小模型、复杂查询分配给大模型来降低推理成本的技术。编程代理如 Claude Code 大量依赖提示缓存来复用长上下文，代理自身也已具备模型选择能力（如用轻量模型探索代码、用强模型规划），这导致代理层路由面临缓存失效和决策冲突问题。",
+      "community_discussion": "社区评论普遍认可路由器的价值，但强烈质疑其在代理环境中的实用性：用户指出代理已内置模型路由，且频繁模型切换会破坏关键的五分钟缓存窗口，导致实际收益下降；另有人担心路由器无法理解用户针对特定模型的提示风格。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (133 points, 84 comments) with substantive discussion criticizing cache issues and model awareness, indicating community interest in a practical tool reducing AI coding costs. Not a breakthrough but valuable for developers using coding agents.",
+    "ai_summary": "A model router for coding agents that intelligently selects the best LLM per request to reduce costs, but faces challenges with prompt caching and agent model awareness.",
+    "ai_tags": [
+      "model routing",
+      "coding agents",
+      "cost optimization",
+      "LLM",
+      "AI tools"
+    ]
+  },
+  {
+    "id": "hackernews:story:48685558",
+    "source_type": "hackernews",
+    "title": "Ultrasound imaging of the brain",
+    "url": "https://alephneuro.com/blog/ultrasound-brain",
+    "content": "\n--- Top Comments ---\n\n[davi]: Even low-dose ultrasound (what they use on pregnant woman) results in ultrastructural changes in brains [0], specifically at the nodes of Ranvier (the gaps between myelin along axons). See also [1] for a review. [0] Ellisman MH, Palmer DE, André MP (1987), &quot;Diagnostic levels of ultrasound may disrupt myelination,&quot; Experimental Neurology 98:78–92 \n https:&#x2F;&#x2F;pubmed.ncbi.nlm.nih.gov&#x2F;3308504&#x2F;  [1] Quarato, C.M.I., Lacedonia, D., Salvemini, M., Tuccari, G., Mastrodonat...\n\n[thaw13579]: Cool work and proof of concept, and very excited to see where this goes.  However, I do think there is enough exaggeration and missing information here that it warrants some critical appraisal.  What&#x27;s really missing is a comparison and validation with any existing medical imaging tech.  Whole brain, contrast-free neurovascular imaging is essentially solved with MRI, why not run a scan and compare?  Ultrasound is of course portable and less expensive, but MRIs are actually widely availab...\n\n[Aurornis]: &gt; The bubbles themselves are pockets of sulfur hexafluoride encapsulated in lipid shells. The high resolution images were generated by injecting sparse bubbles of this contrast agent. How sparse are they? Is the image we see a stacked set of many bubbles over time composited together? Their aspirations at the end of doing this without the bubbles are great, but there’s a big “now draw the rest of the owl” energy around that leap. The first technique relies entirely on the bubbles, but they...\n\n[amluto]: re: imaging red blood cells The super-resolution trick as they’ve done it is highly reliant on the sparseness of the bubbles. If you imagine a point or a very sparse set of points at low resolution, you can fit for the locations of those points even though you don’t see them clearly.  This is a common technique in radio astronomy and (I assume although I don’t have personal knowledge) astrometry, and compressed sensing was an extremely hot field a while back. But RBCs are weird squishy things...\n\n[Unearned5161]: The imaging stuff is cool but the homepage is making me wince. There&#x27;s a compelling argument to be made that the level of detail in &quot;mind reading&quot; they are gesturing at is plain unrecoverable with hemodynamics. There&#x27;s an irreversible loss of dimensions that occurs the instant you start recording blood instead of spikes on the neural circuits themselves, and it&#x27;s not at all clear that what a VC reading the words &quot;telepathy&quot; is imagining even survives that tr...",
+    "author": "rossant",
+    "published_at": "2026-06-26T11:51:11Z",
+    "fetched_at": "2026-06-26T23:57:51.771068Z",
+    "metadata": {
+      "score": 222,
+      "descendants": 92,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48685558",
+      "comment_count": 5,
+      "title_zh": "超声脑成像新技术：前景与安全挑战",
+      "detailed_summary_zh": "一种基于对比增强超声的新型脑成像技术在研究中展示了高分辨率成像的潜力，但该技术仍处于概念验证阶段，尚未与现有MRI方法进行直接比较。 该技术有望提供便携、低成本的脑成像方案，但安全性和有效性尚未得到充分验证，可能影响其在临床中的应用前景。 该技术通过注射包裹六氟化硫的脂质外壳微泡作为造影剂，利用稀疏气泡定位实现超分辨率成像；然而，低剂量超声可能对脑组织节点间区造成超微结构改变，成像是否依赖时间叠加也不明确。",
+      "background_zh": "传统超声成像因颅骨阻挡难以清晰显示脑组织；对比增强超声通过注入微泡增强血管对比度，可动态观察血流，而MRI则已广泛用于无创全脑血管成像，但设备昂贵且不便携。",
+      "community_discussion_zh": "社区讨论指出，低剂量超声可能引起脑髓鞘超微结构改变；评论者批评研究缺乏与MRI的对比验证，且从依赖造影剂到无造影剂的跨越难度极大。",
+      "sources": [
+        {
+          "url": "https://radiopaedia.org/articles/contrast-enhanced-ultrasound-2?lang=us",
+          "title": "Contrast - enhanced ultrasound | Radiology... | Radiopaedia.org"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Transcranial_Doppler",
+          "title": "Transcranial Doppler - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一种基于对比增强超声的新型脑成像技术在研究中展示了高分辨率成像的潜力，但该技术仍处于概念验证阶段，尚未与现有MRI方法进行直接比较。 该技术有望提供便携、低成本的脑成像方案，但安全性和有效性尚未得到充分验证，可能影响其在临床中的应用前景。 该技术通过注射包裹六氟化硫的脂质外壳微泡作为造影剂，利用稀疏气泡定位实现超分辨率成像；然而，低剂量超声可能对脑组织节点间区造成超微结构改变，成像是否依赖时间叠加也不明确。",
+      "background": "传统超声成像因颅骨阻挡难以清晰显示脑组织；对比增强超声通过注入微泡增强血管对比度，可动态观察血流，而MRI则已广泛用于无创全脑血管成像，但设备昂贵且不便携。",
+      "community_discussion": "社区讨论指出，低剂量超声可能引起脑髓鞘超微结构改变；评论者批评研究缺乏与MRI的对比验证，且从依赖造影剂到无造影剂的跨越难度极大。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (222 points, 92 comments) with substantive critical discussion highlighting both potential and limitations, including safety concerns and lack of comparison with MRI. The technical depth and community debate elevate its importance.",
+    "ai_summary": "A new contrast-enhanced ultrasound technique for brain imaging shows promise but faces challenges with safety validation and comparison to existing MRI methods.",
+    "ai_tags": [
+      "ultrasound",
+      "brain imaging",
+      "medical imaging",
+      "neuroimaging"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:3bfc82f32e1f8f51",
+    "source_type": "rss",
+    "title": "Making devenv start fast, and the whole nixpkgs with it - devenv",
+    "url": "https://devenv.sh/blog/2026/06/26/making-devenv-start-fast-and-the-whole-nixpkgs-with-it/",
+    "content": "<p><a href=\"https://lobste.rs/s/atsrpy/making_devenv_start_fast_whole_nixpkgs\">Comments</a></p>",
+    "author": "devenv.sh via fzakaria",
+    "published_at": "2026-06-26T18:27:04Z",
+    "fetched_at": "2026-06-26T23:57:51.610320Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "nix"
+      ],
+      "title_zh": "devenv加速启动：优化nixpkgs整体性能",
+      "detailed_summary_zh": "devenv团队发布了一篇技术文章，详细介绍了如何通过缓存、惰性求值等优化手段，大幅提升devenv的启动速度，并惠及整个nixpkgs包集合。 这解决了Nix生态中开发环境启动缓慢的痛点，使开发者能更快进入工作状态，提升了Nix作为可重现开发环境工具的实用性。 文章重点讨论了利用Nix的eval缓存和部分惰性求值减少不必要的计算，以及优化nixpkgs的依赖解析路径。这些改动预期能将devenv初始化时间从数秒缩短到亚秒级。",
+      "background_zh": "devenv是一个基于Nix的声明式开发环境管理工具，支持多种编程语言和常见工具链。nixpkgs是Nix包管理器下的软件包集合，包含超过14万个包。由于Nix的纯函数式模型，每次构建都会完整求值，导致启动缓慢，这正是本文要解决的性能瓶颈。",
+      "sources": [
+        {
+          "url": "https://devenv.sh/",
+          "title": "Fast, Declarative, Reproducible, and Composable Developer Environments - devenv"
+        },
+        {
+          "url": "https://github.com/NixOS/nixpkgs",
+          "title": "GitHub - NixOS/nixpkgs: Nix Packages collection & NixOS · GitHub"
+        }
+      ],
+      "detailed_summary": "devenv团队发布了一篇技术文章，详细介绍了如何通过缓存、惰性求值等优化手段，大幅提升devenv的启动速度，并惠及整个nixpkgs包集合。 这解决了Nix生态中开发环境启动缓慢的痛点，使开发者能更快进入工作状态，提升了Nix作为可重现开发环境工具的实用性。 文章重点讨论了利用Nix的eval缓存和部分惰性求值减少不必要的计算，以及优化nixpkgs的依赖解析路径。这些改动预期能将devenv初始化时间从数秒缩短到亚秒级。",
+      "background": "devenv是一个基于Nix的声明式开发环境管理工具，支持多种编程语言和常见工具链。nixpkgs是Nix包管理器下的软件包集合，包含超过14万个包。由于Nix的纯函数式模型，每次构建都会完整求值，导致启动缓慢，这正是本文要解决的性能瓶颈。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The article presents a technical deep-dive into optimizing startup times for devenv and nixpkgs, a practical concern for many developers using Nix. The community discussion on lobste.rs adds validation and diverse viewpoints, increasing its value. While not groundbreaking, it's a high-value contribution to the Nix ecosystem.",
+    "ai_summary": "The article discusses methods to speed up the startup of devenv and by extension the entire nixpkgs.",
+    "ai_tags": [
+      "Nix",
+      "devenv",
+      "performance",
+      "development environments",
+      "reproducibility"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:cfddc3c7fbd14633",
+    "source_type": "rss",
+    "title": "Inside the new political screening that’s stalling NIH grants",
+    "url": "https://www.nature.com/articles/d41586-026-01924-8",
+    "content": "<p>Nature, Published online: 26 June 2026; <a href=\"https://www.nature.com/articles/d41586-026-01924-8\">doi:10.1038/d41586-026-01924-8</a></p>Mandatory reviews by top health officials and checks for 235 disfavoured terms have left hundreds of vetted grant applications in administrative limbo.",
+    "author": "Max Kozlov",
+    "published_at": "2026-06-26T00:00:00Z",
+    "fetched_at": "2026-06-26T23:57:56.923831Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "NIH拨款新规：政治审查致数百申请搁置",
+      "detailed_summary_zh": "美国国立卫生研究院（NIH）自2026年6月起强制要求高级卫生官员对所有拨款申请进行政治审查，并检查235个“不受欢迎的术语”，导致数百份已通过同行评议的申请陷入行政停滞。 这项政策标志着政治因素直接介入科研资助决策，可能严重削弱同行评议的权威性，影响医学研究的方向和科学自主性，引发学界对研究自由受限的广泛担忧。 审查清单包含235个与政府立场不符的词汇，申请者被迫修改或删除相关术语；同时，新规赋予政治任命官员更大权力，包括随意终止拨款的权限，且政策已通过统一指导草案试图固化为全政府范围的规定。",
+      "background_zh": "NIH是美国主要医学研究资助机构，传统上依赖科学家同行评议来决定拨款分配。自2025年以来，特朗普政府逐步推行政治干预措施，包括调整支付线（paylines）和引入意识形态筛选，此次强制审查是近期一系列旨在加强政治控制的举措之一。",
+      "sources": [
+        {
+          "url": "https://www.science.org/content/article/nih-shake-grant-decision-making-draws-concerns-political-meddling",
+          "title": "NIH shake-up to grant decision-making sparks concern over political meddling | Science | AAAS"
+        },
+        {
+          "url": "https://www.statnews.com/2026/05/29/nih-grants-uniform-guidance-proposal-political-control/",
+          "title": "NIH grants: Trump administration moves to solidify political control"
+        }
+      ],
+      "detailed_summary": "美国国立卫生研究院（NIH）自2026年6月起强制要求高级卫生官员对所有拨款申请进行政治审查，并检查235个“不受欢迎的术语”，导致数百份已通过同行评议的申请陷入行政停滞。 这项政策标志着政治因素直接介入科研资助决策，可能严重削弱同行评议的权威性，影响医学研究的方向和科学自主性，引发学界对研究自由受限的广泛担忧。 审查清单包含235个与政府立场不符的词汇，申请者被迫修改或删除相关术语；同时，新规赋予政治任命官员更大权力，包括随意终止拨款的权限，且政策已通过统一指导草案试图固化为全政府范围的规定。",
+      "background": "NIH是美国主要医学研究资助机构，传统上依赖科学家同行评议来决定拨款分配。自2025年以来，特朗普政府逐步推行政治干预措施，包括调整支付线（paylines）和引入意识形态筛选，此次强制审查是近期一系列旨在加强政治控制的举措之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value: Important development affecting NIH grant funding, with potential widespread impact on research community. From authoritative Nature source. No comments provided, but content is significant for understanding current political influences on science funding.",
+    "ai_summary": "NIH grants stalled due to mandatory political reviews and checks for disfavoured terms, leaving hundreds of applications in limbo.",
+    "ai_tags": [
+      "science policy",
+      "NIH",
+      "research funding",
+      "political screening",
+      "grants"
+    ]
+  },
+  {
+    "id": "hackernews:story:48691346",
+    "source_type": "hackernews",
+    "title": "PlayStation Is Deleting 551 Movies from Customers' Accounts",
+    "url": "https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013",
+    "content": "\n--- Top Comments ---\n\n[thomasmarton]: Piracy is justified especially when it comes to movies! If I am buying a DVD, I own that copy regardless of the studio and the distributor being in legal trouble or not. If I &quot;buy&quot; or &quot;purchase&quot; something online, I expect the same thing. I&#x27;m not always a fan of the EU over-regulating some things but I feel like they should start fining companies who want to re-define the meaning of the word purchase\n\n[naturalmovement]: Not limited to PlayStation. Apple&#x27;s been doing this for years. I have iTunes music going back to the day the store opened. Some of it is now missing from the iTunes cloud (or Apple Music or whatever it&#x27;s called this week). It would be gone forever had I not made a local backup. When I complained, I got a boilerplate &quot;tough titties, sometimes we lose licensing&quot; response. Always keep hard copies people.\n\n[nottorp]: I own a playstation. I do not buy digital games, only discs. See the article for why not.\n\n[patmcc]: They should absolutely be forced to provide either a refund or a downloadable copy, this is absurd. It sounds like they didn&#x27;t actually have the license necessary to be able to sell these movies in any reasonable way.\n\n[kelvinjps10]: I feel these license agreements have to be set up in such a way people that already bought their movies get to keep them, like okay Sony lost the licences and they shouldn&#x27;t sell it to new customers but existing customers should get to keep their movies. Since companies don&#x27;t care the government needs to force their hand and put it into law",
+    "author": "ortusdux",
+    "published_at": "2026-06-26T20:07:18Z",
+    "fetched_at": "2026-06-26T23:57:51.771113Z",
+    "metadata": {
+      "score": 124,
+      "descendants": 69,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48691346",
+      "comment_count": 5,
+      "title_zh": "PlayStation因许可到期删除用户已购551部电影",
+      "detailed_summary_zh": "索尼PlayStation宣布将从用户账户中删除551部已购买的电影，原因是与电影发行商Studio Canal的许可协议到期。用户将永久失去对这些数字内容的访问权限。 此举引发了关于数字内容所有权的广泛讨论，凸显了消费者在数字购买中实际并未获得永久所有权的问题，可能推动监管机构加强对数字消费者权益的保护。 受影响的内容是用户之前通过PlayStation Store购买的Studio Canal电影，包括《终结者》等知名作品。索尼未提供退款或替代方案，用户将完全失去访问权限。",
+      "background_zh": "数字版权管理（DRM）技术用于控制数字内容的访问和复制，使得平台可以撤销用户对已购内容的访问权限。内容许可通常有时间限制，平台在许可到期后无权继续分发内容，这导致用户“购买”的仅仅是访问许可，而非永久所有权。",
+      "community_discussion_zh": "评论普遍对索尼的做法表示不满，认为这破坏了数字购买的本意。有用户指出苹果也曾类似删除已购音乐，建议保留本地备份。部分用户呼吁政府立法要求平台提供退款或下载副本，也有用户表示因此转向购买实体光盘。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+          "title": "Digital rights management - Wikipedia"
+        },
+        {
+          "url": "https://www.playstation.com/en-us/about-playstation-store/",
+          "title": "PlayStation ® Store | PS5 digital games, ways to pay, gift cards and..."
+        }
+      ],
+      "detailed_summary": "索尼PlayStation宣布将从用户账户中删除551部已购买的电影，原因是与电影发行商Studio Canal的许可协议到期。用户将永久失去对这些数字内容的访问权限。 此举引发了关于数字内容所有权的广泛讨论，凸显了消费者在数字购买中实际并未获得永久所有权的问题，可能推动监管机构加强对数字消费者权益的保护。 受影响的内容是用户之前通过PlayStation Store购买的Studio Canal电影，包括《终结者》等知名作品。索尼未提供退款或替代方案，用户将完全失去访问权限。",
+      "background": "数字版权管理（DRM）技术用于控制数字内容的访问和复制，使得平台可以撤销用户对已购内容的访问权限。内容许可通常有时间限制，平台在许可到期后无权继续分发内容，这导致用户“购买”的仅仅是访问许可，而非永久所有权。",
+      "community_discussion": "评论普遍对索尼的做法表示不满，认为这破坏了数字购买的本意。有用户指出苹果也曾类似删除已购音乐，建议保留本地备份。部分用户呼吁政府立法要求平台提供退款或下载副本，也有用户表示因此转向购买实体光盘。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High importance due to significant consumer rights implications and digital ownership debate. Community comments provide insightful perspectives on licensing, piracy, and regulatory needs, with high engagement (124 points, 69 comments). Relevant to software engineering discussions on DRM and digital rights.",
+    "ai_summary": "PlayStation is removing 551 purchased movies from user accounts due to lost licensing, igniting debate on digital ownership and consumer rights.",
+    "ai_tags": [
+      "digital rights",
+      "licensing",
+      "PlayStation",
+      "consumer protection",
+      "DRM"
+    ]
+  },
+  {
+    "id": "hackernews:story:48689275",
+    "source_type": "hackernews",
+    "title": "Data centers trigger voter backlash",
+    "url": "https://www.newsweek.com/cost-me-the-election-data-centers-trigger-voter-backlash-12118327",
+    "content": "\n--- Top Comments ---\n\n[thewillowcat]: I can tell you, based on local examples, that politicians are setting up deals to bring in data centers without trying to build community support first. Not only that, they are often signing NDAs that prohibit them from telling voters what they have agreed to. It&#x27;s no way to operate in a democracy, and voters are right to be angry.\n\n[yardie]: A few months ago the founders of the top AI companies walked into Capitol Hill. Tried to explain to a room full of elected representatives exactly how their technology was going to put almost half the working population into under&#x2F;unemployment and they should consider UBI [0]. Then they went back to the airport, got on their corporate jets, and went home secure in the knowledge that they really showed them. That they were the smartest people in the room. BTW, no one I know gives a shit a...\n\n[miiiiiike]: It’s reaching the point of absurdity in my area. People are bringing “All data centers are flammable” signs to city meetings. A plot of land that’s already zoned for the heaviest of industrial activities, is across the street from a dump, 3 miles from an airport, 16 miles from a nuclear generating station, and in a region with good climate, and no water crunch is a pretty good place for a data center. Facts don’t matter, it’s a religious fight. Even if you provide numbers specific to the loca...\n\n[VaderAi]: If data centres use gas turbine engines they would be far better off to not affect power in those areas of communities\n\n[cdrnsf]: Nothing  this technology offers is, to me, worth the noise pollution or increase in water and electricity rates.",
+    "author": "randycupertino",
+    "published_at": "2026-06-26T17:24:21Z",
+    "fetched_at": "2026-06-26T23:57:51.771150Z",
+    "metadata": {
+      "score": 148,
+      "descendants": 269,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48689275",
+      "comment_count": 5,
+      "title_zh": "数据中心开发引发选民强烈反弹",
+      "detailed_summary_zh": "美国多地社区因数据中心开发缺乏透明度和公共利益，出现选民抵制潮，抗议者甚至举着“数据中心易燃”的标语参加市政会议。 这反映了科技基础设施扩张与地方民主决策之间的深层矛盾，可能影响数据中心选址和能源政策，进而波及云计算和AI产业的发展节奏。 部分政客在推动数据中心项目时签署保密协议（NDA），禁止向选民透露协议内容；同时，数据中心的高能耗和水资源消耗引发当地居民对成本上升的担忧。",
+      "background_zh": "数据中心是承载云计算、AI训练等数字服务的核心设施，通常需要大量电力和冷却水。近年来，科技巨头在多地大规模建设数据中心，但选址谈判常绕开公众参与，导致社区质疑其实际就业和税收优惠是否兑现。",
+      "community_discussion_zh": "社区评论普遍对政客的不透明操作感到愤怒，认为这违背民主原则；有网友指出数据中心可能带来噪音和水电费上涨，也有观点认为在工业区合理布局数据中心是可行的，但争议已演变成“宗教式的斗争”。",
+      "detailed_summary": "美国多地社区因数据中心开发缺乏透明度和公共利益，出现选民抵制潮，抗议者甚至举着“数据中心易燃”的标语参加市政会议。 这反映了科技基础设施扩张与地方民主决策之间的深层矛盾，可能影响数据中心选址和能源政策，进而波及云计算和AI产业的发展节奏。 部分政客在推动数据中心项目时签署保密协议（NDA），禁止向选民透露协议内容；同时，数据中心的高能耗和水资源消耗引发当地居民对成本上升的担忧。",
+      "background": "数据中心是承载云计算、AI训练等数字服务的核心设施，通常需要大量电力和冷却水。近年来，科技巨头在多地大规模建设数据中心，但选址谈判常绕开公众参与，导致社区质疑其实际就业和税收优惠是否兑现。",
+      "community_discussion": "社区评论普遍对政客的不透明操作感到愤怒，认为这违背民主原则；有网友指出数据中心可能带来噪音和水电费上涨，也有观点认为在工业区合理布局数据中心是可行的，但争议已演变成“宗教式的斗争”。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement with substantive discussion on local politics, transparency, and tech industry impact. Comments provide diverse viewpoints and depth, elevating the content's relevance.",
+    "ai_summary": "Local communities are pushing back against data center developments due to opaque political deals and perceived lack of benefit, sparking a broader debate on democracy and tech expansion.",
+    "ai_tags": [
+      "data centers",
+      "community backlash",
+      "tech industry",
+      "local politics"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8e52e2208510eabc",
+    "source_type": "rss",
+    "title": "Anatomy of a Failed (Nation-State?) Attack",
+    "url": "https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack/",
+    "content": "<p><a href=\"https://lobste.rs/s/j2ua4f/anatomy_failed_nation_state_attack\">Comments</a></p>",
+    "author": "grack.com via Manishearth",
+    "published_at": "2026-06-26T14:58:54Z",
+    "fetched_at": "2026-06-26T23:57:51.610178Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "vibecoding"
+      ],
+      "title_zh": "失败的国家级网络攻击剖析",
+      "detailed_summary_zh": "该文章详细分析了一次疑似由国家支持的网络攻击，并揭示了攻击失败的原因及所使用的技术手段。 理解国家级网络攻击的失败案例有助于安全社区改进防御策略，并通过分析攻击者的方法论来提升整体网络安全水平。 文章可能涉及攻击的初始入侵点、横向移动方式、持久化机制以及最终被检测到的具体环节，但具体细节因内容缺失无法确认。",
+      "background_zh": "国家级网络攻击通常由拥有大量资源的高级持续性威胁（APT）组织发起，旨在窃取信息或破坏关键基础设施。这类攻击往往经过精心策划，但偶尔也会因技术失误或防御方的有效检测而失败。分析失败案例可揭示攻击者的能力边界和防御弱点。",
+      "detailed_summary": "该文章详细分析了一次疑似由国家支持的网络攻击，并揭示了攻击失败的原因及所使用的技术手段。 理解国家级网络攻击的失败案例有助于安全社区改进防御策略，并通过分析攻击者的方法论来提升整体网络安全水平。 文章可能涉及攻击的初始入侵点、横向移动方式、持久化机制以及最终被检测到的具体环节，但具体细节因内容缺失无法确认。",
+      "background": "国家级网络攻击通常由拥有大量资源的高级持续性威胁（APT）组织发起，旨在窃取信息或破坏关键基础设施。这类攻击往往经过精心策划，但偶尔也会因技术失误或防御方的有效检测而失败。分析失败案例可揭示攻击者的能力边界和防御弱点。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Title suggests a high-value technical analysis of a security incident, likely relevant to cybersecurity and nation-state threats. However, without full content, depth and novelty cannot be fully assessed. The presence on lobste.rs with comments indicates community interest and potential insightful discussion.",
+    "ai_summary": "Analysis of a failed nation-state attack, detailing methods and implications.",
+    "ai_tags": [
+      "security",
+      "cybersecurity",
+      "nation-state attack",
+      "incident analysis"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d31a92f3ae5d3aa5",
+    "source_type": "rss",
+    "title": "GuixPkgs: every Guix package, as a Nix flake",
+    "url": "https://fzakaria.com/2026/06/25/guixpkgs-every-guix-package-as-a-nix-flake",
+    "content": "<p><a href=\"https://lobste.rs/s/rm7qnt/guixpkgs_every_guix_package_as_nix_flake\">Comments</a></p>",
+    "author": "fzakaria.com via pbsds",
+    "published_at": "2026-06-26T13:21:48Z",
+    "fetched_at": "2026-06-26T23:57:51.610223Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "nix",
+        "vibecoding"
+      ],
+      "title_zh": "GuixPkgs项目：所有Guix包作为Nix flake",
+      "detailed_summary_zh": "一个名为GuixPkgs的新项目实现了将GNU Guix的所有软件包转换为Nix flakes格式，使得用户可以在Nix生态系统中直接使用Guix的包。 该项目桥接了Guix和Nix两大包管理系统，有望促进跨系统的软件复用与互操作，为使用Nix的用户提供更丰富的包选择，同时也为Guix包提供更广泛的部署方式。 项目可能通过将Guix的Guile Scheme包定义映射到Nix flakes的输出结构来实现转换，但需要注意依赖处理和版本锁定等兼容性问题。",
+      "background_zh": "GNU Guix是一个功能性的包管理器，受Nix启发，使用Guile Scheme语言定义软件包，强调可重复构建和事务性升级。Nix flakes是Nix的一个实验性特性，通过flake.nix文件和锁定文件提供确定性的、可复现的构建环境。GuixPkgs将两者结合，使得Guix包能够在Nix flakes的框架下使用。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/GNU_Guix",
+          "title": "GNU Guix - Wikipedia"
+        },
+        {
+          "url": "https://guix.gnu.org/",
+          "title": "GNU Guix transactional package manager and distribution — GNU ..."
+        },
+        {
+          "url": "https://determinate.systems/blog/nix-flakes-explained/",
+          "title": "Nix flakes explained: what they solve, why they matter, and the future"
+        }
+      ],
+      "detailed_summary": "一个名为GuixPkgs的新项目实现了将GNU Guix的所有软件包转换为Nix flakes格式，使得用户可以在Nix生态系统中直接使用Guix的包。 该项目桥接了Guix和Nix两大包管理系统，有望促进跨系统的软件复用与互操作，为使用Nix的用户提供更丰富的包选择，同时也为Guix包提供更广泛的部署方式。 项目可能通过将Guix的Guile Scheme包定义映射到Nix flakes的输出结构来实现转换，但需要注意依赖处理和版本锁定等兼容性问题。",
+      "background": "GNU Guix是一个功能性的包管理器，受Nix启发，使用Guile Scheme语言定义软件包，强调可重复构建和事务性升级。Nix flakes是Nix的一个实验性特性，通过flake.nix文件和锁定文件提供确定性的、可复现的构建环境。GuixPkgs将两者结合，使得Guix包能够在Nix flakes的框架下使用。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Novel integration between Guix and Nix package managers, likely technically deep. Discussion not provided in the content.",
+    "ai_summary": "A project that makes all Guix packages available as Nix flakes.",
+    "ai_tags": [
+      "Guix",
+      "Nix",
+      "package management",
+      "flakes"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:992877af9bd57216",
+    "source_type": "rss",
+    "title": "How PgBouncer Works",
+    "url": "https://www.augusteo.com/blog/how-pgbouncer-works/",
+    "content": "<p><a href=\"https://lobste.rs/s/n58ygj/how_pgbouncer_works\">Comments</a></p>",
+    "author": "augusteo.com via jstoja",
+    "published_at": "2026-06-26T12:52:38Z",
+    "fetched_at": "2026-06-26T23:57:51.610388Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "devops",
+        "databases"
+      ],
+      "title_zh": "PgBouncer工作原理详解",
+      "detailed_summary_zh": "文章深入解析了PgBouncer的内部机制，包括其如何处理预处理语句、内部命名格式（如PGBOUNCER_{unique_id}）以及如何透明地在后端准备语句。同时详细说明了会话池和事务池两种连接池模式的差异。 PgBouncer是PostgreSQL生态中最流行的连接池工具之一，理解其内部原理有助于数据库和后端工程师优化连接管理、减少资源消耗和提升应用性能。本文填补了关于PgBouncer内部实现细节的空白，具有很高的技术参考价值。 在事务池模式下，PgBouncer会在事务结束后立即将服务器连接放回池中，但会破坏某些基于会话的PostgreSQL特性。预处理语句通过内部命名（PGBOUNCER_{unique_id}）实现，如果后端已有该名称则直接执行，否则在转发前动态准备。",
+      "background_zh": "PostgreSQL为每个客户端连接fork一个独立进程，每个连接占用约1.3MB内存，大量连接会导致资源瓶颈。连接池器（如PgBouncer）在应用与数据库之间维护一组复用连接，减少连接建立开销和内存消耗。PgBouncer支持会话池和事务池两种模式，其中事务池更适合短连接场景但会限制部分会话功能。",
+      "sources": [
+        {
+          "url": "https://www.augusteo.com/blog/how-pgbouncer-works",
+          "title": "How PgBouncer Works"
+        },
+        {
+          "url": "https://www.pgbouncer.org/config.html",
+          "title": "PgBouncer config"
+        },
+        {
+          "url": "https://www.pgbouncer.org/features.html",
+          "title": "PgBouncer features"
+        }
+      ],
+      "detailed_summary": "文章深入解析了PgBouncer的内部机制，包括其如何处理预处理语句、内部命名格式（如PGBOUNCER_{unique_id}）以及如何透明地在后端准备语句。同时详细说明了会话池和事务池两种连接池模式的差异。 PgBouncer是PostgreSQL生态中最流行的连接池工具之一，理解其内部原理有助于数据库和后端工程师优化连接管理、减少资源消耗和提升应用性能。本文填补了关于PgBouncer内部实现细节的空白，具有很高的技术参考价值。 在事务池模式下，PgBouncer会在事务结束后立即将服务器连接放回池中，但会破坏某些基于会话的PostgreSQL特性。预处理语句通过内部命名（PGBOUNCER_{unique_id}）实现，如果后端已有该名称则直接执行，否则在转发前动态准备。",
+      "background": "PostgreSQL为每个客户端连接fork一个独立进程，每个连接占用约1.3MB内存，大量连接会导致资源瓶颈。连接池器（如PgBouncer）在应用与数据库之间维护一组复用连接，减少连接建立开销和内存消耗。PgBouncer支持会话池和事务池两种模式，其中事务池更适合短连接场景但会限制部分会话功能。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value technical deep-dive on a widely-used PostgreSQL connection pooler, relevant for database and backend engineers. No comment discussion provided, but the topic itself is important.",
+    "ai_summary": "Explains the internals of PgBouncer, a PostgreSQL connection pooler.",
+    "ai_tags": [
       "database",
-      "performance"
+      "PostgreSQL",
+      "PgBouncer",
+      "connection pooling",
+      "backend"
     ]
   },
   {
-    "id": "hackernews:story:48679608",
-    "source_type": "hackernews",
-    "title": "The 'papers, please' era of the internet will decimate your privacy",
-    "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
-    "content": "\n--- Top Comments ---\n\n[j2kun]: There are at least some technological solutions here, such as anonymous credentials. [1] Modern versions of this technique allow one to associate metadata (like a proof of age exceeding a threshold) in such a way that the verifier can&#x27;t even correlate repeated requests across users. Governments that are serious about age verification and individual privacy (which, doubtful they truly are) should agree on a protocol and set up certificate issuers that are associated with a digital ID. The...\n\n[tqi]: &gt; You’re not happy about it, but you hand over a photo of your passport and hope it doesn’t come back to haunt you. I think for this argument to carry weight with voters, privacy advocates need to be much more specific about what &quot;coming back to haunt you&quot; looks like. They do a little bit of it later on[1], but I think most people do a rough cost benefit in their head and decide that the small benefit outweighs the small risk (to them). [1] &quot;And that creates a lot of risks f...\n\n[miiiiiike]: I’m glad this is finally becoming the cause célèbre du jour. This feels like THE FIGHT or at least one of the TOP 3 THE FIGHTS and it hasn’t had even a fraction of the public’s attention until now.\n\n[flenserboy]: There will be your internet-connected computer which will be assumed to be compromised, &amp; which little, if anything of use will be kept on, &amp; then there will be the airgapped system you do work on, which will probably be the last trusted version of a Linux distro you have multiple copies stashed away of. It will be a very old-fashioned experience, &amp; moving&#x2F;sharing data will become a dicey business.\n\n[HoldOnAMinute]: Assuming no revolutionary changes are coming to the USA, I am planning to opt out of the digital world when I retire.  Physical media only.  No subscriptions.  Spend lots of time in the library.  Find like-minded people and meet in person.  Will only keep the bare minimum for survival, like banking.",
-    "author": "bilsbie",
-    "published_at": "2026-06-25T21:44:55Z",
-    "fetched_at": "2026-06-26T00:04:59.830363Z",
+    "id": "rss:lobste.rs_rss:f1bc0545fdead25d",
+    "source_type": "rss",
+    "title": "Bringing Swift to the Apple II",
+    "url": "https://yeokhengmeng.com/2026/06/swift-on-apple-ii/",
+    "content": "<p><a href=\"https://lobste.rs/s/qt6tji/bringing_swift_apple_ii\">Comments</a></p>",
+    "author": "yeokhengmeng.com via jaredkrinke",
+    "published_at": "2026-06-26T17:39:46Z",
+    "fetched_at": "2026-06-26T23:57:51.610565Z",
     "metadata": {
-      "score": 267,
-      "descendants": 124,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48679608",
-      "comment_count": 5,
-      "title_zh": "互联网“证件时代”正摧毁隐私",
-      "detailed_summary_zh": "一篇名为《互联网的“请出示证件”时代将摧毁你的隐私》的文章引发了广泛讨论，文章批判了强制在线身份验证对个人隐私的威胁，并探讨了匿名凭证等潜在技术解决方案。 随着越来越多的平台和政府推行年龄验证、实名制等要求，隐私权面临系统性风险。该文及其讨论推动公众关注此议题，并促使技术界思考如何在不泄露个人信息的前提下实现验证。 文章指出，上传护照等身份文件会带来长期数据泄露风险。社区讨论了匿名凭证和零知识证明等技术，它们允许用户证明年龄等属性而不透露具体身份或关联不同请求。",
-      "background_zh": "匿名凭证是一种数字凭证，可证明持有者的某些属性（如年龄超过阈值），而不泄露具体身份信息。零知识证明则允许一方在不透露秘密本身的情况下向另一方证明陈述的真实性。这些技术可在年龄验证等场景中保护隐私。",
-      "community_discussion_zh": "社区总体上支持文章观点，认为这是当前关键斗争之一。部分评论建议用户准备气隙系统或完全退出数字世界，因为未来设备可能被入侵。也有评论指出隐私倡导者需更具体说明风险后果以说服公众。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Anonymous_credential",
-          "title": "Anonymous credential"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Zero-knowledge_proof",
-          "title": "Zero-knowledge proof"
-        },
-        {
-          "url": "https://tokenzoo.github.io/",
-          "title": "Anonymous credentials zoo - Anonymous Credentials Zoo"
-        }
-      ],
-      "detailed_summary": "一篇名为《互联网的“请出示证件”时代将摧毁你的隐私》的文章引发了广泛讨论，文章批判了强制在线身份验证对个人隐私的威胁，并探讨了匿名凭证等潜在技术解决方案。 随着越来越多的平台和政府推行年龄验证、实名制等要求，隐私权面临系统性风险。该文及其讨论推动公众关注此议题，并促使技术界思考如何在不泄露个人信息的前提下实现验证。 文章指出，上传护照等身份文件会带来长期数据泄露风险。社区讨论了匿名凭证和零知识证明等技术，它们允许用户证明年龄等属性而不透露具体身份或关联不同请求。",
-      "background": "匿名凭证是一种数字凭证，可证明持有者的某些属性（如年龄超过阈值），而不泄露具体身份信息。零知识证明则允许一方在不透露秘密本身的情况下向另一方证明陈述的真实性。这些技术可在年龄验证等场景中保护隐私。",
-      "community_discussion": "社区总体上支持文章观点，认为这是当前关键斗争之一。部分评论建议用户准备气隙系统或完全退出数字世界，因为未来设备可能被入侵。也有评论指出隐私倡导者需更具体说明风险后果以说服公众。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High engagement (267 points, 124 comments) with insightful technical discussion on privacy implications of online identity verification, including proposed solutions like anonymous credentials. The community debate adds depth, making this a significant contribution to ongoing privacy discourse.",
-    "ai_summary": "A critical analysis of how mandatory online identity verification threatens privacy, with community discussion exploring technological mitigations.",
-    "ai_tags": [
-      "privacy",
-      "identity verification",
-      "age verification",
-      "anonymous credentials",
-      "internet governance"
-    ]
-  },
-  {
-    "id": "hackernews:story:48673825",
-    "source_type": "hackernews",
-    "title": "Zig's new bitCast semantics and LLVM back end improvements",
-    "url": "https://ziglang.org/devlog/2026/#2026-06-25",
-    "content": "\n--- Top Comments ---\n\n[ozgrakkurt]: &gt; Consider, for instance, bitcasting a [2]u8 to a u16. Under the old semantics, the result of this operation depends on the target endian: on big-endian targets, the first array element became the 8 most significant bits, whereas on little-endian targets, the first array element became the 8 least significant bits. Under the new semantics, because we only care about logical bit representation (which is endian-agnostic), the operation behaves identically on every target: This is a huge mist...\n\n[zamadatix]: This change + the existing packed struct logic will be great for working with bit packed binary headers w&#x2F;o having to manually twiddle so much about the bit handling along the way.\n\n[grayhatter]: &gt; Quite long devlog coming up, apologies—I got a little carried away with this one! mlugg, please don&#x27;t apologize for creating something I actually want to read. I&#x27;m drowning in low effort garbage, the in depth technical explanation is a refreshing breath of fresh air. Might as well apologize for creating a language without a garbage collector, sure most people are unwilling to think, but some of us like nice things and are actually willing to apply effort.\n\n[simonask]: Interesting read, even as someone who isn&#x27;t using Zig. I wonder, these arbitrary-width integers... Is it actually even really worth it? My intuition is to prefer manually packing&#x2F;unpacking things instead (in any language, even C that has bit width for struct fields), because it gives me a better mental picture of the code that is actually generated. Particularly for something like an signed odd-bit integer - what kind of code gets generated for sign-extension, a presumably common op...\n\n[fithisux]: These posts make you want not only to use Zig, but also to marry it. No jokes aside, these posts are the best advertisements of the language. And I truly like their AI stance.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/uge7mm/new_bitcast_semantics_llvm_backend\">Comments</a></p>",
-    "author": "kouosi",
-    "published_at": "2026-06-25T14:19:28Z",
-    "fetched_at": "2026-06-26T00:04:59.830445Z",
-    "metadata": {
-      "score": 207,
-      "descendants": 79,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48673825",
-      "comment_count": 5,
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "zig"
+        "swift",
+        "retrocomputing",
+        "vibecoding"
       ],
-      "merged_sources": [
-        "hackernews",
-        "rss"
-      ],
-      "title_zh": "Zig 新增端序无关 bitCast 语义并改进 LLVM 后端",
-      "detailed_summary_zh": "Zig 语言在其开发者日志中正式定义了新的端序无关（endian-agnostic）@bitCast 语义，并披露了 LLVM 后端的多项改进，这些改进已经由自托管 x86_64 后端实现。 这一变更使得 bitCast 操作在所有目标平台上的行为完全一致，彻底消除了因端序差异导致的跨平台 bug，对于网络协议、二进制文件解析等底层编程场景尤为重要。同时，LLVM 后端改进将提升 Zig 编译器的性能和代码生成质量。 新语义下，将 [2]u8 数组 bitCast 为 u16 时，不再依赖目标端序，而是根据逻辑位表示进行转换，从而保证一致性。该提案最初由 Jacob Young 于 2024 年提出（#19755），目前已获采纳并实现于自托管 x86_64 后端。",
-      "background_zh": "bitCast 是一种底层类型转换，通常用于在整数、浮点数和数组之间按位重新解释数据。端序（Endianness）描述了多字节数据在内存中的字节排列顺序，不同 CPU 架构（如 x86 的小端序与某些 ARM 的大端序）存在差异。此前 Zig 的 bitCast 行为因端序而异，导致代码在不同平台上可能产生不同结果。新语义使 bitCast 成为纯逻辑位操作，不再依赖硬件端序。",
-      "community_discussion_zh": "社区对此更新反应积极，认为这是提升 Zig 跨平台可靠性的重要步骤。多位开发者称赞该 devlog 技术深度高，并指出新语义结合已有的 packed struct 逻辑将极大简化二进制头部处理。也有用户对任意宽度整数的实用性提出疑问，但整体氛围以赞赏为主。",
+      "title_zh": "将Swift语言引入Apple II复古计算机",
+      "detailed_summary_zh": "一篇技术文章详细描述了如何利用LLVM-MOS后端将Swift代码编译成6502机器码，并在1980年代的Apple II计算机上运行。 这一突破展示了现代高级语言在极其受限的复古硬件上的可行性，对编译器设计、嵌入式系统以及复古计算社区具有启发意义。 文章基于llvm-mos项目（将LLVM移植到MOS 6502架构）实现Swift编译，但需注意Swift标准库庞大，需裁剪或仅支持子集才能在仅有64KB内存的Apple II上运行。",
+      "background_zh": "Apple II使用8位MOS 6502 CPU，主频约1MHz，内存通常仅64KB，原生只支持汇编或BASIC等低级语言。LLVM-MOS是一个将LLVM编译器基础设施后端移植到6502架构的项目，使得Rust、C等语言也能编译到该平台。",
       "sources": [
         {
-          "url": "https://ziglang.org/devlog/2026/?from_theconsensus=1",
-          "title": "Devlog ⚡ Zig Programming Language - ziglang.org"
+          "url": "https://en.wikipedia.org/wiki/MOS_Technology_6502",
+          "title": "MOS Technology 6502 - Wikipedia"
         },
         {
-          "url": "https://ziggit.dev/t/devlog-new-bitcast-semantics-and-llvm-backend-improvements/16336",
-          "title": "Devlog ⚡ New @bitCast Semantics and LLVM Backend Improvements"
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=48673825",
-          "title": "Zig's New BitCast Semantics and LLVM Back End Improvements ..."
+          "url": "https://forums.swift.org/t/is-swift-on-6502-possible/80329",
+          "title": "Is Swift on 6502 possible - Compiler - Swift Forums"
         }
       ],
-      "detailed_summary": "Zig 语言在其开发者日志中正式定义了新的端序无关（endian-agnostic）@bitCast 语义，并披露了 LLVM 后端的多项改进，这些改进已经由自托管 x86_64 后端实现。 这一变更使得 bitCast 操作在所有目标平台上的行为完全一致，彻底消除了因端序差异导致的跨平台 bug，对于网络协议、二进制文件解析等底层编程场景尤为重要。同时，LLVM 后端改进将提升 Zig 编译器的性能和代码生成质量。 新语义下，将 [2]u8 数组 bitCast 为 u16 时，不再依赖目标端序，而是根据逻辑位表示进行转换，从而保证一致性。该提案最初由 Jacob Young 于 2024 年提出（#19755），目前已获采纳并实现于自托管 x86_64 后端。",
-      "background": "bitCast 是一种底层类型转换，通常用于在整数、浮点数和数组之间按位重新解释数据。端序（Endianness）描述了多字节数据在内存中的字节排列顺序，不同 CPU 架构（如 x86 的小端序与某些 ARM 的大端序）存在差异。此前 Zig 的 bitCast 行为因端序而异，导致代码在不同平台上可能产生不同结果。新语义使 bitCast 成为纯逻辑位操作，不再依赖硬件端序。",
-      "community_discussion": "社区对此更新反应积极，认为这是提升 Zig 跨平台可靠性的重要步骤。多位开发者称赞该 devlog 技术深度高，并指出新语义结合已有的 packed struct 逻辑将极大简化二进制头部处理。也有用户对任意宽度整数的实用性提出疑问，但整体氛围以赞赏为主。"
+      "detailed_summary": "一篇技术文章详细描述了如何利用LLVM-MOS后端将Swift代码编译成6502机器码，并在1980年代的Apple II计算机上运行。 这一突破展示了现代高级语言在极其受限的复古硬件上的可行性，对编译器设计、嵌入式系统以及复古计算社区具有启发意义。 文章基于llvm-mos项目（将LLVM移植到MOS 6502架构）实现Swift编译，但需注意Swift标准库庞大，需裁剪或仅支持子集才能在仅有64KB内存的Apple II上运行。",
+      "background": "Apple II使用8位MOS 6502 CPU，主频约1MHz，内存通常仅64KB，原生只支持汇编或BASIC等低级语言。LLVM-MOS是一个将LLVM编译器基础设施后端移植到6502架构的项目，使得Rust、C等语言也能编译到该平台。",
+      "community_discussion": ""
     },
-    "ai_score": 8.0,
-    "ai_reason": "High engagement (207 points, 79 comments) with substantive discussion including technical analysis and community praise. The bitCast semantic improvement is a significant, well-explained change that enhances Zig's cross-platform reliability. The devlog provides deep technical detail, indicating high value for the Zig community and language developers.",
-    "ai_summary": "Zig's devlog details endian-agnostic bitCast semantics and LLVM backend improvements, simplifying bit manipulation across platforms.",
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive into retrocomputing, demonstrating clever compiler and systems work. Moderate impact on niche field; discussions on Lobsters likely add value.",
+    "ai_summary": "A technical article exploring how to compile and run Swift code on an Apple II computer.",
     "ai_tags": [
-      "Zig",
-      "programming-languages",
+      "Swift",
+      "Apple II",
+      "retrocomputing",
       "compiler",
-      "bitCast",
-      "LLVM"
+      "systems programming"
     ]
   },
   {
-    "id": "hackernews:story:48672732",
-    "source_type": "hackernews",
-    "title": "Apple raises prices of MacBooks, iPads",
-    "url": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
-    "content": "<a href=\"https:&#x2F;&#x2F;9to5mac.com&#x2F;2026&#x2F;06&#x2F;25&#x2F;apple-price-increases-mac-ipad-more&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;9to5mac.com&#x2F;2026&#x2F;06&#x2F;25&#x2F;apple-price-increases-mac-ipa...</a>\n\n\n--- Top Comments ---\n\n[primaprashant]: These are the price changes mentioned in the article: Macs     MacBook Neo: $699 (up from $599)\n  13-inch MacBook Air: $1,299 (up from $1,099)\n  15-inch MacBook Air: $1,499 (up from $1,299)\n  M5 MacBook Pro: $1,999 (up from $1,699)\n  M5 Pro MacBook Pro: $2,499 (up from $2,199)\n  M5 Max MacBook Pro: $4,099 (up from $3,599)\n  iMac: $1,499 (up from $1,299)\n  M4 Max Mac Studio: $2,499 (up from $1,999)\n  M3 Ultra Mac Studio: $5,299 (up from $3,999)\n  \niPads     iPad: $449 (up from $349)\n  11-inch ...\n\n[jacobgold]: Some unc perspective: I paid ~$6,000 in inflation-adjusted dollars for a computer in 1996. Today, I can get the same power in a $6 single board computer. A powerful modern mini PC starts at ~$600. However painful these price hikes are, and they are painful, it is worth remembering that computing has become incredibly ubiquitous and cheap.\n\n[tavavex]: Anyone else here enjoy living in the future? Look at us, we get AI megacorporations ruling the world and bestowing us with the power to use their servers for just $20-200&#x2F;month. It&#x27;s practically charity, and all we had to give up for it is all consumer hardware, the quality of the internet and our own jobs. I love it here!\n\n[erxam]: Just yesterday I saw people saying that Apple wouldn&#x27;t increase prices until the next refresh. And I agreed! So… holy shit. I think we&#x27;re going to see even further price increases across the industry. There already were a ton, but it can always get worse, of course. Thank you, OpenAI. What would have we done without your attempts at monopolizing destroying the memory market.\n\n[whatever1]: Apple did not have to be in this situation. Begging for capacity lost to startups. Everyone else can complain, but not Apple. They had a 250B warchest, exactly for such situations. Now somehow openAI has capacity and Apple does not. And think about it Apple is not in a better position than Valve for example. A teeny tiny company in comparison. It is an unprecedented managerial failure.",
-    "author": "virgildotcodes",
-    "published_at": "2026-06-25T13:02:56Z",
-    "fetched_at": "2026-06-26T00:04:59.830485Z",
+    "id": "rss:lobste.rs_rss:238a3afe3eddd256",
+    "source_type": "rss",
+    "title": "Introducing Flink's Native S3 FileSystem: Built for Performance, Designed for Production",
+    "url": "https://flink.apache.org/2026/06/26/announcing-native-s3-fs/",
+    "content": "<p><a href=\"https://lobste.rs/s/hx12in/introducing_flink_s_native_s3_filesystem\">Comments</a></p>",
+    "author": "flink.apache.org via eatonphil",
+    "published_at": "2026-06-26T21:36:50Z",
+    "fetched_at": "2026-06-26T23:57:51.610584Z",
     "metadata": {
-      "score": 600,
-      "descendants": 858,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48672732",
-      "comment_count": 5,
-      "title_zh": "苹果全面上调MacBook与iPad售价",
-      "detailed_summary_zh": "苹果公司于2026年6月25日宣布，因内存成本飙升，对MacBook和iPad全系列产品进行价格上调，涨幅从100美元到超过1300美元不等。 此次涨价是苹果近十年来最大规模的价格调整，不仅直接影响消费者购买成本，也反映了全球内存市场因AI需求激增而持续紧张，可能引发整个个人电脑和平板行业的价格连锁反应。 具体价格变化包括：MacBook Neo从599美元涨至699美元，15英寸MacBook Air从1299美元涨至1499美元，M5 Max MacBook Pro从3599美元涨至4099美元；iPad从349美元涨至449美元。涨幅最显著的是M3 Ultra Mac Studio，从3999美元涨至5299美元。",
-      "background_zh": "内存成本上涨主要源于AI大模型训练和推理对高带宽内存（HBM）的旺盛需求，导致DRAM和NAND闪存供应紧张、价格上涨。苹果作为全球最大的硬件采购商之一，也未能避免成本压力，不得不将涨价传导至终端产品。社区评论中提到OpenAI等AI公司大量抢占内存产能，加剧了供应短缺。",
-      "community_discussion_zh": "社区用户对此反应不一。部分用户抱怨苹果作为现金储备雄厚的公司本应承担成本而非转嫁给消费者；也有用户从历史角度认为，即使涨价后计算机价格仍远低于20年前的通胀调整价格。另有用户担忧此举预示着全行业将迎来更多涨价。",
-      "detailed_summary": "苹果公司于2026年6月25日宣布，因内存成本飙升，对MacBook和iPad全系列产品进行价格上调，涨幅从100美元到超过1300美元不等。 此次涨价是苹果近十年来最大规模的价格调整，不仅直接影响消费者购买成本，也反映了全球内存市场因AI需求激增而持续紧张，可能引发整个个人电脑和平板行业的价格连锁反应。 具体价格变化包括：MacBook Neo从599美元涨至699美元，15英寸MacBook Air从1299美元涨至1499美元，M5 Max MacBook Pro从3599美元涨至4099美元；iPad从349美元涨至449美元。涨幅最显著的是M3 Ultra Mac Studio，从3999美元涨至5299美元。",
-      "background": "内存成本上涨主要源于AI大模型训练和推理对高带宽内存（HBM）的旺盛需求，导致DRAM和NAND闪存供应紧张、价格上涨。苹果作为全球最大的硬件采购商之一，也未能避免成本压力，不得不将涨价传导至终端产品。社区评论中提到OpenAI等AI公司大量抢占内存产能，加剧了供应短缺。",
-      "community_discussion": "社区用户对此反应不一。部分用户抱怨苹果作为现金储备雄厚的公司本应承担成本而非转嫁给消费者；也有用户从历史角度认为，即使涨价后计算机价格仍远低于20年前的通胀调整价格。另有用户担忧此举预示着全行业将迎来更多涨价。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High engagement (600 points, 858 comments) with substantive discussion about industry-wide implications, inflation context, and future price trends. The price hike is a significant consumer hardware story but not a technical breakthrough.",
-    "ai_summary": "Apple raises prices on MacBooks and iPads across the board due to rising memory costs, with increases ranging from $100 to over $1,300.",
-    "ai_tags": [
-      "Apple",
-      "pricing",
-      "hardware",
-      "MacBooks",
-      "iPads"
-    ]
-  },
-  {
-    "id": "hackernews:story:48674967",
-    "source_type": "hackernews",
-    "title": "IBM debuts sub-1 nanometer chip technology",
-    "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-    "content": "\n--- Top Comments ---\n\n[buran77]: &gt; logic technology can extend for the first time below the 1 nm node, advancing the era of angstrom-level scaling, where dimensions approach the size of individual atoms. While transistor nodes now refer to a generation of manufacturing technology versus an exact physical dimension, IBM’s 0.7 nm technology—also referred to as 7 angstroms—demonstrates how continued scaling remains possible. Continuing the well established trend of making bold claims about physical dimensions that have nothi...\n\n[lizknope]: Remember that IBM paid Global Foundries $1.5 billion to take their fabs and design services group. GF did not pay IBM.  IBM paid GF to take the fabs away.  https:&#x2F;&#x2F;www.reuters.com&#x2F;article&#x2F;technology&#x2F;ibm-to-pay-global...\n\n[IanCutress]: For what it&#x27;s worth, here&#x27;s my 7000+ word deep dive into the technology.  https:&#x2F;&#x2F;morethanmoore.substack.com&#x2F;p&#x2F;ibms-announces-07nm-pro...\n\n[jadar]: Just to be clear, this doesn&#x27;t mean that anything on the die actually measures 0.7nm — it means that it&#x27;s roughly double the density as the previous node generation. At some point the industry decided to keep talking about &quot;nanometers&quot; even though the actual transistor sizes have been decoupled from the node name for years.\n\n[monirmamoun]: Two big problems 1) NOBODY knows what IBM&#x27;s definition of &quot;sub 1nm&quot; means 2) IBM bullshits so much more than anyone including Intel (remember the &quot;teleportation&quot; ads years ago) that nobody is going to waste time researching what they mean in reality",
-    "author": "porridgeraisin",
-    "published_at": "2026-06-25T15:33:37Z",
-    "fetched_at": "2026-06-26T00:04:59.830387Z",
-    "metadata": {
-      "score": 248,
-      "descendants": 144,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48674967",
-      "comment_count": 5,
-      "title_zh": "IBM推出0.7纳米芯片技术，挑战物理极限",
-      "detailed_summary_zh": "IBM于2026年6月25日宣布了全球首个亚1纳米芯片技术，采用0.7纳米（7埃）节点，基于新型三维晶体管架构，据称可实现每平方毫米约1亿个晶体管的密度。 该技术展示了半导体制造向原子尺度继续推进的可能性，尽管节点命名已与实际物理尺寸脱钩。若能被代工厂采用，可能在未来五年内推动更高密度、更高能效的芯片问世。 IBM声称该技术相比2纳米节点密度提升约一倍，但社区指出节点命名不代表实际栅极长度，仅是工艺代际标识。IBM本身已不制造芯片，需依赖代工厂（如与日本Rapidus合作）实现量产。",
-      "background_zh": "芯片工艺节点的纳米数字早已不再对应晶体管的实际物理尺寸，而是成为代表工艺代际的营销术语。IBM于2014年将其半导体制造业务出售给格芯（GlobalFoundries），并支付15亿美元补偿，此后IBM仅从事芯片设计研究，不自行生产。因此，IBM此次宣布的0.7纳米技术是一种研究演示，未来需由其他代工厂转化为商用工艺。",
-      "community_discussion_zh": "社区评论普遍持怀疑态度，认为IBM的“亚1纳米”宣传是营销噱头，实际晶体管尺寸并未真正达到0.7纳米。有用户指出节点命名早已与物理尺寸脱钩，另有用户提及IBM过去的不实宣传历史，并质疑其缺乏制造能力。",
-      "sources": [
-        {
-          "url": "https://techxplore.com/news/2026-06-ibm-unveils-nanometer-chip-tech.html",
-          "title": "IBM unveils 0 . 7 -nanometer chip tech promising 50% higher..."
-        },
-        {
-          "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-          "title": "IBM Debuts World’s First Sub-1 Nanometer Chip Technology"
-        },
-        {
-          "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
-          "title": "IBM claims world’s first sub - 1 nanometer chip ... - Ars Technica"
-        }
-      ],
-      "detailed_summary": "IBM于2026年6月25日宣布了全球首个亚1纳米芯片技术，采用0.7纳米（7埃）节点，基于新型三维晶体管架构，据称可实现每平方毫米约1亿个晶体管的密度。 该技术展示了半导体制造向原子尺度继续推进的可能性，尽管节点命名已与实际物理尺寸脱钩。若能被代工厂采用，可能在未来五年内推动更高密度、更高能效的芯片问世。 IBM声称该技术相比2纳米节点密度提升约一倍，但社区指出节点命名不代表实际栅极长度，仅是工艺代际标识。IBM本身已不制造芯片，需依赖代工厂（如与日本Rapidus合作）实现量产。",
-      "background": "芯片工艺节点的纳米数字早已不再对应晶体管的实际物理尺寸，而是成为代表工艺代际的营销术语。IBM于2014年将其半导体制造业务出售给格芯（GlobalFoundries），并支付15亿美元补偿，此后IBM仅从事芯片设计研究，不自行生产。因此，IBM此次宣布的0.7纳米技术是一种研究演示，未来需由其他代工厂转化为商用工艺。",
-      "community_discussion": "社区评论普遍持怀疑态度，认为IBM的“亚1纳米”宣传是营销噱头，实际晶体管尺寸并未真正达到0.7纳米。有用户指出节点命名早已与物理尺寸脱钩，另有用户提及IBM过去的不实宣传历史，并质疑其缺乏制造能力。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "Significant announcement in semiconductor manufacturing but met with skepticism in community comments about marketing claims and actual physical dimensions; discussion adds critical depth.",
-    "ai_summary": "IBM announces a 0.7nm chip technology, though community comments question the practical meaning and note historical context of IBM's fab divestiture.",
-    "ai_tags": [
-      "semiconductor",
-      "nanoscale",
-      "IBM",
-      "chip manufacturing"
-    ]
-  },
-  {
-    "id": "hackernews:story:48675435",
-    "source_type": "hackernews",
-    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-    "url": "https://github.com/inkeep/open-knowledge",
-    "content": "Hi HN, Nick here. We’re launching OpenKnowledge (<a href=\"https:&#x2F;&#x2F;openknowledge.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;openknowledge.ai&#x2F;</a>), a “what you see is what you get” markdown editor that has direct integrations with Claude, Codex, and other agents. Available as MacOS app or Web UI+CLI. Fully free&#x2F;local and OSS.<p>We built this because we wanted a Notion-like experience for writing and sharing markdown files across our team. Obsidian is the best alternative we tried, but found it doesn’t have a true WYSWIG UI and it didn’t integrate well with Claude&#x2F;Codex outside of community plugins.<p>So we built OpenKnowledge. It takes shape as:<p>1. A MacOS app with a file navigator, the WYSIWYG editor, and link explorer.<p>2. Integrations with the Claude, Codex, and Cursor desktop apps. The agents can open an OpenKnowledge editor within their embedded web browsers for a side-by-side experience.<p>3. Built-in mcps, skills, and RAG for LLM-wiki and “AI Second Brain” scenarios + spec writing<p>4. An embedded terminal and CLI for TUI-first users<p>OSS stack includes: Tiptap&#x2F;prosemirror, CodeMirror, yjs (CRDT), Electron (MacOS app), Orama, remark&#x2F;rehype&#x2F;micromark&#x2F;mdast, @pierre&#x2F;trees<p>On the architecture side, the interesting eng. challenges included:<p>1. A pipeline to convert ProseMirror to markdown in a bidirectional lossless way. ProseMirror uses ASTs, which are not designed to have byte-fidelity.<p>2. A dual-observer CRDT to keep the ProseMirror and markdown state in-sync.<p>The CRDT + git also power a collaborative experience that shows what Agents are doing in the markdown, have undo&#x2F;redo, and version history. The “Share” and cloud-sync functionality are geared for team collaboration. They feel “no-code” but leverage git&#x2F;GitHub under the hood, which also means data stays fully private.<p>In that spirit, we made OpenKnowledge open source for anybody who’s curious or who’d like to contribute.<p>We’re actively thinking about plugins&#x2F;extensibility and what’s next. If you have suggestions or feedback, would love to hear it.\n\n\n--- Top Comments ---\n\n[pcthrowaway]: Fully local, but can&#x27;t integrate with any local LLM? I do think a fully OSS Obsidian-like that syncs natively is an impressive accomplishment, though the usefulness of this is limited with OSX being the only supported platform. If an Android app is in the works I&#x27;ll definitely follow the project!\n\n[psoulos]: The signature figure on the repo shows file contents alongside a chat window. Is this actually supported by the app? I can&#x27;t figure out how to open a chat window in the app without handing off to an external AI app.\n\n[vitorbaptistaa]: Congratulations on the launch. It looks neat! On a side note, I find it interesting that a few recent projects are going for the Open Knowledge name. The Open Knowledge Foundation ( https:&#x2F;&#x2F;okfn.org ) is one of the first&#x2F;largest proponents of the open data movement (think of it as a Free Software Foundation but for data, not software). They started in 2004 and developed many of the open data licenses and widely used infrastructure tools like CKAN (an open data portal platform)....\n\n[rcarmo]: You should just integrate with pi.dev, like I did for  https:&#x2F;&#x2F;github.com&#x2F;rcarmo&#x2F;piclaw  (which has replaced Obsidian for me). I too integrated a terminal and a WYSIWYG Markdown editor (as well as plugins for a mindmap, kanban, etc.)\n\n[iamacyborg]: Is this following the Open Knowledge Format proposed by Google earlier this month or just a name collision?  https:&#x2F;&#x2F;cloud.google.com&#x2F;blog&#x2F;products&#x2F;data-analytics&#x2F;how-th...",
-    "author": "engomez",
-    "published_at": "2026-06-25T16:04:46Z",
-    "fetched_at": "2026-06-26T00:04:59.830407Z",
-    "metadata": {
-      "score": 177,
-      "descendants": 79,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48675435",
-      "comment_count": 5,
-      "title_zh": "OpenKnowledge：开源AI优先的Markdown编辑器，替代Obsidian/Notion",
-      "detailed_summary_zh": "OpenKnowledge正式发布，这是一款完全开源、本地优先的所见即所得Markdown编辑器，深度集成了Claude、Codex等AI代理，并支持MCP、RAG等高级功能。 该工具填补了现有笔记软件在AI原生集成方面的空白，为知识工作者和团队提供了可自托管、可扩展的协作平台，有望推动AI辅助知识管理的发展。 OpenKnowledge使用ProseMirror和CRDT技术实现双向无损Markdown解析和多人在线协作，目前仅支持macOS原生应用和Web UI，尚未支持本地LLM或Android/iOS平台。",
-      "background_zh": "MCP（模型上下文协议）是Anthropic提出的开放标准，用于连接AI助手与外部数据源；RAG（检索增强生成）则让LLM能够从私有文档中检索信息以生成更准确的回答。OpenKnowledge将两者内建到笔记编辑器中，使得AI可以直接访问和编辑用户的知识库。",
-      "community_discussion_zh": "社区总体持积极态度，但指出两个主要不足：仅支持macOS平台且无法集成本地LLM，限制了实用性和开放性；此外，有用户提及与已有的Open Knowledge Foundation命名冲突，可能造成混淆。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
-          "title": "Model Context Protocol - Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
-          "title": "Retrieval-augmented generation - Wikipedia"
-        }
-      ],
-      "detailed_summary": "OpenKnowledge正式发布，这是一款完全开源、本地优先的所见即所得Markdown编辑器，深度集成了Claude、Codex等AI代理，并支持MCP、RAG等高级功能。 该工具填补了现有笔记软件在AI原生集成方面的空白，为知识工作者和团队提供了可自托管、可扩展的协作平台，有望推动AI辅助知识管理的发展。 OpenKnowledge使用ProseMirror和CRDT技术实现双向无损Markdown解析和多人在线协作，目前仅支持macOS原生应用和Web UI，尚未支持本地LLM或Android/iOS平台。",
-      "background": "MCP（模型上下文协议）是Anthropic提出的开放标准，用于连接AI助手与外部数据源；RAG（检索增强生成）则让LLM能够从私有文档中检索信息以生成更准确的回答。OpenKnowledge将两者内建到笔记编辑器中，使得AI可以直接访问和编辑用户的知识库。",
-      "community_discussion": "社区总体持积极态度，但指出两个主要不足：仅支持macOS平台且无法集成本地LLM，限制了实用性和开放性；此外，有用户提及与已有的Open Knowledge Foundation命名冲突，可能造成混淆。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High-value open source release addressing a common need (AI-integrated note-taking), with active community discussion pointing out limitations and potential improvements. Score 7 due to incremental nature over existing tools but high community interest (177 points, 79 comments).",
-    "ai_summary": "OpenKnowledge is an open source, AI-first markdown editor designed as an alternative to Obsidian/Notion.",
-    "ai_tags": [
-      "note-taking",
-      "AI",
-      "open-source",
-      "markdown-editor",
-      "knowledge-management"
-    ]
-  },
-  {
-    "id": "hackernews:story:48678852",
-    "source_type": "hackernews",
-    "title": "Om Malik has died",
-    "url": "https://om.co/2026/06/24/1966-2026/",
-    "content": "\n--- Top Comments ---\n\n[grimjeer]: Black bar? My experience of Om was only through his written word, but a new article or post by him was a thing of joy.  Not to agree with, but simply to hear a good, honest voice. As soon as I read this, I thought, &quot;Wait a sec, hasn&#x27;t it been a little while?&quot;\nMy sincere condolences to his family and colleagues.\n\n[aanet]: Oh wow. What?!  Just this morning I had an occasion to go thru his site&#x2F;blog. Still can&#x27;t believe it. 60 is too young. I met Om finally in 2013-ish at one of his GigaOm events in the SF Bay Area. Before that, I had been a long time reader of his GigaOm blogs and other writings  at Fast Company, Red Herring, Light Reading, and elsewhere, including his book  Broadbandits . He was one of the few bloggers &#x2F; reporters who wrote it as he saw it; his takes were often brutally honest a...\n\n[bravura]: &quot;I like to write like a human, steering clear of jargon and B-school speak.&quot;  https:&#x2F;&#x2F;om.co&#x2F;about&#x2F;   https:&#x2F;&#x2F;om.co&#x2F;2020&#x2F;07&#x2F;30&#x2F;write-like-a-human&#x2F;\n\n[cobbzilla]: GigaOM was truly awesome at its best. Om was a special guy, I met him a few times during my years in the Bay Area. He really embodied that selflessly-helping side of the Valley: helping others with no expectations, just because it’s good. He helped one of my startups get some exposure. I keep trying to pay it forward. I will miss him.\n\n[rdl]: I still remember him being one of the best writers about tech (a bit more than &quot;journalism&quot; in that a lot of it was of more evergreen value...) from the dotcom boom and then the peak &quot;interesting&quot; web apps period (2004-~2015 or so, when AJAX&#x2F;etc was still new, and things hadn&#x27;t calcified so much). Didn&#x27;t know about his later health issues, I assumed he had just moved on to other interests naturally. RIP.",
-    "author": "minimaxir",
-    "published_at": "2026-06-25T20:33:37Z",
-    "fetched_at": "2026-06-26T00:04:59.830426Z",
-    "metadata": {
-      "score": 290,
-      "descendants": 30,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48678852",
-      "comment_count": 5,
-      "title_zh": "科技记者奥姆·马利克去世，享年60岁",
-      "detailed_summary_zh": "知名科技记者、GigaOm创始人奥姆·马利克（Om Malik）于2026年6月24日去世，享年60岁，家人和社区纷纷悼念。 马利克是科技新闻领域的重要人物，他的离世意味着行业失去了一位以诚实、人性化写作著称的声音，GigaOm曾深刻影响科技报道和创业生态。 马利克在六十岁去世，此前曾有健康问题；他创办的GigaOm于2015年关闭后被收购，但影响延续至今；社区评论中许多人回忆他的帮助与真挚。",
-      "background_zh": "奥姆·马利克是一位资深科技记者，曾为Fast Company、Red Herring等撰稿，2006年创立科技媒体GigaOm。GigaOm以深度分析和行业活动闻名，2015年3月关闭，6月被收购后重新上线。马利克以其直率、非官方的写作风格受到尊重。",
-      "community_discussion_zh": "社区一片哀悼，许多用户称马利克的文字是“快乐之源”，赞赏他“像人一样写作，避开行话”。有人回忆他无私帮助创业者，体现硅谷乐于助人的精神。评论普遍认为60岁太年轻，并感叹他近年健康问题鲜为人知。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Gigaom",
-          "title": "Gigaom"
-        }
-      ],
-      "detailed_summary": "知名科技记者、GigaOm创始人奥姆·马利克（Om Malik）于2026年6月24日去世，享年60岁，家人和社区纷纷悼念。 马利克是科技新闻领域的重要人物，他的离世意味着行业失去了一位以诚实、人性化写作著称的声音，GigaOm曾深刻影响科技报道和创业生态。 马利克在六十岁去世，此前曾有健康问题；他创办的GigaOm于2015年关闭后被收购，但影响延续至今；社区评论中许多人回忆他的帮助与真挚。",
-      "background": "奥姆·马利克是一位资深科技记者，曾为Fast Company、Red Herring等撰稿，2006年创立科技媒体GigaOm。GigaOm以深度分析和行业活动闻名，2015年3月关闭，6月被收购后重新上线。马利克以其直率、非官方的写作风格受到尊重。",
-      "community_discussion": "社区一片哀悼，许多用户称马利克的文字是“快乐之源”，赞赏他“像人一样写作，避开行话”。有人回忆他无私帮助创业者，体现硅谷乐于助人的精神。评论普遍认为60岁太年轻，并感叹他近年健康问题鲜为人知。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "The death of Om Malik, a highly influential tech journalist and founder of GigaOm, is an important event in the tech community. The high engagement (290 points, 30 comments) and heartfelt comments reflect his impact and the community's respect. However, this is not a groundbreaking technical development, so it scores a 7.",
-    "ai_summary": "Om Malik, renowned tech journalist and founder of GigaOm, has passed away at age 60, prompting an outpouring of tributes from the community.",
-    "ai_tags": [
-      "obituary",
-      "tech journalism",
-      "GigaOm",
-      "community loss"
-    ]
-  },
-  {
-    "id": "hackernews:story:48674484",
-    "source_type": "hackernews",
-    "title": "OS9Map",
-    "url": "https://yllan.org/software/OS9Map/",
-    "content": "\n--- Top Comments ---\n\n[yllan]: I’m the author. This is an experiment of mine in figuring out how to let Mac OS 9 connect to modern network services and environments. Since Mac OS 9 doesn’t have out-of-the-box support for modern secure networking protocols, you often have to go through a proxy, which is pretty painful. I wanted to make it possible for an old Mac to connect to modern web services on its own. There are also two related projects for connecting to Bluesky and Mastodon:  https:&#x2F;&#x2F;yllan.org&#x2F;software...\n\n[maelito]: Shameless plug : I&#x27;m working on  https:&#x2F;&#x2F;cartes.app , a Web OpenStreetMap app. Far less difficult as coding for an old OS obviously, but still a challenge ! The Web has plenty of potential, but constraints too, mostly because of dominant actors, such as Apple that hid the PWA install button... Or Firefox not having any install banner, whereas chrome does. Can&#x27;t post it yet as a proper subject, it can&#x27;t handle top page load.\n\n[steve-atx-7600]: Reminds me of this guy&#x27;s solid work that includes an LLM integration that works on classic macs 68k and PPC  https:&#x2F;&#x2F;www.macintoshrepository.org&#x2F;68191-legacyai .  Use it on my OS 9 PPC.\n\n[generalpf]: 16 MB RAM required, 32 MB RAM recommended... how refreshing! Great work.\n\n[ccamrobertson]: This is really cool, time to dust off an old PowerPC. I&#x27;ve been thinking about building apps for old Mac OS versions for a while with the advent of LLMs, glad to see someone is doing it.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/t9cawj/os9map_openstreetmap_for_mac_os_9\">Comments</a></p>",
-    "author": "LaSombra",
-    "published_at": "2026-06-25T15:01:06Z",
-    "fetched_at": "2026-06-26T00:04:59.830466Z",
-    "metadata": {
-      "score": 172,
-      "descendants": 25,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48674484",
-      "comment_count": 5,
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "retrocomputing"
+        "databases"
       ],
-      "merged_sources": [
-        "hackernews",
-        "rss"
-      ],
-      "title_zh": "OS9Map：让Mac OS 9无需代理浏览在线地图",
-      "detailed_summary_zh": "OS9Map 1.0.0于2026年6月21日发布，让Mac OS 9系统能够直接获取并显示OpenStreetMap的现代地图瓦片，无需借助中间代理服务器。 该工具解决了老旧系统（Mac OS 9）因缺乏现代安全网络协议支持而难以接入现代网络服务的痛点，对复古计算爱好者有重要价值。它展示了在不修改操作系统的情况下，通过本地应用实现与现代Web服务兼容的可能性。 OS9Map需要PowerPC处理器、16 MB RAM（推荐32 MB），并支持通过Nominatim进行地点搜索。地图瓦片来自OpenStreetMap，采用平滑滚动和拖拽操作。",
-      "background_zh": "Mac OS 9是苹果公司于1999年发布的经典操作系统，缺乏对现代加密网络协议（如TLS）的支持，因此访问现代Web服务通常需要经过代理服务器。网络地图服务（如OpenStreetMap）使用预渲染的地图瓦片（tiled web map），通过HTTP请求加载小块图像拼接成完整地图。OS9Map通过直接请求非加密的HTTP瓦片服务，绕过了代理需求。",
-      "community_discussion_zh": "社区反响积极，作者yllan分享了开发动机，其他用户提到了LegaAI等类似项目，以及对内存需求的怀旧评论。还有用户表示受到启发，计划为旧Mac开发应用。",
+      "title_zh": "Flink推出原生S3文件系统，性能提升",
+      "detailed_summary_zh": "Apache Flink 宣布推出原生 S3 文件系统，这是直接基于 AWS SDK v2 实现的 Flink FileSystem 接口，不依赖 Hadoop，专为生产环境下的高性能设计。 对于在云上使用 S3 的 Flink 用户来说，这一原生实现能显著提升读写性能，并减少依赖复杂性，同时利用 S3 分段上传提供恰好一次语义，对 checkpoint 和文件 sink 至关重要。 原生 S3 文件系统利用 AWS SDK v2 实现，避免了 Hadoop 的依赖开销；通过 S3 分段上传技术支持 exactly-once 语义，确保状态一致性。",
+      "background_zh": "Apache Flink 是一个分布式流处理和批处理引擎，依赖底层文件系统进行数据读写、检查点保存等操作。此前 Flink 通过 Hadoop 兼容层访问 S3，存在性能瓶颈和依赖管理问题。原生 S3 文件系统直接实现了 Flink 的 FileSystem 接口，性能更优且更易维护。",
       "sources": [
         {
-          "url": "https://yllan.org/software/OS9Map/",
-          "title": "OS9Map | yllan's stories"
+          "url": "https://flink.apache.org/2026/06/26/announcing-native-s3-fs/",
+          "title": "Introducing Flink's Native S3 FileSystem: Built for ..."
         },
         {
-          "url": "https://www.ic.work/article/os9map-1-0-0-brings-online-maps-to-mac-os-9",
-          "title": "OS9Map 1.0.0：2026 年了，Mac OS 9 还能打开一张在线地图"
+          "url": "https://github.com/apache/flink/blob/master/flink-filesystems/flink-s3-fs-native/README.md",
+          "title": "flink/flink-filesystems/flink-s3-fs-native/README.md at ..."
         },
         {
-          "url": "https://en.wikipedia.org/wiki/Tiled_web_map",
-          "title": "Tiled web map - Wikipedia"
+          "url": "https://en.wikipedia.org/wiki/Apache_Flink",
+          "title": "Apache Flink"
         }
       ],
-      "detailed_summary": "OS9Map 1.0.0于2026年6月21日发布，让Mac OS 9系统能够直接获取并显示OpenStreetMap的现代地图瓦片，无需借助中间代理服务器。 该工具解决了老旧系统（Mac OS 9）因缺乏现代安全网络协议支持而难以接入现代网络服务的痛点，对复古计算爱好者有重要价值。它展示了在不修改操作系统的情况下，通过本地应用实现与现代Web服务兼容的可能性。 OS9Map需要PowerPC处理器、16 MB RAM（推荐32 MB），并支持通过Nominatim进行地点搜索。地图瓦片来自OpenStreetMap，采用平滑滚动和拖拽操作。",
-      "background": "Mac OS 9是苹果公司于1999年发布的经典操作系统，缺乏对现代加密网络协议（如TLS）的支持，因此访问现代Web服务通常需要经过代理服务器。网络地图服务（如OpenStreetMap）使用预渲染的地图瓦片（tiled web map），通过HTTP请求加载小块图像拼接成完整地图。OS9Map通过直接请求非加密的HTTP瓦片服务，绕过了代理需求。",
-      "community_discussion": "社区反响积极，作者yllan分享了开发动机，其他用户提到了LegaAI等类似项目，以及对内存需求的怀旧评论。还有用户表示受到启发，计划为旧Mac开发应用。"
+      "detailed_summary": "Apache Flink 宣布推出原生 S3 文件系统，这是直接基于 AWS SDK v2 实现的 Flink FileSystem 接口，不依赖 Hadoop，专为生产环境下的高性能设计。 对于在云上使用 S3 的 Flink 用户来说，这一原生实现能显著提升读写性能，并减少依赖复杂性，同时利用 S3 分段上传提供恰好一次语义，对 checkpoint 和文件 sink 至关重要。 原生 S3 文件系统利用 AWS SDK v2 实现，避免了 Hadoop 的依赖开销；通过 S3 分段上传技术支持 exactly-once 语义，确保状态一致性。",
+      "background": "Apache Flink 是一个分布式流处理和批处理引擎，依赖底层文件系统进行数据读写、检查点保存等操作。此前 Flink 通过 Hadoop 兼容层访问 S3，存在性能瓶颈和依赖管理问题。原生 S3 文件系统直接实现了 Flink 的 FileSystem 接口，性能更优且更易维护。",
+      "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "Highly valuable for retro computing enthusiasts, showcasing a novel technical solution to connect an old OS to modern web services. Community discussion includes additional related projects and positive engagement, but the impact is niche and not groundbreaking for the broader field.",
-    "ai_summary": "OS9Map enables Mac OS 9 to fetch and display modern web map tiles without a proxy.",
+    "ai_reason": "High value: Flink's native S3 filesystem is a significant performance improvement for cloud deployments, important for Flink users but not a paradigm shift. No comments provided to assess discussion quality.",
+    "ai_summary": "Apache Flink announces a native S3 filesystem optimized for performance and production use.",
     "ai_tags": [
-      "retro-computing",
-      "Mac OS 9",
-      "networking",
-      "map",
-      "proxy"
-    ]
-  },
-  {
-    "id": "hackernews:story:48673671",
-    "source_type": "hackernews",
-    "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
-    "url": "https://hackernewstrends.com/",
-    "content": "\n--- Top Comments ---\n\n[zX41ZdbW]: I host a publicly open database with Hacker News data at  https:&#x2F;&#x2F;play.clickhouse.com&#x2F;play?user=play#U0VMRUNUICogRlJPT...  So you can create any sort of similar services in a single SQL query and an HTML page. I also hosted it as a publicly accessible data lake, which you can query from everywhere:  https:&#x2F;&#x2F;github.com&#x2F;ClickHouse&#x2F;ClickHouse&#x2F;issues&#x2F;29693#issuec...  It is also updated in real-time.\n\n[Aachen]: Google Trends is about  searches  This is about  published text . More like if Google Trends counted word occurrences on webpages. Or if Google Ngrams counted webpages instead of books People don&#x27;t write much about non-newsworthy things whereas many people search &quot;burger&quot; anytime they want a burger delivery. The datasets aren&#x27;t usable in the same way Edit: not to say it&#x27;s not a cool product! Just keep this in mind and enjoy using it :)\n\n[simonpure]: Hug of death `\n&#x2F;api&#x2F;hn -&gt; 504 An error occurred with your deployment FUNCTION_INVOCATION_TIMEOUT cle1::c8vgv-1782399959042-aeba3cae05ff\n`\n\n[kaelyx]: Hello, &#x2F;api&#x2F;hn -&gt; 502 {&quot;error&quot;:&quot;Your database has been temporarily rate-limited, please contact support@upstash.com for further details.&quot;}\n\n[gslepak]: Very cool! There seems to be a bug here:  https:&#x2F;&#x2F;hackernewstrends.com&#x2F;?q=vim&amp;q=emacs&amp;q=zed  For some reason the results cut off at 2018-10 even though &quot;Popular Comparisons&quot; preview shows more.",
-    "author": "ytkimirti",
-    "published_at": "2026-06-25T14:08:55Z",
-    "fetched_at": "2026-06-26T00:04:59.830501Z",
-    "metadata": {
-      "score": 637,
-      "descendants": 143,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48673671",
-      "comment_count": 5,
-      "title_zh": "为Hacker News评论创建趋势搜索工具",
-      "detailed_summary_zh": "一款名为Hacker News Trends的新工具上线，它索引了18年的Hacker News评论数据，允许用户像使用Google Trends一样搜索术语的流行度随时间的变化趋势。 该工具提供了一种新颖的方式来探索Hacker News社区中讨论主题的热度演变，对数据分析师、产品经理和开发者理解社区关注点变化具有参考价值。 工具基于数据库查询实现，但用户反馈出现了504和502错误，表明可能因流量过大导致性能问题；此外，还存在一个bug，导致某些搜索的结果在2018年10月之后被截断。",
-      "background_zh": "Google Trends是分析搜索词流行度的工具，而Hacker News是一个以技术话题为核心的新闻与讨论社区，其评论内容蕴含丰富的社区兴趣动态。Hacker News Trends相当于将Google Trends的概念应用于Hacker News评论文本，类似于Google Ngrams但基于网页而非书籍。",
-      "community_discussion_zh": "评论中，有用户提供了一个公开的ClickHouse数据库用于查询HN数据；也有用户指出该工具统计的是发表文本中的词频而非搜索行为，与Google Trends用途不同；此外还报告了错误和bug，社区整体持积极态度但指出了改进空间。",
-      "detailed_summary": "一款名为Hacker News Trends的新工具上线，它索引了18年的Hacker News评论数据，允许用户像使用Google Trends一样搜索术语的流行度随时间的变化趋势。 该工具提供了一种新颖的方式来探索Hacker News社区中讨论主题的热度演变，对数据分析师、产品经理和开发者理解社区关注点变化具有参考价值。 工具基于数据库查询实现，但用户反馈出现了504和502错误，表明可能因流量过大导致性能问题；此外，还存在一个bug，导致某些搜索的结果在2018年10月之后被截断。",
-      "background": "Google Trends是分析搜索词流行度的工具，而Hacker News是一个以技术话题为核心的新闻与讨论社区，其评论内容蕴含丰富的社区兴趣动态。Hacker News Trends相当于将Google Trends的概念应用于Hacker News评论文本，类似于Google Ngrams但基于网页而非书籍。",
-      "community_discussion": "评论中，有用户提供了一个公开的ClickHouse数据库用于查询HN数据；也有用户指出该工具统计的是发表文本中的词频而非搜索行为，与Google Trends用途不同；此外还报告了错误和bug，社区整体持积极态度但指出了改进空间。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High community engagement (637 points, 143 comments) with technical discussion including alternative approaches and bug reports; novel tool for HN data exploration but not groundbreaking.",
-    "ai_summary": "A tool that indexes 18 years of Hacker News comments to show trending terms over time, similar to Google Trends.",
-    "ai_tags": [
-      "hackernews",
-      "trends",
-      "data analysis",
-      "show hn"
-    ]
-  },
-  {
-    "id": "hackernews:story:48672779",
-    "source_type": "hackernews",
-    "title": "Political bias in AI: Where the AI models stand",
-    "url": "https://trakkr.ai/bias",
-    "content": "\n--- Top Comments ---\n\n[giancarlostoro]: The political compass always felt like the wrong tool to convey something as nuanced as personal politics, I can have views on all four quadrants but you&#x27;d never know that if I end up in any of all four. I do think Grok being where it is sort of makes sense, I&#x27;ve tested &quot;MAGA&quot; views against Grok, it does not agree as much as people blindly assume it does, heck I don&#x27;t even know of a question I&#x27;ve given it where it did agree with &quot;MAGA&quot; offhand, most of ...\n\n[mrhottakes]: The constant issue with these sorts of categorization efforts is that the outcome is entirely dependent on how the responses to &quot;politically charged questions&quot; are graded as left vs. right. You&#x27;re mostly just examining a delta in biases between the model and the investigator.\n\n[Cakez0r]: The overall chart on their page seems politically biased, or at the very least a chart crime. The logos have faint grey lines pointing to their actual data points, conspicuously making Grok look very far right. You wouldn&#x27;t know it from glancing at the chart, but they measured Chatgpt being further to the left than Grok is to the right.\n\n[throw4847285]: The political compass is terrible, full stop. It is a meme in the classic sense. It has colonized some people&#x27;s view on what politics in direct proportion to how stupid it is (stupid is simple and simple is viral).\n\n[cadamsdotcom]: Compressing a huge range of issues onto a one-dimensional axis and then telling everyone they have to land somewhere ON that axis is one of the most confusing and silly things about modern politics. It’d be fascinating research to inspect models’ internal representations in case there’s an emergent structure in there that we can project back on society.",
-    "author": "mektrik",
-    "published_at": "2026-06-25T13:08:31Z",
-    "fetched_at": "2026-06-26T00:04:59.830514Z",
-    "metadata": {
-      "score": 105,
-      "descendants": 216,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48672779",
-      "comment_count": 5,
-      "title_zh": "AI模型政治偏见分析引发方法论争议",
-      "detailed_summary_zh": "一项使用政治罗盘方法衡量多个AI模型政治偏见的分析报告在社区引发热议，报告声称不同模型存在左右倾向差异。 该分析关系到AI模型在实际应用中的中立性和公平性，但测量方法本身可能带有主观偏见，影响公众对AI可靠性的信任。 社区评论指出政治罗盘将复杂的政治立场简化为二维坐标，且报告中的图表设计存在误导性，例如Grok被明显标记为极右，而实际测量中ChatGPT的左倾程度更极端。",
-      "background_zh": "政治罗盘是一种将政治观点映射到经济和社会两个轴上的工具，常被批评为过度简化且易引发歧义。AI模型的政治偏见通常源于训练数据中的倾向，但如何客观评估这些偏见仍是一个开放问题。",
-      "community_discussion_zh": "多数评论者认为政治罗盘不适合衡量AI偏见，结果高度依赖研究者自身对“左”和“右”的评分标准；还有用户指出图表可视化的手法可能故意放大某些模型的极端性，从而扭曲公众认知。",
-      "detailed_summary": "一项使用政治罗盘方法衡量多个AI模型政治偏见的分析报告在社区引发热议，报告声称不同模型存在左右倾向差异。 该分析关系到AI模型在实际应用中的中立性和公平性，但测量方法本身可能带有主观偏见，影响公众对AI可靠性的信任。 社区评论指出政治罗盘将复杂的政治立场简化为二维坐标，且报告中的图表设计存在误导性，例如Grok被明显标记为极右，而实际测量中ChatGPT的左倾程度更极端。",
-      "background": "政治罗盘是一种将政治观点映射到经济和社会两个轴上的工具，常被批评为过度简化且易引发歧义。AI模型的政治偏见通常源于训练数据中的倾向，但如何客观评估这些偏见仍是一个开放问题。",
-      "community_discussion": "多数评论者认为政治罗盘不适合衡量AI偏见，结果高度依赖研究者自身对“左”和“右”的评分标准；还有用户指出图表可视化的手法可能故意放大某些模型的极端性，从而扭曲公众认知。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High community engagement (105 points, 216 comments) with substantive discussion critiquing the methodology of measuring AI political bias, highlighting issues like the political compass and grading biases. The topic is relevant and generates diverse viewpoints, but the original content's quality is debated.",
-    "ai_summary": "Analysis of political bias in various AI models using a political compass approach, with community critique of the methodology.",
-    "ai_tags": [
-      "AI bias",
-      "political bias",
-      "AI ethics",
-      "model evaluation"
+      "Flink",
+      "S3",
+      "filesystem",
+      "big data",
+      "performance"
     ]
   }
 ]
