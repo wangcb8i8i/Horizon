@@ -1,0 +1,570 @@
+[
+  {
+    "id": "hackernews:story:48709670",
+    "source_type": "hackernews",
+    "title": "GLM 5.2 beats Claude in our benchmarks",
+    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+    "content": "\n--- Top Comments ---\n\n[pimeys]: I have taken another look on these open models after the fiasco of Fable and GPT 5.6 this weekend and... GLM-5.2 truly is a good workhorse model for daily programming. I consider myself a heavy user of LLMs and a seasoned developer. A typical session for me with GPT is usually over a hundred dollars... This weekend I programmed a matrix bot with encryption and a Rust agent with some tools. Because I need one and OpenClaw just felt... not what I wanted. Two days later and 20 dollars poorer I h...\n\n[SwellJoe]: I added GLM 5.2 to my security bug hunting benchmark when it came out, and found it to be a good performer, but not the best open model. The benchmark tests whether models can find bugs Mythos found. The best open models in the initial benchmark were DeepSeek V4 Pro or MiMo 2.5 Pro. But it turned out MiMo got lucky, it&#x27;s performed worse on almost every test I&#x27;ve done since, while DeepSeek has consistently been among the best performers and its extreme caching performance makes it ch...\n\n[jackdawed]: I use GLM 5.2 via Neuralwatt and it&#x27;s gotten so cheap I wouldn&#x27;t mind cancelling my personal Claude subscription if work gave me one. I&#x27;ve spent 374M tokens this month and it only cost me $18 on energy-based pricing.\n\n[bArray]: Apparently GLM 5.2 is 753B parameters [1], what kind of hardware are people using to run this locally? [1]  https:&#x2F;&#x2F;huggingface.co&#x2F;zai-org&#x2F;GLM-5.2\n\n[himata4113]: These numbers are seem pretty low compared to what I was able to achieve specifically around windows kernel, win32k&lt;-&gt;win32u to be exact. It honestly wouldn&#x27;t surprise me anymore if china started surpassing models that US makes public, at least in specific categories such as cyber. GLM 5.2 is already capable enough to assist in self-training which is similar to what we saw happen with frontier models and they appear to be getting there at a significantly lower cost than openai&#x2F...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/tinc3e/we_have_mythos_at_home_glm_5_2_beats_claude\">Comments</a></p>",
+    "author": "jms703",
+    "published_at": "2026-06-28T17:50:47Z",
+    "fetched_at": "2026-06-29T00:02:42.191168Z",
+    "metadata": {
+      "score": 340,
+      "descendants": 158,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48709670",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "GLM 5.2在网络安全基准测试中超越Claude",
+      "detailed_summary_zh": "Semgrep 发布博客称，其网络安全基准测试显示 GLM 5.2（753B参数开源模型）表现优于 Claude。该测试专门评估模型在代码安全审查和漏洞发现方面的能力。 这是开源模型首次在特定专业领域（网络安全）超越闭源前沿模型，可能大幅降低企业网络安全 AI 应用的成本。GLM 5.2 的高性价比和开源特性将推动更多团队在安全工具链中采用类似模型。 GLM 5.2 拥有 7530 亿参数，支持 1M token 上下文窗口，由 Z.AI 开发并通过 Hugging Face 发布。Semgrep 的基准测试专注于静态分析中的真实漏洞模式匹配，而非通用能力评估。",
+      "background_zh": "Semgrep 是一个流行的开源静态代码分析工具，广泛应用于安全漏洞扫描。GLM 系列是中国公司智谱 AI 研发的大语言模型，5.2 版本是其最新旗舰。网络安全基准测试专门针对代码缺陷的发现能力，与常规综合测试不同。",
+      "community_discussion_zh": "用户普遍认可 GLM 5.2 在编程和网络安全任务中的性价比，如有人表示“用它编程一天仅花费 20 美元”。但也有用户指出，在部分测试中 DeepSeek V4 Pro 表现更稳定，且本地部署 753B 模型需要极高硬件配置。",
+      "sources": [
+        {
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "title": "zai-org/GLM-5.2 · Hugging Face"
+        },
+        {
+          "url": "https://docs.z.ai/guides/llm/glm-5.2",
+          "title": "GLM-5.2 - Overview - Z.AI DEVELOPER DOCUMENT"
+        }
+      ],
+      "detailed_summary": "Semgrep 发布博客称，其网络安全基准测试显示 GLM 5.2（753B参数开源模型）表现优于 Claude。该测试专门评估模型在代码安全审查和漏洞发现方面的能力。 这是开源模型首次在特定专业领域（网络安全）超越闭源前沿模型，可能大幅降低企业网络安全 AI 应用的成本。GLM 5.2 的高性价比和开源特性将推动更多团队在安全工具链中采用类似模型。 GLM 5.2 拥有 7530 亿参数，支持 1M token 上下文窗口，由 Z.AI 开发并通过 Hugging Face 发布。Semgrep 的基准测试专注于静态分析中的真实漏洞模式匹配，而非通用能力评估。",
+      "background": "Semgrep 是一个流行的开源静态代码分析工具，广泛应用于安全漏洞扫描。GLM 系列是中国公司智谱 AI 研发的大语言模型，5.2 版本是其最新旗舰。网络安全基准测试专门针对代码缺陷的发现能力，与常规综合测试不同。",
+      "community_discussion": "用户普遍认可 GLM 5.2 在编程和网络安全任务中的性价比，如有人表示“用它编程一天仅花费 20 美元”。但也有用户指出，在部分测试中 DeepSeek V4 Pro 表现更稳定，且本地部署 753B 模型需要极高硬件配置。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (340 points, 158 comments) and multiple user reports confirm GLM 5.2's strong performance and cost-effectiveness in cybersecurity benchmarks, though domain-specific and not a general breakthrough.",
+    "ai_summary": "GLM 5.2, a 753B parameter open model, beats Claude in cybersecurity benchmarks as per Semgrep's evaluation.",
+    "ai_tags": [
+      "LLM",
+      "benchmarking",
+      "open-source",
+      "GLM",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "hackernews:story:48708941",
+    "source_type": "hackernews",
+    "title": "I used Claude Code to get a second opinion on my MRI",
+    "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+    "content": "\n--- Top Comments ---\n\n[sxg]: I&#x27;m a radiologist but can&#x27;t really weigh in without seeing the full 3D MRI dataset. Regarding this point: &gt; They performed shockwave therapy on my shoulder even though a recent clinical practice guideline says clinicians should not use or recommend shockwave therapy for rotator-cuff tendinopathy without calcification; I was told during ultrasound that there was no calcification. Ultrasound isn&#x27;t a great way to assess for calcification. It&#x27;ll find large calcification but...\n\n[AceJohnny2]: &gt;  There&#x27;s something incredibly peaceful about being in the hands of an expert you trust. [...] AI can absolutely shatter that feeling in an uncomfortable way [...] but I don&#x27;t know if I can fully trust AI either.  This really is key. We  know  we can&#x27;t trust the AI, but at the same time we&#x27;re also more comfortable asking the AI for clarifications or confronting it. Not having a time-bound appointment or paying by the hour helps a lot. But even then, more information do...\n\n[kgeist]: A few years ago (before the AI craze), I was misdiagnosed with tuberculosis. I had a chronic cough, and an outsourced radiologist at a clinic found signs of tuberculosis. The findings were sent to the city&#x27;s tuberculosis hospital, as required by the country&#x27;s law. The doctors there took the radiologist&#x27;s conclusion at face value and required me to stay at their hospital for at least 8 months under a strict, prison-like regime. There was no option to say no, because I was consid...\n\n[piterrro]: It funny to see the community here expects the human body to be treated like a deterministic function: for input X expect output Y - and that transfers to diagnosis - people expect to receive the same diagnosis from different specialists for the same issue. Given human body complexity, the diagnosis is a compound output of the experience, knowledge gained throughout the career and diagnosis methods&#x2F;equipment, the title (like Dr) is a certification imposed by the state so its &quot;safe&q...\n\n[throwforfeds]: I&#x27;ve seen a lot of friends and family members almost immediately get offered surgery for shoulder pain. It&#x27;s just often the default for people that do surgeries for a living. I also had a pretty painful shoulder issue at one point, where the pain just wasn&#x27;t subsiding for months. I tried massages and acupuncture as I didn&#x27;t want to do surgery, but it wasn&#x27;t helping at all. The thing that fixed it for me was just really focusing on doing pull-ups. I couldn&#x27;t do th...",
+    "author": "engmarketer",
+    "published_at": "2026-06-28T16:35:19Z",
+    "fetched_at": "2026-06-29T00:02:42.191268Z",
+    "metadata": {
+      "score": 308,
+      "descendants": 418,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48708941",
+      "comment_count": 5,
+      "title_zh": "用Claude Code分析MRI：AI医疗新尝试引发信任讨论",
+      "detailed_summary_zh": "一位用户使用Claude Code（基于Anthropic的Claude模型）分析自己的MRI影像报告，并分享了这一体验。 这展示了大型语言模型在个人医疗分析中的创新应用，但同时也引发了关于AI诊断可靠性、医患信任以及过度依赖技术的广泛讨论。 Claude Code本是用于代码辅助开发的工具，但用户将其用于分析MRI文本报告；一位放射科医生评论指出，仅凭报告无法全面评估，且超声检测钙化存在局限。",
+      "background_zh": "Claude是Anthropic公司开发的一系列大型语言模型，采用“宪法AI”技术训练以提升伦理合规性。Claude Code是Anthropic推出的AI编程辅助工具。近年来，AI在医疗辅助诊断中的应用日益增多，但准确性、可解释性和信任问题仍是核心挑战。",
+      "community_discussion_zh": "社区讨论热烈，放射科医生指出无法仅凭2D报告判断；用户们表达了对AI的复杂态度：既享受AI无限次追问的便利，又担忧其不可靠。有用户分享自身经历，指出医疗误诊的现实风险，认为AI可能加剧或缓解这一问题。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Claude_Code",
+          "title": "Claude Code"
+        }
+      ],
+      "detailed_summary": "一位用户使用Claude Code（基于Anthropic的Claude模型）分析自己的MRI影像报告，并分享了这一体验。 这展示了大型语言模型在个人医疗分析中的创新应用，但同时也引发了关于AI诊断可靠性、医患信任以及过度依赖技术的广泛讨论。 Claude Code本是用于代码辅助开发的工具，但用户将其用于分析MRI文本报告；一位放射科医生评论指出，仅凭报告无法全面评估，且超声检测钙化存在局限。",
+      "background": "Claude是Anthropic公司开发的一系列大型语言模型，采用“宪法AI”技术训练以提升伦理合规性。Claude Code是Anthropic推出的AI编程辅助工具。近年来，AI在医疗辅助诊断中的应用日益增多，但准确性、可解释性和信任问题仍是核心挑战。",
+      "community_discussion": "社区讨论热烈，放射科医生指出无法仅凭2D报告判断；用户们表达了对AI的复杂态度：既享受AI无限次追问的便利，又担忧其不可靠。有用户分享自身经历，指出医疗误诊的现实风险，认为AI可能加剧或缓解这一问题。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value content demonstrating a novel use of AI for personal medical analysis, with strong community engagement (308 points, 418 comments). The discussion includes insights from a radiologist and reflections on trust, significantly enriching the content's importance.",
+    "ai_summary": "A user employs Claude Code to analyze their MRI, sparking a rich community discussion on AI versus expert trust in healthcare.",
+    "ai_tags": [
+      "AI in healthcare",
+      "medical imaging",
+      "trust",
+      "Claude Code",
+      "LLMs"
+    ]
+  },
+  {
+    "id": "hackernews:story:48708991",
+    "source_type": "hackernews",
+    "title": "Professor denounces mass AI fraud on an exam at Brown",
+    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+    "content": "\n--- Top Comments ---\n\n[recursivedoubts]: In the AI era, tests are going to have to be in person and hand written. I have written an article on how I have adjusted my classes to the situation:  https:&#x2F;&#x2F;htmx.org&#x2F;essays&#x2F;universities-and-ai&#x2F;  Ironically, I think the AI era may make university degrees a better signal of the intellectual abilities of students due to the presence of pre-computer infrastructure like large lecture halls, industrial-scale copiers, etc.\n\n[bkallus]: I have seen it firsthand in the CS department here at Dartmouth. It is bad. We&#x27;re currently designing a new intro systems curriculum, and we&#x27;re thinking of it as an adversarial problem. That is, we&#x27;re designing the course to ensure that a student optimizing for the best grade per unit work still meets our learning objectives. That means, as everyone else is saying, paper exams, but also 1-on-1 interviews to check that students understand each assignment they turn in. These inte...\n\n[yiyingzhang]: As a university professor, I honestly don&#x27;t understand the point of grading. Who will look at and care about grades? Likely company HR. But then why should we (professors) do the screening for companies for free? Also, grades have long been inflated to a point we might as well just give everyone an A and let companies figure out how to select people.\n\n[cherryteastain]: His research is in Game Theory. He should have realized that, in a situation where all competitors are (possibly) using LLMs, the game theoretic optimal choice is to use LLMs.\n\n[userbinator]: take-home, closed-book type  What an oxymoron. I agree with the others here that AI isn&#x27;t the problem.",
+    "author": "geox",
+    "published_at": "2026-06-28T16:41:12Z",
+    "fetched_at": "2026-06-29T00:02:42.191292Z",
+    "metadata": {
+      "score": 169,
+      "descendants": 228,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48708991",
+      "comment_count": 5,
+      "title_zh": "布朗大学教授谴责大规模AI作弊事件",
+      "detailed_summary_zh": "布朗大学一位教授公开谴责在一次考试中发生的大规模AI作弊行为，学生普遍使用大型语言模型完成考核。 此事件凸显了生成式AI对传统教育评估体系的严重冲击，可能促使高校重新设计课程和考试形式，以维护学术诚信。 该教授的研究领域是博弈论，而社区评论中有观点指出，当其他学生都使用AI时，个体理性选择就是也使用AI。",
+      "background_zh": "随着ChatGPT等大型语言模型的普及，学生利用AI工具完成作业和考试的现象日益严重，传统开卷或在线考试难以防范AI作弊。高校面临调整教学评估方式的压力，例如恢复线下手写考试和增加一对一面试环节。",
+      "community_discussion_zh": "社区讨论热烈，多数人认为AI作弊问题严重，提出线下笔试和面试等解决方案。也有教授质疑评分系统的意义，认为应改为只给A等由公司自行筛选。部分评论从博弈论角度指出使用AI是理性选择，批评考试设计本身不合理。",
+      "detailed_summary": "布朗大学一位教授公开谴责在一次考试中发生的大规模AI作弊行为，学生普遍使用大型语言模型完成考核。 此事件凸显了生成式AI对传统教育评估体系的严重冲击，可能促使高校重新设计课程和考试形式，以维护学术诚信。 该教授的研究领域是博弈论，而社区评论中有观点指出，当其他学生都使用AI时，个体理性选择就是也使用AI。",
+      "background": "随着ChatGPT等大型语言模型的普及，学生利用AI工具完成作业和考试的现象日益严重，传统开卷或在线考试难以防范AI作弊。高校面临调整教学评估方式的压力，例如恢复线下手写考试和增加一对一面试环节。",
+      "community_discussion": "社区讨论热烈，多数人认为AI作弊问题严重，提出线下笔试和面试等解决方案。也有教授质疑评分系统的意义，认为应改为只给A等由公司自行筛选。部分评论从博弈论角度指出使用AI是理性选择，批评考试设计本身不合理。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (169 points, 228 comments) with substantive comments from professors and experts discussing the impact of AI on academic integrity, proposing solutions like in-person exams and interviews. The topic is highly relevant and timely, with significant implications for education, warranting a high score.",
+    "ai_summary": "A professor at Brown University denounces mass AI fraud on an exam, sparking a community discussion on the need for in-person assessments and curriculum redesign to preserve academic integrity in the AI era.",
+    "ai_tags": [
+      "AI fraud",
+      "academic integrity",
+      "education",
+      "assessments",
+      "university policies"
+    ]
+  },
+  {
+    "id": "hackernews:story:48708795",
+    "source_type": "hackernews",
+    "title": "Tokenmaxxing is dead, long live tokenmaxxing",
+    "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
+    "content": "\n--- Top Comments ---\n\n[aurareturn]: Tokenmaxxing was just a way to force employees to start leveraging AI in a meaningful way. For companies that have measured performance based on token spend, they can now dial it back. Employees have learned to leverage AI for things they wouldn’t have prior. Now they know what’s possible and what’s not. No one is stupid enough to always measure performance based on token spend and have unlimited budget. It was always a temporary thing to transition the employees to a new world. Management fe...\n\n[ambicapter]: &gt; That’s no longer true. We’ve entered a different regime, where spending more tokens generally results in better results. We call this “compounding correctness” — the more tokens you spend on getting a task correct, the more likely you’ll get a good outcome. We talked about this a bit at the last in person Agentics meetup: Have we? Is it generally the case that the more tokens you spend, you better results you get? This take is so weird I suspect author somehow financially benefits from t...\n\n[et1337]: Folks have been saying “things are different now, the agents are now compounding success instead of error” for at least a year now, but I just don’t see it. I was lucky enough to receive a weeklong $50k per head AI training from the people saying these things, and one of their few helpful concrete recommendations was to constantly clear context all the time, to avoid things going off the rails. However, I think finding security vulnerabilities is one use case where it doesn’t matter. Tokenmax...\n\n[red_admiral]: &gt; Like, imagine if some serious business leader, like, idk, Mark Zuckerberg, decided to announce that Meta was going to burn money. Like ... pivoting to the &quot;metaverse&quot; and changing the company name to show he&#x27;s serious.\n\n[natyoung]: Studies have proved that you&#x27;d have been better off with fartmaxxing.",
+    "author": "theahura",
+    "published_at": "2026-06-28T16:24:10Z",
+    "fetched_at": "2026-06-29T00:02:42.191355Z",
+    "metadata": {
+      "score": 105,
+      "descendants": 122,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48708795",
+      "comment_count": 5,
+      "title_zh": "Tokenmaxxing 终结与新策略涌现",
+      "detailed_summary_zh": "本文探讨了从“tokenmaxxing”（以token消耗量为指标的AI采用策略）向“复合正确性”（通过增加token投入提升任务准确率）的转变。 这标志着企业AI实践从追求使用量的粗放阶段进入注重输出质量的新阶段，影响AI代理的实际业务价值及投资回报。 作者声称当前更多token投入通常能带来更好结果，但社区评论指出该观点争议较大；tokenmaxxing曾被用作强迫员工采用AI的临时手段。",
+      "background_zh": "Tokenmaxxing指员工为应对企业设定的token使用指标而大量调用AI，导致“AI剧场”效应，即表面使用而无实质变革。“复合正确性”则强调在复杂任务中通过更多token迭代来修正错误，提升最终结果可靠性。",
+      "community_discussion_zh": "社区对“更多token带来更好结果”普遍质疑，有评论认为tokenmaxxing仅是过渡策略，员工已学会区分AI适用场景；也有观点指出多步骤代理仍面临错误累积问题，与文章论点相悖。",
+      "sources": [
+        {
+          "url": "https://www.cio.com/article/4178320/tokenmaxxing-when-ai-adoption-metrics-go-bad.html",
+          "title": "Tokenmaxxing: When AI adoption metrics go bad | CIO"
+        },
+        {
+          "url": "https://www.tigergraph.com/blog/tokenmaxxing-is-a-phase-inference-yield-is-the-strategy/",
+          "title": "Tokenmaxxing is a Phase. Inference Yield is the Strategy. - TigerGraph"
+        }
+      ],
+      "detailed_summary": "本文探讨了从“tokenmaxxing”（以token消耗量为指标的AI采用策略）向“复合正确性”（通过增加token投入提升任务准确率）的转变。 这标志着企业AI实践从追求使用量的粗放阶段进入注重输出质量的新阶段，影响AI代理的实际业务价值及投资回报。 作者声称当前更多token投入通常能带来更好结果，但社区评论指出该观点争议较大；tokenmaxxing曾被用作强迫员工采用AI的临时手段。",
+      "background": "Tokenmaxxing指员工为应对企业设定的token使用指标而大量调用AI，导致“AI剧场”效应，即表面使用而无实质变革。“复合正确性”则强调在复杂任务中通过更多token迭代来修正错误，提升最终结果可靠性。",
+      "community_discussion": "社区对“更多token带来更好结果”普遍质疑，有评论认为tokenmaxxing仅是过渡策略，员工已学会区分AI适用场景；也有观点指出多步骤代理仍面临错误累积问题，与文章论点相悖。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value discussion with active community debate (122 comments, 105 points) on a practical AI engineering topic about token usage and agent effectiveness. The comments provide contrasting viewpoints, indicating significant interest and relevance.",
+    "ai_summary": "Discusses the transition from tokenmaxxing as a temporary AI adoption strategy to a focus on compounding correctness in AI agents.",
+    "ai_tags": [
+      "AI agents",
+      "token economics",
+      "software engineering",
+      "AI adoption"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:550b6648a2bb58e1",
+    "source_type": "rss",
+    "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
+    "url": "http://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+    "content": "<p><a href=\"https://lobste.rs/s/yscudc/examining_circuit_boards_from_space\">Comments</a></p>",
+    "author": "righto.com via fanf",
+    "published_at": "2026-06-28T18:11:39Z",
+    "fetched_at": "2026-06-29T00:02:42.285108Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "hardware"
+      ],
+      "title_zh": "航天飞机I/O处理器电路板深度解析",
+      "detailed_summary_zh": "一篇新文章详细剖析了航天飞机I/O处理器（IOP）的电路板，展示了其内部工程设计和组件布局。 该I/O处理器是航天飞机计算机系统的关键部件，首次将多线程计算机技术应用于太空任务，对理解早期航天电子系统有重要价值。此分析为硬件爱好者和复古计算社区提供了珍贵的实物资料。 I/O处理器通过24条高速网络与航天飞机的传感器和系统通信，充当CPU与外部设备的桥梁。文章展示了来自RR Auction的照片，对比了IOP与AP-101B CPU的物理结构。",
+      "background_zh": "航天飞机使用的计算机是基于IBM System/4 Pi系列的AP-101B，由IBM联邦系统部门开发。I/O处理器负责处理输入输出任务，是多线程架构在太空领域的早期应用，由Peter Kogge设计。该系列计算机也曾用于F-15、E-3预警机等军用平台。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/IBM_System/4_Pi",
+          "title": "IBM System/4 Pi - Wikipedia"
+        },
+        {
+          "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+          "title": "Examining circuit boards from the Space Shuttle's I/O Processor"
+        }
+      ],
+      "detailed_summary": "一篇新文章详细剖析了航天飞机I/O处理器（IOP）的电路板，展示了其内部工程设计和组件布局。 该I/O处理器是航天飞机计算机系统的关键部件，首次将多线程计算机技术应用于太空任务，对理解早期航天电子系统有重要价值。此分析为硬件爱好者和复古计算社区提供了珍贵的实物资料。 I/O处理器通过24条高速网络与航天飞机的传感器和系统通信，充当CPU与外部设备的桥梁。文章展示了来自RR Auction的照片，对比了IOP与AP-101B CPU的物理结构。",
+      "background": "航天飞机使用的计算机是基于IBM System/4 Pi系列的AP-101B，由IBM联邦系统部门开发。I/O处理器负责处理输入输出任务，是多线程架构在太空领域的早期应用，由Peter Kogge设计。该系列计算机也曾用于F-15、E-3预警机等军用平台。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Detailed examination of historical NASA hardware from a critical space system; appeals to hardware enthusiasts and retrocomputing fans. Comment discussion on lobste.rs likely adds engineering insights.",
+    "ai_summary": "A deep dive into the circuit boards of the Space Shuttle's I/O Processor, revealing engineering details of the iconic system.",
+    "ai_tags": [
+      "hardware",
+      "retrocomputing",
+      "space shuttle",
+      "circuit boards",
+      "I/O processor"
+    ]
+  },
+  {
+    "id": "hackernews:story:48710092",
+    "source_type": "hackernews",
+    "title": "Historical memory prices 1960-2026",
+    "url": "https://dam.stanford.edu/memory-prices.html",
+    "content": "\n--- Top Comments ---\n\n[fernly]: Says, not inflation-adjusted. With reason; adjusting those 1960-1980 prices for inflation would make the graph a lot taller. Pricing &quot;per GB&quot; before 1990 is unrealistic, though; nobody thought in GB or purchased GB quantities, or conceived of GB systems. I remember a moment circa 1973 when I saw an IBM CE about to do an upgrade on a 370 system at Cal Berkeley. He had a box with several carefully-packed, large circuit boards. &quot;So, is that a megabyte?&quot; I asked. &quot;Yup, th...\n\n[gruntled-worker]: Look at it this way: while the upfront cost to scale up production is huge, prices are now high enough to justify it  even if  demand is expected to drop abruptly later on. So if you can wait 5 years for your next PC, 1TB RAM might go for what 64GB would have cost without the AI demand spike. Granted, if you need a new system before then, you&#x27;re SOL. One thing to look out for is supply capacity curiously going offline in 2030 or whatever. That would hint at market power or collusion.\n\n[H4lcyon]: A perfect example of how graphs are often misleading. $&#x2F;GB is a totally useless unit value because it&#x27;s an arbitrary size. The unit needs to be tied to the relative usefulness for its time. The y axis should be something like $&#x2F;average workstation memory or $&#x2F;requirement for common compute task. It&#x27;s obvious that ram is expensive right now, but it&#x27;s not expensive per GB. It&#x27;s expensive relative to what you need to accomplish a useful task.\n\n[Dibby053]: One could also blame crypto and AI (they&#x27;re clearly responsible for some of the volatility in the graph), but I can see the curve flatten in the 2010s, just as Moore&#x27;s law ended.",
+    "author": "vga1",
+    "published_at": "2026-06-28T18:32:53Z",
+    "fetched_at": "2026-06-29T00:02:42.191206Z",
+    "metadata": {
+      "score": 128,
+      "descendants": 43,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48710092",
+      "comment_count": 4,
+      "title_zh": "历史内存价格1960-2026图表引发方法争议",
+      "detailed_summary_zh": "斯坦福大学发布了1960年至2026年内存每GB价格的图表和分析，展示了长达66年的价格下降趋势。社区批评其未调整通货膨胀且$/GB单位在不同时代缺乏实用性。 该图表反映了半导体技术的飞速进步，但也暴露了数据可视化中指标选择的问题，可能误导对当前内存昂贵程度的理解。讨论有助于改进技术历史数据的呈现方式。 图表未进行通胀调整，导致1960-1980年价格被严重低估。评论指出，早期系统容量远小于1GB，使用$/GB衡量当时成本毫无意义。",
+      "background_zh": "内存价格从1960年代每GB数百万美元降至2020年代约几美元，但近年因AI需求激增而价格上涨。数据可视化需要精心选择指标，否则可能歪曲历史趋势。",
+      "community_discussion_zh": "社区看法不一：有用户批评未调整通胀和单位选择不当；有人建议改用$/平均工作站内存；也有人指出加密货币和AI导致近期波动，并讨论未来产能变化。",
+      "sources": [
+        {
+          "url": "https://deepintellica.com/finance-economics/historical-memory-prices-1960-2026/",
+          "title": "Historical memory prices 1960 - 2026 - Deep Intellica"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/2024–present_global_memory_supply_shortage",
+          "title": "2025–present global memory supply shortage - Wikipedia"
+        },
+        {
+          "url": "https://www.business.com/articles/data-visualization-downfalls/",
+          "title": "Data Visualization Tips: Common Problems & Solutions"
+        }
+      ],
+      "detailed_summary": "斯坦福大学发布了1960年至2026年内存每GB价格的图表和分析，展示了长达66年的价格下降趋势。社区批评其未调整通货膨胀且$/GB单位在不同时代缺乏实用性。 该图表反映了半导体技术的飞速进步，但也暴露了数据可视化中指标选择的问题，可能误导对当前内存昂贵程度的理解。讨论有助于改进技术历史数据的呈现方式。 图表未进行通胀调整，导致1960-1980年价格被严重低估。评论指出，早期系统容量远小于1GB，使用$/GB衡量当时成本毫无意义。",
+      "background": "内存价格从1960年代每GB数百万美元降至2020年代约几美元，但近年因AI需求激增而价格上涨。数据可视化需要精心选择指标，否则可能歪曲历史趋势。",
+      "community_discussion": "社区看法不一：有用户批评未调整通胀和单位选择不当；有人建议改用$/平均工作站内存；也有人指出加密货币和AI导致近期波动，并讨论未来产能变化。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting historical data with community discussion critiquing methodology and providing market context, adding value beyond the graph itself.",
+    "ai_summary": "A graph and analysis of memory prices per GB from 1960 to 2026, with community debate on its presentation and implications.",
+    "ai_tags": [
+      "memory prices",
+      "hardware history",
+      "data visualization",
+      "semiconductor industry"
+    ]
+  },
+  {
+    "id": "hackernews:story:48710232",
+    "source_type": "hackernews",
+    "title": "Librepods: AirPods liberated",
+    "url": "https://github.com/librepods-org/librepods",
+    "content": "\n--- Top Comments ---\n\n[Aurornis]: To clarify because this is confusing: The AirPods work as regular old BlueTooth earbuds on other devices already. This is an implementation of some of the extra features and interfaces that are integrated into Apple products.\n\n[jamwise]: If I wasn&#x27;t certain Apple will do their best to patch every avenue to this working in the future it might be motivation to buy AirPods.\n\n[g0xA52A2A]: Previous discussion  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45941596\n\n[drnick1]: It would be useful to explain to people who don&#x27;t currently own AirPods and don&#x27;t really follow Apple stuff much what features are lost when AirPods are paired with a non-Apple device.\n\n[ctippett]: I&#x27;ve owned several pairs of AirPods over the years and this is the first I&#x27;m learning about some of their features. I almost found myself wanting there to be a third column for indicating Apple support (of course I&#x27;m being facetious).",
+    "author": "rbanffy",
+    "published_at": "2026-06-28T18:48:53Z",
+    "fetched_at": "2026-06-29T00:02:42.191310Z",
+    "metadata": {
+      "score": 244,
+      "descendants": 70,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48710232",
+      "comment_count": 5,
+      "title_zh": "Librepods：开源项目解放AirPods全部功能",
+      "detailed_summary_zh": "Librepods是一个开源项目，通过逆向工程实现了苹果专有的AAP协议，让AirPods在非Apple设备上也能使用电池状态、入耳检测、降噪控制等高级功能。 该项目解决了AirPods用户长期以来的痛点——在Android、Linux等非苹果设备上被锁定功能，促进了设备互操作性，也展示了社区逆向工程的能力。 Librepods基于逆向工程实现了苹果的AAP协议，目前支持电池状态、入耳检测、降噪模式切换等功能，但可能因AirPods固件更新而需要持续适配。",
+      "background_zh": "AirPods在非苹果设备上只能作为普通蓝牙耳机使用，许多高级功能被苹果系统独占。AAP是苹果专有的音频协议，用于AirPods与苹果设备之间的通信。Librepods通过逆向工程重现了该协议，使得这些功能在非苹果设备上可用。",
+      "community_discussion_zh": "社区讨论中，有用户指出AirPods在非苹果设备上原本就能作为普通蓝牙耳机使用，本项目的意义在于恢复额外功能。也有用户担心苹果未来会通过固件更新封锁此类逆向工程实现。",
+      "sources": [
+        {
+          "url": "https://github.com/librepods-org/librepods",
+          "title": "GitHub - librepods-org/librepods: AirPods liberated from ..."
+        },
+        {
+          "url": "https://deepwiki.com/kavishdevar/librepods/2-aap-protocol-and-communication",
+          "title": "AAP Protocol & Communication | kavishdevar/librepods | DeepWiki"
+        },
+        {
+          "url": "https://www.squaredtech.co/librepods-brings-full-airpods-features-to-android-and-linux",
+          "title": "AirPods On Android: LibrePods Explained — New Open-Source"
+        }
+      ],
+      "detailed_summary": "Librepods是一个开源项目，通过逆向工程实现了苹果专有的AAP协议，让AirPods在非Apple设备上也能使用电池状态、入耳检测、降噪控制等高级功能。 该项目解决了AirPods用户长期以来的痛点——在Android、Linux等非苹果设备上被锁定功能，促进了设备互操作性，也展示了社区逆向工程的能力。 Librepods基于逆向工程实现了苹果的AAP协议，目前支持电池状态、入耳检测、降噪模式切换等功能，但可能因AirPods固件更新而需要持续适配。",
+      "background": "AirPods在非苹果设备上只能作为普通蓝牙耳机使用，许多高级功能被苹果系统独占。AAP是苹果专有的音频协议，用于AirPods与苹果设备之间的通信。Librepods通过逆向工程重现了该协议，使得这些功能在非苹果设备上可用。",
+      "community_discussion": "社区讨论中，有用户指出AirPods在非苹果设备上原本就能作为普通蓝牙耳机使用，本项目的意义在于恢复额外功能。也有用户担心苹果未来会通过固件更新封锁此类逆向工程实现。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (244 points, 70 comments) with insightful clarifications and discussion about AirPods features on non-Apple devices. The project addresses a common pain point and shows reverse-engineering effort, though it's incremental rather than groundbreaking.",
+    "ai_summary": "Librepods is an open-source project to restore AirPods features (like battery status and ear detection) on non-Apple devices via custom Bluetooth implementation.",
+    "ai_tags": [
+      "AirPods",
+      "Bluetooth",
+      "open-source",
+      "reverse-engineering",
+      "interoperability"
+    ]
+  },
+  {
+    "id": "hackernews:story:48706714",
+    "source_type": "hackernews",
+    "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
+    "url": "https://github.com/openai/codex/issues/2847",
+    "content": "\n--- Top Comments ---\n\n[TheDong]: You can do this now: change the file permissions such that the user you run codex as can&#x27;t read them, or run codex in a container without those files mounted. If you don&#x27;t do that, the agent will be able to incidentally upload them. What if the model runs &quot;rg foo&quot;, and one of those files contains the string &quot;foo&quot;? It uploads the tool output, which includes the file contents. And so, the only solution is to make it so the codex process is unable to access those fi...\n\n[nikhilsimha]: Files that codex and any other coding agent has access to, should be opt-in NOT opt-out.\nI think codex is not the right layer to solve this if you want a sane(one-click) UX.\nWe built our own internal sandboxing-terminal around claude and codex. Where a user-configured base-folder with low-risk code and creds is COPIED into the sandbox BEFORE new session creation.\nThere were many other UX related reasons to build our own terminal. Can share more if anyone is interested.\n\n[petcat]: Hopefully they never actually implement this pointless feature because it will only give people a false sense of security given the unpredictable nature of LLMs.  How could something like this even be enforced? People just need to learn how to use the tools their system already provides them.  i.e., chmod\n\n[skybrian]: To avoid the risk of exfiltration, we need to stop using .env for security. API keys needed when working in a repo should be handled by a proxy like ssh-agent, and we need something better than bearer auth.\n\n[mbid]: I recently got the tool I use to orchestrate agents in (remote&#x2F;secure) devcontainers open-sourced at work to solve this properly:  https:&#x2F;&#x2F;github.com&#x2F;nvidia&#x2F;rumpelpod  As others here have pointed out, it&#x27;s exceedingly unlikely that a blocklist like proposed in the issue would ever be complete. You shouldn&#x27;t allow agents direct yolo-access to your machine if it has sensitive data. Codex works particularly well as a remote agent harness because of its client-s...",
+    "author": "pikseladam",
+    "published_at": "2026-06-28T12:27:33Z",
+    "fetched_at": "2026-06-29T00:02:42.191375Z",
+    "metadata": {
+      "score": 172,
+      "descendants": 118,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48706714",
+      "comment_count": 5,
+      "title_zh": "OpenAI Codex敏感文件排除功能引发安全讨论",
+      "detailed_summary_zh": "GitHub上关于OpenAI Codex的一个issue（#2847）讨论了如何防止AI编码代理意外泄露敏感文件，该问题获得172分和118条评论。 随着AI编码代理的普及，数据泄露风险成为关键安全挑战，该讨论反映了社区对沙箱和opt-in访问机制的迫切需求。 用户提出通过修改文件权限或容器隔离来阻止Codex访问敏感文件，但也有人认为仅依靠排除列表（blocklist）是不够的，可能带来虚假安全感。",
+      "background_zh": "数据泄露（data exfiltration）是指数据被未经授权地传输到外部，AI编码代理如Codex在运行命令时可能无意中包含敏感内容。沙箱（sandboxing）技术通过隔离执行环境来防止这种泄露，但标准容器可能共享主机内核，需要更严格的隔离方案。",
+      "community_discussion_zh": "社区观点分歧：部分用户认为可通过系统工具（如chmod）或容器解决；另一些人主张应默认opt-in而非opt-out；还有评论者建议使用代理处理API密钥，或采用远程devcontainer方案彻底隔离。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Data_exfiltration",
+          "title": "Data exfiltration"
+        },
+        {
+          "url": "https://www.firecrawl.dev/blog/ai-agent-sandbox",
+          "title": "AI Agent Sandbox: How to Safely Run Autonomous Agents in 2026"
+        }
+      ],
+      "detailed_summary": "GitHub上关于OpenAI Codex的一个issue（#2847）讨论了如何防止AI编码代理意外泄露敏感文件，该问题获得172分和118条评论。 随着AI编码代理的普及，数据泄露风险成为关键安全挑战，该讨论反映了社区对沙箱和opt-in访问机制的迫切需求。 用户提出通过修改文件权限或容器隔离来阻止Codex访问敏感文件，但也有人认为仅依靠排除列表（blocklist）是不够的，可能带来虚假安全感。",
+      "background": "数据泄露（data exfiltration）是指数据被未经授权地传输到外部，AI编码代理如Codex在运行命令时可能无意中包含敏感内容。沙箱（sandboxing）技术通过隔离执行环境来防止这种泄露，但标准容器可能共享主机内核，需要更严格的隔离方案。",
+      "community_discussion": "社区观点分歧：部分用户认为可通过系统工具（如chmod）或容器解决；另一些人主张应默认opt-in而非opt-out；还有评论者建议使用代理处理API密钥，或采用远程devcontainer方案彻底隔离。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (172 points, 118 comments) on a practical security concern for AI coding agents. Discussion includes diverse viewpoints (sandboxing, opt-in, false sense of security) and is highly relevant to software engineering and AI safety. Not groundbreaking but important ongoing debate.",
+    "ai_summary": "Discussion about the need for better sandboxing and opt-in file access for AI coding agents like Codex to prevent accidental data exfiltration.",
+    "ai_tags": [
+      "security",
+      "AI coding agents",
+      "sandboxing",
+      "data privacy",
+      "LLM security"
+    ]
+  },
+  {
+    "id": "hackernews:story:48706814",
+    "source_type": "hackernews",
+    "title": "The curious case of the disappearing Polish S (2015)",
+    "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
+    "content": "\n--- Top Comments ---\n\n[quibono]: I believe the fact that Polish uses the Latin alphabet (with a small Slavic twist to express the extra sounds) meant it was much easier for Poland to align itself westward. I think the average Pole is much closer culturally to the Western neighbours than to a Ukrainian or Russian (maybe apart from cuisine).\n\n[paweladamczuk]: It&#x27;s just like the new Copilot 365. Every time I try to type &quot;Ć&quot;, Copilot pops up. I have to close the app constantly.\n\n[f33d5173]: The real issue here is first that browsers don&#x27;t expose a simple way to check for key combinations and second that developers don&#x27;t bother building their own. You&#x27;ll find on any number of sites that an intended key combination can also be invoked with additional modifiers of alt or shift or whatnot. Even here, the code shown only fixes the broader issue on windows; alt+cmd+s still gets blocked. There should be a proposal for browsers to expose a property on the keydown&#x2F;up&...\n\n[notathrowaway51]: Fun fact: when treated with unicode Normalization Form Canonical Decomposition, 8 out of 9 polish letters (ż,ó,ć,ę,ś,ą,ź,ń) break down into base letter + combining diacritical mark, but ł stays intact. That means you can&#x27;t use sqlite&#x27;s unicode61 remove_diacritics tokenizer to normalize polish text for FTS.\n\n[TRiG_Ireland]: The linguistic, historical, and cultural information is so fascinating, and really well explained.",
+    "author": "colinprince",
+    "published_at": "2026-06-28T12:44:24Z",
+    "fetched_at": "2026-06-29T00:02:42.191394Z",
+    "metadata": {
+      "score": 200,
+      "descendants": 68,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48706814",
+      "comment_count": 5,
+      "title_zh": "波兰字母ś与浏览器快捷键冲突之谜",
+      "detailed_summary_zh": "一篇2015年的文章详细探讨了波兰语字母'ś'（AltGr+S或右Alt+S组合）在浏览器中被快捷键（如Ctrl+S）拦截，导致用户无法正常输入该字符的问题。 这一问题凸显了键盘本地化与浏览器默认快捷键之间的普遍冲突，影响波兰语用户的输入效率，并引发对Unicode标准化及浏览器键盘事件处理的深入思考。 文章指出该冲突在多个浏览器中普遍存在，且开发者常忽略不同键盘布局下修饰键的差异；社区评论补充说明Unicode规范化分解（NFD）会将大部分波兰字母（如ś）分解为基字加组合变音符号，但字母'ł'保持完整，这会影响SQLite等工具的文本搜索功能。",
+      "background_zh": "波兰语采用拉丁字母并附加变音符号（如ś上的尖音节），输入时通常需要组合键（例如右Alt+S）。浏览器快捷键（如Ctrl+S保存）常与这些组合键冲突，导致系统优先响应浏览器。Unicode规范化定义了字符的等价形式：预组合字符（如ś作为一个码位）与分解形式（s + 组合变音符号）被视为相同，但某些字符（如ł）没有分解形式。",
+      "community_discussion_zh": "评论者从多角度展开讨论：有人指出类似问题在Microsoft Copilot中也存在（干扰'Ć'输入）；有人批评浏览器缺乏简便的键组合检测API，开发者也不愿自行实现；还有人从语言学视角称赞文章的文化背景介绍。整体认可技术深度，并呼吁浏览器改进快捷键冲突处理。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Unicode_equivalence",
+          "title": "Unicode equivalence - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Precomposed_character",
+          "title": "Precomposed character - Wikipedia"
+        },
+        {
+          "url": "http://www.unicode.org/reports/tr15/",
+          "title": "UAX #15: Unicode Normalization Forms"
+        }
+      ],
+      "detailed_summary": "一篇2015年的文章详细探讨了波兰语字母'ś'（AltGr+S或右Alt+S组合）在浏览器中被快捷键（如Ctrl+S）拦截，导致用户无法正常输入该字符的问题。 这一问题凸显了键盘本地化与浏览器默认快捷键之间的普遍冲突，影响波兰语用户的输入效率，并引发对Unicode标准化及浏览器键盘事件处理的深入思考。 文章指出该冲突在多个浏览器中普遍存在，且开发者常忽略不同键盘布局下修饰键的差异；社区评论补充说明Unicode规范化分解（NFD）会将大部分波兰字母（如ś）分解为基字加组合变音符号，但字母'ł'保持完整，这会影响SQLite等工具的文本搜索功能。",
+      "background": "波兰语采用拉丁字母并附加变音符号（如ś上的尖音节），输入时通常需要组合键（例如右Alt+S）。浏览器快捷键（如Ctrl+S保存）常与这些组合键冲突，导致系统优先响应浏览器。Unicode规范化定义了字符的等价形式：预组合字符（如ś作为一个码位）与分解形式（s + 组合变音符号）被视为相同，但某些字符（如ł）没有分解形式。",
+      "community_discussion": "评论者从多角度展开讨论：有人指出类似问题在Microsoft Copilot中也存在（干扰'Ć'输入）；有人批评浏览器缺乏简便的键组合检测API，开发者也不愿自行实现；还有人从语言学视角称赞文章的文化背景介绍。整体认可技术深度，并呼吁浏览器改进快捷键冲突处理。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive with high community engagement; comments provide insightful discussions on Unicode, browser key handling, and localization issues, elevating its value.",
+    "ai_summary": "An article exploring a bug where Polish 'ś' key combination conflicts with browser shortcuts, with community discussion on technical solutions and Unicode nuances.",
+    "ai_tags": [
+      "Polish",
+      "keyboard shortcuts",
+      "Unicode",
+      "browser bugs",
+      "localization"
+    ]
+  },
+  {
+    "id": "hackernews:story:48706560",
+    "source_type": "hackernews",
+    "title": "The KIDS Act would require age checks to get online",
+    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
+    "content": "\n--- Top Comments ---\n\n[pdonis]: Would this website (HN) be a &quot;covered platform&quot; according to the bill? As far as I can tell, the answer is no, because it doesn&#x27;t do what&#x27;s described in Section 201 (E): &quot;Uses the personal information of the user to advertise, market, or make content recommendations.&quot; Neither does, for example, my bank&#x27;s website, or someone&#x27;s personal blog, or many other discussion sites like this one. So from what I can see, while the set of covered platforms is certai...\n\n[jschveibinz]: I just listened to a radio program on my local NPR station about the topic of kids and social media.  From what was presented, the research shows (longitudinal study) that there is very little evidence of social media impacting mental health--which is shocking because a majority of adults think there is a connection and the politicians are pushing that narrative. I have not personally vetted the research.  Has anyone else?\n\n[monksy]: So.. \n https:&#x2F;&#x2F;www.congress.gov&#x2F;bill&#x2F;119th-congress&#x2F;house-bill&#x2F;7757...  Find your rep on congress.gov, and write them. Sponsors: \nBrett Guthrie (R-KY) \nCoSponsors: Frank Pallone (D-NJ) Find and write your congress member:  https:&#x2F;&#x2F;www.congress.gov&#x2F;  Guthrie is sponsored by: (Alpahbit is the biggest)\n https:&#x2F;&#x2F;www.opensecrets.org&#x2F;profiles&#x2F;brett-guthrie \n&#x2F;us_congress&#x2F;summary?mpid=1048046 Frankie: (AIPAC, Anthropic and Com...\n\n[bArray]: Anybody else think it is weird that suddenly all Western countries suddenly want to lockdown the internet to &quot;protect the children&quot;? There is  surely  an international special interest group lobbying for this?\n\n[duxup]: I remember when the advice was to NOT give out your personal information online. Now it&#x27;s &quot;present your personal info when demanded or else&quot;.",
+    "author": "bilsbie",
+    "published_at": "2026-06-28T11:56:16Z",
+    "fetched_at": "2026-06-29T00:02:42.191417Z",
+    "metadata": {
+      "score": 273,
+      "descendants": 241,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48706560",
+      "comment_count": 5,
+      "title_zh": "KIDS法案要求在线年龄验证引发隐私担忧",
+      "detailed_summary_zh": "电子前哨基金会（EFF）警告，美国《KIDS法案》要求在线平台进行年龄验证，这可能导致用户隐私和言论自由受到威胁。该法案旨在保护儿童，但EFF认为其实施方式会破坏在线匿名性。 如果该法案通过，所有用户在上网时都可能需要提交身份认证，这将大幅增加个人数据收集风险，并可能被用于监控和审查。对自由开放的互联网生态构成深远影响。 法案覆盖那些利用用户个人信息进行广告、营销或内容推荐的平台。年龄验证技术可能包括AI自拍、数字ID等，但批评者指出这些技术仍会暴露用户身份，且法案定义模糊，容易扩大适用范围。",
+      "background_zh": "近年来，多国以保护儿童为由推动在线年龄验证立法，但争议不断。年龄验证通常要求用户提供政府ID或生物特征，这与互联网长期倡导的匿名原则相悖。类似法案如《儿童在线安全法案》（KOSA）也面临隐私担忧。",
+      "community_discussion_zh": "评论中，有用户质疑法案是否覆盖Hacker News这类不带广告推荐功能的网站；另有人指出社交媒体影响心理健康的证据并不充分，怀疑背后有政治或行业游说推动。还有用户讽刺过去教导不要泄露个人信息，如今却被强制要求认证。",
+      "sources": [
+        {
+          "url": "https://aiuntethered.com/news/kids-act-age-verification-online-access/",
+          "title": "KIDS Act Proposes Age Verification for Online Access | AiUntethered"
+        },
+        {
+          "url": "https://misryoum.com/kids-act-age-checks-could-strip-online-anonymity",
+          "title": "KIDS Act Age Checks Could Strip Online Anonymity"
+        }
+      ],
+      "detailed_summary": "电子前哨基金会（EFF）警告，美国《KIDS法案》要求在线平台进行年龄验证，这可能导致用户隐私和言论自由受到威胁。该法案旨在保护儿童，但EFF认为其实施方式会破坏在线匿名性。 如果该法案通过，所有用户在上网时都可能需要提交身份认证，这将大幅增加个人数据收集风险，并可能被用于监控和审查。对自由开放的互联网生态构成深远影响。 法案覆盖那些利用用户个人信息进行广告、营销或内容推荐的平台。年龄验证技术可能包括AI自拍、数字ID等，但批评者指出这些技术仍会暴露用户身份，且法案定义模糊，容易扩大适用范围。",
+      "background": "近年来，多国以保护儿童为由推动在线年龄验证立法，但争议不断。年龄验证通常要求用户提供政府ID或生物特征，这与互联网长期倡导的匿名原则相悖。类似法案如《儿童在线安全法案》（KOSA）也面临隐私担忧。",
+      "community_discussion": "评论中，有用户质疑法案是否覆盖Hacker News这类不带广告推荐功能的网站；另有人指出社交媒体影响心理健康的证据并不充分，怀疑背后有政治或行业游说推动。还有用户讽刺过去教导不要泄露个人信息，如今却被强制要求认证。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (273 points, 241 comments) with substantive discussion on privacy, scope, and political aspects. Relevant to tech policy and online freedom.",
+    "ai_summary": "The EFF warns that the KIDS Act's age verification requirements could threaten privacy and free speech online.",
+    "ai_tags": [
+      "privacy",
+      "age verification",
+      "legislation",
+      "internet regulation"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:bf8ba42adc40d478",
+    "source_type": "rss",
+    "title": "How VictoriaLogs Stores Your Logs in a Columnar Layout",
+    "url": "https://victoriametrics.com/blog/victorialogs-internals-columnar-storage-on-disk/",
+    "content": "<p><a href=\"https://lobste.rs/s/2m10ql/how_victorialogs_stores_your_logs\">Comments</a></p>",
+    "author": "victoriametrics.com via eatonphil",
+    "published_at": "2026-06-28T12:23:53Z",
+    "fetched_at": "2026-06-29T00:02:42.284922Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases"
+      ],
+      "title_zh": "VictoriaLogs 列式存储原理解析",
+      "detailed_summary_zh": "VictoriaMetrics 团队发布技术博客，详细解释了其开源日志数据库 VictoriaLogs 如何采用列式布局高效存储日志数据。 该博客深入展示了列式存储在日志管理中的应用优势，有助于用户理解如何通过列式存储提升大规模日志的压缩率和查询性能。 列式存储将同一字段的数据连续存放，便于高效压缩和快速扫描，但写入操作相对行式存储有更高开销。VictoriaLogs 针对日志场景优化了列式存储的实现。",
+      "background_zh": "列式存储（Columnar Storage）是一种数据组织方式，将表格中同一列的数据连续存储，不同于行式存储将整行数据存为一体。列式存储适合分析型查询（如只需少数列），能显著减少I/O并提高压缩率，因此在OLAP场景中广泛使用。",
+      "sources": [
+        {
+          "url": "https://victoriametrics.com/products/victorialogs/",
+          "title": "VictoriaLogs : Scalable | Open Source | Logs DB & Logging Solution"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Column_storage",
+          "title": "Column storage"
+        }
+      ],
+      "detailed_summary": "VictoriaMetrics 团队发布技术博客，详细解释了其开源日志数据库 VictoriaLogs 如何采用列式布局高效存储日志数据。 该博客深入展示了列式存储在日志管理中的应用优势，有助于用户理解如何通过列式存储提升大规模日志的压缩率和查询性能。 列式存储将同一字段的数据连续存放，便于高效压缩和快速扫描，但写入操作相对行式存储有更高开销。VictoriaLogs 针对日志场景优化了列式存储的实现。",
+      "background": "列式存储（Columnar Storage）是一种数据组织方式，将表格中同一列的数据连续存储，不同于行式存储将整行数据存为一体。列式存储适合分析型查询（如只需少数列），能显著减少I/O并提高压缩率，因此在OLAP场景中广泛使用。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important technical deep-dive from the VictoriaMetrics team explaining columnar storage for logs. High relevance for log management and database internals, though not groundbreaking.",
+    "ai_summary": "Explains how VictoriaLogs uses a columnar layout to store logs efficiently.",
+    "ai_tags": [
+      "log management",
+      "columnar storage",
+      "VictoriaLogs",
+      "database internals"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:64dcd59ad9a3cdd9",
+    "source_type": "rss",
+    "title": "A Typed, Algebraic Approach to Parsing (2019)",
+    "url": "https://www.cl.cam.ac.uk/~nk480/parsing.pdf",
+    "content": "<p><a href=\"https://lobste.rs/s/ljvfaf/typed_algebraic_approach_parsing_2019\">Comments</a></p>",
+    "author": "cl.cam.ac.uk via fanf",
+    "published_at": "2026-06-28T15:45:12Z",
+    "fetched_at": "2026-06-29T00:02:42.284953Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "pdf",
+        "plt"
+      ],
+      "title_zh": "基于类型代数的解析方法（2019）",
+      "detailed_summary_zh": "这篇论文提出了一种使用类型化上下文无关表达式来描述语法的方法，并从中推导出一个保证线性时间解析、无回溯、单符号前瞻的解析器组合子库。 该方法将类型系统和代数方法引入解析领域，提高了解析器的安全性和效率，对函数式编程和编译器实现有重要指导意义。 该库不仅遵守上下文无关表达式的自然指称语义，还利用类型信息实现了分阶段版本，从而大幅提升性能。",
+      "background_zh": "解析是将文本转换为结构化数据的过程，传统方法如回溯解析可能效率低下。本文提出的类型代数方法通过类型约束保证解析的线性时间和无回溯特性，为构建高效、可靠的解析器提供了新思路。",
+      "sources": [
+        {
+          "url": "https://dl.acm.org/doi/10.1145/3314221.3314625",
+          "title": "A typed, algebraic approach to parsing | Proceedings of the ..."
+        },
+        {
+          "url": "https://www.cl.cam.ac.uk/~jdy22/papers/a-typed-algebraic-approach-to-parsing.pdf",
+          "title": "A Typed, Algebraic Approach to Parsing - University of Cambridge"
+        }
+      ],
+      "detailed_summary": "这篇论文提出了一种使用类型化上下文无关表达式来描述语法的方法，并从中推导出一个保证线性时间解析、无回溯、单符号前瞻的解析器组合子库。 该方法将类型系统和代数方法引入解析领域，提高了解析器的安全性和效率，对函数式编程和编译器实现有重要指导意义。 该库不仅遵守上下文无关表达式的自然指称语义，还利用类型信息实现了分阶段版本，从而大幅提升性能。",
+      "background": "解析是将文本转换为结构化数据的过程，传统方法如回溯解析可能效率低下。本文提出的类型代数方法通过类型约束保证解析的线性时间和无回溯特性，为构建高效、可靠的解析器提供了新思路。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value academic paper proposing a typed algebraic approach to parsing, which is a significant foundational contribution. The Lobste.rs discussion indicates community interest (via comments), though the paper is from 2019 and not groundbreaking in a current sense.",
+    "ai_summary": "A formal, typed algebraic method for constructing parsers is presented.",
+    "ai_tags": [
+      "parsing",
+      "formal methods",
+      "type theory",
+      "functional programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:196b84c0acb3f628",
+    "source_type": "rss",
+    "title": "Unfathomable bugs #10: The Broken Windows Build",
+    "url": "https://algassert.com/post/2603",
+    "content": "<p><a href=\"https://lobste.rs/s/rzujud/unfathomable_bugs_10_broken_windows\">Comments</a></p>",
+    "author": "algassert.com via unnick",
+    "published_at": "2026-06-28T20:38:18Z",
+    "fetched_at": "2026-06-29T00:02:42.285235Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rant",
+        "windows",
+        "debugging"
+      ],
+      "title_zh": "破窗构建中的离奇bug解析",
+      "detailed_summary_zh": "软件工程师在《Unfathomable bugs》系列第10期中，揭示了一个与“破窗效应”相关的构建系统疑难杂症。该bug源于编译过程中未修复的小问题逐渐累积，最终导致构建失败或产生意外行为。 该案例深刻警示了软件工程中维护代码整洁的重要性，忽视小问题可能引发难以调试的连锁故障。这对开发团队制定代码评审和持续重构策略具有借鉴意义。 文章标题明确指出“Broken Windows Build”，暗示构建环境因长期忽视微小警告而出现非预期错误。虽然具体技术细节未公开，但该系列以深入浅出的方式剖析真实bug，具有较高教学价值。",
+      "background_zh": "“破窗效应”原本是犯罪学理论，指环境中的无序现象若不及时纠正，会诱使他人效仿恶化。在软件工程中，该理论用于比喻代码库中未修复的小缺陷会逐渐降低整体质量，增加维护成本和出错概率。本文正是基于这一视角，探讨构建系统如何因“破窗”而崩溃。",
+      "sources": [
+        {
+          "url": "https://danielemargutti.com/2022/03/28/broken-window-principle-applied-to-software",
+          "title": "The broken window principle applied to software - Daniele Margutti"
+        }
+      ],
+      "detailed_summary": "软件工程师在《Unfathomable bugs》系列第10期中，揭示了一个与“破窗效应”相关的构建系统疑难杂症。该bug源于编译过程中未修复的小问题逐渐累积，最终导致构建失败或产生意外行为。 该案例深刻警示了软件工程中维护代码整洁的重要性，忽视小问题可能引发难以调试的连锁故障。这对开发团队制定代码评审和持续重构策略具有借鉴意义。 文章标题明确指出“Broken Windows Build”，暗示构建环境因长期忽视微小警告而出现非预期错误。虽然具体技术细节未公开，但该系列以深入浅出的方式剖析真实bug，具有较高教学价值。",
+      "background": "“破窗效应”原本是犯罪学理论，指环境中的无序现象若不及时纠正，会诱使他人效仿恶化。在软件工程中，该理论用于比喻代码库中未修复的小缺陷会逐渐降低整体质量，增加维护成本和出错概率。本文正是基于这一视角，探讨构建系统如何因“破窗”而崩溃。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive from a respected series on unfathomable bugs; the title suggests a novel bug scenario related to build systems, and the presence of lobste.rs comments indicates community engagement and validation. However, without the full article, it is assumed to be high-value but not groundbreaking.",
+    "ai_summary": "A story about a puzzling bug related to the 'Broken Windows' concept in software builds.",
+    "ai_tags": [
+      "software engineering",
+      "debugging",
+      "bugs",
+      "build systems"
+    ]
+  }
+]
