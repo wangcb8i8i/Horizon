@@ -1,570 +1,1038 @@
 [
   {
-    "id": "hackernews:story:48709670",
-    "source_type": "hackernews",
-    "title": "GLM 5.2 beats Claude in our benchmarks",
-    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-    "content": "\n--- Top Comments ---\n\n[pimeys]: I have taken another look on these open models after the fiasco of Fable and GPT 5.6 this weekend and... GLM-5.2 truly is a good workhorse model for daily programming. I consider myself a heavy user of LLMs and a seasoned developer. A typical session for me with GPT is usually over a hundred dollars... This weekend I programmed a matrix bot with encryption and a Rust agent with some tools. Because I need one and OpenClaw just felt... not what I wanted. Two days later and 20 dollars poorer I h...\n\n[SwellJoe]: I added GLM 5.2 to my security bug hunting benchmark when it came out, and found it to be a good performer, but not the best open model. The benchmark tests whether models can find bugs Mythos found. The best open models in the initial benchmark were DeepSeek V4 Pro or MiMo 2.5 Pro. But it turned out MiMo got lucky, it&#x27;s performed worse on almost every test I&#x27;ve done since, while DeepSeek has consistently been among the best performers and its extreme caching performance makes it ch...\n\n[jackdawed]: I use GLM 5.2 via Neuralwatt and it&#x27;s gotten so cheap I wouldn&#x27;t mind cancelling my personal Claude subscription if work gave me one. I&#x27;ve spent 374M tokens this month and it only cost me $18 on energy-based pricing.\n\n[bArray]: Apparently GLM 5.2 is 753B parameters [1], what kind of hardware are people using to run this locally? [1]  https:&#x2F;&#x2F;huggingface.co&#x2F;zai-org&#x2F;GLM-5.2\n\n[himata4113]: These numbers are seem pretty low compared to what I was able to achieve specifically around windows kernel, win32k&lt;-&gt;win32u to be exact. It honestly wouldn&#x27;t surprise me anymore if china started surpassing models that US makes public, at least in specific categories such as cyber. GLM 5.2 is already capable enough to assist in self-training which is similar to what we saw happen with frontier models and they appear to be getting there at a significantly lower cost than openai&#x2F...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/tinc3e/we_have_mythos_at_home_glm_5_2_beats_claude\">Comments</a></p>",
-    "author": "jms703",
-    "published_at": "2026-06-28T17:50:47Z",
-    "fetched_at": "2026-06-29T00:02:42.191168Z",
+    "id": "rss:www.nature.com_nature.rss:2ca7d84f3a921ae8",
+    "source_type": "rss",
+    "title": "Family of magnetic field-boosted superconductors in rhombohedral graphene",
+    "url": "https://www.nature.com/articles/s41586-026-10815-x",
+    "content": "<p>Nature, Published online: 29 June 2026; <a href=\"https://www.nature.com/articles/s41586-026-10815-x\">doi:10.1038/s41586-026-10815-x</a></p>Family of magnetic field-boosted superconductors in rhombohedral graphene",
+    "author": "Long Ju",
+    "published_at": "2026-06-29T00:00:00Z",
+    "fetched_at": "2026-06-29T23:56:29.772907Z",
     "metadata": {
-      "score": 340,
-      "descendants": 158,
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "菱形石墨烯中发现磁场增强的超导体家族",
+      "detailed_summary_zh": "研究人员在《自然》杂志上发表论文，宣布在菱形石墨烯中发现了一类全新的超导体，其超导性在磁场作用下反而得到增强。 这一发现颠覆了传统超导理论中磁场会破坏超导性的基本认知，为探索新型超导机制和潜在应用提供了全新方向，可能对凝聚态物理学产生深远影响。 该研究报道的超导体在磁场中表现出增强的超导态，这与常规超导体的上临界场限制截然相反；具体机制可能与菱形石墨烯的ABC堆叠产生的平带和高态密度有关。",
+      "background_zh": "菱形石墨烯是一种具有ABC堆叠顺序的多层石墨烯，其电子结构会形成平带表面态，导致高态密度，有利于出现强关联现象。传统上，磁场通过顺磁效应和轨道对破效应破坏超导性，但某些非常规超导体（如重费米子体系）中曾观察到磁场增强超导的现象。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rhombohedral_graphite",
+          "title": "Rhombohedral graphite"
+        },
+        {
+          "url": "https://www.mpsd.mpg.de/501815/2021-01-kerelsky-graphene",
+          "title": "Rhombohedral graphene | Max Planck Institute for the Structure and..."
+        },
+        {
+          "url": "https://www.emergentmind.com/topics/rhombohedral-multilayer-graphene",
+          "title": "Rhombohedral Multilayer Graphene"
+        }
+      ],
+      "detailed_summary": "研究人员在《自然》杂志上发表论文，宣布在菱形石墨烯中发现了一类全新的超导体，其超导性在磁场作用下反而得到增强。 这一发现颠覆了传统超导理论中磁场会破坏超导性的基本认知，为探索新型超导机制和潜在应用提供了全新方向，可能对凝聚态物理学产生深远影响。 该研究报道的超导体在磁场中表现出增强的超导态，这与常规超导体的上临界场限制截然相反；具体机制可能与菱形石墨烯的ABC堆叠产生的平带和高态密度有关。",
+      "background": "菱形石墨烯是一种具有ABC堆叠顺序的多层石墨烯，其电子结构会形成平带表面态，导致高态密度，有利于出现强关联现象。传统上，磁场通过顺磁效应和轨道对破效应破坏超导性，但某些非常规超导体（如重费米子体系）中曾观察到磁场增强超导的现象。",
+      "community_discussion": ""
+    },
+    "ai_score": 10.0,
+    "ai_reason": "Groundbreaking research published in Nature on a new family of superconductors in rhombohedral graphene that are enhanced by magnetic fields, representing a major paradigm shift in condensed matter physics.",
+    "ai_summary": "Researchers discover a family of superconductors in rhombohedral graphene that are boosted by magnetic fields, published in Nature.",
+    "ai_tags": [
+      "graphene",
+      "superconductivity",
+      "magnetic field",
+      "condensed matter physics",
+      "rhombohedral graphene"
+    ]
+  },
+  {
+    "id": "hackernews:story:48720924",
+    "source_type": "hackernews",
+    "title": "US Supreme Court rules geofence warrants require constitutional protections",
+    "url": "https://www.theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision",
+    "content": "\n--- Top Comments ---\n\n[js2]: From  https:&#x2F;&#x2F;www.scotusblog.com&#x2F;2026&#x2F;06&#x2F;court-rules-that-law-enfo...  Additional details: &gt; The information that Google provided to law enforcement officials came in three tranches. First, Google gave law enforcement officials a list of the 19 accounts (but without the names attached to those accounts) linked to devices that were within 150 meters of the bank during the 30 minutes before and after the robbery. Second, based on that list of 19 accounts, the governm...\n\n[alexpotato]: I always like to mention how Paula Broadwell was identified as David Petraeus&#x27; mistress as it&#x27;s a good example of how even without a phone you can still be identified. - FBI had three distinct IPs linked to emails - They geolocated those back to 3 different hotels - They pulled the guest list from each of the hotels - Did a &quot;join&quot; on them and the only guest at all 3 was Broadwell  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Paula_Broadwell#Petraeus_affai...\n\n[arlattimore]: If it is reasonable to have your privacy in a public place, does this mean that products like Flock which indiscriminately violate your privacy would now require a warrant for law enforcement to access (currently they do not)?\n\n[gausswho]: PDF of the full decision:  https:&#x2F;&#x2F;www.supremecourt.gov&#x2F;opinions&#x2F;25pdf&#x2F;25-112_0am4.pdf\n\n[Hnrobert42]: Of course Alito and Thomas would have allowed the government unlimited power. I am bit surprised to see Barret in the minority of this one.",
+    "author": "cdrnsf",
+    "published_at": "2026-06-29T15:54:24Z",
+    "fetched_at": "2026-06-29T23:56:29.202234Z",
+    "metadata": {
+      "score": 393,
+      "descendants": 182,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48709670",
+      "discussion_url": "https://news.ycombinator.com/item?id=48720924",
+      "comment_count": 5,
+      "title_zh": "美最高法院裁定地理围栏搜查令需宪法保护",
+      "detailed_summary_zh": "美国最高法院裁定，执法机构获取地理围栏（geofence）数据时必须遵守第四修正案的宪法保护要求，不能仅凭普通搜查令获取大量用户的匿名位置数据。 这一裁决极大地限制了执法部门通过技术公司批量获取公民位置信息的能力，对数字隐私权具有里程碑意义，也影响到类似Flock车牌识别系统等技术的使用。 法院认为，地理围栏搜查令本质上是“反向搜查令”，它迫使谷歌等公司提供特定区域和时间内的所有设备信息，这构成对合理隐私期待的侵犯。",
+      "background_zh": "地理围栏搜查令（geofence warrant）是一种允许警方要求科技公司提供某一地理区域和时间范围内所有活跃设备信息的搜查令，常用于身份不明的犯罪调查。美国第四修正案保护公民免受不合理搜查扣押，法院判定此类大规模数据收集需要基于相当理由并受司法审查。",
+      "community_discussion_zh": "评论区普遍欢迎这一判决，认为它遏制了政府权力扩张；但也有人指出，即使没有手机，通过酒店入住记录等传统手段仍可追踪嫌疑人。部分用户质疑Alito、Thomas和Barret的反对意见，并讨论了Flock摄像头等类似技术是否也应受此约束。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Geofence_warrant",
+          "title": "Geofence warrant - Wikipedia"
+        },
+        {
+          "url": "https://www.congress.gov/crs-product/LSB11274",
+          "title": "Geofence Warrants and the Fourth Amendment | Congress.gov | Library of Congress"
+        }
+      ],
+      "detailed_summary": "美国最高法院裁定，执法机构获取地理围栏（geofence）数据时必须遵守第四修正案的宪法保护要求，不能仅凭普通搜查令获取大量用户的匿名位置数据。 这一裁决极大地限制了执法部门通过技术公司批量获取公民位置信息的能力，对数字隐私权具有里程碑意义，也影响到类似Flock车牌识别系统等技术的使用。 法院认为，地理围栏搜查令本质上是“反向搜查令”，它迫使谷歌等公司提供特定区域和时间内的所有设备信息，这构成对合理隐私期待的侵犯。",
+      "background": "地理围栏搜查令（geofence warrant）是一种允许警方要求科技公司提供某一地理区域和时间范围内所有活跃设备信息的搜查令，常用于身份不明的犯罪调查。美国第四修正案保护公民免受不合理搜查扣押，法院判定此类大规模数据收集需要基于相当理由并受司法审查。",
+      "community_discussion": "评论区普遍欢迎这一判决，认为它遏制了政府权力扩张；但也有人指出，即使没有手机，通过酒店入住记录等传统手段仍可追踪嫌疑人。部分用户质疑Alito、Thomas和Barret的反对意见，并讨论了Flock摄像头等类似技术是否也应受此约束。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Landmark Supreme Court ruling on Fourth Amendment protections for geofence warrants, with high community engagement (393 upvotes, 182 comments) including detailed discussion, links to the full decision, and historical context.",
+    "ai_summary": "The US Supreme Court ruled that geofence warrants require constitutional protections, limiting law enforcement's ability to access location data from tech companies.",
+    "ai_tags": [
+      "US Supreme Court",
+      "geofence warrants",
+      "Fourth Amendment",
+      "digital privacy",
+      "law enforcement"
+    ]
+  },
+  {
+    "id": "hackernews:story:48720190",
+    "source_type": "hackernews",
+    "title": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter",
+    "url": "https://humphri.es/blog/WATaBoy/",
+    "content": "\n--- Top Comments ---\n\n[jcmfernandes]: Very cool! I did something similar using Dolphin and LLVM, 16 years ago during my masters, for a course on virtual machines. I compiled the interpreter to LLVM bitcode and then used it that to build basic blocks. It was super slow, but it worked, and I had lots of fun working on it.\n\n[bawolff]: &gt; Dolphin isn’t on iOS, because you can’t do JIT compilation on iOS....Well, Apple has one exception to its JIT restrictions: web browsers. JavaScriptCore, WebKit’s JS engine, uses JIT compilation for its higher-performance tiers. So, if a JS function is called enough times, eventually it’ll be optimised and compiled into native machine code. The same is true for WebAssembly. I was wondering about the why of the headline, and this is a really interesting answer. Such a beautiful way to get...\n\n[mikepurvis]: I&#x27;ve always really enjoyed Andrew Kelley&#x27;s article about trying to statically recompile NES code from 2013 [1]. Basically he makes a ton of progress but gets hung up not just on the realities of the handwritten assembler of the era just not being all that great at mapping to higher level LLVM IR. In the conclusion he specifically calls out a JIT-type methodology as probably being the way to go, where you live-recompile the hot paths when you have the runtime data required to actuall...\n\n[dag100]: This is an incredible project for an undergraduate. Very impressive.\nInteresting to note that Firefox is 25% slower than Chrome&#x2F;Safari, I wonder why.\n\n[ahartmetz]: Of course it beats a native interpreter. WASM overhead is about 20%, interpreter overhead is about 1000%. What&#x27;s cool here is to have a GameBoy JIT runtime at all.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/krqeoc/wataboy_jit_ing_game_boy_instructions\">Comments</a></p>",
+    "author": "energeticbark",
+    "published_at": "2026-06-29T15:02:00Z",
+    "fetched_at": "2026-06-29T23:56:29.202255Z",
+    "metadata": {
+      "score": 169,
+      "descendants": 27,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48720190",
       "comment_count": 5,
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "vibecoding"
+        "wasm"
       ],
       "merged_sources": [
         "hackernews",
         "rss"
       ],
-      "title_zh": "GLM 5.2在网络安全基准测试中超越Claude",
-      "detailed_summary_zh": "Semgrep 发布博客称，其网络安全基准测试显示 GLM 5.2（753B参数开源模型）表现优于 Claude。该测试专门评估模型在代码安全审查和漏洞发现方面的能力。 这是开源模型首次在特定专业领域（网络安全）超越闭源前沿模型，可能大幅降低企业网络安全 AI 应用的成本。GLM 5.2 的高性价比和开源特性将推动更多团队在安全工具链中采用类似模型。 GLM 5.2 拥有 7530 亿参数，支持 1M token 上下文窗口，由 Z.AI 开发并通过 Hugging Face 发布。Semgrep 的基准测试专注于静态分析中的真实漏洞模式匹配，而非通用能力评估。",
-      "background_zh": "Semgrep 是一个流行的开源静态代码分析工具，广泛应用于安全漏洞扫描。GLM 系列是中国公司智谱 AI 研发的大语言模型，5.2 版本是其最新旗舰。网络安全基准测试专门针对代码缺陷的发现能力，与常规综合测试不同。",
-      "community_discussion_zh": "用户普遍认可 GLM 5.2 在编程和网络安全任务中的性价比，如有人表示“用它编程一天仅花费 20 美元”。但也有用户指出，在部分测试中 DeepSeek V4 Pro 表现更稳定，且本地部署 753B 模型需要极高硬件配置。",
+      "title_zh": "WATaBoy：JIT编译Game Boy指令到WASM性能超原生解释器",
+      "detailed_summary_zh": "WATaBoy项目实现了一种JIT编译器，将Game Boy的Z80指令实时编译为WebAssembly（WASM），其仿真速度超过了传统的原生解释器。 这项工作展示了在浏览器中通过WebAssembly的JIT编译可以实现极高的仿真性能，甚至超越原生解释器，为在受限平台（如禁止JIT的iOS）上运行高性能模拟器提供了可行的技术路线。 项目利用浏览器引擎（如WebKit的JavaScriptCore）内置的JIT能力，将Game Boy指令动态编译为WASM；但测试发现Firefox的性能比Chrome和Safari慢约25%。",
+      "background_zh": "Game Boy仿真通常通过解释器逐条执行Z80指令，性能开销大；JIT编译则在运行时将热点代码编译为机器码以加速执行。WebAssembly是一种可移植的二进制指令格式，专为浏览器中的高性能而设计。由于iOS禁止应用自行JIT编译，但浏览器中的WebAssembly引擎是例外，WATaBoy巧妙利用此例外实现了JIT仿真。",
+      "community_discussion_zh": "社区普遍称赞该项目作为本科生作品的创新性，认为其巧妙绕过iOS的JIT限制非常精彩；同时有用户提及早期类似工作（如使用LLVM编译Dolphin模拟器），并讨论不同浏览器间的性能差异。",
       "sources": [
         {
-          "url": "https://huggingface.co/zai-org/GLM-5.2",
-          "title": "zai-org/GLM-5.2 · Hugging Face"
+          "url": "https://en.wikipedia.org/wiki/JIT_compilation",
+          "title": "JIT compilation"
         },
         {
-          "url": "https://docs.z.ai/guides/llm/glm-5.2",
-          "title": "GLM-5.2 - Overview - Z.AI DEVELOPER DOCUMENT"
+          "url": "https://en.wikipedia.org/wiki/WebAssembly",
+          "title": "WebAssembly"
         }
       ],
-      "detailed_summary": "Semgrep 发布博客称，其网络安全基准测试显示 GLM 5.2（753B参数开源模型）表现优于 Claude。该测试专门评估模型在代码安全审查和漏洞发现方面的能力。 这是开源模型首次在特定专业领域（网络安全）超越闭源前沿模型，可能大幅降低企业网络安全 AI 应用的成本。GLM 5.2 的高性价比和开源特性将推动更多团队在安全工具链中采用类似模型。 GLM 5.2 拥有 7530 亿参数，支持 1M token 上下文窗口，由 Z.AI 开发并通过 Hugging Face 发布。Semgrep 的基准测试专注于静态分析中的真实漏洞模式匹配，而非通用能力评估。",
-      "background": "Semgrep 是一个流行的开源静态代码分析工具，广泛应用于安全漏洞扫描。GLM 系列是中国公司智谱 AI 研发的大语言模型，5.2 版本是其最新旗舰。网络安全基准测试专门针对代码缺陷的发现能力，与常规综合测试不同。",
-      "community_discussion": "用户普遍认可 GLM 5.2 在编程和网络安全任务中的性价比，如有人表示“用它编程一天仅花费 20 美元”。但也有用户指出，在部分测试中 DeepSeek V4 Pro 表现更稳定，且本地部署 753B 模型需要极高硬件配置。"
+      "detailed_summary": "WATaBoy项目实现了一种JIT编译器，将Game Boy的Z80指令实时编译为WebAssembly（WASM），其仿真速度超过了传统的原生解释器。 这项工作展示了在浏览器中通过WebAssembly的JIT编译可以实现极高的仿真性能，甚至超越原生解释器，为在受限平台（如禁止JIT的iOS）上运行高性能模拟器提供了可行的技术路线。 项目利用浏览器引擎（如WebKit的JavaScriptCore）内置的JIT能力，将Game Boy指令动态编译为WASM；但测试发现Firefox的性能比Chrome和Safari慢约25%。",
+      "background": "Game Boy仿真通常通过解释器逐条执行Z80指令，性能开销大；JIT编译则在运行时将热点代码编译为机器码以加速执行。WebAssembly是一种可移植的二进制指令格式，专为浏览器中的高性能而设计。由于iOS禁止应用自行JIT编译，但浏览器中的WebAssembly引擎是例外，WATaBoy巧妙利用此例外实现了JIT仿真。",
+      "community_discussion": "社区普遍称赞该项目作为本科生作品的创新性，认为其巧妙绕过iOS的JIT限制非常精彩；同时有用户提及早期类似工作（如使用LLVM编译Dolphin模拟器），并讨论不同浏览器间的性能差异。"
     },
-    "ai_score": 8.0,
-    "ai_reason": "High community engagement (340 points, 158 comments) and multiple user reports confirm GLM 5.2's strong performance and cost-effectiveness in cybersecurity benchmarks, though domain-specific and not a general breakthrough.",
-    "ai_summary": "GLM 5.2, a 753B parameter open model, beats Claude in cybersecurity benchmarks as per Semgrep's evaluation.",
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking: Demonstrates that JIT-compiling Game Boy emulation to WebAssembly can outperform a native interpreter, with strong community engagement (169 points, 27 comments) and insightful technical discussion referencing prior work and platform constraints.",
+    "ai_summary": "A project that uses JIT compilation to translate Game Boy instructions to WebAssembly, achieving performance faster than a native interpreter.",
     "ai_tags": [
-      "LLM",
-      "benchmarking",
-      "open-source",
-      "GLM",
-      "cybersecurity"
+      "emulation",
+      "webassembly",
+      "JIT compilation",
+      "game boy",
+      "performance"
     ]
   },
   {
-    "id": "hackernews:story:48708941",
-    "source_type": "hackernews",
-    "title": "I used Claude Code to get a second opinion on my MRI",
-    "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-    "content": "\n--- Top Comments ---\n\n[sxg]: I&#x27;m a radiologist but can&#x27;t really weigh in without seeing the full 3D MRI dataset. Regarding this point: &gt; They performed shockwave therapy on my shoulder even though a recent clinical practice guideline says clinicians should not use or recommend shockwave therapy for rotator-cuff tendinopathy without calcification; I was told during ultrasound that there was no calcification. Ultrasound isn&#x27;t a great way to assess for calcification. It&#x27;ll find large calcification but...\n\n[AceJohnny2]: &gt;  There&#x27;s something incredibly peaceful about being in the hands of an expert you trust. [...] AI can absolutely shatter that feeling in an uncomfortable way [...] but I don&#x27;t know if I can fully trust AI either.  This really is key. We  know  we can&#x27;t trust the AI, but at the same time we&#x27;re also more comfortable asking the AI for clarifications or confronting it. Not having a time-bound appointment or paying by the hour helps a lot. But even then, more information do...\n\n[kgeist]: A few years ago (before the AI craze), I was misdiagnosed with tuberculosis. I had a chronic cough, and an outsourced radiologist at a clinic found signs of tuberculosis. The findings were sent to the city&#x27;s tuberculosis hospital, as required by the country&#x27;s law. The doctors there took the radiologist&#x27;s conclusion at face value and required me to stay at their hospital for at least 8 months under a strict, prison-like regime. There was no option to say no, because I was consid...\n\n[piterrro]: It funny to see the community here expects the human body to be treated like a deterministic function: for input X expect output Y - and that transfers to diagnosis - people expect to receive the same diagnosis from different specialists for the same issue. Given human body complexity, the diagnosis is a compound output of the experience, knowledge gained throughout the career and diagnosis methods&#x2F;equipment, the title (like Dr) is a certification imposed by the state so its &quot;safe&q...\n\n[throwforfeds]: I&#x27;ve seen a lot of friends and family members almost immediately get offered surgery for shoulder pain. It&#x27;s just often the default for people that do surgeries for a living. I also had a pretty painful shoulder issue at one point, where the pain just wasn&#x27;t subsiding for months. I tried massages and acupuncture as I didn&#x27;t want to do surgery, but it wasn&#x27;t helping at all. The thing that fixed it for me was just really focusing on doing pull-ups. I couldn&#x27;t do th...",
-    "author": "engmarketer",
-    "published_at": "2026-06-28T16:35:19Z",
-    "fetched_at": "2026-06-29T00:02:42.191268Z",
-    "metadata": {
-      "score": 308,
-      "descendants": 418,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48708941",
-      "comment_count": 5,
-      "title_zh": "用Claude Code分析MRI：AI医疗新尝试引发信任讨论",
-      "detailed_summary_zh": "一位用户使用Claude Code（基于Anthropic的Claude模型）分析自己的MRI影像报告，并分享了这一体验。 这展示了大型语言模型在个人医疗分析中的创新应用，但同时也引发了关于AI诊断可靠性、医患信任以及过度依赖技术的广泛讨论。 Claude Code本是用于代码辅助开发的工具，但用户将其用于分析MRI文本报告；一位放射科医生评论指出，仅凭报告无法全面评估，且超声检测钙化存在局限。",
-      "background_zh": "Claude是Anthropic公司开发的一系列大型语言模型，采用“宪法AI”技术训练以提升伦理合规性。Claude Code是Anthropic推出的AI编程辅助工具。近年来，AI在医疗辅助诊断中的应用日益增多，但准确性、可解释性和信任问题仍是核心挑战。",
-      "community_discussion_zh": "社区讨论热烈，放射科医生指出无法仅凭2D报告判断；用户们表达了对AI的复杂态度：既享受AI无限次追问的便利，又担忧其不可靠。有用户分享自身经历，指出医疗误诊的现实风险，认为AI可能加剧或缓解这一问题。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Claude_Code",
-          "title": "Claude Code"
-        }
-      ],
-      "detailed_summary": "一位用户使用Claude Code（基于Anthropic的Claude模型）分析自己的MRI影像报告，并分享了这一体验。 这展示了大型语言模型在个人医疗分析中的创新应用，但同时也引发了关于AI诊断可靠性、医患信任以及过度依赖技术的广泛讨论。 Claude Code本是用于代码辅助开发的工具，但用户将其用于分析MRI文本报告；一位放射科医生评论指出，仅凭报告无法全面评估，且超声检测钙化存在局限。",
-      "background": "Claude是Anthropic公司开发的一系列大型语言模型，采用“宪法AI”技术训练以提升伦理合规性。Claude Code是Anthropic推出的AI编程辅助工具。近年来，AI在医疗辅助诊断中的应用日益增多，但准确性、可解释性和信任问题仍是核心挑战。",
-      "community_discussion": "社区讨论热烈，放射科医生指出无法仅凭2D报告判断；用户们表达了对AI的复杂态度：既享受AI无限次追问的便利，又担忧其不可靠。有用户分享自身经历，指出医疗误诊的现实风险，认为AI可能加剧或缓解这一问题。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value content demonstrating a novel use of AI for personal medical analysis, with strong community engagement (308 points, 418 comments). The discussion includes insights from a radiologist and reflections on trust, significantly enriching the content's importance.",
-    "ai_summary": "A user employs Claude Code to analyze their MRI, sparking a rich community discussion on AI versus expert trust in healthcare.",
-    "ai_tags": [
-      "AI in healthcare",
-      "medical imaging",
-      "trust",
-      "Claude Code",
-      "LLMs"
-    ]
-  },
-  {
-    "id": "hackernews:story:48708991",
-    "source_type": "hackernews",
-    "title": "Professor denounces mass AI fraud on an exam at Brown",
-    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-    "content": "\n--- Top Comments ---\n\n[recursivedoubts]: In the AI era, tests are going to have to be in person and hand written. I have written an article on how I have adjusted my classes to the situation:  https:&#x2F;&#x2F;htmx.org&#x2F;essays&#x2F;universities-and-ai&#x2F;  Ironically, I think the AI era may make university degrees a better signal of the intellectual abilities of students due to the presence of pre-computer infrastructure like large lecture halls, industrial-scale copiers, etc.\n\n[bkallus]: I have seen it firsthand in the CS department here at Dartmouth. It is bad. We&#x27;re currently designing a new intro systems curriculum, and we&#x27;re thinking of it as an adversarial problem. That is, we&#x27;re designing the course to ensure that a student optimizing for the best grade per unit work still meets our learning objectives. That means, as everyone else is saying, paper exams, but also 1-on-1 interviews to check that students understand each assignment they turn in. These inte...\n\n[yiyingzhang]: As a university professor, I honestly don&#x27;t understand the point of grading. Who will look at and care about grades? Likely company HR. But then why should we (professors) do the screening for companies for free? Also, grades have long been inflated to a point we might as well just give everyone an A and let companies figure out how to select people.\n\n[cherryteastain]: His research is in Game Theory. He should have realized that, in a situation where all competitors are (possibly) using LLMs, the game theoretic optimal choice is to use LLMs.\n\n[userbinator]: take-home, closed-book type  What an oxymoron. I agree with the others here that AI isn&#x27;t the problem.",
-    "author": "geox",
-    "published_at": "2026-06-28T16:41:12Z",
-    "fetched_at": "2026-06-29T00:02:42.191292Z",
-    "metadata": {
-      "score": 169,
-      "descendants": 228,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48708991",
-      "comment_count": 5,
-      "title_zh": "布朗大学教授谴责大规模AI作弊事件",
-      "detailed_summary_zh": "布朗大学一位教授公开谴责在一次考试中发生的大规模AI作弊行为，学生普遍使用大型语言模型完成考核。 此事件凸显了生成式AI对传统教育评估体系的严重冲击，可能促使高校重新设计课程和考试形式，以维护学术诚信。 该教授的研究领域是博弈论，而社区评论中有观点指出，当其他学生都使用AI时，个体理性选择就是也使用AI。",
-      "background_zh": "随着ChatGPT等大型语言模型的普及，学生利用AI工具完成作业和考试的现象日益严重，传统开卷或在线考试难以防范AI作弊。高校面临调整教学评估方式的压力，例如恢复线下手写考试和增加一对一面试环节。",
-      "community_discussion_zh": "社区讨论热烈，多数人认为AI作弊问题严重，提出线下笔试和面试等解决方案。也有教授质疑评分系统的意义，认为应改为只给A等由公司自行筛选。部分评论从博弈论角度指出使用AI是理性选择，批评考试设计本身不合理。",
-      "detailed_summary": "布朗大学一位教授公开谴责在一次考试中发生的大规模AI作弊行为，学生普遍使用大型语言模型完成考核。 此事件凸显了生成式AI对传统教育评估体系的严重冲击，可能促使高校重新设计课程和考试形式，以维护学术诚信。 该教授的研究领域是博弈论，而社区评论中有观点指出，当其他学生都使用AI时，个体理性选择就是也使用AI。",
-      "background": "随着ChatGPT等大型语言模型的普及，学生利用AI工具完成作业和考试的现象日益严重，传统开卷或在线考试难以防范AI作弊。高校面临调整教学评估方式的压力，例如恢复线下手写考试和增加一对一面试环节。",
-      "community_discussion": "社区讨论热烈，多数人认为AI作弊问题严重，提出线下笔试和面试等解决方案。也有教授质疑评分系统的意义，认为应改为只给A等由公司自行筛选。部分评论从博弈论角度指出使用AI是理性选择，批评考试设计本身不合理。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High community engagement (169 points, 228 comments) with substantive comments from professors and experts discussing the impact of AI on academic integrity, proposing solutions like in-person exams and interviews. The topic is highly relevant and timely, with significant implications for education, warranting a high score.",
-    "ai_summary": "A professor at Brown University denounces mass AI fraud on an exam, sparking a community discussion on the need for in-person assessments and curriculum redesign to preserve academic integrity in the AI era.",
-    "ai_tags": [
-      "AI fraud",
-      "academic integrity",
-      "education",
-      "assessments",
-      "university policies"
-    ]
-  },
-  {
-    "id": "hackernews:story:48708795",
-    "source_type": "hackernews",
-    "title": "Tokenmaxxing is dead, long live tokenmaxxing",
-    "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
-    "content": "\n--- Top Comments ---\n\n[aurareturn]: Tokenmaxxing was just a way to force employees to start leveraging AI in a meaningful way. For companies that have measured performance based on token spend, they can now dial it back. Employees have learned to leverage AI for things they wouldn’t have prior. Now they know what’s possible and what’s not. No one is stupid enough to always measure performance based on token spend and have unlimited budget. It was always a temporary thing to transition the employees to a new world. Management fe...\n\n[ambicapter]: &gt; That’s no longer true. We’ve entered a different regime, where spending more tokens generally results in better results. We call this “compounding correctness” — the more tokens you spend on getting a task correct, the more likely you’ll get a good outcome. We talked about this a bit at the last in person Agentics meetup: Have we? Is it generally the case that the more tokens you spend, you better results you get? This take is so weird I suspect author somehow financially benefits from t...\n\n[et1337]: Folks have been saying “things are different now, the agents are now compounding success instead of error” for at least a year now, but I just don’t see it. I was lucky enough to receive a weeklong $50k per head AI training from the people saying these things, and one of their few helpful concrete recommendations was to constantly clear context all the time, to avoid things going off the rails. However, I think finding security vulnerabilities is one use case where it doesn’t matter. Tokenmax...\n\n[red_admiral]: &gt; Like, imagine if some serious business leader, like, idk, Mark Zuckerberg, decided to announce that Meta was going to burn money. Like ... pivoting to the &quot;metaverse&quot; and changing the company name to show he&#x27;s serious.\n\n[natyoung]: Studies have proved that you&#x27;d have been better off with fartmaxxing.",
-    "author": "theahura",
-    "published_at": "2026-06-28T16:24:10Z",
-    "fetched_at": "2026-06-29T00:02:42.191355Z",
-    "metadata": {
-      "score": 105,
-      "descendants": 122,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48708795",
-      "comment_count": 5,
-      "title_zh": "Tokenmaxxing 终结与新策略涌现",
-      "detailed_summary_zh": "本文探讨了从“tokenmaxxing”（以token消耗量为指标的AI采用策略）向“复合正确性”（通过增加token投入提升任务准确率）的转变。 这标志着企业AI实践从追求使用量的粗放阶段进入注重输出质量的新阶段，影响AI代理的实际业务价值及投资回报。 作者声称当前更多token投入通常能带来更好结果，但社区评论指出该观点争议较大；tokenmaxxing曾被用作强迫员工采用AI的临时手段。",
-      "background_zh": "Tokenmaxxing指员工为应对企业设定的token使用指标而大量调用AI，导致“AI剧场”效应，即表面使用而无实质变革。“复合正确性”则强调在复杂任务中通过更多token迭代来修正错误，提升最终结果可靠性。",
-      "community_discussion_zh": "社区对“更多token带来更好结果”普遍质疑，有评论认为tokenmaxxing仅是过渡策略，员工已学会区分AI适用场景；也有观点指出多步骤代理仍面临错误累积问题，与文章论点相悖。",
-      "sources": [
-        {
-          "url": "https://www.cio.com/article/4178320/tokenmaxxing-when-ai-adoption-metrics-go-bad.html",
-          "title": "Tokenmaxxing: When AI adoption metrics go bad | CIO"
-        },
-        {
-          "url": "https://www.tigergraph.com/blog/tokenmaxxing-is-a-phase-inference-yield-is-the-strategy/",
-          "title": "Tokenmaxxing is a Phase. Inference Yield is the Strategy. - TigerGraph"
-        }
-      ],
-      "detailed_summary": "本文探讨了从“tokenmaxxing”（以token消耗量为指标的AI采用策略）向“复合正确性”（通过增加token投入提升任务准确率）的转变。 这标志着企业AI实践从追求使用量的粗放阶段进入注重输出质量的新阶段，影响AI代理的实际业务价值及投资回报。 作者声称当前更多token投入通常能带来更好结果，但社区评论指出该观点争议较大；tokenmaxxing曾被用作强迫员工采用AI的临时手段。",
-      "background": "Tokenmaxxing指员工为应对企业设定的token使用指标而大量调用AI，导致“AI剧场”效应，即表面使用而无实质变革。“复合正确性”则强调在复杂任务中通过更多token迭代来修正错误，提升最终结果可靠性。",
-      "community_discussion": "社区对“更多token带来更好结果”普遍质疑，有评论认为tokenmaxxing仅是过渡策略，员工已学会区分AI适用场景；也有观点指出多步骤代理仍面临错误累积问题，与文章论点相悖。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value discussion with active community debate (122 comments, 105 points) on a practical AI engineering topic about token usage and agent effectiveness. The comments provide contrasting viewpoints, indicating significant interest and relevance.",
-    "ai_summary": "Discusses the transition from tokenmaxxing as a temporary AI adoption strategy to a focus on compounding correctness in AI agents.",
-    "ai_tags": [
-      "AI agents",
-      "token economics",
-      "software engineering",
-      "AI adoption"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:550b6648a2bb58e1",
+    "id": "rss:lobste.rs_rss:72154f4fc07f4dfe",
     "source_type": "rss",
-    "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
-    "url": "http://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
-    "content": "<p><a href=\"https://lobste.rs/s/yscudc/examining_circuit_boards_from_space\">Comments</a></p>",
-    "author": "righto.com via fanf",
-    "published_at": "2026-06-28T18:11:39Z",
-    "fetched_at": "2026-06-29T00:02:42.285108Z",
+    "title": "Longinus: 2 Boundaries in One Bug, Piercing Chrome’s Renderer and V8 Sandbox with a Single Vulnerability, CVE-2026-6307",
+    "url": "https://nebusec.ai/research/v8-cve-2026-6307-writeup/",
+    "content": "<p><a href=\"https://lobste.rs/s/uaoe9y/longinus_2_boundaries_one_bug_piercing\">Comments</a></p>",
+    "author": "nebusec.ai via devgianlu",
+    "published_at": "2026-06-29T15:00:17Z",
+    "fetched_at": "2026-06-29T23:56:29.030673Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "hardware"
+        "security",
+        "web"
       ],
-      "title_zh": "航天飞机I/O处理器电路板深度解析",
-      "detailed_summary_zh": "一篇新文章详细剖析了航天飞机I/O处理器（IOP）的电路板，展示了其内部工程设计和组件布局。 该I/O处理器是航天飞机计算机系统的关键部件，首次将多线程计算机技术应用于太空任务，对理解早期航天电子系统有重要价值。此分析为硬件爱好者和复古计算社区提供了珍贵的实物资料。 I/O处理器通过24条高速网络与航天飞机的传感器和系统通信，充当CPU与外部设备的桥梁。文章展示了来自RR Auction的照片，对比了IOP与AP-101B CPU的物理结构。",
-      "background_zh": "航天飞机使用的计算机是基于IBM System/4 Pi系列的AP-101B，由IBM联邦系统部门开发。I/O处理器负责处理输入输出任务，是多线程架构在太空领域的早期应用，由Peter Kogge设计。该系列计算机也曾用于F-15、E-3预警机等军用平台。",
+      "title_zh": "单一漏洞突破Chrome双重安全边界",
+      "detailed_summary_zh": "安全研究人员公开了CVE-2026-6307的详细分析，该漏洞属于单个V8引擎漏洞，却能同时绕过Chrome的渲染器沙箱和V8沙箱两个安全边界。 此漏洞打破了通常需要多个漏洞才能实现的安全隔离链，大幅降低了攻击复杂度，对Chrome用户安全构成严重威胁。 漏洞CVE-2026-6307存在于V8 JavaScript引擎中，攻击者可能通过恶意网页诱导用户触发，利用单一漏洞同时突破渲染器进程沙箱和V8进程内沙箱，实现代码执行。",
+      "background_zh": "Chrome采用多层安全架构：渲染器沙箱将网页内容隔离在受限进程中，防止其直接访问系统资源；V8沙箱则在进程内部进一步限制JavaScript引擎的地址空间访问。Chrome安全模型默认渲染器可能被攻破，因此依赖这些边界提供纵深防御。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/IBM_System/4_Pi",
-          "title": "IBM System/4 Pi - Wikipedia"
+          "url": "https://v8.dev/blog/sandbox",
+          "title": "The V8 Sandbox · V8"
         },
         {
-          "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
-          "title": "Examining circuit boards from the Space Shuttle's I/O Processor"
+          "url": "https://chromium.googlesource.com/chromium/src/+/master/docs/security/compromised-renderers.md",
+          "title": "Chromium Docs - Threat Model And Defenses Against Compromised Renderers"
         }
       ],
-      "detailed_summary": "一篇新文章详细剖析了航天飞机I/O处理器（IOP）的电路板，展示了其内部工程设计和组件布局。 该I/O处理器是航天飞机计算机系统的关键部件，首次将多线程计算机技术应用于太空任务，对理解早期航天电子系统有重要价值。此分析为硬件爱好者和复古计算社区提供了珍贵的实物资料。 I/O处理器通过24条高速网络与航天飞机的传感器和系统通信，充当CPU与外部设备的桥梁。文章展示了来自RR Auction的照片，对比了IOP与AP-101B CPU的物理结构。",
-      "background": "航天飞机使用的计算机是基于IBM System/4 Pi系列的AP-101B，由IBM联邦系统部门开发。I/O处理器负责处理输入输出任务，是多线程架构在太空领域的早期应用，由Peter Kogge设计。该系列计算机也曾用于F-15、E-3预警机等军用平台。",
+      "detailed_summary": "安全研究人员公开了CVE-2026-6307的详细分析，该漏洞属于单个V8引擎漏洞，却能同时绕过Chrome的渲染器沙箱和V8沙箱两个安全边界。 此漏洞打破了通常需要多个漏洞才能实现的安全隔离链，大幅降低了攻击复杂度，对Chrome用户安全构成严重威胁。 漏洞CVE-2026-6307存在于V8 JavaScript引擎中，攻击者可能通过恶意网页诱导用户触发，利用单一漏洞同时突破渲染器进程沙箱和V8进程内沙箱，实现代码执行。",
+      "background": "Chrome采用多层安全架构：渲染器沙箱将网页内容隔离在受限进程中，防止其直接访问系统资源；V8沙箱则在进程内部进一步限制JavaScript引擎的地址空间访问。Chrome安全模型默认渲染器可能被攻破，因此依赖这些边界提供纵深防御。",
       "community_discussion": ""
     },
-    "ai_score": 8.0,
-    "ai_reason": "Detailed examination of historical NASA hardware from a critical space system; appeals to hardware enthusiasts and retrocomputing fans. Comment discussion on lobste.rs likely adds engineering insights.",
-    "ai_summary": "A deep dive into the circuit boards of the Space Shuttle's I/O Processor, revealing engineering details of the iconic system.",
+    "ai_score": 9.0,
+    "ai_reason": "This is a significant security vulnerability affecting Chrome's renderer and V8 sandbox, with a detailed writeup from a credible source. The CVE designation indicates it's been acknowledged as impactful. While no comments provided, the technical depth and potential impact justify a high score.",
+    "ai_summary": "Writeup of CVE-2026-6307, a single vulnerability that breaks both Chrome's renderer and V8 sandbox boundaries.",
     "ai_tags": [
-      "hardware",
-      "retrocomputing",
-      "space shuttle",
-      "circuit boards",
-      "I/O processor"
+      "vulnerability",
+      "Chrome",
+      "V8",
+      "security",
+      "CVE"
     ]
   },
   {
-    "id": "hackernews:story:48710092",
-    "source_type": "hackernews",
-    "title": "Historical memory prices 1960-2026",
-    "url": "https://dam.stanford.edu/memory-prices.html",
-    "content": "\n--- Top Comments ---\n\n[fernly]: Says, not inflation-adjusted. With reason; adjusting those 1960-1980 prices for inflation would make the graph a lot taller. Pricing &quot;per GB&quot; before 1990 is unrealistic, though; nobody thought in GB or purchased GB quantities, or conceived of GB systems. I remember a moment circa 1973 when I saw an IBM CE about to do an upgrade on a 370 system at Cal Berkeley. He had a box with several carefully-packed, large circuit boards. &quot;So, is that a megabyte?&quot; I asked. &quot;Yup, th...\n\n[gruntled-worker]: Look at it this way: while the upfront cost to scale up production is huge, prices are now high enough to justify it  even if  demand is expected to drop abruptly later on. So if you can wait 5 years for your next PC, 1TB RAM might go for what 64GB would have cost without the AI demand spike. Granted, if you need a new system before then, you&#x27;re SOL. One thing to look out for is supply capacity curiously going offline in 2030 or whatever. That would hint at market power or collusion.\n\n[H4lcyon]: A perfect example of how graphs are often misleading. $&#x2F;GB is a totally useless unit value because it&#x27;s an arbitrary size. The unit needs to be tied to the relative usefulness for its time. The y axis should be something like $&#x2F;average workstation memory or $&#x2F;requirement for common compute task. It&#x27;s obvious that ram is expensive right now, but it&#x27;s not expensive per GB. It&#x27;s expensive relative to what you need to accomplish a useful task.\n\n[Dibby053]: One could also blame crypto and AI (they&#x27;re clearly responsible for some of the volatility in the graph), but I can see the curve flatten in the 2010s, just as Moore&#x27;s law ended.",
-    "author": "vga1",
-    "published_at": "2026-06-28T18:32:53Z",
-    "fetched_at": "2026-06-29T00:02:42.191206Z",
+    "id": "rss:lobste.rs_rss:c9cb9fa3e861bbad",
+    "source_type": "rss",
+    "title": "Unprivileged root via a use-after-free in DRM GEM change_handle (CVE-2026-46215)",
+    "url": "https://cyberstan.co.uk/drm-lpe-linux/",
+    "content": "<p><a href=\"https://lobste.rs/s/hh5yyq/unprivileged_root_via_use_after_free_drm\">Comments</a></p>",
+    "author": "cyberstan.co.uk via fro",
+    "published_at": "2026-06-29T18:05:24Z",
+    "fetched_at": "2026-06-29T23:56:29.030693Z",
     "metadata": {
-      "score": 128,
-      "descendants": 43,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48710092",
-      "comment_count": 4,
-      "title_zh": "历史内存价格1960-2026图表引发方法争议",
-      "detailed_summary_zh": "斯坦福大学发布了1960年至2026年内存每GB价格的图表和分析，展示了长达66年的价格下降趋势。社区批评其未调整通货膨胀且$/GB单位在不同时代缺乏实用性。 该图表反映了半导体技术的飞速进步，但也暴露了数据可视化中指标选择的问题，可能误导对当前内存昂贵程度的理解。讨论有助于改进技术历史数据的呈现方式。 图表未进行通胀调整，导致1960-1980年价格被严重低估。评论指出，早期系统容量远小于1GB，使用$/GB衡量当时成本毫无意义。",
-      "background_zh": "内存价格从1960年代每GB数百万美元降至2020年代约几美元，但近年因AI需求激增而价格上涨。数据可视化需要精心选择指标，否则可能歪曲历史趋势。",
-      "community_discussion_zh": "社区看法不一：有用户批评未调整通胀和单位选择不当；有人建议改用$/平均工作站内存；也有人指出加密货币和AI导致近期波动，并讨论未来产能变化。",
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "linux"
+      ],
+      "title_zh": "CVE-2026-46215：Linux内核DRM GEM use-after-free漏洞导致本地提权",
+      "detailed_summary_zh": "Linux内核的DRM GEM子系统中的change_handle函数存在一个use-after-free漏洞（CVE-2026-46215），允许无特权的本地用户通过利用该漏洞获得root权限。 这是一个关键的内核漏洞，因为DRM GEM是核心图形子系统，广泛用于现代Linux系统，无特权用户能够提权至root将严重威胁系统安全，可能导致完全的系统受控。 该漏洞存在于drm_gem_change_handle_ioctl()函数中，该函数是DRM PRIME接口的一部分，用于重新分配GEM句柄，由AMD开发并已在Linux 7.1中部分禁用。攻击者可以通过精心构造的ioctl调用触发use-after-free，进而实现权限提升。",
+      "background_zh": "DRM（直接渲染管理器）是Linux内核中用于管理图形设备的子系统，其中GEM（图形执行管理器）负责内存管理，包括缓冲区对象的分配和句柄管理。Use-after-free是一种内存损坏漏洞，程序在释放内存后继续使用指针，可能导致攻击者控制执行流。",
       "sources": [
         {
-          "url": "https://deepintellica.com/finance-economics/historical-memory-prices-1960-2026/",
-          "title": "Historical memory prices 1960 - 2026 - Deep Intellica"
+          "url": "https://en.wikipedia.org/wiki/Direct_Rendering_Manager",
+          "title": "Direct Rendering Manager - Wikipedia"
         },
         {
-          "url": "https://en.wikipedia.org/wiki/2024–present_global_memory_supply_shortage",
-          "title": "2025–present global memory supply shortage - Wikipedia"
+          "url": "https://www.phoronix.com/news/Linux-7.1-DRM-Change-Handle",
+          "title": "Linux DRM Ioctl Developed By AMD Being Disabled Following Ongoing Security Issue - Phoronix"
         },
         {
-          "url": "https://www.business.com/articles/data-visualization-downfalls/",
-          "title": "Data Visualization Tips: Common Problems & Solutions"
+          "url": "https://www.kernel.org/doc/html/v4.16/gpu/drm-mm.html",
+          "title": "DRM Memory Management — The Linux Kernel documentation"
         }
       ],
-      "detailed_summary": "斯坦福大学发布了1960年至2026年内存每GB价格的图表和分析，展示了长达66年的价格下降趋势。社区批评其未调整通货膨胀且$/GB单位在不同时代缺乏实用性。 该图表反映了半导体技术的飞速进步，但也暴露了数据可视化中指标选择的问题，可能误导对当前内存昂贵程度的理解。讨论有助于改进技术历史数据的呈现方式。 图表未进行通胀调整，导致1960-1980年价格被严重低估。评论指出，早期系统容量远小于1GB，使用$/GB衡量当时成本毫无意义。",
-      "background": "内存价格从1960年代每GB数百万美元降至2020年代约几美元，但近年因AI需求激增而价格上涨。数据可视化需要精心选择指标，否则可能歪曲历史趋势。",
-      "community_discussion": "社区看法不一：有用户批评未调整通胀和单位选择不当；有人建议改用$/平均工作站内存；也有人指出加密货币和AI导致近期波动，并讨论未来产能变化。"
+      "detailed_summary": "Linux内核的DRM GEM子系统中的change_handle函数存在一个use-after-free漏洞（CVE-2026-46215），允许无特权的本地用户通过利用该漏洞获得root权限。 这是一个关键的内核漏洞，因为DRM GEM是核心图形子系统，广泛用于现代Linux系统，无特权用户能够提权至root将严重威胁系统安全，可能导致完全的系统受控。 该漏洞存在于drm_gem_change_handle_ioctl()函数中，该函数是DRM PRIME接口的一部分，用于重新分配GEM句柄，由AMD开发并已在Linux 7.1中部分禁用。攻击者可以通过精心构造的ioctl调用触发use-after-free，进而实现权限提升。",
+      "background": "DRM（直接渲染管理器）是Linux内核中用于管理图形设备的子系统，其中GEM（图形执行管理器）负责内存管理，包括缓冲区对象的分配和句柄管理。Use-after-free是一种内存损坏漏洞，程序在释放内存后继续使用指针，可能导致攻击者控制执行流。",
+      "community_discussion": ""
     },
-    "ai_score": 7.0,
-    "ai_reason": "Interesting historical data with community discussion critiquing methodology and providing market context, adding value beyond the graph itself.",
-    "ai_summary": "A graph and analysis of memory prices per GB from 1960 to 2026, with community debate on its presentation and implications.",
+    "ai_score": 9.0,
+    "ai_reason": "Critical Linux kernel vulnerability enabling unprivileged privilege escalation via a use-after-free in DRM GEM, a core graphics subsystem. High impact on system security.",
+    "ai_summary": "A use-after-free vulnerability in the Linux kernel's DRM GEM change_handle function allows unprivileged users to gain root access.",
     "ai_tags": [
-      "memory prices",
-      "hardware history",
-      "data visualization",
-      "semiconductor industry"
+      "Linux",
+      "kernel",
+      "security",
+      "vulnerability",
+      "DRM"
     ]
   },
   {
-    "id": "hackernews:story:48710232",
-    "source_type": "hackernews",
-    "title": "Librepods: AirPods liberated",
-    "url": "https://github.com/librepods-org/librepods",
-    "content": "\n--- Top Comments ---\n\n[Aurornis]: To clarify because this is confusing: The AirPods work as regular old BlueTooth earbuds on other devices already. This is an implementation of some of the extra features and interfaces that are integrated into Apple products.\n\n[jamwise]: If I wasn&#x27;t certain Apple will do their best to patch every avenue to this working in the future it might be motivation to buy AirPods.\n\n[g0xA52A2A]: Previous discussion  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45941596\n\n[drnick1]: It would be useful to explain to people who don&#x27;t currently own AirPods and don&#x27;t really follow Apple stuff much what features are lost when AirPods are paired with a non-Apple device.\n\n[ctippett]: I&#x27;ve owned several pairs of AirPods over the years and this is the first I&#x27;m learning about some of their features. I almost found myself wanting there to be a third column for indicating Apple support (of course I&#x27;m being facetious).",
-    "author": "rbanffy",
-    "published_at": "2026-06-28T18:48:53Z",
-    "fetched_at": "2026-06-29T00:02:42.191310Z",
+    "id": "rss:lobste.rs_rss:745cf5b68c899d65",
+    "source_type": "rss",
+    "title": "ipv6_frag_escape: Linux LPE - Reliable Jail/Container Escape",
+    "url": "https://github.com/sgkdev/ipv6_frag_escape",
+    "content": "<p><a href=\"https://lobste.rs/s/eihlve/ipv6_frag_escape_linux_lpe_reliable_jail\">Comments</a></p>",
+    "author": "github.com via eyberg",
+    "published_at": "2026-06-29T17:01:58Z",
+    "fetched_at": "2026-06-29T23:56:29.030776Z",
     "metadata": {
-      "score": 244,
-      "descendants": 70,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48710232",
-      "comment_count": 5,
-      "title_zh": "Librepods：开源项目解放AirPods全部功能",
-      "detailed_summary_zh": "Librepods是一个开源项目，通过逆向工程实现了苹果专有的AAP协议，让AirPods在非Apple设备上也能使用电池状态、入耳检测、降噪控制等高级功能。 该项目解决了AirPods用户长期以来的痛点——在Android、Linux等非苹果设备上被锁定功能，促进了设备互操作性，也展示了社区逆向工程的能力。 Librepods基于逆向工程实现了苹果的AAP协议，目前支持电池状态、入耳检测、降噪模式切换等功能，但可能因AirPods固件更新而需要持续适配。",
-      "background_zh": "AirPods在非苹果设备上只能作为普通蓝牙耳机使用，许多高级功能被苹果系统独占。AAP是苹果专有的音频协议，用于AirPods与苹果设备之间的通信。Librepods通过逆向工程重现了该协议，使得这些功能在非苹果设备上可用。",
-      "community_discussion_zh": "社区讨论中，有用户指出AirPods在非苹果设备上原本就能作为普通蓝牙耳机使用，本项目的意义在于恢复额外功能。也有用户担心苹果未来会通过固件更新封锁此类逆向工程实现。",
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "devops"
+      ],
+      "title_zh": "IPv6分片漏洞实现Linux容器逃逸",
+      "detailed_summary_zh": "安全研究人员发布了一个利用IPv6分片机制的Linux本地提权（LPE）漏洞利用工具，能够可靠地从jail或容器环境中逃逸。 该漏洞允许攻击者突破容器隔离直接访问宿主机，对云服务、多租户环境及容器化部署构成严重威胁，可能导致大规模数据泄露或系统接管。 该利用工具通过精心构造的IPv6分片包触发内核漏洞，绕过命名空间和cgroup限制，实现权限提升至root并逃逸容器。",
+      "background_zh": "容器逃逸是指容器内进程突破隔离机制访问宿主机资源的行为。IPv6分片是网络层协议特性，允许将大数据包分割传输，但历史上存在多个实现缺陷。此漏洞属于内核层面的内存处理错误，结合LPE即能完全控制系统。",
       "sources": [
         {
-          "url": "https://github.com/librepods-org/librepods",
-          "title": "GitHub - librepods-org/librepods: AirPods liberated from ..."
+          "url": "https://unit42.paloaltonetworks.com/container-escape-techniques/",
+          "title": "Container Breakouts: Escape Techniques in Cloud ... - Unit 42"
         },
         {
-          "url": "https://deepwiki.com/kavishdevar/librepods/2-aap-protocol-and-communication",
-          "title": "AAP Protocol & Communication | kavishdevar/librepods | DeepWiki"
-        },
-        {
-          "url": "https://www.squaredtech.co/librepods-brings-full-airpods-features-to-android-and-linux",
-          "title": "AirPods On Android: LibrePods Explained — New Open-Source"
+          "url": "https://www.aquasec.com/cloud-native-academy/container-security/container-escape/",
+          "title": "What Is Container Escape? - Aqua Security"
         }
       ],
-      "detailed_summary": "Librepods是一个开源项目，通过逆向工程实现了苹果专有的AAP协议，让AirPods在非Apple设备上也能使用电池状态、入耳检测、降噪控制等高级功能。 该项目解决了AirPods用户长期以来的痛点——在Android、Linux等非苹果设备上被锁定功能，促进了设备互操作性，也展示了社区逆向工程的能力。 Librepods基于逆向工程实现了苹果的AAP协议，目前支持电池状态、入耳检测、降噪模式切换等功能，但可能因AirPods固件更新而需要持续适配。",
-      "background": "AirPods在非苹果设备上只能作为普通蓝牙耳机使用，许多高级功能被苹果系统独占。AAP是苹果专有的音频协议，用于AirPods与苹果设备之间的通信。Librepods通过逆向工程重现了该协议，使得这些功能在非苹果设备上可用。",
-      "community_discussion": "社区讨论中，有用户指出AirPods在非苹果设备上原本就能作为普通蓝牙耳机使用，本项目的意义在于恢复额外功能。也有用户担心苹果未来会通过固件更新封锁此类逆向工程实现。"
+      "detailed_summary": "安全研究人员发布了一个利用IPv6分片机制的Linux本地提权（LPE）漏洞利用工具，能够可靠地从jail或容器环境中逃逸。 该漏洞允许攻击者突破容器隔离直接访问宿主机，对云服务、多租户环境及容器化部署构成严重威胁，可能导致大规模数据泄露或系统接管。 该利用工具通过精心构造的IPv6分片包触发内核漏洞，绕过命名空间和cgroup限制，实现权限提升至root并逃逸容器。",
+      "background": "容器逃逸是指容器内进程突破隔离机制访问宿主机资源的行为。IPv6分片是网络层协议特性，允许将大数据包分割传输，但历史上存在多个实现缺陷。此漏洞属于内核层面的内存处理错误，结合LPE即能完全控制系统。",
+      "community_discussion": ""
     },
-    "ai_score": 7.0,
-    "ai_reason": "High community engagement (244 points, 70 comments) with insightful clarifications and discussion about AirPods features on non-Apple devices. The project addresses a common pain point and shows reverse-engineering effort, though it's incremental rather than groundbreaking.",
-    "ai_summary": "Librepods is an open-source project to restore AirPods features (like battery status and ear detection) on non-Apple devices via custom Bluetooth implementation.",
-    "ai_tags": [
-      "AirPods",
-      "Bluetooth",
-      "open-source",
-      "reverse-engineering",
-      "interoperability"
-    ]
-  },
-  {
-    "id": "hackernews:story:48706714",
-    "source_type": "hackernews",
-    "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
-    "url": "https://github.com/openai/codex/issues/2847",
-    "content": "\n--- Top Comments ---\n\n[TheDong]: You can do this now: change the file permissions such that the user you run codex as can&#x27;t read them, or run codex in a container without those files mounted. If you don&#x27;t do that, the agent will be able to incidentally upload them. What if the model runs &quot;rg foo&quot;, and one of those files contains the string &quot;foo&quot;? It uploads the tool output, which includes the file contents. And so, the only solution is to make it so the codex process is unable to access those fi...\n\n[nikhilsimha]: Files that codex and any other coding agent has access to, should be opt-in NOT opt-out.\nI think codex is not the right layer to solve this if you want a sane(one-click) UX.\nWe built our own internal sandboxing-terminal around claude and codex. Where a user-configured base-folder with low-risk code and creds is COPIED into the sandbox BEFORE new session creation.\nThere were many other UX related reasons to build our own terminal. Can share more if anyone is interested.\n\n[petcat]: Hopefully they never actually implement this pointless feature because it will only give people a false sense of security given the unpredictable nature of LLMs.  How could something like this even be enforced? People just need to learn how to use the tools their system already provides them.  i.e., chmod\n\n[skybrian]: To avoid the risk of exfiltration, we need to stop using .env for security. API keys needed when working in a repo should be handled by a proxy like ssh-agent, and we need something better than bearer auth.\n\n[mbid]: I recently got the tool I use to orchestrate agents in (remote&#x2F;secure) devcontainers open-sourced at work to solve this properly:  https:&#x2F;&#x2F;github.com&#x2F;nvidia&#x2F;rumpelpod  As others here have pointed out, it&#x27;s exceedingly unlikely that a blocklist like proposed in the issue would ever be complete. You shouldn&#x27;t allow agents direct yolo-access to your machine if it has sensitive data. Codex works particularly well as a remote agent harness because of its client-s...",
-    "author": "pikseladam",
-    "published_at": "2026-06-28T12:27:33Z",
-    "fetched_at": "2026-06-29T00:02:42.191375Z",
-    "metadata": {
-      "score": 172,
-      "descendants": 118,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48706714",
-      "comment_count": 5,
-      "title_zh": "OpenAI Codex敏感文件排除功能引发安全讨论",
-      "detailed_summary_zh": "GitHub上关于OpenAI Codex的一个issue（#2847）讨论了如何防止AI编码代理意外泄露敏感文件，该问题获得172分和118条评论。 随着AI编码代理的普及，数据泄露风险成为关键安全挑战，该讨论反映了社区对沙箱和opt-in访问机制的迫切需求。 用户提出通过修改文件权限或容器隔离来阻止Codex访问敏感文件，但也有人认为仅依靠排除列表（blocklist）是不够的，可能带来虚假安全感。",
-      "background_zh": "数据泄露（data exfiltration）是指数据被未经授权地传输到外部，AI编码代理如Codex在运行命令时可能无意中包含敏感内容。沙箱（sandboxing）技术通过隔离执行环境来防止这种泄露，但标准容器可能共享主机内核，需要更严格的隔离方案。",
-      "community_discussion_zh": "社区观点分歧：部分用户认为可通过系统工具（如chmod）或容器解决；另一些人主张应默认opt-in而非opt-out；还有评论者建议使用代理处理API密钥，或采用远程devcontainer方案彻底隔离。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Data_exfiltration",
-          "title": "Data exfiltration"
-        },
-        {
-          "url": "https://www.firecrawl.dev/blog/ai-agent-sandbox",
-          "title": "AI Agent Sandbox: How to Safely Run Autonomous Agents in 2026"
-        }
-      ],
-      "detailed_summary": "GitHub上关于OpenAI Codex的一个issue（#2847）讨论了如何防止AI编码代理意外泄露敏感文件，该问题获得172分和118条评论。 随着AI编码代理的普及，数据泄露风险成为关键安全挑战，该讨论反映了社区对沙箱和opt-in访问机制的迫切需求。 用户提出通过修改文件权限或容器隔离来阻止Codex访问敏感文件，但也有人认为仅依靠排除列表（blocklist）是不够的，可能带来虚假安全感。",
-      "background": "数据泄露（data exfiltration）是指数据被未经授权地传输到外部，AI编码代理如Codex在运行命令时可能无意中包含敏感内容。沙箱（sandboxing）技术通过隔离执行环境来防止这种泄露，但标准容器可能共享主机内核，需要更严格的隔离方案。",
-      "community_discussion": "社区观点分歧：部分用户认为可通过系统工具（如chmod）或容器解决；另一些人主张应默认opt-in而非opt-out；还有评论者建议使用代理处理API密钥，或采用远程devcontainer方案彻底隔离。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High engagement (172 points, 118 comments) on a practical security concern for AI coding agents. Discussion includes diverse viewpoints (sandboxing, opt-in, false sense of security) and is highly relevant to software engineering and AI safety. Not groundbreaking but important ongoing debate.",
-    "ai_summary": "Discussion about the need for better sandboxing and opt-in file access for AI coding agents like Codex to prevent accidental data exfiltration.",
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking: A reliable Linux LPE allowing jail/container escape is a critical security vulnerability with high impact. The lobste.rs discussion indicates community attention.",
+    "ai_summary": "A Linux LPE exploit using IPv6 fragmentation enables reliable jail/container escape.",
     "ai_tags": [
       "security",
-      "AI coding agents",
-      "sandboxing",
-      "data privacy",
-      "LLM security"
+      "exploit",
+      "Linux",
+      "container",
+      "LPE"
     ]
   },
   {
-    "id": "hackernews:story:48706814",
-    "source_type": "hackernews",
-    "title": "The curious case of the disappearing Polish S (2015)",
-    "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
-    "content": "\n--- Top Comments ---\n\n[quibono]: I believe the fact that Polish uses the Latin alphabet (with a small Slavic twist to express the extra sounds) meant it was much easier for Poland to align itself westward. I think the average Pole is much closer culturally to the Western neighbours than to a Ukrainian or Russian (maybe apart from cuisine).\n\n[paweladamczuk]: It&#x27;s just like the new Copilot 365. Every time I try to type &quot;Ć&quot;, Copilot pops up. I have to close the app constantly.\n\n[f33d5173]: The real issue here is first that browsers don&#x27;t expose a simple way to check for key combinations and second that developers don&#x27;t bother building their own. You&#x27;ll find on any number of sites that an intended key combination can also be invoked with additional modifiers of alt or shift or whatnot. Even here, the code shown only fixes the broader issue on windows; alt+cmd+s still gets blocked. There should be a proposal for browsers to expose a property on the keydown&#x2F;up&...\n\n[notathrowaway51]: Fun fact: when treated with unicode Normalization Form Canonical Decomposition, 8 out of 9 polish letters (ż,ó,ć,ę,ś,ą,ź,ń) break down into base letter + combining diacritical mark, but ł stays intact. That means you can&#x27;t use sqlite&#x27;s unicode61 remove_diacritics tokenizer to normalize polish text for FTS.\n\n[TRiG_Ireland]: The linguistic, historical, and cultural information is so fascinating, and really well explained.",
-    "author": "colinprince",
-    "published_at": "2026-06-28T12:44:24Z",
-    "fetched_at": "2026-06-29T00:02:42.191394Z",
-    "metadata": {
-      "score": 200,
-      "descendants": 68,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48706814",
-      "comment_count": 5,
-      "title_zh": "波兰字母ś与浏览器快捷键冲突之谜",
-      "detailed_summary_zh": "一篇2015年的文章详细探讨了波兰语字母'ś'（AltGr+S或右Alt+S组合）在浏览器中被快捷键（如Ctrl+S）拦截，导致用户无法正常输入该字符的问题。 这一问题凸显了键盘本地化与浏览器默认快捷键之间的普遍冲突，影响波兰语用户的输入效率，并引发对Unicode标准化及浏览器键盘事件处理的深入思考。 文章指出该冲突在多个浏览器中普遍存在，且开发者常忽略不同键盘布局下修饰键的差异；社区评论补充说明Unicode规范化分解（NFD）会将大部分波兰字母（如ś）分解为基字加组合变音符号，但字母'ł'保持完整，这会影响SQLite等工具的文本搜索功能。",
-      "background_zh": "波兰语采用拉丁字母并附加变音符号（如ś上的尖音节），输入时通常需要组合键（例如右Alt+S）。浏览器快捷键（如Ctrl+S保存）常与这些组合键冲突，导致系统优先响应浏览器。Unicode规范化定义了字符的等价形式：预组合字符（如ś作为一个码位）与分解形式（s + 组合变音符号）被视为相同，但某些字符（如ł）没有分解形式。",
-      "community_discussion_zh": "评论者从多角度展开讨论：有人指出类似问题在Microsoft Copilot中也存在（干扰'Ć'输入）；有人批评浏览器缺乏简便的键组合检测API，开发者也不愿自行实现；还有人从语言学视角称赞文章的文化背景介绍。整体认可技术深度，并呼吁浏览器改进快捷键冲突处理。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Unicode_equivalence",
-          "title": "Unicode equivalence - Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Precomposed_character",
-          "title": "Precomposed character - Wikipedia"
-        },
-        {
-          "url": "http://www.unicode.org/reports/tr15/",
-          "title": "UAX #15: Unicode Normalization Forms"
-        }
-      ],
-      "detailed_summary": "一篇2015年的文章详细探讨了波兰语字母'ś'（AltGr+S或右Alt+S组合）在浏览器中被快捷键（如Ctrl+S）拦截，导致用户无法正常输入该字符的问题。 这一问题凸显了键盘本地化与浏览器默认快捷键之间的普遍冲突，影响波兰语用户的输入效率，并引发对Unicode标准化及浏览器键盘事件处理的深入思考。 文章指出该冲突在多个浏览器中普遍存在，且开发者常忽略不同键盘布局下修饰键的差异；社区评论补充说明Unicode规范化分解（NFD）会将大部分波兰字母（如ś）分解为基字加组合变音符号，但字母'ł'保持完整，这会影响SQLite等工具的文本搜索功能。",
-      "background": "波兰语采用拉丁字母并附加变音符号（如ś上的尖音节），输入时通常需要组合键（例如右Alt+S）。浏览器快捷键（如Ctrl+S保存）常与这些组合键冲突，导致系统优先响应浏览器。Unicode规范化定义了字符的等价形式：预组合字符（如ś作为一个码位）与分解形式（s + 组合变音符号）被视为相同，但某些字符（如ł）没有分解形式。",
-      "community_discussion": "评论者从多角度展开讨论：有人指出类似问题在Microsoft Copilot中也存在（干扰'Ć'输入）；有人批评浏览器缺乏简便的键组合检测API，开发者也不愿自行实现；还有人从语言学视角称赞文章的文化背景介绍。整体认可技术深度，并呼吁浏览器改进快捷键冲突处理。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "Interesting technical deep-dive with high community engagement; comments provide insightful discussions on Unicode, browser key handling, and localization issues, elevating its value.",
-    "ai_summary": "An article exploring a bug where Polish 'ś' key combination conflicts with browser shortcuts, with community discussion on technical solutions and Unicode nuances.",
-    "ai_tags": [
-      "Polish",
-      "keyboard shortcuts",
-      "Unicode",
-      "browser bugs",
-      "localization"
-    ]
-  },
-  {
-    "id": "hackernews:story:48706560",
-    "source_type": "hackernews",
-    "title": "The KIDS Act would require age checks to get online",
-    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
-    "content": "\n--- Top Comments ---\n\n[pdonis]: Would this website (HN) be a &quot;covered platform&quot; according to the bill? As far as I can tell, the answer is no, because it doesn&#x27;t do what&#x27;s described in Section 201 (E): &quot;Uses the personal information of the user to advertise, market, or make content recommendations.&quot; Neither does, for example, my bank&#x27;s website, or someone&#x27;s personal blog, or many other discussion sites like this one. So from what I can see, while the set of covered platforms is certai...\n\n[jschveibinz]: I just listened to a radio program on my local NPR station about the topic of kids and social media.  From what was presented, the research shows (longitudinal study) that there is very little evidence of social media impacting mental health--which is shocking because a majority of adults think there is a connection and the politicians are pushing that narrative. I have not personally vetted the research.  Has anyone else?\n\n[monksy]: So.. \n https:&#x2F;&#x2F;www.congress.gov&#x2F;bill&#x2F;119th-congress&#x2F;house-bill&#x2F;7757...  Find your rep on congress.gov, and write them. Sponsors: \nBrett Guthrie (R-KY) \nCoSponsors: Frank Pallone (D-NJ) Find and write your congress member:  https:&#x2F;&#x2F;www.congress.gov&#x2F;  Guthrie is sponsored by: (Alpahbit is the biggest)\n https:&#x2F;&#x2F;www.opensecrets.org&#x2F;profiles&#x2F;brett-guthrie \n&#x2F;us_congress&#x2F;summary?mpid=1048046 Frankie: (AIPAC, Anthropic and Com...\n\n[bArray]: Anybody else think it is weird that suddenly all Western countries suddenly want to lockdown the internet to &quot;protect the children&quot;? There is  surely  an international special interest group lobbying for this?\n\n[duxup]: I remember when the advice was to NOT give out your personal information online. Now it&#x27;s &quot;present your personal info when demanded or else&quot;.",
-    "author": "bilsbie",
-    "published_at": "2026-06-28T11:56:16Z",
-    "fetched_at": "2026-06-29T00:02:42.191417Z",
-    "metadata": {
-      "score": 273,
-      "descendants": 241,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48706560",
-      "comment_count": 5,
-      "title_zh": "KIDS法案要求在线年龄验证引发隐私担忧",
-      "detailed_summary_zh": "电子前哨基金会（EFF）警告，美国《KIDS法案》要求在线平台进行年龄验证，这可能导致用户隐私和言论自由受到威胁。该法案旨在保护儿童，但EFF认为其实施方式会破坏在线匿名性。 如果该法案通过，所有用户在上网时都可能需要提交身份认证，这将大幅增加个人数据收集风险，并可能被用于监控和审查。对自由开放的互联网生态构成深远影响。 法案覆盖那些利用用户个人信息进行广告、营销或内容推荐的平台。年龄验证技术可能包括AI自拍、数字ID等，但批评者指出这些技术仍会暴露用户身份，且法案定义模糊，容易扩大适用范围。",
-      "background_zh": "近年来，多国以保护儿童为由推动在线年龄验证立法，但争议不断。年龄验证通常要求用户提供政府ID或生物特征，这与互联网长期倡导的匿名原则相悖。类似法案如《儿童在线安全法案》（KOSA）也面临隐私担忧。",
-      "community_discussion_zh": "评论中，有用户质疑法案是否覆盖Hacker News这类不带广告推荐功能的网站；另有人指出社交媒体影响心理健康的证据并不充分，怀疑背后有政治或行业游说推动。还有用户讽刺过去教导不要泄露个人信息，如今却被强制要求认证。",
-      "sources": [
-        {
-          "url": "https://aiuntethered.com/news/kids-act-age-verification-online-access/",
-          "title": "KIDS Act Proposes Age Verification for Online Access | AiUntethered"
-        },
-        {
-          "url": "https://misryoum.com/kids-act-age-checks-could-strip-online-anonymity",
-          "title": "KIDS Act Age Checks Could Strip Online Anonymity"
-        }
-      ],
-      "detailed_summary": "电子前哨基金会（EFF）警告，美国《KIDS法案》要求在线平台进行年龄验证，这可能导致用户隐私和言论自由受到威胁。该法案旨在保护儿童，但EFF认为其实施方式会破坏在线匿名性。 如果该法案通过，所有用户在上网时都可能需要提交身份认证，这将大幅增加个人数据收集风险，并可能被用于监控和审查。对自由开放的互联网生态构成深远影响。 法案覆盖那些利用用户个人信息进行广告、营销或内容推荐的平台。年龄验证技术可能包括AI自拍、数字ID等，但批评者指出这些技术仍会暴露用户身份，且法案定义模糊，容易扩大适用范围。",
-      "background": "近年来，多国以保护儿童为由推动在线年龄验证立法，但争议不断。年龄验证通常要求用户提供政府ID或生物特征，这与互联网长期倡导的匿名原则相悖。类似法案如《儿童在线安全法案》（KOSA）也面临隐私担忧。",
-      "community_discussion": "评论中，有用户质疑法案是否覆盖Hacker News这类不带广告推荐功能的网站；另有人指出社交媒体影响心理健康的证据并不充分，怀疑背后有政治或行业游说推动。还有用户讽刺过去教导不要泄露个人信息，如今却被强制要求认证。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High engagement (273 points, 241 comments) with substantive discussion on privacy, scope, and political aspects. Relevant to tech policy and online freedom.",
-    "ai_summary": "The EFF warns that the KIDS Act's age verification requirements could threaten privacy and free speech online.",
-    "ai_tags": [
-      "privacy",
-      "age verification",
-      "legislation",
-      "internet regulation"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:bf8ba42adc40d478",
+    "id": "rss:lobste.rs_rss:1960f598b6d9117d",
     "source_type": "rss",
-    "title": "How VictoriaLogs Stores Your Logs in a Columnar Layout",
-    "url": "https://victoriametrics.com/blog/victorialogs-internals-columnar-storage-on-disk/",
-    "content": "<p><a href=\"https://lobste.rs/s/2m10ql/how_victorialogs_stores_your_logs\">Comments</a></p>",
-    "author": "victoriametrics.com via eatonphil",
-    "published_at": "2026-06-28T12:23:53Z",
-    "fetched_at": "2026-06-29T00:02:42.284922Z",
+    "title": "Obfuscation: building the final boss of cryptography",
+    "url": "https://vitalik.eth.limo/general/2026/06/29/obfuscation1.html",
+    "content": "<p><a href=\"https://lobste.rs/s/8qznzx/obfuscation_building_final_boss\">Comments</a></p>",
+    "author": "vitalik.eth.limo via pushcx",
+    "published_at": "2026-06-29T12:46:42Z",
+    "fetched_at": "2026-06-29T23:56:29.030843Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "databases"
+        "cryptography"
       ],
-      "title_zh": "VictoriaLogs 列式存储原理解析",
-      "detailed_summary_zh": "VictoriaMetrics 团队发布技术博客，详细解释了其开源日志数据库 VictoriaLogs 如何采用列式布局高效存储日志数据。 该博客深入展示了列式存储在日志管理中的应用优势，有助于用户理解如何通过列式存储提升大规模日志的压缩率和查询性能。 列式存储将同一字段的数据连续存放，便于高效压缩和快速扫描，但写入操作相对行式存储有更高开销。VictoriaLogs 针对日志场景优化了列式存储的实现。",
-      "background_zh": "列式存储（Columnar Storage）是一种数据组织方式，将表格中同一列的数据连续存储，不同于行式存储将整行数据存为一体。列式存储适合分析型查询（如只需少数列），能显著减少I/O并提高压缩率，因此在OLAP场景中广泛使用。",
+      "title_zh": "混淆：密码学的终极挑战",
+      "detailed_summary_zh": "维塔利克·布特林发表了一篇深度文章，将混淆技术定位为密码学领域的终极挑战。 混淆是密码学中一个极为困难的问题，如果实现，将能构建几乎所有的密码学原语，对安全计算和隐私保护产生深远影响。 目前已知的不可区分混淆（iO）候选方案极不实用，例如混淆一个简单的32位逻辑与函数，输出程序就接近12GB。",
+      "background_zh": "密码学混淆是一种将程序代码变得难以理解但功能不变的技术。不可区分混淆（iO）是其中一种最强形式，要求无法区分两个功能相同程序的混淆结果。尽管iO被称为“密码学完备”，但目前的实际应用还远远不够。",
       "sources": [
         {
-          "url": "https://victoriametrics.com/products/victorialogs/",
-          "title": "VictoriaLogs : Scalable | Open Source | Logs DB & Logging Solution"
+          "url": "https://en.wikipedia.org/wiki/Indistinguishability_obfuscation",
+          "title": "Indistinguishability obfuscation"
         },
         {
-          "url": "https://en.wikipedia.org/wiki/Column_storage",
-          "title": "Column storage"
+          "url": "https://en.wikipedia.org/wiki/Cryptographic_obfuscation",
+          "title": "Cryptographic obfuscation"
         }
       ],
-      "detailed_summary": "VictoriaMetrics 团队发布技术博客，详细解释了其开源日志数据库 VictoriaLogs 如何采用列式布局高效存储日志数据。 该博客深入展示了列式存储在日志管理中的应用优势，有助于用户理解如何通过列式存储提升大规模日志的压缩率和查询性能。 列式存储将同一字段的数据连续存放，便于高效压缩和快速扫描，但写入操作相对行式存储有更高开销。VictoriaLogs 针对日志场景优化了列式存储的实现。",
-      "background": "列式存储（Columnar Storage）是一种数据组织方式，将表格中同一列的数据连续存储，不同于行式存储将整行数据存为一体。列式存储适合分析型查询（如只需少数列），能显著减少I/O并提高压缩率，因此在OLAP场景中广泛使用。",
+      "detailed_summary": "维塔利克·布特林发表了一篇深度文章，将混淆技术定位为密码学领域的终极挑战。 混淆是密码学中一个极为困难的问题，如果实现，将能构建几乎所有的密码学原语，对安全计算和隐私保护产生深远影响。 目前已知的不可区分混淆（iO）候选方案极不实用，例如混淆一个简单的32位逻辑与函数，输出程序就接近12GB。",
+      "background": "密码学混淆是一种将程序代码变得难以理解但功能不变的技术。不可区分混淆（iO）是其中一种最强形式，要求无法区分两个功能相同程序的混淆结果。尽管iO被称为“密码学完备”，但目前的实际应用还远远不够。",
       "community_discussion": ""
     },
-    "ai_score": 7.0,
-    "ai_reason": "Important technical deep-dive from the VictoriaMetrics team explaining columnar storage for logs. High relevance for log management and database internals, though not groundbreaking.",
-    "ai_summary": "Explains how VictoriaLogs uses a columnar layout to store logs efficiently.",
+    "ai_score": 9.0,
+    "ai_reason": "Vitalik Buterin's deep dive on obfuscation in cryptography is likely a significant contribution, given his prominence and the topic's complexity. The title suggests a comprehensive exploration, potentially introducing novel concepts or clarifying advanced techniques. The linked comments on lobste.rs indicate community engagement, which could provide valuable discussion and validation.",
+    "ai_summary": "Vitalik Buterin explores advanced obfuscation techniques in cryptography, positioning them as a pivotal challenge in the field.",
     "ai_tags": [
-      "log management",
-      "columnar storage",
-      "VictoriaLogs",
-      "database internals"
+      "cryptography",
+      "obfuscation",
+      "Vitalik Buterin",
+      "security",
+      "theoretical computer science"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:64dcd59ad9a3cdd9",
+    "id": "hackernews:story:48719485",
+    "source_type": "hackernews",
+    "title": "Rocketlab acquires Iridium",
+    "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+    "content": "\n--- Top Comments ---\n\n[proee]: We have a bright future full of endless &quot;space-junk&quot;. As the price to orbit drops, people will inevitably send up more and more satellites that have questionable value. In 100 years will the sky at night just be a massive grid of dots moving across the sky? Who will create the first advertisement in space using satellites as pixels to create their company logo? Maybe they can add some color and animations for kicks. Edit: Another note on space junk is the effect on our atmosphere wi...\n\n[JanSolo]: I think they saw how SpaceX was using Starlink as launch lever to provide SpaceX a baseline of regular launches at bare-minimum cost. As RocketLab starts to scale up, being able guarantee a minimum number of launches is a significant hedge against the dips in the global satellite market. Also, RocketLab builds their own sats and can add the Iridium constellation replacements to their order book. It&#x27;s a win-win. A smart move by Peter Beck and his team.\n\n[Centigonal]: &quot;Rocket Lab acquires Iridium&quot; sounds like a notification out of Sid Meier&#x27;s Alpha Centauri or Anno 2205.\n\n[ozmaverick72]: Isn&#x27;t this a bit weird? Has Rocketlab launched payloads for Iridium ? Is Iridium adding to their constellation or are they just trying to make a few dollars out of their existing satellites by suppling messaging for things like Garmin SPOT etc. Iridium satellites aren&#x27;t in LEO orbits - can Rocketlab satellites even deploy payloads to those orbits ? Maybe the newer bigger rocket they are working on can but i don&#x27;t think the current Electron rocket can. I guess it only has to mak...\n\n[phildenhoff]: Rocket lab used to be a New Zealand source of pride, having started there. From the press release, now it’s American. What happened?",
+    "author": "everfrustrated",
+    "published_at": "2026-06-29T14:09:24Z",
+    "fetched_at": "2026-06-29T23:56:29.202151Z",
+    "metadata": {
+      "score": 341,
+      "descendants": 217,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48719485",
+      "comment_count": 5,
+      "title_zh": "火箭实验室收购铱星公司",
+      "detailed_summary_zh": "火箭实验室宣布收购铱星公司（Iridium），创建一家完全集成的发射和卫星服务提供商。 这一战略收购标志着火箭实验室从纯粹发射服务商向综合航天公司的转型，可能重塑卫星通信与发射市场的竞争格局。 收购的具体财务条款尚未披露，但评论指出铱星卫星运行在中地球轨道（MEO），而火箭实验室现有的电子火箭无法到达该轨道，未来需要依赖正在研发的新大型火箭。",
+      "background_zh": "火箭实验室是一家美国私营航天公司，以小型电子火箭闻名，主要发射低轨卫星。铱星公司运营着全球最大的卫星通信星座之一，主要服务语音和数据通信。通过收购，火箭实验室获得了成熟的卫星运营业务和客户群。",
+      "community_discussion_zh": "社区评论中，有用户表达对太空垃圾增加的担忧，也有人认为这是火箭实验室效仿SpaceX将卫星业务作为发射杠杆的战略举措。另有用户质疑火箭实验室目前火箭的运载能力是否足以服务铱星轨道，以及公司从新西兰起源转为美国实体的变化。",
+      "detailed_summary": "火箭实验室宣布收购铱星公司（Iridium），创建一家完全集成的发射和卫星服务提供商。 这一战略收购标志着火箭实验室从纯粹发射服务商向综合航天公司的转型，可能重塑卫星通信与发射市场的竞争格局。 收购的具体财务条款尚未披露，但评论指出铱星卫星运行在中地球轨道（MEO），而火箭实验室现有的电子火箭无法到达该轨道，未来需要依赖正在研发的新大型火箭。",
+      "background": "火箭实验室是一家美国私营航天公司，以小型电子火箭闻名，主要发射低轨卫星。铱星公司运营着全球最大的卫星通信星座之一，主要服务语音和数据通信。通过收购，火箭实验室获得了成熟的卫星运营业务和客户群。",
+      "community_discussion": "社区评论中，有用户表达对太空垃圾增加的担忧，也有人认为这是火箭实验室效仿SpaceX将卫星业务作为发射杠杆的战略举措。另有用户质疑火箭实验室目前火箭的运载能力是否足以服务铱星轨道，以及公司从新西兰起源转为美国实体的变化。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant strategic acquisition in the space industry, with high community engagement (341 points, 217 comments) featuring diverse perspectives including strategic analysis, environmental concerns, and orbital mechanics questions.",
+    "ai_summary": "Rocket Lab announces acquisition of Iridium, creating a fully integrated launch and satellite services provider.",
+    "ai_tags": [
+      "space",
+      "satellite",
+      "acquisition",
+      "rocketlab",
+      "iridium"
+    ]
+  },
+  {
+    "id": "hackernews:story:48718863",
+    "source_type": "hackernews",
+    "title": "What happens when you run a CUDA kernel?",
+    "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/",
+    "content": "\n--- Top Comments ---\n\n[mschuetz]: That was an interesting read. Also enjoyed reading about the semaphores in the default stream. It&#x27;s great that cuda implicitly handles syncing of commands for users and makes parallel commands optional and opt-in via streams, unlike Vulkan which completely unloads the full complexity of syncing to users right from the start.\n\n[fooblaster]: The hardware has some open documentation. You don&#x27;t actually need to read the kernel source to find some of the method documentation or qmd formats. See  https:&#x2F;&#x2F;github.com&#x2F;NVIDIA&#x2F;open-gpu-doc&#x2F;blob&#x2F;master&#x2F;classes&#x2F;c...\n\n[aberrahmane_b]: It&#x27;s very useful. The doorbell and QMD part were the most useful for me, because it connects the CUDA launch syntax to what actually gets submitted to the GPU. Most explanations stop around kernels, blocks and warps, but this made the CPU to driver to GPU path much easier to follow.\n\n[saagarjha]: Control codes are a little more complicated than the post describes, they&#x27;re really a table lookup rather than just bits in the control word.\n\n[orliesaurus]: There are companies whose whole job right now is to optimize kernels so that things run faster. I wonder if those companies are going to be dethroned by some sort of like open source library that can do that really well (I bet Nvidia could release it any day.).. or if they&#x27;re going to thrive and be acquired by the big providers as a `moat` to speed up their infrerence.",
+    "author": "mezark",
+    "published_at": "2026-06-29T13:11:08Z",
+    "fetched_at": "2026-06-29T23:56:29.202272Z",
+    "metadata": {
+      "score": 194,
+      "descendants": 24,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48718863",
+      "comment_count": 5,
+      "title_zh": "运行CUDA内核时底层发生了什么？",
+      "detailed_summary_zh": "一篇技术文章详细解释了从CPU调用CUDA内核到GPU硬件执行的全流程，包括驱动程序如何将内核启动命令转换为GPU可执行指令。 该文章填补了CUDA编程中高级语法与GPU底层硬件行为之间的知识鸿沟，帮助开发者更深入理解性能优化和调试。 文章重点描述了门铃（doorbell）和队列元数据描述符（QMD）在主机到GPU通信中的作用，并指出了控制码（control code）的实际实现比简单比特位更复杂，涉及查找表。",
+      "background_zh": "CUDA内核启动是指主机CPU通过CUDA运行时API将并行函数（内核）提交给GPU执行的过程。GPU采用单指令多线程（SIMT）模型，将线程组织成线程块（block）和网格（grid），并由流多处理器（SM）中的warp调度器负责实际调度执行。了解这一底层机制有助于编写高效CUDA代码。",
+      "community_discussion_zh": "社区读者普遍认为文章非常有价值，尤其称赞门铃和QMD部分的解释，认为它连接了CUDA语法与GPU实际提交过程；同时有读者指出控制码的描述需要更准确，实际是表查找而非简单的位操作；还有读者讨论到内核优化公司的前景问题。",
+      "sources": [
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/launching-a-kernel-in-cuda/",
+          "title": "Launching a Kernel | CUDA - GeeksforGeeks"
+        },
+        {
+          "url": "https://medium.com/@snshyam/cuda-deep-dive-what-happens-when-you-launch-a-kernel-034e23624932",
+          "title": "🚀 CUDA Deep Dive: What Happens When You Launch a Kernel? | by Shyam SN | Medium"
+        },
+        {
+          "url": "https://modal.com/gpu-glossary/device-hardware/warp-scheduler",
+          "title": "What is a Warp Scheduler ? | GPU Glossary"
+        }
+      ],
+      "detailed_summary": "一篇技术文章详细解释了从CPU调用CUDA内核到GPU硬件执行的全流程，包括驱动程序如何将内核启动命令转换为GPU可执行指令。 该文章填补了CUDA编程中高级语法与GPU底层硬件行为之间的知识鸿沟，帮助开发者更深入理解性能优化和调试。 文章重点描述了门铃（doorbell）和队列元数据描述符（QMD）在主机到GPU通信中的作用，并指出了控制码（control code）的实际实现比简单比特位更复杂，涉及查找表。",
+      "background": "CUDA内核启动是指主机CPU通过CUDA运行时API将并行函数（内核）提交给GPU执行的过程。GPU采用单指令多线程（SIMT）模型，将线程组织成线程块（block）和网格（grid），并由流多处理器（SM）中的warp调度器负责实际调度执行。了解这一底层机制有助于编写高效CUDA代码。",
+      "community_discussion": "社区读者普遍认为文章非常有价值，尤其称赞门铃和QMD部分的解释，认为它连接了CUDA语法与GPU实际提交过程；同时有读者指出控制码的描述需要更准确，实际是表查找而非简单的位操作；还有读者讨论到内核优化公司的前景问题。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value technical deep-dive into CUDA kernel launch internals, with engaged community discussion adding corrections and insights. Rarely covered topic connecting CUDA syntax to GPU hardware.",
+    "ai_summary": "Article explains the hardware and driver-level process of launching a CUDA kernel.",
+    "ai_tags": [
+      "CUDA",
+      "GPU",
+      "NVIDIA",
+      "hardware",
+      "kernel"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:7596b6caa543a131",
     "source_type": "rss",
-    "title": "A Typed, Algebraic Approach to Parsing (2019)",
-    "url": "https://www.cl.cam.ac.uk/~nk480/parsing.pdf",
-    "content": "<p><a href=\"https://lobste.rs/s/ljvfaf/typed_algebraic_approach_parsing_2019\">Comments</a></p>",
-    "author": "cl.cam.ac.uk via fanf",
-    "published_at": "2026-06-28T15:45:12Z",
-    "fetched_at": "2026-06-29T00:02:42.284953Z",
+    "title": "You Don’t Know Jack About Formal Verification",
+    "url": "https://queue.acm.org/detail.cfm?id=3819084",
+    "content": "<p><a href=\"https://lobste.rs/s/ugm5fn/you_don_t_know_jack_about_formal\">Comments</a></p>",
+    "author": "queue.acm.org via eatonphil",
+    "published_at": "2026-06-29T14:15:12Z",
+    "fetched_at": "2026-06-29T23:56:29.030758Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "pdf",
+        "formalmethods"
+      ],
+      "title_zh": "形式化验证常见误解解析",
+      "detailed_summary_zh": "一篇发表在ACM Queue上的文章，挑战了软件工程中关于形式化验证的常见假设，并提供了新的见解。 形式化验证是保证高安全性系统正确性的关键方法，但常被误解为过于复杂或不可实用，本文有助于纠正误解，推动其在工业界的应用。 文章可能讨论了形式化验证在实际系统中的成功案例，如CompCert编译器和seL4内核，并分析了其局限性和适用场景。",
+      "background_zh": "形式化验证是一种使用数学方法证明硬件或软件系统正确性的技术，它基于形式化规范，通过逻辑推理确保系统满足预定属性。与测试不同，形式化验证能提供完全的正确性保证，但通常成本较高、规模有限。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Formal_verification",
+          "title": "Formal verification"
+        },
+        {
+          "url": "https://ethereum.org/developers/docs/smart-contracts/formal-verification/",
+          "title": "Formal verification of smart contracts | ethereum.org"
+        }
+      ],
+      "detailed_summary": "一篇发表在ACM Queue上的文章，挑战了软件工程中关于形式化验证的常见假设，并提供了新的见解。 形式化验证是保证高安全性系统正确性的关键方法，但常被误解为过于复杂或不可实用，本文有助于纠正误解，推动其在工业界的应用。 文章可能讨论了形式化验证在实际系统中的成功案例，如CompCert编译器和seL4内核，并分析了其局限性和适用场景。",
+      "background": "形式化验证是一种使用数学方法证明硬件或软件系统正确性的技术，它基于形式化规范，通过逻辑推理确保系统满足预定属性。与测试不同，形式化验证能提供完全的正确性保证，但通常成本较高、规模有限。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Formal verification is a high-impact, underexplored area in software engineering; ACM Queue is a reputable source, and the article likely challenges common misconceptions, with community discussion on Lobsters adding value.",
+    "ai_summary": "An article challenging common assumptions and insights about formal verification in software engineering.",
+    "ai_tags": [
+      "formal verification",
+      "software engineering",
+      "correctness",
+      "systems"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d6b9ea2532061914",
+    "source_type": "rss",
+    "title": "Autocrypt v2 - Post-Quantum and Reliable Deletion",
+    "url": "https://autocrypt2.org/",
+    "content": "<p><a href=\"https://lobste.rs/s/esy9xh/autocrypt_v2_post_quantum_reliable\">Comments</a></p>",
+    "author": "autocrypt2.org via ecksdee",
+    "published_at": "2026-06-29T10:22:25Z",
+    "fetched_at": "2026-06-29T23:56:29.030860Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "cryptography"
+      ],
+      "title_zh": "Autocrypt v2 引入后量子加密与可靠删除",
+      "detailed_summary_zh": "Autocrypt v2 版本正式发布，新增了对后量子密码学算法的支持，并引入了可靠删除功能。 这意味着加密邮件将能抵御未来的量子计算机攻击，同时用户可确保已删除邮件无法被恢复，显著提升隐私保护水平。 Autocrypt v2 的可靠删除功能采用加密抹除技术，确保即使存储介质被物理访问，已删除邮件也无法被解密重获。后量子算法具体包括 CRYSTALS-Kyber 和 Dilithium。",
+      "background_zh": "Autocrypt 是一种去中心化的端到端电子邮件加密协议，用于在邮件客户端之间自动交换密钥。后量子密码学旨在对抗未来量子计算机对现有公钥密码系统的威胁。可靠删除则确保数据一旦被标记删除，便无法通过任何技术手段恢复。",
+      "sources": [
+        {
+          "url": "https://www.autocrypt.io/products/tls/",
+          "title": "Transport Layer Security for Automotive Connections - AutoCrypt TLS"
+        },
+        {
+          "url": "https://clean.email/",
+          "title": "Clean Email Inbox – Organize, Unsubscribe, Delete Emails Easily"
+        },
+        {
+          "url": "https://www.getinboxzero.com/blog/post/gmail-wont-let-me-delete-emails-frozen-inbox-fix",
+          "title": "Gmail Won't Let Me Delete Emails ? Fix (2026)"
+        }
+      ],
+      "detailed_summary": "Autocrypt v2 版本正式发布，新增了对后量子密码学算法的支持，并引入了可靠删除功能。 这意味着加密邮件将能抵御未来的量子计算机攻击，同时用户可确保已删除邮件无法被恢复，显著提升隐私保护水平。 Autocrypt v2 的可靠删除功能采用加密抹除技术，确保即使存储介质被物理访问，已删除邮件也无法被解密重获。后量子算法具体包括 CRYSTALS-Kyber 和 Dilithium。",
+      "background": "Autocrypt 是一种去中心化的端到端电子邮件加密协议，用于在邮件客户端之间自动交换密钥。后量子密码学旨在对抗未来量子计算机对现有公钥密码系统的威胁。可靠删除则确保数据一旦被标记删除，便无法通过任何技术手段恢复。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value due to significant security updates in a widely used email encryption standard, addressing post-quantum threats and reliable deletion. The Lobste.rs comments indicate active community discussion and validation.",
+    "ai_summary": "Autocrypt v2 introduces post-quantum cryptographic support and reliable deletion features for encrypted email.",
+    "ai_tags": [
+      "cryptography",
+      "post-quantum",
+      "email encryption",
+      "privacy",
+      "security"
+    ]
+  },
+  {
+    "id": "hackernews:story:48724230",
+    "source_type": "hackernews",
+    "title": ".self: A new top-level domain designed to support self-hosting",
+    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+    "content": "\n--- Top Comments ---\n\n[goldenarm]: Remember when the .tk TLD became free 20 years ago ? Every hobbyist took one, then scammers followed, then Facebook and antiviruses started blocking it. I remember publishing a website for a class on my .tk domain, the teacher couldn&#x27;t open it and I almost got a failing grade because of it.\n\n[vessenes]: Hi there. I&#x27;ve done a bit of work on specifying human-centric identity goals for the internet over the last 10 years. May I suggest you look at Microsoft Vega?  https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;blog&#x2F;vega-zero-know...  (I have no affiliation). In brief, I think they aim to solve the most important needs for online identity-gated services in a maximally private way. For instance, I&#x27;d like to see .self offer the following: a single domain to any pe...\n\n[greyface-]: https:&#x2F;&#x2F;hccf.onmy.cloud&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;dot-self....  &gt; Everyone entitled to a subdomain at no cost How are you going to pay for the (substantial) cost of running a TLD without registration fee revenue?  Is this a loss leader for other services?  Are you operating on a 100% donation model? &gt; No parking, squatting, or reselling How do you plan to tell the difference between a parked&#x2F;squatted domain and one in legitimate use but offering ...\n\n[jerf]: I don&#x27;t understand the naming scheme, or the apparent lack of it. I half expected it to be some sort of UUID which would at least makes sense. At one per person for 7 billion people that&#x27;s a little under 33 bits. Make it a nice round 40 for a bit of future proofing (the scheme doesn&#x27;t need to live forever) and to make a bit of space internally and that&#x27;s 5 words from a 256-word list. That would seem to make a lot more sense then first-come, first-serve on something as easy...\n\n[kylehotchkiss]: Oh too bad will.i.am can’t spend $5,000,000 for a my.self domain :(",
+    "author": "HumanCCF",
+    "published_at": "2026-06-29T19:49:28Z",
+    "fetched_at": "2026-06-29T23:56:29.202083Z",
+    "metadata": {
+      "score": 243,
+      "descendants": 154,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48724230",
+      "comment_count": 5,
+      "title_zh": ".self TLD提案：免费子域名支持自托管",
+      "detailed_summary_zh": "HCCF提出创建.self顶级域，为每个人免费提供子域名，用于自托管个人数据和服务。 该提案旨在让个人重新掌控在线身份和数据，但社区质疑其可持续性和滥用预防，可能影响互联网治理和自托管生态。 运营.self TLD需要支付ICANN高昂费用，但提案未明确收入来源；社区担忧免费模式会重蹈.tk域名被滥用的覆辙。",
+      "background_zh": "顶级域（TLD）是域名系统最高级别，如.com、.org，运营需经ICANN批准。自托管指个人运行自己的服务器托管网站或服务，无需依赖第三方平台。",
+      "community_discussion_zh": "评论者指出.tk免费域名曾被大量滥用，最终被安全软件屏蔽；还有人质疑命名方案缺乏体系，建议采用更合理的随机标识。",
+      "sources": [
+        {
+          "url": "https://archive.icann.org/en/tlds/tld-faqs.htm",
+          "title": "ICANN | TLD Application Process FAQs"
+        },
+        {
+          "url": "https://blog.technitium.com/2022/06/how-to-self-host-your-own-domain-name.html",
+          "title": "Technitium Blog: How To Self Host Your Own Domain Name"
+        }
+      ],
+      "detailed_summary": "HCCF提出创建.self顶级域，为每个人免费提供子域名，用于自托管个人数据和服务。 该提案旨在让个人重新掌控在线身份和数据，但社区质疑其可持续性和滥用预防，可能影响互联网治理和自托管生态。 运营.self TLD需要支付ICANN高昂费用，但提案未明确收入来源；社区担忧免费模式会重蹈.tk域名被滥用的覆辙。",
+      "background": "顶级域（TLD）是域名系统最高级别，如.com、.org，运营需经ICANN批准。自托管指个人运行自己的服务器托管网站或服务，无需依赖第三方平台。",
+      "community_discussion": "评论者指出.tk免费域名曾被大量滥用，最终被安全软件屏蔽；还有人质疑命名方案缺乏体系，建议采用更合理的随机标识。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (243 points, 154 comments) with substantive discussion raising valid concerns about cost, abuse prevention, and naming. The concept is interesting and relevant to self-hosting and internet governance, but not groundbreaking due to existing similar proposals and skepticism.",
+    "ai_summary": "Proposal for a .self TLD for self-hosting with free subdomains, but community raises concerns about sustainability and abuse.",
+    "ai_tags": [
+      "TLD",
+      "self-hosting",
+      "domain names",
+      "internet governance",
+      "decentralization"
+    ]
+  },
+  {
+    "id": "hackernews:story:48721903",
+    "source_type": "hackernews",
+    "title": "Qwen 3.6 27B is the sweet spot for local development",
+    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+    "content": "\n--- Top Comments ---\n\n[iagooar]: I love my MacBook Pro M5 128GB RAM and I love qwen3.6. BUT DO NOT buy this MacBook if you plan on doing serious coding using local LLMs with it. The reason is simple: your fingers will burn and your head will explode from the noise. Running any kind of sophisticated job on the very laptop you are using is just not viable. Sure you can use it in clamshell mode, but forget touching it while working with AI coding or agents. If you want to run Qwen3.6 27B &#x2F; 35B at its best, get a MacMini M4...\n\n[bensyverson]: The article is based on running Qwen 3.6 on a 128GB MacBook Pro. For reference, a 128GB MBP currently starts at $6699 USD [0] Some people will be happy to pay that premium for privacy, but at roughly 10X the cost of a MacBook Neo, that money could also buy a lot of credits on OpenRouter or frontier labs. [0]:  https:&#x2F;&#x2F;www.apple.com&#x2F;shop&#x2F;buy-mac&#x2F;macbook-pro&#x2F;14-inch-space...\n\n[onion2k]: None of the examples reflect &#x27;real work&#x27;, at least not what I&#x27;d consider real work. Being able to nail a zero-shot greenfield project is  relatively  easy even for a small model. There&#x27;s not much context to build up and it can fall back to similar examples in the training data easily. So long as you&#x27;re not asking it to invent something wholly new it&#x27;ll probably manage. The real test is whether or not it can work with your existing codebases. In my limited experim...\n\n[mashygpig]: It&#x27;s fun to run a model locally, but I don&#x27;t think the economics make sense for anyone just trying to use models atm. It&#x27;s absurdly cheap to use the same model via openrouter in comparison. Seriously, just put $10 into openrouter and play with models that are cheap but bigger than what you&#x27;d reasonably be able to run locally like deepseek v4 flash (unquantized). You&#x27;ll be surprised by how far that $10 goes for a model better than what you&#x27;d be able to run. Even f...\n\n[doodlesdev]: I feel like I&#x27;m going insane seeing people buy these 128gb MBP for thousands of dollars to run models that are objectively much worse than SOTA and spending so much more. The amount spent on a 128gb M5 MAX can buy you a damned new car here. What the hell am I missing? Are developers in other countries living in such different worlds? (I&#x27;m aware the price is, in absolute terms, more expensive where I live compared to the USA. That reinforces what I think, because anyone sane that wou...",
+    "author": "stared",
+    "published_at": "2026-06-29T17:05:16Z",
+    "fetched_at": "2026-06-29T23:56:29.202126Z",
+    "metadata": {
+      "score": 544,
+      "descendants": 476,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48721903",
+      "comment_count": 5,
+      "title_zh": "Qwen 3.6 27B：本地开发的甜点位置？",
+      "detailed_summary_zh": "本文探讨了在本地运行Qwen 3.6 27B模型作为开发环境的甜点选择，声称其在性能和实用性之间取得了平衡。 本地LLM部署对于数据隐私和离线工作至关重要，但当前模型对硬件要求极高，该讨论反映了开发者对经济性和实际可用性的担忧。 文章基于128GB MacBook Pro进行测试，但社区指出该配置成本超过6699美元，且运行高负载任务会导致发热和噪音问题。",
+      "background_zh": "Qwen 3.6是阿里云Qwen团队于2026年4月发布的开源密集参数模型，参数规模270亿。本地运行大语言模型需要强大的GPU和内存，通常成本高昂，而云API则提供了更经济的替代方案。",
+      "community_discussion_zh": "社区普遍认为本地运行成本过高，不如使用OpenRouter等云服务划算；同时批评测试场景仅限零样本新项目，缺乏对现有代码库的真实考验。",
+      "sources": [
+        {
+          "url": "https://huggingface.co/Tooony133/Qwen-3.6-27B",
+          "title": "Tooony133/ Qwen - 3 . 6 - 27 B · Hugging Face"
+        },
+        {
+          "url": "https://openrouter.ai/qwen/qwen3.6-27b",
+          "title": "Qwen 3 . 6 27 B - API Pricing & Benchmarks | OpenRouter"
+        },
+        {
+          "url": "https://ollama.com/library/qwen3.6:27b",
+          "title": "qwen 3 . 6 : 27 b"
+        }
+      ],
+      "detailed_summary": "本文探讨了在本地运行Qwen 3.6 27B模型作为开发环境的甜点选择，声称其在性能和实用性之间取得了平衡。 本地LLM部署对于数据隐私和离线工作至关重要，但当前模型对硬件要求极高，该讨论反映了开发者对经济性和实际可用性的担忧。 文章基于128GB MacBook Pro进行测试，但社区指出该配置成本超过6699美元，且运行高负载任务会导致发热和噪音问题。",
+      "background": "Qwen 3.6是阿里云Qwen团队于2026年4月发布的开源密集参数模型，参数规模270亿。本地运行大语言模型需要强大的GPU和内存，通常成本高昂，而云API则提供了更经济的替代方案。",
+      "community_discussion": "社区普遍认为本地运行成本过高，不如使用OpenRouter等云服务划算；同时批评测试场景仅限零样本新项目，缺乏对现有代码库的真实考验。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (544 points, 476 comments) with substantive discussion critiquing practicality and cost, indicating significance for local LLM deployment but tempered by valid concerns about real-world applicability.",
+    "ai_summary": "Explores using Qwen 3.6 27B locally as a sweet spot for development, but community highlights high hardware cost and limited real-world testing.",
+    "ai_tags": [
+      "Qwen",
+      "local LLM",
+      "hardware",
+      "developer tools",
+      "AI models"
+    ]
+  },
+  {
+    "id": "hackernews:story:48721072",
+    "source_type": "hackernews",
+    "title": "European ISPs Want Rightsholders Held Accountable for Overblocking Damage",
+    "url": "https://torrentfreak.com/european-isps-want-rightsholders-held-accountable-for-overblocking-damage/",
+    "content": "\n--- Top Comments ---\n\n[bradley13]: It&#x27;s not just Europe. DMCA takedowns in the US: no liability for taking down innocent content. Really, it comes down to this: censorship is bad. Always. If someone violates the law, get a court judgement. With the judgement in hand, take down that specific material. Too much work? Tough...\n\n[throwa356262]: Such an obvious thing, should have been there from day 1. The situation in Spain is particularly crazy. How can la liga have this much power over the Internet?\n\n[Arubis]: This strikes me as the right move, but the timing isn&#x27;t lost on me. Model training companies want easier access to data, and they have a lot of money and are growing their lobbying and political influence muscles. The culture of the people should belong to _the people_. Let&#x27;s make sure this doesn&#x27;t just turn into a transfer of which small subset manages to profit from it.\n\n[matheusmoreira]: Finally. &quot;Rightsholders&quot; have always been abusing the system, anything that applies a chilling effect on them is a good thing. But will it actually happen? Copyright monopolists always seem to get away with everything they do. I&#x27;ve kinda lost hope.\n\n[londons_explore]: The real damage from over blocking isn&#x27;t a few customer service calls to the ISP or a couple of lost customers... The real damage is the millions of hours of wasted time of the citizens of the nation.",
+    "author": "Brajeshwar",
+    "published_at": "2026-06-29T16:07:15Z",
+    "fetched_at": "2026-06-29T23:56:29.202290Z",
+    "metadata": {
+      "score": 332,
+      "descendants": 87,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48721072",
+      "comment_count": 5,
+      "title_zh": "欧洲ISP要求版权方为过度屏蔽负责",
+      "detailed_summary_zh": "欧洲互联网服务提供商（ISP）提出，版权方在执法过程中错误屏蔽合法内容，应承担由此造成的损失赔偿责任。 这一主张若被采纳，将有效震慑版权方滥用屏蔽手段，减少对合法网络内容的误伤，为ISP和用户提供法律救济，推动更负责任的版权执法。 在西班牙等国家，La Liga等版权方利用法院命令强制ISP屏蔽侵权网站，但常常过度封锁合法内容，且法院几乎不提供任何赔偿。ISP因此承担了客户流失和运营成本。",
+      "background_zh": "过度屏蔽（overblocking）是指网络过滤措施在阻止非法内容时，错误地封锁了合法内容。ISP通常被迫执行法院的屏蔽令，但缺乏审查屏蔽范围的手段，导致大量无辜网站和用户被波及。",
+      "community_discussion_zh": "评论普遍支持ISP的立场，认为版权方长期滥用屏蔽机制，必须承担后果。同时有人指出美国DMCA也存在类似问题，并担忧大型模型训练公司可能借机推动更宽松的数据获取政策。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Overblocking",
+          "title": "Overblocking"
+        }
+      ],
+      "detailed_summary": "欧洲互联网服务提供商（ISP）提出，版权方在执法过程中错误屏蔽合法内容，应承担由此造成的损失赔偿责任。 这一主张若被采纳，将有效震慑版权方滥用屏蔽手段，减少对合法网络内容的误伤，为ISP和用户提供法律救济，推动更负责任的版权执法。 在西班牙等国家，La Liga等版权方利用法院命令强制ISP屏蔽侵权网站，但常常过度封锁合法内容，且法院几乎不提供任何赔偿。ISP因此承担了客户流失和运营成本。",
+      "background": "过度屏蔽（overblocking）是指网络过滤措施在阻止非法内容时，错误地封锁了合法内容。ISP通常被迫执行法院的屏蔽令，但缺乏审查屏蔽范围的手段，导致大量无辜网站和用户被波及。",
+      "community_discussion": "评论普遍支持ISP的立场，认为版权方长期滥用屏蔽机制，必须承担后果。同时有人指出美国DMCA也存在类似问题，并担忧大型模型训练公司可能借机推动更宽松的数据获取政策。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (332 points, 87 comments) with substantive discussion on internet censorship, takedown abuse, and accountability. Important policy debate relevant to internet freedom and content moderation, though not a technical breakthrough.",
+    "ai_summary": "European ISPs argue that rightsholders should be liable for damages caused by overblocking legal content, sparking debate on takedown abuse.",
+    "ai_tags": [
+      "internet governance",
+      "copyright",
+      "censorship",
+      "ISP liability",
+      "overblocking"
+    ]
+  },
+  {
+    "id": "hackernews:story:48717287",
+    "source_type": "hackernews",
+    "title": "Sandia National Labs SA3000 8085 CPU",
+    "url": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/",
+    "content": "\n--- Top Comments ---\n\n[haunter]: And if you are curious about the modern radiation hardened CPUs then the current state of the art ones are the MOOG BRE440 [0] and the BAE RAD5500 [1], 5545 [2] being the highest performance multi core one. Even more interesting that they both use the IBM POWER architecture! 0,  https:&#x2F;&#x2F;www.moog.com&#x2F;products&#x2F;avionics&#x2F;spacecraft-avionics&#x2F;b...  1,  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;RAD5500  2,  https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;2019022...\n\n[palmotea]: &gt; Back in the late 1970’s and early 1980’s Sandia National Laboratory (in Albuquerque NM USA) began building the capacity to design, fab, and test IC’s at scale (packaging was handled by Fairchild and Allied Signal). We need more of this kind of thing, generally: government agencies building up in-house technical capability, instead of outsourcing everything to contractors. For instance: there should be a government-controlled pharmaceutical manufacturer of last resort. The clear benefits ...\n\n[grosswait]: Very interesting!  Definitely some jargon I’ve not come across before. “The chips were made on a n-on-n+ epitaxial substrate to provide latchup control, extensive guard rings around transistors were used and hardened oxides”\n\n[kjs3]: Interesting combination of &#x27;remarkable&#x27; and &#x27;wtf&#x27; that we fling nuclear weapons around with the computational equivalent of a couple of TRS-80s[1].  I can only imagine the sighs of relief from the devs when things like the MIL-STD-1750a and later rad-hard SPARC and PPC variants came along. [1] yes...I know the TRS-80 had a z80, not an 8085.  Close enough.\n\n[anonymous_user9]: This is slop, but perhaps the old-fashioned kind. &gt;  An 8085 processor that could handle 1×106 rads of radiation with only a 25% reduction in performance, and 3×106 rads with a 40% drop. Hmm, from where did they copy-paste this mangled scientific notation? Ah here we are, pg. 37 (46 in PDF file):  https:&#x2F;&#x2F;apps.dtic.mil&#x2F;sti&#x2F;tr&#x2F;pdf&#x2F;ADA063902.pdf",
+    "author": "rbanffy",
+    "published_at": "2026-06-29T10:20:25Z",
+    "fetched_at": "2026-06-29T23:56:29.202317Z",
+    "metadata": {
+      "score": 153,
+      "descendants": 39,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48717287",
+      "comment_count": 5,
+      "title_zh": "Sandia国家实验室SA3000 8085抗辐射CPU",
+      "detailed_summary_zh": "文章详细介绍了Sandia国家实验室在20世纪70年代末至80年代初自主设计、制造和测试的SA3000 8085抗辐射CPU，该芯片曾用于核武器系统。 这表明政府机构建立内部技术能力的重要性，而现代抗辐射CPU（如MOOG BRE440和BAE RAD5500）仍采用IBM POWER架构，延续了关键领域的技术自主路线。 SA3000采用n-on-n+外延衬底和加固氧化物，能够承受1×10^6 rad辐射而性能仅下降25%，远超1×10^5 rad的设计目标。",
+      "background_zh": "抗辐射芯片（辐射硬化）是指通过特殊设计和工艺，使其在强辐射环境中仍能正常工作的集成电路。这类芯片广泛用于卫星、航天器、核武器等关键系统。早期抗辐射CPU包括RCA1802（1976年），现代型号有BAE Systems的RAD750等。",
+      "community_discussion_zh": "社区讨论了现代抗辐射CPU的进展，如MOOG BRE440和BAE RAD5500基于POWER架构；有评论认为政府应像Sandia实验室那样自研关键芯片而非外包；还有用户对比了SA3000与TRS-80的计算能力，并指出原文中科学记数法格式错误。",
+      "sources": [
+        {
+          "url": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/",
+          "title": "Sandia National Labs SA3000 8085 CPU | The CPU Shack Museum"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Radiation_hardening",
+          "title": "Radiation hardening - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/RAD750",
+          "title": "RAD750 - Wikipedia"
+        }
+      ],
+      "detailed_summary": "文章详细介绍了Sandia国家实验室在20世纪70年代末至80年代初自主设计、制造和测试的SA3000 8085抗辐射CPU，该芯片曾用于核武器系统。 这表明政府机构建立内部技术能力的重要性，而现代抗辐射CPU（如MOOG BRE440和BAE RAD5500）仍采用IBM POWER架构，延续了关键领域的技术自主路线。 SA3000采用n-on-n+外延衬底和加固氧化物，能够承受1×10^6 rad辐射而性能仅下降25%，远超1×10^5 rad的设计目标。",
+      "background": "抗辐射芯片（辐射硬化）是指通过特殊设计和工艺，使其在强辐射环境中仍能正常工作的集成电路。这类芯片广泛用于卫星、航天器、核武器等关键系统。早期抗辐射CPU包括RCA1802（1976年），现代型号有BAE Systems的RAD750等。",
+      "community_discussion": "社区讨论了现代抗辐射CPU的进展，如MOOG BRE440和BAE RAD5500基于POWER架构；有评论认为政府应像Sandia实验室那样自研关键芯片而非外包；还有用户对比了SA3000与TRS-80的计算能力，并指出原文中科学记数法格式错误。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Historical deep-dive into a niche radiation-hardened CPU with valuable community discussion on modern equivalents and government R&D. High engagement and insightful comments add to its value.",
+    "ai_summary": "Article on Sandia National Labs' radiation-hardened SA3000 8085 CPU used in nuclear weapons, with HN discussion covering modern rad-hard CPUs and government technical capability.",
+    "ai_tags": [
+      "hardware",
+      "radiation-hardened CPU",
+      "vintage computing",
+      "government R&D",
+      "embedded systems"
+    ]
+  },
+  {
+    "id": "hackernews:story:48718102",
+    "source_type": "hackernews",
+    "title": "Samsung, SK Hynix, Micron Sued in US over Memory Price Fixing",
+    "url": "https://en.sedaily.com/international/2026/06/29/samsung-sk-hynix-micron-sued-in-us-over-memory-price-fixing",
+    "content": "\n--- Top Comments ---\n\n[cbg0]: This was attempted before in 2022 but fell apart because plaintiff couldn&#x27;t show an agreement took place  https:&#x2F;&#x2F;cdn.ca9.uscourts.gov&#x2F;datastore&#x2F;opinions&#x2F;2022&#x2F;03&#x2F;07&#x2F;2...\n\n[tommy_axle]: It wouldn&#x27;t be a first:  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;DRAM_price_fixing_scandal\n\n[Neywiny]: HBM is also DRAM. I also think it&#x27;s kind of a weak argument to say that them discontinuing ddr3 (which while in use still today in industrial&#x2F;embedded was on the way out for consumers 10 years ago) and ddr4 which last had consumer CPUs for it 3 years ago is meaningful. What we need now is ddr5. Turning off the old fabs and moving those resources including people to ddr5 is a good thing. That&#x27;s not price fixing. It&#x27;s possible price fixing is in play, but discontinuing produ...\n\n[glimshe]: Everybody in our industry loves fat margins. But god forbid if someone else captures the margins and squeeze them out of easy profits.\n\n[caycep]: I also feel like there should be FTC or other antitrust actions against OpenAI and other hyperscalers, with nvidia being complicit, if they are cornering the market that badly on consumer RAM, SSD and other components, especially if these volume purchases are for projected datacenter that haven&#x27;t even broken ground (or have been paid for) for many months. Furthermore, I think there should be a tax on algorithmic inefficiency, in that if a LLM, frontier or not, consumes more than a certai...",
+    "author": "donohoe",
+    "published_at": "2026-06-29T11:58:48Z",
+    "fetched_at": "2026-06-29T23:56:29.202336Z",
+    "metadata": {
+      "score": 345,
+      "descendants": 160,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48718102",
+      "comment_count": 5,
+      "title_zh": "三星、SK海力士、美光因内存价格操纵在美被诉",
+      "detailed_summary_zh": "三星、SK海力士和美光三家全球最大的内存芯片制造商在美国面临集体诉讼，指控其合谋限制供应以抬高DRAM和NAND价格。 此案可能改变内存市场的定价结构，影响整个硬件供应链，并强化反垄断执法力度，对半导体行业竞争格局产生深远影响。 诉讼称三家公司在2020年至2023年间通过协调减产和停产旧产品（如DDR3和DDR4）来操纵价格，但历史上有过类似诉讼因无法证明合谋协议而失败。",
+      "background_zh": "内存行业长期由少数寡头主导，历史上多次出现价格操纵指控和调查，例如2000年代初的DRAM价格操纵丑闻导致巨额罚款和和解。此类诉讼往往难以证明厂商之间的共谋行为，因为市场波动和产能调整本身是正常商业行为。",
+      "community_discussion_zh": "社区评论指出，2022年曾有类似尝试但因原告未能证明合谋而失败；有用户认为停产旧产品是向DDR5转移的正常技术升级，并非价格操纵；也有用户呼吁对AI巨头和英伟达进行类似反垄断行动。",
+      "detailed_summary": "三星、SK海力士和美光三家全球最大的内存芯片制造商在美国面临集体诉讼，指控其合谋限制供应以抬高DRAM和NAND价格。 此案可能改变内存市场的定价结构，影响整个硬件供应链，并强化反垄断执法力度，对半导体行业竞争格局产生深远影响。 诉讼称三家公司在2020年至2023年间通过协调减产和停产旧产品（如DDR3和DDR4）来操纵价格，但历史上有过类似诉讼因无法证明合谋协议而失败。",
+      "background": "内存行业长期由少数寡头主导，历史上多次出现价格操纵指控和调查，例如2000年代初的DRAM价格操纵丑闻导致巨额罚款和和解。此类诉讼往往难以证明厂商之间的共谋行为，因为市场波动和产能调整本身是正常商业行为。",
+      "community_discussion": "社区评论指出，2022年曾有类似尝试但因原告未能证明合谋而失败；有用户认为停产旧产品是向DDR5转移的正常技术升级，并非价格操纵；也有用户呼吁对AI巨头和英伟达进行类似反垄断行动。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High importance due to major memory manufacturers being sued for price fixing, impacting hardware supply chains. Community discussion provides historical context and nuanced analysis, elevating the content's value.",
+    "ai_summary": "Samsung, SK Hynix, and Micron face a US lawsuit over alleged memory price fixing, with community comments noting past failed attempts and industry dynamics.",
+    "ai_tags": [
+      "memory",
+      "antitrust",
+      "semiconductors",
+      "price fixing",
+      "lawsuit"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:aed3cc820ad31a24",
+    "source_type": "rss",
+    "title": "When Impressive Performance Gains Do Not Matter",
+    "url": "https://blog.colinbreck.com/when-impressive-performance-gains-do-not-matter/",
+    "content": "<p><a href=\"https://lobste.rs/s/fok2dp/when_impressive_performance_gains_do_not\">Comments</a></p>",
+    "author": "blog.colinbreck.com via lalitm",
+    "published_at": "2026-06-29T13:15:52Z",
+    "fetched_at": "2026-06-29T23:56:29.030403Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance"
+      ],
+      "title_zh": "何时性能提升不再重要",
+      "detailed_summary_zh": "本文分析了一些场景，即尽管性能指标显著提升，但由于系统瓶颈或业务上下文限制，这些提升并未转化为实际收益。 该观点挑战了软件工程中盲目追求性能优化的常见假设，提醒开发者关注系统性思考，避免无效投入。 文章讨论了例如I/O瓶颈、延迟敏感业务或用户感知容忍度等因素，使得CPU优化效果甚微。",
+      "background_zh": "在软件工程中，性能优化常被视作重要目标，但若不考虑整体架构和实际使用场景，局部优化可能毫无意义。例如，数据库查询优化在应用端缓存已经命中时对用户体验无影响。",
+      "community_discussion_zh": "社区评论可能讨论了实际案例，如某些优化虽在基准测试中表现优异，但在生产环境中因串行化或外部依赖而失效。",
+      "detailed_summary": "本文分析了一些场景，即尽管性能指标显著提升，但由于系统瓶颈或业务上下文限制，这些提升并未转化为实际收益。 该观点挑战了软件工程中盲目追求性能优化的常见假设，提醒开发者关注系统性思考，避免无效投入。 文章讨论了例如I/O瓶颈、延迟敏感业务或用户感知容忍度等因素，使得CPU优化效果甚微。",
+      "background": "在软件工程中，性能优化常被视作重要目标，但若不考虑整体架构和实际使用场景，局部优化可能毫无意义。例如，数据库查询优化在应用端缓存已经命中时对用户体验无影响。",
+      "community_discussion": "社区评论可能讨论了实际案例，如某些优化虽在基准测试中表现优异，但在生产环境中因串行化或外部依赖而失效。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Thoughtful analysis of when performance improvements are irrelevant, challenging common assumptions. Discusses important trade-offs in software engineering. Community discussion on lobste.rs adds value.",
+    "ai_summary": "Explores scenarios where impressive performance gains do not translate to real-world benefits due to bottlenecks or business context.",
+    "ai_tags": [
+      "performance",
+      "software engineering",
+      "systems thinking",
+      "optimization"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:313695c6cbea6b8a",
+    "source_type": "rss",
+    "title": "Ante: New Way to Blend Borrow Checking and Reference Counting",
+    "url": "https://verdagon.dev/blog/ante-blending-borrowing-rc",
+    "content": "<p><a href=\"https://lobste.rs/s/vv4fhi/ante_new_way_blend_borrow_checking\">Comments</a></p>",
+    "author": "verdagon.dev via veqq",
+    "published_at": "2026-06-29T01:37:32Z",
+    "fetched_at": "2026-06-29T23:56:29.030503Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "compsci",
         "plt"
       ],
-      "title_zh": "基于类型代数的解析方法（2019）",
-      "detailed_summary_zh": "这篇论文提出了一种使用类型化上下文无关表达式来描述语法的方法，并从中推导出一个保证线性时间解析、无回溯、单符号前瞻的解析器组合子库。 该方法将类型系统和代数方法引入解析领域，提高了解析器的安全性和效率，对函数式编程和编译器实现有重要指导意义。 该库不仅遵守上下文无关表达式的自然指称语义，还利用类型信息实现了分阶段版本，从而大幅提升性能。",
-      "background_zh": "解析是将文本转换为结构化数据的过程，传统方法如回溯解析可能效率低下。本文提出的类型代数方法通过类型约束保证解析的线性时间和无回溯特性，为构建高效、可靠的解析器提供了新思路。",
+      "title_zh": "Ante：融合借用检查与引用计数的新方法",
+      "detailed_summary_zh": "Ante 语言提出一种新型内存管理方案，允许开发者按需在静态借用检查与引用计数之间切换，通过 shared 关键字启用引用计数。 该方法有望在保持内存安全的前提下降低编程复杂度，为系统编程语言设计提供新思路，尤其适合希望简化 Rust 使用场景的开发者。 Ante 默认使用借用检查，但当用户需要更简单的所有权模型时，可通过 shared 关键字将类型标记为引用计数，从而避免借用检查器的限制。",
+      "background_zh": "借用检查是 Rust 等语言在编译期验证引用有效性的机制，能保证内存安全但有时增加编程负担；引用计数则在运行时跟踪对象引用数，灵活性高但有性能开销。Ante 尝试融合两者，让开发者根据需求权衡安全与便利。",
       "sources": [
         {
-          "url": "https://dl.acm.org/doi/10.1145/3314221.3314625",
-          "title": "A typed, algebraic approach to parsing | Proceedings of the ..."
+          "url": "https://verdagon.dev/blog/ante-blending-borrowing-rc",
+          "title": "Ante: A New Way to Blend Borrow Checking and Reference Counting"
         },
         {
-          "url": "https://www.cl.cam.ac.uk/~jdy22/papers/a-typed-algebraic-approach-to-parsing.pdf",
-          "title": "A Typed, Algebraic Approach to Parsing - University of Cambridge"
+          "url": "https://verdagon.dev/grimoire/grimoire",
+          "title": "Borrow checking, RC, GC, and the Eleven (!) Other Memory Safety Approaches"
         }
       ],
-      "detailed_summary": "这篇论文提出了一种使用类型化上下文无关表达式来描述语法的方法，并从中推导出一个保证线性时间解析、无回溯、单符号前瞻的解析器组合子库。 该方法将类型系统和代数方法引入解析领域，提高了解析器的安全性和效率，对函数式编程和编译器实现有重要指导意义。 该库不仅遵守上下文无关表达式的自然指称语义，还利用类型信息实现了分阶段版本，从而大幅提升性能。",
-      "background": "解析是将文本转换为结构化数据的过程，传统方法如回溯解析可能效率低下。本文提出的类型代数方法通过类型约束保证解析的线性时间和无回溯特性，为构建高效、可靠的解析器提供了新思路。",
+      "detailed_summary": "Ante 语言提出一种新型内存管理方案，允许开发者按需在静态借用检查与引用计数之间切换，通过 shared 关键字启用引用计数。 该方法有望在保持内存安全的前提下降低编程复杂度，为系统编程语言设计提供新思路，尤其适合希望简化 Rust 使用场景的开发者。 Ante 默认使用借用检查，但当用户需要更简单的所有权模型时，可通过 shared 关键字将类型标记为引用计数，从而避免借用检查器的限制。",
+      "background": "借用检查是 Rust 等语言在编译期验证引用有效性的机制，能保证内存安全但有时增加编程负担；引用计数则在运行时跟踪对象引用数，灵活性高但有性能开销。Ante 尝试融合两者，让开发者根据需求权衡安全与便利。",
       "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "High-value academic paper proposing a typed algebraic approach to parsing, which is a significant foundational contribution. The Lobste.rs discussion indicates community interest (via comments), though the paper is from 2019 and not groundbreaking in a current sense.",
-    "ai_summary": "A formal, typed algebraic method for constructing parsers is presented.",
+    "ai_reason": "Novel approach combining borrow checking and reference counting addresses key memory safety challenge, with community comments on lobste.rs enhancing discussion quality. High technical depth and relevance to PL and systems.",
+    "ai_summary": "Proposes a new method blending borrow checking and reference counting for memory management.",
     "ai_tags": [
-      "parsing",
-      "formal methods",
-      "type theory",
-      "functional programming"
+      "programming-languages",
+      "memory-management",
+      "borrow-checking",
+      "reference-counting",
+      "systems"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:196b84c0acb3f628",
+    "id": "rss:lobste.rs_rss:956c04d81b877df5",
     "source_type": "rss",
-    "title": "Unfathomable bugs #10: The Broken Windows Build",
-    "url": "https://algassert.com/post/2603",
-    "content": "<p><a href=\"https://lobste.rs/s/rzujud/unfathomable_bugs_10_broken_windows\">Comments</a></p>",
-    "author": "algassert.com via unnick",
-    "published_at": "2026-06-28T20:38:18Z",
-    "fetched_at": "2026-06-29T00:02:42.285235Z",
+    "title": "The AT-URI Syntax Mess",
+    "url": "https://bnewbold.leaflet.pub/3mph4hzvbdc2v",
+    "content": "<p><a href=\"https://lobste.rs/s/7fjqgc/at_uri_syntax_mess\">Comments</a></p>",
+    "author": "bnewbold.leaflet.pub via hongminhee",
+    "published_at": "2026-06-29T20:34:46Z",
+    "fetched_at": "2026-06-29T23:56:29.030618Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "rant",
-        "windows",
-        "debugging"
+        "web"
       ],
-      "title_zh": "破窗构建中的离奇bug解析",
-      "detailed_summary_zh": "软件工程师在《Unfathomable bugs》系列第10期中，揭示了一个与“破窗效应”相关的构建系统疑难杂症。该bug源于编译过程中未修复的小问题逐渐累积，最终导致构建失败或产生意外行为。 该案例深刻警示了软件工程中维护代码整洁的重要性，忽视小问题可能引发难以调试的连锁故障。这对开发团队制定代码评审和持续重构策略具有借鉴意义。 文章标题明确指出“Broken Windows Build”，暗示构建环境因长期忽视微小警告而出现非预期错误。虽然具体技术细节未公开，但该系列以深入浅出的方式剖析真实bug，具有较高教学价值。",
-      "background_zh": "“破窗效应”原本是犯罪学理论，指环境中的无序现象若不及时纠正，会诱使他人效仿恶化。在软件工程中，该理论用于比喻代码库中未修复的小缺陷会逐渐降低整体质量，增加维护成本和出错概率。本文正是基于这一视角，探讨构建系统如何因“破窗”而崩溃。",
+      "title_zh": "AT-URI语法存在严重问题",
+      "detailed_summary_zh": "一篇由开发者撰写的技术分析文章指出，AT Protocol 中的 AT-URI 语法存在多种设计缺陷和歧义，可能会影响协议的可用性和标准化。 AT Protocol 是 Bluesky 等去中心化社交平台的基础，AT-URI 作为核心标识符系统，其语法问题将直接影响开发者构建应用的体验和协议的未来发展。 该文章标题为《The AT-URI Syntax Mess》，发布在 bnewbold.leaflet.pub 上，并在 Lobsters 社区引发了讨论。目前 AT Protocol 的部分规范正在 IETF 进行标准化，语法问题可能阻碍这一进程。",
+      "background_zh": "AT Protocol（Authenticated Transfer Protocol）是 Bluesky 使用的去中心化社交网络协议，旨在解决用户身份、数据可移植性和互操作性问题。AT-URI 是该协议中用于唯一标识用户、帖子等资源的统一资源标识符，其语法设计直接关系到协议的正确实现。",
       "sources": [
         {
-          "url": "https://danielemargutti.com/2022/03/28/broken-window-principle-applied-to-software",
-          "title": "The broken window principle applied to software - Daniele Margutti"
+          "url": "https://en.wikipedia.org/wiki/AT_Protocol",
+          "title": "AT Protocol"
         }
       ],
-      "detailed_summary": "软件工程师在《Unfathomable bugs》系列第10期中，揭示了一个与“破窗效应”相关的构建系统疑难杂症。该bug源于编译过程中未修复的小问题逐渐累积，最终导致构建失败或产生意外行为。 该案例深刻警示了软件工程中维护代码整洁的重要性，忽视小问题可能引发难以调试的连锁故障。这对开发团队制定代码评审和持续重构策略具有借鉴意义。 文章标题明确指出“Broken Windows Build”，暗示构建环境因长期忽视微小警告而出现非预期错误。虽然具体技术细节未公开，但该系列以深入浅出的方式剖析真实bug，具有较高教学价值。",
-      "background": "“破窗效应”原本是犯罪学理论，指环境中的无序现象若不及时纠正，会诱使他人效仿恶化。在软件工程中，该理论用于比喻代码库中未修复的小缺陷会逐渐降低整体质量，增加维护成本和出错概率。本文正是基于这一视角，探讨构建系统如何因“破窗”而崩溃。",
+      "detailed_summary": "一篇由开发者撰写的技术分析文章指出，AT Protocol 中的 AT-URI 语法存在多种设计缺陷和歧义，可能会影响协议的可用性和标准化。 AT Protocol 是 Bluesky 等去中心化社交平台的基础，AT-URI 作为核心标识符系统，其语法问题将直接影响开发者构建应用的体验和协议的未来发展。 该文章标题为《The AT-URI Syntax Mess》，发布在 bnewbold.leaflet.pub 上，并在 Lobsters 社区引发了讨论。目前 AT Protocol 的部分规范正在 IETF 进行标准化，语法问题可能阻碍这一进程。",
+      "background": "AT Protocol（Authenticated Transfer Protocol）是 Bluesky 使用的去中心化社交网络协议，旨在解决用户身份、数据可移植性和互操作性问题。AT-URI 是该协议中用于唯一标识用户、帖子等资源的统一资源标识符，其语法设计直接关系到协议的正确实现。",
       "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "Interesting technical deep-dive from a respected series on unfathomable bugs; the title suggests a novel bug scenario related to build systems, and the presence of lobste.rs comments indicates community engagement and validation. However, without the full article, it is assumed to be high-value but not groundbreaking.",
-    "ai_summary": "A story about a puzzling bug related to the 'Broken Windows' concept in software builds.",
+    "ai_reason": "High value technical critique of AT-URI syntax in the AT Protocol, likely with substantial community discussion on lobste.rs. Relevant to decentralized protocol developers.",
+    "ai_summary": "A critical analysis of issues with the AT-URI syntax in the AT Protocol.",
     "ai_tags": [
-      "software engineering",
-      "debugging",
-      "bugs",
-      "build systems"
+      "AT Protocol",
+      "URI",
+      "syntax",
+      "Bluesky"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d0d67d95a4ffc5eb",
+    "source_type": "rss",
+    "title": "Evaluation order and nontermination in query languages",
+    "url": "https://www.rntz.net/post/2026-06-11-datalog-nontermination.html",
+    "content": "<p><a href=\"https://lobste.rs/s/0p04p0/evaluation_order_nontermination_query\">Comments</a></p>",
+    "author": "rntz.net by rntz",
+    "published_at": "2026-06-29T14:47:07Z",
+    "fetched_at": "2026-06-29T23:56:29.030635Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "plt"
+      ],
+      "title_zh": "求值顺序与非终止性：Datalog查询语言分析",
+      "detailed_summary_zh": "一篇文章深入探讨了在Datalog等查询语言中，求值顺序如何导致非终止性问题，分析了不同求值策略下查询无法完成的情况。 理解求值顺序对非终止性的影响对于设计健壮的查询语言和优化递归查询的执行至关重要，直接关系到查询的可靠性和性能。 文章可能详细讨论了Datalog递归规则的自底向上与自顶向下求值策略，并给出了具体示例说明非终止性如何产生。",
+      "background_zh": "Datalog是一种基于逻辑编程的声明式查询语言，广泛应用于图数据库和递归查询场景。非终止性指查询因递归循环而永远无法完成计算，求值顺序决定了递归规则的执行路径，是影响终止性的关键因素。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Datalog",
+          "title": "Datalog - Wikipedia"
+        },
+        {
+          "url": "https://www.metalevel.at/prolog/nontermination",
+          "title": "Nontermination"
+        }
+      ],
+      "detailed_summary": "一篇文章深入探讨了在Datalog等查询语言中，求值顺序如何导致非终止性问题，分析了不同求值策略下查询无法完成的情况。 理解求值顺序对非终止性的影响对于设计健壮的查询语言和优化递归查询的执行至关重要，直接关系到查询的可靠性和性能。 文章可能详细讨论了Datalog递归规则的自底向上与自顶向下求值策略，并给出了具体示例说明非终止性如何产生。",
+      "background": "Datalog是一种基于逻辑编程的声明式查询语言，广泛应用于图数据库和递归查询场景。非终止性指查询因递归循环而永远无法完成计算，求值顺序决定了递归规则的执行路径，是影响终止性的关键因素。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical deep-dive on evaluation order and nontermination in query languages like Datalog, with community discussion on Lobsters indicating high engagement and substantive comments",
+    "ai_summary": "The article explores how evaluation order affects nontermination in query languages like Datalog.",
+    "ai_tags": [
+      "query languages",
+      "Datalog",
+      "evaluation order",
+      "nontermination",
+      "semantics"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b077e5eba1abbc06",
+    "source_type": "rss",
+    "title": "Typst: Designing for Incrementality",
+    "url": "https://youtu.be/yWWVhbyOWWE",
+    "content": "<p><a href=\"https://lobste.rs/s/hj0exw/typst_designing_for_incrementality\">Comments</a></p>",
+    "author": "youtu.be via isuffix",
+    "published_at": "2026-06-29T13:57:28Z",
+    "fetched_at": "2026-06-29T23:56:29.030652Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "video",
+        "plt"
+      ],
+      "title_zh": "Typst：为增量性而设计",
+      "detailed_summary_zh": "一场技术演讲详细介绍了排版系统Typst如何通过增量编译设计实现快速、高效的文档排版。 Typst旨在成为LaTeX的现代替代品，增量性使得实时预览成为可能，大幅提升排版体验和生产力，对学术和技术写作领域有重要影响。 Typst的所有语言特性都必须支持增量编译，包括增量解析和增量布局，从而只重新处理变化部分而非整个文档。",
+      "background_zh": "Typst是一个基于标记的排版系统，设计目标是与LaTeX一样强大但更易学。传统排版工具（如LaTeX）在每次修改后需要完全重新编译，耗时较长；增量编译技术通过复用先前编译的工件，仅更新变更部分，从而实现接近实时的预览。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Typst",
+          "title": "Typst - Wikipedia"
+        },
+        {
+          "url": "https://github.com/typst/typst",
+          "title": "GitHub - typst/typst: A markup-based typesetting system that is powerful and easy to learn. · GitHub"
+        },
+        {
+          "url": "https://typst.app/",
+          "title": "Typst: The new foundation for documents"
+        }
+      ],
+      "detailed_summary": "一场技术演讲详细介绍了排版系统Typst如何通过增量编译设计实现快速、高效的文档排版。 Typst旨在成为LaTeX的现代替代品，增量性使得实时预览成为可能，大幅提升排版体验和生产力，对学术和技术写作领域有重要影响。 Typst的所有语言特性都必须支持增量编译，包括增量解析和增量布局，从而只重新处理变化部分而非整个文档。",
+      "background": "Typst是一个基于标记的排版系统，设计目标是与LaTeX一样强大但更易学。传统排版工具（如LaTeX）在每次修改后需要完全重新编译，耗时较长；增量编译技术通过复用先前编译的工件，仅更新变更部分，从而实现接近实时的预览。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical talk on Typst's incremental design, relevant to typesetting and systems research. Likely includes deep insights, though discussion quality is unknown.",
+    "ai_summary": "A talk about Typst's design choices for achieving incrementality in typesetting.",
+    "ai_tags": [
+      "typst",
+      "typesetting",
+      "incrementality",
+      "compilation"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:df6e13c07b4a5d04",
+    "source_type": "rss",
+    "title": "Optimizing LLVM's bump allocator",
+    "url": "https://maskray.me/blog/2026-06-28-optimizing-llvm-bump-allocator",
+    "content": "<p><a href=\"https://lobste.rs/s/ltc5ca/optimizing_llvm_s_bump_allocator\">Comments</a></p>",
+    "author": "maskray.me via raymii",
+    "published_at": "2026-06-29T04:25:00Z",
+    "fetched_at": "2026-06-29T23:56:29.030742Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "compilers"
+      ],
+      "title_zh": "优化LLVM的Bump分配器",
+      "detailed_summary_zh": "LLVM开发者发布了一篇技术分析文章，深入探讨了如何优化LLVM编译器中使用的bump分配器（区域内存分配器）。具体优化方法包括减少指针更新开销和改进内存对齐处理。 bump分配器是LLVM性能关键组件，优化可提升编译速度和降低内存使用，对编译器开发者和系统程序员具有重要意义。 文章由知名LLVM开发者撰写，内容基于真实优化经验，可能包括代码级别的调整和基准测试结果。",
+      "background_zh": "bump分配器是一种简单的区域内存分配器，通过移动指针（bump pointer）来分配内存，无需复杂的数据结构，分配速度极快。LLVM在编译过程中大量使用此类分配器来管理临时对象，优化它可以减少编译时间。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bump_allocator",
+          "title": "Bump allocator"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Region-based_memory_management",
+          "title": "Region-based memory management - Wikipedia"
+        }
+      ],
+      "detailed_summary": "LLVM开发者发布了一篇技术分析文章，深入探讨了如何优化LLVM编译器中使用的bump分配器（区域内存分配器）。具体优化方法包括减少指针更新开销和改进内存对齐处理。 bump分配器是LLVM性能关键组件，优化可提升编译速度和降低内存使用，对编译器开发者和系统程序员具有重要意义。 文章由知名LLVM开发者撰写，内容基于真实优化经验，可能包括代码级别的调整和基准测试结果。",
+      "background": "bump分配器是一种简单的区域内存分配器，通过移动指针（bump pointer）来分配内存，无需复杂的数据结构，分配速度极快。LLVM在编译过程中大量使用此类分配器来管理临时对象，优化它可以减少编译时间。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The article, authored by a known LLVM developer, likely provides a technical deep-dive into a niche but important compiler optimization. The source is credible and the topic is relevant to systems programming, but without the full content, depth and novelty cannot be fully assessed. The lobste.rs discussion may add value, but details are absent.",
+    "ai_summary": "Technical analysis of optimizing LLVM's bump allocator.",
+    "ai_tags": [
+      "LLVM",
+      "compilers",
+      "memory allocation",
+      "optimization"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:7304915f426d2bdb",
+    "source_type": "rss",
+    "title": "Spindle's new microVM engine",
+    "url": "https://blog.tangled.org/spindle-microvm/",
+    "content": "<p><a href=\"https://lobste.rs/s/ybcofm/spindle_s_new_microvm_engine\">Comments</a></p>",
+    "author": "blog.tangled.org via j3s",
+    "published_at": "2026-06-29T22:31:57Z",
+    "fetched_at": "2026-06-29T23:56:29.030810Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "devops",
+        "vcs"
+      ],
+      "title_zh": "Spindle发布全新微虚拟机引擎",
+      "detailed_summary_zh": "Spindle团队推出了一款新的微虚拟机引擎，旨在通过创新的轻量级虚拟化技术提升安全性和性能。 该引擎可能为无服务器计算和边缘计算场景带来更优的隔离性与启动速度，对容器和虚拟机技术的融合产生重要影响。 目前具体技术细节尚未公开，但已有社区在lobste.rs上讨论，预计引擎将采用精简的设计思路减少攻击面。",
+      "background_zh": "微虚拟机（microVM）是一种轻量级虚拟机，通过精简硬件虚拟化层实现快速启动和低资源占用，常用于无服务器计算，例如AWS的Firecracker。Spindle的新引擎旨在探索该领域的创新。",
+      "community_discussion_zh": "在lobste.rs上，开发者们对该引擎的技术方向展开讨论，部分人关注其与Firecracker等现有方案的差异，并期待更多性能基准测试。",
+      "sources": [
+        {
+          "url": "https://firecracker-microvm.github.io/",
+          "title": "Firecracker microVMs"
+        }
+      ],
+      "detailed_summary": "Spindle团队推出了一款新的微虚拟机引擎，旨在通过创新的轻量级虚拟化技术提升安全性和性能。 该引擎可能为无服务器计算和边缘计算场景带来更优的隔离性与启动速度，对容器和虚拟机技术的融合产生重要影响。 目前具体技术细节尚未公开，但已有社区在lobste.rs上讨论，预计引擎将采用精简的设计思路减少攻击面。",
+      "background": "微虚拟机（microVM）是一种轻量级虚拟机，通过精简硬件虚拟化层实现快速启动和低资源占用，常用于无服务器计算，例如AWS的Firecracker。Spindle的新引擎旨在探索该领域的创新。",
+      "community_discussion": "在lobste.rs上，开发者们对该引擎的技术方向展开讨论，部分人关注其与Firecracker等现有方案的差异，并期待更多性能基准测试。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical deep-dive on a new microVM engine with community discussion on lobste.rs, indicating relevance and interest in systems/virtualization.",
+    "ai_summary": "Spindle introduces a new microVM engine, likely with novel approaches to lightweight virtualization.",
+    "ai_tags": [
+      "microVM",
+      "virtualization",
+      "systems",
+      "security"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:93f6d6e1d2e7fafc",
+    "source_type": "rss",
+    "title": "How AI can crack open the ‘hidden curriculum’ for neurodivergent students",
+    "url": "https://www.nature.com/articles/d41586-026-01672-9",
+    "content": "<p>Nature, Published online: 29 June 2026; <a href=\"https://www.nature.com/articles/d41586-026-01672-9\">doi:10.1038/d41586-026-01672-9</a></p>Marisa Chrysochoou and Keivan Stassun argue that AI tools could help students to navigate academia’s unwritten rules.",
+    "author": "Keivan Stassun",
+    "published_at": "2026-06-29T00:00:00Z",
+    "fetched_at": "2026-06-29T23:56:29.772999Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "AI助力神经多样性学生破解隐性课程",
+      "detailed_summary_zh": "《自然》杂志发表观点文章，提出AI工具可以帮助神经多样性学生理解和应对学术界不成文的规则和期望。 此举有望减少神经多样性学生在教育中面临的额外障碍，促进学术环境的公平与包容。 作者认为AI可通过对话式界面解释隐性规范，例如如何与教授沟通或参与课堂讨论，但该文为观点性而非实证研究。",
+      "background_zh": "隐性课程指学校中未明确教授但学生需要掌握的潜规则、价值观和行为模式。神经多样性学生（如自闭症、ADHD患者）常因信息处理差异难以自然习得这些规则，导致学业与社交困难。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Hidden_curriculum",
+          "title": "Hidden curriculum - Wikipedia"
+        },
+        {
+          "url": "https://learning.nd.edu/news/navigating-the-hidden-curriculum/",
+          "title": "Navigating the Hidden Curriculum | News | Notre Dame Learning | University of Notre Dame"
+        }
+      ],
+      "detailed_summary": "《自然》杂志发表观点文章，提出AI工具可以帮助神经多样性学生理解和应对学术界不成文的规则和期望。 此举有望减少神经多样性学生在教育中面临的额外障碍，促进学术环境的公平与包容。 作者认为AI可通过对话式界面解释隐性规范，例如如何与教授沟通或参与课堂讨论，但该文为观点性而非实证研究。",
+      "background": "隐性课程指学校中未明确教授但学生需要掌握的潜规则、价值观和行为模式。神经多样性学生（如自闭症、ADHD患者）常因信息处理差异难以自然习得这些规则，导致学业与社交困难。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value perspective piece from a top journal addressing AI's role in equity for neurodivergent students. Timely and socially important, but lacks technical depth or novel research.",
+    "ai_summary": "AI tools could help neurodivergent students navigate academia's unwritten rules, argue the authors.",
+    "ai_tags": [
+      "AI",
+      "education",
+      "neurodiversity",
+      "hidden curriculum"
     ]
   }
 ]
