@@ -1,455 +1,443 @@
 [
   {
-    "id": "hackernews:story:48747304",
-    "source_type": "hackernews",
-    "title": "For first time, a cell built from scratch grows and divides",
-    "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
-    "content": "<a href=\"https:&#x2F;&#x2F;biotic.org&#x2F;research&#x2F;spudcell&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;biotic.org&#x2F;research&#x2F;spudcell&#x2F;</a>\n\n\n--- Top Comments ---\n\n[merksittich]: Science News has a more balanced take, with additional quotes from peers. &gt; Some have also grumbled about Adamala’s efforts to draw attention to the work, which she says was rejected by Cell after one reviewer said SpudCells were not real biology. She then sent the 190-page manuscript to journalists, under embargo, even before she had uploaded it to the preprint server bioRxiv, where her colleagues could read and assess it. She says her group will submit it to a new journal soon. “It’s an ...\n\n[JumpCrisscross]: “This was where the field had been stuck for some time. Researchers before Adamala had figured out different ways to feed and grow synthetic cells and to replicate their DNA. But cell division is a different beast. A typical cell reorganizes its cytoskeleton — a network of protein fibers that provide structural support — to halve its DNA and split. Synthetic biologists could not figure out how to get their cells to undergo this complex process. So Adamala decided to ditch the cytoskeleton. On...\n\n[greazy]: It appears the scientists or someone close to them have created a wiki  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SpudCell  I don&#x27;t think I&#x27;ve ever seen researchers do PR like this directly. Interesting approach, will it become the norm?\n\n[petcat]: The people behind it:  https:&#x2F;&#x2F;biotic.org&#x2F;  &gt; Biotic is a public-benefit nonprofit research organization developing chemically and functionally defined synthetic cells. Biotic&#x27;s mission is to responsibly enable and steward foundational advances in bioengineering. Our goal is to ensure that all people and the planet benefit from world‑leading biotechnologies soon enough to matter. We conduct and support public‑benefit research ranging from foundational science to how peo...",
-    "author": "defrost",
-    "published_at": "2026-07-01T14:20:52Z",
-    "fetched_at": "2026-07-02T00:02:25.195793Z",
-    "metadata": {
-      "score": 687,
-      "descendants": 235,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48747304",
-      "comment_count": 4,
-      "title_zh": "首个人造细胞实现生长与分裂",
-      "detailed_summary_zh": "科学家首次制造出一种完全从零构建的合成细胞“SpudCell”，它能够自主生长、分裂并完成完整的生命周期。 这是合成生物学领域的里程碑式突破，为理解生命起源和设计人造生物系统提供了全新平台，未来可能在生物制造、医学等领域带来革命性应用。 SpudCell 没有使用天然的细胞骨架，而是通过一种新型膜结构实现分裂；其基因组包含合成DNA，并能响应基因调控来加速生长与分裂。",
-      "background_zh": "传统合成细胞研究一直无法实现细胞分裂，因为自然细胞依赖复杂的细胞骨架进行分裂。SpudCell 通过设计全新的分裂机制绕过了这一瓶颈，标志着从“合成基因组”向“合成生命”的关键跨越。",
-      "community_discussion_zh": "社区讨论热烈，部分学者质疑该研究的创新性，指出SpudCell 尚未满足所有生命定义标准；也有人批评研究团队绕过同行评审直接向媒体宣传的做法，但多数评论认可其实验技术上的突破。",
-      "sources": [
-        {
-          "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
-          "title": "For the First Time, a Cell Built From Scratch Grows and Divides | Quanta Magazine"
-        },
-        {
-          "url": "https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch",
-          "title": "Lab-created 'SpudCell' marks 'stunning' step toward ... - AAAS"
-        },
-        {
-          "url": "https://twin-cities.umn.edu/news-events/worlds-first-synthetic-cell-complete-life-cycle-could-revolutionize-biological",
-          "title": "World's first synthetic cell with a complete life cycle could ..."
-        }
-      ],
-      "detailed_summary": "科学家首次制造出一种完全从零构建的合成细胞“SpudCell”，它能够自主生长、分裂并完成完整的生命周期。 这是合成生物学领域的里程碑式突破，为理解生命起源和设计人造生物系统提供了全新平台，未来可能在生物制造、医学等领域带来革命性应用。 SpudCell 没有使用天然的细胞骨架，而是通过一种新型膜结构实现分裂；其基因组包含合成DNA，并能响应基因调控来加速生长与分裂。",
-      "background": "传统合成细胞研究一直无法实现细胞分裂，因为自然细胞依赖复杂的细胞骨架进行分裂。SpudCell 通过设计全新的分裂机制绕过了这一瓶颈，标志着从“合成基因组”向“合成生命”的关键跨越。",
-      "community_discussion": "社区讨论热烈，部分学者质疑该研究的创新性，指出SpudCell 尚未满足所有生命定义标准；也有人批评研究团队绕过同行评审直接向媒体宣传的做法，但多数评论认可其实验技术上的突破。"
-    },
-    "ai_score": 9.0,
-    "ai_reason": "Groundbreaking synthetic biology achievement with high community engagement (687 points, 235 comments). The discussion includes critical analysis of the research's novelty, methodology, and PR approach, reflecting deep interest and debate. This is a paradigm shift in creating self-replicating synthetic cells.",
-    "ai_summary": "A synthetic cell built entirely from scratch that can grow and divide has been created for the first time, marking a major advance in synthetic biology.",
-    "ai_tags": [
-      "synthetic biology",
-      "synthetic cells",
-      "cell division",
-      "biotechnology",
-      "groundbreaking"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:35300d3995c25a88",
+    "id": "rss:lobste.rs_rss:f14c2f8c637b1f52",
     "source_type": "rss",
-    "title": "US Supreme Court just blew up EU-US Data Transfers",
-    "url": "https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers",
-    "content": "<p><a href=\"https://lobste.rs/s/thkwcf/us_supreme_court_just_blew_up_eu_us_data\">Comments</a></p>",
-    "author": "noyb.eu via kngl",
-    "published_at": "2026-07-01T14:55:34Z",
-    "fetched_at": "2026-07-02T00:02:24.654847Z",
+    "title": "kernel asynchronous reads in PostgreSQL 19 (io_uring)",
+    "url": "https://dev.to/franckpachot/iouring-buffered-reads-in-postgresql-19-iouring-mcn",
+    "content": "<p><a href=\"https://lobste.rs/s/omfy64/kernel_asynchronous_reads_postgresql_19\">Comments</a></p>",
+    "author": "dev.to via rrampage",
+    "published_at": "2026-07-02T12:46:11Z",
+    "fetched_at": "2026-07-02T23:58:09.719421Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "law"
+        "linux",
+        "databases"
       ],
-      "title_zh": "欧盟-美国数据隐私框架面临法律挑战",
-      "detailed_summary_zh": "欧洲法院在2020年Schrems II案中裁定欧盟-美国隐私盾协议无效，导致跨大西洋数据转移机制受创。 这一裁决迫使依赖该框架的公司寻找替代方案，可能中断数千家企业的数据流动，影响全球科技行业运营。 隐私盾协议于2016年生效，旨在替代被废除的安全港协议；其被废除源于对美国监视法律的担忧。",
-      "background_zh": "欧盟通用数据保护条例（GDPR）严格限制个人数据向保护不足的国家传输。隐私盾曾作为美国公司合规的依据，但欧洲法院认为美国国家安全法律未能提供与欧盟同等的保护。",
+      "title_zh": "PostgreSQL 19 引入 io_uring 内核异步读",
+      "detailed_summary_zh": "PostgreSQL 19 开始支持使用 Linux 内核的 io_uring 接口进行异步读操作，取代传统的同步或 AIO 方式。 这将显著提升数据库的 I/O 效率，特别是高并发场景下的读取性能，减少系统调用开销和上下文切换。 io_uring 通过共享内存环在用户态和内核态之间高效传递 I/O 请求和完成事件，PostgreSQL 19 利用它实现了真正的内核级异步缓冲读取。",
+      "background_zh": "io_uring 是 Linux 5.1 引入的高性能异步 I/O 框架，解决了传统 read/write 和 AIO 接口的性能瓶颈。传统方式需要频繁系统调用，而 io_uring 支持批量提交和完成，大幅降低延迟。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/EU–US_Privacy_Shield",
-          "title": "EU–US Privacy Shield - Wikipedia"
+          "url": "https://en.wikipedia.org/wiki/Io_uring",
+          "title": "io_uring - Wikipedia"
         },
         {
-          "url": "https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/652073/EPRS_ATA(2020)652073_EN.pdf",
-          "title": "The CJEU Judgement in the Schrems II Case - European Parliament"
+          "url": "https://man7.org/linux/man-pages/man7/io_uring.7.html",
+          "title": "io_uring (7) — Linux manual page"
+        },
+        {
+          "url": "https://deepwiki.com/torvalds/linux/5.1-io_uring-asynchronous-io",
+          "title": "io_uring Asynchronous I/O | torvalds/linux | DeepWiki"
         }
       ],
-      "detailed_summary": "欧洲法院在2020年Schrems II案中裁定欧盟-美国隐私盾协议无效，导致跨大西洋数据转移机制受创。 这一裁决迫使依赖该框架的公司寻找替代方案，可能中断数千家企业的数据流动，影响全球科技行业运营。 隐私盾协议于2016年生效，旨在替代被废除的安全港协议；其被废除源于对美国监视法律的担忧。",
-      "background": "欧盟通用数据保护条例（GDPR）严格限制个人数据向保护不足的国家传输。隐私盾曾作为美国公司合规的依据，但欧洲法院认为美国国家安全法律未能提供与欧盟同等的保护。",
+      "detailed_summary": "PostgreSQL 19 开始支持使用 Linux 内核的 io_uring 接口进行异步读操作，取代传统的同步或 AIO 方式。 这将显著提升数据库的 I/O 效率，特别是高并发场景下的读取性能，减少系统调用开销和上下文切换。 io_uring 通过共享内存环在用户态和内核态之间高效传递 I/O 请求和完成事件，PostgreSQL 19 利用它实现了真正的内核级异步缓冲读取。",
+      "background": "io_uring 是 Linux 5.1 引入的高性能异步 I/O 框架，解决了传统 read/write 和 AIO 接口的性能瓶颈。传统方式需要频繁系统调用，而 io_uring 支持批量提交和完成，大幅降低延迟。",
       "community_discussion": ""
     },
     "ai_score": 9.0,
-    "ai_reason": "Landmark US Supreme Court decision affecting EU-US data transfers, with major implications for international data privacy and tech industry operations. High relevance and impact.",
-    "ai_summary": "US Supreme Court ruling disrupts EU-US data transfer mechanisms, potentially invalidating key frameworks like Privacy Shield.",
+    "ai_reason": "New major feature in PostgreSQL 19 leveraging io_uring for kernel asynchronous reads, which can significantly improve I/O performance. The link to community discussion on Lobste.rs indicates active interest and validation.",
+    "ai_summary": "PostgreSQL 19 introduces kernel asynchronous reads using io_uring, enhancing database I/O efficiency.",
     "ai_tags": [
-      "data privacy",
-      "Supreme Court",
-      "EU-US data transfers",
-      "legal",
-      "technology"
+      "PostgreSQL",
+      "io_uring",
+      "async I/O",
+      "databases",
+      "Linux kernel"
     ]
   },
   {
-    "id": "hackernews:story:48745456",
-    "source_type": "hackernews",
-    "title": "Physical disc production ending in Jan 2028 for new games on PlayStation",
-    "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
-    "content": "\n--- Top Comments ---\n\n[fcsp]: Great buildup on Sony&#x27;s side to gain trust in this move in the gaming community ahead of this announcement when just this week they again pulled hundreds of &quot;purchased&quot; movies from customer&#x27;s libraries without refund, reminding everyone that digital content is rented, not owned.  https:&#x2F;&#x2F;arstechnica.com&#x2F;gadgets&#x2F;2026&#x2F;06&#x2F;sony-erases-digital-...\n\n[mrandish]: Between DRM, DLC, mandatory connectivity and the end of physical media, the future will look back on this era as the &#x27;dark age&#x27; of digital gaming history. Maintaining activation servers, cloud storage and digital delivery costs money. If it doesn&#x27;t disappear when the title reaches EOL, it certainly does when the company is gone or shifts business models. And draconian copyright laws create legal jeopardy around orphaned games from long-dead companies while the DMCA makes it ill...\n\n[lelandfe]: To illustrate why this is stupid, I will furnish two links to purchase Dark Souls 3 (PS4, 2016) Ebay, to buy: $11 + shipping[0] PS Store, to rent: $60[1] [0]  https:&#x2F;&#x2F;www.ebay.com&#x2F;itm&#x2F;298370753624  [1]  https:&#x2F;&#x2F;www.playstation.com&#x2F;en-us&#x2F;games&#x2F;dark-souls-iii&#x2F;\n\n[phire]: With this news, I have to wonder how much longer bluray will live. Will we continue seeing new bluray releases of movies and TV shows for decades, or are their days numbered? The loss of console gaming presumably removes a guaranteed revenue source that was keeping Bluray pressing plants alive. Sales of DVDs and Bluray have been declining for years  [1]   [3] . Some people have been excited pushing the news that  UHD bluray sales increased in 2025,  [2]  but that ignores the fact that the tot...\n\n[CM30]: Well, if Nintendo and Microsoft go the same route (and sadly, I see that being almost inevitable at some point), that&#x27;s probably the end of my interest in gaming as a whole.  I generally refuse to &#x27;rent&#x27; or &#x27;license&#x27; things on a temporary basis, and have decided in this generation that every game I&#x27;ll get for Switch 2 will be a physical game on cart version, without exception. And the reasons for that are pretty simple. I like being able to resell games when done...",
-    "author": "Tiberium",
-    "published_at": "2026-07-01T12:13:34Z",
-    "fetched_at": "2026-07-02T00:02:25.195849Z",
-    "metadata": {
-      "score": 564,
-      "descendants": 594,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48745456",
-      "comment_count": 5,
-      "title_zh": "索尼宣布2028年1月停止新游戏光盘生产",
-      "detailed_summary_zh": "索尼宣布将于2028年1月起停止生产适用于PlayStation主机的新游戏实体光盘，这意味着未来新发行的PS游戏将仅提供数字版本。 此举标志着游戏行业全面转向数字发行的重大里程碑，可能对游戏收藏、二手交易以及长期游戏保存产生深远影响，引发玩家对数字所有权和DRM的担忧。 该决定仅适用于新发行的游戏，已发行的实体游戏仍可继续销售和游玩，但未来可能逐步退出市场。索尼未提及现有光盘游戏是否仍可继续获得更新或补丁。",
-      "background_zh": "近年来游戏行业数字下载比例逐年上升，但实体光盘仍受到部分玩家青睐，因其提供所有权感、无需联网即可游玩，且可在二手市场交易。索尼此前已有删除用户已购买数字内容记录（如电影）的先例，加剧了玩家对数字版权的信任危机。",
-      "community_discussion_zh": "社区评论普遍持反对态度。有用户指出索尼本周刚删除了数百部用户已购买的电影且未退款，提醒大家数字内容实为租赁而非拥有。另有用户认为这是游戏界的“黑暗时代”，DRM、在线验证和数字内容可能随公司倒闭消失。还有用户举例说明《黑暗之魂3》实体版仅需11美元而数字版仍需60美元，凸显实体和数字的性价比差距。",
-      "detailed_summary": "索尼宣布将于2028年1月起停止生产适用于PlayStation主机的新游戏实体光盘，这意味着未来新发行的PS游戏将仅提供数字版本。 此举标志着游戏行业全面转向数字发行的重大里程碑，可能对游戏收藏、二手交易以及长期游戏保存产生深远影响，引发玩家对数字所有权和DRM的担忧。 该决定仅适用于新发行的游戏，已发行的实体游戏仍可继续销售和游玩，但未来可能逐步退出市场。索尼未提及现有光盘游戏是否仍可继续获得更新或补丁。",
-      "background": "近年来游戏行业数字下载比例逐年上升，但实体光盘仍受到部分玩家青睐，因其提供所有权感、无需联网即可游玩，且可在二手市场交易。索尼此前已有删除用户已购买数字内容记录（如电影）的先例，加剧了玩家对数字版权的信任危机。",
-      "community_discussion": "社区评论普遍持反对态度。有用户指出索尼本周刚删除了数百部用户已购买的电影且未退款，提醒大家数字内容实为租赁而非拥有。另有用户认为这是游戏界的“黑暗时代”，DRM、在线验证和数字内容可能随公司倒闭消失。还有用户举例说明《黑暗之魂3》实体版仅需11美元而数字版仍需60美元，凸显实体和数字的性价比差距。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High importance due to major shift in gaming industry, with strong community discussion highlighting concerns about digital ownership and DRM. Engaging comments add depth and diverse viewpoints.",
-    "ai_summary": "Sony announces end of physical disc production for new PlayStation games by 2028, sparking debate on digital ownership and preservation.",
-    "ai_tags": [
-      "gaming",
-      "digital ownership",
-      "physical media",
-      "Sony",
-      "PlayStation"
-    ]
-  },
-  {
-    "id": "hackernews:story:48747116",
-    "source_type": "hackernews",
-    "title": "FFmpeg 9.1's new AAC encoder",
-    "url": "https://hydrogenaudio.org/index.php/topic,129691.0.html",
-    "content": "\n--- Top Comments ---\n\n[cogman10]: Man what a showcase for Opus this is. Don&#x27;t get me wrong, this sort of thing is a valuable exercise and we are better off with better encoders for these older codecs.  But look at the numbers for Opus on this benchmark.  It simply blows all the AAC encoders out of the water even at 64 kbps.\n\n[ndiddy]: Nice, I&#x27;m looking forward to seeing how this performs in practice. FFmpeg&#x27;s previous AAC encoder produced poor quality output and often had irritating chirping artifacts, so I&#x27;ve always had to install Apple&#x27;s Core Audio encoder on any computer I do video recording on to get decent sound. I&#x27;ve done A&#x2F;B&#x2F;X comparisons and found that a 320kbps MP3 sounds better than a 320kbps AAC encoded by FFmpeg, but about the same as a 256kbps AAC encoded by Core Audio. If in...\n\n[HugoTea]: &gt;FFmpeg&#x27;s AAC DEcoder is busted with regards to stereo PNS, and the bug may be in other AAC decoders too, so we work around it in the encoder. Since no other encoder used PNS, the bug was not found until now. I don&#x27;t know what PNS is, but I bet this has been bothering someone&#x27;s niche use-case for 20 years\n\n[JSR_FDED]: It’s fascinating so much of this comes down to the developer’s own ears - disturbing and quite cool at the same time how subjective this is\n\n[superzazu]: &gt; The encoder was mainly optimized for 48Khz audio. Get over it. It&#x27;s 2026, resampling is free, 48Khz is the standard. 44.1Khz will work, and so will 96Khz but use 48Khz if you want the best quality. Is 48kHz really the standard nowadays?",
-    "author": "ledoge",
-    "published_at": "2026-07-01T14:10:28Z",
-    "fetched_at": "2026-07-02T00:02:25.195870Z",
-    "metadata": {
-      "score": 260,
-      "descendants": 89,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48747116",
-      "comment_count": 5,
-      "title_zh": "FFmpeg 9.1 发布全新 AAC 编码器",
-      "detailed_summary_zh": "FFmpeg 9.1 版本引入了一个全新的 AAC 音频编码器，显著提升了编码质量，并修复了之前版本中存在的刺耳伪影问题。 这对依赖 FFmpeg 进行音频处理的开发者和用户非常重要，因为之前的内置 AAC 编码器质量较差，用户常需安装第三方编码器。新编码器有望减少外部依赖，提升 FFmpeg 在音频转码领域的竞争力。 新编码器主要针对 48kHz 音频优化，但也支持 44.1kHz 和 96kHz。此外，编码器绕过了某些 AAC 解码器在处理立体声 PNS（感知噪声替代）时的 bug。",
-      "background_zh": "AAC（高级音频编码）是一种广泛使用的有损音频压缩格式。FFmpeg 是一个流行的开源多媒体框架，但其内置的 AAC 编码器长期被批评质量不佳，存在 chirping 等伪影。许多用户转而使用其他编码器如 libfdk_aac 或 Apple Core Audio。此次更新旨在解决这些问题。",
-      "community_discussion_zh": "社区对此次更新反应积极，但也有一些讨论。部分用户注意到 Opus 编码器在相同比特率下表现更优，认为 Opus 仍是最佳选择。有开发者提到新编码器绕过了 AAC 解码器中的 PNS bug，但普通用户对此可能不熟悉。还有人质疑 48kHz 是否已成为行业标准。",
-      "detailed_summary": "FFmpeg 9.1 版本引入了一个全新的 AAC 音频编码器，显著提升了编码质量，并修复了之前版本中存在的刺耳伪影问题。 这对依赖 FFmpeg 进行音频处理的开发者和用户非常重要，因为之前的内置 AAC 编码器质量较差，用户常需安装第三方编码器。新编码器有望减少外部依赖，提升 FFmpeg 在音频转码领域的竞争力。 新编码器主要针对 48kHz 音频优化，但也支持 44.1kHz 和 96kHz。此外，编码器绕过了某些 AAC 解码器在处理立体声 PNS（感知噪声替代）时的 bug。",
-      "background": "AAC（高级音频编码）是一种广泛使用的有损音频压缩格式。FFmpeg 是一个流行的开源多媒体框架，但其内置的 AAC 编码器长期被批评质量不佳，存在 chirping 等伪影。许多用户转而使用其他编码器如 libfdk_aac 或 Apple Core Audio。此次更新旨在解决这些问题。",
-      "community_discussion": "社区对此次更新反应积极，但也有一些讨论。部分用户注意到 Opus 编码器在相同比特率下表现更优，认为 Opus 仍是最佳选择。有开发者提到新编码器绕过了 AAC 解码器中的 PNS bug，但普通用户对此可能不熟悉。还有人质疑 48kHz 是否已成为行业标准。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value improvement to a critical multimedia tool (FFmpeg) with strong community engagement and insightful discussion about codec quality comparisons. The new AAC encoder addresses long-standing artifacts, making it a significant update for many users.",
-    "ai_summary": "FFmpeg 9.1 introduces a new AAC encoder that significantly improves audio quality, addressing long-standing artifacts.",
-    "ai_tags": [
-      "FFmpeg",
-      "AAC encoding",
-      "audio codec",
-      "open source",
-      "multimedia"
-    ]
-  },
-  {
-    "id": "hackernews:story:48745445",
-    "source_type": "hackernews",
-    "title": "Box3D, an open source 3D physics engine",
-    "url": "https://box2d.org/posts/2026/06/announcing-box3d/",
-    "content": "\n--- Top Comments ---\n\n[gregsadetsky]: Whenever I see Box2D mentioned (the library by the same author as Box3D, obviously), I think back to this story from many years ago  https:&#x2F;&#x2F;kotaku.com&#x2F;this-guy-created-angry-birds-physics-and-...\n\n[RobLach]: Box2D was a foundation for a lot of interesting physics oriented indie games in my day. I wonder if the landscape is empty enough for a resurgence.\n\n[Jeaye]: Yes! This is exciting to see. Erin Catto is such a cool hacker. Thank you, Erin, for sharing your code with the open source community. There wasn&#x27;t anything about determinism in the announcement, but I&#x27;d really love to see some more about that, too. Trying to use Unity&#x27;s built-in physics to make a networked billiards game is quite troubling, when none of the clients can happily agree on what happened.\n\n[adalacelove]: Physics simulation is a dangerous rabbit hole. Even if you focus just on rigid bodies and just physical plausibility there are plenty of open problems related to collision detection and collision resolution. Convex approximations and&#x2F;or decompositions for geometry and hand tuning of solvers are the norm, balancing robustness and precision against speed.\n\n[ainch]: As an ML researcher, I know box2d because it underpins many of the standard reinforcement learning environments (in OpenAI Gym) that we use to benchmark methods, like Lunar Lander or Car Racing:  https:&#x2F;&#x2F;gymnasium.farama.org&#x2F;environments&#x2F;box2d&#x2F;car_racing&#x2F;  Thanks to Erin for such a useful piece of software!\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/jcdcit/announcing_box3d\">Comments</a></p>",
-    "author": "makepanic",
-    "published_at": "2026-07-01T12:12:17Z",
-    "fetched_at": "2026-07-02T00:02:25.195890Z",
-    "metadata": {
-      "score": 395,
-      "descendants": 86,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48745445",
-      "comment_count": 5,
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "c",
-        "math"
-      ],
-      "merged_sources": [
-        "hackernews",
-        "rss"
-      ],
-      "title_zh": "Box3D：开源3D物理引擎发布",
-      "detailed_summary_zh": "Erin Catto（Box2D作者）宣布发布Box3D，这是一个完全用C语言编写的开源3D物理引擎，旨在为游戏和仿真提供刚体物理模拟。 Box3D的发布填补了开源3D物理引擎领域的空白，其前身Box2D曾广泛用于游戏开发和强化学习环境（如OpenAI Gym），因此Box3D有望成为新一代物理仿真基础工具。 Box3D采用鲁棒的软步刚体求解器，并包含传感器系统，提供原生C API，支持静态链接或作为子项目使用（仅编译库，跳过示例和测试）。",
-      "background_zh": "Box2D是Erin Catto开发的开源2D物理引擎，被众多游戏（如《愤怒的小鸟》）和机器学习基准环境采用。3D物理引擎领域长期由商业引擎主导，开源选项稀少。Box3D旨在继承Box2D的简洁高效，扩展到三维空间。",
-      "community_discussion_zh": "社区反响热烈，多位开发者回忆Box2D对独立游戏和机器学习环境的贡献；也有用户关注物理引擎的确定性问题（如网络对战中的一致性）以及碰撞检测与求解器调优的挑战。",
-      "sources": [
-        {
-          "url": "https://github.com/erincatto/box3d",
-          "title": "GitHub - erincatto/ box 3 d : Box 3 D is a 3 D physics engine for games"
-        },
-        {
-          "url": "https://ziggit.dev/t/box3d-new-3d-physics-engine-with-native-c-api/16452",
-          "title": "Box 3 D : new 3 D physics engine with native C API - News - Ziggit"
-        }
-      ],
-      "detailed_summary": "Erin Catto（Box2D作者）宣布发布Box3D，这是一个完全用C语言编写的开源3D物理引擎，旨在为游戏和仿真提供刚体物理模拟。 Box3D的发布填补了开源3D物理引擎领域的空白，其前身Box2D曾广泛用于游戏开发和强化学习环境（如OpenAI Gym），因此Box3D有望成为新一代物理仿真基础工具。 Box3D采用鲁棒的软步刚体求解器，并包含传感器系统，提供原生C API，支持静态链接或作为子项目使用（仅编译库，跳过示例和测试）。",
-      "background": "Box2D是Erin Catto开发的开源2D物理引擎，被众多游戏（如《愤怒的小鸟》）和机器学习基准环境采用。3D物理引擎领域长期由商业引擎主导，开源选项稀少。Box3D旨在继承Box2D的简洁高效，扩展到三维空间。",
-      "community_discussion": "社区反响热烈，多位开发者回忆Box2D对独立游戏和机器学习环境的贡献；也有用户关注物理引擎的确定性问题（如网络对战中的一致性）以及碰撞检测与求解器调优的挑战。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "Major release from the influential author of Box2D, with high community engagement (395 points, 86 comments) discussing technical depth, historical impact, and relevance to ML/RL environments. Significant for game dev, simulation, and open source physics engines.",
-    "ai_summary": "Erin Catto announces Box3D, an open-source 3D physics engine, building on the legacy of Box2D.",
-    "ai_tags": [
-      "physics engine",
-      "open source",
-      "game development",
-      "simulation",
-      "Erin Catto"
-    ]
-  },
-  {
-    "id": "hackernews:story:48746914",
-    "source_type": "hackernews",
-    "title": "Monetization Gateway: Charge for any resource behind Cloudflare via x402",
-    "url": "https://blog.cloudflare.com/monetization-gateway/",
-    "content": "\n--- Top Comments ---\n\n[arjie]: This is the dream of microtransactions and agents-paying-for-access that so many people have always wanted. It was never going to be implemented on existing payment rails so it would have to be something like this. I can&#x27;t wait to see it in play somewhere because I am increasingly annoyed that I have to own API keys on various platforms etc. etc. I just want my agent to make decisions and spend a limited amount of money (this is on me to cover) just like a human agent can. If we get the ...\n\n[cphoover]: This doesn&#x27;t seem to solve the issue that website operators face... which is providing a free public experience to humans while the price of hosting is driven up by increased bot traffic. The issue isn&#x27;t charging for API access with request caps, that&#x27;s not hard to do. It&#x27;s preserving the free experience for our users while our traffic is increasingly made up of bots. The problem is that AI has made it increasingly difficult to tell bot from human. Baking microtransactions...\n\n[mixedbit]: With payments the complexity is not only in accepting a payment, but largely in doing so legally. Someone makes a request to my company&#x27;s paid service, I return 402 and get a stable coin back. Who do I invoice for this revenue? What value added tax do I apply to the invoice? If someone makes 10k paid requests within one month, do I have means of generating one invoice for them for all the usage, or is every request treated separately and results in 10k invoices?\nWill CloudFlare handle th...\n\n[thatmf]: All for this. Micropayments have been tried so many times before, but they all relied on user opt-in and never reached any sort of critical mass. Someone of Cloudflare&#x27;s scale could actually pull it off.\n\n[_pdp_]: I might be in the minority here, but although x402 sounds useful, it seems to me that adoption will be an uphill struggle, especially for per-request micropayments. The most likely scenario is Stripe, or someone similar, creating an agentic API connected to the agent owner linked account or something along those lines. I am not sure how this would work with 3DS, or whether it would be acceptable at all, since these kinds of transactions could be disputed easily (&quot;I did not make the purch...",
-    "author": "soheilpro",
-    "published_at": "2026-07-01T13:59:13Z",
-    "fetched_at": "2026-07-02T00:02:25.195971Z",
-    "metadata": {
-      "score": 237,
-      "descendants": 144,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48746914",
-      "comment_count": 5,
-      "title_zh": "Cloudflare推出基于HTTP 402的付费网关",
-      "detailed_summary_zh": "Cloudflare发布了名为Monetization Gateway的新功能，允许网站和API通过HTTP 402状态码对任何资源收费，实现按使用付费的微交易模式。 这一创新为微支付和AI代理自动付费提供了原生支持，可能重塑网络经济模式，降低小额交易的摩擦成本。Cloudflare的规模优势有助于推动该标准的大规模采用。 该功能基于x402开放协议，使用稳定币进行即时结算，Cloudflare处理支付和部分合规问题，但具体实现细节尚未完全公开。",
-      "background_zh": "HTTP 402状态码在HTTP/1.1标准中定义，但长期未被广泛使用。x402是一个新兴的互联网原生支付标准，由Coinbase等发起，旨在让客户端和服务器之间直接进行稳定币支付。Cloudflare的Monetization Gateway将其集成到边缘网络中。",
-      "community_discussion_zh": "社区讨论呈现分歧：部分用户认为Cloudflare的规模能推动微支付普及，而另一些则担忧法律合规成本（如发票和税务）以及如何在机器人流量激增下保护免费用户体验。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes",
-          "title": "List of HTTP status codes - Wikipedia"
-        },
-        {
-          "url": "https://www.x402.org/",
-          "title": "x402 - Payment Required | Internet-Native Payments Standard"
-        },
-        {
-          "url": "https://www.coinbase.com/developer-platform/discover/launches/x402",
-          "title": "Introducing x402: a new standard for internet-native payments"
-        }
-      ],
-      "detailed_summary": "Cloudflare发布了名为Monetization Gateway的新功能，允许网站和API通过HTTP 402状态码对任何资源收费，实现按使用付费的微交易模式。 这一创新为微支付和AI代理自动付费提供了原生支持，可能重塑网络经济模式，降低小额交易的摩擦成本。Cloudflare的规模优势有助于推动该标准的大规模采用。 该功能基于x402开放协议，使用稳定币进行即时结算，Cloudflare处理支付和部分合规问题，但具体实现细节尚未完全公开。",
-      "background": "HTTP 402状态码在HTTP/1.1标准中定义，但长期未被广泛使用。x402是一个新兴的互联网原生支付标准，由Coinbase等发起，旨在让客户端和服务器之间直接进行稳定币支付。Cloudflare的Monetization Gateway将其集成到边缘网络中。",
-      "community_discussion": "社区讨论呈现分歧：部分用户认为Cloudflare的规模能推动微支付普及，而另一些则担忧法律合规成本（如发票和税务）以及如何在机器人流量激增下保护免费用户体验。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High importance due to novel approach to web monetization using HTTP 402, with significant community engagement (237 points, 144 comments) showcasing diverse perspectives on practicality and legal hurdles.",
-    "ai_summary": "Cloudflare introduces a monetization gateway that lets any resource behind Cloudflare charge via the HTTP 402 status code, enabling pay-per-use access.",
-    "ai_tags": [
-      "Cloudflare",
-      "HTTP 402",
-      "monetization",
-      "microtransactions",
-      "web payments"
-    ]
-  },
-  {
-    "id": "hackernews:story:48752030",
-    "source_type": "hackernews",
-    "title": "Fable 5 Is Back",
-    "url": "https://twitter.com/claudeai/status/2072402636813607381",
-    "content": "\n--- Top Comments ---\n\n[himata4113]: I think this is as good as time as any to bring up that fable&#x2F;mythos weights are one mistake (malicious or not) away from being leaked to adverseries or available in a random torrent. Imagine this, fable weights are likely distributed to hundreds of datacenters with likely thousands of people directly or indirectly having partial or full access. I just don&#x27;t quite buy that a &#x27;world ending&#x27; fable&#x2F;mythos model would be treated like this, mythos I could maybe believe tha...\n\n[victor9000]: If this model is not willing to fix security issues in your application, does it mean that it&#x27;s implicitly embedding vulnerabilities as well?  How can it be trusted to write secure code?\n\n[pkoird]: I gave it a book on human consciousness I was writing and it flagged it. This model is hilariously bad. Anthropic has defanged this model to the point of malice. No way am I paying to use something that is basically useless.\n\n[stavarotti]: I&#x27;ll be using it tonight but grudgingly so. Grudgingly because after July 7th, I&#x27;m not going to all of a sudden, start paying API prices (and maybe that&#x27;s the problem) when I&#x27;m used to a subscription that gives me multiples in comparative value. Perhaps this is the fabled &quot;token economics will come for everyone this year&quot; that I&#x27;ve been reading about? In any case, I&#x27;ll use the hell out of it to extract as much as I can, then back to the trusted partners...\n\n[petra]: Maybe, for some projects, instead of generating code with it, it would be useful to generate a plan and the loop(tests&#x2F;formal verification),because those take much less tokens than a full project, and than use the loop using the older models ?",
-    "author": "mfiguiere",
-    "published_at": "2026-07-01T19:35:57Z",
-    "fetched_at": "2026-07-02T00:02:25.195989Z",
-    "metadata": {
-      "score": 290,
-      "descendants": 269,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48752030",
-      "comment_count": 5,
-      "title_zh": "Claude Fable 5 发布引发安全担忧",
-      "detailed_summary_zh": "Anthropic于2026年6月9日发布了Claude Fable 5模型，这是一款经安全化的Mythos级模型，在多个基准测试中达到最高分。社区讨论聚焦于该模型的权重分布风险、安全漏洞修复意愿以及信任度问题。 Fable 5作为性能顶尖的模型，其安全性问题直接关系到AI部署的可靠性。若权重泄露或被恶意利用，可能对用户和企业造成严重危害，影响整个AI生态的信任基础。 Fable 5的权重分布在数百个数据中心，数千人可能直接或间接拥有访问权限，增加了泄露风险。同时，有用户指出该模型不愿意修复应用中的安全漏洞，并过于保守地拒绝处理合理请求。",
-      "background_zh": "大型语言模型（LLM）的权重是其知识核心，决定模型的行为和输出。Anthropic是一家专注于AI安全的公司，但围绕高能力模型的安全措施仍有争议。模型权重泄露可能导致恶意微调或滥用，因此保护权重至关重要。",
-      "community_discussion_zh": "社区评论普遍对Fable 5的安全性表示担忧，如用户himata4113指出权重容易泄露；victor9000质疑模型不愿修安全漏洞是否意味着其自身包含漏洞；pkoird认为模型过于保守，变得几乎无用。也有用户对API定价不满，表示会尽量使用后切换到其他模型。",
-      "sources": [
-        {
-          "url": "https://www.anthropic.com/claude/fable",
-          "title": "Claude Fable \\ Anthropic"
-        },
-        {
-          "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-          "title": "Claude Fable 5 and Claude Mythos 5 \\ Anthropic"
-        },
-        {
-          "url": "https://www.rand.org/pubs/research_briefs/RBA2849-1.html",
-          "title": "A Playbook for Securing AI Model Weights | RAND"
-        }
-      ],
-      "detailed_summary": "Anthropic于2026年6月9日发布了Claude Fable 5模型，这是一款经安全化的Mythos级模型，在多个基准测试中达到最高分。社区讨论聚焦于该模型的权重分布风险、安全漏洞修复意愿以及信任度问题。 Fable 5作为性能顶尖的模型，其安全性问题直接关系到AI部署的可靠性。若权重泄露或被恶意利用，可能对用户和企业造成严重危害，影响整个AI生态的信任基础。 Fable 5的权重分布在数百个数据中心，数千人可能直接或间接拥有访问权限，增加了泄露风险。同时，有用户指出该模型不愿意修复应用中的安全漏洞，并过于保守地拒绝处理合理请求。",
-      "background": "大型语言模型（LLM）的权重是其知识核心，决定模型的行为和输出。Anthropic是一家专注于AI安全的公司，但围绕高能力模型的安全措施仍有争议。模型权重泄露可能导致恶意微调或滥用，因此保护权重至关重要。",
-      "community_discussion": "社区评论普遍对Fable 5的安全性表示担忧，如用户himata4113指出权重容易泄露；victor9000质疑模型不愿修安全漏洞是否意味着其自身包含漏洞；pkoird认为模型过于保守，变得几乎无用。也有用户对API定价不满，表示会尽量使用后切换到其他模型。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High engagement (290 points, 269 comments) with substantive discussion on AI safety, model weight distribution risks, and trust issues. Comments show diverse viewpoints and technical depth, validating community interest in the topic.",
-    "ai_summary": "Community discussion on the risks and limitations of a new AI model, focusing on security vulnerabilities and trustworthiness.",
-    "ai_tags": [
-      "AI safety",
-      "model weights",
-      "security",
-      "LLM",
-      "Anthropic"
-    ]
-  },
-  {
-    "id": "hackernews:story:48748518",
-    "source_type": "hackernews",
-    "title": "How We Made IPFS Content Publishing 10x Faster",
-    "url": "https://probelab.io/blog/optimistic-provide/",
-    "content": "\n--- Top Comments ---\n\n[embedding-shape]: &gt; Return control back to the user after most (not all) of the PUT RPCs have succeeded and continue with the remaining ones in the background. Making things faster by doing less (and not the same) been speeding up computing since forever! Can&#x27;t help but feel like it&#x27;s slightly misleading to call the providing (&quot;publishing&quot;) faster when it&#x27;s not actually doing the same, it&#x27;s just that most parts turned async instead of waiting for confirmation. Wouldn&#x27;t thi...\n\n[boramalper]: Is anyone still (or has anyone ever) used IPFS in production? I’m not talking about technology demos such as Wikipedia-on-IPFS (which indeed worked and was impressive) but where IPFS is actually being relied on for some functionality.\n\n[hannesfur]: Having worked on libp2p‘s DHT (Double Hashing for rust-libp2p) for a bit two years ago, it’s really great to see that there are improvements. \nTo get to CDN level speeds though on dense networks, I still see it as an architectural flaw to not somehow encode network topology into the PeerID &#x2F; identity in the DHT. A start would be to use the five RIRs. If you want to be more sophisticated, and I spent a lot of time theorising about this, you could have a dezentrally governed anycast IP add...\n\n[someonebaggy]: Is it also possible to speed up lookup? I never used IPFS much as it took several minutes to find a cid.\n\n[davidwritesbugs]: Slightly tangential to the article, which seems interesting, but the main issue with IPFS was the horrendous performance of clients which I seem to recall related to having a refresh storms, sparse routing tables, unreachable peers as well as lookup speeds. Mostly the reputation was so bad that people didn&#x27;t bother with it, I dismissed it for my own project. If your only users are crypto-grift projects you&#x27;re in a bad place.",
-    "author": "dennis-tra",
-    "published_at": "2026-07-01T15:30:35Z",
-    "fetched_at": "2026-07-02T00:02:25.196011Z",
-    "metadata": {
-      "score": 143,
-      "descendants": 47,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48748518",
-      "comment_count": 5,
-      "title_zh": "IPFS通过乐观提供算法实现10倍发布加速",
-      "detailed_summary_zh": "IPFS开发团队提出了一种名为“乐观提供”（Optimistic Provide）的新算法，该算法在大部分PUT RPC成功后就立即返回控制权，并将剩余任务异步后台完成，从而将内容发布速度提升10倍。 这一改进显著降低了IPFS内容发布延迟，提升了用户体验，并可能推动IPFS在更多实际生产场景中的应用，尤其是在需要快速上链的去中心化存储应用中。 该方法并未减少工作量，而是将同步等待改为异步处理，因此实际发布流程并未完全完成，但用户可更快获得反馈。结合“重新提供扫描”（Reprovide Sweep）机制，可确保内容最终被DHT收录。",
-      "background_zh": "IPFS是一个点对点分布式文件系统，使用分布式哈希表（DHT）进行内容路由和提供。当用户发布内容时，需要将内容标识符（CID）广播到DHT中，这个过程称为“提供”（provide）。传统提供需要等待所有DHT节点确认，导致延迟较高。",
-      "community_discussion_zh": "评论中有人质疑称，这种优化本质上是将同步等待转为异步，并非真正的加速，只是“做更少的事”。也有用户反映IPFS查找速度慢是更大痛点。此外，部分评论者对IPFS在生产中的可靠性持保留态度，认为其声誉因性能问题受损。",
-      "sources": [
-        {
-          "url": "https://blog.ipfs.tech/2026-05-optimistic-provide/",
-          "title": "Optimistic Provide: How We Made IPFS Content Publishing 10x ..."
-        },
-        {
-          "url": "https://github.com/dennis-tra/optimistic-provide",
-          "title": "GitHub - dennis-tra/optimistic-provide: A DHT measurement ..."
-        },
-        {
-          "url": "https://docs.ipfs.tech/concepts/dht/",
-          "title": "Distributed Hash Tables ( DHT ) | IPFS Docs"
-        }
-      ],
-      "detailed_summary": "IPFS开发团队提出了一种名为“乐观提供”（Optimistic Provide）的新算法，该算法在大部分PUT RPC成功后就立即返回控制权，并将剩余任务异步后台完成，从而将内容发布速度提升10倍。 这一改进显著降低了IPFS内容发布延迟，提升了用户体验，并可能推动IPFS在更多实际生产场景中的应用，尤其是在需要快速上链的去中心化存储应用中。 该方法并未减少工作量，而是将同步等待改为异步处理，因此实际发布流程并未完全完成，但用户可更快获得反馈。结合“重新提供扫描”（Reprovide Sweep）机制，可确保内容最终被DHT收录。",
-      "background": "IPFS是一个点对点分布式文件系统，使用分布式哈希表（DHT）进行内容路由和提供。当用户发布内容时，需要将内容标识符（CID）广播到DHT中，这个过程称为“提供”（provide）。传统提供需要等待所有DHT节点确认，导致延迟较高。",
-      "community_discussion": "评论中有人质疑称，这种优化本质上是将同步等待转为异步，并非真正的加速，只是“做更少的事”。也有用户反映IPFS查找速度慢是更大痛点。此外，部分评论者对IPFS在生产中的可靠性持保留态度，认为其声誉因性能问题受损。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value technical deep-dive with community validation (143 points, 47 comments) discussing a significant performance improvement for IPFS, including critical perspectives that enhance the discussion.",
-    "ai_summary": "IPFS content publishing is made 10x faster using an optimistic providing approach that returns control after most PUT RPCs succeed and handles remaining ones asynchronously.",
-    "ai_tags": [
-      "IPFS",
-      "distributed systems",
-      "performance optimization",
-      "P2P",
-      "DHT"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:32ba82030d8541ab",
+    "id": "rss:lobste.rs_rss:4d08ff3ebcc85ab5",
     "source_type": "rss",
-    "title": "All Package Management Functionality Moved from Compiler to Build System",
-    "url": "https://ziglang.org/devlog/2026/?2026-06-30#2026-06-30",
-    "content": "<p><a href=\"https://lobste.rs/s/4liqdw/all_package_management_functionality\">Comments</a></p>",
-    "author": "ziglang.org via FedericoSchonborn",
-    "published_at": "2026-07-01T11:29:46Z",
-    "fetched_at": "2026-07-02T00:02:24.654966Z",
+    "title": "crustc: Entirety of rustc, translated to C",
+    "url": "https://github.com/FractalFir/crustc",
+    "content": "<p><a href=\"https://lobste.rs/s/ryny2c/crustc_entirety_rustc_translated_c\">Comments</a></p>",
+    "author": "github.com via ajdecon",
+    "published_at": "2026-07-02T23:19:21Z",
+    "fetched_at": "2026-07-02T23:58:09.719616Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "zig"
+        "rust"
       ],
-      "title_zh": "Zig将包管理功能从编译器移至构建系统",
-      "detailed_summary_zh": "Zig语言在官方开发日志中宣布，所有包管理功能将从编译器迁移至构建系统，这一架构调整自2026年6月30日起生效。 这是Zig语言的重大架构变更，将简化编译器的职责，增强构建系统的统一性和可维护性，影响所有Zig开发者的工作流程。 此前包管理部分功能由编译器处理，迁移后完全由构建系统（如build.zig和build.zig.zon）负责，编译器将更专注于代码编译本身。",
-      "background_zh": "Zig的构建系统是一个集成的构建工具，用于管理项目依赖、构建步骤和交叉编译。此前包管理与编译器耦合，迁移后构建系统将成为包管理的唯一入口，使语言工具链更加清晰。",
-      "sources": [
-        {
-          "url": "https://ziglang.org/learn/build-system/",
-          "title": "Zig Build System ⚡ Zig Programming Language"
-        },
-        {
-          "url": "https://medium.com/@edlyuu/zig-package-manager-2-wtf-is-build-zig-zon-and-build-zig-0-11-0-update-5bc46e830fc1",
-          "title": "Zig Package Manager 2 — WTF is Build.Zig.Zon and ... - Medium"
-        }
-      ],
-      "detailed_summary": "Zig语言在官方开发日志中宣布，所有包管理功能将从编译器迁移至构建系统，这一架构调整自2026年6月30日起生效。 这是Zig语言的重大架构变更，将简化编译器的职责，增强构建系统的统一性和可维护性，影响所有Zig开发者的工作流程。 此前包管理部分功能由编译器处理，迁移后完全由构建系统（如build.zig和build.zig.zon）负责，编译器将更专注于代码编译本身。",
-      "background": "Zig的构建系统是一个集成的构建工具，用于管理项目依赖、构建步骤和交叉编译。此前包管理与编译器耦合，迁移后构建系统将成为包管理的唯一入口，使语言工具链更加清晰。",
+      "title_zh": "crustc：将整个rustc编译器翻译为C语言",
+      "detailed_summary_zh": "FractalFir 的 crustc 项目成功将 Rust 编译器 rustc 的全部源码翻译成了 C 语言代码。这是一个将 Rust 编译器完整移植到 C 的开源实现。 该项目可能显著提升 Rust 编译器的可移植性，使得 rustc 能在更多平台（包括缺乏 Rust 原生支持的平台）上自举，对 Rust 生态的跨平台发展有重要价值。 翻译工作覆盖了 rustc 的完整代码库，生成的 C 代码旨在保持与原 Rust 编译器的行为一致。该项目开源在 GitHub 上，供社区进一步验证和改进。",
+      "background_zh": "rustc 是 Rust 编程语言的官方编译器，通常使用 Rust 自身编写，因此需要已有的 Rust 编译器来编译新版本（即自举）。将 rustc 翻译为 C 可以打破这种依赖，让 Rust 在尚未有 Rust 编译器的新平台上也能构建。",
+      "detailed_summary": "FractalFir 的 crustc 项目成功将 Rust 编译器 rustc 的全部源码翻译成了 C 语言代码。这是一个将 Rust 编译器完整移植到 C 的开源实现。 该项目可能显著提升 Rust 编译器的可移植性，使得 rustc 能在更多平台（包括缺乏 Rust 原生支持的平台）上自举，对 Rust 生态的跨平台发展有重要价值。 翻译工作覆盖了 rustc 的完整代码库，生成的 C 代码旨在保持与原 Rust 编译器的行为一致。该项目开源在 GitHub 上，供社区进一步验证和改进。",
+      "background": "rustc 是 Rust 编程语言的官方编译器，通常使用 Rust 自身编写，因此需要已有的 Rust 编译器来编译新版本（即自举）。将 rustc 翻译为 C 可以打破这种依赖，让 Rust 在尚未有 Rust 编译器的新平台上也能构建。",
       "community_discussion": ""
     },
-    "ai_score": 8.0,
-    "ai_reason": "High importance: this is a significant architectural change in Zig's ecosystem, moving package management from compiler to build system. It indicates a major design decision that will affect all Zig users and the language's tooling. The official devlog post and accompanying community discussion on Lobsters add to its value.",
-    "ai_summary": "Zig announces that all package management functionality is being moved from the compiler to the build system, a notable shift in the language's architecture.",
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking project translating the entire rustc compiler to C, a significant technical achievement with potential implications for bootstrapping and portability. Community discussion (linked) may further validate its importance.",
+    "ai_summary": "Crustc is a project that translates the whole Rust compiler (rustc) into C code.",
     "ai_tags": [
-      "Zig",
-      "package management",
-      "build system",
-      "compiler"
+      "rust",
+      "compiler",
+      "translation",
+      "C"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:cc68930bfaf6ffef",
+    "id": "rss:www.nature.com_nature.rss:d0cf8af3dce31006",
     "source_type": "rss",
-    "title": "Progress Report: Linux 7.1 - Asahi Linux",
-    "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
-    "content": "<p><a href=\"https://lobste.rs/s/dvhioc/progress_report_linux_7_1_asahi_linux\">Comments</a></p>",
-    "author": "asahilinux.org via thisalex",
-    "published_at": "2026-07-01T14:00:35Z",
-    "fetched_at": "2026-07-02T00:02:24.655000Z",
+    "title": "Electrodeposited self-assembled molecules for perovskite photovoltaics",
+    "url": "https://www.nature.com/articles/s41586-026-10844-6",
+    "content": "<p>Nature, Published online: 02 July 2026; <a href=\"https://www.nature.com/articles/s41586-026-10844-6\">doi:10.1038/s41586-026-10844-6</a></p>Electrodeposited self-assembled molecules for perovskite photovoltaics",
+    "author": "Lei Ying",
+    "published_at": "2026-07-02T00:00:00Z",
+    "fetched_at": "2026-07-02T23:58:10.581441Z",
     "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "电沉积自组装分子提升钙钛矿光伏性能",
+      "detailed_summary_zh": "一项发表在《自然》杂志上的研究提出，通过电沉积方法制备自组装分子（SAMs），能够显著提升钙钛矿太阳能电池的性能和稳定性。 该方法解决了SAMs在钙钛矿光伏中容易脱离和钝化效果不足的关键问题，有望推动钙钛矿太阳能电池的商业化进程并降低制造成本。 该研究针对传统涂覆法导致的SAMs分布不均和附着力差等挑战，利用电沉积技术实现了更均匀、更牢固的SAMs层，从而增强了界面钝化效果。",
+      "background_zh": "自组装分子（SAMs）是钙钛矿太阳能电池中常用的界面修饰材料，可减少缺陷并提高效率。电沉积作为一种可控的薄膜制备技术，相比传统溶液涂覆能提供更好的均匀性和附着力，近年来在光伏领域受到关注。",
+      "sources": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ifm2.8",
+          "title": "Self-assembled monolayers for perovskite solar cells"
+        }
+      ],
+      "detailed_summary": "一项发表在《自然》杂志上的研究提出，通过电沉积方法制备自组装分子（SAMs），能够显著提升钙钛矿太阳能电池的性能和稳定性。 该方法解决了SAMs在钙钛矿光伏中容易脱离和钝化效果不足的关键问题，有望推动钙钛矿太阳能电池的商业化进程并降低制造成本。 该研究针对传统涂覆法导致的SAMs分布不均和附着力差等挑战，利用电沉积技术实现了更均匀、更牢固的SAMs层，从而增强了界面钝化效果。",
+      "background": "自组装分子（SAMs）是钙钛矿太阳能电池中常用的界面修饰材料，可减少缺陷并提高效率。电沉积作为一种可控的薄膜制备技术，相比传统溶液涂覆能提供更好的均匀性和附着力，近年来在光伏领域受到关注。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Published in Nature, this represents a potentially groundbreaking advancement in perovskite photovoltaics, a highly active research area. The combination of electrodeposition and self-assembled molecules for this application is novel and could impact solar cell manufacturing.",
+    "ai_summary": "A study introduces electrodeposited self-assembled molecules as a method to improve perovskite solar cell performance and stability.",
+    "ai_tags": [
+      "perovskite photovoltaics",
+      "electrodeposition",
+      "self-assembled molecules",
+      "solar energy",
+      "materials science"
+    ]
+  },
+  {
+    "id": "hackernews:story:48767347",
+    "source_type": "hackernews",
+    "title": "Virginia bans sale of geolocation data",
+    "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+    "content": "\n--- Top Comments ---\n\n[jmward01]: Given the actual informed and uncoerced choice, people say no to this kind of collection and especially its sale or use for any purpose other than the explicit service they thought they were allowing it for (navigation, setting the time, etc etc). This is true for basically all information collected. I&#x27;m glad to see there is some minor protection language being included but it needs to have real teeth and get to the point. If you collect data from me under false pretenses or using coerci...\n\n[danielrmay]: A good start. From 2024: &quot;A company allegedly tracked people’s visits to nearly 600 Planned Parenthood locations across 48 states and provided that data for one of the largest anti-abortion ad campaigns in the nation, according to an investigation&quot; -  https:&#x2F;&#x2F;www.politico.com&#x2F;news&#x2F;2024&#x2F;02&#x2F;13&#x2F;planned-parenthood-...\n\n[dv_dt]: So let&#x27;s say a Delaware incorporated company sells location data that happens to be collected in Virginia, but its sold from the corporation with no operations in Virginia. What happens?  On the other hand us-east-1 is in Virginia with who knows how many payment processing servers running.\n\n[peter303]: NYTimes article a few years ago on how car insurance companies were using such data. Tracking sudden stoos, driving at night, driving faster than 80 mph, etc.\n\n[avarun]: As long as this is actually about &quot;sale&quot; of data and actually imposes strict limits on data brokers and all the nefarious actors out there, I am all for it. If it&#x27;s more similar to the California law, which just calls all uses of data &quot;selling data&quot; and just ends up muddying the waters without actually imposing any regulations of value on the bad actors in the industry, then that would be a shame. There is value to actually keeping the meaning of words clear and consi...",
+    "author": "toomuchtodo",
+    "published_at": "2026-07-02T21:03:45Z",
+    "fetched_at": "2026-07-02T23:58:09.836715Z",
+    "metadata": {
+      "score": 326,
+      "descendants": 57,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48767347",
+      "comment_count": 5,
+      "title_zh": "弗吉尼亚州禁止出售地理位置数据",
+      "detailed_summary_zh": "弗吉尼亚州通过立法禁止出售地理位置数据，这是美国各州在隐私保护领域的一项重要举措，主要针对数据经纪人买卖消费者位置信息的行为。 该法律能有效防止地理位置数据被滥用于追踪敏感行为（如访问医疗机构）或影响保险定价，对消费者隐私保护具有里程碑意义，可能推动其他州跟进类似立法。 法律明确禁止数据经纪人出售地理位置数据，但执法面临跨州公司管辖权等挑战，例如在特拉华州注册但在弗吉尼亚州收集数据的公司可能难以监管。",
+      "background_zh": "地理位置数据指能够定位设备或个人的信息，数据经纪人专门从公开记录或私有渠道收集并出售此类数据。美国联邦层面缺乏统一隐私法规，各州正自行立法填补空白，弗吉尼亚州此法案是继加州之后的重要尝试。",
+      "community_discussion_zh": "评论中多数支持该法律，但担忧执行难度；同时引用实际案例说明地理位置数据被用于反堕胎广告和车险定价等滥用行为，强调立法需有真正效力。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Data_broker",
+          "title": "Data broker"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Geolocation_database",
+          "title": "Geolocation database"
+        }
+      ],
+      "detailed_summary": "弗吉尼亚州通过立法禁止出售地理位置数据，这是美国各州在隐私保护领域的一项重要举措，主要针对数据经纪人买卖消费者位置信息的行为。 该法律能有效防止地理位置数据被滥用于追踪敏感行为（如访问医疗机构）或影响保险定价，对消费者隐私保护具有里程碑意义，可能推动其他州跟进类似立法。 法律明确禁止数据经纪人出售地理位置数据，但执法面临跨州公司管辖权等挑战，例如在特拉华州注册但在弗吉尼亚州收集数据的公司可能难以监管。",
+      "background": "地理位置数据指能够定位设备或个人的信息，数据经纪人专门从公开记录或私有渠道收集并出售此类数据。美国联邦层面缺乏统一隐私法规，各州正自行立法填补空白，弗吉尼亚州此法案是继加州之后的重要尝试。",
+      "community_discussion": "评论中多数支持该法律，但担忧执行难度；同时引用实际案例说明地理位置数据被用于反堕胎广告和车险定价等滥用行为，强调立法需有真正效力。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important privacy law with broad implications; community comments provide insightful discussion on enforcement challenges and real-world abuses (e.g., tracking of Planned Parenthood visits, insurance use). High engagement (326 points, 57 comments) signals community-validated significance.",
+    "ai_summary": "Virginia bans the sale of geolocation data, a significant step in privacy regulation targeting data brokers and protecting consumers.",
+    "ai_tags": [
+      "privacy",
+      "geolocation",
+      "legislation",
+      "data protection",
+      "Virginia"
+    ]
+  },
+  {
+    "id": "hackernews:story:48763035",
+    "source_type": "hackernews",
+    "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+    "url": "https://mathstodon.xyz/@iblech/116769502749142438",
+    "content": "\n--- Top Comments ---\n\n[kokada]: While it is certainly an interesting bug, I kinda feel that the title is click bait? Because this `cryptsetup luksSuspend` from what I understood is not really officially supported but an extension done in Debian, so if anything this regression only affected Debian? I am not sure if you can blame the kernel for something that is not supported or even widely tested. I still find this impressive, and it is nice that we now have a test (NixOSTests BTW are awesome, I agree with OP) to avoid this ...\n\n[bitbasher]: I don&#x27;t see any other way? When you sleep (suspend to RAM), everything is stored in RAM and is encrypted but the master key is present in kernel memory (if I recall correctly). However, if you hibernate (suspend to disk) the entire contents of RAM (including the master key) is written&#x2F;encrypted to disk and the RAM is cleared. When you wake the machine up you have to re-enter the passphrase to decrypt the master key to re-load disk contents back to memory.\n\n[johnathan101]: This is one of those regressions that&#x27;s easy to miss because everything still &quot;works.&quot; Security bugs often don&#x27;t announce themselves.\n\n[CodesInChaos]: I don&#x27;t have to re-enter my boot password after Sleep, so obviously the encryption key is still in memory.\n\n[tombert]: I don&#x27;t think this bothers me. The only reason that I do the disk encryption is so that I don&#x27;t have to worry about people going through my laptop to steal tax documents and&#x2F;or credit card stuff when I sell the laptop.  I of course also wipe the laptop too, but I figure that if the data is encrypted at the drive level then there&#x27;s very little risk of anyone being able to use some kind of forensics tool and recover data.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/nvwvup/since_linux_6_9_may_2024_luks_encryption\">Comments</a></p>",
+    "author": "IngoBlechschmid",
+    "published_at": "2026-07-02T15:25:16Z",
+    "fetched_at": "2026-07-02T23:58:09.836775Z",
+    "metadata": {
+      "score": 382,
+      "descendants": 184,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48763035",
+      "comment_count": 5,
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
         "linux"
       ],
-      "title_zh": "Asahi Linux 7.1 进度报告发布",
-      "detailed_summary_zh": "Asahi Linux 项目发布了 7.1 版本的进度报告，详细介绍了针对 Apple Silicon Mac 的 Linux 移植工作的最新改进和更新。 该报告展示了 Asahi Linux 在让 Linux 运行于苹果 M 系列芯片上的持续进展，对希望在 Apple Silicon 硬件上使用 Linux 的用户和开发者具有重要意义。 此次更新可能包括对更多硬件特性的支持、性能优化以及稳定性提升，具体细节需参考官方进度报告。",
-      "background_zh": "Asahi Linux 是一个开源项目，旨在将 Linux 内核及相关软件移植到苹果自研芯片 Mac 上。由于苹果未公开芯片文档，该项目主要通过逆向工程实现。",
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Linux 6.9 导致 LUKS 挂起时未擦除加密密钥",
+      "detailed_summary_zh": "自 Linux 6.9 内核版本以来，`cryptsetup luksSuspend` 操作在挂起时不再从内存中擦除磁盘加密主密钥，导致加密密钥在挂起后仍然保留在内存中。这是一个安全回归漏洞。 该漏洞破坏了 LUKS 磁盘加密的核心安全假设，即挂起时应清除密钥以防止物理访问攻击。影响所有使用 LUKS 并依赖 `luksSuspend` 保护密钥的用户，特别是使用 Debian 等发行版中已集成该功能的系统。 该回归影响 Linux 6.9 及后续内核版本，但可能仅直接影响那些集成 `luksSuspend` 的发行版（如 Debian 的 `debian-luks-suspend` 脚本）。 `cryptsetup` 的 `luksSuspend` 本应在挂起前擦除密钥，但内核变更导致该行为失效。",
+      "background_zh": "LUKS (Linux Unified Key Setup) 是 Linux 上常用的磁盘加密标准，使用主密钥加密数据。 `luksSuspend` 命令用于临时挂起加密设备，它会将主密钥从内存中清除并阻止 I/O 操作，从而在系统挂起（待机）时保护密钥。该功能通常由发行版通过脚本在系统挂起前自动调用。",
+      "community_discussion_zh": "社区评论中，有用户指出该回归可能仅影响 Debian 等集成了 `luksSuspend` 的发行版，并非内核官方支持的功能，标题有误导性。其他用户指出挂起后无需重新输入密码本身就说明密钥仍在内存中，而部分用户认为只要在出售设备时擦除数据，该漏洞影响不大。总体来看，社区对漏洞严重性存在分歧，但普遍认为这是一个难以发现的安全回归。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/Asahi_Linux",
-          "title": "Asahi Linux"
+          "url": "https://www.man7.org/linux//man-pages/man8/cryptsetup-luksSuspend.8.html",
+          "title": "cryptsetup-luksSuspend (8) - Linux manual page - man7.org"
         },
         {
-          "url": "https://grokipedia.com/page/Asahi_Linux",
-          "title": "Asahi Linux"
+          "url": "https://man.archlinux.org/man/core/cryptsetup/cryptsetup-luksSuspend.8.en",
+          "title": "cryptsetup-luksSuspend (8) — Arch manual pages"
+        },
+        {
+          "url": "https://github.com/nailfarmer/debian-luks-suspend/",
+          "title": "GitHub - nailfarmer/debian-luks-suspend: Lock encrypted root ..."
         }
       ],
-      "detailed_summary": "Asahi Linux 项目发布了 7.1 版本的进度报告，详细介绍了针对 Apple Silicon Mac 的 Linux 移植工作的最新改进和更新。 该报告展示了 Asahi Linux 在让 Linux 运行于苹果 M 系列芯片上的持续进展，对希望在 Apple Silicon 硬件上使用 Linux 的用户和开发者具有重要意义。 此次更新可能包括对更多硬件特性的支持、性能优化以及稳定性提升，具体细节需参考官方进度报告。",
-      "background": "Asahi Linux 是一个开源项目，旨在将 Linux 内核及相关软件移植到苹果自研芯片 Mac 上。由于苹果未公开芯片文档，该项目主要通过逆向工程实现。",
-      "community_discussion": ""
+      "detailed_summary": "自 Linux 6.9 内核版本以来，`cryptsetup luksSuspend` 操作在挂起时不再从内存中擦除磁盘加密主密钥，导致加密密钥在挂起后仍然保留在内存中。这是一个安全回归漏洞。 该漏洞破坏了 LUKS 磁盘加密的核心安全假设，即挂起时应清除密钥以防止物理访问攻击。影响所有使用 LUKS 并依赖 `luksSuspend` 保护密钥的用户，特别是使用 Debian 等发行版中已集成该功能的系统。 该回归影响 Linux 6.9 及后续内核版本，但可能仅直接影响那些集成 `luksSuspend` 的发行版（如 Debian 的 `debian-luks-suspend` 脚本）。 `cryptsetup` 的 `luksSuspend` 本应在挂起前擦除密钥，但内核变更导致该行为失效。",
+      "background": "LUKS (Linux Unified Key Setup) 是 Linux 上常用的磁盘加密标准，使用主密钥加密数据。 `luksSuspend` 命令用于临时挂起加密设备，它会将主密钥从内存中清除并阻止 I/O 操作，从而在系统挂起（待机）时保护密钥。该功能通常由发行版通过脚本在系统挂起前自动调用。",
+      "community_discussion": "社区评论中，有用户指出该回归可能仅影响 Debian 等集成了 `luksSuspend` 的发行版，并非内核官方支持的功能，标题有误导性。其他用户指出挂起后无需重新输入密码本身就说明密钥仍在内存中，而部分用户认为只要在出售设备时擦除数据，该漏洞影响不大。总体来看，社区对漏洞严重性存在分歧，但普遍认为这是一个难以发现的安全回归。"
     },
     "ai_score": 8.0,
-    "ai_reason": "Asahi Linux is a significant project enabling Linux on Apple Silicon; a progress report for a major version like 7.1 is likely to contain important technical updates and improvements. The presence of Lobste.rs comments suggests community engagement, but without actual comments, we assume substantive discussion.",
-    "ai_summary": "Asahi Linux published a progress report for version 7.1, detailing updates to their Linux port for Apple Silicon Macs.",
+    "ai_reason": "Important security regression in Linux kernel affecting LUKS disk encryption, with high community engagement (382 points, 184 comments) and insightful technical discussion about scope and mitigation. The bug compromises encryption key security during suspend, warranting immediate attention.",
+    "ai_summary": "A Linux kernel regression (since 6.9) caused LUKS suspend to retain encryption keys in memory instead of wiping them, compromising disk encryption security.",
     "ai_tags": [
-      "Asahi Linux",
-      "Linux",
-      "Apple Silicon",
-      "ARM",
-      "open source"
+      "linux",
+      "security",
+      "luks",
+      "encryption",
+      "kernel"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:daef05f3417c4dd6",
+    "id": "hackernews:story:48762098",
+    "source_type": "hackernews",
+    "title": "Podman v6.0.0",
+    "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
+    "content": "\n--- Top Comments ---\n\n[SwellJoe]: No idea why Docker is still so much more popular than Podman. Podman is obviously the better implementation. The new network stuff is a welcome improvement.\n\n[cdmckay]: After Docker Desktop randomly started consuming insane amounts of memory again we switched to Podman and it was literally as easy as installing it and pointing it at our docker-compose.yml. Zero changes needed and now I don’t need to keep a daemon running. Great software.\n\n[mati365]: I really love Quadlet. I used to host my rootless containers on Hetzner, Ansible, SystemD and RockyLinux for years without any issues and extracted it to template repo [1]. [1]  https:&#x2F;&#x2F;github.com&#x2F;Mati365&#x2F;hetzner-podman-bunjs-deploy\n\n[roger_]: Anyone have experience switching from Docker to Podman? I have a lot of compose files in my homelab&#x2F;automation setup and those are what I’m most concerned about.\n\n[PufPufPuf]: One thing I don&#x27;t like about Podman is that it pretends to be docker-compatible while having some minor differences that will come to bite you. And users of your docker-based project who try to run it on Podman will come to you and complain.",
+    "author": "soheilpro",
+    "published_at": "2026-07-02T14:23:09Z",
+    "fetched_at": "2026-07-02T23:58:09.836799Z",
+    "metadata": {
+      "score": 359,
+      "descendants": 136,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48762098",
+      "comment_count": 5,
+      "title_zh": "Podman v6.0.0 发布，网络能力大幅提升",
+      "detailed_summary_zh": "Podman v6.0.0 版本正式发布，带来了新的网络功能和多项改进，进一步增强了其作为容器运行时的竞争力。 Podman 作为 Docker 的主要竞争对手，其重大版本更新对容器生态系统具有重要意义，尤其是网络能力的提升有助于吸引更多用户从 Docker 迁移，推动无守护进程架构的普及。 新版本在网络方面有显著增强，但社区用户指出 Podman 在与 Docker 的兼容性上仍存在细微差异，可能导致某些 compose 文件或项目出现问题。",
+      "background_zh": "Podman 是一个无守护进程的容器运行时，与依赖中央守护进程的 Docker 不同，它通过直接与容器运行时交互来提高安全性和效率。Podman 支持 rootless 容器和 systemd 集成，最近还引入了 Quadlet 功能，可以像 systemd 服务一样管理容器。",
+      "community_discussion_zh": "社区总体对 Podman 持正面态度，许多用户称赞其易用性和无守护进程架构，例如有用户表示从 Docker 切换到 Podman 完全无痛。但也有用户提醒与 Docker 的兼容性并非完美，项目维护者可能会收到因 Podman 差异导致的投诉。",
+      "sources": [
+        {
+          "url": "https://www.geeksforgeeks.org/devops/what-is-a-podman-container/",
+          "title": "What is a Podman Container ? - GeeksforGeeks"
+        },
+        {
+          "url": "https://linuxize.com/post/podman-vs-docker/",
+          "title": "Podman vs Docker: Differences and Migration Guide - Linuxize"
+        },
+        {
+          "url": "https://devops-daily.com/comparisons/podman-vs-docker",
+          "title": "Podman vs Docker: Feature Comparison, Pros/Cons, and Verdict"
+        }
+      ],
+      "detailed_summary": "Podman v6.0.0 版本正式发布，带来了新的网络功能和多项改进，进一步增强了其作为容器运行时的竞争力。 Podman 作为 Docker 的主要竞争对手，其重大版本更新对容器生态系统具有重要意义，尤其是网络能力的提升有助于吸引更多用户从 Docker 迁移，推动无守护进程架构的普及。 新版本在网络方面有显著增强，但社区用户指出 Podman 在与 Docker 的兼容性上仍存在细微差异，可能导致某些 compose 文件或项目出现问题。",
+      "background": "Podman 是一个无守护进程的容器运行时，与依赖中央守护进程的 Docker 不同，它通过直接与容器运行时交互来提高安全性和效率。Podman 支持 rootless 容器和 systemd 集成，最近还引入了 Quadlet 功能，可以像 systemd 服务一样管理容器。",
+      "community_discussion": "社区总体对 Podman 持正面态度，许多用户称赞其易用性和无守护进程架构，例如有用户表示从 Docker 切换到 Podman 完全无痛。但也有用户提醒与 Docker 的兼容性并非完美，项目维护者可能会收到因 Podman 差异导致的投诉。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major version release of a popular container runtime with significant network improvements. The HN discussion has high engagement (136 comments) and includes substantive technical insights (e.g., Quadlet, compatibility concerns), indicating strong community interest and validation.",
+    "ai_summary": "Podman v6.0.0 introduces new network capabilities and improvements, with the community praising its ease of use and daemonless architecture, though some note minor Docker compatibility issues.",
+    "ai_tags": [
+      "podman",
+      "containers",
+      "devops",
+      "open-source",
+      "docker-competitor"
+    ]
+  },
+  {
+    "id": "hackernews:story:48761118",
+    "source_type": "hackernews",
+    "title": "How to ask for help from people who don't know you",
+    "url": "https://pradyuprasad.com/writings/how-to-ask-for-help/",
+    "content": "\n--- Top Comments ---\n\n[jackconsidine]: This was an excellently written, salient post with some good tidbits. I&#x27;ve learned some of these lessons the hard way. I&#x27;ll add a few. Proof of work is important, but it&#x27;s not about the magnitude of energy you spend. I went through two iterations of reaching out to my college network. The first time I put so much time into handwriting notes and trying to provide my relatable background. 100 notes, not a single response. The second time I sent emails that were a few sentences. I...\n\n[FinnLobsien]: The problem here is that most points are about how to formulate your ask. I think the biggest thing is that you&#x27;re much more likely to get help if you show you&#x27;re doing the best to solve it yourself. There&#x27;s a big difference between: &quot;Hey, I saw this job at [company you work at], could you refer me please? I&#x27;m [lists skills and experience]&quot; and &quot;Hey I&#x27;m thinking of applying to [company you work at] for the product designer position and I want to make an...\n\n[shalmanese]: I think the most important thing to be aware of is that your own personal estimation in how willing some group of people is to help is regularly off by several orders of magnitude. I&#x27;ve had people assume that person X must be asked several times a day for help when they&#x27;re really asked once every few years. Alternatively, I know people who assume they are sending some totally unique request to someone who gets a dozen of the same inquiry every single day. Until you get a good baseli...\n\n[Aurornis]: &gt; One of the strongest ways to show that you’re worth helping is to demonstrate that you are a serious person When I’ve been in positions where a lot of people ask for help, this is the #1 place I saw people drop the ball. The advice to show proof of work up front is important. What isn’t so obvious is that the proof of work needs to go deeper than surface level. Putting up a single blog post or having Claude write some code that you upload to GitHub doesn’t cut it. You have to show that y...\n\n[mrtb]: I&#x27;ve been DM&#x27;ing randos on LinkedIn for lightweight consults and found that offering to pay up front and asking strangers to price their own time can help to show seriousness and often results in free interactions or buy-me-a-coffee pricing. e.g. &quot;Hey I love your work on X, I&#x27;ve been thinking about &#x2F; working on related thing Y and would love your feedback on aspect Z. How much $$ to rent your brain for 20 minutes? I&#x27;m mainly wondering what you think&#x2F;know abo...",
+    "author": "FigurativeVoid",
+    "published_at": "2026-07-02T13:19:22Z",
+    "fetched_at": "2026-07-02T23:58:09.836880Z",
+    "metadata": {
+      "score": 367,
+      "descendants": 58,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48761118",
+      "comment_count": 5,
+      "title_zh": "如何向陌生人有效求助",
+      "detailed_summary_zh": "作者Pradyut Prasad发表了一篇实用指南，详细阐述了如何向不认识的人请求帮助，核心方法包括展示事先努力、保持简洁以及准确评估他人帮忙的意愿。 这篇文章对于软件工程师及其他专业人士来说极具价值，因为它提供了具体可操作的沟通策略，能够提高求助成功率，从而促进职业发展和知识交流。 文中强调“事先努力”不在于花费大量时间，而在于针对性地展示你已尽力自行解决问题；同时，求助者往往高估或低估他人被请求的频率，需要对求助目标群体的意愿有更准确的认识。",
+      "background_zh": "在职场或开源社区中，向陌生人寻求帮助是常见需求，但很多人因为请求方式不当而被忽视。这篇文章基于作者的经验和社区讨论，提炼出几条关键原则，帮助读者更有效地获得支持。",
+      "community_discussion_zh": "评论区中，用户jackconsidine分享了自己的教训：第一次花费很多时间手写感谢信却没有回应，第二次简短邮件反而有效。FinnLobsien强调展现自己正在努力解决问题的态度比措辞更重要。shalmanese指出人们对他人帮助意愿的估算经常偏差几个数量级。Aurornis补充说，事先努力需要深入而非表面化，比如不能只靠单篇博客或AI生成代码来装点门面。",
+      "detailed_summary": "作者Pradyut Prasad发表了一篇实用指南，详细阐述了如何向不认识的人请求帮助，核心方法包括展示事先努力、保持简洁以及准确评估他人帮忙的意愿。 这篇文章对于软件工程师及其他专业人士来说极具价值，因为它提供了具体可操作的沟通策略，能够提高求助成功率，从而促进职业发展和知识交流。 文中强调“事先努力”不在于花费大量时间，而在于针对性地展示你已尽力自行解决问题；同时，求助者往往高估或低估他人被请求的频率，需要对求助目标群体的意愿有更准确的认识。",
+      "background": "在职场或开源社区中，向陌生人寻求帮助是常见需求，但很多人因为请求方式不当而被忽视。这篇文章基于作者的经验和社区讨论，提炼出几条关键原则，帮助读者更有效地获得支持。",
+      "community_discussion": "评论区中，用户jackconsidine分享了自己的教训：第一次花费很多时间手写感谢信却没有回应，第二次简短邮件反而有效。FinnLobsien强调展现自己正在努力解决问题的态度比措辞更重要。shalmanese指出人们对他人帮助意愿的估算经常偏差几个数量级。Aurornis补充说，事先努力需要深入而非表面化，比如不能只靠单篇博客或AI生成代码来装点门面。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value practical advice for software engineers, with strong community engagement (367 points, 58 comments) and insightful comments that add diverse perspectives. Not groundbreaking, but extremely relevant and well-received.",
+    "ai_summary": "A guide on crafting effective requests for help from strangers, emphasizing proof of work, brevity, and realistic estimation of others' willingness to assist.",
+    "ai_tags": [
+      "professional-advice",
+      "communication",
+      "hacker-news",
+      "career",
+      "networking"
+    ]
+  },
+  {
+    "id": "hackernews:story:48761944",
+    "source_type": "hackernews",
+    "title": "Immich 3.0",
+    "url": "https://github.com/immich-app/immich/discussions/29439",
+    "content": "\n--- Top Comments ---\n\n[oliyoung]: Immich is such a no-brainer replacement for Apple Photos or Google Photos, combined with VPN like Tailscale, it&#x27;s almost a drop in replacement\n\n[Cider9986]: When I was switching to GrapheneOS from iOS, I decided to self host my photos. I considered Immich, but I settled on Ente because of the encryption. Ente Photos is extremely polished and it&#x27;s comparable quality to Apple photos. It&#x27;s cool they keep the server open and selfhostable instead of only open clients like many e2ee projects do. I like how you can share an album and anyone can contribute to it without an account. Another cool feature is that you can select photos to lock when...\n\n[psadauskas]: Has the ios photo sync gotten better? I&#x27;ve got 20k photos on my phone, and last I tried it filled up the storage on my phone with the originals, and never completed the process, even after leaving my phone open, unlocked, and the immich app running in the foreground for several days, on the same local network as the server. I know they were working on it, but haven&#x27;t kept up, I just want to know if it works better now and I should try again.\n\n[phikappa]: There&#x27;s a lot of things I spent a ton of time setting up, use once, and then never again. Tons of things that are easy to set up, and provide small benefits every day for a long time. Immich has got to be the thing that I&#x27;ve spent ages setting up, use extremely infrequently but the one time a year I use it I&#x27;m so happy I did. Great software.\n\n[MohamedMabrouk]: Immich is an amazing software. I use it regularly as an alternative along side Google photos. I keep in it large videos that I wouldn&#x27;t upload normally to Google photos + the snappy experience at home vs Cloud-Bades solution.",
+    "author": "hashier",
+    "published_at": "2026-07-02T14:13:26Z",
+    "fetched_at": "2026-07-02T23:58:09.836899Z",
+    "metadata": {
+      "score": 148,
+      "descendants": 63,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48761944",
+      "comment_count": 5,
+      "title_zh": "自托管照片管理应用 Immich 3.0 正式发布",
+      "detailed_summary_zh": "Immich 3.0 版本已正式发布，这是一款自托管的 Google Photos 和 Apple Photos 替代品，受到了社区的广泛关注和讨论。 此版本标志着该项目的重大里程碑，对于注重隐私和希望完全控制自己照片数据的用户来说，Immich 提供了一个强大的开源解决方案。 虽然具体更新细节未在公告中详细列出，但社区讨论表明用户对新版本的性能、功能改进以及 iOS 照片同步问题修复充满期待。",
+      "background_zh": "Immich 是一个开源的、自托管的照片和视频备份解决方案，允许用户在自己的服务器上管理媒体文件，无需依赖第三方云服务。它提供类似 Google Photos 的浏览、搜索和组织功能，同时确保用户隐私。",
+      "community_discussion_zh": "社区评论整体积极，多数用户称赞 Immich 是 Google Photos 的理想替代品，并分享了使用体验。部分用户提到 iOS 同步问题曾是痛点，希望新版本有所改善；也有用户出于加密考虑选择了其他方案如 Ente，但仍认可 Immich 的价值。",
+      "sources": [
+        {
+          "url": "https://immich.app/",
+          "title": "Immich"
+        },
+        {
+          "url": "https://grokipedia.com/page/Immich",
+          "title": "Immich"
+        }
+      ],
+      "detailed_summary": "Immich 3.0 版本已正式发布，这是一款自托管的 Google Photos 和 Apple Photos 替代品，受到了社区的广泛关注和讨论。 此版本标志着该项目的重大里程碑，对于注重隐私和希望完全控制自己照片数据的用户来说，Immich 提供了一个强大的开源解决方案。 虽然具体更新细节未在公告中详细列出，但社区讨论表明用户对新版本的性能、功能改进以及 iOS 照片同步问题修复充满期待。",
+      "background": "Immich 是一个开源的、自托管的照片和视频备份解决方案，允许用户在自己的服务器上管理媒体文件，无需依赖第三方云服务。它提供类似 Google Photos 的浏览、搜索和组织功能，同时确保用户隐私。",
+      "community_discussion": "社区评论整体积极，多数用户称赞 Immich 是 Google Photos 的理想替代品，并分享了使用体验。部分用户提到 iOS 同步问题曾是痛点，希望新版本有所改善；也有用户出于加密考虑选择了其他方案如 Ente，但仍认可 Immich 的价值。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major version release of a popular self-hosted photo management app with strong community engagement (148 points, 63 comments). Discussion includes user experiences, alternatives, and feature requests, indicating high relevance and interest. Not groundbreaking but highly valuable to the self-hosting community.",
+    "ai_summary": "Immich 3.0, a self-hosted alternative to Google Photos and Apple Photos, has been released with significant community discussion.",
+    "ai_tags": [
+      "self-hosting",
+      "photo management",
+      "privacy",
+      "open-source",
+      "immich"
+    ]
+  },
+  {
+    "id": "hackernews:story:48762725",
+    "source_type": "hackernews",
+    "title": "Spain Orders Blacklist of Palantir from Public and Private Companies",
+    "url": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
+    "content": "\n--- Top Comments ---\n\n[milanito1985]: Spain is really going in the right direction, I wonder why no one countries inspire from what they are doing\n\n[Dibby053]: They seem to have been granting contracts to manage all kinds of critical data to Huawei&#x27;s Palantir equivalent lately, so it&#x27;s probably less about security risks and more about the current source of the bribe money. If they cared about security they would not outsource this kind of stuff to foreign companies. Spain is not Somalia, why not let Indra do it?\n\n[localdeclan]: Every country needs to do this now\n\n[madhacker]: Get rid of this pestilence! Fark Palantir\n\n[_ink_]: I really like what Spain is doing recently. If it weren&#x27;t for climate change, I&#x27;d consider moving there.",
+    "author": "mgh2",
+    "published_at": "2026-07-02T15:02:26Z",
+    "fetched_at": "2026-07-02T23:58:09.836915Z",
+    "metadata": {
+      "score": 562,
+      "descendants": 183,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48762725",
+      "comment_count": 5,
+      "title_zh": "西班牙下令将Palantir列入黑名单",
+      "detailed_summary_zh": "西班牙政府下令将美国科技巨头Palantir列入黑名单，禁止公共和私营公司与其合作。该决定引发了对数据安全和政治动机的广泛讨论。 此举反映了欧洲国家加强技术主权和数据隐私保护的趋势，可能影响其他国家的类似决策。Palantir曾因涉及监控和隐私争议而备受批评，西班牙的行动可能重塑欧美科技合作格局。 黑名单的具体实施细节尚未公布，但表明西班牙正逐步减少对外国科技公司的依赖。Palantir的主要产品包括Gotham和Foundry，用于政府情报和企业数据分析。",
+      "background_zh": "Palantir Technologies是一家美国上市公司，由彼得·蒂尔等人创立，专注于数据集成和分析软件。其客户包括美国国防部、警察部门以及多家企业。Palantir因其在政府监控和预测性警务中的作用而受到批评。技术主权是指国家自主掌握关键技术的政治理念，欧洲多国正在推动这一议程。",
+      "community_discussion_zh": "社区评论中，部分用户表示赞赏（如milanito1985认为西班牙方向正确，_ink_考虑移居），但也有质疑（如Dibby053怀疑动机是贿赂而非安全），同时有用户支持各国效仿（localdeclan）或强烈反对Palantir（madhacker）。整体情绪复杂，观点分化。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Palantir",
+          "title": "Palantir"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Technological_sovereignty",
+          "title": "Technological sovereignty - Wikipedia"
+        }
+      ],
+      "detailed_summary": "西班牙政府下令将美国科技巨头Palantir列入黑名单，禁止公共和私营公司与其合作。该决定引发了对数据安全和政治动机的广泛讨论。 此举反映了欧洲国家加强技术主权和数据隐私保护的趋势，可能影响其他国家的类似决策。Palantir曾因涉及监控和隐私争议而备受批评，西班牙的行动可能重塑欧美科技合作格局。 黑名单的具体实施细节尚未公布，但表明西班牙正逐步减少对外国科技公司的依赖。Palantir的主要产品包括Gotham和Foundry，用于政府情报和企业数据分析。",
+      "background": "Palantir Technologies是一家美国上市公司，由彼得·蒂尔等人创立，专注于数据集成和分析软件。其客户包括美国国防部、警察部门以及多家企业。Palantir因其在政府监控和预测性警务中的作用而受到批评。技术主权是指国家自主掌握关键技术的政治理念，欧洲多国正在推动这一议程。",
+      "community_discussion": "社区评论中，部分用户表示赞赏（如milanito1985认为西班牙方向正确，_ink_考虑移居），但也有质疑（如Dibby053怀疑动机是贿赂而非安全），同时有用户支持各国效仿（localdeclan）或强烈反对Palantir（madhacker）。整体情绪复杂，观点分化。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (562 points, 183 comments) indicates strong interest. The article discusses a significant geopolitical tech move with implications for data privacy and surveillance. Comments show diverse viewpoints, from praise to skepticism about motives, adding depth. Relevant to ongoing debates about tech sovereignty.",
+    "ai_summary": "Spain orders a blacklist of Palantir from public and private companies, sparking debate over data security and political motivations.",
+    "ai_tags": [
+      "Palantir",
+      "Spain",
+      "data privacy",
+      "tech sovereignty",
+      "government contracts"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:5e2c59ed20c5dcdd",
     "source_type": "rss",
-    "title": "Hanami 3.0: In full bloom",
-    "url": "https://hanakai.org/blog/2026/06/30/hanami-3-0-in-full-bloom",
-    "content": "<p><a href=\"https://lobste.rs/s/vyosfg/hanami_3_0_full_bloom\">Comments</a></p>",
-    "author": "hanakai.org via PuercoPop",
-    "published_at": "2026-07-01T06:28:06Z",
-    "fetched_at": "2026-07-02T00:02:24.655154Z",
+    "title": "Opening up ‘Zero-Knowledge Proof’ technology to promote privacy in age assurance",
+    "url": "https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
+    "content": "<p><a href=\"https://lobste.rs/s/uswzil/opening_up_zero_knowledge_proof\">Comments</a></p>",
+    "author": "blog.google via ndr",
+    "published_at": "2026-07-02T13:31:04Z",
+    "fetched_at": "2026-07-02T23:58:09.719549Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "privacy"
+      ],
+      "title_zh": "谷歌开源零知识证明技术，推动隐私年龄验证",
+      "detailed_summary_zh": "谷歌宣布开放其零知识证明（ZKP）技术，旨在实现隐私保护的年龄验证方案。该技术允许用户在证明年龄达标的同时不泄露具体生日或其他个人信息。 此举有望平衡日益严格的年龄验证法规与用户隐私保护需求，为在线年龄验证提供一种更安全、更具隐私性的替代方案，对社交媒体、成人内容网站等需年龄验证的平台影响深远。 谷歌开放的ZKP技术基于非交互式零知识证明，无需反复交互即可完成验证，降低延迟。该方案可集成至现有年龄保证系统，支持移动端API调用，但需依赖可信设置环节。",
+      "background_zh": "零知识证明是一种密码学协议，允许一方（证明者）向另一方（验证者）证明某个断言为真，而不泄露任何额外信息。年龄保证技术通常通过身份证扫描或面部年龄估计等方式实现，但这些方法常涉及隐私泄露风险。谷歌此次开源旨在推广更安全的认证方式。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Zero-knowledge_proof",
+          "title": "Zero-knowledge proof"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Age_assurance",
+          "title": "Age assurance"
+        }
+      ],
+      "detailed_summary": "谷歌宣布开放其零知识证明（ZKP）技术，旨在实现隐私保护的年龄验证方案。该技术允许用户在证明年龄达标的同时不泄露具体生日或其他个人信息。 此举有望平衡日益严格的年龄验证法规与用户隐私保护需求，为在线年龄验证提供一种更安全、更具隐私性的替代方案，对社交媒体、成人内容网站等需年龄验证的平台影响深远。 谷歌开放的ZKP技术基于非交互式零知识证明，无需反复交互即可完成验证，降低延迟。该方案可集成至现有年龄保证系统，支持移动端API调用，但需依赖可信设置环节。",
+      "background": "零知识证明是一种密码学协议，允许一方（证明者）向另一方（验证者）证明某个断言为真，而不泄露任何额外信息。年龄保证技术通常通过身份证扫描或面部年龄估计等方式实现，但这些方法常涉及隐私泄露风险。谷歌此次开源旨在推广更安全的认证方式。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value content addressing practical privacy-preserving application of zero-knowledge proofs, backed by Google. The topic is timely for age verification regulations. Discussion quality could be insightful but is not provided in detail.",
+    "ai_summary": "Google opens up zero-knowledge proof technology to enable privacy-focused age verification.",
+    "ai_tags": [
+      "zero-knowledge proofs",
+      "privacy",
+      "age assurance",
+      "cryptography"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:84c8d098aeea5aae",
+    "source_type": "rss",
+    "title": "Hanakai, and Hanami 3.0 in Full Bloom",
+    "url": "https://www.bounga.org/ruby/2026/07/03/hanakai-and-hanami-3-0/",
+    "content": "<p><a href=\"https://lobste.rs/s/nhywor/hanakai_hanami_3_0_full_bloom\">Comments</a></p>",
+    "author": "bounga.org via soulcutter",
+    "published_at": "2026-07-02T22:22:06Z",
+    "fetched_at": "2026-07-02T23:58:09.719690Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
@@ -457,231 +445,250 @@
         "ruby",
         "release"
       ],
-      "title_zh": "Hanami 3.0 正式发布，Ruby 全栈框架重大更新",
-      "detailed_summary_zh": "Hanami 3.0 作为 Ruby Web 框架的重大版本发布，带来了新特性和改进。 Hanami 是 Ruby 社区重要的全栈框架之一，3.0 版本的发布将提升 Ruby 生态系统的竞争力，并为开发者提供更现代、更模块化的开发体验。 Hanami 由多个单一用途的库组成，包括路由、动作、视图等，3.0 版本可能进一步优化了这些组件的集成和性能。",
-      "background_zh": "Hanami 是一个 Ruby 全栈 Web 框架，强调结构清晰和模块化设计。它由 Hanami::Router、Hanami::Action、Hanami::View 等独立库组成，旨在帮助开发者构建可维护的应用程序。相比其他 Ruby 框架，Hanami 更注重解耦和测试性。",
+      "title_zh": "Hanami 3.0 与 Hanakai 项目宣布",
+      "detailed_summary_zh": "Hanami 3.0 正式发布，同时 Dry 和 Rom 项目合并为新的 Hanakai 项目，标志着 Ruby 生态系统的一次重大整合。 Hanami 3.0 作为全栈 Ruby 框架的重大版本更新，有望提升开发者生产力和应用性能；Hanakai 项目整合了三个成熟工具库，将进一步简化 Ruby 应用开发。 Hanami 框架以低内存消耗（比其他框架少 60%）和快速响应著称，Hanakai 项目旨在提供更一致、更易维护的开发体验。",
+      "background_zh": "Hanami 是一个全栈 Ruby Web 框架，强调简洁、可维护性和性能。Dry 和 Rom 是 Ruby 社区中分别用于应用架构和数据映射的流行库。三者的合并形成了 Hanakai 项目，统一了工具链。",
       "sources": [
-        {
-          "url": "https://hanakai.org/hanami",
-          "title": "Hanami · Hanakai"
-        },
         {
           "url": "https://github.com/hanami/hanami",
           "title": "GitHub - hanami/hanami: A flexible framework for maintainable ..."
+        },
+        {
+          "url": "https://hanakai.org/blog/2026/05/01/welcome-to-hanakai",
+          "title": "Welcome to Hanakai · Hanakai"
+        },
+        {
+          "url": "https://hanakai.org/hanami",
+          "title": "Hanami · Hanakai"
         }
       ],
-      "detailed_summary": "Hanami 3.0 作为 Ruby Web 框架的重大版本发布，带来了新特性和改进。 Hanami 是 Ruby 社区重要的全栈框架之一，3.0 版本的发布将提升 Ruby 生态系统的竞争力，并为开发者提供更现代、更模块化的开发体验。 Hanami 由多个单一用途的库组成，包括路由、动作、视图等，3.0 版本可能进一步优化了这些组件的集成和性能。",
-      "background": "Hanami 是一个 Ruby 全栈 Web 框架，强调结构清晰和模块化设计。它由 Hanami::Router、Hanami::Action、Hanami::View 等独立库组成，旨在帮助开发者构建可维护的应用程序。相比其他 Ruby 框架，Hanami 更注重解耦和测试性。",
+      "detailed_summary": "Hanami 3.0 正式发布，同时 Dry 和 Rom 项目合并为新的 Hanakai 项目，标志着 Ruby 生态系统的一次重大整合。 Hanami 3.0 作为全栈 Ruby 框架的重大版本更新，有望提升开发者生产力和应用性能；Hanakai 项目整合了三个成熟工具库，将进一步简化 Ruby 应用开发。 Hanami 框架以低内存消耗（比其他框架少 60%）和快速响应著称，Hanakai 项目旨在提供更一致、更易维护的开发体验。",
+      "background": "Hanami 是一个全栈 Ruby Web 框架，强调简洁、可维护性和性能。Dry 和 Rom 是 Ruby 社区中分别用于应用架构和数据映射的流行库。三者的合并形成了 Hanakai 项目，统一了工具链。",
       "community_discussion": ""
     },
     "ai_score": 8.0,
-    "ai_reason": "Major version release of a significant Ruby web framework; high relevance to the Ruby community, but lacks detailed content or discussion in the provided snippet.",
-    "ai_summary": "Announcement of Hanami 3.0, a major release of the Ruby web framework.",
+    "ai_reason": "Major version release of a significant Ruby web framework, Hanami 3.0, is an important event for the Ruby community. The linked comments indicate community discussion, but the full content is not provided, so it's not groundbreaking but high value.",
+    "ai_summary": "Announcement of Hanami 3.0 and related Hanakai project, marking a significant update in the Ruby ecosystem.",
     "ai_tags": [
-      "Hanami",
       "Ruby",
-      "web framework"
+      "Hanami",
+      "web framework",
+      "release"
     ]
   },
   {
-    "id": "rss:newsletter.pragmaticengineer.com_feed:37533e07a6d52675",
-    "source_type": "rss",
-    "title": "How Kent Beck shapes the software engineering industry",
-    "url": "https://newsletter.pragmaticengineer.com/p/how-kent-beck-shapes-the-software",
-    "content": "Kent Beck reflects on Agile, TDD, and why building trust&#8212;not just generating code&#8212;will define the future of software engineering in the AI era.",
-    "author": "Gergely Orosz",
-    "published_at": "2026-07-01T16:57:46Z",
-    "fetched_at": "2026-07-02T00:02:25.010544Z",
-    "metadata": {
-      "feed_name": "The Pragmatic Engineer",
-      "category": "",
-      "tags": [],
-      "title_zh": "肯特·贝克谈AI时代软件工程信任优先",
-      "detailed_summary_zh": "软件工程先驱肯特·贝克近期发表观点，强调在AI时代，建立信任比生成代码更为重要，并回顾了敏捷开发和测试驱动开发（TDD）的核心理念。 这一观点挑战了当前业界对AI自动生成代码的过度追捧，提醒开发者关注软件工程中人的因素和协作质量，可能会影响未来开发工具和团队文化的演进方向。 肯特·贝克是敏捷开发和TDD的创始人之一，他在访谈中提出，AI虽然能提升代码生产效率，但长期项目成功取决于开发者之间以及开发者与用户之间的信任关系。",
-      "background_zh": "肯特·贝克是软件工程领域的传奇人物，他创造了极限编程（XP）和测试驱动开发（TDD）等方法论，深刻影响了现代软件开发实践。在AI技术快速发展的背景下，许多开发者关注如何利用AI提高编码效率，而贝克则从工程社会学角度出发，强调信任与协作的核心价值。",
-      "detailed_summary": "软件工程先驱肯特·贝克近期发表观点，强调在AI时代，建立信任比生成代码更为重要，并回顾了敏捷开发和测试驱动开发（TDD）的核心理念。 这一观点挑战了当前业界对AI自动生成代码的过度追捧，提醒开发者关注软件工程中人的因素和协作质量，可能会影响未来开发工具和团队文化的演进方向。 肯特·贝克是敏捷开发和TDD的创始人之一，他在访谈中提出，AI虽然能提升代码生产效率，但长期项目成功取决于开发者之间以及开发者与用户之间的信任关系。",
-      "background": "肯特·贝克是软件工程领域的传奇人物，他创造了极限编程（XP）和测试驱动开发（TDD）等方法论，深刻影响了现代软件开发实践。在AI技术快速发展的背景下，许多开发者关注如何利用AI提高编码效率，而贝克则从工程社会学角度出发，强调信任与协作的核心价值。",
-      "community_discussion": ""
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High value due to insights from a renowned figure on the future of software engineering in the AI era, relevant to current industry discussions.",
-    "ai_summary": "Kent Beck discusses the importance of trust over code generation in the AI era.",
-    "ai_tags": [
-      "Kent Beck",
-      "software engineering",
-      "AI",
-      "Agile",
-      "TDD"
-    ]
-  },
-  {
-    "id": "hackernews:story:48753715",
+    "id": "hackernews:story:48759634",
     "source_type": "hackernews",
-    "title": "ZCode – Harness for GLM-5.2",
-    "url": "https://zcode.z.ai/en",
-    "content": "\n--- Top Comments ---\n\n[cube00]: It&#x27;s impressive all these companies are getting away with &quot;base usage allowance included&quot; [1] or &quot;standard limits&quot; [2], layering the higher plans as a multiplier of that &quot;base&quot; but never disclosing what it is. I guess the base is whatever the profit margin needs to be this month. [1]:  https:&#x2F;&#x2F;zcode.z.ai&#x2F;en#:~:text=Base%20usage%20allowance%20inc...  [2]:  https:&#x2F;&#x2F;support.google.com&#x2F;gemini&#x2F;answer&#x2F;16275805?hl=en#:~:t...\n\n[seizethecheese]: I&#x27;m somewhat surprised that this is not open source (from what I can tell). Compare to Mimo Code  https:&#x2F;&#x2F;github.com&#x2F;XiaomiMiMo&#x2F;MiMo-Code  (which is a CLI, while this is a desktop app).\n\n[m3h]: Z.ai documents integrations with nearly all the popular CLI-based agents:  https:&#x2F;&#x2F;docs.z.ai&#x2F;devpack&#x2F;tool&#x2F;others  If you&#x27;re already used to your TUI coding agent, you don&#x27;t need the desktop agent. Although it is nice that it is there for folks who prefer the Codex App&#x2F;Claude App UI approach.\n\n[ra]: [delayed]\n\n[KronisLV]: Looks quite pretty! Not sure if I want to try that instead of OpenCode, maybe. OpenCode also has a desktop app, I will admit that I like their TUI one better (and honestly more than Claude Code TUI) but whole the desktop version is kinda more basic, it&#x27;s nice enough:  https:&#x2F;&#x2F;opencode.ai&#x2F;download  That said, it&#x27;s interesting that they&#x27;re releasing a bunch of stuff: ZCode, OCR.z.ai, Image.z.ai, Audio.z.ai, AutoClaw and some other stuff that  https:&#x2F;&#x2F;chat...",
-    "author": "chvid",
-    "published_at": "2026-07-01T22:03:36Z",
-    "fetched_at": "2026-07-02T00:02:25.195713Z",
+    "title": "PeerTube is a free, decentralized and federated video platform",
+    "url": "https://github.com/Chocobozzz/PeerTube",
+    "content": "\n--- Top Comments ---\n\n[djaro]: As a professional YouTuber, the main issue I instantly see with this is the lack of monetization. I think people who don&#x27;t make videos for a living severely underestimate how expensive it is to produce high-quality videos people want to watch. This isn&#x27;t like writing a tweet or even posting a picture on Instagram. Even a decent 20-minute video can easily take 40 man-hours of high-skilled labor. I have a pretty small channel (~100K subscribers) with no employees and relatively low up...\n\n[CM30]: It&#x27;s a promising system, and I&#x27;d probably use it over a non-federated video hosting system if I wanted to run a video hosting site of some kind. Yet it&#x27;s currently hard to find a real usecase for it, since neither the content you want nor audience is there on PeerTube at the moment. If you&#x27;re interested in open source software or data privacy you might find something here or there, but topics like gaming, music, sports or movies are very much underserved on the platform at...\n\n[raphinou]: I am currently recording tutorial videos for an open source project. It&#x27;s produced fully with Foss software (on Linux, obs, kdenlive) and about an open source project, so I wanted to host it with peertube (though YouTube might be used later on for its network effect, it was easier to publish with peertube as yt required an video of me and my ID).\nIt&#x27;s going fine until now. I don&#x27;t host peertube myself though, I use an existing instance, and embed the videos in the website. It w...\n\n[pocksuppet]: PeerTube has some interesting technology with the P2P sharing between users who watch at the same time. But with these kind of projects I think there are unfortunately social factors that impact their success as well as technical factors. It&#x27;s one thing to put a &lt;video&gt; element on a HTML page (or implement video over webtorrent), it&#x27;s quite another to make people actually watch it instead of their TikTok feed.\n\n[Animats]: There are four functions here: - Discovery (as in search) - Monetization (as in ads) - Hosting (as in storage) - Playout (as in data distribution) PeerTube only performs the fourth, and maybe the third. It&#x27;s not a flooding distribution system like BitTorrent. It&#x27;s just a way for a large number of people to play the same video without overloading a modest hosting server. Playout load is distributed amongst the watchers browsers. I put videos in PeerTube, tech demos of various renderi...",
+    "author": "doener",
+    "published_at": "2026-07-02T11:17:45Z",
+    "fetched_at": "2026-07-02T23:58:09.836849Z",
     "metadata": {
-      "score": 133,
-      "descendants": 184,
+      "score": 486,
+      "descendants": 218,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48753715",
+      "discussion_url": "https://news.ycombinator.com/item?id=48759634",
       "comment_count": 5,
-      "title_zh": "Z.ai 发布 ZCode：GLM-5.2 官方桌面编码代理",
-      "detailed_summary_zh": "Z.ai 推出了 ZCode，一款专为 GLM-5.2 模型设计的桌面编码代理应用，旨在集成 AI 代理与现有开发工具链。 这标志着 Z.ai 在 AI 辅助编程领域的进一步布局，ZCode 提供了桌面级交互体验，可能改变开发者使用 AI 编码的方式，但定价透明度和与开源工具的对比引发了社区广泛讨论。 ZCode 并非模型本身，而是一个编码代理环境；它支持与众多 CLI 编码代理集成，并提供了类似 Codex App 或 Claude App 的桌面 UI。目前 ZCode 未开源，其“基础用量”定价细节不透明。",
-      "background_zh": "GLM-5.2 是 Z.ai 开发的开源大语言模型（MIT 许可），擅长将论文转化为可运行代码。ZCode 则是该模型的官方桌面适配工具，旨在简化编码流程。社区中已有如 MiMo-Code、OpenCode 等开源或替代工具存在。",
-      "community_discussion_zh": "社区对 ZCode 的定价不透明表示质疑，认为“基础用量”等概念模糊不清；同时，部分用户更倾向于使用现有的 CLI 或 TUI 编码代理，认为桌面版并非必需；也有用户注意到 ZCode 外观精致，但与开源替代品（如 OpenCode）相比吸引力有限。",
+      "title_zh": "PeerTube：去中心化视频平台，挑战YouTube",
+      "detailed_summary_zh": "PeerTube是一个基于ActivityPub协议的去中心化、联邦式视频平台，由法国非营利组织Framasoft支持开发，旨在替代YouTube等集中式视频托管服务。 PeerTube为内容创作者和观众提供了不依赖单一商业实体的视频分享方式，有助于保护隐私和避免算法操控，但其缺乏盈利模式限制了主流创作者迁移。 PeerTube利用WebTorrent实现P2P传输，当视频流行时可减轻服务器负载；作为Fediverse的一部分，它可以与Mastodon等其他联邦平台互操作。",
+      "background_zh": "PeerTube自2017年由开发者Chocobozzz发起，现由法国非营利组织Framasoft维护。它采用ActivityPub协议，使不同实例之间可以互相订阅和发现内容，形成联邦式网络。与YouTube不同，PeerTube没有中心化服务器或推荐算法，实例由社区自行托管和审核。",
+      "community_discussion_zh": "评论中，专业YouTuber指出缺乏盈利模式是最大障碍，因为制作高质量视频成本高昂；其他用户认为PeerTube目前内容和受众不足，仅适合开源或隐私相关话题；也有用户表示对于开源项目教程，使用现有实例嵌入视频已足够。总体来看，技术可行但社会采用面临挑战。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/GLM-5.2",
-          "title": "GLM-5.2"
+          "url": "https://en.wikipedia.org/wiki/PeerTube",
+          "title": "PeerTube - Wikipedia"
         },
         {
-          "url": "https://zcode.z.ai/en",
-          "title": "ZCode - Simple, Fast, Vibe‑Ready | Official Harness for GLM-5.2"
+          "url": "https://github.com/Chocobozzz/PeerTube",
+          "title": "GitHub - Chocobozzz/PeerTube: ActivityPub-federated video streaming platform using P2P directly in your web browser · GitHub"
         },
         {
-          "url": "https://zcode.z.ai/cn",
-          "title": "ZCode - 简单、迅捷、氛围十足 | GLM-5.2 官方适配开发工具"
+          "url": "https://joinpeertube.org/",
+          "title": "What is PeerTube ? | JoinPeerTube"
         }
       ],
-      "detailed_summary": "Z.ai 推出了 ZCode，一款专为 GLM-5.2 模型设计的桌面编码代理应用，旨在集成 AI 代理与现有开发工具链。 这标志着 Z.ai 在 AI 辅助编程领域的进一步布局，ZCode 提供了桌面级交互体验，可能改变开发者使用 AI 编码的方式，但定价透明度和与开源工具的对比引发了社区广泛讨论。 ZCode 并非模型本身，而是一个编码代理环境；它支持与众多 CLI 编码代理集成，并提供了类似 Codex App 或 Claude App 的桌面 UI。目前 ZCode 未开源，其“基础用量”定价细节不透明。",
-      "background": "GLM-5.2 是 Z.ai 开发的开源大语言模型（MIT 许可），擅长将论文转化为可运行代码。ZCode 则是该模型的官方桌面适配工具，旨在简化编码流程。社区中已有如 MiMo-Code、OpenCode 等开源或替代工具存在。",
-      "community_discussion": "社区对 ZCode 的定价不透明表示质疑，认为“基础用量”等概念模糊不清；同时，部分用户更倾向于使用现有的 CLI 或 TUI 编码代理，认为桌面版并非必需；也有用户注意到 ZCode 外观精致，但与开源替代品（如 OpenCode）相比吸引力有限。"
+      "detailed_summary": "PeerTube是一个基于ActivityPub协议的去中心化、联邦式视频平台，由法国非营利组织Framasoft支持开发，旨在替代YouTube等集中式视频托管服务。 PeerTube为内容创作者和观众提供了不依赖单一商业实体的视频分享方式，有助于保护隐私和避免算法操控，但其缺乏盈利模式限制了主流创作者迁移。 PeerTube利用WebTorrent实现P2P传输，当视频流行时可减轻服务器负载；作为Fediverse的一部分，它可以与Mastodon等其他联邦平台互操作。",
+      "background": "PeerTube自2017年由开发者Chocobozzz发起，现由法国非营利组织Framasoft维护。它采用ActivityPub协议，使不同实例之间可以互相订阅和发现内容，形成联邦式网络。与YouTube不同，PeerTube没有中心化服务器或推荐算法，实例由社区自行托管和审核。",
+      "community_discussion": "评论中，专业YouTuber指出缺乏盈利模式是最大障碍，因为制作高质量视频成本高昂；其他用户认为PeerTube目前内容和受众不足，仅适合开源或隐私相关话题；也有用户表示对于开源项目教程，使用现有实例嵌入视频已足够。总体来看，技术可行但社会采用面临挑战。"
     },
     "ai_score": 7.0,
-    "ai_reason": "High value: Announcing a new desktop coding agent from a notable AI lab, with substantial community discussion (184 comments) about pricing transparency and open-source alternatives, indicating strong interest.",
-    "ai_summary": "Z.ai releases ZCode, a desktop coding agent for GLM-5.2, sparking debate on opaque pricing and comparisons with open-source tools.",
+    "ai_reason": "High engagement with insightful comments discussing monetization, usability, and federation challenges. The content is valuable for understanding the current state of decentralized video platforms.",
+    "ai_summary": "PeerTube is a decentralized, federated video platform that offers a free alternative to YouTube but faces adoption and financial sustainability hurdles.",
     "ai_tags": [
-      "AI coding",
-      "GLM-5.2",
-      "ZCode",
-      "coding agent",
-      "desktop app"
+      "decentralization",
+      "federation",
+      "open source",
+      "video hosting",
+      "content creation"
     ]
   },
   {
-    "id": "hackernews:story:48752905",
-    "source_type": "hackernews",
-    "title": "Show HN: Searchable directory of 22k+ products from worker-owned co-ops",
-    "url": "https://www.workerowned.info/",
-    "content": "\n--- Top Comments ---\n\n[robot_jesus]: Neat project and I love the motivations behind it. A few friendly recommendations: • The images on the results pages are in desperate need of optimization. Plenty of 500KB+ thumbnails and even a couple 2MB+ thumbnails I saw in there. Could easily be optimized 90%+ with no loss of quality • The instant live search can be a little distracting, particularly paired with the heavy loading of the thumbnails • I know you don&#x27;t want to create your own full ecomm site, but even just a hover PDP w...\n\n[daheza]: Very nice and appreciate the effort you put into making this. Some Improvements that could help: \nthe location search could be an actual map with pins which would be easier to use\nsome kind of tags for the different appareal items would help clarify which one, currently i have to click and search each vendor for things im looking for. Specifically autistic friendly &#x2F; sensory clothing items.\n\n[LPisGood]: I wonder of there is a version of this but for jobs?\n\n[thousandflowers]: Really nice project! It will be intresing an automation that check online for word like “worker cooperative”, “worker-owned” to find new candidate that fit. Ofc the hard part is confirming if it&#x27;s genuinely worker-owned, so keeping that step human makes sense. But the discovery&#x2F;shortlisting could be largely automated crawl the web, score candidates by how many co-op signals they hit, and present the top ones for you to vet. Would be happy to help prototype something like this if you...\n\n[benonsocial]: Terrific idea. I agree with daheza. Location search would be an awesome feature. The site is blazing fast. Great work. Keep it up.",
-    "author": "IESAI_ski",
-    "published_at": "2026-07-01T20:47:41Z",
-    "fetched_at": "2026-07-02T00:02:25.195759Z",
-    "metadata": {
-      "score": 150,
-      "descendants": 26,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48752905",
-      "comment_count": 5,
-      "title_zh": "工人合作社产品目录上线，收录超2.2万种商品",
-      "detailed_summary_zh": "推出一个可搜索的在线目录，收集了来自全球工人合作社的22,000多种产品，旨在帮助消费者支持道德消费。 为消费者提供了便捷途径去发现和购买工人合作社的产品，推动工人所有制经济模式的发展，对关注社会企业和道德消费的群体具有重要价值。 该目录不直接销售商品，而是链接到各合作社的网站；社区反馈指出需要优化图片大小、改进即时搜索体验，并建议增加地图搜索和商品标签等功能。",
-      "background_zh": "工人合作社是由工人共同拥有并民主管理的企业，以工人和社区利益为核心目标。研究表明，这类企业能提供更好的工作条件和工资，有助于推动经济正义和社会变革。",
-      "community_discussion_zh": "社区普遍赞赏该项目的动机和实用性，同时提出了建设性改进意见，例如优化大尺寸图片以减少加载时间、改进即时搜索的干扰性，以及增加地图定位和服装品类标签。此外，部分用户希望未来能有类似的工作机会目录或自动发现工具。",
-      "sources": [
-        {
-          "url": "https://www.usworker.coop/what-is-a-worker-cooperative/",
-          "title": "What Is A Worker Cooperative? – U.S. Federation of Worker ..."
-        },
-        {
-          "url": "https://institute.coop/what-worker-cooperative",
-          "title": "What is a Worker Cooperative? - Institute"
-        }
-      ],
-      "detailed_summary": "推出一个可搜索的在线目录，收集了来自全球工人合作社的22,000多种产品，旨在帮助消费者支持道德消费。 为消费者提供了便捷途径去发现和购买工人合作社的产品，推动工人所有制经济模式的发展，对关注社会企业和道德消费的群体具有重要价值。 该目录不直接销售商品，而是链接到各合作社的网站；社区反馈指出需要优化图片大小、改进即时搜索体验，并建议增加地图搜索和商品标签等功能。",
-      "background": "工人合作社是由工人共同拥有并民主管理的企业，以工人和社区利益为核心目标。研究表明，这类企业能提供更好的工作条件和工资，有助于推动经济正义和社会变革。",
-      "community_discussion": "社区普遍赞赏该项目的动机和实用性，同时提出了建设性改进意见，例如优化大尺寸图片以减少加载时间、改进即时搜索的干扰性，以及增加地图定位和服装品类标签。此外，部分用户希望未来能有类似的工作机会目录或自动发现工具。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "Useful directory with social impact, community comments provide constructive feedback (image optimization, search improvements). Not groundbreaking but high value for those interested in cooperative economics.",
-    "ai_summary": "A searchable directory of over 22,000 products from worker-owned cooperatives, aiming to support ethical consumption.",
-    "ai_tags": [
-      "worker-cooperatives",
-      "directory",
-      "ecommerce",
-      "social-enterprise"
-    ]
-  },
-  {
-    "id": "hackernews:story:48746076",
-    "source_type": "hackernews",
-    "title": "Internal Combustion Engine (2021)",
-    "url": "https://ciechanow.ski/internal-combustion-engine/",
-    "content": "\n--- Top Comments ---\n\n[londons_explore]: Worth noting the design of the internal combustion engine hasn&#x27;t changed much in 50 years. The thing that has changed is the control systems. What used to be a primitive mechanical way of mixing fuel and air (the carburettor), is now an electronic fuel injection system, with the fuel air ratio very carefully matched to reduce pollution (fun fact:  modern cars release so little carbon monoxide, you won&#x27;t kill yourself by starting one in a garage (but don&#x27;t try it just incase you...\n\n[bob1029]: &gt; Presence of oil is critical here as it creates conditions for hydrodynamic lubrication. You can hear this effect in some vehicles at initial startup time for a few seconds. I know of certain Ford engines where it actually causes issues over time. The model years with auto start&#x2F;stop have the worst of the cam rattle disease.\n\n[rootusrootus]: I still remember the first time I tore down a pushrod V8.  I decided it had to be close to the pinnacle of elegant design.  Nothing wasted, everything had a purpose, and it all came together in a perfect mechanical symphony.  We have since made engines which are significantly more efficient and powerful, but all of that at the cost of elegance, slapping on overhead cams and machinery just to adjust the valve timing, etc.  Fantastic technology in it&#x27;s own right for certain, but feels tack...\n\n[fauria]: &quot; in real running engines the rotating crankshaft should float completely on a very thin surface of oil &quot; - I found this to be a great insight.\n\n[CraigJPerry]: The thing that&#x27;s missing here that really drastically changes the story is all the emissions control hardware that would exist on such an engine. This is a circa 1990s engine in the US market i think? Dual Overhead Cam didn&#x27;t really become popular in the US market until then i think. 70s-80s for single overhead cam to become established. The diagrams are beautiful and informative as always from this author.",
-    "author": "StefanBatory",
-    "published_at": "2026-07-01T13:04:16Z",
-    "fetched_at": "2026-07-02T00:02:25.195951Z",
-    "metadata": {
-      "score": 271,
-      "descendants": 66,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48746076",
-      "comment_count": 5,
-      "title_zh": "内燃机互动技术详解",
-      "detailed_summary_zh": "这篇文章是2021年发布的互动式技术深潜，通过精美图示和动画详细解释了内燃机从曲轴到气门的完整工作原理。 尽管内燃机的基本设计数十年来变化不大，但控制系统的进步极大地提高了效率和环保性，这篇文章帮助读者理解这一经典技术的内在机理。 文章重点介绍了流体动力润滑等关键概念，指出曲轴应在极薄油膜上浮动；社区讨论还补充了现代发动机通过电子燃油喷射和排放控制大幅降低污染物的细节。",
-      "background_zh": "内燃机是一种将燃料燃烧产生的热能转化为机械能的热机，通常用于汽车驱动。基本结构包括气缸、活塞、连杆、曲轴和气门机构。现代内燃机采用电子燃油喷射和三元催化器等排放控制技术，而早期则使用化油器和机械控制方式。",
-      "community_discussion_zh": "社区评论普遍赞赏文章的质量，认为图解精美、信息丰富；同时有用户指出内燃机设计虽未大变但控制系统进化显著，还有用户分享了福特发动机冷启动润滑的实际问题经验。",
-      "detailed_summary": "这篇文章是2021年发布的互动式技术深潜，通过精美图示和动画详细解释了内燃机从曲轴到气门的完整工作原理。 尽管内燃机的基本设计数十年来变化不大，但控制系统的进步极大地提高了效率和环保性，这篇文章帮助读者理解这一经典技术的内在机理。 文章重点介绍了流体动力润滑等关键概念，指出曲轴应在极薄油膜上浮动；社区讨论还补充了现代发动机通过电子燃油喷射和排放控制大幅降低污染物的细节。",
-      "background": "内燃机是一种将燃料燃烧产生的热能转化为机械能的热机，通常用于汽车驱动。基本结构包括气缸、活塞、连杆、曲轴和气门机构。现代内燃机采用电子燃油喷射和三元催化器等排放控制技术，而早期则使用化油器和机械控制方式。",
-      "community_discussion": "社区评论普遍赞赏文章的质量，认为图解精美、信息丰富；同时有用户指出内燃机设计虽未大变但控制系统进化显著，还有用户分享了福特发动机冷启动润滑的实际问题经验。"
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High-quality interactive technical deep-dive with substantive community comments discussing design, lubrication, and modern control systems. Not groundbreaking but highly informative and engaging.",
-    "ai_summary": "An interactive deep-dive into the mechanics of internal combustion engines.",
-    "ai_tags": [
-      "mechanical engineering",
-      "internal combustion engine",
-      "interactive article",
-      "technical explanation"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:b834d984f9bf308b",
+    "id": "rss:lobste.rs_rss:4d00ae2b61427877",
     "source_type": "rss",
-    "title": "Low-level Haskell: The cursed way to emulate inline assembly in Haskell/GHC",
-    "url": "https://minoki.github.io/posts/2026-06-30-haskell-inline-asm.html",
-    "content": "<p><a href=\"https://lobste.rs/s/ceo3qf/low_level_haskell_cursed_way_emulate\">Comments</a></p>",
-    "author": "minoki.github.io via abhin4v",
-    "published_at": "2026-07-01T10:33:38Z",
-    "fetched_at": "2026-07-02T00:02:24.655104Z",
+    "title": "The Physics of Memory (aka can Javascript ECS?)",
+    "url": "https://www.dmurph.com/posts/2026/06/ecs_vs_oop_benchmark/ecs_vs_oop_benchmark.html",
+    "content": "<p><a href=\"https://lobste.rs/s/q8vdre/physics_memory_aka_can_javascript_ecs\">Comments</a></p>",
+    "author": "dmurph.com by dmurph",
+    "published_at": "2026-07-02T04:23:14Z",
+    "fetched_at": "2026-07-02T23:58:09.719465Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "haskell"
+        "javascript",
+        "compsci",
+        "web",
+        "show",
+        "games",
+        "wasm"
       ],
-      "title_zh": "用GHC原语在Haskell中模拟内联汇编的“诅咒”方式",
-      "detailed_summary_zh": "一位开发者发表了一篇技术文章，展示了一种使用GHC的foreign import prim机制来模拟内联汇编的非传统方法，从而在Haskell中直接嵌入底层指令。 这项技巧为Haskell开发者提供了一种绕过高级抽象、直接操作底层硬件的方法，在性能关键或需要特定CPU指令的场景下具有潜在价值，但因其脆弱性和对GHC内部接口的依赖而被称为“诅咒”方式。 该方法依赖GHC的prim类型和操作，通过foreign import prim导入C级函数或汇编代码，并返回多个值，类似于内联汇编的效果。但ghc-prim包仅供GHC开发者使用，普通用户使用会面临无预警的破坏性变更风险。",
-      "background_zh": "Haskell通常不提供内联汇编功能，因为其高级抽象和跨平台兼容性设计。GHC primitives是GHC内部提供的底层类型和操作，通常不对外开放。foreign import prim是一种FFI扩展，允许导入用C或汇编编写的原始函数。本文探索了利用这些特性在Haskell中嵌入汇编代码的可能性。",
+      "title_zh": "JavaScript ECS与OOP内存访问对比分析",
+      "detailed_summary_zh": "文章通过基准测试，深入分析了JavaScript中Entity Component System（ECS）与面向对象编程（OOP）的内存访问模式差异，探讨了ECS在JavaScript中实现的可行性。 该分析挑战了JavaScript不适合高性能数据导向设计的传统观念，为游戏开发、大型应用等场景提供了新的性能优化思路，可能推动ECS模式在JavaScript生态中的采用。 文章可能详细比较了ECS下组件的连续内存布局与OOP中对象的分散内存分配，并考察了V8引擎等JavaScript运行时的内存管理特性对ECS效能的限制与机遇。",
+      "background_zh": "Entity Component System（ECS）是一种数据导向的设计模式，它将实体（Entity）视为仅包含ID的容器，组件（Component）为纯数据，系统（System）负责处理逻辑。与OOP将数据和逻辑封装在对象中不同，ECS通过将同类组件连续存储来提高缓存命中率，从而提升性能。在JavaScript中实现ECS面临其动态类型和垃圾回收机制难以控制内存布局的挑战。",
       "sources": [
         {
-          "url": "https://discourse.haskell.org/t/low-level-haskell-the-cursed-way-to-emulate-inline-assembly-in-haskell-ghc/14333",
-          "title": "Low-level Haskell: The cursed way to emulate inline assembly ..."
+          "url": "https://en.wikipedia.org/wiki/Entity_component_system",
+          "title": "Entity component system - Wikipedia"
         },
         {
-          "url": "https://hackage.haskell.org/package/ghc-prim",
-          "title": "ghc-prim: GHC primitives - Hackage"
-        },
-        {
-          "url": "https://hackage.haskell.org/package/inline-asm",
-          "title": "inline-asm: Inline some Assembly in ur Haskell! - Hackage GitHub - 0xd34df00d/inline-asm: Inline Assembly code in ur ... Inline assembly in Haskell - exchangetuts.com Almost inline ASM in haskell with foreign import prim GitHub - minoki/hs-inline-asm-test: Compare several ways to ..."
+          "url": "https://pancy.medium.com/entity-component-system-ecs-in-a-frame-and-javascript-f5b7cdba7248",
+          "title": "Entity - Component - System ( ECS ) in A-Frame and JavaScript | Medium"
         }
       ],
-      "detailed_summary": "一位开发者发表了一篇技术文章，展示了一种使用GHC的foreign import prim机制来模拟内联汇编的非传统方法，从而在Haskell中直接嵌入底层指令。 这项技巧为Haskell开发者提供了一种绕过高级抽象、直接操作底层硬件的方法，在性能关键或需要特定CPU指令的场景下具有潜在价值，但因其脆弱性和对GHC内部接口的依赖而被称为“诅咒”方式。 该方法依赖GHC的prim类型和操作，通过foreign import prim导入C级函数或汇编代码，并返回多个值，类似于内联汇编的效果。但ghc-prim包仅供GHC开发者使用，普通用户使用会面临无预警的破坏性变更风险。",
-      "background": "Haskell通常不提供内联汇编功能，因为其高级抽象和跨平台兼容性设计。GHC primitives是GHC内部提供的底层类型和操作，通常不对外开放。foreign import prim是一种FFI扩展，允许导入用C或汇编编写的原始函数。本文探索了利用这些特性在Haskell中嵌入汇编代码的可能性。",
+      "detailed_summary": "文章通过基准测试，深入分析了JavaScript中Entity Component System（ECS）与面向对象编程（OOP）的内存访问模式差异，探讨了ECS在JavaScript中实现的可行性。 该分析挑战了JavaScript不适合高性能数据导向设计的传统观念，为游戏开发、大型应用等场景提供了新的性能优化思路，可能推动ECS模式在JavaScript生态中的采用。 文章可能详细比较了ECS下组件的连续内存布局与OOP中对象的分散内存分配，并考察了V8引擎等JavaScript运行时的内存管理特性对ECS效能的限制与机遇。",
+      "background": "Entity Component System（ECS）是一种数据导向的设计模式，它将实体（Entity）视为仅包含ID的容器，组件（Component）为纯数据，系统（System）负责处理逻辑。与OOP将数据和逻辑封装在对象中不同，ECS通过将同类组件连续存储来提高缓存命中率，从而提升性能。在JavaScript中实现ECS面临其动态类型和垃圾回收机制难以控制内存布局的挑战。",
       "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "Interesting technical deep-dive into a niche low-level Haskell technique using GHC primitives; likely well-written and novel for Haskell enthusiasts, but not broadly impactful.",
-    "ai_summary": "Emulates inline assembly in Haskell using GHC primitives in an unconventional way.",
+    "ai_reason": "High value technical deep-dive into memory physics and ECS vs OOP in JavaScript, with community discussion via lobste.rs. Score based on title and URL indicating novelty and potential impact, though full content not available.",
+    "ai_summary": "Analysis of memory access patterns and feasibility of Entity Component System in JavaScript, comparing with OOP.",
     "ai_tags": [
-      "Haskell",
-      "GHC",
-      "inline assembly",
-      "low-level programming"
+      "ECS",
+      "JavaScript",
+      "memory",
+      "performance",
+      "programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:27e775a6aec49ba5",
+    "source_type": "rss",
+    "title": "Preventing token theft",
+    "url": "https://codon.org.uk/~mjg59/blog/p/preventing-token-theft/",
+    "content": "<p><a href=\"https://lobste.rs/s/agwtde/preventing_token_theft\">Comments</a></p>",
+    "author": "codon.org.uk via Foxboron",
+    "published_at": "2026-07-02T11:02:59Z",
+    "fetched_at": "2026-07-02T23:58:09.719527Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "防止认证令牌被盗的方法探讨",
+      "detailed_summary_zh": "一篇来自资深安全研究员的博客文章，详细讨论了防止认证令牌被盗的多种方法，并引用了社区讨论。 令牌盗窃是绕过MFA的常见攻击手段，该文提出的防御措施对于提升Web应用安全性具有重要参考价值。 文章可能涵盖了令牌绑定（Token Binding）等技术，该技术将令牌与TLS连接绑定，防止令牌被窃取后重放。",
+      "background_zh": "令牌（Token）是用户登录后系统颁发的凭证，用于后续请求的身份验证。令牌盗窃指攻击者窃取令牌并冒充用户，即使有MFA也可能被绕过。令牌绑定是一种通过加密方式将令牌与客户端-服务器TLS通道绑定的协议，使被盗令牌在其他连接中无效。",
+      "sources": [
+        {
+          "url": "https://www.obsidiansecurity.com/blog/token-based-attacks-how-attackers-bypass-mfa",
+          "title": "Token-Based Attacks: How Attackers Bypass MFA"
+        },
+        {
+          "url": "https://www.kaseya.com/blog/what-is-token-theft/",
+          "title": "What is token theft? - Kaseya"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Token_Binding",
+          "title": "Token Binding"
+        }
+      ],
+      "detailed_summary": "一篇来自资深安全研究员的博客文章，详细讨论了防止认证令牌被盗的多种方法，并引用了社区讨论。 令牌盗窃是绕过MFA的常见攻击手段，该文提出的防御措施对于提升Web应用安全性具有重要参考价值。 文章可能涵盖了令牌绑定（Token Binding）等技术，该技术将令牌与TLS连接绑定，防止令牌被窃取后重放。",
+      "background": "令牌（Token）是用户登录后系统颁发的凭证，用于后续请求的身份验证。令牌盗窃指攻击者窃取令牌并冒充用户，即使有MFA也可能被绕过。令牌绑定是一种通过加密方式将令牌与客户端-服务器TLS通道绑定的协议，使被盗令牌在其他连接中无效。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Topic is security-critical and relevant; author is respected. Discussion quality unknown from snippet, but likely substantive given Lobste.rs community.",
+    "ai_summary": "Discusses methods to prevent token theft in authentication systems.",
+    "ai_tags": [
+      "security",
+      "token",
+      "authentication",
+      "best practices"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:c2bdff3788af5d6c",
+    "source_type": "rss",
+    "title": "Newly discovered PamStealer isn't your typical macOS malware",
+    "url": "https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/",
+    "content": "<p><a href=\"https://lobste.rs/s/q4m3fa/newly_discovered_pamstealer_isn_t_your\">Comments</a></p>",
+    "author": "arstechnica.com via hoistbypetard",
+    "published_at": "2026-07-02T20:16:47Z",
+    "fetched_at": "2026-07-02T23:58:09.719672Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "mac"
+      ],
+      "title_zh": "新型PamStealer macOS恶意软件采用高级隐蔽技术",
+      "detailed_summary_zh": "研究人员发现了一种名为PamStealer的新型macOS恶意软件，它利用Pluggable Authentication Modules (PAM) 接口在窃取登录密码前进行本地验证，并采用自包含的JXA dropper和Rust编写的第二阶段载荷。 这一发现对macOS安全领域具有重要意义，因为PamStealer展示了更高级的隐蔽技术和攻击流程，可能被其他恶意软件作者效仿，从而增加Mac用户的感染风险。 PamStealer通过恶意脚本（.scpt）和脚本编辑器诱饵传播，其独特之处在于使用PAM验证密码的正确性后才进行窃取，从而避免触发警报；整个攻击链包括JXA dropper和Rust编写的载荷，体现了模块化和隐蔽性设计。",
+      "background_zh": "PAM是macOS中用于身份验证的底层框架，允许应用程序验证用户密码。近年来，macOS恶意软件数量增长，攻击者不断开发新技术绕过安全机制。PamStealer的出现标志着macOS信息窃取恶意软件的发展进入了新阶段。",
+      "sources": [
+        {
+          "url": "https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/",
+          "title": "Newly discovered PamStealer isn’t your typical macOS malware"
+        },
+        {
+          "url": "https://www.idropnews.com/news/pamstealer-macos-malware-password-verification/265878/",
+          "title": "New PamStealer Mac Malware Pre-verifies Stolen Passwords"
+        }
+      ],
+      "detailed_summary": "研究人员发现了一种名为PamStealer的新型macOS恶意软件，它利用Pluggable Authentication Modules (PAM) 接口在窃取登录密码前进行本地验证，并采用自包含的JXA dropper和Rust编写的第二阶段载荷。 这一发现对macOS安全领域具有重要意义，因为PamStealer展示了更高级的隐蔽技术和攻击流程，可能被其他恶意软件作者效仿，从而增加Mac用户的感染风险。 PamStealer通过恶意脚本（.scpt）和脚本编辑器诱饵传播，其独特之处在于使用PAM验证密码的正确性后才进行窃取，从而避免触发警报；整个攻击链包括JXA dropper和Rust编写的载荷，体现了模块化和隐蔽性设计。",
+      "background": "PAM是macOS中用于身份验证的底层框架，允许应用程序验证用户密码。近年来，macOS恶意软件数量增长，攻击者不断开发新技术绕过安全机制。PamStealer的出现标志着macOS信息窃取恶意软件的发展进入了新阶段。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "New macOS malware with clever stealth techniques is important for security professionals and macOS users, but not a groundbreaking paradigm shift. Article from reputable source. Discussion quality unknown without viewing comments.",
+    "ai_summary": "Ars Technica reports on a newly discovered macOS malware called PamStealer that uses sophisticated tradecraft to remain stealthy.",
+    "ai_tags": [
+      "macOS",
+      "malware",
+      "cybersecurity",
+      "stealth"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:40be415e5f72524c",
+    "source_type": "rss",
+    "title": "Incoming US science academy chief vows to ‘double down’ on research",
+    "url": "https://www.nature.com/articles/d41586-026-02088-1",
+    "content": "<p>Nature, Published online: 02 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02088-1\">doi:10.1038/d41586-026-02088-1</a></p>New leader of the National Academy of Sciences Neil Shubin warns: ‘a society that loses science loses the future’.",
+    "author": "Jenna Ahart",
+    "published_at": "2026-07-02T00:00:00Z",
+    "fetched_at": "2026-07-02T23:58:10.581541Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "美国国家科学院新院长承诺加倍投入研究",
+      "detailed_summary_zh": "美国国家科学院新任院长尼尔·舒宾(Neil Shubin)于2026年7月2日通过《自然》杂志发表声明，强调将继续大力支持科学研究，并警告忽视科学将导致社会失去未来。 这一表态体现了美国国家科学院对研究投入的坚定承诺，对全球科技政策和研究方向可能产生导向性影响，尤其在当前国际科技竞争加剧的背景下，其立场有助于稳定科研人员和机构的预期。 舒宾在声明中指出“一个丢失科学的社会将丢失未来”，但未公布具体的政策变革或新倡议。该消息发布于2026年7月2日，来源为《自然》杂志。",
+      "background_zh": "美国国家科学院是美国科学界最高荣誉机构之一，其主席的发言通常代表科学界对政策的主流看法。舒宾是一位古生物学家，在学界享有声誉，他的上任可能影响未来美国科研经费分配和科学教育方向。",
+      "detailed_summary": "美国国家科学院新任院长尼尔·舒宾(Neil Shubin)于2026年7月2日通过《自然》杂志发表声明，强调将继续大力支持科学研究，并警告忽视科学将导致社会失去未来。 这一表态体现了美国国家科学院对研究投入的坚定承诺，对全球科技政策和研究方向可能产生导向性影响，尤其在当前国际科技竞争加剧的背景下，其立场有助于稳定科研人员和机构的预期。 舒宾在声明中指出“一个丢失科学的社会将丢失未来”，但未公布具体的政策变革或新倡议。该消息发布于2026年7月2日，来源为《自然》杂志。",
+      "background": "美国国家科学院是美国科学界最高荣誉机构之一，其主席的发言通常代表科学界对政策的主流看法。舒宾是一位古生物学家，在学界享有声誉，他的上任可能影响未来美国科研经费分配和科学教育方向。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value announcement for the scientific community regarding leadership and policy direction at the National Academy of Sciences, but not a groundbreaking technical breakthrough. The statement underscores the importance of research, yet no detailed policy changes or new initiatives are disclosed.",
+    "ai_summary": "Newly appointed National Academy of Sciences president Neil Shubin pledges to prioritize research investment and warns against neglecting science.",
+    "ai_tags": [
+      "science policy",
+      "National Academy of Sciences",
+      "research funding",
+      "leadership"
     ]
   }
 ]
