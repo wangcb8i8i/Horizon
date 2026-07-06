@@ -1,0 +1,486 @@
+[
+  {
+    "id": "hackernews:story:48794446",
+    "source_type": "hackernews",
+    "title": "Organic Maps",
+    "url": "https://organicmaps.app/",
+    "content": "\n--- Top Comments ---\n\n[eisa01]: Organic Maps was my go to app for a navigation app where you can fix errors yourself immediately! So much better than having to work for free on the proprietary apps, and hope they accept your edits There’s a fork from one year ago, CoMaps, that is gaining different features E.g., I am adding CarPlay Dashboard support that you can test by joining the TestFlight We are in great need of both more testers and some proper iOS devs (I am not). We’re racing to get scene lifecycle support by Septemb...\n\n[goblin89]: Organic Maps finally made Hong Kong a region this year. Previously they required you to download the entire “China South” region, which was an extremely weird and wasteful choice. Next it should standardize region naming. For example, the new region is called “China Hong Kong” (every online ordering form out there does simply “Hong Kong”). Simultaneously, Taiwan is just  “Taiwan”, so it’s clearly not about following a party line. Simultaneously, places like Falklands (not without its own disp...\n\n[Yacoby]: There is also CoMaps ( https:&#x2F;&#x2F;www.comaps.app&#x2F; ) which is a fork of Organic Maps, after concern over the governance of Organic Maps  https:&#x2F;&#x2F;itsfoss.com&#x2F;news&#x2F;organic-maps-fork-comaps&#x2F;\n\n[lone-cloud]: I would recommend people use comaps instead which is the actual FOSS fork. OM has a long history of malicious behaviour like quietly adding ads, turning a part of its previously open sourced code proprietary and misappropriating donations. OM has lost most of its community a year ago to comaps and are now rushing vibe coded features to compensate.\n\n[lexlambda]: Organic mentions Open Source, but I just saw that FDroid mentions the following: &quot;This app contains non open source components - compiled binary data files (including but not limited to .mwm map files) under a non FLOSS license&quot; Anyone has context on the following not hidden over Git-* issues (I was left thoroughly confused trying to understand it)?",
+    "author": "tosh",
+    "published_at": "2026-07-05T14:14:30Z",
+    "fetched_at": "2026-07-06T00:00:17.946016Z",
+    "metadata": {
+      "score": 768,
+      "descendants": 217,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48794446",
+      "comment_count": 5,
+      "title_zh": "Organic Maps 治理争议催生 CoMaps 分支",
+      "detailed_summary_zh": "开源离线导航应用 Organic Maps 因治理问题引发社区强烈讨论，并催生了名为 CoMaps 的社区分支，该分支已于一年前启动并正积极开发新功能。 此事凸显了开源项目治理透明度和社区信任的重要性，直接影响用户对离线导航工具的选择，并可能重塑基于 OpenStreetMap 的导航应用生态。 CoMaps 强调完全开源、非营利和社区驱动，而 Organic Maps 被指曾悄悄加入广告、将部分代码转为专有以及挪用捐款，导致大量贡献者流失。",
+      "background_zh": "Organic Maps 是一款免费的离线导航应用，基于 OpenStreetMap 数据，支持步行、骑行和驾车导航，以无广告、无追踪为特色。CoMaps 是其社区分叉，旨在恢复完全自由开源的原则。",
+      "community_discussion_zh": "社区对 Organic Maps 的治理和闭源行为表示强烈不满，多名用户明确推荐使用 CoMaps，但也有人对 Organic Maps 的“非完全开源”组件（如 .mwm 地图文件）表示困惑。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Organic_Maps",
+          "title": "Organic Maps - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/CoMaps",
+          "title": "CoMaps - Wikipedia"
+        },
+        {
+          "url": "https://github.com/comaps/comaps",
+          "title": "GitHub - comaps / comaps : A mirror of https..."
+        }
+      ],
+      "detailed_summary": "开源离线导航应用 Organic Maps 因治理问题引发社区强烈讨论，并催生了名为 CoMaps 的社区分支，该分支已于一年前启动并正积极开发新功能。 此事凸显了开源项目治理透明度和社区信任的重要性，直接影响用户对离线导航工具的选择，并可能重塑基于 OpenStreetMap 的导航应用生态。 CoMaps 强调完全开源、非营利和社区驱动，而 Organic Maps 被指曾悄悄加入广告、将部分代码转为专有以及挪用捐款，导致大量贡献者流失。",
+      "background": "Organic Maps 是一款免费的离线导航应用，基于 OpenStreetMap 数据，支持步行、骑行和驾车导航，以无广告、无追踪为特色。CoMaps 是其社区分叉，旨在恢复完全自由开源的原则。",
+      "community_discussion": "社区对 Organic Maps 的治理和闭源行为表示强烈不满，多名用户明确推荐使用 CoMaps，但也有人对 Organic Maps 的“非完全开源”组件（如 .mwm 地图文件）表示困惑。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement and substantive discussion about a popular open-source navigation app, including concerns about governance and a fork, indicate significant community interest and debate, which boosts importance. Not a paradigm shift but highly relevant to open-source software and navigation users.",
+    "ai_summary": "Organic Maps is an open-source navigation app that has sparked community discussion about governance issues and a fork called CoMaps.",
+    "ai_tags": [
+      "open-source",
+      "maps",
+      "navigation",
+      "fork",
+      "software"
+    ]
+  },
+  {
+    "id": "hackernews:story:48794750",
+    "source_type": "hackernews",
+    "title": "It's not about physical vs. digital games, it's about ownership",
+    "url": "https://popcar.bearblog.dev/its-about-ownership/",
+    "content": "\n--- Top Comments ---\n\n[jbombadil]: I am generally not in favor of adding regulation, but this is a place where I would support it. Anything that you  BUY  needs to be your property. This means you must have the ability to: 1. Transfer ownership of it (either temporarily as a loan or permanently as a sale). Digital-only doesn&#x27;t preclude this: the store can have a &quot;transfer&quot; functionality. 2. (Within reason) use it at your discretion at any point after the sale. This means that a company cannot &quot;revoke&quot; ...\n\n[hx8]: Absolutely this. Fifteen years ago World of Warcraft was at its peak.  You had 12 million people paying a monthly fee, plus buying the occasional expansion pack.  No other gaming company had seen reoccurring revenue numbers like that before and it changed the industry.  One aspect of this was that if you stopped paying you lost access to the game. The industry has been looking for the next way to level up this subscription model on gaming.  Battle Passes, Xbox Live, Game Pass, Playstation Plu...\n\n[NorwegianDude]: I&#x27;ve been running a small game dev studio for ~20 years, and the one change I think must be made, is to ban the usage of &quot;buy&quot; when it comes to games. Games are licensed, not bought, and that should be crystal clear to those who are paying. Most of the games people play runs using proprietary software and&#x2F;or licenses, and often on very specific hardware, with game features that makes sense for the amount of players the game has. Requiring that people should be able to play...\n\n[beloch]: &quot;But most people use Steam anyway, I hear you say. That&#x27;s true, but you can still own your games on Steam. Very easily, in fact! Steam doesn&#x27;t apply a hard DRM for games on their platform, you can bypass it and play your games offline without the launcher if you know what you&#x27;re doing.&quot; -------------- When it comes to PC games, the real peace of mind comes from cracks and piracy. Sure, a single player game that requires an online service to start up could become unpla...\n\n[password4321]: Ownership as in resale-able. Eventually someone important enough will force digital resales to become reality, changing everything to require KYC.",
+    "author": "popcar2",
+    "published_at": "2026-07-05T14:56:15Z",
+    "fetched_at": "2026-07-06T00:00:17.946116Z",
+    "metadata": {
+      "score": 283,
+      "descendants": 216,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48794750",
+      "comment_count": 5,
+      "title_zh": "数字游戏所有权之争：购买还是许可？",
+      "detailed_summary_zh": "一篇文章指出，数字游戏的核心问题在于玩家仅获得使用许可而非所有权，而非物理与数字格式之争。社区评论呼吁通过监管明确“购买”与“许可”的区别，并确保玩家拥有转让和永久使用权。 这一讨论触及数字消费时代消费者权益的核心，影响数百万游戏玩家及整个游戏产业的商业模式。若推动监管变化，可能重塑数字市场规则，推动平台提供更透明的授权条款和所有权保障。 文章指出，即使像Steam这样的平台，玩家仍可通过绕过DRM等方式实际“拥有”游戏，但多数数字游戏依赖DRM和订阅制，公司可以随时撤销访问权限。社区用户建议强制要求使用“许可”而非“购买”表述，以消除误导。",
+      "background_zh": "数字版权管理（DRM）是用于控制数字内容访问的技术，常见于游戏和流媒体。购买数字游戏时，用户实际获得的是有限使用许可，而非所有权，这意味着平台可以因各种原因（如服务关闭）撤销访问。这与物理游戏不同，后者允许用户转售、出借或永久拥有。",
+      "community_discussion_zh": "社区普遍支持加强监管，要求明确区分“购买”和“许可”。用户jbombadil强调转让和永久使用权应成为基本权利；NorwegianDude作为开发者，建议禁止使用“购买”一词。部分用户提到破解和盗版在现实中提供了对数字游戏的“真正”所有权，但并非长久之计。",
+      "sources": [
+        {
+          "url": "https://www.zleague.gg/theportal/game-ownership-vs-licensing/",
+          "title": "What is a Gaming License ? A Gamer's Guide"
+        },
+        {
+          "url": "https://www.nintendolife.com/forums/nintendo-switch/why_digital_games_are_not_considered_property",
+          "title": "Why are digital games not considered ''property''? - Nintend..."
+        },
+        {
+          "url": "https://www.gameslearningsociety.org/wiki/can-you-refund-a-digital-game/",
+          "title": "Can you refund a digital game ? - Games Learning Society"
+        }
+      ],
+      "detailed_summary": "一篇文章指出，数字游戏的核心问题在于玩家仅获得使用许可而非所有权，而非物理与数字格式之争。社区评论呼吁通过监管明确“购买”与“许可”的区别，并确保玩家拥有转让和永久使用权。 这一讨论触及数字消费时代消费者权益的核心，影响数百万游戏玩家及整个游戏产业的商业模式。若推动监管变化，可能重塑数字市场规则，推动平台提供更透明的授权条款和所有权保障。 文章指出，即使像Steam这样的平台，玩家仍可通过绕过DRM等方式实际“拥有”游戏，但多数数字游戏依赖DRM和订阅制，公司可以随时撤销访问权限。社区用户建议强制要求使用“许可”而非“购买”表述，以消除误导。",
+      "background": "数字版权管理（DRM）是用于控制数字内容访问的技术，常见于游戏和流媒体。购买数字游戏时，用户实际获得的是有限使用许可，而非所有权，这意味着平台可以因各种原因（如服务关闭）撤销访问。这与物理游戏不同，后者允许用户转售、出借或永久拥有。",
+      "community_discussion": "社区普遍支持加强监管，要求明确区分“购买”和“许可”。用户jbombadil强调转让和永久使用权应成为基本权利；NorwegianDude作为开发者，建议禁止使用“购买”一词。部分用户提到破解和盗版在现实中提供了对数字游戏的“真正”所有权，但并非长久之计。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value discussion on digital ownership with strong community engagement (283 upvotes, 216 comments). Comments thoughtfully argue for regulation and clearer licensing terms, making it a relevant and impactful topic for software engineering and consumer rights.",
+    "ai_summary": "The article argues that the core issue with digital games is lack of ownership, not the physical vs. digital format.",
+    "ai_tags": [
+      "digital rights",
+      "ownership",
+      "gaming",
+      "regulation",
+      "licensing"
+    ]
+  },
+  {
+    "id": "hackernews:story:48793454",
+    "source_type": "hackernews",
+    "title": "Introduction to Compilers and Language Design (2021)",
+    "url": "https://dthain.github.io/books/compiler/",
+    "content": "\n--- Top Comments ---\n\n[shuyang]: Took Dr. Thain&#x27;s compilers class in college! It was the best. He&#x27;s an excellent instructor, and the course project made me build a working C-style compiler step by step. I think the sample project here is pretty much the project we did; highly recommend following through the entire thing!\n\n[userbinator]: I don&#x27;t know if any courses have referenced it yet, but I think C4 ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=8558822 ) and C4x86 ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=8746054 ) would make for a great semester&#x27;s worth of study; it&#x27;s a tiny,  self-compiling  C-subset compiler that would probably make a good base for further exercises in extending it.\n\n[dang]: Related:  Introduction to Compilers and Language Design (2021)  -  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=31388741  - May 2022 (68 comments)  Introduction to Compilers and Language Design  -  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=19728749  - April 2019 (1 comment)\n\n[attila-lendvai]: it wanders within a tight circle around C and its idiosyncrasies.\n\n[richard_chase]: According to the introduction, the dragon book is at an advanced graduate level?",
+    "author": "AlexeyBrin",
+    "published_at": "2026-07-05T11:54:16Z",
+    "fetched_at": "2026-07-06T00:00:17.946136Z",
+    "metadata": {
+      "score": 264,
+      "descendants": 44,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48793454",
+      "comment_count": 5,
+      "title_zh": "免费在线编译器与语言设计教材",
+      "detailed_summary_zh": "《Introduction to Compilers and Language Design》是一本免费在线教材，提供编译器与语言设计的全面入门知识。该书于2021年发布，在社区中获得较高评分和积极反馈。 该教材以实践为导向，帮助学生逐步构建C风格编译器，是编程语言教育领域的高质量资源。它降低了编译器学习的门槛，使更多学生和自学者能够掌握这一核心领域。 该书由Douglas Thain撰写，完整内容可在线免费获取。社区评论中提到课程项目让学生一步步构建可工作的C风格编译器，具有很高的实践价值。",
+      "background_zh": "编译器是计算机科学的核心领域，它将高级编程语言转换为机器可执行代码。传统经典教材如“龙书”内容偏深，而《Introduction to Compilers and Language Design》定位于入门级，更适合本科生和自学者。",
+      "community_discussion_zh": "社区评论中，有学生称赞Thain教授的课程是“最好的”，并推荐跟随全书内容实践。也有评论指出该书围绕C语言的特性展开，而另一人提及C4小型自编译编译器可作为补充学习材料。",
+      "detailed_summary": "《Introduction to Compilers and Language Design》是一本免费在线教材，提供编译器与语言设计的全面入门知识。该书于2021年发布，在社区中获得较高评分和积极反馈。 该教材以实践为导向，帮助学生逐步构建C风格编译器，是编程语言教育领域的高质量资源。它降低了编译器学习的门槛，使更多学生和自学者能够掌握这一核心领域。 该书由Douglas Thain撰写，完整内容可在线免费获取。社区评论中提到课程项目让学生一步步构建可工作的C风格编译器，具有很高的实践价值。",
+      "background": "编译器是计算机科学的核心领域，它将高级编程语言转换为机器可执行代码。传统经典教材如“龙书”内容偏深，而《Introduction to Compilers and Language Design》定位于入门级，更适合本科生和自学者。",
+      "community_discussion": "社区评论中，有学生称赞Thain教授的课程是“最好的”，并推荐跟随全书内容实践。也有评论指出该书围绕C语言的特性展开，而另一人提及C4小型自编译编译器可作为补充学习材料。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-quality introductory compiler book with strong community validation (264 points, 44 comments). Positive feedback from former students and references to related work indicate it is a valuable educational resource.",
+    "ai_summary": "A free online book providing a comprehensive introduction to compilers and language design.",
+    "ai_tags": [
+      "compilers",
+      "language design",
+      "education",
+      "programming languages"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:bdb092aff551ec07",
+    "source_type": "rss",
+    "title": "PEP 814: Add frozendict built-in type",
+    "url": "https://vstinner.github.io/pep-814-add-frozendict-builtin-type.html",
+    "content": "<p><a href=\"https://lobste.rs/s/nzifa8/pep_814_add_frozendict_built_type\">Comments</a></p>",
+    "author": "vstinner.github.io via kngl",
+    "published_at": "2026-07-05T06:52:10Z",
+    "fetched_at": "2026-07-06T00:00:18.349037Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "python",
+        "c",
+        "api"
+      ],
+      "title_zh": "PEP 814 提议为 Python 添加内置 frozendict 类型",
+      "detailed_summary_zh": "PEP 814 正式提出在 Python 中添加一个不可变的内置字典类型 frozendict，该类型一旦创建便不可修改。 添加 frozendict 将增强 Python 数据结构的表达能力，提供一种安全、可哈希的字典变体，可用于字典键或集合元素，同时可能优化性能。 该 PEP 由 Victor Stinner 撰写，早期动机曾包括实现沙箱但已移除；Python 已有 types.MappingProxyType 提供只读视图，但 frozendict 是真正的不可变对象。",
+      "background_zh": "Python 已有 frozenset 作为不可变集合，但缺少不可变字典。社区曾多次讨论，并存在第三方库 frozendict（PyPI 上可用）。PEP 814 旨在将该类型标准化为内置类型。",
+      "sources": [
+        {
+          "url": "https://peps.python.org/pep-0814/",
+          "title": "PEP 814 – Add frozendict built-in type | peps. python .org"
+        },
+        {
+          "url": "https://pypi.org/project/frozendict/",
+          "title": "frozendict · PyPI"
+        }
+      ],
+      "detailed_summary": "PEP 814 正式提出在 Python 中添加一个不可变的内置字典类型 frozendict，该类型一旦创建便不可修改。 添加 frozendict 将增强 Python 数据结构的表达能力，提供一种安全、可哈希的字典变体，可用于字典键或集合元素，同时可能优化性能。 该 PEP 由 Victor Stinner 撰写，早期动机曾包括实现沙箱但已移除；Python 已有 types.MappingProxyType 提供只读视图，但 frozendict 是真正的不可变对象。",
+      "background": "Python 已有 frozenset 作为不可变集合，但缺少不可变字典。社区曾多次讨论，并存在第三方库 frozendict（PyPI 上可用）。PEP 814 旨在将该类型标准化为内置类型。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "PEP 814 proposing a new built-in frozendict type is a significant potential addition to Python, a widely-used language. It has sparked community discussion (linked comments), indicating high interest and relevance.",
+    "ai_summary": "PEP 814 proposes adding an immutable frozendict built-in type to Python.",
+    "ai_tags": [
+      "Python",
+      "PEP",
+      "frozen dictionary",
+      "data structures",
+      "language design"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:aec27f3abe3843fa",
+    "source_type": "rss",
+    "title": "Bench Press: Leaking Text Nodes with CSS",
+    "url": "https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/",
+    "content": "<p><a href=\"https://lobste.rs/s/qyugm7/bench_press_leaking_text_nodes_with_css\">Comments</a></p>",
+    "author": "blog.pspaul.de via goldstein",
+    "published_at": "2026-07-05T18:40:08Z",
+    "fetched_at": "2026-07-06T00:00:18.349053Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "css"
+      ],
+      "title_zh": "Bench Press：利用CSS泄露文本节点",
+      "detailed_summary_zh": "研究人员发布了一篇技术文章，展示了如何利用CSS样式表从网页中逐字符泄露隐藏的文本节点。 这项研究揭示了CSS作为数据泄露向量的新风险，可能被用于绕过内容安全策略，窃取敏感信息，对Web安全防御构成挑战。 该技术通过CSS的@font-face或background-image等属性，根据文本字符动态加载外部资源，从而暴露出页面中的不可见文本内容。",
+      "background_zh": "CSS数据泄露是一种利用层叠样式表特性提取网页数据的技术，通常通过控制渲染行为来触发外部请求。文本节点是DOM中存储纯文本内容的对象，通常被认为难以通过CSS直接访问。",
+      "sources": [
+        {
+          "url": "https://dev.to/matemiller/css-data-exfiltration-1p3l",
+          "title": "CSS Data Exfiltration - DEV Community"
+        },
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode",
+          "title": "Document: createTextNode() method - Web APIs | MDN"
+        }
+      ],
+      "detailed_summary": "研究人员发布了一篇技术文章，展示了如何利用CSS样式表从网页中逐字符泄露隐藏的文本节点。 这项研究揭示了CSS作为数据泄露向量的新风险，可能被用于绕过内容安全策略，窃取敏感信息，对Web安全防御构成挑战。 该技术通过CSS的@font-face或background-image等属性，根据文本字符动态加载外部资源，从而暴露出页面中的不可见文本内容。",
+      "background": "CSS数据泄露是一种利用层叠样式表特性提取网页数据的技术，通常通过控制渲染行为来触发外部请求。文本节点是DOM中存储纯文本内容的对象，通常被认为难以通过CSS直接访问。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important security research demonstrating a novel CSS-based data exfiltration technique, with substantive community discussion on lobste.rs indicating validation.",
+    "ai_summary": "A technical post exploring how CSS can be exploited to leak text nodes from web pages.",
+    "ai_tags": [
+      "CSS",
+      "security",
+      "data exfiltration",
+      "web security",
+      "privacy"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:904c9f1e4a432227",
+    "source_type": "rss",
+    "title": "Version-controlled databases using Prolly trees",
+    "url": "https://lwn.net/Articles/1068864/",
+    "content": "<p><a href=\"https://lobste.rs/s/st8bqf/version_controlled_databases_using\">Comments</a></p>",
+    "author": "lwn.net via vbernat",
+    "published_at": "2026-07-05T19:28:52Z",
+    "fetched_at": "2026-07-06T00:00:18.349076Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "vcs"
+      ],
+      "title_zh": "使用Prolly树的版本控制数据库",
+      "detailed_summary_zh": "LWN文章深入探讨了使用Prolly树（概率B树）实现数据库版本控制的方法。 该数据结构提供了高效的分支与合并能力，可能改变数据库版本管理的方式，尤其适用于需要类似Git版本控制功能的数据库系统。 Prolly树是一种内容定义的B树变体，节点边界由数据本身决定，每个节点通过内容寻址，从而形成类似Merkle树的结构，支持高效的差异比较和合并。",
+      "background_zh": "传统数据库通常不支持版本控制，而Prolly树结合了B树的性能优势和Merkle树的不可变性，适用于需要版本控制的数据库存储引擎。Dolt等系统已采用此结构实现数据库的版本管理。",
+      "sources": [
+        {
+          "url": "https://www.dolthub.com/docs/architecture/storage-engine/prolly-tree/",
+          "title": "Prolly Tree | Dolt Docs"
+        },
+        {
+          "url": "https://www.dolthub.com/blog/2024-03-03-prolly-trees/",
+          "title": "Prolly Trees | DoltHub Blog"
+        }
+      ],
+      "detailed_summary": "LWN文章深入探讨了使用Prolly树（概率B树）实现数据库版本控制的方法。 该数据结构提供了高效的分支与合并能力，可能改变数据库版本管理的方式，尤其适用于需要类似Git版本控制功能的数据库系统。 Prolly树是一种内容定义的B树变体，节点边界由数据本身决定，每个节点通过内容寻址，从而形成类似Merkle树的结构，支持高效的差异比较和合并。",
+      "background": "传统数据库通常不支持版本控制，而Prolly树结合了B树的性能优势和Merkle树的不可变性，适用于需要版本控制的数据库存储引擎。Dolt等系统已采用此结构实现数据库的版本管理。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive from a reputable source (LWN) on an innovative approach to version-controlled databases using Prolly trees, with community discussion on Lobsters indicating engaged interest.",
+    "ai_summary": "Explores the use of Prolly trees for implementing version control in databases, offering a novel data structure for efficient branching and merging.",
+    "ai_tags": [
+      "databases",
+      "version control",
+      "data structures",
+      "Prolly trees"
+    ]
+  },
+  {
+    "id": "hackernews:story:48796817",
+    "source_type": "hackernews",
+    "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+    "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+    "content": "\n--- Top Comments ---\n\n[radioactivist]: I am somewhat skeptical of this. First, the headline result of 0.7*sigma improvement is the output of a statistical based on lessons&#x2F;reviews they engaged with and their mid-term score, with that shift being for &quot;full engagement&quot;. Based on their tables something like ~16 students (11% of the group) actually reached that level of engagement Second, trying to incorporate past grades into their modelling is not a substitute for a randomized trial. Third, the headline engagement num...\n\n[KaiserPro]: I&#x27;m not an expert, but how much of this is down to novelty, ie  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Hawthorne_effect  ? (ie changing the environment can lead to short term productivity gains because either participants are aware they are being watch, or it breaks up the monotony and makes people work a bit harder. )\n\n[baq]: I&#x27;m on record saying that a system like this with some extra hardware (i.e. a way for the LLM to have live understanding of the student&#x27;s paper notebook or handout which are being written in with a plain old pencil) combines the best of both worlds - individual tutoring with approximately zero screen time which scales linearly with the number of students. The role of the teacher or professor then becomes a manager of the student - agentic tutor pairs, a referee when the student and ...\n\n[delis-thumbs-7e]: I currently study Multivariate Calculus by using very new and nodern method: I read the text book, while solving the examples of the general for,ulas, or try to come up with my own. Then I do a s$ht-ton of exercises. I only use LLM’s to quickly clarify confusing topics or notation, but not really much else. I cancelled my Claude subscription. Now I use just Mistral and local Vibethinker-3B, but they work just fine. Earlier I used Claude by giving it the course material and asking it to genera...\n\n[usernametaken29]: Wow, putting effort into training material, thoughtfully designing it, and relating the material to the final exam, will increase performance on said exam.\nSo much AI so much wow.\nLike seriously. Most university statistics courses suck big time, so literally any effort put into them will Improve the field.\nI’m happy the authors want to improve education but they don’t seem to understand that preparing questionare style material is a confounding factor which could very well explain the better ...",
+    "author": "jonahbard",
+    "published_at": "2026-07-05T18:47:43Z",
+    "fetched_at": "2026-07-06T00:00:17.946049Z",
+    "metadata": {
+      "score": 113,
+      "descendants": 75,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48796817",
+      "comment_count": 5,
+      "title_zh": "新AI导师研究效应量大但遭方法质疑",
+      "detailed_summary_zh": "一项关于AI导师在达特茅斯课程中的研究声称其效应量达到0.71至1.30个标准差，但社区讨论指出该研究存在样本量小、缺乏随机化等严重方法论问题。 该效应量远高于典型教育干预效果，若属实将极大推动AI个性化辅导发展，但方法缺陷可能导致结果不可靠，提醒业界需严格审视研究设计。 研究中仅约16名学生（占样本11%）达到“完全参与”水平，且分析依赖统计模型而非随机对照试验。社区还指出未考虑霍桑效应（环境改变带来的临时绩效提升）等混淆因素。",
+      "background_zh": "效应量是衡量教育干预效果的标准统计指标，通常以标准差为单位。0.71-1.30的效应量在现有教育研究中非常罕见，常见有效的干预措施效应量多在0.2-0.4之间。因此，这类结果需要基于严格随机对照试验才能确保可信度。",
+      "community_discussion_zh": "社区评论总体持怀疑态度，主要质疑点包括小样本、缺乏随机化以及可能的霍桑效应。部分评论者认为，若能结合硬件（如实时感知学生纸笔书写）可能在未来实现更可靠的个性化辅导。",
+      "sources": [
+        {
+          "url": "https://www.ascd.org/el/articles/interpreting-education-research-and-effect-sizes",
+          "title": "Interpreting Education Research and Effect Sizes"
+        },
+        {
+          "url": "https://evidenceforlearning.org.au/news/effect-sizes-in-education-bigger-is-better-right",
+          "title": "Effect sizes in education: Bigger is better right? | E4L"
+        },
+        {
+          "url": "https://ies.ed.gov/rel-west/2025/01/main-resource-file-1",
+          "title": "EVIDENCE USE IN EDUCATION NOVEMBER 2021 Effect Size Basics:"
+        }
+      ],
+      "detailed_summary": "一项关于AI导师在达特茅斯课程中的研究声称其效应量达到0.71至1.30个标准差，但社区讨论指出该研究存在样本量小、缺乏随机化等严重方法论问题。 该效应量远高于典型教育干预效果，若属实将极大推动AI个性化辅导发展，但方法缺陷可能导致结果不可靠，提醒业界需严格审视研究设计。 研究中仅约16名学生（占样本11%）达到“完全参与”水平，且分析依赖统计模型而非随机对照试验。社区还指出未考虑霍桑效应（环境改变带来的临时绩效提升）等混淆因素。",
+      "background": "效应量是衡量教育干预效果的标准统计指标，通常以标准差为单位。0.71-1.30的效应量在现有教育研究中非常罕见，常见有效的干预措施效应量多在0.2-0.4之间。因此，这类结果需要基于严格随机对照试验才能确保可信度。",
+      "community_discussion": "社区评论总体持怀疑态度，主要质疑点包括小样本、缺乏随机化以及可能的霍桑效应。部分评论者认为，若能结合硬件（如实时感知学生纸笔书写）可能在未来实现更可靠的个性化辅导。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The claim of large effect sizes is significant for AI in education, but community comments highlight methodological flaws (small sample, lack of randomization, novelty effects), reducing credibility. High engagement (113 points, 75 comments) with substantive critique adds value.",
+    "ai_summary": "An AI tutor study reports large effect sizes in a Dartmouth course, but community discussion raises valid methodological concerns.",
+    "ai_tags": [
+      "AI in education",
+      "LLMs",
+      "tutoring",
+      "research methodology",
+      "EdTech"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:af1cb5ddd462d268",
+    "source_type": "rss",
+    "title": "Rayfish - P2P VPN built on top of Iroh",
+    "url": "https://rayfish.xyz/blog/01-introducing-rayfish",
+    "content": "<p><a href=\"https://lobste.rs/s/4behtu/rayfish_p2p_vpn_built_on_top_iroh\">Comments</a></p>",
+    "author": "rayfish.xyz via tomas",
+    "published_at": "2026-07-05T18:39:26Z",
+    "fetched_at": "2026-07-06T00:00:18.348861Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "networking"
+      ],
+      "title_zh": "Rayfish: 基于 Iroh 的 P2P VPN",
+      "detailed_summary_zh": "Rayfish 是一个新型点对点网状 VPN，使用 Rust 语言和 Iroh 库构建。每个节点拥有唯一密钥对，并从中派生稳定的 IPv4 和 IPv6 地址，实现无需中心服务器的直接连接。 Rayfish 简化了私有网络的搭建，无需端口转发或静态 IP，有望降低 P2P VPN 的使用门槛。它代表了去中心化网络在 VPN 领域的一个新尝试，可能影响 VPN 和 P2P 社区的发展方向。 Rayfish 利用 Iroh 库的 QUIC 协议和 NAT 穿透技术，优先建立直接连接，失败时使用中继服务器。其 IPv4 地址位于 100.64.0.0/10，IPv6 地址位于 200::/7，设计灵感来自 Yggdrasil 网络。",
+      "background_zh": "Iroh 是一个去中心化联网库，提供 QUIC 连接和 NAT 穿透，允许应用通过公钥直接寻址。传统 VPN 通常依赖中心服务器，而 P2P VPN 如 Rayfish 采用无服务器架构，节点之间直接通信，提高了隐私和抗审查能力。",
+      "community_discussion_zh": "Hacker News 上的讨论对 Rayfish 的零基础设施理念表示赞赏，但部分用户对其可靠性和安全性提出疑问，认为在复杂网络环境中的穿透能力仍需验证。",
+      "sources": [
+        {
+          "url": "https://github.com/n0-computer/iroh",
+          "title": "GitHub - n0-computer/iroh: IP addresses break, dial keys instead. A ..."
+        },
+        {
+          "url": "https://docs.iroh.computer/",
+          "title": "Introduction - iroh"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=48746038",
+          "title": "Rayfish , Peer-to-peer mesh VPN with no server to trust | Hacker News"
+        }
+      ],
+      "detailed_summary": "Rayfish 是一个新型点对点网状 VPN，使用 Rust 语言和 Iroh 库构建。每个节点拥有唯一密钥对，并从中派生稳定的 IPv4 和 IPv6 地址，实现无需中心服务器的直接连接。 Rayfish 简化了私有网络的搭建，无需端口转发或静态 IP，有望降低 P2P VPN 的使用门槛。它代表了去中心化网络在 VPN 领域的一个新尝试，可能影响 VPN 和 P2P 社区的发展方向。 Rayfish 利用 Iroh 库的 QUIC 协议和 NAT 穿透技术，优先建立直接连接，失败时使用中继服务器。其 IPv4 地址位于 100.64.0.0/10，IPv6 地址位于 200::/7，设计灵感来自 Yggdrasil 网络。",
+      "background": "Iroh 是一个去中心化联网库，提供 QUIC 连接和 NAT 穿透，允许应用通过公钥直接寻址。传统 VPN 通常依赖中心服务器，而 P2P VPN 如 Rayfish 采用无服务器架构，节点之间直接通信，提高了隐私和抗审查能力。",
+      "community_discussion": "Hacker News 上的讨论对 Rayfish 的零基础设施理念表示赞赏，但部分用户对其可靠性和安全性提出疑问，认为在复杂网络环境中的穿透能力仍需验证。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Introduces a novel P2P VPN built on Iroh, a decentralized networking library. Interesting for the P2P and VPN communities, but not groundbreaking. Discussion on Lobsters may provide additional insights.",
+    "ai_summary": "Rayfish is a new peer-to-peer VPN built on top of the Iroh library.",
+    "ai_tags": [
+      "P2P",
+      "VPN",
+      "Iroh",
+      "networking",
+      "decentralized"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:30b68e2a63a1548e",
+    "source_type": "rss",
+    "title": "How is Zig working out after 3 years and 100k lines of game code?",
+    "url": "https://www.youtube.com/watch?v=HXpUShkr2VQ",
+    "content": "<p><a href=\"https://lobste.rs/s/q8eiqk/how_is_zig_working_out_after_3_years_100k\">Comments</a></p>",
+    "author": "youtube.com via jbauer",
+    "published_at": "2026-07-05T09:49:19Z",
+    "fetched_at": "2026-07-06T00:00:18.348938Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "video",
+        "zig"
+      ],
+      "title_zh": "Zig语言三年开发游戏经验总结",
+      "detailed_summary_zh": "一位开发者基于三年多时间、超过10万行代码的游戏项目，分享了使用Zig编程语言的实际体验，包括其优势与不足。 该回顾为考虑在游戏开发或系统编程中采用Zig的开发者提供了真实世界的大规模项目参考，有助于评估Zig在生产环境中的成熟度和适用性。 项目规模超过10万行代码，开发者从正面和负面两方面总结了Zig的编译速度、内存管理、工具链等特性，但没有给出具体的评分或对比数据。",
+      "background_zh": "Zig是一种通用系统编程语言，旨在作为C语言的现代替代品，强调手动内存管理、编译时计算和与C的互操作性。它于2016年首次发布，由Zig软件基金会维护，主要应用于底层系统开发。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Zig_(programming_language)",
+          "title": "Zig (programming language)"
+        },
+        {
+          "url": "https://ziglang.org/",
+          "title": "Home ⚡ Zig Programming Language"
+        }
+      ],
+      "detailed_summary": "一位开发者基于三年多时间、超过10万行代码的游戏项目，分享了使用Zig编程语言的实际体验，包括其优势与不足。 该回顾为考虑在游戏开发或系统编程中采用Zig的开发者提供了真实世界的大规模项目参考，有助于评估Zig在生产环境中的成熟度和适用性。 项目规模超过10万行代码，开发者从正面和负面两方面总结了Zig的编译速度、内存管理、工具链等特性，但没有给出具体的评分或对比数据。",
+      "background": "Zig是一种通用系统编程语言，旨在作为C语言的现代替代品，强调手动内存管理、编译时计算和与C的互操作性。它于2016年首次发布，由Zig软件基金会维护，主要应用于底层系统开发。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Real-world retrospective on using Zig for a large game project (100k lines) offers valuable insights for developers considering Zig, especially in game development. High relevance to systems programming and language adoption discussions. No community comments provided to evaluate discussion quality.",
+    "ai_summary": "A developer shares their experience using the Zig programming language for 3 years and over 100,000 lines of game code, discussing its strengths and weaknesses.",
+    "ai_tags": [
+      "Zig",
+      "game development",
+      "systems programming",
+      "programming languages"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:2261418a7308a342",
+    "source_type": "rss",
+    "title": "Dependencies should be fetched directly from VCS",
+    "url": "https://www.arp242.net/deps-vcs.html",
+    "content": "<p><a href=\"https://lobste.rs/s/0ptuxw/dependencies_should_be_fetched_directly\">Comments</a></p>",
+    "author": "arp242.net via sanxiyn",
+    "published_at": "2026-07-05T22:31:25Z",
+    "fetched_at": "2026-07-06T00:00:18.349019Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "practices"
+      ],
+      "title_zh": "依赖应直接从 VCS 获取",
+      "detailed_summary_zh": "一篇技术文章主张软件依赖应直接从版本控制系统（VCS）仓库获取，而非通过包注册中心，以提升透明度和可控性。 这一观点可能推动依赖管理最佳实践的演变，减少对中央包注册中心的依赖，从而增强安全性和可追溯性，对开发者构建流程有潜在影响。 文章未提供具体实现方案，但核心论点是直接引用VCS中的提交或标签可避免包注册中心的中间人风险，同时保留源码的完整历史。",
+      "background_zh": "软件依赖管理通常通过包管理器（如npm、pip）从集中式注册中心下载预构建包。版本控制系统的仓库存储源码及其更改历史，直接从中获取依赖意味着开发者需在构建时引用特定仓库地址和版本，这可能增加构建复杂度但提升信任度。",
+      "sources": [
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_tools/Package_management",
+          "title": "Package management basics - Learn web development | MDN"
+        },
+        {
+          "url": "https://packaging.python.org/en/latest/tutorials/installing-packages/",
+          "title": "Installing Packages - Python Packaging User Guide"
+        }
+      ],
+      "detailed_summary": "一篇技术文章主张软件依赖应直接从版本控制系统（VCS）仓库获取，而非通过包注册中心，以提升透明度和可控性。 这一观点可能推动依赖管理最佳实践的演变，减少对中央包注册中心的依赖，从而增强安全性和可追溯性，对开发者构建流程有潜在影响。 文章未提供具体实现方案，但核心论点是直接引用VCS中的提交或标签可避免包注册中心的中间人风险，同时保留源码的完整历史。",
+      "background": "软件依赖管理通常通过包管理器（如npm、pip）从集中式注册中心下载预构建包。版本控制系统的仓库存储源码及其更改历史，直接从中获取依赖意味着开发者需在构建时引用特定仓库地址和版本，这可能增加构建复杂度但提升信任度。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful technical opinion on dependency management with potential to influence best practices; community discussion likely adds value, but not a groundbreaking shift.",
+    "ai_summary": "The article argues that software dependencies should be fetched directly from VCS repositories instead of package registries for better transparency and control.",
+    "ai_tags": [
+      "dependency management",
+      "software engineering",
+      "version control",
+      "package management"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:14696db1d520a222",
+    "source_type": "rss",
+    "title": "Composite video on the NES: why's it so wobbly?",
+    "url": "https://nicole.express/2026/phase-altering-by-line.html",
+    "content": "<p><a href=\"https://lobste.rs/s/tqv8xx/composite_video_on_nes_why_s_it_so_wobbly\">Comments</a></p>",
+    "author": "nicole.express via classichasclass",
+    "published_at": "2026-07-05T23:04:41Z",
+    "fetched_at": "2026-07-06T00:00:18.349093Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "retrocomputing"
+      ],
+      "title_zh": "NES复合视频抖动原因深度解析",
+      "detailed_summary_zh": "一篇技术文章深入分析了NES复合视频输出出现抖动的原因，指出这是由于相位交替（phase alteration）和同步信号干扰导致的。 该分析有助于复古游戏爱好者和硬件修复者理解NES视频输出的固有缺陷，为改进或规避问题提供理论基础，也体现了模拟视频信号处理的复杂性。 文章详细解释了相位交替如何影响色度信号，以及同步信号如何干扰亮度信号，导致画面出现不稳定的抖动现象。",
+      "background_zh": "复合视频是一种模拟视频格式，将亮度、色度和同步信号合并到一条信号线中。NES使用复合视频输出，但其电路设计存在局限性，导致信号分离不彻底，从而产生干扰和抖动。文章探讨的正是这种设计缺陷的具体机制。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Composite_video",
+          "title": "Composite video - Wikipedia"
+        },
+        {
+          "url": "https://www.nesdev.org/wiki/NTSC_video",
+          "title": "NTSC video - NESdev Wiki"
+        }
+      ],
+      "detailed_summary": "一篇技术文章深入分析了NES复合视频输出出现抖动的原因，指出这是由于相位交替（phase alteration）和同步信号干扰导致的。 该分析有助于复古游戏爱好者和硬件修复者理解NES视频输出的固有缺陷，为改进或规避问题提供理论基础，也体现了模拟视频信号处理的复杂性。 文章详细解释了相位交替如何影响色度信号，以及同步信号如何干扰亮度信号，导致画面出现不稳定的抖动现象。",
+      "background": "复合视频是一种模拟视频格式，将亮度、色度和同步信号合并到一条信号线中。NES使用复合视频输出，但其电路设计存在局限性，导致信号分离不彻底，从而产生干扰和抖动。文章探讨的正是这种设计缺陷的具体机制。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive into NES composite video issues, with detailed explanation of phase alternation and sync artifacts. Moderately niche but well-executed analysis.",
+    "ai_summary": "Explains the cause of wobbly composite video on the NES due to phase alteration and sync signal interference.",
+    "ai_tags": [
+      "NES",
+      "composite video",
+      "retro gaming",
+      "analog video"
+    ]
+  }
+]
