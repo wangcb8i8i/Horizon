@@ -22,18 +22,61 @@ _MAX_WAIT = 180
 class TwitterScraper(BaseScraper):
     name = "twitter"
     description = "Twitter/X tweets via Apify"
+    has_categories = True
 
     def __init__(self, plugin_config, http_client, framework_config):
         super().__init__(plugin_config, http_client, framework_config)
-        self.cfg = plugin_config  # raw dict
+        self.cfg = plugin_config
+
+        categories = plugin_config.get("_filter_categories")
+        raw_users: list = plugin_config.get("users", []) or []
+
+        users: list[dict] = []
+        for u in raw_users:
+            if isinstance(u, str):
+                username = u.strip().lstrip("@")
+                if username:
+                    users.append({
+                        "username": username,
+                        "enabled": True,
+                        "categories": [],
+                        "fetch_limit": None,
+                    })
+            elif isinstance(u, dict):
+                username = u.get("username", "").strip().lstrip("@")
+                if username:
+                    users.append({
+                        "username": username,
+                        "enabled": u.get("enabled", True),
+                        "categories": u.get("categories", []),
+                        "fetch_limit": u.get("fetch_limit"),
+                    })
+
+        if categories is not None:
+            users = [u for u in users if u["enabled"] and self._matches_categories(u["categories"], categories)]
+
+        self._users = users
+        self._global_fetch_limit = min(plugin_config.get("fetch_limit", 10), 50)
+
+    @staticmethod
+    def _matches_categories(user_cats, filter_cats):
+        if not user_cats:
+            return False
+        if isinstance(user_cats, str):
+            cats_set = {user_cats.strip().lower()}
+        elif isinstance(user_cats, list):
+            cats_set = {c.strip().lower() for c in user_cats if c and c.strip()}
+        else:
+            return False
+        return bool(cats_set & filter_cats)
 
     @property
     def _enabled(self) -> bool:
         return self.cfg.get("enabled", True)
 
     @property
-    def _users(self) -> List[str]:
-        return [u.strip().lstrip("@") for u in self.cfg.get("users", []) if u.strip()]
+    def _usernames(self) -> List[str]:
+        return [u["username"] for u in self._users]
 
     @property
     def _token(self) -> Optional[str]:
@@ -51,7 +94,7 @@ class TwitterScraper(BaseScraper):
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self._enabled:
             return []
-        users = self._users
+        users = self._usernames
         if not users:
             return []
         token = self._token
@@ -108,7 +151,7 @@ class TwitterScraper(BaseScraper):
                 if status in ("FAILED", "ABORTED", "TIMED-OUT"):
                     return False
             except Exception as exc:
-                logger.warning("Apify poll error: %s", exc)
+                self._report_error("apify_poll", exc)
             await asyncio.sleep(_POLL_INTERVAL)
             elapsed += _POLL_INTERVAL
         return False
@@ -218,12 +261,10 @@ class TwitterScraper(BaseScraper):
                 return None
 
             url = item.get("url") or f"https://twitter.com/{screen_name}/status/{raw_id}"
-            title_body = text[:50].replace("\n", " ").strip() + ("..." if len(text) > 50 else "")
-
             return ContentItem(
                 id=self._generate_id("twitter", "tweet", raw_id),
                 source_type="twitter",
-                title=f"@{screen_name}: {title_body}",
+                title=f"@{screen_name}",
                 url=url,
                 content=text,
                 author=author,

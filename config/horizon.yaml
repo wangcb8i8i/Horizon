@@ -1,0 +1,369 @@
+framework:
+  timeout: 30.0
+  max_connections: 10
+  proxy: http://127.0.0.1:7890
+  extra_headers: {}
+profiles:
+  work:
+    description: 工作日技术关注
+    categories:
+    - ai-ml
+    - engineering
+    - dev-community
+    - research
+  weekend:
+    description: 周末泛资讯
+    categories:
+    - news
+    - tech
+    - crypto
+    - trending
+report:
+  output_dir: output/reports
+scoring:
+  tech:
+    prompts: scoring/tech
+    keep_pct: 7
+plugins:
+  github:
+    enabled: true
+    sources:
+    - type: user_events
+      username: karpathy
+      categories:
+      - social
+      - ai-ml
+      - engineering
+      enabled: true
+    - type: trending
+      languages:
+      - python
+      since: weekly
+      max_items: 15
+      categories:
+      - trending
+      - ai-ml
+      - engineering
+      enabled: true
+    - type: trending
+      languages:
+      - javascript
+      - typescript
+      since: weekly
+      max_items: 10
+      categories:
+      - trending
+      - engineering
+      enabled: true
+    - type: trending
+      languages:
+      - java
+      since: weekly
+      max_items: 10
+      categories:
+      - trending
+      - engineering
+      enabled: true
+    - type: trending
+      languages:
+      - rust
+      since: weekly
+      max_items: 10
+      categories:
+      - trending
+      - engineering
+      - tech
+      enabled: true
+    - type: trending
+      languages: []
+      since: weekly
+      max_items: 10
+      categories:
+      - trending
+      - engineering
+      - tech
+      enabled: true
+  hackernews:
+    enabled: true
+    fetch_top_stories: 30
+    min_score: 100
+  rss:
+    enabled: true
+    feeds:
+    - name: Nature
+      url: https://www.nature.com/nature.rss
+      categories:
+      - news
+      - ai-ml
+      - research
+      enabled: true
+    - name: Last Week in AI
+      url: https://lastweekin.ai/feed
+      categories:
+      - news
+      - ai-ml
+      enabled: true
+    - name: AINews
+      url: https://buttondown.com/ainews/rss
+      categories:
+      - news
+      - ai-ml
+      enabled: true
+    - name: Lilian Weng
+      url: https://lilianweng.github.io/index.xml
+      categories:
+      - blog
+      - ai-ml
+      - research
+      enabled: true
+    - name: The Pragmatic Engineer
+      url: https://newsletter.pragmaticengineer.com/feed
+      categories:
+      - blog
+      - engineering
+      enabled: true
+    - name: Dev.to
+      url: https://dev.to/feed
+      categories:
+      - blog
+      - dev-community
+      enabled: true
+    - name: Stack Overflow AI
+      url: https://stackoverflow.com/feeds/tag?tagnames=machine-learning+or+deep-learning+or+pytorch+or+llm
+      categories:
+      - discussion
+      - dev-community
+      - ai-ml
+      enabled: true
+    - name: Product Hunt
+      url: https://www.producthunt.com/feed
+      categories:
+      - news
+      - startup
+      - tech
+      enabled: true
+  reddit:
+    enabled: true
+    subreddits:
+    - subreddit: MachineLearning
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      - research
+      enabled: true
+    - subreddit: LocalLLaMA
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      enabled: true
+    - subreddit: StableDiffusion
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      enabled: true
+    - subreddit: artificial
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      enabled: true
+    - subreddit: OpenAI
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      enabled: true
+    - subreddit: ChatGPTCoding
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      - engineering
+      enabled: true
+    - subreddit: technology
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - tech
+      enabled: true
+    - subreddit: ChatGPT
+      sort: hot
+      time_filter: day
+      fetch_limit: 15
+      min_score: 60
+      categories:
+      - discussion
+      - ai-ml
+      enabled: true
+    users: []
+    fetch_comments: 10
+  twitter:
+    enabled: true
+    users:
+    - _akhaliq
+    - DrJimFan
+    - abacaj
+    - cwolferesearch
+    - sytelus
+    apify_token_env: APIFY_TOKEN
+    actor_id: altimis~scweet
+    fetch_limit: 10
+  v2ex:
+    enabled: true
+    nodes: programming,python,share
+    token_env: V2EX_TOKEN
+    fetch_limit: 20
+  youtube:
+    enabled: true
+    channels:
+    - '@AndrejKarpathy'
+    - '@mattpocock'
+    - '@ai-explained'
+    - '@sentdex'
+    fetch_limit: 10
+  bilibili:
+    enabled: true
+    fetch_limit: 20
+    sections:
+    - section: popular
+      fetch_limit: 20
+      categories:
+      - trending
+      - video
+      - tech
+    - section: search
+      keyword: AI编程
+      fetch_limit: 15
+      categories:
+      - trending
+      - ai-ml
+      - tech
+    - section: search
+      keyword: 科技
+      fetch_limit: 10
+      categories:
+      - trending
+      - tech
+  xiaohongshu:
+    enabled: true
+    fetch_limit: 15
+    keywords:
+    - AI工具
+    - 科技
+    - 编程
+    categories:
+    - trending
+    - social
+    - tech
+  telegram:
+    enabled: true
+    channels:
+    - channel: bloomberg
+      fetch_limit: 15
+      categories:
+      - news
+      - business
+      - tech
+      enabled: true
+    - channel: nytimes
+      fetch_limit: 15
+      categories:
+      - news
+      - tech
+      enabled: true
+    - channel: durov
+      fetch_limit: 10
+      categories:
+      - news
+      - tech
+      - crypto
+      enabled: true
+    - channel: ai_news_aggregator
+      fetch_limit: 15
+      categories:
+      - news
+      - ai-ml
+      - tech
+      enabled: true
+  openbb:
+    enabled: false
+    watchlists:
+    - name: AI-Mega-Cap
+      symbols:
+      - NVDA
+      - MSFT
+      - GOOGL
+      - META
+      - AMZN
+      - AAPL
+      - TSLA
+      fetch_limit: 10
+      provider: tiingo
+      categories:
+      - news
+      - tech
+      - business
+      enabled: true
+    - name: AI-Infra
+      symbols:
+      - AMD
+      - INTC
+      - ARM
+      - SNOW
+      - CRM
+      - ORCL
+      fetch_limit: 10
+      provider: tiingo
+      categories:
+      - news
+      - tech
+      - business
+      enabled: true
+    - name: Crypto
+      symbols:
+      - BTC-USD
+      - ETH-USD
+      - SOL-USD
+      fetch_limit: 10
+      provider: tiingo
+      categories:
+      - news
+      - crypto
+      enabled: true
+  ossinsight:
+    enabled: true
+    period: past_24_hours
+    languages:
+    - All
+    - Python
+    - TypeScript
+    keywords: []
+    min_stars: 5
+    max_items: 30
+    categories:
+    - trending
+    - engineering

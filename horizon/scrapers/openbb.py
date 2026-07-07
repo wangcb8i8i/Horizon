@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+import os
 from datetime import datetime, timezone
 from typing import Any, List, Optional
 
@@ -15,21 +16,64 @@ logger = logging.getLogger(__name__)
 class OpenBBScraper(BaseScraper):
     name = "openbb"
     description = "Financial news via OpenBB Platform SDK"
+    has_categories = True
 
     def __init__(self, plugin_config, http_client, framework_config):
         super().__init__(plugin_config, http_client, framework_config)
         self.enabled = plugin_config.get("enabled", True)
-        self.watchlists = plugin_config.get("watchlists", [])
+        categories = plugin_config.get("_filter_categories")
+        all_watchlists = plugin_config.get("watchlists", [])
+        if categories is not None:
+            all_watchlists = [
+                w for w in all_watchlists
+                if self._matches_categories(w, categories)
+            ]
+        self.watchlists = all_watchlists
         self._obb = self._try_import_obb()
+
+    @staticmethod
+    def _matches_categories(sub: dict, categories: set[str]) -> bool:
+        src_cats = sub.get("categories")
+        if not src_cats:
+            return False
+        if isinstance(src_cats, str):
+            src_cats_set = {src_cats.strip().lower()}
+        elif isinstance(src_cats, list):
+            src_cats_set = {c.strip().lower() for c in src_cats if c and c.strip()}
+        else:
+            return False
+        return bool(src_cats_set & categories)
 
     @staticmethod
     def _try_import_obb():
         try:
             from openbb import obb
+            OpenBBScraper._inject_credentials(obb)
             return obb
         except ImportError:
             logger.warning("OpenBB package not installed (pip install openbb)")
             return None
+
+    @staticmethod
+    def _inject_credentials(obb) -> None:
+        """Inject provider tokens from environment into OpenBB.
+
+        OpenBB does not read .env on its own — credentials must be set
+        on ``obb.user.credentials`` before any API call.  We read the
+        standard env vars and assign them here so the plugin works as
+        long as the user has the token in config/.env.
+        """
+        creds = obb.user.credentials
+        _MAP = {
+            "TIINGO_TOKEN": "tiingo_token",
+            "FMP_API_KEY": "fmp_api_key",
+            "INTRINIO_API_KEY": "intrinio_api_key",
+            "BENZINGA_API_KEY": "benzinga_api_key",
+        }
+        for env_key, field in _MAP.items():
+            val = os.environ.get(env_key)
+            if val:
+                setattr(creds, field, val)
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self._obb or not self.enabled:
@@ -43,7 +87,7 @@ class OpenBBScraper(BaseScraper):
             try:
                 fetched = await self._fetch_watchlist(wl, since_utc)
             except Exception as exc:
-                logger.warning("OpenBB watchlist '%s' failed: %s", wl.get("name"), exc)
+                self._report_error(f"watchlist '{wl.get('name')}'", exc)
                 continue
             for item in fetched:
                 key = str(item.url)
@@ -82,6 +126,13 @@ class OpenBBScraper(BaseScraper):
         body = getattr(raw, "body", None) or getattr(raw, "excerpt", None)
         author = getattr(raw, "author", None)
         native_id = f"{published.strftime('%Y%m%dT%H%M%S')}::{url}"
+        meta: dict = {
+            "watchlist": wl.get("name"),
+            "provider": wl.get("provider"),
+        }
+        wl_cats = wl.get("categories")
+        if wl_cats:
+            meta["categories"] = wl_cats
         return ContentItem(
             id=self._generate_id("openbb", "news", native_id),
             source_type="openbb",
@@ -90,11 +141,7 @@ class OpenBBScraper(BaseScraper):
             content=body,
             author=author or "",
             published_at=published,
-            metadata={
-                "watchlist": wl.get("name"),
-                "provider": wl.get("provider"),
-                "category": wl.get("category"),
-            },
+            metadata=meta,
         )
 
     @staticmethod

@@ -12,6 +12,7 @@ import feedparser
 import httpx
 
 from scrapers.plugin import BaseScraper, ContentItem
+from scrapers.text_utils import clean_html
 
 logger = logging.getLogger(__name__)
 
@@ -19,13 +20,35 @@ logger = logging.getLogger(__name__)
 class RSSScraper(BaseScraper):
     name = "rss"
     description = "RSS/Atom feeds"
+    has_categories = True
 
     def __init__(self, plugin_config, http_client, framework_config):
         super().__init__(plugin_config, http_client, framework_config)
-        self.feeds = [
-            RSSFeed(**f) for f in plugin_config.get("feeds", [])
-            if f.get("enabled", True)
-        ]
+        raw_feeds = plugin_config.get("feeds", [])
+        categories = plugin_config.get("_filter_categories")
+
+        feeds = []
+        for f in raw_feeds:
+            if not f.get("enabled", True):
+                continue
+            if categories is not None:
+                feed_cats = self._get_categories(f)
+                if not feed_cats or not feed_cats.intersection(categories):
+                    continue
+            feeds.append(RSSFeed(**f))
+        self.feeds = feeds
+
+    @staticmethod
+    def _get_categories(feed: dict) -> set[str]:
+        """Extract categories from a feed config dict."""
+        raw = feed.get("categories")
+        if not raw:
+            return set()
+        if isinstance(raw, str):
+            return {raw.strip().lower()}
+        if isinstance(raw, list):
+            return {c.strip().lower() for c in raw if c and c.strip()}
+        return set()
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         items: List[ContentItem] = []
@@ -45,7 +68,7 @@ class RSSScraper(BaseScraper):
             response.raise_for_status()
             parsed = feedparser.parse(response.text)
         except Exception as e:
-            logger.warning("Error fetching RSS feed '%s': %s", feed.name, e)
+            self._report_error(f"feed '{feed.name}'", e)
             return []
 
         for entry in parsed.entries:
@@ -69,7 +92,7 @@ class RSSScraper(BaseScraper):
                     published_at=published_at,
                     metadata={
                         "feed_name": feed.name,
-                        "category": feed.category,
+                        "categories": list(feed.categories) if feed.categories else None,
                         "tags": [t.term for t in entry.get("tags", [])],
                     },
                 )
@@ -93,13 +116,14 @@ class RSSScraper(BaseScraper):
 
     @staticmethod
     def _extract_content(entry: dict) -> str:
+        raw = ""
         if "summary" in entry:
-            return entry.summary
-        if "description" in entry:
-            return entry.description
-        if entry.get("content"):
-            return entry.content[0].get("value", "")
-        return ""
+            raw = entry.summary
+        elif "description" in entry:
+            raw = entry.description
+        elif entry.get("content"):
+            raw = entry.content[0].get("value", "")
+        return clean_html(raw)
 
 
 from dataclasses import dataclass
@@ -109,5 +133,5 @@ from dataclasses import dataclass
 class RSSFeed:
     url: str
     name: str = ""
-    category: str | None = None
+    categories: tuple[str, ...] | None = None
     enabled: bool = True

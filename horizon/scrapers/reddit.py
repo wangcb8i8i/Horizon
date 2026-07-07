@@ -8,6 +8,7 @@ from typing import Any, List, Optional
 import httpx
 
 from scrapers.plugin import BaseScraper, ContentItem
+from scrapers.text_utils import clean_html
 
 logger = logging.getLogger(__name__)
 
@@ -22,14 +23,41 @@ MAX_COMMENT_CONCURRENCY = 2
 class RedditScraper(BaseScraper):
     name = "reddit"
     description = "Reddit posts and comments"
+    has_categories = True
 
     def __init__(self, plugin_config, http_client, framework_config):
         super().__init__(plugin_config, http_client, framework_config)
         self.enabled = plugin_config.get("enabled", True)
-        self.subreddits = plugin_config.get("subreddits", [])
-        self.users = plugin_config.get("users", [])
         self.fetch_comments = plugin_config.get("fetch_comments", 5)
         self._comment_sem = asyncio.Semaphore(MAX_COMMENT_CONCURRENCY)
+
+        categories = plugin_config.get("_filter_categories")
+
+        raw_subreddits = plugin_config.get("subreddits", [])
+        if categories is not None:
+            raw_subreddits = [
+                s for s in raw_subreddits
+                if self._matches_categories(s, categories)
+            ]
+        self.subreddits = raw_subreddits
+
+        # Users don't carry categories — excluded when filtering by category
+        self.users = plugin_config.get("users", [])
+        if categories is not None:
+            self.users = []
+
+    @staticmethod
+    def _matches_categories(item: dict, categories: set[str]) -> bool:
+        raw = item.get("categories") or item.get("category")
+        if not raw:
+            return False
+        if isinstance(raw, str):
+            item_cats = {raw.strip().lower()}
+        elif isinstance(raw, list):
+            item_cats = {c.strip().lower() for c in raw if c and c.strip()}
+        else:
+            return False
+        return bool(item_cats & categories)
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self.enabled:
@@ -47,7 +75,7 @@ class RedditScraper(BaseScraper):
         items = []
         for r in results:
             if isinstance(r, Exception):
-                logger.warning("Reddit source error: %s", r)
+                self._report_error("fetch", r)
             elif isinstance(r, list):
                 items.extend(r)
         return items
@@ -61,7 +89,7 @@ class RedditScraper(BaseScraper):
         if not data:
             return []
         posts = [c["data"] for c in data.get("data", {}).get("children", []) if c.get("kind") == "t3"]
-        return await self._process_posts(posts, since, "subreddit", cfg["subreddit"], cfg.get("min_score", 10))
+        return await self._process_posts(posts, since, "subreddit", cfg["subreddit"], cfg.get("min_score", 10), cfg.get("categories"))
 
     async def _fetch_user(self, cfg: dict, since: datetime) -> List[ContentItem]:
         params = {"limit": min(cfg.get("fetch_limit", 10), 100), "sort": cfg.get("sort", "new"), "raw_json": 1}
@@ -69,9 +97,9 @@ class RedditScraper(BaseScraper):
         if not data:
             return []
         posts = [c["data"] for c in data.get("data", {}).get("children", []) if c.get("kind") == "t3"]
-        return await self._process_posts(posts, since, "user", cfg["username"], 0)
+        return await self._process_posts(posts, since, "user", cfg["username"], 0, None)
 
-    async def _process_posts(self, posts: list, since: datetime, subtype: str, source_name: str, min_score: int) -> List[ContentItem]:
+    async def _process_posts(self, posts: list, since: datetime, subtype: str, source_name: str, min_score: int, categories: list | None = None) -> List[ContentItem]:
         valid = []
         comment_tasks = []
         for p in posts:
@@ -87,7 +115,7 @@ class RedditScraper(BaseScraper):
         items = []
         for p, comments in zip(valid, all_comments):
             c = comments if not isinstance(comments, Exception) else []
-            item = self._parse_post(p, c, subtype)
+            item = self._parse_post(p, c, subtype, categories)
             if item:
                 items.append(item)
         return items
@@ -114,7 +142,7 @@ class RedditScraper(BaseScraper):
     async def _empty() -> list:
         return []
 
-    def _parse_post(self, post: dict, comments: list, subtype: str) -> Optional[ContentItem]:
+    def _parse_post(self, post: dict, comments: list, subtype: str, categories: list | None = None) -> Optional[ContentItem]:
         post_id = post["id"]
         title = post.get("title", "")
         is_self = post.get("is_self", False)
@@ -126,14 +154,14 @@ class RedditScraper(BaseScraper):
 
         parts = []
         if post.get("selftext"):
-            text = post["selftext"]
+            text = clean_html(post["selftext"])
             if len(text) > 1500:
                 text = text[:1497] + "..."
             parts.append(text)
         if comments:
             parts.append("\n--- Top Comments ---")
             for c in comments:
-                body = c.get("body", "").strip()[:497]
+                body = clean_html(c.get("body", ""))[:497].strip()
                 parts.append(f"[{c.get('author', 'anon')} ({c.get('score', 0)} pts)]: {body}")
 
         return ContentItem(
@@ -149,6 +177,7 @@ class RedditScraper(BaseScraper):
                 "num_comments": post.get("num_comments", 0),
                 "subreddit": subreddit,
                 "discussion_url": discussion_url,
+                "categories": categories,
             },
         )
 

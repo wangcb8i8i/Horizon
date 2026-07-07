@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #0B0B0E;
+    color: #E4E5EC;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background: rgba(212, 135, 90, 0.25);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #272730;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3B3B45;
+  }
+}
+
+@layer components {
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-fade-y {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
+
+  .signal-glow {
+    box-shadow: 0 0 12px rgba(212, 135, 90, 0.08);
+  }
+
+  .chain-line {
+    width: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(
+      to bottom,
+      #272730 0%,
+      #272730 50%,
+      transparent 100%
+    );
+  }
+
+  .spectrum-bar {
+    height: 3px;
+    border-radius: 2px;
+    background: #1D1E26;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .spectrum-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #D4875A, #D4875A 60%, #3D7A8E);
+    transition: width 0.4s ease-out;
+  }
+
+  .signal-strength {
+    height: 3px;
+    border-radius: 2px;
+    background: #1D1E26;
+    overflow: hidden;
+    min-width: 48px;
+  }
+
+  .signal-strength-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+  }
+
+  .source-tag {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #14141A;
+    color: #7B7C88;
+    border: 1px solid #272730;
+    line-height: 1.4;
+  }
+
+  .status-label {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

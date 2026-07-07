@@ -13,6 +13,8 @@ Lifecycle (per run)::
 from __future__ import annotations
 
 import abc
+import asyncio
+import logging
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Type
@@ -24,13 +26,20 @@ from pydantic import BaseModel
 # ── Data model ──────────────────────────────────────────────────────────────
 
 class ContentItem(BaseModel):
-    """Single piece of content fetched by a plugin."""
+    """Single piece of content fetched by a plugin.
+
+    When rendering, ``ai_summary`` is preferred over ``content`` if present.
+    This allows AI-generated summaries to replace raw content without changing
+    the downstream rendering pipeline.
+    """
 
     id: str
     source_type: str
     title: str
     url: str
     content: Optional[str] = None
+    ai_summary: Optional[str] = None
+    ai_score: Optional[int] = None
     author: Optional[str] = None
     published_at: datetime
     fetched_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
@@ -54,6 +63,9 @@ class ScraperConfig(BaseModel):
     proxy: Optional[str] = None
     rate_limit: Optional[RateLimitConfig] = None
     extra_headers: Dict[str, str] = {}
+
+
+logger = logging.getLogger(__name__)
 
 
 # ── Plugin base class ───────────────────────────────────────────────────────
@@ -80,6 +92,11 @@ class BaseScraper(abc.ABC):
     # -- metadata (override in subclass) ---------------------------------
     name: str = ""
     description: str = ""
+    # Set ``has_categories = True`` in plugins whose sub-items carry a
+    # ``categories`` array (RSS feeds, GitHub sources, Reddit subreddits).
+    # When ``--category`` is passed on the CLI, plugins with this flag set to
+    # ``False`` are entirely skipped.
+    has_categories: bool = False
 
     def __init__(
         self,
@@ -165,6 +182,27 @@ class BaseScraper(abc.ABC):
     def _generate_id(self, source: str, subtype: str, native_id: str) -> str:
         """Convenience: build a unique ``ContentItem.id``."""
         return f"{source}:{subtype}:{native_id}"
+
+    # -- error reporting --------------------------------------------------
+
+    def _report_error(self, context: str, exc: Exception) -> None:
+        """Report a non-fatal error encountered during fetch.
+
+        Plugins should call this for recoverable errors (e.g. one of
+        several sources failed).  The framework surfaces these through
+        its configured error hook and logger, so callers (CLI, API)
+        can present them to the user.
+
+        Args:
+            context: Human-readable description of where the error
+                occurred (e.g. ``"node 'python'"``).
+            exc: The exception that was caught.
+        """
+        logger.error("%s[%s]: %s", self.name, context, exc)
+        # If the framework injected an error callback, schedule it
+        cb = getattr(self, "_on_error_cb", None)
+        if cb is not None:
+            asyncio.ensure_future(cb(self.name, context, exc))
 
 
 # ── Registry ────────────────────────────────────────────────────────────────

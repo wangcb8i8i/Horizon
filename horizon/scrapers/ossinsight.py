@@ -1,5 +1,6 @@
 """OSS Insight scraper — framework plugin."""
 
+import asyncio
 import logging
 from datetime import datetime, timezone
 from typing import List, Optional
@@ -32,8 +33,14 @@ class OSSInsightScraper(BaseScraper):
         period = self.cfg.get("period", "past_24_hours")
         languages = self.cfg.get("languages", ["All", "Python", "TypeScript"])
 
-        for lang in languages:
-            rows = await self._fetch_period(period, lang)
+        results = await asyncio.gather(
+            *[self._fetch_period(period, lang) for lang in languages],
+            return_exceptions=True,
+        )
+        for lang, rows in zip(languages, results):
+            if isinstance(rows, Exception):
+                logger.warning("OSSInsight fetch failed for %s: %s", lang, rows)
+                continue
             for row in rows:
                 repo_name = row.get("repo_name")
                 repo_id = row.get("repo_id")
@@ -72,14 +79,7 @@ class OSSInsightScraper(BaseScraper):
         stars = self._stars(row)
         description = (row.get("description") or "").strip()
         primary_language = row.get("primary_language") or language
-        content = (
-            f"Trending GitHub repo: {repo_name}\n"
-            f"Stars gained ({period}): {stars}\n"
-            f"Forks gained: {row.get('forks', 0)}\n"
-            f"Language: {primary_language}"
-        )
-        if description:
-            content += f"\n\n{description}"
+        content = description
 
         return ContentItem(
             id=self._generate_id("ossinsight", "trending", str(row.get("repo_id"))),

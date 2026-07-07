@@ -20,11 +20,32 @@ USER_AGENT = "Mozilla/5.0 (compatible; Horizon/1.0)"
 class TelegramScraper(BaseScraper):
     name = "telegram"
     description = "Telegram public channels"
+    has_categories = True
 
     def __init__(self, plugin_config, http_client, framework_config):
         super().__init__(plugin_config, http_client, framework_config)
         self.enabled = plugin_config.get("enabled", True)
-        self.channels = plugin_config.get("channels", [])
+        categories = plugin_config.get("_filter_categories")
+        all_channels = plugin_config.get("channels", [])
+        if categories is not None:
+            all_channels = [
+                ch for ch in all_channels
+                if self._matches_categories(ch, categories)
+            ]
+        self.channels = all_channels
+
+    @staticmethod
+    def _matches_categories(sub: dict, categories: set[str]) -> bool:
+        src_cats = sub.get("categories")
+        if not src_cats:
+            return False
+        if isinstance(src_cats, str):
+            src_cats_set = {src_cats.strip().lower()}
+        elif isinstance(src_cats, list):
+            src_cats_set = {c.strip().lower() for c in src_cats if c and c.strip()}
+        else:
+            return False
+        return bool(src_cats_set & categories)
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self.enabled:
@@ -39,7 +60,7 @@ class TelegramScraper(BaseScraper):
         items = []
         for r in results:
             if isinstance(r, Exception):
-                logger.warning("Telegram error: %s", r)
+                self._report_error("fetch", r)
             elif isinstance(r, list):
                 items.extend(r)
         return items
@@ -55,7 +76,7 @@ class TelegramScraper(BaseScraper):
                 resp = await self.client.get(url, headers=headers, follow_redirects=True, timeout=120.0)
             resp.raise_for_status()
         except Exception as e:
-            logger.warning("Telegram request failed for %s: %s", cfg["channel"], e)
+            self._report_error(f"channel '{cfg['channel']}'", e)
             return []
         return self._parse_html(resp.text, cfg, since)
 
@@ -87,8 +108,7 @@ class TelegramScraper(BaseScraper):
             if not text:
                 continue
 
-            first = text.split("\n\n")[0].replace("\n", " ").strip()
-            title = first[:80]
+            title = f"Message from {ch}"
 
             msg_url = f"https://t.me/{ch}/{msg_id}"
             canonical = msg_url
@@ -98,6 +118,10 @@ class TelegramScraper(BaseScraper):
                     canonical = href
                     break
 
+            meta = {"msg_url": msg_url, "channel": ch}
+            ch_cats = cfg.get("categories")
+            if ch_cats:
+                meta["categories"] = ch_cats
             items.append(
                 ContentItem(
                     id=self._generate_id("telegram", ch, msg_id),
@@ -107,7 +131,7 @@ class TelegramScraper(BaseScraper):
                     content=text,
                     author=ch,
                     published_at=published_at,
-                    metadata={"msg_url": msg_url, "channel": ch},
+                    metadata=meta,
                 )
             )
         return items

@@ -50,6 +50,9 @@ docs/_posts/*.md
 logs/*.log
 *.log
 
+# Generated output
+output/
+
 # macOS
 .DS_Store
 
@@ -60,3 +63,8 @@ logs/*.log
 todo.txt
 .ruff_cache
 .pytest_cache
+.recon/
+.inspiration/
+docs/
+docs/
+test-results/

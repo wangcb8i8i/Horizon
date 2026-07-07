@@ -9,6 +9,7 @@ from typing import List, Optional
 import httpx
 
 from scrapers.plugin import BaseScraper, ContentItem
+from scrapers.text_utils import clean_html
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +24,7 @@ class HackerNewsScraper(BaseScraper):
         super().__init__(plugin_config, http_client, framework_config)
         self.base_url = "https://hacker-news.firebaseio.com/v0"
         self.enabled = plugin_config.get("enabled", True)
-        self.fetch_top_stories = plugin_config.get("fetch_top_stories", 30)
+        self.max_items = plugin_config.get("max_items") or plugin_config.get("fetch_top_stories", 30)
         self.min_score = plugin_config.get("min_score", 100)
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
@@ -32,13 +33,13 @@ class HackerNewsScraper(BaseScraper):
         try:
             response = await self.client.get(f"{self.base_url}/topstories.json")
             response.raise_for_status()
-            story_ids = response.json()[: self.fetch_top_stories]
+            story_ids = response.json()[: self.max_items]
             stories = await asyncio.gather(
                 *[self._fetch_story(sid) for sid in story_ids],
                 return_exceptions=True,
             )
         except httpx.HTTPError as e:
-            logger.warning("Error fetching HN stories: %s", e)
+            self._report_error("fetch_top_stories", e)
             return []
 
         comment_tasks = []
@@ -87,14 +88,14 @@ class HackerNewsScraper(BaseScraper):
         published_at = datetime.fromtimestamp(story["time"], tz=timezone.utc)
         parts = []
         if story.get("text"):
-            parts.append(story["text"])
+            parts.append(clean_html(story["text"]))
         if comments:
             parts.append("\n--- Top Comments ---")
             for c in comments:
                 if not isinstance(c, dict) or not c.get("text") or c.get("deleted") or c.get("dead"):
                     continue
                 commenter = c.get("by", "anon")
-                text = re.sub(r"<[^>]+>", " ", c["text"]).strip()[:497]
+                text = clean_html(c["text"])[:497].strip()
                 parts.append(f"[{commenter}]: {text}")
 
         return ContentItem(
