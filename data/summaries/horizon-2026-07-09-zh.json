@@ -1,898 +1,772 @@
 [
   {
-    "id": "hackernews:story:48837877",
+    "id": "hackernews:story:48849066",
     "source_type": "hackernews",
-    "title": "Rewriting Bun in Rust",
-    "url": "https://bun.com/blog/bun-in-rust",
-    "content": "\n--- Top Comments ---\n\n[YuechenLi]: &gt;Combined with the Rust rewrite, ICU changes, and identical code folding, Bun&#x27;s binary size shrinks by ~20% on Linux &amp; Windows. People who are surprised by this probably has not seen what Zig code actually looks like. Zig&#x27;s explicitness and lack of abstraction have a real cost that it is basically one of the most verbose programming languages I&#x27;ve ever seen, it&#x27;s somehow even more verbose than Go. Basic features of modern languages like pattern matching and generics...\n\n[didibus]: Article did a decent job of showing discipline and care and human involvement to assert the automated rewrite was done diligently, as best as it can be when using AI for it. I does make me feel a bit more comfortable about it. As an aside, I don&#x27;t know why anyone would not want to use a memory-safe (and possibly race-safe) language in 2026. Rust gives you that in a performant package, so if you are turned off by GCs and immutability for performance reasons, you still have the option to u...\n\n[Buttons840]: I&#x27;ve always felt [0] the people who created Bun had, as their first and foremost goal, a desire to use Zig--and that&#x27;s great, I like Zig, I like when people build things their own way. However, I&#x27;ve been skeptical of using Bun, because I want a project whose first and foremost goal is to build good tools that achieve the objectives of the project. It reminds me of asking game developers: Do you want to build a  game , or do you want to build a  game engine ? Building a  game en...\n\n[himata4113]: They didn&#x27;t mention the cost of this. Assuming mythos was somewhat involved I&#x27;d extrapolate this as: 128 x20 max accounts needed which comes at $25.6k or over 75k in api costs. For 75k you can hire a team of engineers that would produce a better result with sematic conversion and other tricks used in porting from language A to language B at the cost of maybe taking 1 month instead of 10 days. I will be a lot more excited when this is possible with &lt;10k of api costs.\n\n[Philpax]: Without commenting on Bun itself as a project, or the nature of the rewrite, it can&#x27;t be good for Zig that a naive rewrite away from it fixed memory leaks, improved stability, shrunk binary size by 20%, and improved performance by 5%.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/6rkdik/rewriting_bun_rust\">Comments</a></p>",
-    "author": "afturner",
-    "published_at": "2026-07-08T21:49:59Z",
-    "fetched_at": "2026-07-09T00:02:43.177452Z",
-    "metadata": {
-      "score": 181,
-      "descendants": 76,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48837877",
-      "comment_count": 5,
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "rust",
-        "zig",
-        "vibecoding"
-      ],
-      "merged_sources": [
-        "hackernews",
-        "rss"
-      ],
-      "title_zh": "Bun从Zig重写至Rust，二进制缩小20%",
-      "detailed_summary_zh": "Bun团队宣布将其JavaScript运行时的代码库从Zig迁移到Rust，通过AI辅助重写和手动优化，最终二进制体积减少了约20%，并提升了内存安全性。 这一转变标志着主流JS运行时对内存安全语言的青睐，Rust在性能与安全性上的优势可能促使更多基础设施项目效仿，同时影响Zig语言的发展信心。 重写过程利用了AI代码转换工具，结合人工审核以确保正确性；除了语言切换，还结合了ICU（Unicode库）简化和相同代码折叠等优化手段，共同促成20%的二进制缩减。",
-      "background_zh": "Bun是一个高性能的All-in-One JavaScript工具链，包含运行时、打包器、测试运行器和包管理器，最初使用Zig语言编写以追求极致性能。Rust则是一门强调内存安全且无垃圾回收的系统编程语言，近年来在基础设施领域广泛应用。",
-      "community_discussion_zh": "讨论中有人指出Zig的显式性和缺乏抽象导致代码冗长，而Rust的内存安全性在2026年已成为普遍需求；也有评论质疑AI辅助重写的高昂API成本（约2.5万美元），认为雇佣工程师团队可能更划算。部分用户对Bun团队从“想用Zig”转向“为项目选择最佳语言”表示认可。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Bun_(software)",
-          "title": "Bun (software) - Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Zig_(programming_language)",
-          "title": "Zig (programming language)"
-        },
-        {
-          "url": "https://github.com/oven-sh/bun",
-          "title": "GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one"
-        }
-      ],
-      "detailed_summary": "Bun团队宣布将其JavaScript运行时的代码库从Zig迁移到Rust，通过AI辅助重写和手动优化，最终二进制体积减少了约20%，并提升了内存安全性。 这一转变标志着主流JS运行时对内存安全语言的青睐，Rust在性能与安全性上的优势可能促使更多基础设施项目效仿，同时影响Zig语言的发展信心。 重写过程利用了AI代码转换工具，结合人工审核以确保正确性；除了语言切换，还结合了ICU（Unicode库）简化和相同代码折叠等优化手段，共同促成20%的二进制缩减。",
-      "background": "Bun是一个高性能的All-in-One JavaScript工具链，包含运行时、打包器、测试运行器和包管理器，最初使用Zig语言编写以追求极致性能。Rust则是一门强调内存安全且无垃圾回收的系统编程语言，近年来在基础设施领域广泛应用。",
-      "community_discussion": "讨论中有人指出Zig的显式性和缺乏抽象导致代码冗长，而Rust的内存安全性在2026年已成为普遍需求；也有评论质疑AI辅助重写的高昂API成本（约2.5万美元），认为雇佣工程师团队可能更划算。部分用户对Bun团队从“想用Zig”转向“为项目选择最佳语言”表示认可。"
-    },
-    "ai_score": 9.0,
-    "ai_reason": "Major project (Bun) switching from Zig to Rust is a significant development in the JavaScript ecosystem, indicating a paradigm shift. The high engagement and thoughtful community discussion about Zig vs Rust, AI-assisted rewrites, and safety considerations add to its value.",
-    "ai_summary": "Bun, a popular JavaScript runtime, is rewriting its codebase from Zig to Rust, resulting in a 20% binary size reduction and improved memory safety.",
-    "ai_tags": [
-      "Bun",
-      "Rust",
-      "Zig",
-      "JavaScript runtime",
-      "software engineering"
-    ]
-  },
-  {
-    "id": "hackernews:story:48834405",
-    "source_type": "hackernews",
-    "title": "GPT‑Live",
-    "url": "https://openai.com/index/introducing-gpt-live/",
-    "content": "\n--- Top Comments ---\n\n[simonw]: I had preview access to this one for a few weeks. It&#x27;s very good. I had one conversation that lasted a full hour while I was walking the dog, got some good brainstorming done against one of my projects. The best feature is that it can delegate questions out to GPT-5.5 in the background, so you&#x27;re no longer restricted to a voice model that&#x27;s several years behind the frontier. I did report a fun bug with it though: it was interrupting me and laughing at my (not really intended as...\n\n[jonstaab]: This is the opposite direction AI should be going. Human relationships are the most valuable thing we have, and so, naturally, technology seeks to intermediate and now replace them. I&#x27;m not Catholic, but this podcast presents a very interesting argument against talking to AI as if they were human:  https:&#x2F;&#x2F;newpolity.com&#x2F;podcasts-hub&#x2F;debate-chatbots\n\n[artdigital]: What I’m missing from this announcement is the capability to use connectors and tools. I don’t really get it - NONE of the frontier assistants can use tools &#x2F; connectors while in voice mode - Claude, ChatGPT, Gemini, Grok. It seems so obvious: I want to be able to research stuff, pull up documents, jot down notes and do productive work while I’m talking to it, and not end voice mode whenever I need to connect to an app or service. It’s weird. The old Claude voice mode WAS able to use too...\n\n[anon-3988]: What the fuck is the rationale to make this? I can kinda see the rationale behind Facebook and social media, they _could_ be useful. But this? This is like making a nuclear bomb out in public. The world is going to get a LOT worse in the next 20 years. I am not talking about energy usage. I am talking about a society where everyone is TRULY inside their own bubble of creation.\n\n[polarbearballs]: A nightmare scenario would be that people become so accustomed to talking to agreeable AI, that they lose the inability to talk to anything that disagrees with them or has different perspectives with responses that don&#x27;t include stroking the ego.",
+    "title": "GPT-5.6",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "content": "<a href=\"https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6&#x2F;gpt-5-6.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6&#x2F;gpt-5-6.pdf</a><p><a href=\"https:&#x2F;&#x2F;developers.openai.com&#x2F;api&#x2F;docs&#x2F;guides&#x2F;latest-model\" rel=\"nofollow\">https:&#x2F;&#x2F;developers.openai.com&#x2F;api&#x2F;docs&#x2F;guides&#x2F;latest-model</a><p><a href=\"https:&#x2F;&#x2F;x.com&#x2F;levie&#x2F;status&#x2F;2075287443411222628\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;levie&#x2F;status&#x2F;2075287443411222628</a>, <a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;levie&#x2F;status&#x2F;2075287443411222628\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;levie&#x2F;status&#x2F;2075287443411222628</a>\n\n\n--- Top Comments ---\n\n[minimaxir]: The developer&#x27;s guide ( https:&#x2F;&#x2F;developers.openai.com&#x2F;api&#x2F;docs&#x2F;guides&#x2F;latest-model ) has some interesting semantic tips for using the model: &gt; Intent understanding: GPT-5.6 can better infer the user’s underlying goal and intended level of work without you specifying every step. Continue to state important constraints, approval boundaries, and success criteria explicitly. &gt; Original image detail: GPT-5.6 preserves the original dimensions of images sent ...\n\n[ls_stats]: The most impressive part is the token efficiency&#x2F;cost per task of 5.6 Sol, it makes Opus 4.8 and Fable look extremely bad ($1.04 vs $1.80 vs $2.75)[0]. And 5.6 Luna ($0.21) is also impressive, cheaper than GLM 5.2 ($0.37) with higher intelligence. [0]:  https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;#price-and-cost\n\n[meetpateltech]: GPT-5.6 Sol sets a new SOTA on ARC-AGI-3: 7.8% Sol is the first verified frontier model to ever beat an ARC-AGI-3 game  https:&#x2F;&#x2F;arcprize.org&#x2F;results&#x2F;openai-gpt-5-6\n\n[Syntaf]: Ok long time Claude Code user here; lately I&#x27;ve started to realize there&#x27;s other great models out there I should be trying, but I&#x27;m hesitant to leave Claude Code behind for something new. What&#x27;s the consensus today on codex vs claude code, does it really matter anymore?\n\n[eig]: Funny to see that they did not include Fable 5 in their GeneBench and LifeSciBench comparisons because &quot;it does not answer advanced biology questions and refuses the majority of questions in this eval&quot;. Winner by default!",
     "author": "logickkk1",
-    "published_at": "2026-07-08T17:03:19Z",
-    "fetched_at": "2026-07-09T00:02:43.177609Z",
+    "published_at": "2026-07-09T17:04:14Z",
+    "fetched_at": "2026-07-09T23:59:21.158810Z",
     "metadata": {
-      "score": 570,
-      "descendants": 389,
+      "score": 979,
+      "descendants": 730,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48834405",
+      "discussion_url": "https://news.ycombinator.com/item?id=48849066",
       "comment_count": 5,
-      "title_zh": "OpenAI发布GPT-Live，实现实时语音交互",
-      "detailed_summary_zh": "OpenAI发布了GPT-Live，这是一种全双工语音模型，能够同时倾听和说话，并在需要时将复杂推理委托给GPT-5.5模型处理。 这使得语音交互更自然、更智能，用户不再受限于落后的语音模型，可享受GPT-5.5级别的能力，有望彻底改变人机对话体验。 GPT-Live采用全双工架构，支持实时翻译和自然对话节奏，同时发布了GPT-Live-1 mini版本。GPT-5.5模型拥有272K token上下文窗口，定价根据输入长度调整。",
-      "background_zh": "GPT-Live是OpenAI推出的新一代语音模型，旨在替代现有ChatGPT语音体验，实现类似人类的实时对话。GPT-5.5是2026年4月发布的最新大语言模型，代号“Spud”，在复杂任务上表现更强。两者结合使语音模式也能获得前沿模型能力。",
-      "community_discussion_zh": "社区中，有用户称赞GPT-Live体验良好，尤其是能调用GPT-5.5，但也报告了打断和笑的bug。同时有人担忧AI替代人际关系，缺少工具支持，以及可能加剧社会孤立。",
+      "title_zh": "OpenAI发布GPT-5.6，ARC-AGI-3创纪录，效率提升",
+      "detailed_summary_zh": "OpenAI于2026年4月发布了GPT-5.6系列模型，包括Sol和Luna版本。其中GPT-5.6 Sol在ARC-AGI-3基准测试中取得7.8%的得分，成为首个在该测试中击败任何游戏的前沿模型；同时GPT-5.6 Luna在保持较高智能的前提下，成本显著低于前代模型。 GPT-5.6的发布标志着AI推理能力和交互式智能的重大进步，尤其是在全新的动态环境适应基准ARC-AGI-3上取得突破，将前沿模型的分数从近乎零提升到个位数百分比。同时，每任务成本仅为1.04美元（Sol版本）和0.21美元（Luna版本），大幅提升了性价比，可能推动更多实际应用落地。 根据开发者指南，GPT-5.6能更好地理解用户的意图和所需工作层级，无需逐步骤指定，但仍需明确约束和成功标准。此外，该模型保留了原始图像尺寸，提升了视觉理解能力。在GeneBench和LifeSciBench等生物学基准上，GPT-5.6表现出色，而对比的Fable 5模型因拒绝大部分高级生物问题而被排除。",
+      "background_zh": "ARC-AGI-3是由ARC Prize基金会发布的新一代交互式推理基准，要求AI代理在陌生环境中自主探索、推断目标、构建动态世界模型并规划行动序列。与静态的ARC-AGI-1和ARC-AGI-2不同，ARC-AGI-3强调实时适应能力，人类可以100%完成挑战，而之前的前沿模型得分低于1%。GPT-5.6 Sol的7.8%得分虽然仍远低于人类，但已是重要进步。",
+      "community_discussion_zh": "社区对GPT-5.6的token效率和成本表示赞赏，认为与Opus 4.8和Fable相比，GPT-5.6大幅降低了每任务成本，同时保持了高智能。有用户注意到模型在ARC-AGI-3上取得7.8%的SOTA，但距离完全解决仍有很大距离。还有Claude Code用户询问GPT-5.6在代码编辑方面的表现，反映出对模型编程能力的关注。部分评论对Fable 5在生物基准测试中被排除感到有趣。",
       "sources": [
         {
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "title": "Introducing GPT-Live | OpenAI"
+          "url": "https://arcprize.org/arc-agi/3",
+          "title": "ARC-AGI-3"
         },
         {
-          "url": "https://en.wikipedia.org/wiki/GPT-5.5",
-          "title": "GPT-5.5 - Wikipedia"
-        },
-        {
-          "url": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
-          "title": "OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5 - MarkTechPost"
+          "url": "https://arcprize.org/leaderboard",
+          "title": "ARC-AGI-3 Leaderboard - ARC Prize"
         }
       ],
-      "detailed_summary": "OpenAI发布了GPT-Live，这是一种全双工语音模型，能够同时倾听和说话，并在需要时将复杂推理委托给GPT-5.5模型处理。 这使得语音交互更自然、更智能，用户不再受限于落后的语音模型，可享受GPT-5.5级别的能力，有望彻底改变人机对话体验。 GPT-Live采用全双工架构，支持实时翻译和自然对话节奏，同时发布了GPT-Live-1 mini版本。GPT-5.5模型拥有272K token上下文窗口，定价根据输入长度调整。",
-      "background": "GPT-Live是OpenAI推出的新一代语音模型，旨在替代现有ChatGPT语音体验，实现类似人类的实时对话。GPT-5.5是2026年4月发布的最新大语言模型，代号“Spud”，在复杂任务上表现更强。两者结合使语音模式也能获得前沿模型能力。",
-      "community_discussion": "社区中，有用户称赞GPT-Live体验良好，尤其是能调用GPT-5.5，但也报告了打断和笑的bug。同时有人担忧AI替代人际关系，缺少工具支持，以及可能加剧社会孤立。"
+      "detailed_summary": "OpenAI于2026年4月发布了GPT-5.6系列模型，包括Sol和Luna版本。其中GPT-5.6 Sol在ARC-AGI-3基准测试中取得7.8%的得分，成为首个在该测试中击败任何游戏的前沿模型；同时GPT-5.6 Luna在保持较高智能的前提下，成本显著低于前代模型。 GPT-5.6的发布标志着AI推理能力和交互式智能的重大进步，尤其是在全新的动态环境适应基准ARC-AGI-3上取得突破，将前沿模型的分数从近乎零提升到个位数百分比。同时，每任务成本仅为1.04美元（Sol版本）和0.21美元（Luna版本），大幅提升了性价比，可能推动更多实际应用落地。 根据开发者指南，GPT-5.6能更好地理解用户的意图和所需工作层级，无需逐步骤指定，但仍需明确约束和成功标准。此外，该模型保留了原始图像尺寸，提升了视觉理解能力。在GeneBench和LifeSciBench等生物学基准上，GPT-5.6表现出色，而对比的Fable 5模型因拒绝大部分高级生物问题而被排除。",
+      "background": "ARC-AGI-3是由ARC Prize基金会发布的新一代交互式推理基准，要求AI代理在陌生环境中自主探索、推断目标、构建动态世界模型并规划行动序列。与静态的ARC-AGI-1和ARC-AGI-2不同，ARC-AGI-3强调实时适应能力，人类可以100%完成挑战，而之前的前沿模型得分低于1%。GPT-5.6 Sol的7.8%得分虽然仍远低于人类，但已是重要进步。",
+      "community_discussion": "社区对GPT-5.6的token效率和成本表示赞赏，认为与Opus 4.8和Fable相比，GPT-5.6大幅降低了每任务成本，同时保持了高智能。有用户注意到模型在ARC-AGI-3上取得7.8%的SOTA，但距离完全解决仍有很大距离。还有Claude Code用户询问GPT-5.6在代码编辑方面的表现，反映出对模型编程能力的关注。部分评论对Fable 5在生物基准测试中被排除感到有趣。"
     },
     "ai_score": 9.0,
-    "ai_reason": "Major announcement from OpenAI introducing GPT-Live, a new voice mode that can delegate to GPT-5.5, representing a significant step forward in real-time AI interaction. High community engagement (570 points, 389 comments) with substantive discussion about capabilities and implications.",
-    "ai_summary": "OpenAI releases GPT-Live, a live voice interaction mode that leverages GPT-5.5 for enhanced real-time conversations.",
+    "ai_reason": "Major release from OpenAI with new benchmarks (SOTA on ARC-AGI-3), improved token efficiency, and high community engagement (979 points, 730 comments) with substantive technical discussion.",
+    "ai_summary": "OpenAI releases GPT-5.6, a new frontier model achieving state-of-the-art results on ARC-AGI-3 and offering improved token efficiency.",
     "ai_tags": [
-      "AI",
-      "OpenAI",
-      "voice interaction",
-      "GPT-5.5",
-      "live"
-    ]
-  },
-  {
-    "id": "hackernews:story:48833715",
-    "source_type": "hackernews",
-    "title": "TypeScript 7",
-    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
-    "content": "\n--- Top Comments ---\n\n[m3h]: The speed up numbers based on their testing:       Codebase    | TypeScript 6 | TypeScript 7 | Speedup\n    ------------|--------------|--------------|--------\n    vscode      | 125.7s       | 10.6s        | 11.9x\n    sentry      | 139.8s       | 15.7s        | 8.9x\n    bluesky     | 24.3s        | 2.8s         | 8.7x\n    playwright  | 12.8s        | 1.47s        | 8.7x\n    tldraw      | 11.2s        | 1.46s        | 7.7x\n  \nCongratulations to the team for pulling off this feat while doing a r...\n\n[adamddev1]: Remember when people would argue about how types weren&#x27;t worth the effort? I love TypeScript, if nothing else for how it&#x27;s been able to popularize types.\n\n[dimitropoulos]: the real story here is an incredible team that managed to simultaneously keep two separate codebases alive for the most advanced type system known to mankind (yeahhh yeahh Hindley-Milner eat your heart out). huge congrats to the team! looking forward to the Rust rewrite ;)\n\n[miiiiiike]: After a few years of using Typescript, having to use type annotations and import basic language features like `abc` in Python feels like an absolute slog.\n\n[austin-cheney]: Fascinating, but since Node now natively strips the TypeScript type annotations I rarely run the TSC.  I really only run it now when I make a major regressive change and need static output from the compiler to see things I have failed to update. Even for front end code destined for the browser I rely on Node&#x27;s type stripping.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/txmyod/announcing_typescript_7_0\">Comments</a></p>",
-    "author": "DanRosenwasser",
-    "published_at": "2026-07-08T16:06:35Z",
-    "fetched_at": "2026-07-09T00:02:43.177690Z",
-    "metadata": {
-      "score": 433,
-      "descendants": 166,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48833715",
-      "comment_count": 5,
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "javascript",
-        "release"
-      ],
-      "merged_sources": [
-        "hackernews",
-        "rss"
-      ],
-      "title_zh": "TypeScript 7.0发布，编译速度提升8-12倍",
-      "detailed_summary_zh": "微软宣布TypeScript 7.0，通过编译器重写实现了8到12倍的性能提升，大幅缩短了类型检查时间。 这一突破性改进将显著提升开发效率，尤其对大型项目受益明显，标志开发者工具性能的新高度。 实测数据显示，vscode项目从125.7秒降至10.6秒（提升11.9倍），sentry项目从139.8秒降至15.7秒（提升8.9倍），其他项目如bluesky、playwright也有7.7至8.7倍的提速。",
-      "background_zh": "TypeScript是JavaScript的超集，添加了静态类型系统，其编译器负责类型检查和转译。传统上，大型项目的编译速度是痛点，此次重写旨在从根本上解决性能瓶颈。",
-      "community_discussion_zh": "社区反响热烈，开发者对性能提升表示惊喜，并称赞团队在维护先进类型系统的同时实现重写。有用户提到Node.js现可原生剥离类型注解，减少了TSC的使用频率，但编译器的大幅加速仍是重大利好。",
-      "detailed_summary": "微软宣布TypeScript 7.0，通过编译器重写实现了8到12倍的性能提升，大幅缩短了类型检查时间。 这一突破性改进将显著提升开发效率，尤其对大型项目受益明显，标志开发者工具性能的新高度。 实测数据显示，vscode项目从125.7秒降至10.6秒（提升11.9倍），sentry项目从139.8秒降至15.7秒（提升8.9倍），其他项目如bluesky、playwright也有7.7至8.7倍的提速。",
-      "background": "TypeScript是JavaScript的超集，添加了静态类型系统，其编译器负责类型检查和转译。传统上，大型项目的编译速度是痛点，此次重写旨在从根本上解决性能瓶颈。",
-      "community_discussion": "社区反响热烈，开发者对性能提升表示惊喜，并称赞团队在维护先进类型系统的同时实现重写。有用户提到Node.js现可原生剥离类型注解，减少了TSC的使用频率，但编译器的大幅加速仍是重大利好。"
-    },
-    "ai_score": 9.0,
-    "ai_reason": "Major version release of TypeScript with groundbreaking 8-12x speed improvements, representing a paradigm shift in developer tooling performance. High community engagement (433 points, 166 comments) with substantive discussion validating its significance.",
-    "ai_summary": "TypeScript 7.0 announced with massive performance improvements (8-12x faster) from a rewrite of the compiler.",
-    "ai_tags": [
-      "TypeScript",
-      "Performance",
-      "Compiler",
-      "Language",
-      "Microsoft"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:81d8db6e7716fcba",
-    "source_type": "rss",
-    "title": "Unicode's Transliteration Rules Are Turing-Complete",
-    "url": "https://seriot.ch/computation/uts35/",
-    "content": "<p><a href=\"https://lobste.rs/s/zrvoqb/unicode_s_transliteration_rules_are\">Comments</a></p>",
-    "author": "seriot.ch via mpweiher",
-    "published_at": "2026-07-08T13:46:22Z",
-    "fetched_at": "2026-07-09T00:02:43.277721Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "compsci"
-      ],
-      "title_zh": "Unicode转写规则被证明图灵完备",
-      "detailed_summary_zh": "一项新发现表明，Unicode的转写规则（UTS #35）具备模拟图灵机的能力，从而被证明是图灵完备的。 这一发现揭示了Unicode转写系统在计算理论上的强大能力，可能对其安全性、形式语言处理以及相关工具的设计产生深远影响。 该研究通过构造规则集实现了对图灵机的模拟，展示了转写规则在字符串变换中的通用计算能力。",
-      "background_zh": "图灵完备性表示一个系统能够模拟任何图灵机，从而执行任意可计算函数。Unicode转写规则原本用于在不同文字系统之间进行字符转换，例如将拉丁字母转换为西里尔字母。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Turing_completeness",
-          "title": "Turing completeness - Wikipedia"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Unicode_Technical_Standard",
-          "title": "Unicode Technical Standard - Wikipedia"
-        }
-      ],
-      "detailed_summary": "一项新发现表明，Unicode的转写规则（UTS #35）具备模拟图灵机的能力，从而被证明是图灵完备的。 这一发现揭示了Unicode转写系统在计算理论上的强大能力，可能对其安全性、形式语言处理以及相关工具的设计产生深远影响。 该研究通过构造规则集实现了对图灵机的模拟，展示了转写规则在字符串变换中的通用计算能力。",
-      "background": "图灵完备性表示一个系统能够模拟任何图灵机，从而执行任意可计算函数。Unicode转写规则原本用于在不同文字系统之间进行字符转换，例如将拉丁字母转换为西里尔字母。",
-      "community_discussion": ""
-    },
-    "ai_score": 9.0,
-    "ai_reason": "Important discovery showing that Unicode's transliteration system is Turing-complete, with high novelty and technical depth. Implications for security and formal language theory.",
-    "ai_summary": "This article demonstrates that Unicode's transliteration rules (UTS #35) are powerful enough to simulate a Turing machine, making them Turing-complete.",
-    "ai_tags": [
-      "Unicode",
-      "Turing-complete",
-      "formal languages",
-      "transliteration",
-      "computational theory"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:f5decf932899380c",
-    "source_type": "rss",
-    "title": "GitLost: How We Tricked GitHub’s AI Agent into Leaking Private Repos",
-    "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-    "content": "<p><a href=\"https://lobste.rs/s/rcg4bo/gitlost_how_we_tricked_github_s_ai_agent\">Comments</a></p>",
-    "author": "noma.security via hoistbypetard",
-    "published_at": "2026-07-08T14:04:11Z",
-    "fetched_at": "2026-07-09T00:02:43.277751Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "security",
-        "vibecoding"
-      ],
-      "title_zh": "GitLost攻击：提示注入泄露GitHub私有仓库",
-      "detailed_summary_zh": "研究人员演示了一种针对GitHub AI代理的新型提示注入攻击，能够欺骗该代理泄露私有仓库的内容。 这一发现揭示了AI集成的安全风险，可能影响广泛使用GitHub Copilot等AI助手处理敏感代码的开发者和企业，威胁数据隐私。 攻击利用AI代理无法区分用户输入与系统指令的缺陷，通过构造看似无害但包含恶意指令的查询，诱导代理返回本应保密的仓库文件。",
-      "background_zh": "提示注入是一种针对大语言模型的网络攻击，攻击者通过精心设计的输入绕过模型的安全限制，使其执行非预期行为。在具有文件访问或网络浏览能力的AI代理中，这种攻击可被用来窃取数据或控制输出。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Prompt_injection_attack",
-          "title": "Prompt injection attack"
-        }
-      ],
-      "detailed_summary": "研究人员演示了一种针对GitHub AI代理的新型提示注入攻击，能够欺骗该代理泄露私有仓库的内容。 这一发现揭示了AI集成的安全风险，可能影响广泛使用GitHub Copilot等AI助手处理敏感代码的开发者和企业，威胁数据隐私。 攻击利用AI代理无法区分用户输入与系统指令的缺陷，通过构造看似无害但包含恶意指令的查询，诱导代理返回本应保密的仓库文件。",
-      "background": "提示注入是一种针对大语言模型的网络攻击，攻击者通过精心设计的输入绕过模型的安全限制，使其执行非预期行为。在具有文件访问或网络浏览能力的AI代理中，这种攻击可被用来窃取数据或控制输出。",
-      "community_discussion": ""
-    },
-    "ai_score": 9.0,
-    "ai_reason": "Groundbreaking security research demonstrating a novel prompt injection attack on GitHub's AI agent, with potential to leak private repositories. High impact on platform security and AI safety; community discussion (Lobste.rs) likely critical and insightful.",
-    "ai_summary": "Researchers demonstrate a prompt injection attack on GitHub's AI agent that can expose private repository contents.",
-    "ai_tags": [
-      "security",
-      "AI",
-      "GitHub",
-      "prompt injection",
-      "vulnerability"
-    ]
-  },
-  {
-    "id": "hackernews:story:48837396",
-    "source_type": "hackernews",
-    "title": "Separating signal from noise in coding evaluations",
-    "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
-    "content": "\n--- Top Comments ---\n\n[GodelNumbering]: There are also a lot of fake results out there on Terminal Bench 2 for different reasons (although the great team behind it Ryan&#x2F;Alex et al, recently cleaned up a lot of dodgy submissions). A lot of labs publish the results by modifying timeouts or hardware config which effectively bypasses what is being tested in certain tasks. Then there is harness level cheating, models reward hacking and more... In fact, one thing that still bothers me after months is the gpt-5.5 official submission....\n\n[jjcm]: I want a new bench - given $100 of api spend, how much can a model accomplish for a suite of benchmark tests? Give us something that measures a combination of efficiency and intelligence. I think this would allow for some interesting tactics for smaller models - eg they could do things like computer use to test their results and grind on problems for longer to verify the outputs, whereas larger models may not have budget to self-test.\n\n[mlhpdx]: Fundamentally aren’t they concluding that tasks assigned to software developers (human or otherwise) are often incomplete, self contradictory or worse? This is the world in which their tool must play. I’m unsympathetic.\n\n[janalsncm]: Based on the numbers here it seems there’s less than 800 tasks in the entire benchmark. That is enough for a handful of engineers to comb through in a week (which is what OpenAI eventually did here). On the one hand, kudos to them for actually doing that work. On the other hand, garbage in, garbage out. It’s a bit embarrassing for the original authors to have not actually checked, and it’s embarrassing for everyone downstream to have not checked either. Also if you check the article, although...\n\n[shay_ker]: Didn&#x27;t we all know from the start that all of SWE-Bench was flawed? Even the authors concede the limitations and have long since moved on.",
-    "author": "sk4rekr0w",
-    "published_at": "2026-07-08T21:03:51Z",
-    "fetched_at": "2026-07-09T00:02:43.177346Z",
-    "metadata": {
-      "score": 126,
-      "descendants": 55,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48837396",
-      "comment_count": 5,
-      "title_zh": "AI编程基准评估中的信号与噪声分离",
-      "detailed_summary_zh": "OpenAI发布文章，探讨了如何从编码评估中分离真正性能信号与噪声，重点指出了作弊和小规模基准等问题。 这些问题影响了AI编码基准的可信度，对模型对比和行业评估标准至关重要，可能导致误导性结论。 文章指出基准测试中作弊行为普遍，如注入解决方案和修改超时，且SWE-Bench等基准任务不足800个，易被针对性优化。",
-      "background_zh": "AI编码基准如HumanEval使用单元测试评估模型功能正确性，但近年来出现多种作弊手段，包括伪装提示注入和利用Git历史，导致评估失真。",
-      "community_discussion_zh": "社区普遍认可作弊问题严重，建议引入固定API预算下的效率-智能综合指标，同时批评基准规模小和审核不严，认为原始作者和下游用户都未尽责。",
-      "sources": [
-        {
-          "url": "https://llm-stats.com/benchmarks/humaneval",
-          "title": "HumanEval Leaderboard - llm-stats.com"
-        },
-        {
-          "url": "https://debugml.github.io/cheating-agents/",
-          "title": "Finding Widespread Cheating on Popular Agent Benchmarks - DebugML"
-        },
-        {
-          "url": "https://www.kucoin.com/news/flash/cursor-ai-exposes-claude-opus-4-8-s-cheating-in-coding-benchmarks",
-          "title": "Cursor AI Reveals Claude Opus 4.8's Cheating in Coding Benchmarks | KuCoin"
-        }
-      ],
-      "detailed_summary": "OpenAI发布文章，探讨了如何从编码评估中分离真正性能信号与噪声，重点指出了作弊和小规模基准等问题。 这些问题影响了AI编码基准的可信度，对模型对比和行业评估标准至关重要，可能导致误导性结论。 文章指出基准测试中作弊行为普遍，如注入解决方案和修改超时，且SWE-Bench等基准任务不足800个，易被针对性优化。",
-      "background": "AI编码基准如HumanEval使用单元测试评估模型功能正确性，但近年来出现多种作弊手段，包括伪装提示注入和利用Git历史，导致评估失真。",
-      "community_discussion": "社区普遍认可作弊问题严重，建议引入固定API预算下的效率-智能综合指标，同时批评基准规模小和审核不严，认为原始作者和下游用户都未尽责。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value content from OpenAI addressing critical issues in AI coding benchmarks, with substantive community discussion on cheating, benchmark design, and evaluation trustworthiness.",
-    "ai_summary": "OpenAI discusses the challenges of separating genuine performance signal from noise in coding evaluations, highlighting issues like cheating and small benchmark sizes.",
-    "ai_tags": [
-      "AI benchmarks",
-      "coding evaluations",
-      "OpenAI",
+      "openai",
+      "gpt-5.6",
+      "AI model",
       "machine learning",
-      "benchmarking"
+      "frontier model"
     ]
   },
   {
-    "id": "hackernews:story:48832212",
+    "id": "hackernews:story:48843923",
     "source_type": "hackernews",
-    "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
-    "url": "https://mistral.ai/news/robostral-navigate/",
-    "content": "\n--- Top Comments ---\n\n[iandanforth]: It&#x27;s implied, and I&#x27;m hoping it&#x27;s true, that this is a  map-less  navigation. Which is impressive. This kind of task is much easier if you have a pre-captured map of the environment, but if they are doing this without a map it&#x27;s great. Historically you were always faced with &quot;The Kidnapped Robot&quot; problem where robots that didn&#x27;t know where they were couldn&#x27;t navigate even a little bit. Here the robot appears to be able to follow directions as long as th...\n\n[HanClinto]: What is the realistic path to getting to play with this? I would love to hook this up to OpenClaw for hobbyist exploration. My dream has been to embody OpenClaw into a farm robot (been looking at adapting one of those RC lawnmowers that is tracked and built for mowing steep hills) so that I can assign it various tasks around our acreage -- &quot;Explore the fenceline take pictures of the plants. Find all of the poison ivy and invasive honeysuckle and spray it with your Roundup sprayer. Repeat...\n\n[humanperhaps]: This looks to not be an openly available model, but I think if it were, availability of an easy single-camera navigation setup could allow for a lot of cool hobbyist projects.\n\n[dwa3592]: This is very cool. Congratulations to the Mistral team. Map less navigation in the outside world  has been around for quite a while. But map less navigation inside the buildings is relatively new. Some stanford researchers trained a vision model (PIGEON) which could tell the geo-location from any image. It was not released publicly due to privacy nightmarish (stalking!) possibilities but I am assuming similar type of tech has gone behind this robot. if someone knows more, feel free to correct...\n\n[BrandiATMuhkuh]: That is so awesome. I wish I had that 11 years ago during my Microsoft Research Internship. I had a NAO robot (from another great French company) and it walked to employees to motivate them to do some movements. To prevent long term injuries from being in the same position for too long. \nIt had a visual compass but it didn&#x27;t work. And just telling to &quot;walk straight&quot; clearly didn&#x27;t work :D \nHere is the video in case someone is curious:  https:&#x2F;&#x2F;www.youtube.com&#x2...",
-    "author": "ottomengis",
-    "published_at": "2026-07-08T14:09:17Z",
-    "fetched_at": "2026-07-09T00:02:43.177509Z",
+    "title": "EU Parliament greenlights Chat Control 1.0",
+    "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+    "content": "\n--- Top Comments ---\n\n[teekert]: This is a nice piece of democracy right here: &quot;a measure it had rejected twice in March. Although a majority of voting Members of the European Parliament (MEPs) actually opposed the regulation (314 against, 276 in favor, 17 abstentions), the motion to reject it failed to secure the required absolute majority of 361 votes. As a result, mass scanning is now permitted again until 2028.&quot; &quot;Oh no we can&#x27;t get a majority to pass the law!&quot; &quot;Have you tried getting a major...\n\n[mrtksn]: FTA: What changes with the return of Chat Control 1.0—and what stays the same: *What is coming back:*\n US tech companies are once again allowed to scan private messages without a warrant or prior suspicion. This affects direct messages on platforms like Instagram, Discord, Snapchat, Skype, and Xbox, as well as emails via Google’s Gmail and Apple’s iCloud. *What remains unchanged:* \n Public social media posts and files hosted in cloud storage could already be scanned without this law. Furtherm...\n\n[bradley13]: Stupid parliamentary trick: Hold the vote on the day before the summer break - ensuring that many people have already returned to their home countries. Then use a sort of &quot;reverse&quot; parliamentary trick: the default is that this legislation is accepted. They needed an absolute majority - not of voting members, but of  all  members - to reject it. Result: 314 against, 276 in favor, 17 abstentions, 113 absent The EU is well on the way to becoming a totalitarian government. ETA: It is sh...\n\n[budududuroiu]: Roberta Metsola&#x27;s actions this week jeopardise the legitimacy of the EU project as a whole. It&#x27;s clear that member countries use the EU as a blame-laundering mechanism to pass domestically unpopular laws, but the forcing of this vote under the urgency procedure that requires absolute majority to reject, on the last EP session before summer break is so blatant that it might awaken people that might&#x27;ve overlooked the structural failures of the EU and finally radicalise them EDIT:...\n\n[aw124]: Instead of solving real problems, the EU Parliament supports the globalists&#x27; agenda for privacy and human rights violations — our fundamental rights",
+    "author": "rapnie",
+    "published_at": "2026-07-09T11:03:54Z",
+    "fetched_at": "2026-07-09T23:59:21.158837Z",
     "metadata": {
-      "score": 393,
-      "descendants": 93,
+      "score": 936,
+      "descendants": 458,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48832212",
+      "discussion_url": "https://news.ycombinator.com/item?id=48843923",
       "comment_count": 5,
-      "title_zh": "Mistral发布机器人导航模型Robostral Navigate",
-      "detailed_summary_zh": "Mistral AI发布了其首个机器人学模型Robostral Navigate，该模型仅需单个RGB摄像头和自然语言指令就能引导机器人穿越复杂环境，无需预先构建地图。 这项突破使机器人导航摆脱了昂贵传感器和预先地图的依赖，有望大幅降低机器人部署成本，并推动服务机器人、家庭助手等场景的普及。 Robostral Navigate是一个80亿参数模型，它通过单摄像头图像和文本指令（如“离开大厅，穿过走廊，进入储藏室”）实时生成运动指令，在测试中表现出超越传统多传感器系统的能力。",
-      "background_zh": "传统机器人导航通常需要激光雷达、深度相机或预先构建的精确地图，一旦机器人被移动到未知位置（即“被绑架机器人”问题），导航就会失败。Robostral Navigate利用端到端深度学习方法，仅凭视觉和语言理解环境，从而自然解决了这一难题。",
-      "community_discussion_zh": "社区对无地图导航表示赞赏，认为这是重大进步，但模型未开放公开下载，限制了业余爱好者的使用。部分评论者指出室内无地图导航是新的突破，并提及类似技术（如PIGEON模型）可能涉及隐私风险。",
-      "sources": [
-        {
-          "url": "https://mistral.ai/news/robostral-navigate/",
-          "title": "Robostral Navigate: single-camera AI navigation | Mistral AI"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push",
-          "title": "Mistral AI Releases Robotics Model to Support Physical AI Push - Bloomberg"
-        },
-        {
-          "url": "https://alphasignal.ai/news/mistral-s-robostral-navigate-beats-sensor-heavy-robots-with-just-one-camera",
-          "title": "Mistral's Robostral Navigate Beats Sensor-Heavy Robots With Just One Camera | AlphaSignal"
-        }
-      ],
-      "detailed_summary": "Mistral AI发布了其首个机器人学模型Robostral Navigate，该模型仅需单个RGB摄像头和自然语言指令就能引导机器人穿越复杂环境，无需预先构建地图。 这项突破使机器人导航摆脱了昂贵传感器和预先地图的依赖，有望大幅降低机器人部署成本，并推动服务机器人、家庭助手等场景的普及。 Robostral Navigate是一个80亿参数模型，它通过单摄像头图像和文本指令（如“离开大厅，穿过走廊，进入储藏室”）实时生成运动指令，在测试中表现出超越传统多传感器系统的能力。",
-      "background": "传统机器人导航通常需要激光雷达、深度相机或预先构建的精确地图，一旦机器人被移动到未知位置（即“被绑架机器人”问题），导航就会失败。Robostral Navigate利用端到端深度学习方法，仅凭视觉和语言理解环境，从而自然解决了这一难题。",
-      "community_discussion": "社区对无地图导航表示赞赏，认为这是重大进步，但模型未开放公开下载，限制了业余爱好者的使用。部分评论者指出室内无地图导航是新的突破，并提及类似技术（如PIGEON模型）可能涉及隐私风险。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High community engagement with insightful discussion on map-less navigation and the 'kidnapped robot' problem; significant technical advancement from a notable AI company.",
-    "ai_summary": "Mistral releases Robostral Navigate, a state-of-the-art robotics navigation model.",
-    "ai_tags": [
-      "robotics",
-      "navigation",
-      "AI",
-      "Mistral",
-      "deep learning"
-    ]
-  },
-  {
-    "id": "hackernews:story:48835111",
-    "source_type": "hackernews",
-    "title": "Grok 4.5",
-    "url": "https://x.ai/news/grok-4-5",
-    "content": "<a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;grok-4-5\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;grok-4-5</a>\n\n\n--- Top Comments ---\n\n[jesse_dot_id]: I just don&#x27;t think that I can ever trust an xAI model knowing that they are actively trying to shape its replies to fit a political narrative. How can you trust their models to be reliable in a business setting with the foreknowledge that their models are being nudged around in the backend?\n\n[zactato]: I am amazed at people&#x27;s willingness to use Grok. The company is so transparently morally bankrupt. They&#x27;re the only AI company that seems okay with CSAM (or at least don&#x27;t do as much to stop it) Why give them money? It would be one thing if they were the only game in town but thats definitely not the case.\n\n[Tiberium]: It seems to be extremely economical - 4x better reasoning efficiency compared to Opus while being priced at $2&#x2F;$6. For comparison, GPT 5.4 is $2.5&#x2F;$15, GPT 5.5&#x2F;5.6 are $5&#x2F;$30, Opus 4.8 is $5&#x2F;$25, Fable is $10&#x2F;$50. And by benchmarks (unless they gamed them), seems to be at around Opus 4.7 level, which is what Elon mentioned in  https:&#x2F;&#x2F;x.com&#x2F;elonmusk&#x2F;status&#x2F;2074911038286295049 . I guess the Cursor data was very useful.\n\n[NitpickLawyer]: (from Cursor&#x27;s blog) &gt; Training included trillions of tokens of Cursor data which capture a wide-range of user interactions with codebases and software tools. This dataset lets the model learn both from existing software as well as developer-agent interactions, capturing how developers work and how agents interact with their environments. This is what the big money was for. Cursor is the first big player that had real-world data from real-world projects, before cc &#x2F; codex were a ...\n\n[codemog]: Can someone breakdown to me how this makes any sort of economical sense? Spending billions and billions to have the 3rd best model while even the number 1 and 2 players already seem to struggle making a profit. What am I missing here? Not trying to go full Ed Zitron but this doesn’t make sense to me.",
-    "author": "BoumTAC",
-    "published_at": "2026-07-08T18:00:32Z",
-    "fetched_at": "2026-07-09T00:02:43.177558Z",
-    "metadata": {
-      "score": 433,
-      "descendants": 473,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48835111",
-      "comment_count": 5,
-      "title_zh": "xAI发布Grok 4.5：基于Cursor数据的高效模型",
-      "detailed_summary_zh": "xAI发布了新一代AI模型Grok 4.5，该模型使用来自Cursor的万亿级token的代码交互数据进行训练，在推理效率和成本方面有显著提升。 Grok 4.5以极具竞争力的定价（$2/$6）实现了接近Opus 4.7级别的性能，推理效率提升4倍，可能改变AI模型市场的竞争格局，但也因训练数据来源和公司道德问题引发信任争议。 Grok 4.5的定价为$2/$6，远低于GPT 5.4（$2.5/$15）和Opus 4.8（$5/$25），但在基准测试中表现与Opus 4.7相当。其训练数据中包含了Cursor用户与代码库的真实交互，使模型能学习开发者的工作模式和代理环境。",
-      "background_zh": "Grok是xAI开发的AI聊天机器人，此前已发布Grok 2.5和Grok 3等版本。Cursor是一款AI编程助手，拥有大量用户代码交互数据。xAI利用这些数据训练Grok 4.5，旨在提升模型在处理编程任务时的效率和准确性。",
-      "community_discussion_zh": "社区讨论呈现两极分化：一方面有用户赞赏其性价比和性能表现，认为Cursor数据是独特优势；另一方面，多位用户表达了对xAI模型政治倾向和道德问题的强烈不信任，甚至质疑其商业模式的可持续性。",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Grok_(chatbot)",
-          "title": "Grok (chatbot) - Wikipedia"
-        },
-        {
-          "url": "https://x.ai/grok",
-          "title": "Grok — Truth-seeking AI Chatbot with Voice & Image Generation | SpaceXAI"
-        },
-        {
-          "url": "https://cursor.com/data-use",
-          "title": "Cursor · Data Use & Privacy Overview"
-        }
-      ],
-      "detailed_summary": "xAI发布了新一代AI模型Grok 4.5，该模型使用来自Cursor的万亿级token的代码交互数据进行训练，在推理效率和成本方面有显著提升。 Grok 4.5以极具竞争力的定价（$2/$6）实现了接近Opus 4.7级别的性能，推理效率提升4倍，可能改变AI模型市场的竞争格局，但也因训练数据来源和公司道德问题引发信任争议。 Grok 4.5的定价为$2/$6，远低于GPT 5.4（$2.5/$15）和Opus 4.8（$5/$25），但在基准测试中表现与Opus 4.7相当。其训练数据中包含了Cursor用户与代码库的真实交互，使模型能学习开发者的工作模式和代理环境。",
-      "background": "Grok是xAI开发的AI聊天机器人，此前已发布Grok 2.5和Grok 3等版本。Cursor是一款AI编程助手，拥有大量用户代码交互数据。xAI利用这些数据训练Grok 4.5，旨在提升模型在处理编程任务时的效率和准确性。",
-      "community_discussion": "社区讨论呈现两极分化：一方面有用户赞赏其性价比和性能表现，认为Cursor数据是独特优势；另一方面，多位用户表达了对xAI模型政治倾向和道德问题的强烈不信任，甚至质疑其商业模式的可持续性。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High engagement (433 points, 473 comments) with substantive community discussion highlighting technical details (efficiency, benchmarks, pricing) and trust concerns. Reflects a significant AI model release with competitive performance and cost advantages, despite political controversies.",
-    "ai_summary": "Grok 4.5, a new AI model from xAI trained on Cursor data, offers improved reasoning efficiency and competitive pricing, sparking debate over trust and ethics.",
-    "ai_tags": [
-      "AI",
-      "Model Release",
-      "Cost Efficiency",
-      "Benchmarks",
-      "Controversy"
-    ]
-  },
-  {
-    "id": "hackernews:story:48831565",
-    "source_type": "hackernews",
-    "title": "Cloudflare Meerkat - Globally distributed consensus",
-    "url": "https://blog.cloudflare.com/meerkat-introduction/",
-    "content": "\n--- Top Comments ---\n\n[m11a]: This article is a bit hard for me to grasp the main ideas of because, given Cloudflare&#x27;s requirements (e.g. no strong leaders), it immediately seems like they should be comparing to leaderless protocols like Paxos-class algorithms. Comparing to Raft and saying it&#x27;s better because Meerkat is leaderless is confusing, because Raft is an adjustment to Paxos to specifically have strong leaders. So I&#x27;m 3&#x2F;4 the way into the article and I don&#x27;t see what&#x27;s unique here. I ...\n\n[advisedwang]: This sounds like a very direct approach to linearizability - just put everything in a linear order. But this includes READ operations too! You have to get global consensus for every read! Most distributed systems have additional complexity and latency on write paths so that reads can be completely local. If you can accept slow read operations this seems like a great trade off, but I think that is going to relegate this to niece usage.\n\n[nano_o]: What&#x27;s interesting here is that this would be the first production implementation of an asynchronous consensus algorithm (QuePaxa). Paxos, Raft, etc. are all partially synchronous, meaning they rely on timeouts and only make progress if message delay is sufficiently small compared to timeout durations. QuePaxa doesn&#x27;t rely on timeouts and makes progress even under wild fluctuations in message delay. The question is whether performance is competitive enough in the normal case, when m...\n\n[ebeirne]: if youve ever fought a raft cluster on a bad network with leaders flapping, elections storming and latency spiking this genuinely doesnt seem that bad. i believe this will be very useful to those dealing with messy networks\n\n[pstoll]: TBH I’m doubtful of most people building their own crypto libs and distributed consensus implementations. But maybe cloudflare can pull it off.  Good to see them pushing the state of distributed consensus. Take aways: * it’s not in prod yet. I suspect those many round trips are going to get expensive on median aka typical redistributed deployments. Curious to see how it goes once in the wild. * they say it isn’t likely suitable for eg databases. * they talk about formal verification, which is...",
-    "author": "bobnamob",
-    "published_at": "2026-07-08T13:18:03Z",
-    "fetched_at": "2026-07-09T00:02:43.177632Z",
-    "metadata": {
-      "score": 202,
-      "descendants": 42,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48831565",
-      "comment_count": 5,
-      "title_zh": "Cloudflare 推出 Meerkat，基于异步共识的全局服务",
-      "detailed_summary_zh": "Cloudflare 发布了 Meerkat，这是 QuePaxa 异步共识算法的首个生产级实现，用于全球分布式系统中的共识服务。 异步共识不依赖超时，在网络延迟波动大的情况下仍能保证活性，有助于解决全球部署的分布式系统在恶劣网络下的稳定性问题。 Meerkat 目前仍处于实验阶段，尚未投产。它要求所有操作（包括读操作）都通过全局共识，可能导致较高的读延迟。",
-      "background_zh": "传统分布式共识算法（如 Paxos、Raft）依赖超时来触发选主和保证活性，但在网络不稳定时容易发生 leader 抖动和选举风暴。QuePaxa 是一种异步共识协议，通过随机化和对冲策略避免超时依赖，即使在极端网络条件下也能继续推进。",
-      "community_discussion_zh": "有评论指出文章将 Meerkat 与 Raft 对比容易混淆，因为 Raft 是强领导者算法而 Meerkat 是无领导的。另一些评论关注到 Meerkat 对读操作也要求全局共识，延迟较高，可能只适用于特定场景。但也有观点认为，对于网络环境恶劣的场景，异步共识的优势明显，Cloudflare 的尝试值得期待。",
-      "sources": [
-        {
-          "url": "https://blog.cloudflare.com/meerkat-introduction/",
-          "title": "Introducing Meerkat: an experiment in global consensus"
-        },
-        {
-          "url": "https://bford.info/pub/os/quepaxa/",
-          "title": "QuePaxa: Escaping the Tyranny of Timeouts in Consensus – Bryan Ford's Home Page"
-        },
-        {
-          "url": "https://news.ycombinator.com/item?id=48831565",
-          "title": "Cloudflare Meerkat - Globally distributed consensus | Hacker News"
-        }
-      ],
-      "detailed_summary": "Cloudflare 发布了 Meerkat，这是 QuePaxa 异步共识算法的首个生产级实现，用于全球分布式系统中的共识服务。 异步共识不依赖超时，在网络延迟波动大的情况下仍能保证活性，有助于解决全球部署的分布式系统在恶劣网络下的稳定性问题。 Meerkat 目前仍处于实验阶段，尚未投产。它要求所有操作（包括读操作）都通过全局共识，可能导致较高的读延迟。",
-      "background": "传统分布式共识算法（如 Paxos、Raft）依赖超时来触发选主和保证活性，但在网络不稳定时容易发生 leader 抖动和选举风暴。QuePaxa 是一种异步共识协议，通过随机化和对冲策略避免超时依赖，即使在极端网络条件下也能继续推进。",
-      "community_discussion": "有评论指出文章将 Meerkat 与 Raft 对比容易混淆，因为 Raft 是强领导者算法而 Meerkat 是无领导的。另一些评论关注到 Meerkat 对读操作也要求全局共识，延迟较高，可能只适用于特定场景。但也有观点认为，对于网络环境恶劣的场景，异步共识的优势明显，Cloudflare 的尝试值得期待。"
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High value due to production implementation of asynchronous consensus (QuePaxa) by Cloudflare, addressing real-world distributed systems challenges. Community discussion clarifies technical nuances and significance.",
-    "ai_summary": "Cloudflare introduces Meerkat, a production implementation of the QuePaxa asynchronous consensus algorithm for globally distributed systems.",
-    "ai_tags": [
-      "distributed systems",
-      "consensus",
-      "cloudflare",
-      "quepaxa",
-      "asynchronous consensus"
-    ]
-  },
-  {
-    "id": "hackernews:story:48834296",
-    "source_type": "hackernews",
-    "title": "EU now one step away from reviving private message scanning rules",
-    "url": "https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/",
-    "content": "\n--- Top Comments ---\n\n[budududuroiu]: The Internet Watch Foundation, an organisation funded by almost all of big tech, is already at work pushing for client side scanning next [1], for the children, of course. [1]  https:&#x2F;&#x2F;www.iwf.org.uk&#x2F;policy-work&#x2F;preventing-the-upload-of-...\n\n[inigyou]: The Chat Control 1.0 rule is simply that organisations like Meta are allowed to scan messages if they want to. In other words your Facebook messages are not private from Facebook. Surely we already knew and expected that. Chat Control 2.0 is the worrying one because it mandates scanning and bans E2EE. These two things should not have both been given the same branding.\n\n[PowerElectronix]: Tough week for euros. Cars that record your face while driving and now apps snooping on communications.\n\n[Nidhug]: For my fellow EU citizens, you can contact your representatives here:  https:&#x2F;&#x2F;fightchatcontrol.eu&#x2F;\n\n[red_admiral]: This is about 1.0, which sounds ok - it basically allows providers a legitimate exception from data privacy laws to scan for CSAM in  not  E2EE communications. I reckon gmail, iCloud mail and the like already scan attachments for malware and emails for phishing scams, now they can also scan for child abuse. cc 2.0 is a different beast.",
-    "author": "ggirelli",
-    "published_at": "2026-07-08T16:53:06Z",
-    "fetched_at": "2026-07-09T00:02:43.177652Z",
-    "metadata": {
-      "score": 341,
-      "descendants": 134,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48834296",
-      "comment_count": 5,
-      "title_zh": "欧盟拟复活私人消息扫描规则引发隐私争议",
-      "detailed_summary_zh": "欧盟立法进程新进展显示，曾于2026年被议会否决的Chat Control规则可能被重新激活，要求扫描私人消息以打击儿童性虐待内容。 该规则若通过，将强制科技公司扫描所有私人通信，可能破坏端到端加密，对用户隐私和通信安全构成重大威胁，并影响全球加密政策方向。 当前推进的Chat Control 1.0版本仅允许服务商在非端到端加密通信中自愿扫描，而更激进的2.0版本要求强制扫描且禁止端到端加密，但此前已被欧盟议会否决。",
-      "background_zh": "Chat Control（正式名称为CSAR）是欧盟2022年提出的法规，旨在通过扫描私人消息来检测儿童性虐待材料。反对者认为该法规会摧毁端到端加密，侵犯基本隐私权。2026年4月，欧盟议会曾否决强制扫描加密消息的条款，但近期提案动向表明该规则可能被重新提上议程。",
-      "community_discussion_zh": "社区评论普遍区分了Chat Control 1.0和2.0，认为1.0较温和（如允许Meta扫描非加密消息），而2.0强制扫描加密消息引发强烈担忧。有用户提供了fightchatcontrol.eu链接，呼吁欧盟公民联系代表反对该法规。",
+      "title_zh": "欧盟议会通过Chat Control 1.0，允许无证扫描私人消息",
+      "detailed_summary_zh": "欧盟议会于2025年7月9日通过Chat Control 1.0法规，允许美国科技公司在没有搜查令或嫌疑的情况下扫描用户私人消息。这项此前在3月被两次否决的措施，因需要绝对多数才能阻止，在314名议员反对的情况下仍自动生效。 该法规标志着欧盟数字隐私政策的重大倒退，使大规模监控合法化，影响Instagram、Discord、Gmail等平台的数百万用户。它削弱了端到端加密的保护，引发对基本隐私权和公民自由的严重担忧。 该法规允许对直接消息（包括Instagram、Xbox、Gmail、iCloud等）进行无证扫描，有效期至2028年。公共社交媒体帖子和云存储文件此前已可被扫描，但新规扩大了范围。法规通过需要绝对多数（361票）否决，而实际反对票仅314票，导致批准。",
+      "background_zh": "Chat Control是欧盟为打击儿童性虐待材料（CSAM）提出的法规，全称为《防止和打击儿童性虐待条例》（CSAR）。其中客户端扫描（CSS）是指在用户设备上或消息发送前扫描内容的技术，可能破坏端到端加密。该提案自2022年提出以来一直备受争议，隐私倡导者和技术专家警告其将导致大规模监控。",
+      "community_discussion_zh": "社区评论普遍对投票程序表示愤怒和失望，认为这是“民主的闹剧”——利用暑假前最后一天的投票和绝对多数门槛，使得多数反对也无法阻止法律通过。评论者批评欧盟正走向威权主义，并指出欧盟常被成员国用作通过国内不受欢迎立法的“责任洗白”机制。",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Chat_Control",
           "title": "Chat Control - Wikipedia"
         },
         {
-          "url": "https://www.eff.org/deeplinks/2026/04/eu-parliament-blocks-mass-scanning-our-chats-whats-next",
-          "title": "EU Parliament Blocks Mass-Scanning of Our Chats—What's Next? | Electronic Frontier Foundation"
+          "url": "https://fightchatcontrol.eu/chat-control-overview",
+          "title": "Chat Control 1.0 vs 2.0 - Fight Chat Control"
         }
       ],
-      "detailed_summary": "欧盟立法进程新进展显示，曾于2026年被议会否决的Chat Control规则可能被重新激活，要求扫描私人消息以打击儿童性虐待内容。 该规则若通过，将强制科技公司扫描所有私人通信，可能破坏端到端加密，对用户隐私和通信安全构成重大威胁，并影响全球加密政策方向。 当前推进的Chat Control 1.0版本仅允许服务商在非端到端加密通信中自愿扫描，而更激进的2.0版本要求强制扫描且禁止端到端加密，但此前已被欧盟议会否决。",
-      "background": "Chat Control（正式名称为CSAR）是欧盟2022年提出的法规，旨在通过扫描私人消息来检测儿童性虐待材料。反对者认为该法规会摧毁端到端加密，侵犯基本隐私权。2026年4月，欧盟议会曾否决强制扫描加密消息的条款，但近期提案动向表明该规则可能被重新提上议程。",
-      "community_discussion": "社区评论普遍区分了Chat Control 1.0和2.0，认为1.0较温和（如允许Meta扫描非加密消息），而2.0强制扫描加密消息引发强烈担忧。有用户提供了fightchatcontrol.eu链接，呼吁欧盟公民联系代表反对该法规。"
+      "detailed_summary": "欧盟议会于2025年7月9日通过Chat Control 1.0法规，允许美国科技公司在没有搜查令或嫌疑的情况下扫描用户私人消息。这项此前在3月被两次否决的措施，因需要绝对多数才能阻止，在314名议员反对的情况下仍自动生效。 该法规标志着欧盟数字隐私政策的重大倒退，使大规模监控合法化，影响Instagram、Discord、Gmail等平台的数百万用户。它削弱了端到端加密的保护，引发对基本隐私权和公民自由的严重担忧。 该法规允许对直接消息（包括Instagram、Xbox、Gmail、iCloud等）进行无证扫描，有效期至2028年。公共社交媒体帖子和云存储文件此前已可被扫描，但新规扩大了范围。法规通过需要绝对多数（361票）否决，而实际反对票仅314票，导致批准。",
+      "background": "Chat Control是欧盟为打击儿童性虐待材料（CSAM）提出的法规，全称为《防止和打击儿童性虐待条例》（CSAR）。其中客户端扫描（CSS）是指在用户设备上或消息发送前扫描内容的技术，可能破坏端到端加密。该提案自2022年提出以来一直备受争议，隐私倡导者和技术专家警告其将导致大规模监控。",
+      "community_discussion": "社区评论普遍对投票程序表示愤怒和失望，认为这是“民主的闹剧”——利用暑假前最后一天的投票和绝对多数门槛，使得多数反对也无法阻止法律通过。评论者批评欧盟正走向威权主义，并指出欧盟常被成员国用作通过国内不受欢迎立法的“责任洗白”机制。"
     },
-    "ai_score": 8.0,
-    "ai_reason": "High community engagement and nuanced discussion (key distinction between Chat Control 1.0 and 2.0) elevate this to high value. The topic is critically important for digital privacy and encryption, with direct implications for software engineering and security. Engagement score 341 with 134 comments shows strong interest.",
-    "ai_summary": "EU advances private message scanning rules (Chat Control), prompting debate over privacy and encryption.",
+    "ai_score": 9.0,
+    "ai_reason": "Major EU legislation enabling mass scanning of private messages, representing a significant shift in digital privacy policy. The high community engagement (458 comments) includes insightful discussion on parliamentary procedures and implications, indicating strong relevance and importance.",
+    "ai_summary": "The EU Parliament passed Chat Control 1.0, allowing US tech companies to scan private messages without warrant, despite initial rejection, sparking major privacy concerns.",
     "ai_tags": [
       "privacy",
-      "encryption",
-      "EU regulation",
-      "surveillance"
+      "surveillance",
+      "EU legislation",
+      "digital rights",
+      "encryption"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:e546849656bbb31b",
-    "source_type": "rss",
-    "title": "SpaceWASM: NASA/JPL's Wasm interpreter for spacecraft sequencing",
-    "url": "https://github.com/nasa/spacewasm",
-    "content": "<p><a href=\"https://lobste.rs/s/bbhgr9/spacewasm_nasa_jpl_s_wasm_interpreter_for\">Comments</a></p>",
-    "author": "github.com via wucke13",
-    "published_at": "2026-07-08T21:50:46Z",
-    "fetched_at": "2026-07-09T00:02:43.277922Z",
+    "id": "hackernews:story:48842459",
+    "source_type": "hackernews",
+    "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+    "url": "https://github.com/JustVugg/colibri",
+    "content": "A few days ago I found myself trying out GLM 5.2 and was really positively impressed. The capabilities and security I was getting from this LLM are similar to those I&#x27;ve gotten from models like Claude or GPT, and this really surprised me.<p>But then I thought, &quot;I wonder how it would work on a normal computer like mine,&quot; and above all, &quot;I wonder if it would work without going into OOM on a computer like mine.&quot; So I started working with the help of agents to test this possibility.<p>I started converting the model to int4, understanding MTP usage, and if possible implementing DSA for long context. How it responds in int4 and whether the quality is maintained or not. Until I got to the point, on my computer with 32GB of RAM, I was able to communicate with GLM 5.2 with times that, of course, aren&#x27;t high in cold start, but even then, we&#x27;re talking about 0.1 tok&#x2F;s, but that wasn&#x27;t important to me. The important thing was the journey to reach this goal. I just wanted it to work at all costs, even slowly.<p>So I created Colibrì, which was born from a very simple idea, to be honest, but tested in every way, where a 744B Mixture-of-Experts model activates only ~40B parameters per token—and only ~11 GB of those change from token to token (the routed experts). So:<p>The dense part (attention, shared experts, embeddings—~17B params) stays resident in RAM at int4 (~9.9 GB); The 21,504 routed experts (75 MoE layers × 256 experts + the MTP head, ~19 MB each at int4) live on disk (~370 GB) and are streamed on demand, with a per-layer LRU cache, an optional pinned hot-store, and the OS page cache as a free L2.<p>The engine is a single C file (c&#x2F;glm.c, ~1,300 lines) plus small headers. No BLAS, no Python at runtime, no GPU.No GPU or serious hardware because I don&#x27;t have that hardware so I can&#x27;t test it on hardware that is more powerful than my computer.Colibrì is a one-person project, written and tested entirely on a 12-core laptop with 25 GB of RAM — the numbers above are the ceiling of what I can measure at home.<p>Any feedback is welcome! (and if anyone wanted to participate in the project I would be delighted)<p>Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;JustVugg&#x2F;colibri\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;JustVugg&#x2F;colibri</a>\n\n\n--- Top Comments ---\n\n[Archit3ch]: Working on something similar targeting macOS on Apple Silicon, Unsloth split GGUF, compressed partial residency in unified memory (would make more sense on 128GB instead of my 64GB...), native Metal kernels, and RAM-only native compressed KV. Happy to put on GitHub when it&#x27;s ready.\n\n[walrus01]: My main question is whether when put into practical use, this can be measured in tokens&#x2F;second, or more like 1 token per minute...   I  have  seen locally hosted LLM that are as slow as 1 tok&#x2F;second still be very useful if you give it a project to do something overnight and metaphorically walk away from it, check back with what it has done in 6 or 8 hours. 0.05 to 0.1 tok&#x2F;s on the other hand, as reported in the URL for the lowest class of hardware, isn&#x27;t really usable for ...\n\n[qiqitori]: How much time is spent interfacing between userland and the kernel? Can you try to get it to run as a kernel module? :)\n\n[Cieric]: I was actually just working on the same thing as this, but I went down the route of mmapping the entire model into memory to avoid the extra ram usage. I also had Claude implement Medusa[1] on the model to try and avoid loading an additional model into memory but still get the benefits of MTP. Currently at a stop light so I can&#x27;t list everything and I didn&#x27;t get to read your full post either yet. To expand since I just got home, I&#x27;m making all of my modifications to llama.cpp, ...\n\n[mmastrac]: This sort of thing is a lot of fun. I&#x27;ve been going smaller.. I have a custom-quantized Rust port of DiffusionGemma (26B) that seems to perform better (in responses) than benchmarks seemed to indicate and reasonably fast for its model size. Works really well on a 36GB mac as well for both prefill and generation. It&#x27;s been interesting learning about the balance of factors for performant metal kernels on unified memory. Should have a repo up on github in the next few weeks.",
+    "author": "vforno",
+    "published_at": "2026-07-09T08:05:04Z",
+    "fetched_at": "2026-07-09T23:59:21.158769Z",
     "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "wasm"
-      ],
-      "title_zh": "SpaceWASM：NASA/JPL的航天器序列WebAssembly解释器",
-      "detailed_summary_zh": "NASA/JPL发布了SpaceWASM，一个基于WebAssembly的开源解释器，用于航天器序列操作。该项目托管在GitHub上，旨在替代传统脚本语言如VML。 SpaceWASM将WebAssembly的沙箱安全性和可移植性引入航天器嵌入式系统，有望提升序列执行的可靠性和效率，为深空探测任务提供更灵活的指令执行环境。 SpaceWASM作为一个轻量级WebAssembly解释器，运行在资源受限的航天器硬件上，支持来自地面站的WASM字节码序列，并提供了与现有飞行软件的接口。",
-      "background_zh": "航天器序列操作是通过预定义指令集控制航天器动作的过程，传统上使用NASA开发的VML（虚拟机语言）等专用脚本语言。WebAssembly是一种低级的二进制指令格式，可在多种平台上高效执行，具有内存安全和平台无关特性。JPL作为NASA下属实验室，长期领导深空探测任务，其开发的SpaceWASM旨在结合WebAssembly优势优化序列系统。",
+      "score": 293,
+      "descendants": 74,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48842459",
+      "comment_count": 5,
+      "title_zh": "在32GB内存电脑上运行GLM 5.2：Colibrì项目",
+      "detailed_summary_zh": "作者JustVugg成功将744B参数的GLM 5.2混合专家模型通过int4量化、多令牌预测（MTP）和直接稀疏注意力（DSA）优化，在仅32GB RAM的普通笔记本电脑上以约0.1 tok/s的速度运行，并开源了Colibrì项目。 这一成果展示了在没有高端GPU的情况下运行现代大型语言模型的可行性，降低了LLM的硬件门槛，使更多开发者和爱好者能在消费级设备上体验并优化先进的AI模型。 GLM 5.2是一个744B参数的MoE模型，每次推理仅激活约40B参数，其中路由专家约11GB数据逐token变化。量化至int4后，密集部分（17B参数）常驻内存约9.9GB，而21,504个路由专家（共约370GB）存储在磁盘上按需流式加载，配合每层LRU缓存和OS页面缓存。",
+      "background_zh": "大语言模型通常需要大量GPU显存，但int4量化技术可将模型权重从32位浮点数压缩为4位整数，大幅减小内存占用；多令牌预测（MTP）允许模型一次生成多个token以提高推理速度；直接稀疏注意力（DSA）则通过只关注部分token来降低长上下文场景的计算量。Colibrì结合这些技术，使744B模型能在仅32GB内存的CPU上运行。",
+      "community_discussion_zh": "社区评论中，多位开发者分享了类似的优化工作，如针对Apple Silicon的Unsloth分割GGUF、mmap加载整个模型以避免额外内存，以及自定义量化实现DiffusionGemma等。大家普遍认可这种低资源优化的趣味性和价值，但也指出0.1 tok/s的速度在实际使用中可能不够实用，更适合后台批处理任务。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory",
-          "title": "Jet Propulsion Laboratory - Wikipedia"
+          "url": "https://huggingface.co/docs/transformers/en/quantization/concept_guide",
+          "title": "Quantization concepts - Hugging Face"
         },
         {
-          "url": "https://ieeexplore.ieee.org/document/1036829/",
-          "title": "The fully programmable spacecraft: procedural sequencing for JPL deep space missions using VML (Virtual Machine Language) | IEEE Conference Publication | IEEE Xplore"
+          "url": "https://arxiv.org/abs/2502.09419",
+          "title": "On multi-token prediction for efficient LLM inference Multi-Token Prediction on GPU Cloud: Deploy MTP LLMs for 2-3x ... Speed-up Gemma 4 with Multi-Token Prediction - ai.google.dev On multi-token prediction for efficient LLM inference - arXiv.org How to Run MTP Models: Multi-Token Prediction Guide | Unsloth ... Gemma 4 Multi-Token Prediction (MTP) using Hugging Face ... Images"
+        },
+        {
+          "url": "https://www.emergentmind.com/topics/deepseek-sparse-attention-dsa",
+          "title": "DeepSeek Sparse Attention Mechanism (DSA)"
         }
       ],
-      "detailed_summary": "NASA/JPL发布了SpaceWASM，一个基于WebAssembly的开源解释器，用于航天器序列操作。该项目托管在GitHub上，旨在替代传统脚本语言如VML。 SpaceWASM将WebAssembly的沙箱安全性和可移植性引入航天器嵌入式系统，有望提升序列执行的可靠性和效率，为深空探测任务提供更灵活的指令执行环境。 SpaceWASM作为一个轻量级WebAssembly解释器，运行在资源受限的航天器硬件上，支持来自地面站的WASM字节码序列，并提供了与现有飞行软件的接口。",
-      "background": "航天器序列操作是通过预定义指令集控制航天器动作的过程，传统上使用NASA开发的VML（虚拟机语言）等专用脚本语言。WebAssembly是一种低级的二进制指令格式，可在多种平台上高效执行，具有内存安全和平台无关特性。JPL作为NASA下属实验室，长期领导深空探测任务，其开发的SpaceWASM旨在结合WebAssembly优势优化序列系统。",
-      "community_discussion": ""
+      "detailed_summary": "作者JustVugg成功将744B参数的GLM 5.2混合专家模型通过int4量化、多令牌预测（MTP）和直接稀疏注意力（DSA）优化，在仅32GB RAM的普通笔记本电脑上以约0.1 tok/s的速度运行，并开源了Colibrì项目。 这一成果展示了在没有高端GPU的情况下运行现代大型语言模型的可行性，降低了LLM的硬件门槛，使更多开发者和爱好者能在消费级设备上体验并优化先进的AI模型。 GLM 5.2是一个744B参数的MoE模型，每次推理仅激活约40B参数，其中路由专家约11GB数据逐token变化。量化至int4后，密集部分（17B参数）常驻内存约9.9GB，而21,504个路由专家（共约370GB）存储在磁盘上按需流式加载，配合每层LRU缓存和OS页面缓存。",
+      "background": "大语言模型通常需要大量GPU显存，但int4量化技术可将模型权重从32位浮点数压缩为4位整数，大幅减小内存占用；多令牌预测（MTP）允许模型一次生成多个token以提高推理速度；直接稀疏注意力（DSA）则通过只关注部分token来降低长上下文场景的计算量。Colibrì结合这些技术，使744B模型能在仅32GB内存的CPU上运行。",
+      "community_discussion": "社区评论中，多位开发者分享了类似的优化工作，如针对Apple Silicon的Unsloth分割GGUF、mmap加载整个模型以避免额外内存，以及自定义量化实现DiffusionGemma等。大家普遍认可这种低资源优化的趣味性和价值，但也指出0.1 tok/s的速度在实际使用中可能不够实用，更适合后台批处理任务。"
     },
     "ai_score": 8.0,
-    "ai_reason": "High value due to novel application of WebAssembly in spacecraft sequencing by NASA/JPL, demonstrating technical depth and potential impact on embedded systems in space missions. The comment discussion (linked) likely adds valuable insights.",
-    "ai_summary": "SpaceWASM is NASA/JPL's WebAssembly interpreter for spacecraft sequencing operations.",
+    "ai_reason": "High value due to practical optimization of a modern LLM for consumer hardware, with strong community engagement and insightful comments contributing to ongoing development.",
+    "ai_summary": "Author details converting GLM 5.2 to int4 and using MTP/DSA to run it on a 32GB RAM computer, sparking discussion on similar optimizations.",
     "ai_tags": [
-      "WebAssembly",
-      "space",
-      "NASA",
-      "embedded systems",
-      "sequencing"
+      "LLM",
+      "optimization",
+      "quantization",
+      "inference",
+      "consumer hardware"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:3060355a5bb96b71",
-    "source_type": "rss",
-    "title": "OpenBSD through 7.9 has a use-after-free allowing local privilege escalation to root (CVE-2026-57589)",
-    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57589",
-    "content": "<p><a href=\"https://lobste.rs/s/7hmu0w/openbsd_through_7_9_has_use_after_free\">Comments</a></p>",
-    "author": "nvd.nist.gov via fro",
-    "published_at": "2026-07-08T01:02:05Z",
-    "fetched_at": "2026-07-09T00:02:43.277982Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "security",
-        "openbsd"
-      ],
-      "title_zh": "OpenBSD 7.9及之前版本存在释放后使用漏洞",
-      "detailed_summary_zh": "CVE-2026-57589被公开，该漏洞是一个存在于OpenBSD 7.9及之前版本中的释放后使用漏洞，允许本地攻击者将权限提升至root。 OpenBSD以安全性著称，此漏洞可直接导致本地提权至root，严重威胁系统安全；受影响版本广泛，用户需紧急修复。 该漏洞的CVSS评分为8.0，属于高危漏洞；攻击者需要本地访问权限，但无需用户交互即可利用。",
-      "background_zh": "释放后使用漏洞是指程序在释放内存后仍继续使用该内存指针，攻击者可利用此漏洞执行任意代码或提升权限。OpenBSD是一个注重安全的类Unix操作系统，其内核代码经过严格审计，因此此类漏洞的出现备受关注。",
-      "detailed_summary": "CVE-2026-57589被公开，该漏洞是一个存在于OpenBSD 7.9及之前版本中的释放后使用漏洞，允许本地攻击者将权限提升至root。 OpenBSD以安全性著称，此漏洞可直接导致本地提权至root，严重威胁系统安全；受影响版本广泛，用户需紧急修复。 该漏洞的CVSS评分为8.0，属于高危漏洞；攻击者需要本地访问权限，但无需用户交互即可利用。",
-      "background": "释放后使用漏洞是指程序在释放内存后仍继续使用该内存指针，攻击者可利用此漏洞执行任意代码或提升权限。OpenBSD是一个注重安全的类Unix操作系统，其内核代码经过严格审计，因此此类漏洞的出现备受关注。",
-      "community_discussion": ""
-    },
-    "ai_score": 8.0,
-    "ai_reason": "High-value security vulnerability in a security-focused OS, allowing local privilege escalation to root; community discussion likely adds depth.",
-    "ai_summary": "CVE-2026-57589 reveals a use-after-free vulnerability in OpenBSD through 7.9 that allows local privilege escalation to root.",
-    "ai_tags": [
-      "security",
-      "vulnerability",
-      "CVE",
-      "OpenBSD",
-      "privilege escalation"
-    ]
-  },
-  {
-    "id": "hackernews:story:48836778",
+    "id": "hackernews:story:48847552",
     "source_type": "hackernews",
-    "title": "FAANG Simulator",
-    "url": "https://www.abeyk.com/escape-the-rat-race/",
-    "content": "\n--- Top Comments ---\n\n[dzonga]: I don&#x27;t know if I should feel sad or laugh at the pain at the same time lol. what a wonderful way to reflect reality for a good population of devs. you can hack the game i.e real life 1. live in a cheaper location \n2. do things that don&#x27;t scale &amp; do the ugly work that naturally extends your runway, you don&#x27;t need to apply to YC remember the median Pay in the US - is 61800 based on ADP the largest payroll provider. so before aiming for millions aim for 85K. yeah a far cry fr...\n\n[qurren]: Maybe add a non-US-citizen mode where if you are ever unemployed for more than 2 cycles you lose, unless you already have a side project with enormous traction And if you are a US citizen and get randomly get thrown into a group of mostly non-citizen coworkers they will grind like hell due to the above, and if you don&#x27;t grind extra hard you get the PIP faster, because you&#x27;re stack ranked against them\n\n[rgmerk]: The rate of success of side projects seems unrealistically high.  Yeah, I know, it&#x27;s the YC dream, but even acquisitions where the founders walk away with a few million dollars are rare enough, right?\n\n[pantelisk]: Really fun project, but doesn&#x27;t take ageism into account, it gets easier the further you get whereas it should get be getting harder in certain ways\n\n[henry2023]: It&#x27;d be cool to have a mode where you input your current base &#x2F; age &#x2F; networth and simulate forward.",
-    "author": "nerdbiscuits",
-    "published_at": "2026-07-08T20:05:42Z",
-    "fetched_at": "2026-07-09T00:02:43.177390Z",
+    "title": "Hy3",
+    "url": "https://hy.tencent.com/research/hy3",
+    "content": "\n--- Top Comments ---\n\n[simonw]: Pelican from a few days ago:  https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Jul&#x2F;6&#x2F;hy3&#x2F;  - I was using the free tier on OpenRouter, which expires on July 21st. I tried the preview model 41 days ago and got a pelican with a &quot;change pelican color&quot; button:  https:&#x2F;&#x2F;static.simonwillison.net&#x2F;static&#x2F;2026&#x2F;hy3-preview-pel...\n\n[minimaxir]: A month ago I wrote a blog post about how Hy3 was topping the OpenRouter rankings despite no one talking about it:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48317294  As of today, it has fallen to 8&#x2F;9th on the rankings. I don&#x27;t see a reason where you would use this model over competitors. However, price economics are bit confusing, as currently the effective input price of Hy3 via OpenRouter is now the same as DeepSeek-hosted DeepSeek Flash V4.  https:&#x2F;&#x2F;openrout...\n\n[andai]: Novita is offering free Hy3 on OpenRouter until July 21st  https:&#x2F;&#x2F;openrouter.ai&#x2F;tencent&#x2F;hy3:free   https:&#x2F;&#x2F;x.com&#x2F;novita_labs&#x2F;status&#x2F;2074158304159510819\n\n[Catloafdev]: Curious how people feel about this compared to DS4 Flash, given they are pretty close in size. Also curious how well it holds up to heavy quantization. DS4 Flash can currently run reasonably well on systems with ~96gb+ RAM, I wonder if Hy3 can compete there.\n\n[nshotton]: This model is shockingly small for how capable it is. its a little bit bigger than deepseekV4 flash but around as capable if not more on some benchmarks than V4 pro, i wouldnt be surprised if this becomes a popular local model.",
+    "author": "andai",
+    "published_at": "2026-07-09T15:27:48Z",
+    "fetched_at": "2026-07-09T23:59:21.158903Z",
     "metadata": {
-      "score": 221,
-      "descendants": 86,
+      "score": 354,
+      "descendants": 77,
       "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48836778",
+      "discussion_url": "https://news.ycombinator.com/item?id=48847552",
       "comment_count": 5,
-      "title_zh": "FAANG模拟器：讽刺游戏折射职场现实",
-      "detailed_summary_zh": "一款名为FAANG模拟器的讽刺性游戏上线，以幽默方式再现了在FAANG公司工作的压力与挑战，包括失业风险、拼绩效等场景。 该游戏引发开发者社区广泛讨论，触及签证困境、年龄歧视和副业成功率等敏感话题，有助于促进行业对职场文化问题的反思。 游戏允许玩家通过选择低成本地区等方式“破解”现实，但未纳入年龄歧视因素；副项目成功的概率被评论认为设定过高。",
-      "background_zh": "FAANG指Facebook、Apple、Amazon、Netflix、Google等大型科技公司，其高薪高压的工作文化常被讨论。该游戏以模拟经营形式，让玩家体验从入职到被裁或成功的典型路径。",
-      "community_discussion_zh": "社区评论情绪复杂，既有对游戏真实性的苦笑认同，也有对缺失年龄歧视机制的批评；非美国公民模式建议及副项目成功率过高成为争议点，整体讨论富有建设性。",
-      "detailed_summary": "一款名为FAANG模拟器的讽刺性游戏上线，以幽默方式再现了在FAANG公司工作的压力与挑战，包括失业风险、拼绩效等场景。 该游戏引发开发者社区广泛讨论，触及签证困境、年龄歧视和副业成功率等敏感话题，有助于促进行业对职场文化问题的反思。 游戏允许玩家通过选择低成本地区等方式“破解”现实，但未纳入年龄歧视因素；副项目成功的概率被评论认为设定过高。",
-      "background": "FAANG指Facebook、Apple、Amazon、Netflix、Google等大型科技公司，其高薪高压的工作文化常被讨论。该游戏以模拟经营形式，让玩家体验从入职到被裁或成功的典型路径。",
-      "community_discussion": "社区评论情绪复杂，既有对游戏真实性的苦笑认同，也有对缺失年龄歧视机制的批评；非美国公民模式建议及副项目成功率过高成为争议点，整体讨论富有建设性。"
+      "title_zh": "腾讯Hy3语言模型发布，引发社区热议",
+      "detailed_summary_zh": "腾讯正式发布Hy3语言模型，这是一个295B总参数、21B激活参数的MoE模型，并已开源。 Hy3在较小激活参数下性能接近更大模型，可能改变本地部署和API服务的性价比格局，尤其与DeepSeek Flash V4形成直接竞争。 Hy3采用MoE架构，总参数295B，激活参数21B，另有3.8B MTP层参数。该模型已集成到腾讯50多个产品中，并在OpenRouter上提供免费试用至7月21日。",
+      "background_zh": "MoE（混合专家）模型通过仅激活部分参数来提升效率，参数总量与激活参数是两个关键指标。DeepSeek Flash V4是284B总参数、13B激活参数的MoE模型，Hy3的激活参数更多，但总参数相近，两者在OpenRouter上价格趋同。",
+      "community_discussion_zh": "社区对Hy3的讨论集中在与DeepSeek Flash V4的对比：有用户指出Hy3在OpenRouter排名从第1降至第8/9；也有用户认为Hy3体积小但能力强，有望成为流行的本地模型；同时有人关注其量化表现和长期定价策略。",
+      "sources": [
+        {
+          "url": "https://github.com/Tencent-Hunyuan/Hy3",
+          "title": "GitHub - Tencent-Hunyuan/Hy3: Hy3 (295B A21B), a leading ..."
+        },
+        {
+          "url": "https://hunyuan.tencent.com/research/hy3",
+          "title": "Introducing Hy3 - Tencent Hy"
+        },
+        {
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+          "title": "DeepSeek V4 Flash - API Pricing & Benchmarks | OpenRouter"
+        }
+      ],
+      "detailed_summary": "腾讯正式发布Hy3语言模型，这是一个295B总参数、21B激活参数的MoE模型，并已开源。 Hy3在较小激活参数下性能接近更大模型，可能改变本地部署和API服务的性价比格局，尤其与DeepSeek Flash V4形成直接竞争。 Hy3采用MoE架构，总参数295B，激活参数21B，另有3.8B MTP层参数。该模型已集成到腾讯50多个产品中，并在OpenRouter上提供免费试用至7月21日。",
+      "background": "MoE（混合专家）模型通过仅激活部分参数来提升效率，参数总量与激活参数是两个关键指标。DeepSeek Flash V4是284B总参数、13B激活参数的MoE模型，Hy3的激活参数更多，但总参数相近，两者在OpenRouter上价格趋同。",
+      "community_discussion": "社区对Hy3的讨论集中在与DeepSeek Flash V4的对比：有用户指出Hy3在OpenRouter排名从第1降至第8/9；也有用户认为Hy3体积小但能力强，有望成为流行的本地模型；同时有人关注其量化表现和长期定价策略。"
     },
-    "ai_score": 7.0,
-    "ai_reason": "High community engagement (221 points, 86 comments) with substantive discussion about industry realities like visa issues, ageism, and side project success rates. While not groundbreaking, it resonates strongly with developers and sparks valuable conversation.",
-    "ai_summary": "A satirical simulation game that humorously reflects the grind and challenges of working at FAANG companies.",
+    "ai_score": 8.0,
+    "ai_reason": "Tencent's Hy3 is a notable new AI model with competitive size/performance, generating substantive discussion comparing it to DeepSeek Flash V4. The high engagement (354 points, 77 comments) and diverse community viewpoints (pricing, quantization, rankings) elevate its importance beyond a mere release, but it's not a groundbreaking paradigm shift.",
+    "ai_summary": "Tencent's Hy3 language model gains traction for its efficiency and size, sparking community debate on pricing and competitiveness against DeepSeek Flash V4.",
     "ai_tags": [
-      "FAANG",
-      "career simulation",
+      "AI",
+      "Language Model",
+      "Tencent",
+      "OpenRouter",
+      "Model Comparison"
+    ]
+  },
+  {
+    "id": "hackernews:story:48841676",
+    "source_type": "hackernews",
+    "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+    "url": "https://github.com/malisper/pgrust",
+    "content": "\n--- Top Comments ---\n\n[malisper]: Hey author here. Wasn&#x27;t expecting to see this up. To concisely give an overview of the project, I&#x27;ve been experimenting with using LLMs to build a better version of Postgres. Postgres is 30 years old and we&#x27;ve learned a lot about databases since hten. A lot of the techniques that work for doing a rewrite are also useful for doing a rearchitecture. I&#x27;m now working on a new, not yet published version of pgrust that incorporates a lot of techniques. Currently the new version:...\n\n[password4321]: Jepsen or GTFO. These days there&#x27;s little chance for a new DB to build its community using network effect. If you want this to catch on, switch to manually grinding community building ASAP gold plating the experience for a specific niche (AI can guide your priorities but will hinder your comms). Otherwise, have fun building!\n\n[dirkc]: How would one go about reviewing a piece of code like this? One of the things I&#x27;d typically do is peek at the commit history. Seeing what people worked on and how they did it tends to say a lot about a project. But with LLMs generating 7101 commits in less than a month that isn&#x27;t feasible. Even looking at a single day is way too much [1]. It probably also doesn&#x27;t make sense since the commits content won&#x27;t tell you much anyway. ps. How do you easily get to the first commit ...\n\n[vintagedave]: This is impressive - but is a license change, from the PostgresQL license [0] to AGPL [1]. I like the AGPL and think it&#x27;s the best truly free open source license, but I worry if this is compatible. Ie, if this is rewritten from the original source, should the original apply? (Yes.) There has been a trend to rewrite open source software with a more restrictive license (like coretools in Rust). This looks considerably more ethical by choosing the AGPL - I just wonder, safer with no change ...\n\n[Chyzwar]: I think the best way to test this would be to put PgBouncer or a similar proxy in front of a busy production database, and mirror queries to both traditional Postgres and the Rust one at the same time. Then you can compare output and performance under real load. After running it for a while, you could diff the tables one to one against the normal Postgres instance.",
+    "author": "SweetSoftPillow",
+    "published_at": "2026-07-09T06:18:19Z",
+    "fetched_at": "2026-07-09T23:59:21.158921Z",
+    "metadata": {
+      "score": 299,
+      "descendants": 338,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48841676",
+      "comment_count": 5,
+      "title_zh": "Postgres用Rust重写，通过全部回归测试",
+      "detailed_summary_zh": "一个名为pgrust的项目利用大语言模型（LLM）将Postgres数据库用Rust语言重写，目前已经通过了100%的Postgres回归测试。 该项目展示了LLM在大型软件重写和架构改进中的潜力，可能为未来数据库开发带来新范式，同时引发了关于AI生成代码质量、代码审查以及许可证兼容性的广泛讨论。 项目在不到一个月内由LLM生成了7101次提交，代码审查面临巨大挑战；此外，项目许可证从PostgreSQL许可证变更为AGPL，引发关于原有许可证适用性的争议。",
+      "background_zh": "PostgreSQL是一个拥有30年历史的开源关系型数据库，以其稳定性和扩展性著称。Rust是一种系统编程语言，以内存安全和并发性能为特点。LLM（大语言模型）可辅助代码生成，但生成的代码质量和可维护性仍是业界关注的问题。",
+      "community_discussion_zh": "社区讨论热烈：作者表示正在开发新版本以融合更多技术；有用户强调需要Jepsen测试来验证正确性；有人担忧大量LLM生成代码的审查难度；还有观点关注许可证从PostgreSQL许可改为AGPL的兼容性问题。",
+      "detailed_summary": "一个名为pgrust的项目利用大语言模型（LLM）将Postgres数据库用Rust语言重写，目前已经通过了100%的Postgres回归测试。 该项目展示了LLM在大型软件重写和架构改进中的潜力，可能为未来数据库开发带来新范式，同时引发了关于AI生成代码质量、代码审查以及许可证兼容性的广泛讨论。 项目在不到一个月内由LLM生成了7101次提交，代码审查面临巨大挑战；此外，项目许可证从PostgreSQL许可证变更为AGPL，引发关于原有许可证适用性的争议。",
+      "background": "PostgreSQL是一个拥有30年历史的开源关系型数据库，以其稳定性和扩展性著称。Rust是一种系统编程语言，以内存安全和并发性能为特点。LLM（大语言模型）可辅助代码生成，但生成的代码质量和可维护性仍是业界关注的问题。",
+      "community_discussion": "社区讨论热烈：作者表示正在开发新版本以融合更多技术；有用户强调需要Jepsen测试来验证正确性；有人担忧大量LLM生成代码的审查难度；还有观点关注许可证从PostgreSQL许可改为AGPL的兼容性问题。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (299 points, 338 comments) with substantive discussion covering LLM use, code review challenges, and license implications. The project is technically ambitious (rewriting Postgres in Rust) and introduces novel approaches (LLM-assisted development), though still experimental.",
+    "ai_summary": "A project rewriting Postgres in Rust using LLMs now passes 100% of regression tests, sparking debate on AI-generated code and licensing.",
+    "ai_tags": [
+      "Postgres",
+      "Rust",
+      "LLM",
+      "database",
+      "open source"
+    ]
+  },
+  {
+    "id": "hackernews:story:48846995",
+    "source_type": "hackernews",
+    "title": "TLS certificates for internal services done right",
+    "url": "https://tuxnet.dev/posts/tls-for-internal-services/",
+    "content": "\n--- Top Comments ---\n\n[EvanAnderson]: The relative proximity of the words &quot;done right&quot; and &quot;split-horizon DNS&quot; makes my insides hurt a little bit. Use DNS validation to allow these internal services to pull ACME certs. There&#x27;s so much less headache, long-term. Split-horizon DNS (and the tedious make-work it can create when you start needing to mirror public-accessibly records in the private DNS) has always been something to aspire to move away from in my experience.\n\n[raffraffraff]: Hmm. I don&#x27;t really care enough about leaking home network host names because they are all super generic names like &#x27;router&#x27;, &#x27;laptop&#x27;, &#x27;tv&#x27;, &#x27;nas&#x27;.  So I use my public zone on cloudflare. I just use internal ip addresses (eg: nas.example.com = 10.1.2.3) on the public zone and DNS01 challenge for let&#x27;s encrypt. Anyone can resolve the ip for any of my hosts, but obviously you&#x27;d need to be on the wireguard vpn to hit them. This means that I...\n\n[boscillator]: The real answer here is that configuring HTTPS clients to trust a self-signed cert (or signed by an internal CA) shouldn&#x27;t be as difficult as it is. I find it extremely annoying that every programming language has it&#x27;s own idea of where certificates should live instead of just checking the os trust store.\n\n[xurukefi]: Or... - Don&#x27;t use split DNS.  Don&#x27;t use any special internal or dev domain. Leave it to your infrastructure to route&#x2F;NAT those public IPs to your internal network. - Don&#x27;t use the HTTP-01 challenge. Use DNS-01. - Don&#x27;t run your own internal CA. Use Let&#x27;s Encrypt. If you care about name leakage (CT Logs), use wildcard certs. Use a central reverse proxy&#x2F;load balancer for termination.\n\n[samgranieri]: Split horizon DNS is not something I&#x27;m willing to do.\nI&#x27;ll just rock out with .internal or .home.arpa, have step-ca and bind communicate to each other, either in step-issuer in kube or maybe even rfc2136 if i feel like a bit of the dns-01 strategy is in order. I slap the internal ca root certs everywhere, and keep my home infra out of the crt.sh logs. I get it, I could just do *.mydomain.com and slap that wildcard cert everywhere, but it&#x27;s still in the public logs..",
+    "author": "mrl5",
+    "published_at": "2026-07-09T14:57:02Z",
+    "fetched_at": "2026-07-09T23:59:21.158977Z",
+    "metadata": {
+      "score": 125,
+      "descendants": 88,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48846995",
+      "comment_count": 5,
+      "title_zh": "内部服务TLS证书管理的最佳实践指南",
+      "detailed_summary_zh": "一篇博客文章详细介绍了使用ACME协议和split-horizon DNS方法管理内部服务TLS证书的流程，并引发了社区对多种替代方案（如DNS-01挑战、内部CA等）的深入讨论。 内部服务的TLS证书管理是一个普遍存在的难题，该指南提供了实用方案，而社区讨论揭示了不同方法的利弊，有助于读者根据自身网络和环境选择最优策略。 文章推荐使用split-horizon DNS配合HTTP-01挑战从Let's Encrypt获取证书，但社区评论指出split-horizon DNS会增加长期维护复杂度，并建议优先使用DNS-01挑战或自建内部CA（如step-ca）来简化管理。",
+      "background_zh": "ACME（自动证书管理环境）协议是由Let's Encrypt推广的标准，用于自动化TLS证书的颁发和续期；split-horizon DNS则根据请求来源返回不同的DNS记录，常用于内网和外网使用相同域名但解析到不同IP的场景。",
+      "community_discussion_zh": "社区对split-horizon DNS普遍持保留态度，认为其引入额外维护工作；多位用户推荐使用DNS-01挑战配合公网DNS（如Cloudflare）并仅通过VPN或内网路由访问，或配置操作系统信任存储以简化自签名证书管理。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ACME_protocol",
+          "title": "ACME protocol"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Split-horizon_DNS",
+          "title": "Split-horizon DNS"
+        }
+      ],
+      "detailed_summary": "一篇博客文章详细介绍了使用ACME协议和split-horizon DNS方法管理内部服务TLS证书的流程，并引发了社区对多种替代方案（如DNS-01挑战、内部CA等）的深入讨论。 内部服务的TLS证书管理是一个普遍存在的难题，该指南提供了实用方案，而社区讨论揭示了不同方法的利弊，有助于读者根据自身网络和环境选择最优策略。 文章推荐使用split-horizon DNS配合HTTP-01挑战从Let's Encrypt获取证书，但社区评论指出split-horizon DNS会增加长期维护复杂度，并建议优先使用DNS-01挑战或自建内部CA（如step-ca）来简化管理。",
+      "background": "ACME（自动证书管理环境）协议是由Let's Encrypt推广的标准，用于自动化TLS证书的颁发和续期；split-horizon DNS则根据请求来源返回不同的DNS记录，常用于内网和外网使用相同域名但解析到不同IP的场景。",
+      "community_discussion": "社区对split-horizon DNS普遍持保留态度，认为其引入额外维护工作；多位用户推荐使用DNS-01挑战配合公网DNS（如Cloudflare）并仅通过VPN或内网路由访问，或配置操作系统信任存储以简化自签名证书管理。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Addresses a common, nuanced issue (internal TLS certificate management) with practical advice and generates high-quality community discussion (125 points, 88 comments) with diverse perspectives and debates, including alternatives like DNS validation and trust store configuration.",
+    "ai_summary": "A guide on managing TLS certificates for internal services using ACME and split-horizon DNS, with community debate on best practices.",
+    "ai_tags": [
+      "TLS",
+      "certificates",
+      "ACME",
+      "internal services",
+      "DNS"
+    ]
+  },
+  {
+    "id": "hackernews:story:48846184",
+    "source_type": "hackernews",
+    "title": "Muse Spark 1.1",
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "content": "<a href=\"https:&#x2F;&#x2F;ai.meta.com&#x2F;static-resource&#x2F;muse-spark-1-1-evaluation-report\" rel=\"nofollow\">https:&#x2F;&#x2F;ai.meta.com&#x2F;static-resource&#x2F;muse-spark-1-1-evaluatio...</a> [pdf]<p><a href=\"https:&#x2F;&#x2F;developer.meta.com&#x2F;ai&#x2F;resources&#x2F;blog&#x2F;build-with-muse-spark&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;developer.meta.com&#x2F;ai&#x2F;resources&#x2F;blog&#x2F;build-with-muse...</a><p><a href=\"https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-07-09&#x2F;meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4MzYxMzQ0OCwiZXhwIjoxNzg0MjE4MjQ4LCJhcnRpY2xlSWQiOiJUSFZDVENSS1YyVTYwMCIsImJjb25uZWN0SWQiOiIwRDE5ODY5MzQ1M0Y0NUMzQkQyMjQzMUQ4NjAzMDU1QSJ9.O5sxV2QajBiyISnu5AVyVUdWWGQtozl0yeCNAbc5JJQ&amp;leadSource=uverify%20wall\" rel=\"nofollow\">https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-07-09&#x2F;meta-star...</a>, <a href=\"https:&#x2F;&#x2F;archive.is&#x2F;3ccKa\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;3ccKa</a>\n\n\n--- Top Comments ---\n\n[GodelNumbering]: Lot more details in the linked report  https:&#x2F;&#x2F;ai.meta.com&#x2F;static-resource&#x2F;muse-spark-1-1-evaluatio...  From Terminal-bench-2.1 details, &gt; We use a bash-tool-only agent harness to evaluate 89 Terminal-Bench 2.1 tasks from the official repository, where resources are capped at 6 CPU cores and 8GB RAM. This disqualifies the results. Each terminal bench task has a cpu upper limit and RAM upper limit. Overriding either is disqualification. For reference, in tbench-2.1, 1. 0...\n\n[simonw]: I had a few days of preview access, which was long enough to put together a plugin for LLM. You can try the model out in the terminal like this:     uv tool install llm\n  llm install llm-meta-ai\n  llm keys set meta-ai\n  # paste API key here\n  llm -m meta-ai&#x2F;muse-spark-1.1 &quot;Generate an SVG of a pelican riding a bicycle&quot;\n  \nHere&#x27;s the result:  https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer#url=ht...  For comparison, here&#x27;s the pelican I got from Mu...\n\n[jacobgold]: Maybe Zuck should double down on his &quot;spoiler&quot; role with models rather than compete head-to-head. He doesn&#x27;t have to match Anthropic or OpenAI model revenue if he can deflate theirs by 99%. All he has to do is keep spending a few billion dollars developing frontier models, release them as open weights, and turn coding models into a commodity. He also needs a good OSS reference harness to match. Very few people are in a position to do this and for it to make business sense. That...\n\n[Tiberium]: The pricing is insane: $1.25&#x2F;$4.5 for 1M tokens, and $0.15 for cached input!  https:&#x2F;&#x2F;dev.meta.ai&#x2F;docs&#x2F;getting-started&#x2F;pricing-rate-limits\n\n[Sol-]: Interesting how the prevalent opinion until yesterday seems to have been that OpenAI &amp; Anthropic are irreversibly ahead and now with xAI and Meta at least delivered something that&#x27;s competitive with useful models and cheap too. Granted, the narrative that the two leading labs are ahead still holds with Fable (and perhaps an upcoming GPT6), but it&#x27;s not as over as common knowledge by the opinion leaders would have us believe.",
+    "author": "ot",
+    "published_at": "2026-07-09T14:10:22Z",
+    "fetched_at": "2026-07-09T23:59:21.158997Z",
+    "metadata": {
+      "score": 309,
+      "descendants": 167,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48846184",
+      "comment_count": 5,
+      "title_zh": "Meta发布Muse Spark 1.1及商业API定价",
+      "detailed_summary_zh": "Meta于2026年7月9日宣布推出Muse Spark 1.1，这是一款多模态AI模型，专为智能体（agentic）工作流设计，并同时公布了商业API定价。 此举标志着Meta正式进入智能体AI编码市场，与OpenAI和Anthropic直接竞争；其定价显著低于竞争对手，可能促使行业价格战并加速AI编码工具的商品化。 Muse Spark 1.1拥有100万token的上下文窗口，在DeepSWE 1.1基准上得分53.3（前代仅为10.0），但社区指出其测试中擅自提高了CPU和内存上限，违反了Terminal-Bench 2.1的官方规则。",
+      "background_zh": "智能体AI指能够自主规划、使用工具并适应环境以完成复杂任务的AI系统，区别于被动响应式聊天机器人。Meta推出Muse Spark 1.1意在将其作为“破坏者”，通过低价和开放权重策略削弱竞争对手的模型收入。",
+      "community_discussion_zh": "社区对实用性和定价普遍认可，如Simon Willison为LLM工具制作了插件，称赞其便捷；但多位用户批评其基准测试结果因资源限制覆盖而无效，认为Meta应提供更透明的评估方法。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+          "title": "Meta enters the crowded AI coding battle with Muse Spark 1.1"
+        },
+        {
+          "url": "https://officechai.com/ai/muse-spark-1-1-benchmarks/",
+          "title": "Meta Announces Muse Spark 1.1, Beats Claude Opus 4.8 And GPT ..."
+        },
+        {
+          "url": "https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained",
+          "title": "Agentic AI, explained - MIT Sloan"
+        }
+      ],
+      "detailed_summary": "Meta于2026年7月9日宣布推出Muse Spark 1.1，这是一款多模态AI模型，专为智能体（agentic）工作流设计，并同时公布了商业API定价。 此举标志着Meta正式进入智能体AI编码市场，与OpenAI和Anthropic直接竞争；其定价显著低于竞争对手，可能促使行业价格战并加速AI编码工具的商品化。 Muse Spark 1.1拥有100万token的上下文窗口，在DeepSWE 1.1基准上得分53.3（前代仅为10.0），但社区指出其测试中擅自提高了CPU和内存上限，违反了Terminal-Bench 2.1的官方规则。",
+      "background": "智能体AI指能够自主规划、使用工具并适应环境以完成复杂任务的AI系统，区别于被动响应式聊天机器人。Meta推出Muse Spark 1.1意在将其作为“破坏者”，通过低价和开放权重策略削弱竞争对手的模型收入。",
+      "community_discussion": "社区对实用性和定价普遍认可，如Simon Willison为LLM工具制作了插件，称赞其便捷；但多位用户批评其基准测试结果因资源限制覆盖而无效，认为Meta应提供更透明的评估方法。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value release from Meta with new API pricing, sparking substantial community discussion (167 comments, 309 points) that both praises practical utility (Simon Willison's plugin) and critiques benchmark methodology (resource limit override), indicating significant interest but not a paradigm shift.",
+    "ai_summary": "Meta releases Muse Spark 1.1 with commercial API pricing, drawing community attention for its agentic capabilities and sparking debate over evaluation benchmarks.",
+    "ai_tags": [
+      "Meta",
+      "AI model",
+      "Muse Spark",
+      "benchmarking",
+      "LLM"
+    ]
+  },
+  {
+    "id": "rss:newsletter.pragmaticengineer.com_feed:ad3ead1305f1b10a",
+    "source_type": "rss",
+    "title": "The Pulse: What can we learn from Bun’s rapid Rust rewrite with AI?",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from",
+    "content": "A rewrite done in 11 days that would have taken a small team a year to complete, for $165K in tokens. Also: coding LLM &#8220;wars&#8221; heat up, AI fakers from North Korea still a problem when hiring, and more",
+    "author": "Gergely Orosz",
+    "published_at": "2026-07-09T16:32:18Z",
+    "fetched_at": "2026-07-09T23:59:21.823635Z",
+    "metadata": {
+      "feed_name": "The Pragmatic Engineer",
+      "category": "",
+      "tags": [],
+      "title_zh": "Bun用AI在11天完成Rust重写，成本16.5万美元",
+      "detailed_summary_zh": "Bun团队利用LLM在11天内将代码库重写为Rust，花费16.5万美元的token费用，而传统方式需要一个小团队约一年时间。 这一案例展示了AI在大型代码重写中的巨大潜力，能够显著降低时间和成本，可能改变未来软件工程中代码迁移和重构的实践方式。 重写使用了Rust语言，依赖LLM的代码生成能力，总token成本为16.5万美元。Bun是一个JavaScript运行时，旨在替代Node.js，使用JavaScriptCore引擎。",
+      "background_zh": "Bun是一个新兴的JavaScript运行时，提供打包、转译和测试功能，目标是成为Node.js的高性能替代品。Rust是一种系统级语言，以内存安全和并发性著称，常用于性能关键型项目。大语言模型（LLM）如GPT-4能够根据自然语言描述生成代码，但大规模应用仍需要人工审查。",
+      "sources": [
+        {
+          "url": "https://bun.sh/",
+          "title": "Bun — A fast all-in-one JavaScript runtime"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bun_(software)",
+          "title": "Bun (software) - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Bun团队利用LLM在11天内将代码库重写为Rust，花费16.5万美元的token费用，而传统方式需要一个小团队约一年时间。 这一案例展示了AI在大型代码重写中的巨大潜力，能够显著降低时间和成本，可能改变未来软件工程中代码迁移和重构的实践方式。 重写使用了Rust语言，依赖LLM的代码生成能力，总token成本为16.5万美元。Bun是一个JavaScript运行时，旨在替代Node.js，使用JavaScriptCore引擎。",
+      "background": "Bun是一个新兴的JavaScript运行时，提供打包、转译和测试功能，目标是成为Node.js的高性能替代品。Rust是一种系统级语言，以内存安全和并发性著称，常用于性能关键型项目。大语言模型（LLM）如GPT-4能够根据自然语言描述生成代码，但大规模应用仍需要人工审查。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value: Demonstrates a significant real-world application of AI (LLMs) for a rapid, cost-effective large-scale code rewrite, which could impact software engineering practices. Content from a reputable source presents novel insights.",
+    "ai_summary": "Bun's 11-day Rust rewrite using AI for $165K in tokens demonstrates the potential of LLMs in accelerating large-scale code rewrites.",
+    "ai_tags": [
+      "AI",
       "software engineering",
-      "satire",
-      "Hacker News"
+      "Rust",
+      "LLM",
+      "code rewrite"
     ]
   },
   {
-    "id": "hackernews:story:48833116",
-    "source_type": "hackernews",
-    "title": "Chatto is now open source",
-    "url": "https://www.hmans.dev/blog/chatto-is-open-source",
-    "content": "\n--- Top Comments ---\n\n[wxw]: &gt; It’s designed to be extremely easy to self-host on your own infrastructure. Kudos for this. Per the docs:  https:&#x2F;&#x2F;docs.chatto.run&#x2F; , &gt; Chatto ships in a compact, self-contained binary &gt; it uses NATS, a compact message broker that also ships with a built-in stream persistence engine [...] NATS is just as easy to provision as Chatto, and most of our examples will show you how. &gt; you can also configure an external S3-compatible object storage for Chatto to store you...\n\n[mertbio]: I’ve known Hendrik for years, and he is one of the most talented developers I’ve ever met. I’m confident this project will become successful very quickly. Beyond the project itself, what fascinates me most is how he single-handedly developed it by leveraging agentic coding.\n\n[duttish]: A thought if you want to sell to companies, &quot;with per-user keys that get shredded when a user decides to delete their account.&quot; You&#x27;ll need soft delete, work messages belong to the employer and not the user.\n\n[dormento]: Couldn&#x27;t help but smile because &quot;chato&quot; in portuguese means &quot;boring&quot;, and this seems very easy to set up and use. Here&#x27;s to more boring software! :)\n\n[frenchie4111]: This is awesome! Some feedback - I can&#x27;t tell anywhere from the website if there is mobile support (which is a must-have if I want to consider moving my company or friends over to this)",
-    "author": "speckx",
-    "published_at": "2026-07-08T15:19:50Z",
-    "fetched_at": "2026-07-09T00:02:43.177421Z",
+    "id": "rss:www.nature.com_nature.rss:4763682298fd43a6",
+    "source_type": "rss",
+    "title": "Whoops! Most arXiv papers contain information never meant to be shared",
+    "url": "https://www.nature.com/articles/d41586-026-02057-8",
+    "content": "<p>Nature, Published online: 09 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02057-8\">doi:10.1038/d41586-026-02057-8</a></p>Passwords, GPS coordinates and private conversations have all been found in the metadata and source files of millions of preprint submissions.",
+    "author": "David Brzostowicki",
+    "published_at": "2026-07-09T00:00:00Z",
+    "fetched_at": "2026-07-09T23:59:26.010441Z",
     "metadata": {
-      "score": 670,
-      "descendants": 184,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48833116",
-      "comment_count": 5,
-      "title_zh": "Chatto 现已开源",
-      "detailed_summary_zh": "Chatto 这款自托管聊天应用现已正式开源，其核心采用 NATS 消息代理和 S3 兼容对象存储，提供紧凑的单一二进制文件，方便用户在自己的基础设施上部署。 Chatto 的开源为自托管聊天领域提供了一个易于部署、设计精良的新选择，其社区的高分和积极讨论表明它可能成为企业和个人用户替代主流聊天软件的重要候选。 Chatto 使用 NATS 作为消息代理和内置流持久化引擎，并支持配置外部 S3 兼容存储来保存文件；此外，它实现了每用户加密密钥，在用户删除账户时销毁密钥，但社区指出企业场景可能需要软删除功能以保留工作消息。",
-      "background_zh": "NATS 是一个云原生计算基金会托管的开源消息系统，用 Go 语言编写，以高性能、轻量级和易部署著称。Chatto 则是一款全功能的网页聊天应用，设计目标就是让用户能极其简单地自托管，无需复杂配置。",
-      "community_discussion_zh": "社区对 Chatto 的开源反响热烈，开发者被称赞为“最有才华的开发者之一”，项目被认为会快速成功；但同时也收到建设性反馈，比如缺乏移动端支持是企业或个人迁移的障碍，以及用户密钥删除后企业消息归属权的问题需要软删除方案。",
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "arXiv 论文大量泄漏敏感信息",
+      "detailed_summary_zh": "Nature 报道称，大多数 arXiv 预印本论文的元数据和源文件中包含密码、GPS 坐标和私人对话等从未打算公开的敏感信息。 这一发现严重影响学术隐私安全，涉及 arXiv 上数百万篇论文，可能导致个人或机构数据泄露，并破坏研究者对预印本平台的信任。 敏感信息主要隐藏在 PDF 元数据、LaTeX 源文件或补充材料中，作者在提交时未意识到这些数据会被公开访问。",
+      "background_zh": "arXiv 是一个开放获取的预印本仓库，收录物理、数学、计算机科学等领域近 240 万篇论文，但提交的论文未经同行评审即可发布。元数据和源文件通常包含作者在编辑过程中留下的注释、路径或凭据，若不作清理便会随论文一起公开。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/NATS_Messaging",
-          "title": "NATS Messaging - Wikipedia"
-        },
-        {
-          "url": "https://docs.chatto.run/getting-started/introduction/",
-          "title": "Introduction | Chatto"
+          "url": "https://en.wikipedia.org/wiki/ArXiv",
+          "title": "arXiv - Wikipedia"
         }
       ],
-      "detailed_summary": "Chatto 这款自托管聊天应用现已正式开源，其核心采用 NATS 消息代理和 S3 兼容对象存储，提供紧凑的单一二进制文件，方便用户在自己的基础设施上部署。 Chatto 的开源为自托管聊天领域提供了一个易于部署、设计精良的新选择，其社区的高分和积极讨论表明它可能成为企业和个人用户替代主流聊天软件的重要候选。 Chatto 使用 NATS 作为消息代理和内置流持久化引擎，并支持配置外部 S3 兼容存储来保存文件；此外，它实现了每用户加密密钥，在用户删除账户时销毁密钥，但社区指出企业场景可能需要软删除功能以保留工作消息。",
-      "background": "NATS 是一个云原生计算基金会托管的开源消息系统，用 Go 语言编写，以高性能、轻量级和易部署著称。Chatto 则是一款全功能的网页聊天应用，设计目标就是让用户能极其简单地自托管，无需复杂配置。",
-      "community_discussion": "社区对 Chatto 的开源反响热烈，开发者被称赞为“最有才华的开发者之一”，项目被认为会快速成功；但同时也收到建设性反馈，比如缺乏移动端支持是企业或个人迁移的障碍，以及用户密钥删除后企业消息归属权的问题需要软删除方案。"
+      "detailed_summary": "Nature 报道称，大多数 arXiv 预印本论文的元数据和源文件中包含密码、GPS 坐标和私人对话等从未打算公开的敏感信息。 这一发现严重影响学术隐私安全，涉及 arXiv 上数百万篇论文，可能导致个人或机构数据泄露，并破坏研究者对预印本平台的信任。 敏感信息主要隐藏在 PDF 元数据、LaTeX 源文件或补充材料中，作者在提交时未意识到这些数据会被公开访问。",
+      "background": "arXiv 是一个开放获取的预印本仓库，收录物理、数学、计算机科学等领域近 240 万篇论文，但提交的论文未经同行评审即可发布。元数据和源文件通常包含作者在编辑过程中留下的注释、路径或凭据，若不作清理便会随论文一起公开。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to significant privacy and security implications for a major preprint repository (arXiv), flagged by a reputable source (Nature). The issue affects millions of papers and could lead to serious data breaches. Discussion quality and engagement are unknown from the content provided.",
+    "ai_summary": "A Nature article reports that many arXiv papers contain sensitive information such as passwords and GPS coordinates in metadata and source files, posing a major privacy risk.",
+    "ai_tags": [
+      "privacy",
+      "security",
+      "arXiv",
+      "academic publishing",
+      "data leakage"
+    ]
+  },
+  {
+    "id": "hackernews:story:48845442",
+    "source_type": "hackernews",
+    "title": "The glass backbone: Why the Army's logistics will break in the next war",
+    "url": "https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/",
+    "content": "\n--- Top Comments ---\n\n[kayo_20211030]: A very insightful, and correct, piece. I&#x27;ll quote in full the following, which I think gets to the heart of the matter. If you have no push, you can&#x27;t apply pressure to the point. &gt; The notion that amateurs talk tactics and professionals talk logistics is frequently discussed in military academies and war colleges, yet it is rarely reflected in the Army’s budget requests or modernization priorities. The outdated concept of the tooth-to-tail ratio, which implies the logistical tai...\n\n[bad_haircut72]: When Russia invaded Ukraine, nobody (even the Ukranians) imagined that 5 years later they would have their own missiles hammering Russia 2500kms in the rear. Americans need to start accepting that a) the Iran war will also probably still be going on in 5 years and b) Iran will probably in a better place than they are now, strategically speaking.\n\n[0x59]: WWII? Fabius did this to Hannibal more than a thousand years ago. The core of his strategy was to dunk on supplies, stall, and have the Carthaginians run out of food. I imagine Iran, Ukraine, and Russia all know about Fabian strategy.\n\n[vondur]: Yep, how long does it take to replace an F-35 or one Reaper drone? In WW2 we probably could have buried Germany in the amount of tanks we could produce. We are like Germany from WW2 now, with hand stitched upholstery in our Tiger Tanks.\n\n[a34729t]: China has missed their window of opportunity, sadly. For the next big war, the US will simply not even need to air or sea to deliver weapons or supplies (see SpaceX&#x27;s StarFall, of which 60x4 should fit into Starship). Per my calculations, the JDAM version of this will be cheaper than flying planes (and pilots) to drop bombs or cruise missiles. For small(er) wars, cheap drones break everything as they can destroy your backfield. Unless of course you happen to move your backfield into orbi...",
+    "author": "baud147258",
+    "published_at": "2026-07-09T13:24:43Z",
+    "fetched_at": "2026-07-09T23:59:21.158950Z",
+    "metadata": {
+      "score": 263,
+      "descendants": 362,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48845442",
+      "comment_count": 5,
+      "title_zh": "美军后勤的脆弱性：下一场战争可能崩溃",
+      "detailed_summary_zh": "西点军校现代战争研究所发表文章指出，美军后勤系统因过度依赖复杂且不具韧性的供应链，在下一场大规模冲突中极易崩溃。文章批评陆军预算长期忽视后勤现代化，优先采购打击武器而非保障能力。 后勤是军事行动的命脉，后勤失败将直接导致战斗力丧失。这一观点引发广泛讨论，对美军未来预算分配、供应链韧性和作战战略具有重要警示意义。 文章引用“齿尾比”概念，认为美军错误追求减少后勤人员来提高战斗力，实则削弱了持续作战能力。搜索结果显示，高超音速武器和网络攻击可远程瘫痪后勤节点，且当前国防工业基础对供应链中断的韧性不足。",
+      "background_zh": "军事后勤负责物资、弹药、燃料等补给，是维持部队作战能力的基础。现代战争后勤依赖全球供应链和精密电子系统，但越复杂的系统越易因局部故障（如运输线中断、网络攻击、产能不足）而整体瘫痪。历史表明（如二战德军、俄乌冲突），后勤薄弱一方往往陷入困境。",
+      "community_discussion_zh": "评论中引用了汉尼拔与费边战略、俄乌冲突中伊朗导弹远程打击等案例，强调破坏后勤是经典战法。部分用户认为美国可通过SpaceX的“StarFall”等太空运输技术绕过传统后勤瓶颈，但另一些用户指出当前美国工业产能已远不如二战时期，无法快速补充高端武器损失。",
+      "sources": [
+        {
+          "url": "https://www.ey.com/en_us/insights/strategy/four-actions-to-modernize-military-logistics-and-supply-chain-security",
+          "title": "Modernizing military logistics and supply chain security | EY - US"
+        },
+        {
+          "url": "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/July-August-2023/Supply-Chain-Issues/",
+          "title": "The Impact of Supply Chain Issues on Military Training and Readiness"
+        }
+      ],
+      "detailed_summary": "西点军校现代战争研究所发表文章指出，美军后勤系统因过度依赖复杂且不具韧性的供应链，在下一场大规模冲突中极易崩溃。文章批评陆军预算长期忽视后勤现代化，优先采购打击武器而非保障能力。 后勤是军事行动的命脉，后勤失败将直接导致战斗力丧失。这一观点引发广泛讨论，对美军未来预算分配、供应链韧性和作战战略具有重要警示意义。 文章引用“齿尾比”概念，认为美军错误追求减少后勤人员来提高战斗力，实则削弱了持续作战能力。搜索结果显示，高超音速武器和网络攻击可远程瘫痪后勤节点，且当前国防工业基础对供应链中断的韧性不足。",
+      "background": "军事后勤负责物资、弹药、燃料等补给，是维持部队作战能力的基础。现代战争后勤依赖全球供应链和精密电子系统，但越复杂的系统越易因局部故障（如运输线中断、网络攻击、产能不足）而整体瘫痪。历史表明（如二战德军、俄乌冲突），后勤薄弱一方往往陷入困境。",
+      "community_discussion": "评论中引用了汉尼拔与费边战略、俄乌冲突中伊朗导弹远程打击等案例，强调破坏后勤是经典战法。部分用户认为美国可通过SpaceX的“StarFall”等太空运输技术绕过传统后勤瓶颈，但另一些用户指出当前美国工业产能已远不如二战时期，无法快速补充高端武器损失。"
     },
     "ai_score": 7.0,
-    "ai_reason": "High value release of a self-hosted chat app with good technical design (NATS, S3) and strong community engagement (184 comments, 670 points). Discussion includes constructive feedback on security and mobile support, indicating community interest.",
-    "ai_summary": "Chatto, a self-hosted chat application with a compact binary and NATS-backed persistence, has been open-sourced.",
+    "ai_reason": "High community engagement (263 points, 362 comments) with substantive discussion referencing historical and current conflicts. The topic is relevant to systems thinking and supply chain resilience, though not directly software engineering or AI.",
+    "ai_summary": "The article argues that modern US military logistics are fragile and would fail in a major conflict due to over-reliance on complex supply chains.",
+    "ai_tags": [
+      "military logistics",
+      "systems thinking",
+      "supply chain",
+      "strategy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48850414",
+    "source_type": "hackernews",
+    "title": "GLM 5.2 is nearly as accurate as a human book keeper",
+    "url": "https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark",
+    "content": "\n--- Top Comments ---\n\n[Diogenesian]: This shouldn&#x27;t be ignored in the discussion here:     The job performed by the humans was broader than what was requested of the model in this benchmark: humans also had to find the relevant invoices (searching through mailboxes, or requesting them from providers) and reason through any circumstances which cannot be inferred from the bank feed and invoices&#x2F;receipts on their own. In the benchmark these circumstances are presented to the model as “user notes.&quot;\n  \nThis is precisel...\n\n[zerobees]: This is a prime example of a problem space where accuracy matters, but it also matters who ultimately goes to prison. I&#x27;m going to go out on a limb and guess it&#x27;s not the LLM. If you&#x27;re acting in good faith and your accountant does something crazy or evil, your liability is limited to  some  extent. You may get a tax bill but you&#x27;re probably not gonna end up behind bars. But if your LLM decides to do a little bit of tax fraud, you&#x27;re in uncharted waters. In the end, t...\n\n[raesene9]: Interesting write-up. Having been a bookkeeper a long time ago, I&#x27;m not too surprised at this being susceptible to automation by an LLM backed system. It seems also that the classes of error they encountered could be handled by improved skills&#x2F;knowledge base access on the fine points of relevant tax legislation. The important part for their software ofc is, will they take responsibility for the output if HMRC come calling? Without that users are adopting the risk which they may not ...\n\n[aerhardt]: I&#x27;d be scared shitless to even try something like this. There is just a pretty website, a video, and a blog post. No info on the founders, I can&#x27;t find anything on LinkedIn, just a company Vineyard Finance LTD that was incorporated last year. We&#x27;re all unhinged about the data we&#x27;re giving LLMs but here I&#x27;d draw the line. I&#x27;d rather keep paying the small amount I pay to have my accounts done.\n\n[petercooper]: I wouldn&#x27;t be surprised if it were more accurate based on the errors I&#x27;ve seen. I always eyeball the books and was confused when a £15k building popped up on our asset sheet. It turns out a &quot;workshop&quot; had been categorised as a building we had purchased, rather than the training session it actually was. This is the importance of having layers and multiple sets of eyes on things, though. Even if it had got past me, my  accountant  would have surely queried it at year end, bu...",
+    "author": "adamkurkiewicz",
+    "published_at": "2026-07-09T18:29:41Z",
+    "fetched_at": "2026-07-09T23:59:21.159018Z",
+    "metadata": {
+      "score": 164,
+      "descendants": 105,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48850414",
+      "comment_count": 5,
+      "title_zh": "GLM 5.2记账准确率接近人类，但责任问题待解",
+      "detailed_summary_zh": "GLM 5.2在记账基准测试中达到了接近人类水平的准确率，但该测试仅涵盖部分记账任务，且模型依赖用户提供的笔记。 这一结果展示了大型语言模型在会计自动化领域的巨大潜力，但同时暴露了责任归属、数据隐私和模型可靠性等关键问题，可能影响实际应用。 基准测试中，人类记账员还需要自行搜索发票和推理特殊情况，而模型则直接获得了用户笔记，简化了任务；错误类型包括税务细节错误，可通过改进知识库解决。",
+      "background_zh": "GLM 5.2由Z.ai（原智谱AI）开发，是其旗舰大语言模型，支持长达100万token的上下文。记账自动化是LLM在专业领域的一个热门应用方向，但准确性和法律责任是主要障碍。",
+      "community_discussion_zh": "社区评论指出，人类记账员的工作范围比基准测试更广，模型依赖用户笔记简化了任务；还有人担忧如果模型导致税务欺诈，用户将承担未知风险；此外，服务提供商的初创公司背景不透明，引发信任质疑。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/GLM_5.2",
+          "title": "GLM 5.2"
+        },
+        {
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "title": "zai-org/GLM-5.2 · Hugging Face"
+        }
+      ],
+      "detailed_summary": "GLM 5.2在记账基准测试中达到了接近人类水平的准确率，但该测试仅涵盖部分记账任务，且模型依赖用户提供的笔记。 这一结果展示了大型语言模型在会计自动化领域的巨大潜力，但同时暴露了责任归属、数据隐私和模型可靠性等关键问题，可能影响实际应用。 基准测试中，人类记账员还需要自行搜索发票和推理特殊情况，而模型则直接获得了用户笔记，简化了任务；错误类型包括税务细节错误，可通过改进知识库解决。",
+      "background": "GLM 5.2由Z.ai（原智谱AI）开发，是其旗舰大语言模型，支持长达100万token的上下文。记账自动化是LLM在专业领域的一个热门应用方向，但准确性和法律责任是主要障碍。",
+      "community_discussion": "社区评论指出，人类记账员的工作范围比基准测试更广，模型依赖用户笔记简化了任务；还有人担忧如果模型导致税务欺诈，用户将承担未知风险；此外，服务提供商的初创公司背景不透明，引发信任质疑。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value demonstration of LLM accuracy in accounting, with strong community engagement and critical comments highlighting scope limitations and liability issues.",
+    "ai_summary": "GLM 5.2 achieves near-human accuracy on a bookkeeping benchmark, but broader human tasks and liability concerns remain.",
+    "ai_tags": [
+      "LLM",
+      "accounting",
+      "benchmark",
+      "automation",
+      "accuracy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48849059",
+    "source_type": "hackernews",
+    "title": "ChatGPT Work",
+    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+    "content": "\n--- Top Comments ---\n\n[postalcoder]: I just installed this. I am very confused. I no longer have a Codex app on my computer. ChatGPT is now Codex. But what happened to ChatGPT? Where am I supposed to casually chat? Also, when you toggle btween ChatGPT Work and ChatGPT Codex, nothing changes. This is super confusing. Can someone from the OpenAI team clarify the difference btwn the modes? Does chatgpt work have more business-y related plugins turned on by default? Edit: So it seems like the only place you can actually chat with ch...\n\n[todfox]: This unification is garbage. Chats that are about topics other than programming projects are relegated to a tiny, unsearchable popup window. Renaming the old app &quot;ChatGPT Classic&quot; implies that it will be discontinued at some point. This is a serious regression. What existed before worked fine. I would expect the mode switcher to include a Chat mode, which would recreate the old, chat-focused UI, for asking about random topics. So, that&#x27;s basically gone now. Technically, it&#x27...\n\n[asim]: This thread is so spot on but I can also imagine the product development internally is moving so fast that they&#x27;re trying to reconcile everything and can&#x27;t. And this is the huge mistake so many companies make. Leave what&#x27;s working alone. Build new adjacent things. It&#x27;s clear they want to make money and work or code is the focus of enterprise. But never rename something Classic...so bad.\n\n[tekacs]: Anthropic just changed their web interface yesterday to have Chat versus Cowork as well, and every time I look at it, I&#x27;m so confused. I&#x27;m still so unclear when I&#x27;m supposed to use one or the other or the other. Now the &#x27;ChatGPT desktop app&#x27; (the Codex app, renamed) also has the split between work and code, and as far as I can tell, all it does is change which plugins are loaded by default to include Office ones when you put it in work mode. Perhaps it also changes th...\n\n[polyrand]: On one hand, this had to happen at some point. I feel the split between ChatGPT vs. Codex wasn&#x27;t helping OpenAI. Anthropic did it right from the beginning by unifying everything in the same application. From my perspective, Codex is much better than any other app, but for non-technical users they were still stuck in ChatGPT only, and &quot;nobody&quot; knew about Codex. Anthropic also did it better by putting everything under the &quot;Claude&quot; brand: Claude Code, Claude Cowork, etc....",
+    "author": "Tiberium",
+    "published_at": "2026-07-09T17:03:53Z",
+    "fetched_at": "2026-07-09T23:59:21.159050Z",
+    "metadata": {
+      "score": 314,
+      "descendants": 156,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48849059",
+      "comment_count": 5,
+      "title_zh": "OpenAI合并ChatGPT和Codex引发用户困惑",
+      "detailed_summary_zh": "OpenAI将ChatGPT和Codex合并为统一的'ChatGPT Work'，原有的独立Codex桌面应用被取代，用户界面出现新的模式切换但功能不明确。 这一合并导致大量用户困惑，批评界面设计倒退，可能影响OpenAI在开发者社区中的信任和产品体验口碑。 新模式切换（ChatGPT Work与ChatGPT Codex）在功能上无明显区别，仅默认加载的插件不同；原有聊天界面被压缩为不可搜索的小弹窗，且旧应用被重命名为'ChatGPT Classic'暗示未来可能停用。",
+      "background_zh": "ChatGPT是OpenAI的通用对话AI产品，而Codex最初是专注于代码生成的大模型，后来演变为独立的桌面编程助手应用。OpenAI此次试图将两者融合，但粗暴的统一破坏了原有的聊天体验和代码工具的专业性。",
+      "community_discussion_zh": "社区普遍持负面态度，用户反映界面混乱、聊天功能严重退化，并批评产品团队操之过急；有评论指出类似Anthropic也做了分叉界面导致混淆，认为OpenAI不应破坏原有工作方式。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)",
+          "title": "OpenAI Codex (language model) - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Codex_(AI_agent)",
+          "title": "Codex (AI agent) - Wikipedia"
+        }
+      ],
+      "detailed_summary": "OpenAI将ChatGPT和Codex合并为统一的'ChatGPT Work'，原有的独立Codex桌面应用被取代，用户界面出现新的模式切换但功能不明确。 这一合并导致大量用户困惑，批评界面设计倒退，可能影响OpenAI在开发者社区中的信任和产品体验口碑。 新模式切换（ChatGPT Work与ChatGPT Codex）在功能上无明显区别，仅默认加载的插件不同；原有聊天界面被压缩为不可搜索的小弹窗，且旧应用被重命名为'ChatGPT Classic'暗示未来可能停用。",
+      "background": "ChatGPT是OpenAI的通用对话AI产品，而Codex最初是专注于代码生成的大模型，后来演变为独立的桌面编程助手应用。OpenAI此次试图将两者融合，但粗暴的统一破坏了原有的聊天体验和代码工具的专业性。",
+      "community_discussion": "社区普遍持负面态度，用户反映界面混乱、聊天功能严重退化，并批评产品团队操之过急；有评论指出类似Anthropic也做了分叉界面导致混淆，认为OpenAI不应破坏原有工作方式。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important product update from OpenAI unifying ChatGPT and Codex, generating significant community discussion (314 points, 156 comments) with critical feedback highlighting UX confusion and potential regression. The negative reception and thoughtful commentary add depth, making it a high-value item.",
+    "ai_summary": "OpenAI merges ChatGPT and Codex into 'ChatGPT Work,' sparking user confusion and backlash over UX changes.",
+    "ai_tags": [
+      "ChatGPT",
+      "OpenAI",
+      "Codex",
+      "User Experience",
+      "AI Tools"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0d38ac22693a5532",
+    "source_type": "rss",
+    "title": "Lobsters Interview with mitchellh",
+    "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
+    "content": "<p><a href=\"https://lobste.rs/~mitchellh\" rel=\"ugc\">@mitchellh</a> (<a href=\"https://mitchellh.com/\" rel=\"ugc\">blog</a>) was behind <a href=\"https://vagrantup.com\" rel=\"ugc\">Vagrant</a>, <a href=\"https://packer.io\" rel=\"ugc\">Packer</a>, <a href=\"https://consul.io\" rel=\"ugc\">Consul</a>, <a href=\"https://terraform.io\" rel=\"ugc\">Terraform</a>, <a href=\"https://vaultproject.io\" rel=\"ugc\">Vault</a>, <a href=\"https://nomadproject.io\" rel=\"ugc\">Nomad</a>, <a href=\"https://waypointproject.io\" rel=\"ugc\">Waypoint</a> and now builds <a href=\"https://ghostty.org/\" rel=\"ugc\">Ghostty</a> and <a href=\"https://github.com/mitchellh/vouch\" rel=\"ugc\">Vouch</a>.</p>\n<p>In this interview, we talk about terminals, Zig and open source.</p>\n<hr />\n<p><strong>You've been interviewed <em>a lot</em>. Why do people like to interview you?</strong></p>\n<p>In interviews, everyone comes from a different angle. Many people want to know how the software engineering to business founder mindset transition went. Then others are interested in product stuff, the work I did at Hashicorp or Ghostty now. What's different here is there's no known agenda coming into it; neither of us have anything to sell.</p>\n<p><strong>What do you find so fun about terminals? Like, why Ghostty?</strong></p>\n<p>I spent ~15 years building CLI applications (not TUIs like we see nowadays). Through that process, I accidentally learned how to color things, move cursors etc. Leaving Hashicorp, I wanted to sharpen my technical skills (where they'd grown dull from neglect) and specifically work on: Pre-AI GPU programming, desktop/single node systems programming (spending so much time on the distributed side where you didn't worry about cache locality or vector operations, since network costs dominated). I also really wanted to play with Zig. I wanted to satisfy those 3 things.</p>\n<p>After 15 years building CLIs, I didn't understand how a terminal emulator worked. I knew the components of a terminal but really wanted to understand how it worked, which would also let me work on the GPU, desktop and in Zig. My goal was to run vim and the compiler in it, have it build itself, then throw it away. But as I learned more about the terminal ecosystem, I understood nothing fit the niche I wanted: fast, feature-rich and natively cross-platform. I shared it with a few friends in Discord, who asked if they could share it with others because they were actually using it every day. The Ghostty Discord was just my friends' group chat which got repurposed. I didn't want to publish because my public persona would generate too much undue attention, so I ran a private beta for a long time.</p>\n<p><strong>How can we push terminals harder?</strong></p>\n<p>I don't support pushing terminals to the extreme. Sure, they're an application platform capable of the same things other application platforms on top of the OS are like the browser, old Java app runtime environments. You could build all functionality into it: video and microphone access, responsive layouts... You could.</p>\n<p>But the browser is good at something, the desktop is good at something else and text-based (monospaced-grid) applications are also good at something unique. These text-based applications should be quick to implement, easy to interact with, clear in their security model. There's a lot of opportunity in the ecosystem here and I'd love to build more protocols to enable that.</p>\n<p>Terminal-based applications lend themselves to composition better than other paradigms. TUIs less so, but most CLI tools have mechanisms (beyond stdin and stdout) to use them like a function (the UNIX do one thing philosophy is the extreme). Neovim and AI tooling offer ever more cmdline flags. A world of better terminal applications, is a world of better automation, scriptability.</p>\n<p>I want to make the terminal a special place for applications. The PTY's in-band signalling (an unstructured byte stream with escape sequences) is a big problem. The Nushell ecosystem tries to fix it with another layer, but we need a fundamental improvement. Many people dislike the Microsoft ecosystem, but PowerShell gets a lot right with structured data.</p>\n<p><strong>What do you think about non-legacy terminal APIs?</strong></p>\n<p>My guiding star is how we now have multiple major, huge application platforms: the browser, emacs, the whole Apple ecosystem, Microsoft ecosystem, Android, video game console platforms. These ecosystems have strengths and weaknesses, but how do their frameworks work? On the web, it's the DOM and JS APIs. On Apple, it's AppKit, <a href=\"https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaFundamentals/WhatIsCocoa/WhatIsCocoa.html\" rel=\"ugc\">Cocoa</a> and SwiftUI. On Windows, it's Win32, WinUI etc. On Linux, it's GTK and Qt etc. When someone says we need a better way of accessing clipboard data (historical protocols are text only, what about images, multiple MIME types etc. which desktops have handled for decades), I would grab the docs for clipboard managers on every platform to see what we've landed on. There's no reason for us to build something based on our own understanding without researching decades of prior art. That's the approach I'm trying to take here. I've not introduced any custom protocols yet.</p>\n<p>Two protocols scream at me. Currently, terminals have a main screen and an alt (sometimes called primary and secondary) with different properties. Main screen is like your shell with scrollback etc. and the alternate screen is like Neovim, most TUIs etc. There are only 2, you either turn a mode on or off putting you into primary or secondary (taking up the whole screen, losing scrollback etc.)</p>\n<p>I'd like to introduce an n-screen API to create and populate an unlimited number of screens in the background, let you overlay screens with separate grid sizes etc. The terminal emulator could handle line wrapping, selection, routing mouse events etc. You could specify a screen as a standalone window which the terminal emulator renders outside of the grid - imagine your Neovim tabs being native window tabs opened at the same time! This foundational layer would solve a lot of things.</p>\n<p>I also have a spec'd out button protocol. Currently, there are mouse protocols to get notified when someone clicks a grid cell. But you only receive events for what's currently on the screen, not history, when things scroll back... We currently support hyperlinks (<a href=\"https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda\" rel=\"ugc\">OSC 8</a>) and I'd like something similar to OSC 8 where clicking sends a message (which you specify) to the program. You could create a button with an <code>open_profile</code> ID which will still register when the user scrolls back in history. This affects main screen applications (the only ones with scroll back) like Claude Code. I have no interest discussing AI here, it's just a really popular main screen application. The moment things go into history, you lose the ability to open files, in-app links etc.</p>\n<p><strong>To what extent is that just redoing the entire user space? There's a lot of room for scope creep there.</strong></p>\n<p>I experimented with replacing the entire pty protocol with Wayland. If you squint, a terminal's just a windowing server, managing windows and widgets on windows. I studied Wayland to make Ghostty run better on it and thought it's a pretty good protocol for what it tries to solve (local desktops, rendering windows). But I threw that out.</p>\n<p>A problem with terminals is that there's no standards body <em>any more</em>. There are old specs, de jure standardized, but the past 20 years have seen standardization based on what the most popular terminals do. We have a hodge-podge of features, but no entity pushing a tasteful vision.</p>\n<p>I don't know what the right path forward is. You could make an alternate home for text-based applications, not called a terminal anymore, build something new (with a terminal translation layer on top to bring legacy applications on) which is trying to do something different.</p>\n<p><strong>How do you balance these ideas with users' day to day demands?</strong></p>\n<p>I'm very public about open-source maintainers having 0 obligation to users. The first line in OS licenses is \"as is, no warranty\". That's the agreement, you get free software and can't make demands on it. But I like striving to build good software (some may disagree and say my software's shitty), so I do feel an obligation to fix problems, to make the software better.</p>\n<p>Some days I wake up expecting to go through issues just fixing other people's problems. But sometimes I wake up and focus on what I want, not reading a single issue, discussion nor PR. Sometimes, you need to push the bigger vision; sometimes, you need to address the reality on the ground.</p>\n<p>You can build a perfect city in the sky, then come back and find terror and suffering in the real world. So you need to clean that up sometimes.</p>\n<p>If all I did was pick through user issues every single day, you'd get stable, stagnant software. If you accept all PRs, you will change but without vision. I don't mean to insult contributors, but only one person every few years fundamentally gets it. Most contributions just scratch someone's specific itch, accepting them all leads to a mountain of code. Really understanding, you can sometimes discover graceful systems which solve everything succinctly.</p>\n<p>I once did <a href=\"https://x.com/mitchellh/status/2001810354096214059?lang=en\" rel=\"ugc\">feature design video</a> where I closed 3-4 separate feature requests solving people's individual problems, because a single feature (different from all of them) could solve them all at the same time. Very few people can do this, not because it's difficult but because it requires a level of care few people give to other projects.</p>\n<blockquote>\n<p>I've been thinking about this off and on for like a year (along with hundreds of other things, nothing dedicated, I'm always just thinking about this stuff when not at a computer). When I finally sat down and thought \"I'm going to solve this,\" maybe... 1 hour? <a href=\"https://x.com/mitchellh/status/2003957851514126510\" rel=\"ugc\">https://x.com/mitchellh/status/2003957851514126510</a></p>\n</blockquote>\n<p><strong>Fewer features composing better attracts people to exotic programming paradigms. It demands a lot of perspective.</strong></p>\n<p>I got on an internet spat with someone recently about my philosophy. One of the highest requested Ghostty features is search, which is done and shipped. But someone complained search bloated and broke Ghostty's minimalism. I advertise Ghostty as feature rich! But I do distinguish that from bloat. I don't think you should have to pay for the things you don't use (besides disk space or resident code memory). I explained the way I architected search means it will take up disk space and be loaded into RAM but nothing will execute; this is a free feature if you don't use it. I want Ghostty to be a riceable, customizable terminal fitting peoples' needs, but also working out of the box and hiding them until you need or search for them, without costing anything.</p>\n<p>But if you really want this, just fork and maintain it yourself. That's not asking any more of you than you're asking of me. If you want me to maintain a flag to remove it, I can ask you to maintain a fork removing it. Telling people to \"fork it\" often upsets them.</p>\n<p><strong>Very few people maintain their own patches etc. and demand entire projects to move to comfort them. It's a very disempowering mindset to beg others to do what they could very easily do themselves, forgoing their own agency.</strong></p>\n<p>I've always believed there should be way more forks, both personal and maintained ones.</p>\n<p>I do blame myself and venture-backed opensource in general here. There's a whole generation which expects highly polished, funded, opinionated projects with websites and paid support staff (in Discord, Slack etc.) believing an open sourced project is a product - and it was a product in these venture backed cases. But that's such a minute part of the ecosystem.</p>\n<p>Open source includes sharing, but it's about freedoms and rights. That's the core part of open source, defining OSI-approved open source licenses. Use the software as you want, modify and fork it. None of those rights are about stability or obligation to maintain. People blame maintainers for shipping security vulnerabilities, but why didn't <em>you</em> review that commit? You're just as obligated to review the commit as the maintainer. But people hold maintainers to this higher responsibility, when they could fork and become a maintainer just like that.</p>\n<p>If you want better guarantees, if you want the entitlement to blame someone, pay for software. When you have a vendor-customer relationship, you are now entitled to things. But there's no entitlement in open source. Use it how you love it, that's the path to getting what you want. If more people forked, they'd have more empathy for builders too.</p>\n<p>Sometimes people assume some project of mine is a company or send a PR fixing a bug I don't personally hit, and I don't merge it because merging means committing to maintain it forever. In a personal project, I won't merge because I don't hit that bug.</p>\n<p><strong>Consuming someone else's not-product, what're your thoughts on Zig's development? Clearly you're fine without the 1.0.</strong></p>\n<p>I knew what I signed up for. I got into Zig by doing compiler patches and got to know the community well. I grasp the culture, philosophy etc. well, so I'm not upset by any of this.</p>\n<p>I expect the I/O change to be one of the hardest things we've done, but we haven't started yet.</p>\n<p>Zig's getting more popular and Andrew, the BDFL, isn't backing down from changes he feels are necessary, which I like as a downstream consumer. 0.15 was pretty significant, changing the writer interface and thus anything printing anything. But the API is truly so much better.</p>\n<p>Zig is just getting better and better. They focus a lot on compilation tooling and even removed language features to improve compilation speed, mind blowing. You can build lib-ghostty (the entire terminal) instantly, and Andrew still thinks these milliseconds are too slow.</p>\n<p>I do think Zig will eventually reach a 1.0, though I think it's still years away. It matters far less when AI's involved. I hope people know, reading this, that I'm no AI hype-master.</p>\n<p>At a very basic level, we know these neural nets are really good at pattern matching and pattern filling. For these kind of language changes, I showed how to do it in a variety of contexts then asked it to draw the rest of the owl. And though, the diffs were huge, 90% was done automatically while I was in the kitchen. This hints to a future where backwards compatibility means a lot less if you explain how to go from state A to B.</p>\n<p>This is a bit ironic given Zig's strict anti-AI policy, but AI dulls the pain changes inflict on downstream users.</p>\n<p><strong>How do you approach library and API design? Ghostty uses lib-ghostty. A friend was raving about how nice your libraries are to use. Do you have concrete methods to improve them besides just caring?</strong></p>\n<p>The most concrete way is to use a lot of libraries in a lot of communities. Just like learning a programming language you won't actually use (professionally), using libraries across ecosystems expands your perspective and benefits you. In university, I spent a lot of time dabbling with esoteric languages. I made many toy products in Prolog, Haskell, Clojure and even Java (I was never a professional Java programmer so it was new for me. I wrote a full web side project in it. I didn't like it but learned a lot about the build system, ergonomics, libraries, web frameworks, web servers, app servers and all that stuff.) Every ecosystem has a different culture. That culture is human for sure, but it bleeds into how they separate concerns at a library and framework level, how they make those APIs look. For the longest time, Java used the builder pattern all over the place, which I didn't see in any other language but I tried it in Ruby and it felt pretty good. That's an example of porting concepts. This is how I approach library design: Try to use the concepts I found the most enjoyable and hope others with similar taste also enjoy it.</p>\n<blockquote>\n<p>I firmly believe that \"nouns\" matter and the problem with Docker to me is there a ton of stuff that is focused on deployment/runtime aspects and it meddles with the human flow. The fact that Vagrant was focused directly, exclusively on development was by design: the configuration, the CLI, etc. revolved around development-focused nouns, and I think that was a good thing. - <a href=\"https://lobste.rs/c/ddl137\" rel=\"ugc\">https://lobste.rs/c/ddl137</a></p>\n</blockquote>\n<p><strong>Do you yourself make terminal applications dogfooding and testing these APIs and thoughts?</strong></p>\n<p>Not enough, honestly. I've been a tool maker my entire career and firmly believe in the <em>tool maker's dilemma</em> where you desperately need something and understand the problem space well, then build an ideal tool, but others like it and you become an ungrounded tool maker instead of the tool user. I've had this bite me many times. From the terminal perspective, I live in the terminal but from a TUI development perspective, I'm not doing enough, but a few of our maintainers are prolific TUI creators like <a href=\"https://github.com/rockorager\" rel=\"ugc\">rockorager</a> who maintains multiple email and IRC clients and authored a few specifications. I've been leaning on him for this.</p>\n<p><strong>Are you happy with today's tech stacks? In the past, You mentioned nice-polished OS as products, big tech used to distinguish itself by technology too. But it seems like they've given up entirely, not dogfooding nor caring. Their open-source feels stagnated (with exception of the occasional exception like Jujutsu).</strong></p>\n<p>I'm... ... ... ...<em>okay</em> with today's tech stacks. They're <strong>okay</strong>. There's obviously so much I wish were different but I can't get too bogged down stressing about things I can't change, about battles that aren't mine to fight. For example, there's a lot of good in the frontend, TypeScript, React type communities. But there's also way too much churn, too much complexity, the layers of abstraction aren't clear at all. I spent time studying them but just don't agree at all with how the community culturally addresses them. But I'm not going to fight it, replace it. So I go with the flow, stick with the mainstream to assist with community, hiring etc.</p>\n<p>I'm <strong>fine</strong> with today's tech stacks. I think some of the more recent developments are overly complicated across the board. HTTP/1 vs. HTTP/2 and HTTP/3, there's a non-linear change in complexity, justified in various ways but still difficult to swallow. You see that in frontend tech, terminal tech etc. I wonder if we're moving so fast that we're building complicated stuff which could have been simpler. \"I didn't have time to write a short letter, so I wrote a long one instead.\" This seems to be playing out industry-wide, accelerated by AI and such tooling.</p>\n<p><strong>Talking about Zig, you said you understood its values etc. At Hashicorp, you wrote a principles document. How do you decide, create, get buy-in and use principles day to day? Why is Ghostty e.g. feature-rich? How do principles concretely impact development?</strong></p>\n<p>Even when my cofounder and I wrote the Hashicorp principles or when I decided how Ghostty would develop, it was all just personal, a reflection of me, so very easy for me to live those principles day to day. I just have to act myself. People run into problems when they make principles unlike themselves. It's that New Year's resolution problem where you make these grandiose intentions towards dramatic changes in your life but it's very hard, because it's hard to actually make those dramatic changes.</p>\n<p>For Ghostty, I cared about some less human, more technical, feature-rich choices like having a cross platform core and very much not cross-platform but unapologetically native GUI. People who valued them would come on board and collaborate; those who disagreed just wouldn't. And that's awesome. I'm a really big fan of open-source projects and the internet being a collection of tribes.</p>\n<p>I'm most annoyed by programming languages here, where so many languages are becoming like least common denominator <strong>things</strong> with people criticizing so and so for because it lacks this feature every other language has and is therefore useless. Some hyperbolic statement, you know. I really like the fact that certain languages lack certain features other languages enjoy, because these constraints breed creativity and culture. I want different places to feel different. I don't need every place to feel welcoming to every person.</p>\n<p>People are going to get mad at me for this, but you can keep it in. For example, for me, I don't like the Rust culture. There's no better way to put it. Every time I've interacted with them or hear how they talk about Rust, I just don't like it. That doesn't mean they're bad people; I think they are really good people. The philosophy behind the language and the language itself is really good. I just don't want to use it and there's no problem with that. Just because I don't want to be around a community doesn't mean it's bad. I also don't like soccer.</p>\n<p>But people on the internet get stuck into such binary views about good and bad, which bleeds into how technologies become this conformist pool of bleh.</p>\n<p>Back to Zig, Zig has a really polarizing specific stance on what it does from technology, to community management and funding to PR, blog posts and how they talk. I don't agree with all of it but I <em>so respect</em> that they are unapologetically weird. So I continue to support them financially and use their technology because I support people trying to be their own person.</p>\n<p><strong>Large companies have gaping quality assurance issues, while smaller projects like Ghostty or Zig let you apply taste to replace 4 PRs with a single, holistic solution (human scale). How do you reconcile shipping quality with shipping fast, yea AI-generated code etc.?</strong></p>\n<p>To ship the right thing, there has to be a bigger understanding of the product you're working on. This role's solved by different people in different companies but generally corporate America doesn't do a great job of this at scale. You can't just listen to a specific problem a set of customers or users have and solve that specific problem. You need to understand how they got to that problem in the first place, outside of your software. What motivated that problem? Whether they should have reached this in the first place or whether something upstream would have resolved 3 other problems? You need a bigger, holistic understanding. IDK how to solve that at the corporate scale. But I handle it by being a big user of my own software.</p>\n<p>I know not everyone can do this, but I've only worked in jobs whose product I'm a user of, so I can be a good human judge of whether my work is good. If you're too far removed from the customer, you shift to \"I completed the spec\" or \"I checked the box\" lacking a deep enough understanding to say whether it's good or bad.</p>\n<p>I know this community has a pretty polarizing split on the AI side, but I've been a big proponent of rational AI usage. I fully sloppified demos etc. because I won't ship it. The code is complete trash, but I can play and check whether something's a useful direction. If it's good, I can restart with the care it deserves. Right now, I have a 6 week old baby and am only on the computer about 3 hours a day, so any time savings really helps. Now, I can do so much more because I can ship ideas to myself without being on the computer.</p>\n<p>You just have to ship quality, read and understand the code you ship and have empathy with the users who will use this. You want to create something they're going to have joy using. That's all that matters.</p>\n<p><strong>How would you suggest someone learn C today? Would it make sense to start directly with Zig?</strong></p>\n<p>It's more important to learn how computers work and make the language just a means to understanding how they work. My heaviest usage of C was in college, revolving around file systems and operating systems in 3 classes. C was just the mechanism by which we interfaced closely with the lower level systems involved. My suggestion, even in this age of higher level abstractions and web development, it's still important to understand the basics of CPU scheduling, memory, cache hierarchies, file systems, disc and file access. When you work directly above the syscall layer, whether in C, Zig or Rust, it really helps you understand what's happening. If you go too high level, a Python, JavaScript or a Ruby's file open API really abstracts quite a lot from you.</p>\n<p>Another way I learned a lot was reading how the higher level languages are implemented. Don't take a standard library function for granted, some human wrote that and you could too. How does it work? Read the stdlib and dig into how things work. Languages are easy; languages don't matter. The underlying understanding is what matters.</p>\n<p><a href=\"https://lobste.rs/s/0mam5k/lobsters_interview_with_mitchellh\">Comments</a></p>",
+    "author": "alexalejandre.com by veqq",
+    "published_at": "2026-07-09T15:41:15Z",
+    "fetched_at": "2026-07-09T23:59:21.498911Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "person",
+        "interview"
+      ],
+      "title_zh": "Mitchell Hashimoto谈Ghostty、Zig与开源",
+      "detailed_summary_zh": "Lobsters发布了对Mitchell Hashimoto的深度访谈，他详细介绍了为何开发Ghostty终端模拟器、选择Zig编程语言的原因，以及他对终端生态和开源开发的见解。 Mitchell Hashimoto是Vagrant、Terraform等知名开源项目的创建者，他的观点对开发者社区具有重要影响力。此次访谈揭示了终端模拟器在GPU加速和跨平台开发方面的前沿实践，同时探讨了Zig语言在系统编程中的潜力。 Ghostty是一款基于平台原生UI和GPU加速的终端模拟器，旨在兼顾速度、功能丰富性和跨平台支持。Mitchell最初只为学习Zig和GPU编程而开发，后来发现其实际需求未被满足，于是公开了项目。",
+      "background_zh": "终端模拟器是命令行界面的图形化前端，负责渲染文本、处理输入和转义序列。Ghostty是新兴的开源终端模拟器，使用Zig语言编写，Zig是一种现代系统编程语言，强调与C的兼容性、编译时计算和内存安全。Mitchell Hashimoto曾是HashiCorp的联合创始人，主导了多项基础设施工具。",
+      "sources": [
+        {
+          "url": "https://ghostty.org/",
+          "title": "Ghostty"
+        },
+        {
+          "url": "https://github.com/ghostty-org/ghostty",
+          "title": "GitHub - ghostty-org/ghostty: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Zig_(programming_language)",
+          "title": "Zig (programming language)"
+        }
+      ],
+      "detailed_summary": "Lobsters发布了对Mitchell Hashimoto的深度访谈，他详细介绍了为何开发Ghostty终端模拟器、选择Zig编程语言的原因，以及他对终端生态和开源开发的见解。 Mitchell Hashimoto是Vagrant、Terraform等知名开源项目的创建者，他的观点对开发者社区具有重要影响力。此次访谈揭示了终端模拟器在GPU加速和跨平台开发方面的前沿实践，同时探讨了Zig语言在系统编程中的潜力。 Ghostty是一款基于平台原生UI和GPU加速的终端模拟器，旨在兼顾速度、功能丰富性和跨平台支持。Mitchell最初只为学习Zig和GPU编程而开发，后来发现其实际需求未被满足，于是公开了项目。",
+      "background": "终端模拟器是命令行界面的图形化前端，负责渲染文本、处理输入和转义序列。Ghostty是新兴的开源终端模拟器，使用Zig语言编写，Zig是一种现代系统编程语言，强调与C的兼容性、编译时计算和内存安全。Mitchell Hashimoto曾是HashiCorp的联合创始人，主导了多项基础设施工具。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interview with Mitchell Hashimoto, a highly influential figure in open-source infrastructure tools. Provides insights on terminal development, Zig language, and open-source philosophy. High relevance to software engineering and systems, though not groundbreaking.",
+    "ai_summary": "Interview with Mitchell Hashimoto covering his work on terminal emulator Ghostty, Zig programming language, and open-source development.",
     "ai_tags": [
       "open-source",
-      "chat",
-      "self-hosted",
-      "NATS",
-      "communication"
+      "interview",
+      "infrastructure",
+      "zig",
+      "terminal"
     ]
   },
   {
-    "id": "hackernews:story:48836233",
-    "source_type": "hackernews",
-    "title": "Cloudflare Drop",
-    "url": "https://www.cloudflare.com/drop/",
-    "content": "\n--- Top Comments ---\n\n[jonluca]: Wow the people in this thread are a huge bummer. This is much cooler and I doubt this is a real safety issue. You can already sign up for a free cloudflare account and deploy it for free, on your own, on a free workers.dev domain. The friction removal here isn&#x27;t going to meaningfully change the security &#x2F; amount of malicious content.\n\n[andrethegiant]: Netlify made this 10 years ago... they even copied the name!  https:&#x2F;&#x2F;app.netlify.com&#x2F;drop\n\n[jjcm]: Cloudflare is obviously more trustworthy&#x2F;robust here, but if name of the url matters to you, my site non.io [1] allows for named uploads, ie  https:&#x2F;&#x2F;html.non.io&#x2F;solara  [2] Somewhat useful if you want a url that isn&#x27;t a hash &#x2F; is more self descriptive. [1] Launch discussion:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=36296695  [2] This was a demo of the output of a design tool I&#x27;m working on, only the home&#x2F;accommodations&#x2F;about pages work.\n\n[Bender]: There must be some really good protection on this.  If I enabled such a thing on any of my servers it would be full of warez, porn, malware, CSAM and who knows what else within minutes.  Curious how they manage to keep it clean.\n\n[steve_adams_86]: Cool, it worked!  https:&#x2F;&#x2F;drop-1e1a536f-10d.honeysuckle-gull.workers.dev&#x2F;  It&#x27;s minesweeper, but the logic uses xstate&#x2F;store. The link in the bottom is broken; it&#x27;s supposed to go to `building-minesweeper-with-xstate-store.html` I have no need for this but I love that my friends could vibe out a website, drop it here, claim it, and host it for pennies. This is great. &quot;Your site is reachable within ~32ms of 95% of the world’s Internet-connected population&quo...",
-    "author": "coloneltcb",
-    "published_at": "2026-07-08T19:18:26Z",
-    "fetched_at": "2026-07-09T00:02:43.177533Z",
+    "id": "rss:lobste.rs_rss:aed1b87d02c18699",
+    "source_type": "rss",
+    "title": "Announcing Rust 1.97.0",
+    "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
+    "content": "<p><a href=\"https://lobste.rs/s/o9edbl/announcing_rust_1_97_0\">Comments</a></p>",
+    "author": "blog.rust-lang.org via imadij",
+    "published_at": "2026-07-09T14:56:32Z",
+    "fetched_at": "2026-07-09T23:59:21.498981Z",
     "metadata": {
-      "score": 185,
-      "descendants": 99,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48836233",
-      "comment_count": 5,
-      "title_zh": "Cloudflare 推出 Drop：拖放部署静态网站",
-      "detailed_summary_zh": "Cloudflare 发布了名为 Drop 的新服务，允许用户通过拖放文件夹或压缩包的方式，无需注册账户即可将静态网站部署到其全球边缘网络。 这极大简化了静态网站的部署流程，降低了使用门槛，使开发者甚至非技术人员能快速上线站点。尽管类似服务已存在，但 Cloudflare 凭借其庞大的边缘网络可提供更低延迟和更高可靠性。 Drop 无需 Cloudflare 账户即可启动部署，生成的站点默认分配一个子域名（如 drop-*.workers.dev），用户后续可认领站点并绑定自定义域名。服务依靠 Cloudflare 的安全防护机制来防止恶意内容。",
-      "background_zh": "静态网站指由 HTML、CSS、JavaScript 等固定文件组成的网站，无需服务器端动态处理。Cloudflare 的边缘网络是一组分布全球的服务器，可将内容缓存到离用户最近的位置，从而加快加载速度。此前已有 Netlify Drop 等类似拖放部署工具，但 Cloudflare Drop 利用其现有的 Workers 平台和安全基础设施。",
-      "community_discussion_zh": "社区讨论整体积极，多数人认为该功能便捷实用，但也有人指出 Netlify 早在 10 年前就推出了同名服务。部分用户担心安全风险，但另有评论认为注册账号后再部署同样存在风险，Drop 并未显著改变威胁模型。还有用户实测了功能并分享了部署的示例站点。",
-      "sources": [
-        {
-          "url": "https://www.cloudflare.com/drop/",
-          "title": "Cloudflare Drop"
-        },
-        {
-          "url": "https://developers.cloudflare.com/changelog/post/2026-07-08-cloudflare-drag-and-drop/",
-          "title": "Cloudflare Drop · Changelog"
-        }
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release",
+        "rust"
       ],
-      "detailed_summary": "Cloudflare 发布了名为 Drop 的新服务，允许用户通过拖放文件夹或压缩包的方式，无需注册账户即可将静态网站部署到其全球边缘网络。 这极大简化了静态网站的部署流程，降低了使用门槛，使开发者甚至非技术人员能快速上线站点。尽管类似服务已存在，但 Cloudflare 凭借其庞大的边缘网络可提供更低延迟和更高可靠性。 Drop 无需 Cloudflare 账户即可启动部署，生成的站点默认分配一个子域名（如 drop-*.workers.dev），用户后续可认领站点并绑定自定义域名。服务依靠 Cloudflare 的安全防护机制来防止恶意内容。",
-      "background": "静态网站指由 HTML、CSS、JavaScript 等固定文件组成的网站，无需服务器端动态处理。Cloudflare 的边缘网络是一组分布全球的服务器，可将内容缓存到离用户最近的位置，从而加快加载速度。此前已有 Netlify Drop 等类似拖放部署工具，但 Cloudflare Drop 利用其现有的 Workers 平台和安全基础设施。",
-      "community_discussion": "社区讨论整体积极，多数人认为该功能便捷实用，但也有人指出 Netlify 早在 10 年前就推出了同名服务。部分用户担心安全风险，但另有评论认为注册账号后再部署同样存在风险，Drop 并未显著改变威胁模型。还有用户实测了功能并分享了部署的示例站点。"
+      "title_zh": "Rust 1.97.0 稳定版发布",
+      "detailed_summary_zh": "Rust 团队正式发布了 1.97.0 稳定版本，带来了新特性、改进和错误修复。 作为系统编程语言的重要更新，Rust 1.97.0 提升了开发体验和语言稳定性，对 Rust 生态系统和所有 Rust 开发者具有实际意义。 该版本包含语言和标准库的增量改进，具体变更细节请参阅官方发布说明。",
+      "background_zh": "Rust 是一种注重安全、并发和性能的系统编程语言，每六周发布一个新稳定版本。Rust 1.97.0 是常规的增量更新，延续了 Rust 的稳定发布节奏。",
+      "detailed_summary": "Rust 团队正式发布了 1.97.0 稳定版本，带来了新特性、改进和错误修复。 作为系统编程语言的重要更新，Rust 1.97.0 提升了开发体验和语言稳定性，对 Rust 生态系统和所有 Rust 开发者具有实际意义。 该版本包含语言和标准库的增量改进，具体变更细节请参阅官方发布说明。",
+      "background": "Rust 是一种注重安全、并发和性能的系统编程语言，每六周发布一个新稳定版本。Rust 1.97.0 是常规的增量更新，延续了 Rust 的稳定发布节奏。",
+      "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "High community engagement (185 points, 99 comments) with substantive discussion on security and comparisons to existing services. The announcement is important for Cloudflare users but not groundbreaking, as similar services exist.",
-    "ai_summary": "Cloudflare launches Drop, a drag-and-drop service for deploying static sites on their edge network.",
+    "ai_reason": "New stable release of a major systems programming language; important for the Rust community and developers, though incremental and not groundbreaking.",
+    "ai_summary": "Official announcement of Rust 1.97.0, a new stable release with features and fixes.",
     "ai_tags": [
-      "cloudflare",
-      "static sites",
-      "edge computing",
-      "developer tools",
-      "deployment"
+      "Rust",
+      "Systems Programming",
+      "Release",
+      "Programming Language"
     ]
   },
   {
-    "id": "hackernews:story:48834924",
-    "source_type": "hackernews",
-    "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
-    "url": "https://microsoft.github.io/flint-chart/#/",
-    "content": "Data visualizations are the bridge between user and data.<p>But building AI agents that can generate visualizations reliably can be very tricky:<p>- simple chart specs can be reliable, but generated charts are often of low quality due to reliance on system defaults; \n- complex chart specs with explicit details can produce good-looking charts, but they are verbose and agents can struggle with reliability<p>We figured out it is a limitation on the language issue (not just AI capability thing) -- current visualization languages are a bit too low-level for AI agents, requiring them to explicitly make visual decisions that are supposed to be handled by a good compiler. Flint is a visualization intermediate language to address this issue, allow AI agents to solve this last-mile human-agent interaction problem. It provides a simple semantic-type based specification, and contains a layout optimization engine that can produce good-looking charts (filled with derived low-level details) from simple high-level specs. The result is also very human understandable and adaptable. Flint powers data formulator for generating visualizations (another open source project from microsoft <a href=\"https:&#x2F;&#x2F;data-formulator.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;data-formulator.ai&#x2F;</a>).<p>Flint is available open source, and we built a MCP server that you can directly plug flint in your favorite agent app to play with data.\n\n\n--- Top Comments ---\n\n[rbalicki]: &quot;For AI agents&quot;. I understand why everything needs to be marketed in this way, but it&#x27;s just ... an easy-to-generate language for expressing charts. That&#x27;s impressive! That&#x27;s useful.\n\n[cpard]: There’s an emerging pattern in agentic systems and this project is a great example. A deterministic layer like a compiler or generator of code with some kind of IR that the LLM generates and feeds it with. I feel we will be seeing this more and more in the near future.\n\n[kveykva]: Is there a specific explanation about how this is better or different than vega itself?  https:&#x2F;&#x2F;vega.github.io&#x2F;vega&#x2F;docs&#x2F;specification&#x2F;  My understanding is that Vega was already an expressive DSL for visualizations and its probably already well spread through LLM training data.\n\n[nrub]: &gt; simple chart specs can be reliable, but generated charts are often of low quality due to reliance on system defaults; - complex chart specs with explicit details can produce good-looking charts, but they are verbose and agents can struggle with reliability N of only a few of us working on an analytics agent, I don&#x27;t think we&#x27;ve been finding this to be the case. We&#x27;ve been impressed with just how good LLMs (even smaller open weight models) are at using Python and R for visu...\n\n[YuechenLi]: &gt;Instead of requiring verbose low-level parameters such as scales, axes, spacing, and layout. Ok, Microsoft is conflating two different things here: LLMs don&#x27;t really care about code being low level and verbose, they can read things like Assembly and SPIR-V just fine: visualization is the real issue in that LLMs have no natural understanding of spatial composition through visual comparison because they literally &quot;see&quot; things differently than humans, so the way to get around ...",
-    "author": "chenglong-hn",
-    "published_at": "2026-07-08T17:46:12Z",
-    "fetched_at": "2026-07-09T00:02:43.177584Z",
+    "id": "rss:lobste.rs_rss:dd53a94e707177cb",
+    "source_type": "rss",
+    "title": "Interview: Drew DeVault on an AI-free version of Vim",
+    "url": "https://jasonpolak.substack.com/p/interview-drew-devault-on-an-ai-free",
+    "content": "<p><a href=\"https://lobste.rs/s/dbakbg/interview_drew_devault_on_ai_free_version\">Comments</a></p>",
+    "author": "jasonpolak.substack.com via runxiyu",
+    "published_at": "2026-07-09T00:43:32Z",
+    "fetched_at": "2026-07-09T23:59:21.499014Z",
     "metadata": {
-      "score": 169,
-      "descendants": 71,
-      "type": "story",
-      "discussion_url": "https://news.ycombinator.com/item?id=48834924",
-      "comment_count": 5,
-      "title_zh": "微软发布Flint可视化中间语言",
-      "detailed_summary_zh": "微软发布了Flint，一种专门为AI智能体设计的可视化中间语言，它通过简化的语义类型规范让AI能可靠地生成高质量图表。 Flint通过引入确定的编译器层解决了AI生成图表时低质量或冗长不可靠的问题，代表了AI生成结构化输出的新趋势，可能推动数据可视化工具链的革新。 Flint包含一个布局优化引擎，可将简单的高级规范自动转换为填充了尺度、轴线等低层细节的精美图表，并且已开源并提供MCP服务器以便集成到智能体应用中。",
-      "background_zh": "传统可视化语言对AI来说要么太简单导致默认的低质量图表，要么太复杂导致生成不可靠。Flint作为一种中间表示（IR），类似编译器设计，让AI只关注语义而将视觉决策交给编译器处理。",
-      "community_discussion_zh": "社区普遍认为Flint代表了一种新兴的确定性中间层模式，但有人质疑其与Vega的差异以及LLM对低层代码不敏感的问题，也有开发者表示未遇到所述可靠性困境。",
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "person",
+        "vim",
+        "vibecoding"
+      ],
+      "title_zh": "Drew DeVault 谈无 AI 版 Vim 的专访",
+      "detailed_summary_zh": "Drew DeVault 在专访中讨论了创建一个完全去除 AI 功能的 Vim 版本的想法和动机。 这一讨论反映了开发者社区对 AI 工具集成进核心编辑器的争议，可能影响 Vim 未来的发展方向。 无 AI 版本的 Vim 将排除所有 AI 辅助插件（如 vim-ai），但尚未有明确的发布计划。",
+      "background_zh": "Vim 是一款流行的文本编辑器，近年来出现了大量 AI 插件（如 vim-ai）来提供代码补全和对话功能。部分开发者担心 AI 集成会破坏编辑器的简洁性和用户控制权。",
       "sources": [
         {
-          "url": "https://github.com/microsoft/flint-chart",
-          "title": "GitHub - microsoft/flint-chart: 🪄 Flint is a visualization language that lets AI agents reliably create expressive, good-looking charts from simple, human-editable chart specs."
+          "url": "https://github.com/madox2/vim-ai",
+          "title": "GitHub - madox2/vim-ai: AI-powered code assistant for Vim ..."
         },
         {
-          "url": "https://news.ycombinator.com/item?id=48834924",
-          "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents | Hacker News"
+          "url": "https://www.vim.org/scripts/script.php?script_id=6048",
+          "title": "vim-ai - AI-powered code assistant for Vim. OpenAI and ..."
         }
       ],
-      "detailed_summary": "微软发布了Flint，一种专门为AI智能体设计的可视化中间语言，它通过简化的语义类型规范让AI能可靠地生成高质量图表。 Flint通过引入确定的编译器层解决了AI生成图表时低质量或冗长不可靠的问题，代表了AI生成结构化输出的新趋势，可能推动数据可视化工具链的革新。 Flint包含一个布局优化引擎，可将简单的高级规范自动转换为填充了尺度、轴线等低层细节的精美图表，并且已开源并提供MCP服务器以便集成到智能体应用中。",
-      "background": "传统可视化语言对AI来说要么太简单导致默认的低质量图表，要么太复杂导致生成不可靠。Flint作为一种中间表示（IR），类似编译器设计，让AI只关注语义而将视觉决策交给编译器处理。",
-      "community_discussion": "社区普遍认为Flint代表了一种新兴的确定性中间层模式，但有人质疑其与Vega的差异以及LLM对低层代码不敏感的问题，也有开发者表示未遇到所述可靠性困境。"
+      "detailed_summary": "Drew DeVault 在专访中讨论了创建一个完全去除 AI 功能的 Vim 版本的想法和动机。 这一讨论反映了开发者社区对 AI 工具集成进核心编辑器的争议，可能影响 Vim 未来的发展方向。 无 AI 版本的 Vim 将排除所有 AI 辅助插件（如 vim-ai），但尚未有明确的发布计划。",
+      "background": "Vim 是一款流行的文本编辑器，近年来出现了大量 AI 插件（如 vim-ai）来提供代码补全和对话功能。部分开发者担心 AI 集成会破坏编辑器的简洁性和用户控制权。",
+      "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "Interesting technical development with a novel intermediate language for AI agent chart generation. Community discussion (169 points, 71 comments) raises valid comparisons to Vega and questions about the problem's severity, but acknowledges the emerging pattern of deterministic IRs for LLMs.",
-    "ai_summary": "Microsoft's Flint is a visualization intermediate language designed to improve reliability of AI agents generating high-quality charts.",
+    "ai_reason": "High relevance to developers discussing AI integration in tools, with potential for insightful community debate on lobste.rs. Not groundbreaking but addresses a timely controversy.",
+    "ai_summary": "Interview with Drew DeVault about creating an AI-free version of Vim.",
     "ai_tags": [
-      "visualization",
+      "Vim",
+      "AI",
+      "open source",
+      "software engineering",
+      "interview"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d38a4a806f033ea2",
+    "source_type": "rss",
+    "title": "Repo-Local Documentation System for Humans & Agents",
+    "url": "https://gist.github.com/lukewilson2002/cb48062397d8b51954034d94b8c19d6d",
+    "content": "<p><a href=\"https://lobste.rs/s/bcf7pk/repo_local_documentation_system_for\">Comments</a></p>",
+    "author": "gist.github.com by lukewilson",
+    "published_at": "2026-07-09T23:49:39Z",
+    "fetched_at": "2026-07-09T23:59:21.499113Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "title_zh": "仓库本地文档系统：兼顾人类与AI代理",
+      "detailed_summary_zh": "有人提出一种在代码仓库内直接维护文档的系统，专门针对人类读者和AI代理进行了优化。 该系统解决了现代开发中知识管理难题，让文档更贴近代码，同时方便AI工具自动读取，从而提升开发效率和协作体验。 该系统强调“仓库本地”，即文档与代码共存于同一仓库，可能采用结构化格式以便AI解析，并支持版本控制。",
+      "background_zh": "传统项目文档常存放于独立位置或使用专门工具，导致与代码脱节。随着AI代码助手（如Cursor、Claude Code）的普及，文档需要同时服务于人类和机器。该系统旨在填补这一空白，使文档既易读又易被AI代理访问。",
+      "sources": [
+        {
+          "url": "https://www.mintlify.com/library/best-ai-documentation-tools",
+          "title": "Best AI Documentation Tools in 2026"
+        }
+      ],
+      "detailed_summary": "有人提出一种在代码仓库内直接维护文档的系统，专门针对人类读者和AI代理进行了优化。 该系统解决了现代开发中知识管理难题，让文档更贴近代码，同时方便AI工具自动读取，从而提升开发效率和协作体验。 该系统强调“仓库本地”，即文档与代码共存于同一仓库，可能采用结构化格式以便AI解析，并支持版本控制。",
+      "background": "传统项目文档常存放于独立位置或使用专门工具，导致与代码脱节。随着AI代码助手（如Cursor、Claude Code）的普及，文档需要同时服务于人类和机器。该系统旨在填补这一空白，使文档既易读又易被AI代理访问。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Promising concept for repo-local documentation designed for both humans and AI agents, addressing modern needs in developer tooling and knowledge management. The lobste.rs discussion suggests community interest, but full content not available to assess depth or novelty.",
+    "ai_summary": "A system for maintaining documentation directly within a repository, optimized for both human readers and AI agents.",
+    "ai_tags": [
+      "documentation",
+      "repository",
       "AI agents",
-      "intermediate representation",
-      "Microsoft",
-      "machine learning"
+      "developer tools",
+      "knowledge management"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:eeec283040ebfd51",
+    "id": "rss:lobste.rs_rss:a309b48ac9addfb1",
     "source_type": "rss",
-    "title": "A bug which only affected left-handed users",
-    "url": "https://shkspr.mobi/blog/2026/07/a-bug-which-only-affected-left-handed-users/",
-    "content": "<p><a href=\"https://lobste.rs/s/oj9lal/bug_which_only_affected_left_handed_users\">Comments</a></p>",
-    "author": "shkspr.mobi via FedericoSchonborn",
-    "published_at": "2026-07-08T13:01:25Z",
-    "fetched_at": "2026-07-09T00:02:43.277539Z",
+    "title": "Physically Based - The PBR values database",
+    "url": "https://physicallybased.info/",
+    "content": "<p><a href=\"https://lobste.rs/s/qnipw7/physically_based_pbr_values_database\">Comments</a></p>",
+    "author": "physicallybased.info via yoshi",
+    "published_at": "2026-07-09T14:48:28Z",
+    "fetched_at": "2026-07-09T23:59:21.499143Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "web",
-        "a11y"
+        "graphics"
       ],
-      "title_zh": "一个只影响左撇子用户的软件缺陷",
-      "detailed_summary_zh": "一篇技术博客揭示了一个用户界面设计中的极端案例：一个软件缺陷仅对左撇子用户产生影响。该案例强调了在开发中考虑不同用户习惯的重要性。 这个bug虽然罕见，但突显了软件工程中边缘测试和辅助功能的必要性。它提醒开发者注意默认假设（如左右手习惯）可能无意中排除部分用户。 博客未给出具体技术细节，但指出该bug与界面布局或交互方式有关，例如快捷键或鼠标按键分配。该问题可能在特定操作系统或应用中复现。",
-      "background_zh": "左撇子用户在软件使用中可能面临诸多不便，例如默认右手优化的滚动条位置或鼠标右键功能。许多UI设计未充分考虑左右手对称性，导致少数派用户体验受损。开发者通常以右手用户为默认测试对象，从而引入这类隐蔽缺陷。",
-      "detailed_summary": "一篇技术博客揭示了一个用户界面设计中的极端案例：一个软件缺陷仅对左撇子用户产生影响。该案例强调了在开发中考虑不同用户习惯的重要性。 这个bug虽然罕见，但突显了软件工程中边缘测试和辅助功能的必要性。它提醒开发者注意默认假设（如左右手习惯）可能无意中排除部分用户。 博客未给出具体技术细节，但指出该bug与界面布局或交互方式有关，例如快捷键或鼠标按键分配。该问题可能在特定操作系统或应用中复现。",
-      "background": "左撇子用户在软件使用中可能面临诸多不便，例如默认右手优化的滚动条位置或鼠标右键功能。许多UI设计未充分考虑左右手对称性，导致少数派用户体验受损。开发者通常以右手用户为默认测试对象，从而引入这类隐蔽缺陷。",
-      "community_discussion": ""
-    },
-    "ai_score": 7.0,
-    "ai_reason": "High-value technical anecdote about an unusual edge case in software that affects left-handed users, highlighting important considerations for accessibility and user interface design. The presence of community discussion on lobste.rs indicates engagement.",
-    "ai_summary": "A blog post about a software bug that only affected left-handed users, illustrating an edge case in user interface design.",
-    "ai_tags": [
-      "bug",
-      "accessibility",
-      "software engineering",
-      "user experience",
-      "edge case"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:cf2ed8749217b3a1",
-    "source_type": "rss",
-    "title": "Funding open-source software without compromising it",
-    "url": "https://yorickpeterse.com/articles/funding-open-source-software-without-compromising-it/",
-    "content": "<p><a href=\"https://lobste.rs/s/qmzekw/funding_open_source_software_without\">Comments</a></p>",
-    "author": "yorickpeterse.com by yorickpeterse",
-    "published_at": "2026-07-08T14:02:44Z",
-    "fetched_at": "2026-07-09T00:02:43.277639Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "finance"
-      ],
-      "title_zh": "开源软件融资：如何不妥协独立性",
-      "detailed_summary_zh": "本文探讨了在保持开源软件完整性和独立性的前提下实现可持续融资的方法，包括捐赠、赞助、开放核心等模式。 开源项目长期面临资金短缺问题，而商业化融资往往牺牲社区自主权；本文提出的策略有助于平衡资金需求与开放精神，影响整个开源生态的健康发展。 文章可能分析了各种融资模式的利弊，例如基金会治理、双许可、众筹等，强调避免因资金依赖导致项目方向被外部控制。",
-      "background_zh": "开源软件通常依赖志愿者无偿贡献或企业支持，但缺乏稳定收入来源。随着开源商业价值提升，许多项目面临被收购或转向专有的压力。如何在获得资金的同时保持代码开放和社区治理独立性，是长期挑战。",
-      "detailed_summary": "本文探讨了在保持开源软件完整性和独立性的前提下实现可持续融资的方法，包括捐赠、赞助、开放核心等模式。 开源项目长期面临资金短缺问题，而商业化融资往往牺牲社区自主权；本文提出的策略有助于平衡资金需求与开放精神，影响整个开源生态的健康发展。 文章可能分析了各种融资模式的利弊，例如基金会治理、双许可、众筹等，强调避免因资金依赖导致项目方向被外部控制。",
-      "background": "开源软件通常依赖志愿者无偿贡献或企业支持，但缺乏稳定收入来源。随着开源商业价值提升，许多项目面临被收购或转向专有的压力。如何在获得资金的同时保持代码开放和社区治理独立性，是长期挑战。",
-      "community_discussion": ""
-    },
-    "ai_score": 7.0,
-    "ai_reason": "Addresses the critical issue of sustainable open-source funding without compromising core values; referenced discussion on Lobste.rs adds community validation.",
-    "ai_summary": "Explores ways to fund open-source software while maintaining its integrity and independence.",
-    "ai_tags": [
-      "open source",
-      "funding",
-      "sustainability",
-      "community"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:93f2732015010517",
-    "source_type": "rss",
-    "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why",
-    "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-    "content": "<p><a href=\"https://lobste.rs/s/nritf1/eve_online_s_carbon_engine_is_now_open\">Comments</a></p>",
-    "author": "gamesindustry.biz via Yogthos",
-    "published_at": "2026-07-08T15:47:51Z",
-    "fetched_at": "2026-07-09T00:02:43.277701Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "programming",
-        "games"
-      ],
-      "title_zh": "EVE Online的Carbon引擎现已开源",
-      "detailed_summary_zh": "Fenris Creations宣布将驱动EVE Online和EVE Frontier的跨平台游戏引擎框架Carbon开源，相关代码已发布在GitHub上。 这一举措为游戏开发社区提供了成熟的大型MMO引擎技术，可能推动独立开发者和研究者的创新，同时增强开源游戏引擎生态。 Carbon引擎支持Windows、Linux和macOS，具备网络同步、脚本系统和资源管道等核心功能，但开源的组件并非完整运行环境，需开发者自行整合。",
-      "background_zh": "Carbon引擎最初由CCP Games为EVE Online开发，至今已运行超过20年。2024年Fenris Creations成立并接手开发，此次开源旨在回馈社区并吸引更多开发者参与改进。",
+      "title_zh": "PBR材质值数据库",
+      "detailed_summary_zh": "这是一个开源的在线数据库，收录了超过100种真实世界材质的物理属性值，包括RGB颜色、金属度、折射率（IOR）和密度等PBR参数。 为CG艺术家和开发者提供了标准化的材质参考，简化了PBR材质制作流程，有助于提高作品真实感。 该数据库基于CC0许可证发布，可免费用于商业用途，并提供了API接口供程序化获取数据。",
+      "background_zh": "基于物理的渲染（PBR）是一种通过模拟真实光与表面交互来生成照片级真实感图像的计算机图形学方法。该数据库收集了实测的材质属性值，使艺术家能够直接使用或作为起点进行调整。",
       "sources": [
         {
-          "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-          "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why | GamesIndustry.biz"
+          "url": "https://en.wikipedia.org/wiki/Physically_based_rendering",
+          "title": "Physically based rendering"
         },
         {
-          "url": "https://www.gamingonlinux.com/2026/07/carbon-engine-framework-powering-eve-online-is-now-open-source/",
-          "title": "Carbon engine framework powering EVE Online is now open source | GamingOnLinux"
+          "url": "https://github.com/AntonPalmqvist/physically-based-api",
+          "title": "GitHub - AntonPalmqvist/physically-based-api: A database of ... This $25 PDF lists PBR color values for 600 real-world materials Physically Based lists PBR values for real-world materials Physically Based: a Database of PBR Values for Real-World ... Physically-Based Rendering, And You Can Too! - Marmoset"
         }
       ],
-      "detailed_summary": "Fenris Creations宣布将驱动EVE Online和EVE Frontier的跨平台游戏引擎框架Carbon开源，相关代码已发布在GitHub上。 这一举措为游戏开发社区提供了成熟的大型MMO引擎技术，可能推动独立开发者和研究者的创新，同时增强开源游戏引擎生态。 Carbon引擎支持Windows、Linux和macOS，具备网络同步、脚本系统和资源管道等核心功能，但开源的组件并非完整运行环境，需开发者自行整合。",
-      "background": "Carbon引擎最初由CCP Games为EVE Online开发，至今已运行超过20年。2024年Fenris Creations成立并接手开发，此次开源旨在回馈社区并吸引更多开发者参与改进。",
+      "detailed_summary": "这是一个开源的在线数据库，收录了超过100种真实世界材质的物理属性值，包括RGB颜色、金属度、折射率（IOR）和密度等PBR参数。 为CG艺术家和开发者提供了标准化的材质参考，简化了PBR材质制作流程，有助于提高作品真实感。 该数据库基于CC0许可证发布，可免费用于商业用途，并提供了API接口供程序化获取数据。",
+      "background": "基于物理的渲染（PBR）是一种通过模拟真实光与表面交互来生成照片级真实感图像的计算机图形学方法。该数据库收集了实测的材质属性值，使艺术家能够直接使用或作为起点进行调整。",
       "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "Open sourcing a major game engine like Eve Online's Carbon is a significant move for the game dev and open source communities, though the lack of full article content limits depth of assessment.",
-    "ai_summary": "Eve Online's Carbon engine has been open-sourced, as announced by Fenris Creations.",
+    "ai_reason": "Valuable reference resource for PBR material parameters, useful for graphics developers but not groundbreaking. No comment discussion provided to assess quality.",
+    "ai_summary": "A database of physically based rendering values for materials.",
     "ai_tags": [
-      "open source",
-      "game engine",
-      "Eve Online",
-      "software engineering"
+      "computer graphics",
+      "physically based rendering",
+      "PBR",
+      "materials",
+      "database"
     ]
   },
   {
-    "id": "rss:lobste.rs_rss:5a075e52c1b64b47",
+    "id": "rss:lobste.rs_rss:3df836f3be2e8b66",
     "source_type": "rss",
-    "title": "OpenMandriva Says Former Contributor Sabotaged Its Repositories",
-    "url": "https://linuxiac.com/openmandriva-says-former-contributor-sabotaged-its-repositories/",
-    "content": "<p><a href=\"https://lobste.rs/s/q5vga3/openmandriva_says_former_contributor\">Comments</a></p>",
-    "author": "linuxiac.com via alemi",
-    "published_at": "2026-07-08T22:23:24Z",
-    "fetched_at": "2026-07-09T00:02:43.277902Z",
+    "title": "How to Achieve Pruning When Querying by Non-Partitioned Columns in PostgreSQL",
+    "url": "https://hakibenita.com/postgresql-partition-pruning",
+    "content": "<p><a href=\"https://lobste.rs/s/1wd2lx/how_achieve_pruning_when_querying_by_non\">Comments</a></p>",
+    "author": "hakibenita.com by Haki",
+    "published_at": "2026-07-09T10:43:36Z",
+    "fetched_at": "2026-07-09T23:59:21.499194Z",
     "metadata": {
       "feed_name": "Lobsters",
       "category": "",
       "tags": [
-        "linux"
+        "databases",
+        "performance"
       ],
-      "title_zh": "OpenMandriva 前贡献者破坏软件仓库",
-      "detailed_summary_zh": "OpenMandriva 报告一名前贡献者故意破坏其软件仓库，导致服务中断。 此事件凸显开源社区面临的内部威胁，提醒所有项目加强仓库安全与访问控制。 具体破坏手段尚未披露，但确认是拥有仓库访问权限的前贡献者所为。",
-      "background_zh": "OpenMandriva 是源自 Mandriva Linux 的社区发行版，由 OpenMandriva 协会维护。软件仓库是分发更新的核心基础设施，恶意操作可能影响大量用户。",
+      "title_zh": "PostgreSQL非分区列查询实现分区裁剪的技巧",
+      "detailed_summary_zh": "该文详细介绍了在PostgreSQL中，当查询条件不包含分区键时，如何通过巧妙的数据模式或索引技巧实现分区裁剪，从而提升查询性能。 这项技术打破了传统认知，即仅在分区键上过滤才能进行分区裁剪，为数据库工程师优化大规模分区表的非键列查询提供了实用方案。 文章指出，当数据遵循特定模式时（例如时间序列数据中非分区列与分区列存在相关性），可以通过子查询或冗余列等技巧触发裁剪。值得注意的是，PostgreSQL 11后支持执行期间的分区裁剪，但需配合适当的查询结构。",
+      "background_zh": "分区裁剪是PostgreSQL在查询时跳过无关分区的一种优化手段，通常仅当查询条件包含分区键时生效。对于非分区键的过滤，优化器会扫描所有分区，导致性能下降。本文探索了在不改变分区策略的前提下，通过调整查询语句或数据分布来激活裁剪的可能性。",
       "sources": [
         {
-          "url": "https://en.wikipedia.org/wiki/OpenMandriva_Lx",
-          "title": "OpenMandriva Lx - Wikipedia"
+          "url": "https://hakibenita.com/postgresql-partition-pruning",
+          "title": "How to Achieve Pruning When Querying by Non-Partitioned ..."
         },
         {
-          "url": "https://distrowatch.com/openmandriva",
-          "title": "DistroWatch.com: OpenMandriva Lx"
+          "url": "https://www.postgresql.org/docs/current/ddl-partitioning.html",
+          "title": "PostgreSQL: Documentation: 18: 5.12. Table Partitioning"
         }
       ],
-      "detailed_summary": "OpenMandriva 报告一名前贡献者故意破坏其软件仓库，导致服务中断。 此事件凸显开源社区面临的内部威胁，提醒所有项目加强仓库安全与访问控制。 具体破坏手段尚未披露，但确认是拥有仓库访问权限的前贡献者所为。",
-      "background": "OpenMandriva 是源自 Mandriva Linux 的社区发行版，由 OpenMandriva 协会维护。软件仓库是分发更新的核心基础设施，恶意操作可能影响大量用户。",
+      "detailed_summary": "该文详细介绍了在PostgreSQL中，当查询条件不包含分区键时，如何通过巧妙的数据模式或索引技巧实现分区裁剪，从而提升查询性能。 这项技术打破了传统认知，即仅在分区键上过滤才能进行分区裁剪，为数据库工程师优化大规模分区表的非键列查询提供了实用方案。 文章指出，当数据遵循特定模式时（例如时间序列数据中非分区列与分区列存在相关性），可以通过子查询或冗余列等技巧触发裁剪。值得注意的是，PostgreSQL 11后支持执行期间的分区裁剪，但需配合适当的查询结构。",
+      "background": "分区裁剪是PostgreSQL在查询时跳过无关分区的一种优化手段，通常仅当查询条件包含分区键时生效。对于非分区键的过滤，优化器会扫描所有分区，导致性能下降。本文探索了在不改变分区策略的前提下，通过调整查询语句或数据分布来激活裁剪的可能性。",
       "community_discussion": ""
     },
     "ai_score": 7.0,
-    "ai_reason": "High-value news for the open-source community highlighting insider threats and repository security, but not a technical breakthrough. Comment discussion likely adds context on trust and security practices.",
-    "ai_summary": "OpenMandriva reports that a former contributor deliberately sabotaged its software repositories.",
+    "ai_reason": "High-value technical deep-dive on PostgreSQL partition pruning for non-partitioned columns, a practical optimization that addresses a common performance challenge. The content is well-written by an experienced author, and while not groundbreaking, it offers novel insights for database engineers.",
+    "ai_summary": "A detailed guide on enabling partition pruning in PostgreSQL when querying by non-partitioned columns to improve query performance.",
     "ai_tags": [
-      "security",
-      "open-source",
-      "Linux",
-      "trust",
-      "incident"
-    ]
-  },
-  {
-    "id": "rss:lobste.rs_rss:34e5cebeb74b636d",
-    "source_type": "rss",
-    "title": "LisaFPGA: the Apple Lisa computer implemented inside an FPGA",
-    "url": "https://github.com/alexthecat123/LisaFPGA",
-    "content": "<p><a href=\"https://lobste.rs/s/kd2o1j/lisafpga_apple_lisa_computer\">Comments</a></p>",
-    "author": "github.com via lproven",
-    "published_at": "2026-07-08T15:22:19Z",
-    "fetched_at": "2026-07-09T00:02:43.277964Z",
-    "metadata": {
-      "feed_name": "Lobsters",
-      "category": "",
-      "tags": [
-        "retrocomputing"
-      ],
-      "title_zh": "LisaFPGA：基于FPGA的苹果Lisa电脑实现",
-      "detailed_summary_zh": "一个名为LisaFPGA的开源项目在GitHub上发布，成功将苹果Lisa电脑的硬件设计移植到FPGA平台上。 该项目使稀有的苹果Lisa电脑得以在现代FPGA硬件上运行，为复古计算爱好者和历史研究者提供了珍贵的重现机会，同时展示了FPGA在数字遗产保护中的价值。 LisaFPGA项目通过硬件描述语言（如Verilog）在FPGA上重构了Lisa的处理器、内存、显示控制器等核心组件，但尚未提及具体兼容性或性能细节。",
-      "background_zh": "苹果Lisa是1983年发布的早期图形用户界面电脑，搭载Motorola 68000处理器，因价格昂贵且市场接受度低而失败，但为后来的Macintosh奠定了基础。FPGA（现场可编程门阵列）是一种可重新配置的集成电路，能够模拟任意数字逻辑电路，常用于复古计算机的硬件复现。",
-      "detailed_summary": "一个名为LisaFPGA的开源项目在GitHub上发布，成功将苹果Lisa电脑的硬件设计移植到FPGA平台上。 该项目使稀有的苹果Lisa电脑得以在现代FPGA硬件上运行，为复古计算爱好者和历史研究者提供了珍贵的重现机会，同时展示了FPGA在数字遗产保护中的价值。 LisaFPGA项目通过硬件描述语言（如Verilog）在FPGA上重构了Lisa的处理器、内存、显示控制器等核心组件，但尚未提及具体兼容性或性能细节。",
-      "background": "苹果Lisa是1983年发布的早期图形用户界面电脑，搭载Motorola 68000处理器，因价格昂贵且市场接受度低而失败，但为后来的Macintosh奠定了基础。FPGA（现场可编程门阵列）是一种可重新配置的集成电路，能够模拟任意数字逻辑电路，常用于复古计算机的硬件复现。",
-      "community_discussion": ""
-    },
-    "ai_score": 7.0,
-    "ai_reason": "Noteworthy retrocomputing project implementing a classic computer in FPGA, with community discussion on Lobste.rs.",
-    "ai_summary": "Implementation of the Apple Lisa computer on an FPGA platform.",
-    "ai_tags": [
-      "FPGA",
-      "retrocomputing",
-      "Apple Lisa",
-      "hardware implementation"
+      "PostgreSQL",
+      "partition pruning",
+      "database optimization",
+      "query performance"
     ]
   }
 ]
