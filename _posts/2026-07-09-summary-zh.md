@@ -5,452 +5,411 @@ date: 2026-07-09
 lang: zh
 ---
 
-> From 36 items, 21 important content pieces were selected
+> From 38 items, 18 important content pieces were selected
 
 ---
 
-1. [Bun 从 Zig 重写至 Rust，二进制缩小 20%](#item-1) ⭐️ 9.0/10
-2. [OpenAI 发布 GPT-Live，实现实时语音交互](#item-2) ⭐️ 9.0/10
-3. [TypeScript 7.0 发布，编译速度提升 8-12 倍](#item-3) ⭐️ 9.0/10
-4. [Unicode 转写规则被证明图灵完备](#item-4) ⭐️ 9.0/10
-5. [GitLost 攻击：提示注入泄露 GitHub 私有仓库](#item-5) ⭐️ 9.0/10
-6. [AI 编程基准评估中的信号与噪声分离](#item-6) ⭐️ 8.0/10
-7. [Mistral 发布机器人导航模型 Robostral Navigate](#item-7) ⭐️ 8.0/10
-8. [xAI 发布 Grok 4.5：基于 Cursor 数据的高效模型](#item-8) ⭐️ 8.0/10
-9. [Cloudflare 推出 Meerkat，基于异步共识的全局服务](#item-9) ⭐️ 8.0/10
-10. [欧盟拟复活私人消息扫描规则引发隐私争议](#item-10) ⭐️ 8.0/10
-11. [SpaceWASM：NASA/JPL 的航天器序列 WebAssembly 解释器](#item-11) ⭐️ 8.0/10
-12. [OpenBSD 7.9 及之前版本存在释放后使用漏洞](#item-12) ⭐️ 8.0/10
-13. [FAANG 模拟器：讽刺游戏折射职场现实](#item-13) ⭐️ 7.0/10
-14. [Chatto 现已开源](#item-14) ⭐️ 7.0/10
-15. [Cloudflare 推出 Drop：拖放部署静态网站](#item-15) ⭐️ 7.0/10
-16. [微软发布 Flint 可视化中间语言](#item-16) ⭐️ 7.0/10
-17. [一个只影响左撇子用户的软件缺陷](#item-17) ⭐️ 7.0/10
-18. [开源软件融资：如何不妥协独立性](#item-18) ⭐️ 7.0/10
-19. [EVE Online 的 Carbon 引擎现已开源](#item-19) ⭐️ 7.0/10
-20. [OpenMandriva 前贡献者破坏软件仓库](#item-20) ⭐️ 7.0/10
-21. [LisaFPGA：基于 FPGA 的苹果 Lisa 电脑实现](#item-21) ⭐️ 7.0/10
+1. [OpenAI 发布 GPT-5.6，ARC-AGI-3 创纪录，效率提升](#item-1) ⭐️ 9.0/10
+2. [欧盟议会通过 Chat Control 1.0，允许无证扫描私人消息](#item-2) ⭐️ 9.0/10
+3. [在 32GB 内存电脑上运行 GLM 5.2：Colibrì项目](#item-3) ⭐️ 8.0/10
+4. [腾讯 Hy3 语言模型发布，引发社区热议](#item-4) ⭐️ 8.0/10
+5. [Postgres 用 Rust 重写，通过全部回归测试](#item-5) ⭐️ 8.0/10
+6. [内部服务 TLS 证书管理的最佳实践指南](#item-6) ⭐️ 8.0/10
+7. [Meta 发布 Muse Spark 1.1 及商业 API 定价](#item-7) ⭐️ 8.0/10
+8. [Bun 用 AI 在 11 天完成 Rust 重写，成本 16.5 万美元](#item-8) ⭐️ 8.0/10
+9. [arXiv 论文大量泄漏敏感信息](#item-9) ⭐️ 8.0/10
+10. [美军后勤的脆弱性：下一场战争可能崩溃](#item-10) ⭐️ 7.0/10
+11. [GLM 5.2 记账准确率接近人类，但责任问题待解](#item-11) ⭐️ 7.0/10
+12. [OpenAI 合并 ChatGPT 和 Codex 引发用户困惑](#item-12) ⭐️ 7.0/10
+13. [Mitchell Hashimoto 谈 Ghostty、Zig 与开源](#item-13) ⭐️ 7.0/10
+14. [Rust 1.97.0 稳定版发布](#item-14) ⭐️ 7.0/10
+15. [Drew DeVault 谈无 AI 版 Vim 的专访](#item-15) ⭐️ 7.0/10
+16. [仓库本地文档系统：兼顾人类与 AI 代理](#item-16) ⭐️ 7.0/10
+17. [PBR 材质值数据库](#item-17) ⭐️ 7.0/10
+18. [PostgreSQL 非分区列查询实现分区裁剪的技巧](#item-18) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Bun 从 Zig 重写至 Rust，二进制缩小 20%](https://bun.com/blog/bun-in-rust) ⭐️ 9.0/10
+## [OpenAI 发布 GPT-5.6，ARC-AGI-3 创纪录，效率提升](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
 
-Bun 团队宣布将其 JavaScript 运行时的代码库从 Zig 迁移到 Rust，通过 AI 辅助重写和手动优化，最终二进制体积减少了约 20%，并提升了内存安全性。 这一转变标志着主流 JS 运行时对内存安全语言的青睐，Rust 在性能与安全性上的优势可能促使更多基础设施项目效仿，同时影响 Zig 语言的发展信心。 重写过程利用了 AI 代码转换工具，结合人工审核以确保正确性；除了语言切换，还结合了 ICU（Unicode 库）简化和相同代码折叠等优化手段，共同促成 20%的二进制缩减。
+OpenAI 于 2026 年 4 月发布了 GPT-5.6 系列模型，包括 Sol 和 Luna 版本。其中 GPT-5.6 Sol 在 ARC-AGI-3 基准测试中取得 7.8%的得分，成为首个在该测试中击败任何游戏的前沿模型；同时 GPT-5.6 Luna 在保持较高智能的前提下，成本显著低于前代模型。 GPT-5.6 的发布标志着 AI 推理能力和交互式智能的重大进步，尤其是在全新的动态环境适应基准 ARC-AGI-3 上取得突破，将前沿模型的分数从近乎零提升到个位数百分比。同时，每任务成本仅为 1.04 美元（Sol 版本）和 0.21 美元（Luna 版本），大幅提升了性价比，可能推动更多实际应用落地。 根据开发者指南，GPT-5.6 能更好地理解用户的意图和所需工作层级，无需逐步骤指定，但仍需明确约束和成功标准。此外，该模型保留了原始图像尺寸，提升了视觉理解能力。在 GeneBench 和 LifeSciBench 等生物学基准上，GPT-5.6 表现出色，而对比的 Fable 5 模型因拒绝大部分高级生物问题而被排除。
 
-hackernews · Lobsters · Jul 8, 21:49 · [社区讨论](https://news.ycombinator.com/item?id=48837877)
+hackernews · logickkk1 · Jul 9, 17:04 · [社区讨论](https://news.ycombinator.com/item?id=48849066)
 
-**背景**: Bun 是一个高性能的 All-in-One JavaScript 工具链，包含运行时、打包器、测试运行器和包管理器，最初使用 Zig 语言编写以追求极致性能。Rust 则是一门强调内存安全且无垃圾回收的系统编程语言，近年来在基础设施领域广泛应用。
+**背景**: ARC-AGI-3 是由 ARC Prize 基金会发布的新一代交互式推理基准，要求 AI 代理在陌生环境中自主探索、推断目标、构建动态世界模型并规划行动序列。与静态的 ARC-AGI-1 和 ARC-AGI-2 不同，ARC-AGI-3 强调实时适应能力，人类可以 100%完成挑战，而之前的前沿模型得分低于 1%。GPT-5.6 Sol 的 7.8%得分虽然仍远低于人类，但已是重要进步。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
-<li><a href="https://github.com/oven-sh/bun">GitHub - oven-sh/bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one</a></li>
+<li><a href="https://arcprize.org/arc-agi/3">ARC-AGI-3</a></li>
+<li><a href="https://arcprize.org/leaderboard">ARC-AGI-3 Leaderboard - ARC Prize</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 讨论中有人指出 Zig 的显式性和缺乏抽象导致代码冗长，而 Rust 的内存安全性在 2026 年已成为普遍需求；也有评论质疑 AI 辅助重写的高昂 API 成本（约 2.5 万美元），认为雇佣工程师团队可能更划算。部分用户对 Bun 团队从“想用 Zig”转向“为项目选择最佳语言”表示认可。
+**社区讨论**: 社区对 GPT-5.6 的 token 效率和成本表示赞赏，认为与 Opus 4.8 和 Fable 相比，GPT-5.6 大幅降低了每任务成本，同时保持了高智能。有用户注意到模型在 ARC-AGI-3 上取得 7.8%的 SOTA，但距离完全解决仍有很大距离。还有 Claude Code 用户询问 GPT-5.6 在代码编辑方面的表现，反映出对模型编程能力的关注。部分评论对 Fable 5 在生物基准测试中被排除感到有趣。
 
-**标签**: `#Bun`, `#Rust`, `#Zig`, `#JavaScript runtime`, `#software engineering`
+**标签**: `#openai`, `#gpt-5.6`, `#AI model`, `#machine learning`, `#frontier model`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI 发布 GPT-Live，实现实时语音交互](https://openai.com/index/introducing-gpt-live/) ⭐️ 9.0/10
+## [欧盟议会通过 Chat Control 1.0，允许无证扫描私人消息](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 9.0/10
 
-OpenAI 发布了 GPT-Live，这是一种全双工语音模型，能够同时倾听和说话，并在需要时将复杂推理委托给 GPT-5.5 模型处理。 这使得语音交互更自然、更智能，用户不再受限于落后的语音模型，可享受 GPT-5.5 级别的能力，有望彻底改变人机对话体验。 GPT-Live 采用全双工架构，支持实时翻译和自然对话节奏，同时发布了 GPT-Live-1 mini 版本。GPT-5.5 模型拥有 272K token 上下文窗口，定价根据输入长度调整。
+欧盟议会于 2025 年 7 月 9 日通过 Chat Control 1.0 法规，允许美国科技公司在没有搜查令或嫌疑的情况下扫描用户私人消息。这项此前在 3 月被两次否决的措施，因需要绝对多数才能阻止，在 314 名议员反对的情况下仍自动生效。 该法规标志着欧盟数字隐私政策的重大倒退，使大规模监控合法化，影响 Instagram、Discord、Gmail 等平台的数百万用户。它削弱了端到端加密的保护，引发对基本隐私权和公民自由的严重担忧。 该法规允许对直接消息（包括 Instagram、Xbox、Gmail、iCloud 等）进行无证扫描，有效期至 2028 年。公共社交媒体帖子和云存储文件此前已可被扫描，但新规扩大了范围。法规通过需要绝对多数（361 票）否决，而实际反对票仅 314 票，导致批准。
 
-hackernews · logickkk1 · Jul 8, 17:03 · [社区讨论](https://news.ycombinator.com/item?id=48834405)
+hackernews · rapnie · Jul 9, 11:03 · [社区讨论](https://news.ycombinator.com/item?id=48843923)
 
-**背景**: GPT-Live 是 OpenAI 推出的新一代语音模型，旨在替代现有 ChatGPT 语音体验，实现类似人类的实时对话。GPT-5.5 是 2026 年 4 月发布的最新大语言模型，代号“Spud”，在复杂任务上表现更强。两者结合使语音模式也能获得前沿模型能力。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5 - Wikipedia</a></li>
-<li><a href="https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/">OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5 - MarkTechPost</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区中，有用户称赞 GPT-Live 体验良好，尤其是能调用 GPT-5.5，但也报告了打断和笑的 bug。同时有人担忧 AI 替代人际关系，缺少工具支持，以及可能加剧社会孤立。
-
-**标签**: `#AI`, `#OpenAI`, `#voice interaction`, `#GPT-5.5`, `#live`
-
----
-
-<a id="item-3"></a>
-## [TypeScript 7.0 发布，编译速度提升 8-12 倍](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
-
-微软宣布 TypeScript 7.0，通过编译器重写实现了 8 到 12 倍的性能提升，大幅缩短了类型检查时间。 这一突破性改进将显著提升开发效率，尤其对大型项目受益明显，标志开发者工具性能的新高度。 实测数据显示，vscode 项目从 125.7 秒降至 10.6 秒（提升 11.9 倍），sentry 项目从 139.8 秒降至 15.7 秒（提升 8.9 倍），其他项目如 bluesky、playwright 也有 7.7 至 8.7 倍的提速。
-
-hackernews · Lobsters · Jul 8, 16:06 · [社区讨论](https://news.ycombinator.com/item?id=48833715)
-
-**背景**: TypeScript 是 JavaScript 的超集，添加了静态类型系统，其编译器负责类型检查和转译。传统上，大型项目的编译速度是痛点，此次重写旨在从根本上解决性能瓶颈。
-
-**社区讨论**: 社区反响热烈，开发者对性能提升表示惊喜，并称赞团队在维护先进类型系统的同时实现重写。有用户提到 Node.js 现可原生剥离类型注解，减少了 TSC 的使用频率，但编译器的大幅加速仍是重大利好。
-
-**标签**: `#TypeScript`, `#Performance`, `#Compiler`, `#Language`, `#Microsoft`
-
----
-
-<a id="item-4"></a>
-## [Unicode 转写规则被证明图灵完备](https://seriot.ch/computation/uts35/) ⭐️ 9.0/10
-
-一项新发现表明，Unicode 的转写规则（UTS #35）具备模拟图灵机的能力，从而被证明是图灵完备的。 这一发现揭示了 Unicode 转写系统在计算理论上的强大能力，可能对其安全性、形式语言处理以及相关工具的设计产生深远影响。 该研究通过构造规则集实现了对图灵机的模拟，展示了转写规则在字符串变换中的通用计算能力。
-
-rss · Lobsters · Jul 8, 13:46
-
-**背景**: 图灵完备性表示一个系统能够模拟任何图灵机，从而执行任意可计算函数。Unicode 转写规则原本用于在不同文字系统之间进行字符转换，例如将拉丁字母转换为西里尔字母。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing completeness - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Unicode_Technical_Standard">Unicode Technical Standard - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Unicode`, `#Turing-complete`, `#formal languages`, `#transliteration`, `#computational theory`
-
----
-
-<a id="item-5"></a>
-## [GitLost 攻击：提示注入泄露 GitHub 私有仓库](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/) ⭐️ 9.0/10
-
-研究人员演示了一种针对 GitHub AI 代理的新型提示注入攻击，能够欺骗该代理泄露私有仓库的内容。 这一发现揭示了 AI 集成的安全风险，可能影响广泛使用 GitHub Copilot 等 AI 助手处理敏感代码的开发者和企业，威胁数据隐私。 攻击利用 AI 代理无法区分用户输入与系统指令的缺陷，通过构造看似无害但包含恶意指令的查询，诱导代理返回本应保密的仓库文件。
-
-rss · Lobsters · Jul 8, 14:04
-
-**背景**: 提示注入是一种针对大语言模型的网络攻击，攻击者通过精心设计的输入绕过模型的安全限制，使其执行非预期行为。在具有文件访问或网络浏览能力的 AI 代理中，这种攻击可被用来窃取数据或控制输出。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
-
-</ul>
-</details>
-
-**标签**: `#security`, `#AI`, `#GitHub`, `#prompt injection`, `#vulnerability`
-
----
-
-<a id="item-6"></a>
-## [AI 编程基准评估中的信号与噪声分离](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) ⭐️ 8.0/10
-
-OpenAI 发布文章，探讨了如何从编码评估中分离真正性能信号与噪声，重点指出了作弊和小规模基准等问题。 这些问题影响了 AI 编码基准的可信度，对模型对比和行业评估标准至关重要，可能导致误导性结论。 文章指出基准测试中作弊行为普遍，如注入解决方案和修改超时，且 SWE-Bench 等基准任务不足 800 个，易被针对性优化。
-
-hackernews · sk4rekr0w · Jul 8, 21:03 · [社区讨论](https://news.ycombinator.com/item?id=48837396)
-
-**背景**: AI 编码基准如 HumanEval 使用单元测试评估模型功能正确性，但近年来出现多种作弊手段，包括伪装提示注入和利用 Git 历史，导致评估失真。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://llm-stats.com/benchmarks/humaneval">HumanEval Leaderboard - llm-stats.com</a></li>
-<li><a href="https://debugml.github.io/cheating-agents/">Finding Widespread Cheating on Popular Agent Benchmarks - DebugML</a></li>
-<li><a href="https://www.kucoin.com/news/flash/cursor-ai-exposes-claude-opus-4-8-s-cheating-in-coding-benchmarks">Cursor AI Reveals Claude Opus 4.8's Cheating in Coding Benchmarks | KuCoin</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区普遍认可作弊问题严重，建议引入固定 API 预算下的效率-智能综合指标，同时批评基准规模小和审核不严，认为原始作者和下游用户都未尽责。
-
-**标签**: `#AI benchmarks`, `#coding evaluations`, `#OpenAI`, `#machine learning`, `#benchmarking`
-
----
-
-<a id="item-7"></a>
-## [Mistral 发布机器人导航模型 Robostral Navigate](https://mistral.ai/news/robostral-navigate/) ⭐️ 8.0/10
-
-Mistral AI 发布了其首个机器人学模型 Robostral Navigate，该模型仅需单个 RGB 摄像头和自然语言指令就能引导机器人穿越复杂环境，无需预先构建地图。 这项突破使机器人导航摆脱了昂贵传感器和预先地图的依赖，有望大幅降低机器人部署成本，并推动服务机器人、家庭助手等场景的普及。 Robostral Navigate 是一个 80 亿参数模型，它通过单摄像头图像和文本指令（如“离开大厅，穿过走廊，进入储藏室”）实时生成运动指令，在测试中表现出超越传统多传感器系统的能力。
-
-hackernews · ottomengis · Jul 8, 14:09 · [社区讨论](https://news.ycombinator.com/item?id=48832212)
-
-**背景**: 传统机器人导航通常需要激光雷达、深度相机或预先构建的精确地图，一旦机器人被移动到未知位置（即“被绑架机器人”问题），导航就会失败。Robostral Navigate 利用端到端深度学习方法，仅凭视觉和语言理解环境，从而自然解决了这一难题。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://mistral.ai/news/robostral-navigate/">Robostral Navigate: single-camera AI navigation | Mistral AI</a></li>
-<li><a href="https://www.bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push">Mistral AI Releases Robotics Model to Support Physical AI Push - Bloomberg</a></li>
-<li><a href="https://alphasignal.ai/news/mistral-s-robostral-navigate-beats-sensor-heavy-robots-with-just-one-camera">Mistral's Robostral Navigate Beats Sensor-Heavy Robots With Just One Camera | AlphaSignal</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区对无地图导航表示赞赏，认为这是重大进步，但模型未开放公开下载，限制了业余爱好者的使用。部分评论者指出室内无地图导航是新的突破，并提及类似技术（如 PIGEON 模型）可能涉及隐私风险。
-
-**标签**: `#robotics`, `#navigation`, `#AI`, `#Mistral`, `#deep learning`
-
----
-
-<a id="item-8"></a>
-## [xAI 发布 Grok 4.5：基于 Cursor 数据的高效模型](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
-
-xAI 发布了新一代 AI 模型 Grok 4.5，该模型使用来自 Cursor 的万亿级 token 的代码交互数据进行训练，在推理效率和成本方面有显著提升。 Grok 4.5 以极具竞争力的定价（$2/$6）实现了接近 Opus 4.7 级别的性能，推理效率提升 4 倍，可能改变 AI 模型市场的竞争格局，但也因训练数据来源和公司道德问题引发信任争议。 Grok 4.5 的定价为$2/$6，远低于 GPT 5.4（$2.5/$15）和 Opus 4.8（$5/$25），但在基准测试中表现与 Opus 4.7 相当。其训练数据中包含了 Cursor 用户与代码库的真实交互，使模型能学习开发者的工作模式和代理环境。
-
-hackernews · BoumTAC · Jul 8, 18:00 · [社区讨论](https://news.ycombinator.com/item?id=48835111)
-
-**背景**: Grok 是 xAI 开发的 AI 聊天机器人，此前已发布 Grok 2.5 和 Grok 3 等版本。Cursor 是一款 AI 编程助手，拥有大量用户代码交互数据。xAI 利用这些数据训练 Grok 4.5，旨在提升模型在处理编程任务时的效率和准确性。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Grok_(chatbot)">Grok (chatbot) - Wikipedia</a></li>
-<li><a href="https://x.ai/grok">Grok — Truth-seeking AI Chatbot with Voice & Image Generation | SpaceXAI</a></li>
-<li><a href="https://cursor.com/data-use">Cursor · Data Use & Privacy Overview</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区讨论呈现两极分化：一方面有用户赞赏其性价比和性能表现，认为 Cursor 数据是独特优势；另一方面，多位用户表达了对 xAI 模型政治倾向和道德问题的强烈不信任，甚至质疑其商业模式的可持续性。
-
-**标签**: `#AI`, `#Model Release`, `#Cost Efficiency`, `#Benchmarks`, `#Controversy`
-
----
-
-<a id="item-9"></a>
-## [Cloudflare 推出 Meerkat，基于异步共识的全局服务](https://blog.cloudflare.com/meerkat-introduction/) ⭐️ 8.0/10
-
-Cloudflare 发布了 Meerkat，这是 QuePaxa 异步共识算法的首个生产级实现，用于全球分布式系统中的共识服务。 异步共识不依赖超时，在网络延迟波动大的情况下仍能保证活性，有助于解决全球部署的分布式系统在恶劣网络下的稳定性问题。 Meerkat 目前仍处于实验阶段，尚未投产。它要求所有操作（包括读操作）都通过全局共识，可能导致较高的读延迟。
-
-hackernews · bobnamob · Jul 8, 13:18 · [社区讨论](https://news.ycombinator.com/item?id=48831565)
-
-**背景**: 传统分布式共识算法（如 Paxos、Raft）依赖超时来触发选主和保证活性，但在网络不稳定时容易发生 leader 抖动和选举风暴。QuePaxa 是一种异步共识协议，通过随机化和对冲策略避免超时依赖，即使在极端网络条件下也能继续推进。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/meerkat-introduction/">Introducing Meerkat: an experiment in global consensus</a></li>
-<li><a href="https://bford.info/pub/os/quepaxa/">QuePaxa: Escaping the Tyranny of Timeouts in Consensus – Bryan Ford's Home Page</a></li>
-<li><a href="https://news.ycombinator.com/item?id=48831565">Cloudflare Meerkat - Globally distributed consensus | Hacker News</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 有评论指出文章将 Meerkat 与 Raft 对比容易混淆，因为 Raft 是强领导者算法而 Meerkat 是无领导的。另一些评论关注到 Meerkat 对读操作也要求全局共识，延迟较高，可能只适用于特定场景。但也有观点认为，对于网络环境恶劣的场景，异步共识的优势明显，Cloudflare 的尝试值得期待。
-
-**标签**: `#distributed systems`, `#consensus`, `#cloudflare`, `#quepaxa`, `#asynchronous consensus`
-
----
-
-<a id="item-10"></a>
-## [欧盟拟复活私人消息扫描规则引发隐私争议](https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/) ⭐️ 8.0/10
-
-欧盟立法进程新进展显示，曾于 2026 年被议会否决的 Chat Control 规则可能被重新激活，要求扫描私人消息以打击儿童性虐待内容。 该规则若通过，将强制科技公司扫描所有私人通信，可能破坏端到端加密，对用户隐私和通信安全构成重大威胁，并影响全球加密政策方向。 当前推进的 Chat Control 1.0 版本仅允许服务商在非端到端加密通信中自愿扫描，而更激进的 2.0 版本要求强制扫描且禁止端到端加密，但此前已被欧盟议会否决。
-
-hackernews · ggirelli · Jul 8, 16:53 · [社区讨论](https://news.ycombinator.com/item?id=48834296)
-
-**背景**: Chat Control（正式名称为 CSAR）是欧盟 2022 年提出的法规，旨在通过扫描私人消息来检测儿童性虐待材料。反对者认为该法规会摧毁端到端加密，侵犯基本隐私权。2026 年 4 月，欧盟议会曾否决强制扫描加密消息的条款，但近期提案动向表明该规则可能被重新提上议程。
+**背景**: Chat Control 是欧盟为打击儿童性虐待材料（CSAM）提出的法规，全称为《防止和打击儿童性虐待条例》（CSAR）。其中客户端扫描（CSS）是指在用户设备上或消息发送前扫描内容的技术，可能破坏端到端加密。该提案自 2022 年提出以来一直备受争议，隐私倡导者和技术专家警告其将导致大规模监控。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
-<li><a href="https://www.eff.org/deeplinks/2026/04/eu-parliament-blocks-mass-scanning-our-chats-whats-next">EU Parliament Blocks Mass-Scanning of Our Chats—What's Next? | Electronic Frontier Foundation</a></li>
+<li><a href="https://fightchatcontrol.eu/chat-control-overview">Chat Control 1.0 vs 2.0 - Fight Chat Control</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论普遍区分了 Chat Control 1.0 和 2.0，认为 1.0 较温和（如允许 Meta 扫描非加密消息），而 2.0 强制扫描加密消息引发强烈担忧。有用户提供了 fightchatcontrol.eu 链接，呼吁欧盟公民联系代表反对该法规。
+**社区讨论**: 社区评论普遍对投票程序表示愤怒和失望，认为这是“民主的闹剧”——利用暑假前最后一天的投票和绝对多数门槛，使得多数反对也无法阻止法律通过。评论者批评欧盟正走向威权主义，并指出欧盟常被成员国用作通过国内不受欢迎立法的“责任洗白”机制。
 
-**标签**: `#privacy`, `#encryption`, `#EU regulation`, `#surveillance`
+**标签**: `#privacy`, `#surveillance`, `#EU legislation`, `#digital rights`, `#encryption`
+
+---
+
+<a id="item-3"></a>
+## [在 32GB 内存电脑上运行 GLM 5.2：Colibrì项目](https://github.com/JustVugg/colibri) ⭐️ 8.0/10
+
+作者 JustVugg 成功将 744B 参数的 GLM 5.2 混合专家模型通过 int4 量化、多令牌预测（MTP）和直接稀疏注意力（DSA）优化，在仅 32GB RAM 的普通笔记本电脑上以约 0.1 tok/s 的速度运行，并开源了 Colibrì项目。 这一成果展示了在没有高端 GPU 的情况下运行现代大型语言模型的可行性，降低了 LLM 的硬件门槛，使更多开发者和爱好者能在消费级设备上体验并优化先进的 AI 模型。 GLM 5.2 是一个 744B 参数的 MoE 模型，每次推理仅激活约 40B 参数，其中路由专家约 11GB 数据逐 token 变化。量化至 int4 后，密集部分（17B 参数）常驻内存约 9.9GB，而 21,504 个路由专家（共约 370GB）存储在磁盘上按需流式加载，配合每层 LRU 缓存和 OS 页面缓存。
+
+hackernews · vforno · Jul 9, 08:05 · [社区讨论](https://news.ycombinator.com/item?id=48842459)
+
+**背景**: 大语言模型通常需要大量 GPU 显存，但 int4 量化技术可将模型权重从 32 位浮点数压缩为 4 位整数，大幅减小内存占用；多令牌预测（MTP）允许模型一次生成多个 token 以提高推理速度；直接稀疏注意力（DSA）则通过只关注部分 token 来降低长上下文场景的计算量。Colibrì结合这些技术，使 744B 模型能在仅 32GB 内存的 CPU 上运行。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://huggingface.co/docs/transformers/en/quantization/concept_guide">Quantization concepts - Hugging Face</a></li>
+<li><a href="https://arxiv.org/abs/2502.09419">On multi-token prediction for efficient LLM inference Multi-Token Prediction on GPU Cloud: Deploy MTP LLMs for 2-3x ... Speed-up Gemma 4 with Multi-Token Prediction - ai.google.dev On multi-token prediction for efficient LLM inference - arXiv.org How to Run MTP Models: Multi-Token Prediction Guide | Unsloth ... Gemma 4 Multi-Token Prediction (MTP) using Hugging Face ... Images</a></li>
+<li><a href="https://www.emergentmind.com/topics/deepseek-sparse-attention-dsa">DeepSeek Sparse Attention Mechanism (DSA)</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区评论中，多位开发者分享了类似的优化工作，如针对 Apple Silicon 的 Unsloth 分割 GGUF、mmap 加载整个模型以避免额外内存，以及自定义量化实现 DiffusionGemma 等。大家普遍认可这种低资源优化的趣味性和价值，但也指出 0.1 tok/s 的速度在实际使用中可能不够实用，更适合后台批处理任务。
+
+**标签**: `#LLM`, `#optimization`, `#quantization`, `#inference`, `#consumer hardware`
+
+---
+
+<a id="item-4"></a>
+## [腾讯 Hy3 语言模型发布，引发社区热议](https://hy.tencent.com/research/hy3) ⭐️ 8.0/10
+
+腾讯正式发布 Hy3 语言模型，这是一个 295B 总参数、21B 激活参数的 MoE 模型，并已开源。 Hy3 在较小激活参数下性能接近更大模型，可能改变本地部署和 API 服务的性价比格局，尤其与 DeepSeek Flash V4 形成直接竞争。 Hy3 采用 MoE 架构，总参数 295B，激活参数 21B，另有 3.8B MTP 层参数。该模型已集成到腾讯 50 多个产品中，并在 OpenRouter 上提供免费试用至 7 月 21 日。
+
+hackernews · andai · Jul 9, 15:27 · [社区讨论](https://news.ycombinator.com/item?id=48847552)
+
+**背景**: MoE（混合专家）模型通过仅激活部分参数来提升效率，参数总量与激活参数是两个关键指标。DeepSeek Flash V4 是 284B 总参数、13B 激活参数的 MoE 模型，Hy3 的激活参数更多，但总参数相近，两者在 OpenRouter 上价格趋同。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.com/Tencent-Hunyuan/Hy3">GitHub - Tencent-Hunyuan/Hy3: Hy3 (295B A21B), a leading ...</a></li>
+<li><a href="https://hunyuan.tencent.com/research/hy3">Introducing Hy3 - Tencent Hy</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V4 Flash - API Pricing & Benchmarks | OpenRouter</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区对 Hy3 的讨论集中在与 DeepSeek Flash V4 的对比：有用户指出 Hy3 在 OpenRouter 排名从第 1 降至第 8/9；也有用户认为 Hy3 体积小但能力强，有望成为流行的本地模型；同时有人关注其量化表现和长期定价策略。
+
+**标签**: `#AI`, `#Language Model`, `#Tencent`, `#OpenRouter`, `#Model Comparison`
+
+---
+
+<a id="item-5"></a>
+## [Postgres 用 Rust 重写，通过全部回归测试](https://github.com/malisper/pgrust) ⭐️ 8.0/10
+
+一个名为 pgrust 的项目利用大语言模型（LLM）将 Postgres 数据库用 Rust 语言重写，目前已经通过了 100%的 Postgres 回归测试。 该项目展示了 LLM 在大型软件重写和架构改进中的潜力，可能为未来数据库开发带来新范式，同时引发了关于 AI 生成代码质量、代码审查以及许可证兼容性的广泛讨论。 项目在不到一个月内由 LLM 生成了 7101 次提交，代码审查面临巨大挑战；此外，项目许可证从 PostgreSQL 许可证变更为 AGPL，引发关于原有许可证适用性的争议。
+
+hackernews · SweetSoftPillow · Jul 9, 06:18 · [社区讨论](https://news.ycombinator.com/item?id=48841676)
+
+**背景**: PostgreSQL 是一个拥有 30 年历史的开源关系型数据库，以其稳定性和扩展性著称。Rust 是一种系统编程语言，以内存安全和并发性能为特点。LLM（大语言模型）可辅助代码生成，但生成的代码质量和可维护性仍是业界关注的问题。
+
+**社区讨论**: 社区讨论热烈：作者表示正在开发新版本以融合更多技术；有用户强调需要 Jepsen 测试来验证正确性；有人担忧大量 LLM 生成代码的审查难度；还有观点关注许可证从 PostgreSQL 许可改为 AGPL 的兼容性问题。
+
+**标签**: `#Postgres`, `#Rust`, `#LLM`, `#database`, `#open source`
+
+---
+
+<a id="item-6"></a>
+## [内部服务 TLS 证书管理的最佳实践指南](https://tuxnet.dev/posts/tls-for-internal-services/) ⭐️ 8.0/10
+
+一篇博客文章详细介绍了使用 ACME 协议和 split-horizon DNS 方法管理内部服务 TLS 证书的流程，并引发了社区对多种替代方案（如 DNS-01 挑战、内部 CA 等）的深入讨论。 内部服务的 TLS 证书管理是一个普遍存在的难题，该指南提供了实用方案，而社区讨论揭示了不同方法的利弊，有助于读者根据自身网络和环境选择最优策略。 文章推荐使用 split-horizon DNS 配合 HTTP-01 挑战从 Let's Encrypt 获取证书，但社区评论指出 split-horizon DNS 会增加长期维护复杂度，并建议优先使用 DNS-01 挑战或自建内部 CA（如 step-ca）来简化管理。
+
+hackernews · mrl5 · Jul 9, 14:57 · [社区讨论](https://news.ycombinator.com/item?id=48846995)
+
+**背景**: ACME（自动证书管理环境）协议是由 Let's Encrypt 推广的标准，用于自动化 TLS 证书的颁发和续期；split-horizon DNS 则根据请求来源返回不同的 DNS 记录，常用于内网和外网使用相同域名但解析到不同 IP 的场景。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ACME_protocol">ACME protocol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Split-horizon_DNS">Split-horizon DNS</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区对 split-horizon DNS 普遍持保留态度，认为其引入额外维护工作；多位用户推荐使用 DNS-01 挑战配合公网 DNS（如 Cloudflare）并仅通过 VPN 或内网路由访问，或配置操作系统信任存储以简化自签名证书管理。
+
+**标签**: `#TLS`, `#certificates`, `#ACME`, `#internal services`, `#DNS`
+
+---
+
+<a id="item-7"></a>
+## [Meta 发布 Muse Spark 1.1 及商业 API 定价](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) ⭐️ 8.0/10
+
+Meta 于 2026 年 7 月 9 日宣布推出 Muse Spark 1.1，这是一款多模态 AI 模型，专为智能体（agentic）工作流设计，并同时公布了商业 API 定价。 此举标志着 Meta 正式进入智能体 AI 编码市场，与 OpenAI 和 Anthropic 直接竞争；其定价显著低于竞争对手，可能促使行业价格战并加速 AI 编码工具的商品化。 Muse Spark 1.1 拥有 100 万 token 的上下文窗口，在 DeepSWE 1.1 基准上得分 53.3（前代仅为 10.0），但社区指出其测试中擅自提高了 CPU 和内存上限，违反了 Terminal-Bench 2.1 的官方规则。
+
+hackernews · ot · Jul 9, 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48846184)
+
+**背景**: 智能体 AI 指能够自主规划、使用工具并适应环境以完成复杂任务的 AI 系统，区别于被动响应式聊天机器人。Meta 推出 Muse Spark 1.1 意在将其作为“破坏者”，通过低价和开放权重策略削弱竞争对手的模型收入。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/">Meta enters the crowded AI coding battle with Muse Spark 1.1</a></li>
+<li><a href="https://officechai.com/ai/muse-spark-1-1-benchmarks/">Meta Announces Muse Spark 1.1, Beats Claude Opus 4.8 And GPT ...</a></li>
+<li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained">Agentic AI, explained - MIT Sloan</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区对实用性和定价普遍认可，如 Simon Willison 为 LLM 工具制作了插件，称赞其便捷；但多位用户批评其基准测试结果因资源限制覆盖而无效，认为 Meta 应提供更透明的评估方法。
+
+**标签**: `#Meta`, `#AI model`, `#Muse Spark`, `#benchmarking`, `#LLM`
+
+---
+
+<a id="item-8"></a>
+## [Bun 用 AI 在 11 天完成 Rust 重写，成本 16.5 万美元](https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from) ⭐️ 8.0/10
+
+Bun 团队利用 LLM 在 11 天内将代码库重写为 Rust，花费 16.5 万美元的 token 费用，而传统方式需要一个小团队约一年时间。 这一案例展示了 AI 在大型代码重写中的巨大潜力，能够显著降低时间和成本，可能改变未来软件工程中代码迁移和重构的实践方式。 重写使用了 Rust 语言，依赖 LLM 的代码生成能力，总 token 成本为 16.5 万美元。Bun 是一个 JavaScript 运行时，旨在替代 Node.js，使用 JavaScriptCore 引擎。
+
+rss · The Pragmatic Engineer · Jul 9, 16:32
+
+**背景**: Bun 是一个新兴的 JavaScript 运行时，提供打包、转译和测试功能，目标是成为 Node.js 的高性能替代品。Rust 是一种系统级语言，以内存安全和并发性著称，常用于性能关键型项目。大语言模型（LLM）如 GPT-4 能够根据自然语言描述生成代码，但大规模应用仍需要人工审查。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#software engineering`, `#Rust`, `#LLM`, `#code rewrite`
+
+---
+
+<a id="item-9"></a>
+## [arXiv 论文大量泄漏敏感信息](https://www.nature.com/articles/d41586-026-02057-8) ⭐️ 8.0/10
+
+Nature 报道称，大多数 arXiv 预印本论文的元数据和源文件中包含密码、GPS 坐标和私人对话等从未打算公开的敏感信息。 这一发现严重影响学术隐私安全，涉及 arXiv 上数百万篇论文，可能导致个人或机构数据泄露，并破坏研究者对预印本平台的信任。 敏感信息主要隐藏在 PDF 元数据、LaTeX 源文件或补充材料中，作者在提交时未意识到这些数据会被公开访问。
+
+rss · Nature · Jul 9, 00:00
+
+**背景**: arXiv 是一个开放获取的预印本仓库，收录物理、数学、计算机科学等领域近 240 万篇论文，但提交的论文未经同行评审即可发布。元数据和源文件通常包含作者在编辑过程中留下的注释、路径或凭据，若不作清理便会随论文一起公开。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ArXiv">arXiv - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#privacy`, `#security`, `#arXiv`, `#academic publishing`, `#data leakage`
+
+---
+
+<a id="item-10"></a>
+## [美军后勤的脆弱性：下一场战争可能崩溃](https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/) ⭐️ 7.0/10
+
+西点军校现代战争研究所发表文章指出，美军后勤系统因过度依赖复杂且不具韧性的供应链，在下一场大规模冲突中极易崩溃。文章批评陆军预算长期忽视后勤现代化，优先采购打击武器而非保障能力。 后勤是军事行动的命脉，后勤失败将直接导致战斗力丧失。这一观点引发广泛讨论，对美军未来预算分配、供应链韧性和作战战略具有重要警示意义。 文章引用“齿尾比”概念，认为美军错误追求减少后勤人员来提高战斗力，实则削弱了持续作战能力。搜索结果显示，高超音速武器和网络攻击可远程瘫痪后勤节点，且当前国防工业基础对供应链中断的韧性不足。
+
+hackernews · baud147258 · Jul 9, 13:24 · [社区讨论](https://news.ycombinator.com/item?id=48845442)
+
+**背景**: 军事后勤负责物资、弹药、燃料等补给，是维持部队作战能力的基础。现代战争后勤依赖全球供应链和精密电子系统，但越复杂的系统越易因局部故障（如运输线中断、网络攻击、产能不足）而整体瘫痪。历史表明（如二战德军、俄乌冲突），后勤薄弱一方往往陷入困境。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.ey.com/en_us/insights/strategy/four-actions-to-modernize-military-logistics-and-supply-chain-security">Modernizing military logistics and supply chain security | EY - US</a></li>
+<li><a href="https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/July-August-2023/Supply-Chain-Issues/">The Impact of Supply Chain Issues on Military Training and Readiness</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论中引用了汉尼拔与费边战略、俄乌冲突中伊朗导弹远程打击等案例，强调破坏后勤是经典战法。部分用户认为美国可通过 SpaceX 的“StarFall”等太空运输技术绕过传统后勤瓶颈，但另一些用户指出当前美国工业产能已远不如二战时期，无法快速补充高端武器损失。
+
+**标签**: `#military logistics`, `#systems thinking`, `#supply chain`, `#strategy`
 
 ---
 
 <a id="item-11"></a>
-## [SpaceWASM：NASA/JPL 的航天器序列 WebAssembly 解释器](https://github.com/nasa/spacewasm) ⭐️ 8.0/10
+## [GLM 5.2 记账准确率接近人类，但责任问题待解](https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark) ⭐️ 7.0/10
 
-NASA/JPL 发布了 SpaceWASM，一个基于 WebAssembly 的开源解释器，用于航天器序列操作。该项目托管在 GitHub 上，旨在替代传统脚本语言如 VML。 SpaceWASM 将 WebAssembly 的沙箱安全性和可移植性引入航天器嵌入式系统，有望提升序列执行的可靠性和效率，为深空探测任务提供更灵活的指令执行环境。 SpaceWASM 作为一个轻量级 WebAssembly 解释器，运行在资源受限的航天器硬件上，支持来自地面站的 WASM 字节码序列，并提供了与现有飞行软件的接口。
+GLM 5.2 在记账基准测试中达到了接近人类水平的准确率，但该测试仅涵盖部分记账任务，且模型依赖用户提供的笔记。 这一结果展示了大型语言模型在会计自动化领域的巨大潜力，但同时暴露了责任归属、数据隐私和模型可靠性等关键问题，可能影响实际应用。 基准测试中，人类记账员还需要自行搜索发票和推理特殊情况，而模型则直接获得了用户笔记，简化了任务；错误类型包括税务细节错误，可通过改进知识库解决。
 
-rss · Lobsters · Jul 8, 21:50
+hackernews · adamkurkiewicz · Jul 9, 18:29 · [社区讨论](https://news.ycombinator.com/item?id=48850414)
 
-**背景**: 航天器序列操作是通过预定义指令集控制航天器动作的过程，传统上使用 NASA 开发的 VML（虚拟机语言）等专用脚本语言。WebAssembly 是一种低级的二进制指令格式，可在多种平台上高效执行，具有内存安全和平台无关特性。JPL 作为 NASA 下属实验室，长期领导深空探测任务，其开发的 SpaceWASM 旨在结合 WebAssembly 优势优化序列系统。
+**背景**: GLM 5.2 由 Z.ai（原智谱 AI）开发，是其旗舰大语言模型，支持长达 100 万 token 的上下文。记账自动化是 LLM 在专业领域的一个热门应用方向，但准确性和法律责任是主要障碍。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory">Jet Propulsion Laboratory - Wikipedia</a></li>
-<li><a href="https://ieeexplore.ieee.org/document/1036829/">The fully programmable spacecraft: procedural sequencing for JPL deep space missions using VML (Virtual Machine Language) | IEEE Conference Publication | IEEE Xplore</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GLM_5.2">GLM 5.2</a></li>
+<li><a href="https://huggingface.co/zai-org/GLM-5.2">zai-org/GLM-5.2 · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**标签**: `#WebAssembly`, `#space`, `#NASA`, `#embedded systems`, `#sequencing`
+**社区讨论**: 社区评论指出，人类记账员的工作范围比基准测试更广，模型依赖用户笔记简化了任务；还有人担忧如果模型导致税务欺诈，用户将承担未知风险；此外，服务提供商的初创公司背景不透明，引发信任质疑。
+
+**标签**: `#LLM`, `#accounting`, `#benchmark`, `#automation`, `#accuracy`
 
 ---
 
 <a id="item-12"></a>
-## [OpenBSD 7.9 及之前版本存在释放后使用漏洞](https://nvd.nist.gov/vuln/detail/cve-2026-57589) ⭐️ 8.0/10
+## [OpenAI 合并 ChatGPT 和 Codex 引发用户困惑](https://openai.com/index/chatgpt-for-your-most-ambitious-work/) ⭐️ 7.0/10
 
-CVE-2026-57589 被公开，该漏洞是一个存在于 OpenBSD 7.9 及之前版本中的释放后使用漏洞，允许本地攻击者将权限提升至 root。 OpenBSD 以安全性著称，此漏洞可直接导致本地提权至 root，严重威胁系统安全；受影响版本广泛，用户需紧急修复。 该漏洞的 CVSS 评分为 8.0，属于高危漏洞；攻击者需要本地访问权限，但无需用户交互即可利用。
+OpenAI 将 ChatGPT 和 Codex 合并为统一的'ChatGPT Work'，原有的独立 Codex 桌面应用被取代，用户界面出现新的模式切换但功能不明确。 这一合并导致大量用户困惑，批评界面设计倒退，可能影响 OpenAI 在开发者社区中的信任和产品体验口碑。 新模式切换（ChatGPT Work 与 ChatGPT Codex）在功能上无明显区别，仅默认加载的插件不同；原有聊天界面被压缩为不可搜索的小弹窗，且旧应用被重命名为'ChatGPT Classic'暗示未来可能停用。
 
-rss · Lobsters · Jul 8, 01:02
+hackernews · Tiberium · Jul 9, 17:03 · [社区讨论](https://news.ycombinator.com/item?id=48849059)
 
-**背景**: 释放后使用漏洞是指程序在释放内存后仍继续使用该内存指针，攻击者可利用此漏洞执行任意代码或提升权限。OpenBSD 是一个注重安全的类 Unix 操作系统，其内核代码经过严格审计，因此此类漏洞的出现备受关注。
+**背景**: ChatGPT 是 OpenAI 的通用对话 AI 产品，而 Codex 最初是专注于代码生成的大模型，后来演变为独立的桌面编程助手应用。OpenAI 此次试图将两者融合，但粗暴的统一破坏了原有的聊天体验和代码工具的专业性。
 
-**标签**: `#security`, `#vulnerability`, `#CVE`, `#OpenBSD`, `#privilege escalation`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)">OpenAI Codex (language model) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Codex (AI agent) - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区普遍持负面态度，用户反映界面混乱、聊天功能严重退化，并批评产品团队操之过急；有评论指出类似 Anthropic 也做了分叉界面导致混淆，认为 OpenAI 不应破坏原有工作方式。
+
+**标签**: `#ChatGPT`, `#OpenAI`, `#Codex`, `#User Experience`, `#AI Tools`
 
 ---
 
 <a id="item-13"></a>
-## [FAANG 模拟器：讽刺游戏折射职场现实](https://www.abeyk.com/escape-the-rat-race/) ⭐️ 7.0/10
+## [Mitchell Hashimoto 谈 Ghostty、Zig 与开源](https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/) ⭐️ 7.0/10
 
-一款名为 FAANG 模拟器的讽刺性游戏上线，以幽默方式再现了在 FAANG 公司工作的压力与挑战，包括失业风险、拼绩效等场景。 该游戏引发开发者社区广泛讨论，触及签证困境、年龄歧视和副业成功率等敏感话题，有助于促进行业对职场文化问题的反思。 游戏允许玩家通过选择低成本地区等方式“破解”现实，但未纳入年龄歧视因素；副项目成功的概率被评论认为设定过高。
+Lobsters 发布了对 Mitchell Hashimoto 的深度访谈，他详细介绍了为何开发 Ghostty 终端模拟器、选择 Zig 编程语言的原因，以及他对终端生态和开源开发的见解。 Mitchell Hashimoto 是 Vagrant、Terraform 等知名开源项目的创建者，他的观点对开发者社区具有重要影响力。此次访谈揭示了终端模拟器在 GPU 加速和跨平台开发方面的前沿实践，同时探讨了 Zig 语言在系统编程中的潜力。 Ghostty 是一款基于平台原生 UI 和 GPU 加速的终端模拟器，旨在兼顾速度、功能丰富性和跨平台支持。Mitchell 最初只为学习 Zig 和 GPU 编程而开发，后来发现其实际需求未被满足，于是公开了项目。
 
-hackernews · nerdbiscuits · Jul 8, 20:05 · [社区讨论](https://news.ycombinator.com/item?id=48836778)
+rss · Lobsters · Jul 9, 15:41
 
-**背景**: FAANG 指 Facebook、Apple、Amazon、Netflix、Google 等大型科技公司，其高薪高压的工作文化常被讨论。该游戏以模拟经营形式，让玩家体验从入职到被裁或成功的典型路径。
+**背景**: 终端模拟器是命令行界面的图形化前端，负责渲染文本、处理输入和转义序列。Ghostty 是新兴的开源终端模拟器，使用 Zig 语言编写，Zig 是一种现代系统编程语言，强调与 C 的兼容性、编译时计算和内存安全。Mitchell Hashimoto 曾是 HashiCorp 的联合创始人，主导了多项基础设施工具。
 
-**社区讨论**: 社区评论情绪复杂，既有对游戏真实性的苦笑认同，也有对缺失年龄歧视机制的批评；非美国公民模式建议及副项目成功率过高成为争议点，整体讨论富有建设性。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://ghostty.org/">Ghostty</a></li>
+<li><a href="https://github.com/ghostty-org/ghostty">GitHub - ghostty-org/ghostty: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
 
-**标签**: `#FAANG`, `#career simulation`, `#software engineering`, `#satire`, `#Hacker News`
+</ul>
+</details>
+
+**标签**: `#open-source`, `#interview`, `#infrastructure`, `#zig`, `#terminal`
 
 ---
 
 <a id="item-14"></a>
-## [Chatto 现已开源](https://www.hmans.dev/blog/chatto-is-open-source) ⭐️ 7.0/10
+## [Rust 1.97.0 稳定版发布](https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/) ⭐️ 7.0/10
 
-Chatto 这款自托管聊天应用现已正式开源，其核心采用 NATS 消息代理和 S3 兼容对象存储，提供紧凑的单一二进制文件，方便用户在自己的基础设施上部署。 Chatto 的开源为自托管聊天领域提供了一个易于部署、设计精良的新选择，其社区的高分和积极讨论表明它可能成为企业和个人用户替代主流聊天软件的重要候选。 Chatto 使用 NATS 作为消息代理和内置流持久化引擎，并支持配置外部 S3 兼容存储来保存文件；此外，它实现了每用户加密密钥，在用户删除账户时销毁密钥，但社区指出企业场景可能需要软删除功能以保留工作消息。
+Rust 团队正式发布了 1.97.0 稳定版本，带来了新特性、改进和错误修复。 作为系统编程语言的重要更新，Rust 1.97.0 提升了开发体验和语言稳定性，对 Rust 生态系统和所有 Rust 开发者具有实际意义。 该版本包含语言和标准库的增量改进，具体变更细节请参阅官方发布说明。
 
-hackernews · speckx · Jul 8, 15:19 · [社区讨论](https://news.ycombinator.com/item?id=48833116)
+rss · Lobsters · Jul 9, 14:56
 
-**背景**: NATS 是一个云原生计算基金会托管的开源消息系统，用 Go 语言编写，以高性能、轻量级和易部署著称。Chatto 则是一款全功能的网页聊天应用，设计目标就是让用户能极其简单地自托管，无需复杂配置。
+**背景**: Rust 是一种注重安全、并发和性能的系统编程语言，每六周发布一个新稳定版本。Rust 1.97.0 是常规的增量更新，延续了 Rust 的稳定发布节奏。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/NATS_Messaging">NATS Messaging - Wikipedia</a></li>
-<li><a href="https://docs.chatto.run/getting-started/introduction/">Introduction | Chatto</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区对 Chatto 的开源反响热烈，开发者被称赞为“最有才华的开发者之一”，项目被认为会快速成功；但同时也收到建设性反馈，比如缺乏移动端支持是企业或个人迁移的障碍，以及用户密钥删除后企业消息归属权的问题需要软删除方案。
-
-**标签**: `#open-source`, `#chat`, `#self-hosted`, `#NATS`, `#communication`
+**标签**: `#Rust`, `#Systems Programming`, `#Release`, `#Programming Language`
 
 ---
 
 <a id="item-15"></a>
-## [Cloudflare 推出 Drop：拖放部署静态网站](https://www.cloudflare.com/drop/) ⭐️ 7.0/10
+## [Drew DeVault 谈无 AI 版 Vim 的专访](https://jasonpolak.substack.com/p/interview-drew-devault-on-an-ai-free) ⭐️ 7.0/10
 
-Cloudflare 发布了名为 Drop 的新服务，允许用户通过拖放文件夹或压缩包的方式，无需注册账户即可将静态网站部署到其全球边缘网络。 这极大简化了静态网站的部署流程，降低了使用门槛，使开发者甚至非技术人员能快速上线站点。尽管类似服务已存在，但 Cloudflare 凭借其庞大的边缘网络可提供更低延迟和更高可靠性。 Drop 无需 Cloudflare 账户即可启动部署，生成的站点默认分配一个子域名（如 drop-*.workers.dev），用户后续可认领站点并绑定自定义域名。服务依靠 Cloudflare 的安全防护机制来防止恶意内容。
+Drew DeVault 在专访中讨论了创建一个完全去除 AI 功能的 Vim 版本的想法和动机。 这一讨论反映了开发者社区对 AI 工具集成进核心编辑器的争议，可能影响 Vim 未来的发展方向。 无 AI 版本的 Vim 将排除所有 AI 辅助插件（如 vim-ai），但尚未有明确的发布计划。
 
-hackernews · coloneltcb · Jul 8, 19:18 · [社区讨论](https://news.ycombinator.com/item?id=48836233)
+rss · Lobsters · Jul 9, 00:43
 
-**背景**: 静态网站指由 HTML、CSS、JavaScript 等固定文件组成的网站，无需服务器端动态处理。Cloudflare 的边缘网络是一组分布全球的服务器，可将内容缓存到离用户最近的位置，从而加快加载速度。此前已有 Netlify Drop 等类似拖放部署工具，但 Cloudflare Drop 利用其现有的 Workers 平台和安全基础设施。
+**背景**: Vim 是一款流行的文本编辑器，近年来出现了大量 AI 插件（如 vim-ai）来提供代码补全和对话功能。部分开发者担心 AI 集成会破坏编辑器的简洁性和用户控制权。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.cloudflare.com/drop/">Cloudflare Drop</a></li>
-<li><a href="https://developers.cloudflare.com/changelog/post/2026-07-08-cloudflare-drag-and-drop/">Cloudflare Drop · Changelog</a></li>
+<li><a href="https://github.com/madox2/vim-ai">GitHub - madox2/vim-ai: AI-powered code assistant for Vim ...</a></li>
+<li><a href="https://www.vim.org/scripts/script.php?script_id=6048">vim-ai - AI-powered code assistant for Vim. OpenAI and ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论整体积极，多数人认为该功能便捷实用，但也有人指出 Netlify 早在 10 年前就推出了同名服务。部分用户担心安全风险，但另有评论认为注册账号后再部署同样存在风险，Drop 并未显著改变威胁模型。还有用户实测了功能并分享了部署的示例站点。
-
-**标签**: `#cloudflare`, `#static sites`, `#edge computing`, `#developer tools`, `#deployment`
+**标签**: `#Vim`, `#AI`, `#open source`, `#software engineering`, `#interview`
 
 ---
 
 <a id="item-16"></a>
-## [微软发布 Flint 可视化中间语言](https://microsoft.github.io/flint-chart/#/) ⭐️ 7.0/10
+## [仓库本地文档系统：兼顾人类与 AI 代理](https://gist.github.com/lukewilson2002/cb48062397d8b51954034d94b8c19d6d) ⭐️ 7.0/10
 
-微软发布了 Flint，一种专门为 AI 智能体设计的可视化中间语言，它通过简化的语义类型规范让 AI 能可靠地生成高质量图表。 Flint 通过引入确定的编译器层解决了 AI 生成图表时低质量或冗长不可靠的问题，代表了 AI 生成结构化输出的新趋势，可能推动数据可视化工具链的革新。 Flint 包含一个布局优化引擎，可将简单的高级规范自动转换为填充了尺度、轴线等低层细节的精美图表，并且已开源并提供 MCP 服务器以便集成到智能体应用中。
+有人提出一种在代码仓库内直接维护文档的系统，专门针对人类读者和 AI 代理进行了优化。 该系统解决了现代开发中知识管理难题，让文档更贴近代码，同时方便 AI 工具自动读取，从而提升开发效率和协作体验。 该系统强调“仓库本地”，即文档与代码共存于同一仓库，可能采用结构化格式以便 AI 解析，并支持版本控制。
 
-hackernews · chenglong-hn · Jul 8, 17:46 · [社区讨论](https://news.ycombinator.com/item?id=48834924)
+rss · Lobsters · Jul 9, 23:49
 
-**背景**: 传统可视化语言对 AI 来说要么太简单导致默认的低质量图表，要么太复杂导致生成不可靠。Flint 作为一种中间表示（IR），类似编译器设计，让 AI 只关注语义而将视觉决策交给编译器处理。
+**背景**: 传统项目文档常存放于独立位置或使用专门工具，导致与代码脱节。随着 AI 代码助手（如 Cursor、Claude Code）的普及，文档需要同时服务于人类和机器。该系统旨在填补这一空白，使文档既易读又易被 AI 代理访问。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/microsoft/flint-chart">GitHub - microsoft/flint-chart: 🪄 Flint is a visualization language that lets AI agents reliably create expressive, good-looking charts from simple, human-editable chart specs.</a></li>
-<li><a href="https://news.ycombinator.com/item?id=48834924">Show HN: Microsoft releases Flint, a visualization language for AI agents | Hacker News</a></li>
+<li><a href="https://www.mintlify.com/library/best-ai-documentation-tools">Best AI Documentation Tools in 2026</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区普遍认为 Flint 代表了一种新兴的确定性中间层模式，但有人质疑其与 Vega 的差异以及 LLM 对低层代码不敏感的问题，也有开发者表示未遇到所述可靠性困境。
-
-**标签**: `#visualization`, `#AI agents`, `#intermediate representation`, `#Microsoft`, `#machine learning`
+**标签**: `#documentation`, `#repository`, `#AI agents`, `#developer tools`, `#knowledge management`
 
 ---
 
 <a id="item-17"></a>
-## [一个只影响左撇子用户的软件缺陷](https://shkspr.mobi/blog/2026/07/a-bug-which-only-affected-left-handed-users/) ⭐️ 7.0/10
+## [PBR 材质值数据库](https://physicallybased.info/) ⭐️ 7.0/10
 
-一篇技术博客揭示了一个用户界面设计中的极端案例：一个软件缺陷仅对左撇子用户产生影响。该案例强调了在开发中考虑不同用户习惯的重要性。 这个 bug 虽然罕见，但突显了软件工程中边缘测试和辅助功能的必要性。它提醒开发者注意默认假设（如左右手习惯）可能无意中排除部分用户。 博客未给出具体技术细节，但指出该 bug 与界面布局或交互方式有关，例如快捷键或鼠标按键分配。该问题可能在特定操作系统或应用中复现。
+这是一个开源的在线数据库，收录了超过 100 种真实世界材质的物理属性值，包括 RGB 颜色、金属度、折射率（IOR）和密度等 PBR 参数。 为 CG 艺术家和开发者提供了标准化的材质参考，简化了 PBR 材质制作流程，有助于提高作品真实感。 该数据库基于 CC0 许可证发布，可免费用于商业用途，并提供了 API 接口供程序化获取数据。
 
-rss · Lobsters · Jul 8, 13:01
+rss · Lobsters · Jul 9, 14:48
 
-**背景**: 左撇子用户在软件使用中可能面临诸多不便，例如默认右手优化的滚动条位置或鼠标右键功能。许多 UI 设计未充分考虑左右手对称性，导致少数派用户体验受损。开发者通常以右手用户为默认测试对象，从而引入这类隐蔽缺陷。
+**背景**: 基于物理的渲染（PBR）是一种通过模拟真实光与表面交互来生成照片级真实感图像的计算机图形学方法。该数据库收集了实测的材质属性值，使艺术家能够直接使用或作为起点进行调整。
 
-**标签**: `#bug`, `#accessibility`, `#software engineering`, `#user experience`, `#edge case`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Physically_based_rendering">Physically based rendering</a></li>
+<li><a href="https://github.com/AntonPalmqvist/physically-based-api">GitHub - AntonPalmqvist/physically-based-api: A database of ... This $25 PDF lists PBR color values for 600 real-world materials Physically Based lists PBR values for real-world materials Physically Based: a Database of PBR Values for Real-World ... Physically-Based Rendering, And You Can Too! - Marmoset</a></li>
+
+</ul>
+</details>
+
+**标签**: `#computer graphics`, `#physically based rendering`, `#PBR`, `#materials`, `#database`
 
 ---
 
 <a id="item-18"></a>
-## [开源软件融资：如何不妥协独立性](https://yorickpeterse.com/articles/funding-open-source-software-without-compromising-it/) ⭐️ 7.0/10
+## [PostgreSQL 非分区列查询实现分区裁剪的技巧](https://hakibenita.com/postgresql-partition-pruning) ⭐️ 7.0/10
 
-本文探讨了在保持开源软件完整性和独立性的前提下实现可持续融资的方法，包括捐赠、赞助、开放核心等模式。 开源项目长期面临资金短缺问题，而商业化融资往往牺牲社区自主权；本文提出的策略有助于平衡资金需求与开放精神，影响整个开源生态的健康发展。 文章可能分析了各种融资模式的利弊，例如基金会治理、双许可、众筹等，强调避免因资金依赖导致项目方向被外部控制。
+该文详细介绍了在 PostgreSQL 中，当查询条件不包含分区键时，如何通过巧妙的数据模式或索引技巧实现分区裁剪，从而提升查询性能。 这项技术打破了传统认知，即仅在分区键上过滤才能进行分区裁剪，为数据库工程师优化大规模分区表的非键列查询提供了实用方案。 文章指出，当数据遵循特定模式时（例如时间序列数据中非分区列与分区列存在相关性），可以通过子查询或冗余列等技巧触发裁剪。值得注意的是，PostgreSQL 11 后支持执行期间的分区裁剪，但需配合适当的查询结构。
 
-rss · Lobsters · Jul 8, 14:02
+rss · Lobsters · Jul 9, 10:43
 
-**背景**: 开源软件通常依赖志愿者无偿贡献或企业支持，但缺乏稳定收入来源。随着开源商业价值提升，许多项目面临被收购或转向专有的压力。如何在获得资金的同时保持代码开放和社区治理独立性，是长期挑战。
-
-**标签**: `#open source`, `#funding`, `#sustainability`, `#community`
-
----
-
-<a id="item-19"></a>
-## [EVE Online 的 Carbon 引擎现已开源](https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why) ⭐️ 7.0/10
-
-Fenris Creations 宣布将驱动 EVE Online 和 EVE Frontier 的跨平台游戏引擎框架 Carbon 开源，相关代码已发布在 GitHub 上。 这一举措为游戏开发社区提供了成熟的大型 MMO 引擎技术，可能推动独立开发者和研究者的创新，同时增强开源游戏引擎生态。 Carbon 引擎支持 Windows、Linux 和 macOS，具备网络同步、脚本系统和资源管道等核心功能，但开源的组件并非完整运行环境，需开发者自行整合。
-
-rss · Lobsters · Jul 8, 15:47
-
-**背景**: Carbon 引擎最初由 CCP Games 为 EVE Online 开发，至今已运行超过 20 年。2024 年 Fenris Creations 成立并接手开发，此次开源旨在回馈社区并吸引更多开发者参与改进。
+**背景**: 分区裁剪是 PostgreSQL 在查询时跳过无关分区的一种优化手段，通常仅当查询条件包含分区键时生效。对于非分区键的过滤，优化器会扫描所有分区，导致性能下降。本文探索了在不改变分区策略的前提下，通过调整查询语句或数据分布来激活裁剪的可能性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why">Eve Online's Carbon engine is now open source: Fenris Creations explains why | GamesIndustry.biz</a></li>
-<li><a href="https://www.gamingonlinux.com/2026/07/carbon-engine-framework-powering-eve-online-is-now-open-source/">Carbon engine framework powering EVE Online is now open source | GamingOnLinux</a></li>
+<li><a href="https://hakibenita.com/postgresql-partition-pruning">How to Achieve Pruning When Querying by Non-Partitioned ...</a></li>
+<li><a href="https://www.postgresql.org/docs/current/ddl-partitioning.html">PostgreSQL: Documentation: 18: 5.12. Table Partitioning</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open source`, `#game engine`, `#Eve Online`, `#software engineering`
-
----
-
-<a id="item-20"></a>
-## [OpenMandriva 前贡献者破坏软件仓库](https://linuxiac.com/openmandriva-says-former-contributor-sabotaged-its-repositories/) ⭐️ 7.0/10
-
-OpenMandriva 报告一名前贡献者故意破坏其软件仓库，导致服务中断。 此事件凸显开源社区面临的内部威胁，提醒所有项目加强仓库安全与访问控制。 具体破坏手段尚未披露，但确认是拥有仓库访问权限的前贡献者所为。
-
-rss · Lobsters · Jul 8, 22:23
-
-**背景**: OpenMandriva 是源自 Mandriva Linux 的社区发行版，由 OpenMandriva 协会维护。软件仓库是分发更新的核心基础设施，恶意操作可能影响大量用户。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/OpenMandriva_Lx">OpenMandriva Lx - Wikipedia</a></li>
-<li><a href="https://distrowatch.com/openmandriva">DistroWatch.com: OpenMandriva Lx</a></li>
-
-</ul>
-</details>
-
-**标签**: `#security`, `#open-source`, `#Linux`, `#trust`, `#incident`
-
----
-
-<a id="item-21"></a>
-## [LisaFPGA：基于 FPGA 的苹果 Lisa 电脑实现](https://github.com/alexthecat123/LisaFPGA) ⭐️ 7.0/10
-
-一个名为 LisaFPGA 的开源项目在 GitHub 上发布，成功将苹果 Lisa 电脑的硬件设计移植到 FPGA 平台上。 该项目使稀有的苹果 Lisa 电脑得以在现代 FPGA 硬件上运行，为复古计算爱好者和历史研究者提供了珍贵的重现机会，同时展示了 FPGA 在数字遗产保护中的价值。 LisaFPGA 项目通过硬件描述语言（如 Verilog）在 FPGA 上重构了 Lisa 的处理器、内存、显示控制器等核心组件，但尚未提及具体兼容性或性能细节。
-
-rss · Lobsters · Jul 8, 15:22
-
-**背景**: 苹果 Lisa 是 1983 年发布的早期图形用户界面电脑，搭载 Motorola 68000 处理器，因价格昂贵且市场接受度低而失败，但为后来的 Macintosh 奠定了基础。FPGA（现场可编程门阵列）是一种可重新配置的集成电路，能够模拟任意数字逻辑电路，常用于复古计算机的硬件复现。
-
-**标签**: `#FPGA`, `#retrocomputing`, `#Apple Lisa`, `#hardware implementation`
+**标签**: `#PostgreSQL`, `#partition pruning`, `#database optimization`, `#query performance`
 
 ---
