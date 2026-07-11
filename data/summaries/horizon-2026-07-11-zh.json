@@ -1,0 +1,268 @@
+[
+  {
+    "id": "hackernews:story:48873836",
+    "source_type": "hackernews",
+    "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+    "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+    "content": "\n--- Top Comments ---\n\n[aurareturn]: Why is it a big deal? Nvidia invested $2b into CoreWeave for 9% equity stake. CoreWeave is spending $35b in CapEx in 2026. Therefore, Nvidia&#x27;s investment is only 5.7% of CoreWeave&#x27;s single year CapEx. The other $32b is coming from other sources that isn&#x27;t Nvidia. This is hardly circular. Nvidia invests in Neoclouds because it&#x27;s a hedge against hyperscalers having too much power, ie designing and prioritizing their own chips, and not fully using Nvidia&#x27;s rack design. N...\n\n[bwfan123]: Circular financing is a dead horse - dont beat it. Instead, what is more interesting could be: Is there a path to these builds becoming economically profitable ? Towards this, some metrics to watch are: 1) ROI per token per dollar 2) Enterprise token budgets. And at what point there is an overbuild relative to the token roi. Alternatively, pressure on token costs due to the open weights models etc.\n\n[ilaksh]: Dumb question, but when the Nebius capacity dashboard says they have around 3 non-preemptible B200s available, does that mean _total_, or is it just how many I myself might be able to rent on demand? One aspect of the profitability might be the utilization and the pricing a few years down the line for slightly older hardware. Already now it seems like the increased processing you get from newer devices versus the cost difference makes something like an H100 or even A100 significantly less des...\n\n[RetroTechie]: Might be a blessing in disguise that these companies can&#x27;t roll out datacenters as quick as they want (due to financing, power issues, permit delays or whatever). That puts a cap on surplus (potentially unused?) datacenter capacity that&#x27;s around by the time the AI bubble pops.\n\n[dainiusse]: Yandex, not nebius. Surprised how the world gets on kgb again and again, and again",
+    "author": "adletbalzhanov",
+    "published_at": "2026-07-11T17:21:49Z",
+    "fetched_at": "2026-07-11T23:46:27.753311Z",
+    "metadata": {
+      "score": 128,
+      "descendants": 44,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48873836",
+      "comment_count": 5,
+      "title_zh": "英伟达、CoreWeave与Nebius的GPU循环融资剖析",
+      "detailed_summary_zh": "一篇分析揭露了英伟达与CoreWeave、Nebius之间存在的循环融资模式：英伟达向这两家AI云服务商投资数十亿美元，而对方随即用这些资金采购英伟达的GPU，形成资金闭环。 这种循环融资可能掩盖GPU需求的真实健康状况，增加市场泡沫风险；同时，它强化了英伟达在AI基础设施领域的控制力，对独立云服务商和超大规模云提供商的竞争格局产生深远影响。 例如，英伟达向CoreWeave投资20亿美元仅占其2026年350亿美元资本支出的5.7%，但核心问题在于这些资金最终又流回英伟达购买GPU，形成循环。",
+      "background_zh": "循环融资指英伟达通过股权投资支持Neocloud公司，后者再使用资金购买英伟达GPU硬件。这种模式帮助Neocloud快速扩张，但也引发了对真实盈利能力和市场可持续性的质疑。社区讨论中，部分用户认为循环融资占比并不高，更应关注盈利指标；另有用户对产能过剩和AI泡沫表示担忧。",
+      "community_discussion_zh": "评论区观点分化：部分用户认为循环融资比例不大（如英伟达投资仅占CoreWeave资本支出5.7%），不是主要问题；另一些用户则认为更值得关注的是这些GPU集群能否实现盈利，例如每token每美元的ROI以及企业token预算。也有用户对产能过剩和AI泡沫表示担忧。",
+      "sources": [
+        {
+          "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+          "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/CoreWeave",
+          "title": "CoreWeave - Wikipedia"
+        },
+        {
+          "url": "https://www.spheron.network/blog/nvidia-neocloud-backstop-financing-circular-gpu-2026/",
+          "title": "NVIDIA's Neocloud Backstop Financing Explained: What Circular ..."
+        }
+      ],
+      "detailed_summary": "一篇分析揭露了英伟达与CoreWeave、Nebius之间存在的循环融资模式：英伟达向这两家AI云服务商投资数十亿美元，而对方随即用这些资金采购英伟达的GPU，形成资金闭环。 这种循环融资可能掩盖GPU需求的真实健康状况，增加市场泡沫风险；同时，它强化了英伟达在AI基础设施领域的控制力，对独立云服务商和超大规模云提供商的竞争格局产生深远影响。 例如，英伟达向CoreWeave投资20亿美元仅占其2026年350亿美元资本支出的5.7%，但核心问题在于这些资金最终又流回英伟达购买GPU，形成循环。",
+      "background": "循环融资指英伟达通过股权投资支持Neocloud公司，后者再使用资金购买英伟达GPU硬件。这种模式帮助Neocloud快速扩张，但也引发了对真实盈利能力和市场可持续性的质疑。社区讨论中，部分用户认为循环融资占比并不高，更应关注盈利指标；另有用户对产能过剩和AI泡沫表示担忧。",
+      "community_discussion": "评论区观点分化：部分用户认为循环融资比例不大（如英伟达投资仅占CoreWeave资本支出5.7%），不是主要问题；另一些用户则认为更值得关注的是这些GPU集群能否实现盈利，例如每token每美元的ROI以及企业token预算。也有用户对产能过剩和AI泡沫表示担忧。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value analysis of circular financing in GPU boom with substantial community discussion (score 128, 44 comments) debating its significance and profitability metrics. Comments add depth and diverse viewpoints.",
+    "ai_summary": "Analysis of circular financing in GPU boom involving Nvidia, CoreWeave, and Nebius.",
+    "ai_tags": [
+      "GPU",
+      "AI infrastructure",
+      "circular financing",
+      "cloud computing",
+      "Nvidia"
+    ]
+  },
+  {
+    "id": "hackernews:story:48872874",
+    "source_type": "hackernews",
+    "title": "We scaled PgBouncer to 4x throughput",
+    "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
+    "content": "\n--- Top Comments ---\n\n[x4m]: Just use  https:&#x2F;&#x2F;github.com&#x2F;yandex&#x2F;odyssey  :) It&#x27;s a scalable PgBouncer.\n\n[ezekiel68]: &gt; The cancel lands on a process that has never heard of the query, and nothing happens. &gt; Peering fixes this. The processes are aware of one another, so a cancel that lands on the wrong process is forwarded to the one that actually owns the session. I understand &quot;peering&quot; as a concept here but have never tried this with PostgreSQL before.  May I ask: A) Does PostgreSQL have a mode&#x2F;setting for peering that makes this easy?  I&#x27;m imagining a mechanism that either goes r...\n\n[nosefrog]: Interesting. We run pgbouncer via kubernetes so it was straightforward to make multiple pgbouncer processes on one machine. Also straightforward to get them running on multiple machines, which helps because we run on Azure and they like to cause rolling outages across our fleet via VM maintenance...\n\n[JustSkyfall]: I&#x27;ve been using pgdog ( https:&#x2F;&#x2F;github.com&#x2F;pgdogdev&#x2F;pgdog ) and it has worked really well for my needs!\n\n[DylanSp]: First time I&#x27;ve heard of so_reuseport, which is interesting. The important parts of the setup seem to be that + peering; is peering built-in to PgBouncer and simple to set up?",
+    "author": "saisrirampur",
+    "published_at": "2026-07-11T15:28:02Z",
+    "fetched_at": "2026-07-11T23:46:27.753336Z",
+    "metadata": {
+      "score": 165,
+      "descendants": 28,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48872874",
+      "comment_count": 5,
+      "title_zh": "ClickHouse 将 PgBouncer 吞吐量提升 4 倍",
+      "detailed_summary_zh": "ClickHouse 团队通过采用 so_reuseport 和 peering 技术，成功将 PgBouncer 连接池的吞吐量提升了 4 倍。 这一优化显著提高了 PgBouncer 在处理大规模 PostgreSQL 连接时的性能，对于需要高并发数据库访问的场景具有重要意义，也为其他连接池软件的优化提供了参考。 关键实现包括：利用 Linux 的 SO_REUSEPORT 套接字选项，允许多个 PgBouncer 进程监听同一端口，实现更好的负载均衡；通过 peering 机制让进程间互相感知，确保查询取消请求能转发到正确的会话所有进程。",
+      "background_zh": "PgBouncer 是 PostgreSQL 的轻量级连接池，用于减少频繁建立数据库连接的开销。传统的单进程模型在高并发下成为瓶颈。SO_REUSEPORT 是 Linux 3.9 引入的特性，允许多个套接字绑定到同一端口，使内核可以更均匀地分发连接。Peering 则解决了多进程下请求取消时的转发问题。",
+      "community_discussion_zh": "社区讨论中，用户 @x4m 推荐了可扩展的替代方案 Odyssey，@JustSkyfall 则推荐了 pgdog。@ezekiel68 和 @DylanSp 对 peering 和 so_reuseport 的具体实现细节表现出兴趣，并询问了相关配置方法。整体上，社区对优化技术表示认可，但也有人提出了其他备选方案。",
+      "sources": [
+        {
+          "url": "https://www.pgbouncer.org/",
+          "title": "PgBouncer - lightweight connection pooler for PostgreSQL"
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/how-modern-kernels-handle-massive-traffic-use-jisan-ahmed-ghg1c",
+          "title": "How Modern Kernels Handle Massive Traffic : the use of..."
+        },
+        {
+          "url": "https://patchwork.ozlabs.org/project/netdev/patch/alpine.DEB.1.00.1004182321480.1822@pokey.mtv.corp.google.com/",
+          "title": "[RFC] : soreuseport: Bind multiple sockets to same port - Patchwork"
+        }
+      ],
+      "detailed_summary": "ClickHouse 团队通过采用 so_reuseport 和 peering 技术，成功将 PgBouncer 连接池的吞吐量提升了 4 倍。 这一优化显著提高了 PgBouncer 在处理大规模 PostgreSQL 连接时的性能，对于需要高并发数据库访问的场景具有重要意义，也为其他连接池软件的优化提供了参考。 关键实现包括：利用 Linux 的 SO_REUSEPORT 套接字选项，允许多个 PgBouncer 进程监听同一端口，实现更好的负载均衡；通过 peering 机制让进程间互相感知，确保查询取消请求能转发到正确的会话所有进程。",
+      "background": "PgBouncer 是 PostgreSQL 的轻量级连接池，用于减少频繁建立数据库连接的开销。传统的单进程模型在高并发下成为瓶颈。SO_REUSEPORT 是 Linux 3.9 引入的特性，允许多个套接字绑定到同一端口，使内核可以更均匀地分发连接。Peering 则解决了多进程下请求取消时的转发问题。",
+      "community_discussion": "社区讨论中，用户 @x4m 推荐了可扩展的替代方案 Odyssey，@JustSkyfall 则推荐了 pgdog。@ezekiel68 和 @DylanSp 对 peering 和 so_reuseport 的具体实现细节表现出兴趣，并询问了相关配置方法。整体上，社区对优化技术表示认可，但也有人提出了其他备选方案。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value technical deep-dive into scaling PgBouncer with novel techniques (so_reuseport, peering), validated by high community engagement and insightful discussion on alternatives.",
+    "ai_summary": "ClickHouse's blog describes how they increased PgBouncer throughput by 4x using so_reuseport and peering.",
+    "ai_tags": [
+      "PgBouncer",
+      "PostgreSQL",
+      "Connection Pooling",
+      "Performance Optimization",
+      "ClickHouse"
+    ]
+  },
+  {
+    "id": "hackernews:story:48873940",
+    "source_type": "hackernews",
+    "title": "Prefer strict tables in SQLite",
+    "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
+    "content": "\n--- Top Comments ---\n\n[ezekiel68]: Coming from the enterprise SQL world, I never took SQLite seriously for the very reason that field types were not enforced by default. (Yes, I was agog when it became the backbone for app metadata on smartphones.)  Anyway, reading this reminds me of the old chestnut from networking about choosing UDP over TCP for its low-latency and simplicity and then eventually adding nearly all the reliability facilities of TCP to the app (automatic retry, etc) by hand.\n\n[jll29]: I&#x27;d like to see STRICT as the default. That&#x27;s pretty much the only disagreement with the SQLite developer, who is an amazing guy that wrote an amazing tool!\n\n[dfabulich]: https:&#x2F;&#x2F;sqlite.org&#x2F;flextypegood.html  explains why this isn&#x27;t the default (and probably will never be the default). &gt;  rigid type enforcement can successfully prevent the customer name (text) from being inserted into the integer Customer.creditScore column. On the other hand, if that mistake occurs, it is very easy to spot the problem and find all affected rows.  That doesn&#x27;t line up with my experience. (In particular, it may not be easy to  fix  those corrupted ro...\n\n[frollogaston]: Yeah my DB is the one place I want strict types. Well also RPCs. But SQLite is a somewhat different set of use cases, so maybe I&#x27;d understand  https:&#x2F;&#x2F;sqlite.org&#x2F;flextypegood.html  more if I were using it. Like there&#x27;s a point about random scripts not made for SQLite happening to work with it, which isn&#x27;t normally a consideration for other DBMSes.\n\n[pettijohn]: CREATE TABLE ... STRICT WITHOUT ROWID is my default, I don&#x27;t know why I&#x27;d ever do otherwise.",
+    "author": "ingve",
+    "published_at": "2026-07-11T17:33:55Z",
+    "fetched_at": "2026-07-11T23:46:27.753361Z",
+    "metadata": {
+      "score": 198,
+      "descendants": 87,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48873940",
+      "comment_count": 5,
+      "title_zh": "SQLite 中优先使用 STRICT 表模式",
+      "detailed_summary_zh": "文章建议在 SQLite 中启用 STRICT 模式以强制类型安全，避免因默认灵活类型导致的数据完整性问题。 此举能显著提升数据库的可靠性和可维护性，尤其对于习惯传统 SQL 类型系统的开发者，可以减少因隐式类型转换引发的错误。 STRICT 模式自 SQLite 3.37.0（2021-11-27）起支持，需在 CREATE TABLE 时显式声明 STRICT；启用后，插入的数据必须严格匹配列类型，否则报错。",
+      "background_zh": "SQLite 默认采用灵活类型系统，允许向 INTEGER 列插入字符串（如 '123' 自动转换为 123），这种设计提高了易用性但也可能掩盖错误。STRICT 模式则遵循标准 SQL 的严格类型约束，为需要严格数据验证的场景提供选择。",
+      "community_discussion_zh": "社区讨论中，有用户认为 STRICT 应成为默认行为，但官方文档（flextypegood.html）解释了灵活类型的优势，如便于临时脚本兼容。也有开发者主张将 'STRICT WITHOUT ROWID' 作为自己的默认配置。整体上，各方认可两种模式各有适用场景，争论焦点在于默认选项的合理性。",
+      "sources": [
+        {
+          "url": "https://sqlite.org/stricttables.html",
+          "title": "STRICT Tables - SQLite"
+        },
+        {
+          "url": "https://www.sqlite.org/flextypegood.html",
+          "title": "The Advantages Of Flexible Typing"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/70305278/how-do-i-enable-strict-mode-in-sqlite-3-31-1",
+          "title": "How do I enable strict mode in SQLite 3.31.1? - Stack Overflow"
+        }
+      ],
+      "detailed_summary": "文章建议在 SQLite 中启用 STRICT 模式以强制类型安全，避免因默认灵活类型导致的数据完整性问题。 此举能显著提升数据库的可靠性和可维护性，尤其对于习惯传统 SQL 类型系统的开发者，可以减少因隐式类型转换引发的错误。 STRICT 模式自 SQLite 3.37.0（2021-11-27）起支持，需在 CREATE TABLE 时显式声明 STRICT；启用后，插入的数据必须严格匹配列类型，否则报错。",
+      "background": "SQLite 默认采用灵活类型系统，允许向 INTEGER 列插入字符串（如 '123' 自动转换为 123），这种设计提高了易用性但也可能掩盖错误。STRICT 模式则遵循标准 SQL 的严格类型约束，为需要严格数据验证的场景提供选择。",
+      "community_discussion": "社区讨论中，有用户认为 STRICT 应成为默认行为，但官方文档（flextypegood.html）解释了灵活类型的优势，如便于临时脚本兼容。也有开发者主张将 'STRICT WITHOUT ROWID' 作为自己的默认配置。整体上，各方认可两种模式各有适用场景，争论焦点在于默认选项的合理性。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value content with practical advice for SQLite users, and the community discussion includes insightful debates about type enforcement vs flexibility, adding depth to the topic.",
+    "ai_summary": "Advocates using STRICT mode in SQLite for type safety, sparking community discussion about trade-offs with default flexible typing.",
+    "ai_tags": [
+      "SQLite",
+      "database",
+      "type safety",
+      "best practices"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:03bbdac0acad7412",
+    "source_type": "rss",
+    "title": "Where did my segfault go?",
+    "url": "https://rmpr.xyz/Where-did-my-segfault-go/",
+    "content": "<p><a href=\"https://lobste.rs/s/tedtzz/where_did_my_segfault_go\">Comments</a></p>",
+    "author": "rmpr.xyz by rmpr",
+    "published_at": "2026-07-11T21:05:50Z",
+    "fetched_at": "2026-07-11T23:46:28.116180Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "c",
+        "unix"
+      ],
+      "title_zh": "段错误消失之谜：未定义行为引起的调试难题",
+      "detailed_summary_zh": "一篇技术博客文章探讨了一个令人困惑的现象：某个原本应该触发段错误（segfault）的程序在特定环境下并未崩溃，而是正常执行。 该现象揭示了未定义行为（undefined behavior）的复杂性，提醒开发者依赖编译器行为进行调试可能带来隐患。 文章可能分析了编译器优化（如死代码消除）或内存布局变化导致segfault消失的机制，展示了未定义行为的不可预测性。",
+      "background_zh": "段错误是程序访问非法内存地址时操作系统发送的信号，通常由空指针解引用或缓冲区溢出引起。未定义行为指C/C++标准未定义的程序行为，编译器可任意处理，导致同一代码在不同优化级别下表现不同。",
+      "detailed_summary": "一篇技术博客文章探讨了一个令人困惑的现象：某个原本应该触发段错误（segfault）的程序在特定环境下并未崩溃，而是正常执行。 该现象揭示了未定义行为（undefined behavior）的复杂性，提醒开发者依赖编译器行为进行调试可能带来隐患。 文章可能分析了编译器优化（如死代码消除）或内存布局变化导致segfault消失的机制，展示了未定义行为的不可预测性。",
+      "background": "段错误是程序访问非法内存地址时操作系统发送的信号，通常由空指针解引用或缓冲区溢出引起。未定义行为指C/C++标准未定义的程序行为，编译器可任意处理，导致同一代码在不同优化级别下表现不同。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The title suggests a technical deep-dive into a puzzling segfault scenario, likely involving undefined behavior or memory management. Without the full article, it's assumed to be high quality based on the source and topic. The presence of Lobsters comments indicates community engagement, though content is not provided for detailed assessment.",
+    "ai_summary": "A technical blog post investigating a mysterious disappearing segfault, likely exploring undefined behavior or memory issues.",
+    "ai_tags": [
+      "systems programming",
+      "debugging",
+      "memory",
+      "segfault",
+      "undefined behavior"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:bd5ae9b0aa0f7e55",
+    "source_type": "rss",
+    "title": "I converted an Android app to a webpage",
+    "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
+    "content": "<p><a href=\"https://lobste.rs/s/vhbvwc/i_converted_android_app_webpage\">Comments</a></p>",
+    "author": "danq.me via abhin4v",
+    "published_at": "2026-07-11T05:24:30Z",
+    "fetched_at": "2026-07-11T23:46:28.116225Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "mobile",
+        "web"
+      ],
+      "title_zh": "将Android应用转换为网页的实践与优势",
+      "detailed_summary_zh": "作者分享了将一款Android原生应用成功转换为网页的经验，详细说明了转换过程、使用的技术以及相比原生应用的优势。 该案例表明许多原生应用的功能可通过Web技术实现，降低了开发与维护成本，同时提升了跨平台兼容性，对移动端开发模式有重要启示。 转换中使用了Progressive Web App技术，包括Service Worker实现离线缓存、Web App Manifest支持安装到主屏幕，并借助Bubblewrap生成APK包以兼容Android生态。",
+      "background_zh": "渐进式网页应用(PWA)是基于Web标准构建的应用，能提供类似原生应用的体验，如离线工作和推送通知。通过Bubblewrap等工具，PWA可被封装为Android APK，在应用商店分发。",
+      "sources": [
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+          "title": "Progressive web apps | MDN"
+        },
+        {
+          "url": "https://nextjs.org/docs/app/guides/progressive-web-apps",
+          "title": "Guides: PWAs | Next.js"
+        },
+        {
+          "url": "https://github.com/GoogleChromeLabs/bubblewrap",
+          "title": "GitHub - GoogleChromeLabs/bubblewrap: Bubblewrap is a Command ... Guides: PWAs | Next.js Creating PWA-Like Android Apps with Progressive Web Support Power Pages sites as progressive web apps (PWAs) overview From Inception to Deployment: The Ultimate Guide ... - LinkedIn Building Progressive Web Apps (PWAs) with Angular: A Complete ..."
+        }
+      ],
+      "detailed_summary": "作者分享了将一款Android原生应用成功转换为网页的经验，详细说明了转换过程、使用的技术以及相比原生应用的优势。 该案例表明许多原生应用的功能可通过Web技术实现，降低了开发与维护成本，同时提升了跨平台兼容性，对移动端开发模式有重要启示。 转换中使用了Progressive Web App技术，包括Service Worker实现离线缓存、Web App Manifest支持安装到主屏幕，并借助Bubblewrap生成APK包以兼容Android生态。",
+      "background": "渐进式网页应用(PWA)是基于Web标准构建的应用，能提供类似原生应用的体验，如离线工作和推送通知。通过Bubblewrap等工具，PWA可被封装为Android APK，在应用商店分发。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The title suggests a practical technical deep-dive into an interesting conversion process from native app to web, which is relevant and valuable for developers. The lobste.rs source indicates community interest, but without full content or comments, a slightly conservative score is given.",
+    "ai_summary": "Author describes converting an Android app into a webpage, highlighting benefits and technical approach.",
+    "ai_tags": [
+      "android",
+      "web-development",
+      "pwa",
+      "conversion"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:63e3a1653e7a6e33",
+    "source_type": "rss",
+    "title": "Handsum: An LQIP Image File Format",
+    "url": "https://nigeltao.github.io/blog/2026/handsum.html",
+    "content": "<p><a href=\"https://lobste.rs/s/gmzzeb/handsum_lqip_image_file_format\">Comments</a></p>",
+    "author": "nigeltao.github.io via carlana",
+    "published_at": "2026-07-11T18:34:59Z",
+    "fetched_at": "2026-07-11T23:46:28.116300Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "programming"
+      ],
+      "title_zh": "Handsum：一种新型LQIP图像文件格式",
+      "detailed_summary_zh": "Handsum是一种新发布的图像文件格式，专门用于低质量图像占位符（LQIP），旨在实现高效解码和极小文件体积。 该格式有望提升网页加载性能，尤其在优化LCP（最大内容绘制）指标方面具有重要意义，为开发者提供更高效的图像占位符方案。 Handsum格式注重解码速度和尺寸平衡，可能采用新的压缩算法，但目前尚未被主流浏览器原生支持，需通过JavaScript解码器使用。",
+      "background_zh": "LQIP（低质量图像占位符）是一种在网页加载期间先显示模糊小图以提升用户体验的技术，传统做法使用压缩JPEG或PNG。Handsum试图提供更优的专有格式，针对LQIP场景进行极致优化。",
+      "sources": [
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types",
+          "title": "Image file type and format guide - Media - MDN Web Docs"
+        },
+        {
+          "url": "https://imagekit.io/blog/lazy-loading-images-complete-guide/",
+          "title": "Lazy Loading Images – The Complete Guide - ImageKit"
+        }
+      ],
+      "detailed_summary": "Handsum是一种新发布的图像文件格式，专门用于低质量图像占位符（LQIP），旨在实现高效解码和极小文件体积。 该格式有望提升网页加载性能，尤其在优化LCP（最大内容绘制）指标方面具有重要意义，为开发者提供更高效的图像占位符方案。 Handsum格式注重解码速度和尺寸平衡，可能采用新的压缩算法，但目前尚未被主流浏览器原生支持，需通过JavaScript解码器使用。",
+      "background": "LQIP（低质量图像占位符）是一种在网页加载期间先显示模糊小图以提升用户体验的技术，传统做法使用压缩JPEG或PNG。Handsum试图提供更优的专有格式，针对LQIP场景进行极致优化。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Introduces a novel LQIP image format with technical depth; relevant to web performance and image optimization. Community discussion likely insightful.",
+    "ai_summary": "Handsum is a new image file format designed for low quality image placeholders (LQIP), aiming for efficient decoding and small size.",
+    "ai_tags": [
+      "image format",
+      "LQIP",
+      "web performance",
+      "image optimization"
+    ]
+  }
+]
