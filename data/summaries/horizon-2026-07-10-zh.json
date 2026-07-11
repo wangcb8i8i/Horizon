@@ -1,0 +1,935 @@
+[
+  {
+    "id": "hackernews:story:48861717",
+    "source_type": "hackernews",
+    "title": "QuadRF can spot drones and see WiFi through my wall",
+    "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+    "content": "\n--- Top Comments ---\n\n[mrtnmcc]: QuadRF creator here. Happy to answer questions! We have a quick demo video as well:  https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=QvniJk3uNyA  Along with a deeper dive video:  https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=zdJ9Tbm8ALg  We didn&#x27;t give Jeff great direction on camera alignment calibration or setting the radio gain but he seemed to mostly figure it out. We&#x27;re improving the UI based on his suggestions (it&#x27;s open source so you can customize it too) The RF augmented rea...\n\n[noduerme]: Funny, in the &quot;imagine what governments are capable of&quot; vein, I just read this[0] a few minutes ago before coming over to HN to find this post trending. [0]  https:&#x2F;&#x2F;www.prnewswire.com&#x2F;news-releases&#x2F;the-future-takes-fl...\n\n[piinbinary]: One day I want to build something like this, except for sound. It would be great to get a heading and distance for where a sound is coming from. This could be both for small scale things (e.g. which part of this is squeaking?) or large scale (e.g. is that booming noise coming from the construction a few blocks away?)\n\n[deadcatfound]: Super cool concept!\n\n[mlfreeman]: The visualizer reminds me of my thermal camera. I have heard claims of devices (mostly TVs) supposedly coming with secret 5G cell uplinks built in [never heard a specific model mentioned though]. If there were more variants covering more commonly-used RF bands, people could walk around and literally check for once. (incidentally i&#x27;m sure three letter agencies have had this sort of tech in their bug-detecting toolkit for a LONG time)",
+    "author": "speckx",
+    "published_at": "2026-07-10T15:59:53Z",
+    "fetched_at": "2026-07-10T23:52:49.673009Z",
+    "metadata": {
+      "score": 406,
+      "descendants": 164,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48861717",
+      "comment_count": 5,
+      "title_zh": "QuadRF开源射频成像仪：穿墙探测无人机与WiFi",
+      "detailed_summary_zh": "Jeff Geerling演示了开源射频成像仪QuadRF，该设备能通过4x4 MIMO软件定义无线电探测无人机位置并可视化穿墙的WiFi信号。 这是首个开源、低成本的相控阵射频成像工具，将高级射频成像技术带入大众视野，可用于无人机检测、无线电监测和增强现实应用。 QuadRF基于Raspberry Pi 5和GNU Radio，支持自定义UI和射频增益设置；其增强现实叠加功能可实时显示信号来源方向。",
+      "background_zh": "相控阵技术通过多个天线控制波束方向，常用于雷达和通信系统。QuadRF是4x4 MIMO SDR开发套件，将复杂射频成像简化到消费级硬件上，使爱好者能探索无线电环境。",
+      "community_discussion_zh": "项目创建者到场答疑并提供了演示视频，社区反响热烈，多数人赞叹其创意，也有人联想到政府已长期使用类似技术进行监控。",
+      "sources": [
+        {
+          "url": "https://www.crowdsupply.com/scale-rf/quadrf",
+          "title": "QuadRF | Crowd Supply"
+        },
+        {
+          "url": "https://moonrf.com/docs/",
+          "title": "QuadRF Documentation"
+        }
+      ],
+      "detailed_summary": "Jeff Geerling演示了开源射频成像仪QuadRF，该设备能通过4x4 MIMO软件定义无线电探测无人机位置并可视化穿墙的WiFi信号。 这是首个开源、低成本的相控阵射频成像工具，将高级射频成像技术带入大众视野，可用于无人机检测、无线电监测和增强现实应用。 QuadRF基于Raspberry Pi 5和GNU Radio，支持自定义UI和射频增益设置；其增强现实叠加功能可实时显示信号来源方向。",
+      "background": "相控阵技术通过多个天线控制波束方向，常用于雷达和通信系统。QuadRF是4x4 MIMO SDR开发套件，将复杂射频成像简化到消费级硬件上，使爱好者能探索无线电环境。",
+      "community_discussion": "项目创建者到场答疑并提供了演示视频，社区反响热烈，多数人赞叹其创意，也有人联想到政府已长期使用类似技术进行监控。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking open-source RF imaging tool with novel augmented reality overlay; high community engagement (406 points, 164 comments) including creator Q&A, indicating strong interest and validation.",
+    "ai_summary": "QuadRF is an open-source radio frequency imager that can detect drones and visualize WiFi signals through walls, demonstrated by Jeff Geerling.",
+    "ai_tags": [
+      "RF",
+      "open-source",
+      "drones",
+      "augmented reality",
+      "WiFi"
+    ]
+  },
+  {
+    "id": "hackernews:story:48865019",
+    "source_type": "hackernews",
+    "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+    "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+    "content": "<a href=\"https:&#x2F;&#x2F;www.macrumors.com&#x2F;2026&#x2F;07&#x2F;10&#x2F;apple-sues-openai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.macrumors.com&#x2F;2026&#x2F;07&#x2F;10&#x2F;apple-sues-openai&#x2F;</a>\n\n\n--- Top Comments ---\n\n[joshstrange]: Some pretty damning stuff: &gt; OpenAI also instructs new hires on how to avoid scrutiny when they leave Apple. For example, Mr. Tan warns them not to tell Apple that they have taken jobs at OpenAI, so they can stay at Apple as long as they can. &gt; Apple says it discovered a pattern of OpenAI recruits emailing themselves confidential information when leaving Apple, including Tan. &gt; OpenAI apparently used confidential Apple hardware information when approaching Apple suppliers, and tricke...\n\n[Robdel12]: OpenAI is about to get ROCKED on this. From this report, this looks open and shut. Apple has basically infinite money and incredible lawyers. Not sure what OpenAI can counter with unless they have clear, hard evidence this hasn’t been happening.\n\n[generj]: Apple kindly wanted to make OpenAI add in some legal liabilities to their IPO filling. Discovery is going to be great fun (for Apple).\n\n[willtemperley]: This is a really bad look for a company that has vast quantities of our IP stored on its servers.\n\n[xnx]: A company that behaves like this in one area, cannot be trusted in any area. Any enterprise that endorses&#x2F;allows OpenAI products to be used is taking a big risk.",
+    "author": "stock_toaster",
+    "published_at": "2026-07-10T20:47:09Z",
+    "fetched_at": "2026-07-10T23:52:49.673048Z",
+    "metadata": {
+      "score": 270,
+      "descendants": 128,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48865019",
+      "comment_count": 5,
+      "title_zh": "苹果起诉OpenAI，指控商业机密窃取",
+      "detailed_summary_zh": "苹果公司正式起诉OpenAI，指控其系统性地招募前苹果员工以窃取商业机密，包括要求新员工在离职时隐瞒去向并私自传输机密文件。 这起诉讼可能对AI行业的人才流动和竞争格局产生重大影响，尤其是OpenAI正在筹备IPO，此案可能增加其法律风险并影响投资者信心。 苹果指控OpenAI员工Tan等人涉嫌利用苹果机密硬件信息接触供应商，并指导新员工如何规避苹果的离职审查，例如不告知苹果他们已入职OpenAI。",
+      "background_zh": "商业机密窃取诉讼在科技行业并不罕见，但此次涉及两家顶尖AI公司。苹果以严格的保密文化著称，而OpenAI则依赖大量前科技公司人才。法律程序中的证据开示可能揭露更多内部操作，对行业规范产生警示。",
+      "community_discussion_zh": "社区评论普遍认为苹果的证据看起来确凿，OpenAI可能面临重大法律风险；有用户指出若OpenAI在此领域行为不当，其整体可信度将受质疑，企业客户应谨慎使用其产品。",
+      "detailed_summary": "苹果公司正式起诉OpenAI，指控其系统性地招募前苹果员工以窃取商业机密，包括要求新员工在离职时隐瞒去向并私自传输机密文件。 这起诉讼可能对AI行业的人才流动和竞争格局产生重大影响，尤其是OpenAI正在筹备IPO，此案可能增加其法律风险并影响投资者信心。 苹果指控OpenAI员工Tan等人涉嫌利用苹果机密硬件信息接触供应商，并指导新员工如何规避苹果的离职审查，例如不告知苹果他们已入职OpenAI。",
+      "background": "商业机密窃取诉讼在科技行业并不罕见，但此次涉及两家顶尖AI公司。苹果以严格的保密文化著称，而OpenAI则依赖大量前科技公司人才。法律程序中的证据开示可能揭露更多内部操作，对行业规范产生警示。",
+      "community_discussion": "社区评论普遍认为苹果的证据看起来确凿，OpenAI可能面临重大法律风险；有用户指出若OpenAI在此领域行为不当，其整体可信度将受质疑，企业客户应谨慎使用其产品。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "High-impact legal dispute between two major tech companies, with detailed allegations of trade secret theft. Community discussion is substantive and critical, reflecting widespread interest and potential industry repercussions.",
+    "ai_summary": "Apple files a lawsuit against OpenAI, accusing it of orchestrating a campaign to steal trade secrets through recruited ex-Apple employees.",
+    "ai_tags": [
+      "Apple",
+      "OpenAI",
+      "trade secrets",
+      "lawsuit",
+      "AI industry"
+    ]
+  },
+  {
+    "id": "hackernews:story:48863490",
+    "source_type": "hackernews",
+    "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+    "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+    "content": "<a href=\"https:&#x2F;&#x2F;x.com&#x2F;__eknight__&#x2F;status&#x2F;2075643450196971805\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;__eknight__&#x2F;status&#x2F;2075643450196971805</a>, <a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;__eknight__&#x2F;status&#x2F;2075643450196971805\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;__eknight__&#x2F;status&#x2F;2075643450196971805</a><p>Prompt: <a href=\"https:&#x2F;&#x2F;cdn.openai.com&#x2F;pdf&#x2F;04d1d1e4-bc75-476a-97cf-49055cd98d31&#x2F;cdc_prompt.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;cdn.openai.com&#x2F;pdf&#x2F;04d1d1e4-bc75-476a-97cf-49055cd98...</a>\n\n\n--- Top Comments ---\n\n[mNovak]: Unrelated to the accomplishment or proof itself, but it&#x27;s interesting how much of the prompt, even in this latest-and-greatest model, is spent essentially telling the model to actually solve the problem. Things like &quot;Reject status reports, vague optimism, and claims that an unproved global compatibility statement is &#x27;routine&#x27;.&quot; Also a lot prompt spent feeding it strategies, which feel like they should&#x2F;will eventually be deduced by the model itself, not explicitly...\n\n[romaniv]: No one here actually cares about Cycle Double Cover Conjecture. I can demonstrate this by pointing out that the  only  time this conjecture was ever mentioned on the website was 14 years ago in a submission[1] that linked to a (now retracted) proof paper. That story received exactly zero upvotes. No one cared enough to upvote it and no one cared enough to ever mention this conjecture again. [1]  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=3556175\n\n[plaidfuji]: It seems like a solid set of criteria for how easily a task can be automated by AI agents is: - extent to which correctness of solution be easily specified and checked - extent to which new potential solutions can be implemented as text - extent to which prior art exists online This basically maps to software engineering and math. I think a fair bit of AI hype comes from the fact that the very architects of AI are the people whose jobs are most easily automated by AI. They think, “if my job r...\n\n[ak_111]: Unlike the unit distance problem, the impressive thing here is that it is a proof rather than a counter-example. However, it seems the proof is extremely concise so it seems that it is exploiting a clever trick that somehow all the experts missed. So not to dunk on this amazing result (or move the goal post), but it seems now the only achievement that AI hasn&#x27;t managed in mathematics is presenting an autonomous &quot;theory-building&quot; proof of an open conjecture. That is a proof that...\n\n[scrlk]: Announcement:  https:&#x2F;&#x2F;x.com&#x2F;__eknight__&#x2F;status&#x2F;2075643450196971805  Prompt:  https:&#x2F;&#x2F;cdn.openai.com&#x2F;pdf&#x2F;04d1d1e4-bc75-476a-97cf-49055cd98...",
+    "author": "scrlk",
+    "published_at": "2026-07-10T18:29:19Z",
+    "fetched_at": "2026-07-10T23:52:49.673127Z",
+    "metadata": {
+      "score": 296,
+      "descendants": 251,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48863490",
+      "comment_count": 5,
+      "title_zh": "GPT-5.6 Sol Ultra证明图论未解猜想",
+      "detailed_summary_zh": "OpenAI的GPT-5.6 Sol Ultra模型据称生成了一个证明，解决了图论中悬而未决的环双覆盖猜想（Cycle Double Cover Conjecture），并发布了一份预印本。 这标志着人工智能在数学证明领域取得重大突破，可能改变未来数学研究的方式，证明了AI能够处理需要深度推理的开放问题。 该证明由GPT-5.6 Sol Ultra的“超模式”（ultra mode）生成，利用了子代理加速复杂推理；预印本发布于2026年7月10日，但社区对其严谨性和猜想本身的意义存在质疑。",
+      "background_zh": "环双覆盖猜想是一个图论问题，询问每个无桥图是否都存在一组环，使得每条边恰好出现两次。该猜想由Tutte、Itai、Rodeh、Szekeres和Seymour等人提出，长期未解决。GPT-5.6 Sol是OpenAI最新顶尖模型，通过增加推理时间来提高性能。",
+      "community_discussion_zh": "社区讨论中，一些用户认为该结果不具突破性，因为对猜想本身关注度不高，且证明过于简洁；另一些用户则怀疑AI是否真正进行了自主推理，指出提示词中包含了大量指导。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture",
+          "title": "Cycle double cover conjecture"
+        },
+        {
+          "url": "https://www.datacamp.com/blog/gpt-5-6-sol-luna-terra",
+          "title": "GPT - 5 . 6 Sol , Terra, and Luna: OpenAI's Next-Gen Model... | DataCamp"
+        },
+        {
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "title": "Previewing GPT - 5 . 6 Sol : a next-generation model | OpenAI"
+        }
+      ],
+      "detailed_summary": "OpenAI的GPT-5.6 Sol Ultra模型据称生成了一个证明，解决了图论中悬而未决的环双覆盖猜想（Cycle Double Cover Conjecture），并发布了一份预印本。 这标志着人工智能在数学证明领域取得重大突破，可能改变未来数学研究的方式，证明了AI能够处理需要深度推理的开放问题。 该证明由GPT-5.6 Sol Ultra的“超模式”（ultra mode）生成，利用了子代理加速复杂推理；预印本发布于2026年7月10日，但社区对其严谨性和猜想本身的意义存在质疑。",
+      "background": "环双覆盖猜想是一个图论问题，询问每个无桥图是否都存在一组环，使得每条边恰好出现两次。该猜想由Tutte、Itai、Rodeh、Szekeres和Seymour等人提出，长期未解决。GPT-5.6 Sol是OpenAI最新顶尖模型，通过增加推理时间来提高性能。",
+      "community_discussion": "社区讨论中，一些用户认为该结果不具突破性，因为对猜想本身关注度不高，且证明过于简洁；另一些用户则怀疑AI是否真正进行了自主推理，指出提示词中包含了大量指导。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Potentially groundbreaking: an AI system claiming to prove an unsolved mathematical conjecture. High engagement (296 upvotes, 251 comments) indicating community interest, though comments express skepticism about the conjecture's significance and the AI's actual capability. Discussion quality is mixed, with some insightful technical critiques.",
+    "ai_summary": "AI model GPT-5.6 Sol Ultra reportedly produces a proof of the unsolved Cycle Double Cover Conjecture.",
+    "ai_tags": [
+      "artificial intelligence",
+      "mathematics",
+      "conjecture",
+      "OpenAI",
+      "breakthrough"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:1b693dfb19ab952f",
+    "source_type": "rss",
+    "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+    "url": "https://github.com/malisper/pgrust",
+    "content": "<p><a href=\"https://lobste.rs/s/le3iri/postgres_rewritten_rust_now_passing_100\">Comments</a></p>",
+    "author": "github.com via Vaelatern",
+    "published_at": "2026-07-10T19:05:12Z",
+    "fetched_at": "2026-07-10T23:52:49.621968Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "vibecoding"
+      ],
+      "title_zh": "用Rust重写PostgreSQL通过全部回归测试",
+      "detailed_summary_zh": "pgrust项目成功用Rust重写PostgreSQL，目前已通过全部官方回归测试，标志着兼容性达到里程碑。 这一成就展示了Rust在系统软件领域替代C的可行性，可能带来更强的内存安全性和性能优化，对数据库生态系统有深远影响。 项目基于PostgreSQL 18.3，使用同步I/O，需设置RUST_MIN_STACK和max_stack_depth等环境变量才能正常运行。",
+      "background_zh": "PostgreSQL是功能强大的开源关系型数据库，传统使用C语言编写。Rust注重安全性和并发，通过所有权机制消除内存错误。pgrust旨在精确跟踪Postgres行为，而非玩具克隆。",
+      "sources": [
+        {
+          "url": "https://github.com/malisper/pgrust",
+          "title": "GitHub - malisper/pgrust: Postgres rewritten in Rust, now passing 100% of the Postgres regression tests · GitHub"
+        },
+        {
+          "url": "https://pgrust.com/",
+          "title": "pgrust — postgres, rewritten in rust"
+        }
+      ],
+      "detailed_summary": "pgrust项目成功用Rust重写PostgreSQL，目前已通过全部官方回归测试，标志着兼容性达到里程碑。 这一成就展示了Rust在系统软件领域替代C的可行性，可能带来更强的内存安全性和性能优化，对数据库生态系统有深远影响。 项目基于PostgreSQL 18.3，使用同步I/O，需设置RUST_MIN_STACK和max_stack_depth等环境变量才能正常运行。",
+      "background": "PostgreSQL是功能强大的开源关系型数据库，传统使用C语言编写。Rust注重安全性和并发，通过所有权机制消除内存错误。pgrust旨在精确跟踪Postgres行为，而非玩具克隆。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Rewriting PostgreSQL in Rust and passing all regression tests is a major technical achievement with potential performance and safety benefits. This indicates a high level of compatibility and could be significant for the database ecosystem. The associated community discussion (on lobste.rs) likely provides additional insights and validation.",
+    "ai_summary": "A Rust rewrite of PostgreSQL (pgrust) now passes 100% of the official regression tests, marking a significant milestone.",
+    "ai_tags": [
+      "Rust",
+      "PostgreSQL",
+      "database",
+      "rewrite",
+      "open-source"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a89f393223025cc6",
+    "source_type": "rss",
+    "title": "Superoptimizer -- A Look at the Smallest Program",
+    "url": "https://dl.acm.org/doi/epdf/10.1145/36177.36194",
+    "content": "<p><a href=\"https://lobste.rs/s/2jgiax/superoptimizer_look_at_smallest_program\">Comments</a></p>",
+    "author": "dl.acm.org via WilhelmVonWeiner",
+    "published_at": "2026-07-10T01:25:59Z",
+    "fetched_at": "2026-07-10T23:52:49.622255Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "compsci"
+      ],
+      "title_zh": "超优化器：寻找最小程序的经典论文",
+      "detailed_summary_zh": "Alexia Massalin 在1987年发表了论文《Superoptimizer: A Look at the Smallest Program》，首次提出了超优化（superoptimization）的概念，即通过穷举搜索自动找到实现给定功能的最短或最优指令序列。 该论文是编译器优化和程序合成领域的奠基性工作，其思想启发了后续大量关于自动生成高效代码的研究，至今仍被广泛引用。 超优化器通常针对无循环的指令序列，采用暴力枚举所有可能的指令组合，并按代价排序验证正确性，从而发现人类难以想到的优化代码。",
+      "background_zh": "传统编译器优化只能局部改进代码，无法保证达到全局最优。超优化的目标是生成理论上的最优代码，但由于搜索空间巨大，实际应用仅限于短序列。该技术也延伸到了程序合成领域，通过形式化规范自动生成程序。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Superoptimization",
+          "title": "Superoptimization - Wikipedia"
+        },
+        {
+          "url": "https://www.embecosm.com/appnotes/ean15/ean15.html",
+          "title": "Superoptimization - Embecosm CS 6120: Superoptimization: a quest for -O∞ CS 6120: Super Optimization Conditionally Correct Superoptimization - Stanford University Introduction - Stanford University"
+        }
+      ],
+      "detailed_summary": "Alexia Massalin 在1987年发表了论文《Superoptimizer: A Look at the Smallest Program》，首次提出了超优化（superoptimization）的概念，即通过穷举搜索自动找到实现给定功能的最短或最优指令序列。 该论文是编译器优化和程序合成领域的奠基性工作，其思想启发了后续大量关于自动生成高效代码的研究，至今仍被广泛引用。 超优化器通常针对无循环的指令序列，采用暴力枚举所有可能的指令组合，并按代价排序验证正确性，从而发现人类难以想到的优化代码。",
+      "background": "传统编译器优化只能局部改进代码，无法保证达到全局最优。超优化的目标是生成理论上的最优代码，但由于搜索空间巨大，实际应用仅限于短序列。该技术也延伸到了程序合成领域，通过形式化规范自动生成程序。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Seminal academic paper introducing superoptimization, a foundational concept in compiler optimization and program synthesis. Highly influential and often cited. The Lobsters discussion indicates community engagement.",
+    "ai_summary": "Classic paper on superoptimization, which seeks to find the smallest or most efficient program for a given function.",
+    "ai_tags": [
+      "superoptimization",
+      "compiler optimization",
+      "program synthesis",
+      "systems research"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:e1410a2758cebec8",
+    "source_type": "rss",
+    "title": "Think preprints are unreliable? Analysis of 70,000 studies might change your mind",
+    "url": "https://www.nature.com/articles/d41586-026-02167-3",
+    "content": "<p>Nature, Published online: 10 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02167-3\">doi:10.1038/d41586-026-02167-3</a></p>Central conclusions rarely change when biomedical preprints go on to be published in journals.",
+    "author": "Mohana Basu",
+    "published_at": "2026-07-10T00:00:00Z",
+    "fetched_at": "2026-07-10T23:52:50.619699Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "7万项研究分析：预印本结论可靠",
+      "detailed_summary_zh": "一项对7万项生物医学预印本的大规模分析发现，预印本的核心结论在后续期刊发表时很少改变，这反驳了预印本不可靠的普遍观点。 该研究为预印本在科学交流中的价值提供了有力证据，可能改变研究人员和公众对预印本的信任度，并影响科研出版和可重复性政策。 该分析涵盖了7万项生物医学研究，比较了预印本版本和同行评审后发表的期刊版本，发现核心结论变化极小。",
+      "background_zh": "预印本是未经同行评审的研究手稿，常被质疑可靠性。许多科学家担心预印本传播错误信息。这项大规模分析提供了系统证据，表明预印本的结论通常与最终出版版本一致。",
+      "detailed_summary": "一项对7万项生物医学预印本的大规模分析发现，预印本的核心结论在后续期刊发表时很少改变，这反驳了预印本不可靠的普遍观点。 该研究为预印本在科学交流中的价值提供了有力证据，可能改变研究人员和公众对预印本的信任度，并影响科研出版和可重复性政策。 该分析涵盖了7万项生物医学研究，比较了预印本版本和同行评审后发表的期刊版本，发现核心结论变化极小。",
+      "background": "预印本是未经同行评审的研究手稿，常被质疑可靠性。许多科学家担心预印本传播错误信息。这项大规模分析提供了系统证据，表明预印本的结论通常与最终出版版本一致。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Large-scale analysis of 70,000 studies challenges common skepticism about preprint reliability, with significant implications for scientific publishing and reproducibility. The finding that central conclusions rarely change is a major evidence-based insight, highly relevant to researchers and the broader scientific community. Published in Nature, enhancing credibility.",
+    "ai_summary": "Analysis of 70,000 biomedical studies shows that central conclusions rarely change when preprints are later published in journals, countering concerns about preprint unreliability.",
+    "ai_tags": [
+      "preprints",
+      "biomedical research",
+      "reproducibility",
+      "scientific publishing",
+      "meta-analysis"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:5ac27acbd4e8258a",
+    "source_type": "rss",
+    "title": "Lab-grown sperm: scientists inch closer to fertility breakthrough",
+    "url": "https://www.nature.com/articles/d41586-026-02172-6",
+    "content": "<p>Nature, Published online: 10 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02172-6\">doi:10.1038/d41586-026-02172-6</a></p>Sci-fi procedure creates immature human sperm from stem cells, nurturing them on a mouse’s kidney.",
+    "author": "Heidi Ledford",
+    "published_at": "2026-07-10T00:00:00Z",
+    "fetched_at": "2026-07-10T23:52:50.619716Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "实验室培育精子：科学家向生育突破迈进",
+      "detailed_summary_zh": "研究人员利用干细胞在小鼠肾脏上成功培育出未成熟的人类精子，这是体外精子生成领域的一项重大进展。 这项突破为男性不育症（尤其是无精症）患者提供了新的治疗前景，并有望加深对精子生成机制的理解，推动生殖医学发展。 该技术将人类干细胞植入小鼠体内（异种移植），使其分化成未成熟精子细胞，但生成的精子尚未具备受精能力，仍需进一步研究以确保安全性和有效性。",
+      "background_zh": "体外精子生成技术旨在实验室中模拟体内精子产生的复杂过程。精原干细胞是睾丸中维持生精的干细胞，其分化受阻会导致男性不育。异种移植常用于人类生殖细胞研究，但涉及伦理和技术挑战。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/In_vitro_spermatogenesis",
+          "title": "In vitro spermatogenesis"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Spermatogonial_stem_cell",
+          "title": "Spermatogonial stem cell"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Xenograft",
+          "title": "Xenograft"
+        }
+      ],
+      "detailed_summary": "研究人员利用干细胞在小鼠肾脏上成功培育出未成熟的人类精子，这是体外精子生成领域的一项重大进展。 这项突破为男性不育症（尤其是无精症）患者提供了新的治疗前景，并有望加深对精子生成机制的理解，推动生殖医学发展。 该技术将人类干细胞植入小鼠体内（异种移植），使其分化成未成熟精子细胞，但生成的精子尚未具备受精能力，仍需进一步研究以确保安全性和有效性。",
+      "background": "体外精子生成技术旨在实验室中模拟体内精子产生的复杂过程。精原干细胞是睾丸中维持生精的干细胞，其分化受阻会导致男性不育。异种移植常用于人类生殖细胞研究，但涉及伦理和技术挑战。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major scientific breakthrough in stem cell research and reproductive biology, with high potential impact on fertility treatments. Published in a top-tier journal (Nature).",
+    "ai_summary": "Researchers created immature human sperm from stem cells, nurturing them on a mouse's kidney, moving closer to a fertility breakthrough.",
+    "ai_tags": [
+      "stem cells",
+      "fertility",
+      "reproductive biology",
+      "breakthrough"
+    ]
+  },
+  {
+    "id": "hackernews:story:48863464",
+    "source_type": "hackernews",
+    "title": "New York City to to ban deceptive subscription practices",
+    "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+    "content": "<a href=\"https:&#x2F;&#x2F;www.nyc.gov&#x2F;mayors-office&#x2F;news&#x2F;2026&#x2F;07&#x2F;mayor-mamdani-announces-landmark--click-to-cancel--consumer-prot\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nyc.gov&#x2F;mayors-office&#x2F;news&#x2F;2026&#x2F;07&#x2F;mayor-mamdani...</a>\n\n\n--- Top Comments ---\n\n[sxp]: It&#x27;s unclear whether this junk fee law will have teeth. In theory, California has the same anti-drip pricing law, but restaurants have a specific carve out [1] which is bullshit because the drip pricing that most people complain about is the X% &quot;service charges&quot; and &quot;lifestyle fees&quot; that restaurants have at the bottom of their menu in small print. From what I can tell online, NYC rules won&#x27;t have this carveout, but I haven&#x27;t eaten there recently so I can&#x2...\n\n[gumby]: These rules are great but “landmark” seems like puffery, as California has had such rules for quite a while. Ironically that has meant it’s hard to unsubscribe from the  New York  Times except in California.\n\n[xp84]: I wonder if the bit about &#x27;junk fees&#x27; will include undisclosed hotel fees. I just stayed there last week in a no-frills &quot;hotel&quot; which doesn&#x27;t include daily room cleaning, has no staff at night, and has no amenities whatsoever, and they charged me a surprise-at-check-in $35 a night resort fee. This fee was not described in the booking.\n\n[SkipperCat]: This is what legitimate government looks like.  Leaders actually advocating for the people who are being deceived by those in power instead of helping those in power. While this may be a trivial issue, being able to cancel a gym or newspaper subscription, it sends a signal. Companies need to view customers as partners in a business transaction and not objects to be exploited.\n\n[bkeyes]: Funny this should come up today. I just got a notice from my credit card company that Evernote just charged my credit card after 2 &#x27;successful&#x27; cancellations of my subscription each of the last 2 years, and the complete deletion of my account several months ago. Hopefully these will become more widespread - I&#x27;m not in NY or CA.",
+    "author": "randycupertino",
+    "published_at": "2026-07-10T18:26:24Z",
+    "fetched_at": "2026-07-10T23:52:49.673101Z",
+    "metadata": {
+      "score": 351,
+      "descendants": 189,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48863464",
+      "comment_count": 5,
+      "title_zh": "纽约市通过法律禁止欺骗性订阅和隐藏费用",
+      "detailed_summary_zh": "纽约市市长Mamdani签署了一项具有里程碑意义的消费者保护法，禁止企业使用欺骗性订阅做法，包括隐藏费用和复杂的取消流程，并要求提供一键取消功能。 这项法律直接打击了科技公司和零售商常用的订阅陷阱，有助于保护消费者权益，并可能推动其他城市或州制定类似法规，对全国市场产生示范效应。 该法律要求企业在注册时清晰披露费用，并提供与注册同样简便的取消方式，即“一键取消”，但具体条款是否包含酒店“度假费”等尚有争议。",
+      "background_zh": "欺骗性订阅做法指企业通过隐藏费用、自动续费或不清晰的取消流程诱导消费者持续付费，常见于健身会员、软件订阅等服务。加州此前已通过类似反滴灌定价法，但存在餐馆等豁免条款。",
+      "community_discussion_zh": "社区评论普遍支持该法律，但质疑其执行力，指出加州已有类似规定但存在漏洞；有用户分享Evernote在多次取消后仍继续扣费的经历，强调法律需有实际惩罚措施。部分评论认为“里程碑”一词夸大，因为类似规则已有先例。",
+      "detailed_summary": "纽约市市长Mamdani签署了一项具有里程碑意义的消费者保护法，禁止企业使用欺骗性订阅做法，包括隐藏费用和复杂的取消流程，并要求提供一键取消功能。 这项法律直接打击了科技公司和零售商常用的订阅陷阱，有助于保护消费者权益，并可能推动其他城市或州制定类似法规，对全国市场产生示范效应。 该法律要求企业在注册时清晰披露费用，并提供与注册同样简便的取消方式，即“一键取消”，但具体条款是否包含酒店“度假费”等尚有争议。",
+      "background": "欺骗性订阅做法指企业通过隐藏费用、自动续费或不清晰的取消流程诱导消费者持续付费，常见于健身会员、软件订阅等服务。加州此前已通过类似反滴灌定价法，但存在餐馆等豁免条款。",
+      "community_discussion": "社区评论普遍支持该法律，但质疑其执行力，指出加州已有类似规定但存在漏洞；有用户分享Evernote在多次取消后仍继续扣费的经历，强调法律需有实际惩罚措施。部分评论认为“里程碑”一词夸大，因为类似规则已有先例。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (351 points, 189 comments) with substantive discussion on enforcement, comparisons to existing laws in California, and implications for businesses. The topic is important for consumer protection in tech subscriptions, but not groundbreaking as similar regulations exist elsewhere.",
+    "ai_summary": "New York City passes a law banning deceptive subscription practices and hidden fees, requiring easy cancellation.",
+    "ai_tags": [
+      "consumer protection",
+      "subscriptions",
+      "regulation",
+      "NYC",
+      "tech policy"
+    ]
+  },
+  {
+    "id": "hackernews:story:48858121",
+    "source_type": "hackernews",
+    "title": "Good Tools Are Invisible",
+    "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
+    "content": "\n--- Top Comments ---\n\n[jrimbault]: Having designed a good number of internal tools for teams of developers I couldn&#x27;t agree more. Earlier I had the tendency to &quot;leave the guts&quot; open, thinking my users were developers and would want that. All it did was put obstacles in my teammates actually doing their work. My teammates must use the tools I made for them to achieve work the company needs them to do, they don&#x27;t want, nor should they want to, fiddle with a little tool they won&#x27;t find anywhere else. I st...\n\n[bensyverson]: The effect of the interface becoming &quot;invisible&quot; is actually a function of time spent in the interface. I think what the author is reacting to is  discretionary friction;  designers or product folks adding features or complexity. The thing is, that friction may be necessary in order to achieve a certain task (think about resolving a merge conflict). And given enough time in the interface, even those &quot;disruptive&quot; steps fade into the background. To give a concrete example, t...\n\n[anticorporate]: GUI tools were better in the 90s when interfaces were more standardized, and I think the &quot;invisibility&quot; factor was a big part of it. I don&#x27;t want to have to learn a company&#x27;s whole design philosophy system because they thought building a packaged web app was &quot;cooler&quot; than using a standard widget toolkit. I find myself using the terminal more and more as time goes on, because I find the total friction to be less when things are predictable. I&#x27;d probably not h...\n\n[ventana]: As a long time terminal user, it does not surprise me much when people just  don&#x27;t get it . The discussion often goes like this: — In a terminal, I can do so-and-so with a simple command — Well, in my FrobnicatorStudio, there&#x27;s a shortcut Ctrl+Alt+So for that and this can go forever, going into pretty much useless comparisons like &quot;in vim, I can delete 24 lines by pressing four keys&quot; (no Sublime user ever needs that) vs &quot;in Sublime I have multiple cursors&quot; (no vi...\n\n[jpillora]: This is also true from the inverse. Making every tool visible may  feel  good to some users. They sit in their F16 cockpit, and they like having all those buttons, and knowing what they do. But this does not scale. You can fit 100 buttons in front of you. You can learn each one and the best situations to use each. But can you fit 1000 buttons in front of you? No.\nDifferent humans have different complexity thresholds. Some humans can deal with 10 buttons, and some 250 buttons! But no human can...",
+    "author": "theanonymousone",
+    "published_at": "2026-07-10T10:32:41Z",
+    "fetched_at": "2026-07-10T23:52:49.673155Z",
+    "metadata": {
+      "score": 337,
+      "descendants": 151,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48858121",
+      "comment_count": 5,
+      "title_zh": "好工具应无形",
+      "detailed_summary_zh": "一篇随笔文章提出，最好的工具在用户使用时应当是隐形的，即界面不干扰用户注意力，使工具本身成为用户完成任务的自然延伸。 该观点引发关于工具设计中摩擦与标准化的深度讨论，对开发者工具、用户体验设计乃至软件工程理念均有启发意义，尤其影响了内部工具的设计哲学。 文章强调减少“自主性摩擦”，但社区评论指出某些任务（如解决合并冲突）需必要摩擦，且随使用时间增长，即使复杂界面也会逐渐隐形。",
+      "background_zh": "在软件设计中，“隐形工具”指那些让用户专注于任务本身、无需思考操作方式的工具；这一理念与唐·诺曼的“自然用户界面”思想相通，常见于命令行工具和熟练用户的工作流中。",
+      "community_discussion_zh": "社区整体认同核心观点，但围绕“必要摩擦”与“GUI标准化”出现分歧：有用户认为90年代标准化GUI更隐形，而另一些用户强调终端操作的可预测性及时间带来的界面隐形效应。",
+      "detailed_summary": "一篇随笔文章提出，最好的工具在用户使用时应当是隐形的，即界面不干扰用户注意力，使工具本身成为用户完成任务的自然延伸。 该观点引发关于工具设计中摩擦与标准化的深度讨论，对开发者工具、用户体验设计乃至软件工程理念均有启发意义，尤其影响了内部工具的设计哲学。 文章强调减少“自主性摩擦”，但社区评论指出某些任务（如解决合并冲突）需必要摩擦，且随使用时间增长，即使复杂界面也会逐渐隐形。",
+      "background": "在软件设计中，“隐形工具”指那些让用户专注于任务本身、无需思考操作方式的工具；这一理念与唐·诺曼的“自然用户界面”思想相通，常见于命令行工具和熟练用户的工作流中。",
+      "community_discussion": "社区整体认同核心观点，但围绕“必要摩擦”与“GUI标准化”出现分歧：有用户认为90年代标准化GUI更隐形，而另一些用户强调终端操作的可预测性及时间带来的界面隐形效应。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The essay presents a well-articulated design philosophy with strong community validation (337 points, 151 comments). The discussion adds depth through differing perspectives on friction and UI standardization, elevating it above typical opinion pieces.",
+    "ai_summary": "An essay arguing that the best tools become invisible to users, with community debate on necessary friction and GUI standardization.",
+    "ai_tags": [
+      "tool design",
+      "UX",
+      "developer tools",
+      "software engineering",
+      "HCI"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:62f4e3a85a3f6b45",
+    "source_type": "rss",
+    "title": "What Every Python Developer Should Know About the CPython ABI",
+    "url": "https://labs.quansight.org/blog/python-abi-abi3t",
+    "content": "<p><a href=\"https://lobste.rs/s/fxuz6h/what_every_python_developer_should_know\">Comments</a></p>",
+    "author": "labs.quansight.org by ngoldbaum",
+    "published_at": "2026-07-10T17:17:58Z",
+    "fetched_at": "2026-07-10T23:52:49.622076Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "python",
+        "c"
+      ],
+      "title_zh": "CPython ABI详解：Python开发者必知",
+      "detailed_summary_zh": "Quansight Labs发布了一篇深度文章，详细解释了CPython应用二进制接口（ABI）的概念及其对Python开发者的影响，并介绍了Python 3.15中新增的abi3t稳定ABI。 这篇文章对于编写C扩展或关注性能的Python开发者至关重要，因为ABI稳定性决定了扩展模块能否无需重新编译即可跨Python版本运行，直接影响部署和维护效率。 文章阐述了API与ABI的区别，并重点介绍了abi3t稳定ABI——这是Python 3.15引入的新稳定ABI，旨在解决现有abi3的限制并支持线程安全。",
+      "background_zh": "ABI（应用二进制接口）定义了编译后二进制代码之间的交互规范，与API（应用编程接口）不同，它关注的是二进制级别的兼容性。CPython从Python 3.2起提供了稳定ABI（abi3），使得使用有限API的扩展模块可以在后续小版本中保持二进制兼容。",
+      "community_discussion_zh": "在lobste.rs上的社区讨论为文章提供了额外背景和验证，整体评价积极，认为这是一篇高质量的技术深度解析。",
+      "sources": [
+        {
+          "url": "https://labs.quansight.org/blog/python-abi-abi3t",
+          "title": "What Every Python Developer Should Know About the CPython ABI"
+        },
+        {
+          "url": "https://docs.python.org/3/c-api/stable.html",
+          "title": "C API Stability — Python 3.14.6 documentation"
+        },
+        {
+          "url": "https://peps.python.org/pep-0809/",
+          "title": "PEP 809 – Stable ABI for the Future | peps.python.org"
+        }
+      ],
+      "detailed_summary": "Quansight Labs发布了一篇深度文章，详细解释了CPython应用二进制接口（ABI）的概念及其对Python开发者的影响，并介绍了Python 3.15中新增的abi3t稳定ABI。 这篇文章对于编写C扩展或关注性能的Python开发者至关重要，因为ABI稳定性决定了扩展模块能否无需重新编译即可跨Python版本运行，直接影响部署和维护效率。 文章阐述了API与ABI的区别，并重点介绍了abi3t稳定ABI——这是Python 3.15引入的新稳定ABI，旨在解决现有abi3的限制并支持线程安全。",
+      "background": "ABI（应用二进制接口）定义了编译后二进制代码之间的交互规范，与API（应用编程接口）不同，它关注的是二进制级别的兼容性。CPython从Python 3.2起提供了稳定ABI（abi3），使得使用有限API的扩展模块可以在后续小版本中保持二进制兼容。",
+      "community_discussion": "在lobste.rs上的社区讨论为文章提供了额外背景和验证，整体评价积极，认为这是一篇高质量的技术深度解析。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive on CPython ABI, important for Python developers working with C extensions or performance optimization. Community discussion on lobste.rs adds context and validation.",
+    "ai_summary": "A detailed guide explaining the CPython ABI and its implications for Python developers.",
+    "ai_tags": [
+      "Python",
+      "CPython",
+      "ABI",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "hackernews:story:48862365",
+    "source_type": "hackernews",
+    "title": "The tech of 'Terminator 2' – an oral history (2017)",
+    "url": "https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/",
+    "content": "\n--- Top Comments ---\n\n[ortusdux]: Amazing writeup!  I&#x27;ll add that the custom squibs they made for the liquid metal bullet impacts are still one of the best practical effects ever.  https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;nextfuckinglevel&#x2F;comments&#x2F;v6qjaj&#x2F;bu...\n\n[whycome]: The 4K remaster of this is back in theatres next month for “Judgment Day” and the 35th anniversary.  https:&#x2F;&#x2F;www.fathomentertainment.com&#x2F;news&#x2F;fathom-entertainmen...\n\n[macote]: It&#x27;s worth mentionning that Softimage was used for Terminator 2.  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Softimage_(company)   https:&#x2F;&#x2F;www.fxguide.com&#x2F;quicktakes&#x2F;remembering-softimage&#x2F;\n\n[eldog_]: Recommend &quot;Jurassic Punk&quot; (2022) - the documentary about Steve ‘Spaz’ Williams who is featured in this interview. It covers T2 as well as Jurassic park and goes into the politics inside ILM,\n\n[raychis]: This was a fantastic read. I had no idea how much of Terminator 2 had to be invented from scratch. It&#x27;s amazing to think that a lot of the tools and ideas that shaped modern VFX started with engineers just trying to solve one impossible problem after another. Some films really do stand the test of time, I&#x27;m not really sure that contemporary CGI will really age as well.",
+    "author": "markus_zhang",
+    "published_at": "2026-07-10T16:48:41Z",
+    "fetched_at": "2026-07-10T23:52:49.673077Z",
+    "metadata": {
+      "score": 146,
+      "descendants": 60,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48862365",
+      "comment_count": 5,
+      "title_zh": "终结者2特效技术口述史：开创性的CGI与实拍",
+      "detailed_summary_zh": "一篇2017年的口述历史文章详细讲述了《终结者2：审判日》中革命性的实际效果和数字特效技术，包括T-1000液态金属的CGI实现以及定制空包弹等创新。 该文章揭示了现代视觉特效（VFX）许多基础工具和理念是如何为解决《终结者2》中的具体问题而被发明的，对理解当代CGI发展历程具有重要参考价值。 文章指出，《终结者2》中CGI仅用了42-43个镜头，其余依靠50-60个实际效果镜头；此外，Softimage软件被用于部分CGI制作。社区评论还提到即将到来的35周年4K重映。",
+      "background_zh": "《终结者2：审判日》（1991年）由詹姆斯·卡梅隆执导，其反派T-1000由罗伯特·帕特里克饰演，该角色具有液态金属变形能力。特效由工业光魔（ILM）的CGI和斯坦·温斯顿工作室的实际效果共同完成，是早期CGI与实拍结合的里程碑。",
+      "community_discussion_zh": "社区评论高度赞赏这篇文章，称其揭示了大量特效是从零开始发明的。有用户补充了定制空包弹实际效果、Softimage的使用以及纪录片《Jurassic Punk》等额外信息，并认为有些电影能经受时间考验，而现代CGI未必如此。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Special_effects_of_Terminator_2:_Judgment_Day",
+          "title": "Special effects of Terminator 2: Judgment Day - Wikipedia"
+        },
+        {
+          "url": "https://www.stanwinstonschool.com/blog/t2-judgement-day-t1000-fx",
+          "title": "Terminator 2: Judgment Day - T-1000 Effects - Stan Winston School"
+        }
+      ],
+      "detailed_summary": "一篇2017年的口述历史文章详细讲述了《终结者2：审判日》中革命性的实际效果和数字特效技术，包括T-1000液态金属的CGI实现以及定制空包弹等创新。 该文章揭示了现代视觉特效（VFX）许多基础工具和理念是如何为解决《终结者2》中的具体问题而被发明的，对理解当代CGI发展历程具有重要参考价值。 文章指出，《终结者2》中CGI仅用了42-43个镜头，其余依靠50-60个实际效果镜头；此外，Softimage软件被用于部分CGI制作。社区评论还提到即将到来的35周年4K重映。",
+      "background": "《终结者2：审判日》（1991年）由詹姆斯·卡梅隆执导，其反派T-1000由罗伯特·帕特里克饰演，该角色具有液态金属变形能力。特效由工业光魔（ILM）的CGI和斯坦·温斯顿工作室的实际效果共同完成，是早期CGI与实拍结合的里程碑。",
+      "community_discussion": "社区评论高度赞赏这篇文章，称其揭示了大量特效是从零开始发明的。有用户补充了定制空包弹实际效果、Softimage的使用以及纪录片《Jurassic Punk》等额外信息，并认为有些电影能经受时间考验，而现代CGI未必如此。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value content with insightful comments discussing practical effects, Softimage, and the impact on modern VFX. While not breaking news, it provides deep historical context and technical depth that is relevant to software engineering and graphics. Community engagement is high with thoughtful discussion.",
+    "ai_summary": "An oral history detailing the groundbreaking practical and digital effects innovations created for Terminator 2, with community discussion highlighting the lasting impact of those techniques.",
+    "ai_tags": [
+      "VFX",
+      "film history",
+      "practical effects",
+      "CGI history",
+      "terminator 2"
+    ]
+  },
+  {
+    "id": "hackernews:story:48862252",
+    "source_type": "hackernews",
+    "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
+    "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
+    "content": "\n--- Top Comments ---\n\n[hedgehog]: I wanted to see some pictures, this paper has good ones:  https:&#x2F;&#x2F;onlinelibrary.wiley.com&#x2F;doi&#x2F;full&#x2F;10.1002&#x2F;ece3.10332  If you put your finger in front of a garden slug it may try to eat it, it&#x27;s a very odd sand-paper sensation but I never knew why.\n\n[ziofill]: &gt; Thats’s comparable to a single strand of spaghetti holding up about 3,300 one-pound bags of sugar What an odd example. A mid-sized car would have been much clearer.\n\n[steve_adams_86]: If you ever watch these guys in an aquarium, you notice they&#x27;re basically constantly chewing on things. I&#x27;ve wondered many times how they keep such tiny teeth in good condition if they never given them a rest, but, here&#x27;s why. Nature creates such cool creatures\n\n[RajT88]: &gt; 3,300 one-pound bags of sugar Ah, but how many one pound bags of concrete could it hold?? Why bags of anything?  This is a poor way of communicating weight.  Just say &quot;a modern passenger car&quot;.\n\n[somedude895]: All I wanted was to see a picture of a snail&#x27;s tooth.",
+    "author": "simonebrunozzi",
+    "published_at": "2026-07-10T16:37:52Z",
+    "fetched_at": "2026-07-10T23:52:49.673213Z",
+    "metadata": {
+      "score": 147,
+      "descendants": 120,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48862252",
+      "comment_count": 5,
+      "title_zh": "蜗牛牙齿超越蜘蛛丝成为最强天然材料",
+      "detailed_summary_zh": "科学家发现蜗牛（帽贝）牙齿由针铁矿纳米纤维嵌入蛋白质基质构成，其抗拉强度平均比大多数蜘蛛丝强约五倍，成为已知最强生物材料。 这一发现颠覆了蜘蛛丝长期保持的“最强天然材料”纪录，为仿生材料设计提供了新灵感，可能推动开发更坚韧的人造纤维和复合材料。 蜗牛牙齿位于齿舌（类似舌头的结构）上，数量可达10000至25000颗，虽尺寸微小但能承受极高压力，强度和韧性甚至超过凯夫拉纤维。",
+      "background_zh": "蜘蛛丝因其轻质高强而被视为天然材料强度标杆，但蜗牛牙齿中纳米级针铁矿纤维的有序排列赋予其优越力学性能。这些牙齿用于刮食岩石上的藻类，因而进化出极高耐磨性和抗压能力。",
+      "community_discussion_zh": "评论者对文章用“3300袋糖”类比重量表示不满，认为用汽车更直观；多数人惊叹于蜗牛牙齿的微观结构，并希望看到更多图片和实际应用讨论。",
+      "sources": [
+        {
+          "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
+          "title": "Snails’ Teeth Beats Spider Silk As Nature’s Strongest Material"
+        },
+        {
+          "url": "https://fountainmagazine.com/all-issues/2019/issue-132-nov-dec-2019/sea-snail-s-teeth-are-they-the-strongest-biomaterials-in-the-world/",
+          "title": "Sea Snail’s Teeth: Are They the Strongest Biomaterials in the World? – Fountain Magazine"
+        }
+      ],
+      "detailed_summary": "科学家发现蜗牛（帽贝）牙齿由针铁矿纳米纤维嵌入蛋白质基质构成，其抗拉强度平均比大多数蜘蛛丝强约五倍，成为已知最强生物材料。 这一发现颠覆了蜘蛛丝长期保持的“最强天然材料”纪录，为仿生材料设计提供了新灵感，可能推动开发更坚韧的人造纤维和复合材料。 蜗牛牙齿位于齿舌（类似舌头的结构）上，数量可达10000至25000颗，虽尺寸微小但能承受极高压力，强度和韧性甚至超过凯夫拉纤维。",
+      "background": "蜘蛛丝因其轻质高强而被视为天然材料强度标杆，但蜗牛牙齿中纳米级针铁矿纤维的有序排列赋予其优越力学性能。这些牙齿用于刮食岩石上的藻类，因而进化出极高耐磨性和抗压能力。",
+      "community_discussion": "评论者对文章用“3300袋糖”类比重量表示不满，认为用汽车更直观；多数人惊叹于蜗牛牙齿的微观结构，并希望看到更多图片和实际应用讨论。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting scientific finding with active community discussion, though limited immediate technical impact. Comments critique the article's presentation but engage with the biology.",
+    "ai_summary": "Snail teeth have been found to be stronger than spider silk, making them the strongest biological material.",
+    "ai_tags": [
+      "biology",
+      "materials science",
+      "natural structures",
+      "science communication"
+    ]
+  },
+  {
+    "id": "hackernews:story:48857230",
+    "source_type": "hackernews",
+    "title": "In Emacs, everything looks like a service",
+    "url": "http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html",
+    "content": "\n--- Top Comments ---\n\n[pjmlp]: &gt; A common refrain is that Emacs is an operating system (OS). This isn’t true, but what invites comparison to an OS is its ability to orchestrate applications and utilities above the OS kernel level. Only because Lisp Machines, or variations thereof didn&#x27;t took off in the mainstream. &quot;Symbolics Lisp Machine demo&quot;  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=o4-YnLpLgtk  &quot;Emacs and Lisp&quot;  https:&#x2F;&#x2F;funcall.blogspot.com&#x2F;2025&#x2F;04&#x2F;emacs-and-lis...\n\n[deng]: This just proves that you can cram pretty much anything into the client&#x2F;server dichotomy if you just define &quot;client&quot;, &quot;server&quot; and &quot;request&quot; broad enough. Similarly, I remember how desperately people tried to argue that Emacs follows the &quot;Unix philosophy&quot; as long as your LISP functions are doing just one thing, and do them well.\nI don&#x27;t know what you would gain from these things. Emacs follows the idea of LISP machines, I think that much anybo...\n\n[kleiba2]: I&#x27;ve been an Emacs user for over 25 years. But last year I switched employers and they won&#x27;t let me use it even for tasks where it would absolutely shine. Their argument is that all team members should use the same tools, and I guess that is a valid point. Unfortunately, I failed to convince my employer to make everybody else switch to Emacs. So, now I&#x27;m using lots of one-purpose tools, one for each separate task, a good deal less efficiently than I could use Emacs, and I&#x27;...\n\n[kandros]: One of the pivotal moments in my career has been when I used Emacs just enough  to truly understand what &quot;Emacs is an operating system&quot; means, not just as a joke but as something I could believe in\n\n[jhalloran]: One thing that&#x27;s easy to forget is how much of the &quot;everything is a service&quot; idea predates LSP. Emacs had long-running subprocesses, RPC-ish interactions, TRAMP, GUD, REPL integration, etc. LSP standardized one important interface, but it wasn&#x27;t the beginning of the architecture.",
+    "author": "kickingvegas",
+    "published_at": "2026-07-10T08:21:10Z",
+    "fetched_at": "2026-07-10T23:52:49.673264Z",
+    "metadata": {
+      "score": 226,
+      "descendants": 97,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48857230",
+      "comment_count": 5,
+      "title_zh": "Emacs被视为面向服务系统引发架构讨论",
+      "detailed_summary_zh": "一篇博客文章提出Emacs可以看作一个面向服务的系统，而非传统操作系统或编辑器，这一观点在Hacker News上引发了广泛讨论。 这一视角挑战了业界对Emacs的固有认知，促使开发者重新思考其设计哲学与Lisp机器、Unix哲学之间的关系，对理解编辑器架构具有启发意义。 文章指出Emacs通过子进程管理、TRAMP远程文件访问、GUD调试器集成等机制实现了类似服务化架构的交互，这些特性早于LSP协议的出现。",
+      "background_zh": "Emacs是一个可扩展的文本编辑器，其内部集成了Lisp解释器，允许用户通过编写Elisp代码自定义功能。Lisp机器是20世纪80年代专门运行Lisp语言的硬件工作站，其操作系统基于Lisp。面向服务架构是一种将系统功能拆分为独立服务的软件设计风格，服务之间通过网络协议通信。",
+      "community_discussion_zh": "评论中有人赞同这一类比，认为Emacs的进程间通信和模块化设计确实接近服务化架构；但部分用户批评这种定义过于宽泛，认为将一切套入客户端/服务器二分法并无实际增益。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Lisp_machine",
+          "title": "Lisp machine"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Service-oriented_architecture",
+          "title": "Service-oriented architecture - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一篇博客文章提出Emacs可以看作一个面向服务的系统，而非传统操作系统或编辑器，这一观点在Hacker News上引发了广泛讨论。 这一视角挑战了业界对Emacs的固有认知，促使开发者重新思考其设计哲学与Lisp机器、Unix哲学之间的关系，对理解编辑器架构具有启发意义。 文章指出Emacs通过子进程管理、TRAMP远程文件访问、GUD调试器集成等机制实现了类似服务化架构的交互，这些特性早于LSP协议的出现。",
+      "background": "Emacs是一个可扩展的文本编辑器，其内部集成了Lisp解释器，允许用户通过编写Elisp代码自定义功能。Lisp机器是20世纪80年代专门运行Lisp语言的硬件工作站，其操作系统基于Lisp。面向服务架构是一种将系统功能拆分为独立服务的软件设计风格，服务之间通过网络协议通信。",
+      "community_discussion": "评论中有人赞同这一类比，认为Emacs的进程间通信和模块化设计确实接近服务化架构；但部分用户批评这种定义过于宽泛，认为将一切套入客户端/服务器二分法并无实际增益。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (226 points, 97 comments) with insightful discussion about Emacs' design philosophy and its comparison to OS and service-oriented architectures, but not groundbreaking.",
+    "ai_summary": "A blog post arguing that Emacs can be seen as a service-oriented system, triggering debate about its architecture and relation to Lisp machines and Unix philosophy.",
+    "ai_tags": [
+      "Emacs",
+      "Lisp",
+      "service-oriented architecture",
+      "Unix philosophy",
+      "editor"
+    ]
+  },
+  {
+    "id": "hackernews:story:48863707",
+    "source_type": "hackernews",
+    "title": "How the terrorist group Boko Haram uses frontier AI",
+    "url": "https://casp.ac/reports/ai-enabled-terrorism",
+    "content": "\n--- Top Comments ---\n\n[arjie]: &gt;  We saw in a movie how motorcycles can jump over bridges. We used\nAI to learn how to do this. We gave it information, like what\nmotorcycles we use and the distance we need to jump and so on and it\ngave us steps on what we have to do. We practiced a lot and kept\nasking questions. We dug holes and filled them with broken glass and\nfire to practice. 18 of us died in the process. Eight of us managed to do\nit. The next time we attacked, we could jump.  Now listen, I&#x27;m not saying we need ...\n\n[andy99]: You type in the question or use your voice and it [AI] gives you a detailed answer, like ‘How can I build a bomb?’ and then it tells you how. It is like a human robot! We used it a lot.\n  \nI’m pretty skeptical reading this bit. I’ve seen uncensored or jailbroken LLM replies to these kind of questions, they are never actionable, don’t say anything Wikipedia doesn’t, and are hard to provoke if you’re not using an uncensored model. I have no doubt terrorists are aided by LLMs in a general sense,...\n\n[quantumleaper]: I agree with other commenters that the claims made in the report are strange. &gt;  We used to rely on our traditional methods. We sent 200 fighters because we had a lot of strength, but then 60 got killed. With the help of AI, we learned that it sometimes makes sense to only send 20. We learned more about well-coordinated attacks and deployment of smaller units.  The other quotes and use cases  could  make sense in terms of using AI jailbreaks to find information more easily, but this one is...\n\n[idoubtit]: After a cursory read of the PDF, my impression is that the methodology is sound, but the results are blown out of proportion. Of course, if the title was &quot;Boko Haram&#x27;s internal hearsay about their use of AI&quot;, it would draw much less attention. The weak part is that the interview were with only 15 persons that had knowledge about AI. But, from what I understand, but they never used it themselves. Only the top commanders and the specialized units could send prompts. So it&#x27;s ...\n\n[segmondy]: Next on breaking news, terrorist groups use search engines, they use news sites to figure out what&#x27;s going on in the world, they use banks, they use weather sites for planning, they use email, cars, pen, of course AI too, so if AI should be regulated, let&#x27;s remember to ban all the things.",
+    "author": "imustachyou",
+    "published_at": "2026-07-10T18:49:26Z",
+    "fetched_at": "2026-07-10T23:52:49.673289Z",
+    "metadata": {
+      "score": 161,
+      "descendants": 135,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48863707",
+      "comment_count": 5,
+      "title_zh": "博科圣地如何利用前沿AI引发质疑",
+      "detailed_summary_zh": "一份报告披露尼日利亚恐怖组织博科圣地声称使用前沿AI进行战术规划和炸弹制作，但社区评论普遍质疑这些AI建议的实际可行性和可操作性。 该事件凸显了前沿AI被滥用于恐怖活动的潜在风险，但也暴露了关于AI实际帮助程度的争议，可能影响AI安全政策的制定与监管方向。 报告基于对15名知情者的访谈，但评论指出AI生成的建议通常不具实操性，内容类似维基百科信息，且难以通过普通模型触发；报告标题可能夸大了AI的作用。",
+      "background_zh": "前沿AI指能力强大且可能产生不可预测新兴能力的先进AI模型，因其双重用途而面临独特的治理挑战。博科圣地是活跃于尼日利亚的极端组织，以暴力袭击闻名。",
+      "community_discussion_zh": "多数评论对报告可信度表示怀疑，认为AI提供的建议并非独有且难以执行；也有评论指出研究方法虽合理但结果被夸大，实际影响有限。",
+      "sources": [
+        {
+          "url": "https://contentmind.ai/glossary/frontier-ai",
+          "title": "Frontier AI : Definition & Meaning | THE LONG VIEW"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/santanu-dutt-0ab0048_cna-explains-what-is-frontier-ai-and-how-activity-7460156155227455488-AmLx",
+          "title": "Frontier AI : A Double-Edged Sword for Businesses | LinkedIn"
+        }
+      ],
+      "detailed_summary": "一份报告披露尼日利亚恐怖组织博科圣地声称使用前沿AI进行战术规划和炸弹制作，但社区评论普遍质疑这些AI建议的实际可行性和可操作性。 该事件凸显了前沿AI被滥用于恐怖活动的潜在风险，但也暴露了关于AI实际帮助程度的争议，可能影响AI安全政策的制定与监管方向。 报告基于对15名知情者的访谈，但评论指出AI生成的建议通常不具实操性，内容类似维基百科信息，且难以通过普通模型触发；报告标题可能夸大了AI的作用。",
+      "background": "前沿AI指能力强大且可能产生不可预测新兴能力的先进AI模型，因其双重用途而面临独特的治理挑战。博科圣地是活跃于尼日利亚的极端组织，以暴力袭击闻名。",
+      "community_discussion": "多数评论对报告可信度表示怀疑，认为AI提供的建议并非独有且难以执行；也有评论指出研究方法虽合理但结果被夸大，实际影响有限。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value topic (AI misuse by terrorist groups) with significant community engagement (161 upvotes, 135 comments) and substantive skepticism in comments, indicating nuanced discussion but tempered by questionable verifiability of claims.",
+    "ai_summary": "Report details how Boko Haram allegedly used frontier AI for tactical planning and bomb-making, but commenters express doubts about the actionable nature of such AI assistance.",
+    "ai_tags": [
+      "AI safety",
+      "terrorism",
+      "frontier AI",
+      "misuse",
+      "ethics"
+    ]
+  },
+  {
+    "id": "hackernews:story:48859678",
+    "source_type": "hackernews",
+    "title": "Successful Companies Go Blind",
+    "url": "https://ianreppel.org/how-successful-companies-go-blind/",
+    "content": "\n--- Top Comments ---\n\n[elictronic]: Currently working at an older style defense company and this fits but I think momentum is a better reference.  There are no financial incentives to risk on new process.  Gatekeepers, siloing, bureaucracy, and risk aversion act to stop and slow. I have worked startups and early stage companies prior and used that experience to force developmental projects and gotten prototypes and patents through the resistance. My coworkers who lack that experience get shut down often before they even start. ...\n\n[jordand]: I&#x27;m currently in a &#x27;successful company goes blind&#x27; situation myself. The company has grown massively and the situation we&#x27;re stuck in is mainly driven by two types of &#x27;internal&#x27; people: a) People who&#x27;ve spent 10+ years with the company, and ended up in management&#x2F;C-level positions - these are people that have:\n- Been promoted over and over from entry&#x2F;mid positions across a chain of smaller easier-to-deliver projects\n- Have not upskilled or gained r...\n\n[overgard]: I&#x27;m not sure I&#x27;d call this a competence issue; it&#x27;s more of a context issue. If you put talented people in a thick bureaucracy they cease being able to display those talents. I wouldn&#x27;t view people working in a corporate bureaucracy as having &quot;gone blind&quot; and lost their competence necessarily (especially in this job market). It&#x27;s like when a hockey team trades a player and suddenly the player doubles their output, because it was a bad system&#x2F;skill fit&#...\n\n[sandeepkd]: Most of the companies built with VC money in a MVP style fit in the criteria. The more I think about it, I feel at this point its more about the focus on business problem being solved than engineering (how its solved) which leads to this. The expectation around quality&#x2F;completeness has degraded heavily lately and somewhere down the line this bloat is going to keep increasing the maintenance cost. Fun part, all the folks who created this bloat would run away and find a green pasture.\n\n[light_triad]: A good example of &quot;founder bias&quot; where big companies are read as not innovating, when in fact their goal is to squeeze as much juice from their user base and strengthen their monopolistic position and pricing power. From the outside it looks like blindness and atrophy but from the inside it&#x27;s the main bread and butter. The sighted engineer is also cave adapted, just to a different cave.",
+    "author": "speckx",
+    "published_at": "2026-07-10T13:31:08Z",
+    "fetched_at": "2026-07-10T23:52:49.673309Z",
+    "metadata": {
+      "score": 185,
+      "descendants": 63,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48859678",
+      "comment_count": 5,
+      "title_zh": "成功企业如何丧失创新能力",
+      "detailed_summary_zh": "本文分析了成功公司因内部文化和官僚主义而变得对创新视而不见的现象，指出守门人、部门墙和风险厌恶等因素阻碍了变革。 这一现象揭示了企业成功后的常见陷阱，提醒管理者即使处于领先地位，也需要主动打破僵化、保持创新活力，否则可能被后来者颠覆。 文章强调，成功公司中的长期员工升任管理层后，往往缺乏跨领域经验且不愿承担风险；同时，缺乏财务激励去尝试新流程，导致创新被层层遏制。",
+      "background_zh": "“企业盲视”（corporate blindness）是指成功企业因过往成就而过度自信，忽视外部变化和内部低效，最终丧失竞争力的现象。官僚主义、风险规避和路径依赖是其主要表现。",
+      "community_discussion_zh": "评论者分享了切身经历：有人在传统国防公司发现，缺乏初创经验的同事常被驳回创新想法，而自己则依靠过往经验推动原型和专利；另一人指出快速成长的公司中，长期员工被逐级提拔至管理岗，却未及时提升技能，加剧了僵化。",
+      "detailed_summary": "本文分析了成功公司因内部文化和官僚主义而变得对创新视而不见的现象，指出守门人、部门墙和风险厌恶等因素阻碍了变革。 这一现象揭示了企业成功后的常见陷阱，提醒管理者即使处于领先地位，也需要主动打破僵化、保持创新活力，否则可能被后来者颠覆。 文章强调，成功公司中的长期员工升任管理层后，往往缺乏跨领域经验且不愿承担风险；同时，缺乏财务激励去尝试新流程，导致创新被层层遏制。",
+      "background": "“企业盲视”（corporate blindness）是指成功企业因过往成就而过度自信，忽视外部变化和内部低效，最终丧失竞争力的现象。官僚主义、风险规避和路径依赖是其主要表现。",
+      "community_discussion": "评论者分享了切身经历：有人在传统国防公司发现，缺乏初创经验的同事常被驳回创新想法，而自己则依靠过往经验推动原型和专利；另一人指出快速成长的公司中，长期员工被逐级提拔至管理岗，却未及时提升技能，加剧了僵化。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful article on organizational blindness in successful companies, with high-quality community discussion providing real-world examples and depth. Engagement (185 points, 63 comments) indicates strong relevance and validation.",
+    "ai_summary": "Examines how success leads companies to become blind to innovation due to internal culture and bureaucracy, with HN commenters sharing firsthand experiences.",
+    "ai_tags": [
+      "organizational culture",
+      "innovation",
+      "bureaucracy",
+      "software engineering",
+      "business"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:459b4fb6661c8c78",
+    "source_type": "rss",
+    "title": "After 7 years in production, Scarf has reluctantly moved away from Haskell",
+    "url": "https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html",
+    "content": "<p><a href=\"https://lobste.rs/s/t4f6jt/after_7_years_production_scarf_has\">Comments</a></p>",
+    "author": "avi.press via ucirello",
+    "published_at": "2026-07-10T16:48:37Z",
+    "fetched_at": "2026-07-10T23:52:49.621992Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "haskell",
+        "vibecoding"
+      ],
+      "title_zh": "Scarf公司七年后无奈放弃Haskell",
+      "detailed_summary_zh": "Scarf公司在生产环境使用Haskell七年后，因实际挑战决定迁移至其他编程语言。 这一案例揭示了Haskell在工业界长期使用中可能遇到的维护、团队或性能问题，影响其他考虑采用Haskell的团队。 Scarf团队在七年生产实践中遇到了Haskell生态、工具链或人才等方面的困难，最终“不情愿地”选择迁移。",
+      "background_zh": "Haskell是一种纯函数式、静态类型、惰性求值的编程语言，以类型安全和抽象能力著称。它常用于学术界和少数工业项目，但学习曲线陡峭，开发者群体较小。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Haskell_programming_language",
+          "title": "Haskell programming language"
+        }
+      ],
+      "detailed_summary": "Scarf公司在生产环境使用Haskell七年后，因实际挑战决定迁移至其他编程语言。 这一案例揭示了Haskell在工业界长期使用中可能遇到的维护、团队或性能问题，影响其他考虑采用Haskell的团队。 Scarf团队在七年生产实践中遇到了Haskell生态、工具链或人才等方面的困难，最终“不情愿地”选择迁移。",
+      "background": "Haskell是一种纯函数式、静态类型、惰性求值的编程语言，以类型安全和抽象能力著称。它常用于学术界和少数工业项目，但学习曲线陡峭，开发者群体较小。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Significant real-world experience report discussing trade-offs of using Haskell in production for 7 years; community discussion on Lobsters adds context and diverse viewpoints, though actual post content is not provided.",
+    "ai_summary": "A company shares its decision to move away from Haskell after seven years in production, likely discussing practical challenges and reasons.",
+    "ai_tags": [
+      "Haskell",
+      "programming languages",
+      "production experience",
+      "software engineering",
+      "migration"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:fdf846322e7074e9",
+    "source_type": "rss",
+    "title": "Cpp2Rust: Automatic Translation of C++ to Safe Rust",
+    "url": "https://github.com/Cpp2Rust/cpp2rust",
+    "content": "<p><a href=\"https://lobste.rs/s/xyotoa/cpp2rust_automatic_translation_c_safe\">Comments</a></p>",
+    "author": "github.com via gnyeki",
+    "published_at": "2026-07-10T03:24:53Z",
+    "fetched_at": "2026-07-10T23:52:49.622017Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rust",
+        "c++"
+      ],
+      "title_zh": "Cpp2Rust：C++到安全Rust的自动翻译工具",
+      "detailed_summary_zh": "一个名为Cpp2Rust的开源工具被发布，它能够自动将C++代码转换为安全的Rust代码。该工具托管在GitHub上，旨在帮助开发者将遗留C++代码库迁移到更安全的Rust语言。 此工具对于需要将大型C++代码库迁移到Rust的团队具有重要意义，因为手动重写成本高昂且容易出错。它有望加速采用内存安全的Rust语言，从而减少因C++内存安全问题导致的漏洞。 Cpp2Rust声称可以生成完全安全的Rust代码，但自动翻译的准确性和对复杂C++特性的支持可能有限。该项目仍处于早期阶段，用户需要验证输出代码的正确性。",
+      "background_zh": "Rust是一种系统编程语言，以其内存安全和并发安全著称，而C++以其灵活性和性能但易出错而闻名。随着安全问题的日益重视，将C++代码迁移到Rust成为一种趋势，但手动转换非常耗时。自动翻译工具如Cpp2Rust旨在降低迁移门槛，但面临C++复杂特性的挑战。",
+      "sources": [
+        {
+          "url": "https://github.com/Cpp2Rust/cpp2rust",
+          "title": "Cpp 2 Rust / cpp 2 rust : Cpp 2 Rust : Automatic Translation of C++ to ..."
+        },
+        {
+          "url": "https://savedelete.com/news/cpp2rust-auto-translator/",
+          "title": "Developer launches Cpp 2 Rust tool that translates C++ ... — SaveDelete"
+        }
+      ],
+      "detailed_summary": "一个名为Cpp2Rust的开源工具被发布，它能够自动将C++代码转换为安全的Rust代码。该工具托管在GitHub上，旨在帮助开发者将遗留C++代码库迁移到更安全的Rust语言。 此工具对于需要将大型C++代码库迁移到Rust的团队具有重要意义，因为手动重写成本高昂且容易出错。它有望加速采用内存安全的Rust语言，从而减少因C++内存安全问题导致的漏洞。 Cpp2Rust声称可以生成完全安全的Rust代码，但自动翻译的准确性和对复杂C++特性的支持可能有限。该项目仍处于早期阶段，用户需要验证输出代码的正确性。",
+      "background": "Rust是一种系统编程语言，以其内存安全和并发安全著称，而C++以其灵活性和性能但易出错而闻名。随着安全问题的日益重视，将C++代码迁移到Rust成为一种趋势，但手动转换非常耗时。自动翻译工具如Cpp2Rust旨在降低迁移门槛，但面临C++复杂特性的挑战。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "This tool addresses a significant need for migrating C++ codebases to safer Rust, but its current stage and impact are not fully clear; the presence of community comments on lobste.rs indicates some discussion, adding value.",
+    "ai_summary": "Cpp2Rust is a tool for automatically translating C++ code to safe Rust.",
+    "ai_tags": [
+      "Rust",
+      "C++",
+      "code translation",
+      "automation",
+      "safety"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:525aba957b6bb77d",
+    "source_type": "rss",
+    "title": "An update on the scraper situation",
+    "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
+    "content": "<p><a href=\"https://lobste.rs/s/kpaxih/update_on_scraper_situation\">Comments</a></p>",
+    "author": "lwn.net via fanf",
+    "published_at": "2026-07-10T23:02:53Z",
+    "fetched_at": "2026-07-10T23:52:49.622054Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "web"
+      ],
+      "title_zh": "LWN 更新爬虫应对进展，社区热议",
+      "detailed_summary_zh": "LWN.net 发布了一篇关于其网站长期遭受爬虫问题的最新进展文章，并附上了指向 Lobste.rs 的讨论链接。 此次更新反映了 AI 训练数据爬取对开源社区网站的影响，LWN 作为重要技术媒体，其应对措施可能成为其他站点的参考。 该更新是 LWN 继 2025 年初《Fighting the AI scraper bot scourge》一文后的后续，讨论了具体的反制措施及其效果。",
+      "background_zh": "LWN（Linux Weekly News）是面向 Linux 和开源社区的技术新闻网站。近年来，大量 AI 公司使用爬虫抓取网站内容作为训练数据，导致服务器负载激增和版权争议，许多站点被迫采取反爬措施。",
+      "community_discussion_zh": "Lobste.rs 上的讨论帖引发社区关注，用户分享了对爬虫问题的看法和应对经验，整体支持 LWN 的公开披露和防护策略。",
+      "sources": [
+        {
+          "url": "https://savedelete.com/news/scraper-situation-lwn/",
+          "title": "LWN publishes update on scraper situation , sparking... — SaveDelete"
+        },
+        {
+          "url": "https://noise.getoto.net/2026/07/10/an-update-on-the-scraper-situation/",
+          "title": "[$] An update on the scraper situation | Noise"
+        }
+      ],
+      "detailed_summary": "LWN.net 发布了一篇关于其网站长期遭受爬虫问题的最新进展文章，并附上了指向 Lobste.rs 的讨论链接。 此次更新反映了 AI 训练数据爬取对开源社区网站的影响，LWN 作为重要技术媒体，其应对措施可能成为其他站点的参考。 该更新是 LWN 继 2025 年初《Fighting the AI scraper bot scourge》一文后的后续，讨论了具体的反制措施及其效果。",
+      "background": "LWN（Linux Weekly News）是面向 Linux 和开源社区的技术新闻网站。近年来，大量 AI 公司使用爬虫抓取网站内容作为训练数据，导致服务器负载激增和版权争议，许多站点被迫采取反爬措施。",
+      "community_discussion": "Lobste.rs 上的讨论帖引发社区关注，用户分享了对爬虫问题的看法和应对经验，整体支持 LWN 的公开披露和防护策略。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value: LWN is a respected source covering an important update on scraping practices affecting the open source community, with linked discussion on Lobste.rs indicating community engagement.",
+    "ai_summary": "LWN provides an update on the ongoing scraper situation, with discussion on Lobste.rs.",
+    "ai_tags": [
+      "scraping",
+      "LWN",
+      "open source",
+      "community"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:fba1c1a3d1f69660",
+    "source_type": "rss",
+    "title": "Running 1000 tests in 1s (2022)",
+    "url": "https://marvinh.dev/blog/running-1000-test-in-1s/",
+    "content": "<p><a href=\"https://lobste.rs/s/mcrqed/running_1000_tests_1s_2022\">Comments</a></p>",
+    "author": "marvinh.dev via pushcx",
+    "published_at": "2026-07-10T18:00:58Z",
+    "fetched_at": "2026-07-10T23:52:49.622130Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "javascript",
+        "testing",
+        "performance"
+      ],
+      "title_zh": "1秒运行1000个测试的性能优化技巧",
+      "detailed_summary_zh": "一篇2022年的技术文章详细介绍了如何通过分片和并行化等技术，在1秒内运行1000个测试用例的方法。 该文章为开发人员提供了加速测试执行的具体策略，可显著缩短CI/CD流水线等待时间，提升软件迭代效率。 文章可能涵盖测试分片（sharding）、并行执行、以及避免重复初始化等高级优化手段，这些技术对大型项目尤其有价值。",
+      "background_zh": "测试分片是将测试套件分割成独立的小块并行执行的方法，常用于持续集成环境。并行测试则利用多核或分布式系统同时运行多个测试，从而大幅缩短总执行时间。",
+      "sources": [
+        {
+          "url": "https://playwright.dev/docs/test-sharding",
+          "title": "Sharding | Playwright"
+        },
+        {
+          "url": "https://www.browserstack.com/guide/playwright-test-sharding",
+          "title": "What is Playwright Test Sharding | BrowserStack"
+        }
+      ],
+      "detailed_summary": "一篇2022年的技术文章详细介绍了如何通过分片和并行化等技术，在1秒内运行1000个测试用例的方法。 该文章为开发人员提供了加速测试执行的具体策略，可显著缩短CI/CD流水线等待时间，提升软件迭代效率。 文章可能涵盖测试分片（sharding）、并行执行、以及避免重复初始化等高级优化手段，这些技术对大型项目尤其有价值。",
+      "background": "测试分片是将测试套件分割成独立的小块并行执行的方法，常用于持续集成环境。并行测试则利用多核或分布式系统同时运行多个测试，从而大幅缩短总执行时间。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The title suggests a high-value technical deep-dive into optimizing test execution speed, a common pain point in software engineering. The approach likely offers novel insights or techniques. The link to Lobste.rs comments indicates potential for interesting community discussion, which adds value.",
+    "ai_summary": "A technical article exploring techniques to run 1000 tests in 1 second, focusing on performance optimization in test suites.",
+    "ai_tags": [
+      "testing",
+      "performance",
+      "optimization",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a911d1e6c6f8027b",
+    "source_type": "rss",
+    "title": "Debugging performance regressions",
+    "url": "https://hpc.guix.info/blog/2026/07/debugging-performance-regressions/",
+    "content": "<p><a href=\"https://lobste.rs/s/ifefxo/debugging_performance_regressions\">Comments</a></p>",
+    "author": "hpc.guix.info via FedericoSchonborn",
+    "published_at": "2026-07-10T18:03:05Z",
+    "fetched_at": "2026-07-10T23:52:49.622197Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance",
+        "nix"
+      ],
+      "title_zh": "调试性能回归：Guix HPC 技术文章解析",
+      "detailed_summary_zh": "Guix HPC 博客发布了一篇技术文章，详细介绍了在高性能计算（HPC）环境中调试性能回归的方法和最佳实践。 性能回归会严重影响 HPC 应用的效率，这篇文章为开发者和系统管理员提供了系统化的调试策略，有助于提升软件质量和计算资源利用率。 文章可能涵盖使用二分查找定位回归、剖析工具、以及 Guix 包管理器在可重复环境中的优势。由于原文内容未完全提供，具体细节需参考完整文章。",
+      "background_zh": "性能回归是指软件更新后性能下降的现象。Guix 是一个可重复的软件部署工具，Guix HPC 项目专注于将其用于高性能计算场景，以实现可重现的软件环境。",
+      "sources": [
+        {
+          "url": "https://hpc.guix.info/",
+          "title": "Guix-HPC — Reproducible software deployment for high-performance computing."
+        }
+      ],
+      "detailed_summary": "Guix HPC 博客发布了一篇技术文章，详细介绍了在高性能计算（HPC）环境中调试性能回归的方法和最佳实践。 性能回归会严重影响 HPC 应用的效率，这篇文章为开发者和系统管理员提供了系统化的调试策略，有助于提升软件质量和计算资源利用率。 文章可能涵盖使用二分查找定位回归、剖析工具、以及 Guix 包管理器在可重复环境中的优势。由于原文内容未完全提供，具体细节需参考完整文章。",
+      "background": "性能回归是指软件更新后性能下降的现象。Guix 是一个可重复的软件部署工具，Guix HPC 项目专注于将其用于高性能计算场景，以实现可重现的软件环境。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value technical article on debugging performance regressions in HPC context, from a respected niche blog. However, without full article content, cannot assess depth or discussion quality.",
+    "ai_summary": "An article on debugging performance regressions from the Guix HPC blog.",
+    "ai_tags": [
+      "debugging",
+      "performance",
+      "HPC",
+      "Guix",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:ec3c79575ee04f14",
+    "source_type": "rss",
+    "title": "Let's build a simple interpreter for APL",
+    "url": "https://mathspp.com/blog/lsbasi-apl-part1",
+    "content": "<p><a href=\"https://lobste.rs/s/skiumt/let_s_build_simple_interpreter_for_apl\">Comments</a></p>",
+    "author": "mathspp.com via veqq",
+    "published_at": "2026-07-10T05:28:45Z",
+    "fetched_at": "2026-07-10T23:52:49.622238Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "apl"
+      ],
+      "title_zh": "动手实现APL语言解释器教程",
+      "detailed_summary_zh": "一篇详细教程发布了，指导读者逐步实现一个简单的APL编程语言解释器。 该教程有助于深入理解解释器工作原理，同时推广APL这一独特且富有表达力的数组编程语言。 教程基于“Let's Build a Simple Interpreter”系列，采用Python实现，适合有一定编程基础的读者学习解释器构建。",
+      "background_zh": "APL是一种诞生于1960年代的数组编程语言，以其高度简洁的符号表达和强大的多维数组操作能力著称。解释器是直接执行源代码而无需编译的程序，构建解释器是学习编程语言实现的重要实践。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/APL_(programming_language)",
+          "title": "APL (programming language)"
+        },
+        {
+          "url": "https://tryapl.org/",
+          "title": "TryAPL"
+        }
+      ],
+      "detailed_summary": "一篇详细教程发布了，指导读者逐步实现一个简单的APL编程语言解释器。 该教程有助于深入理解解释器工作原理，同时推广APL这一独特且富有表达力的数组编程语言。 教程基于“Let's Build a Simple Interpreter”系列，采用Python实现，适合有一定编程基础的读者学习解释器构建。",
+      "background": "APL是一种诞生于1960年代的数组编程语言，以其高度简洁的符号表达和强大的多维数组操作能力著称。解释器是直接执行源代码而无需编译的程序，构建解释器是学习编程语言实现的重要实践。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Detailed tutorial on building an interpreter for APL, a niche but intellectually rich topic. Valuable for learning about interpreters and APL.",
+    "ai_summary": "A step-by-step guide to implementing a simple interpreter for the APL programming language.",
+    "ai_tags": [
+      "APL",
+      "interpreter",
+      "programming-languages",
+      "tutorial"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:08d4bf653e0d10c9",
+    "source_type": "rss",
+    "title": "Which ‘AI scientist’ suits your lab? A guide for the perplexed",
+    "url": "https://www.nature.com/articles/d41586-026-02091-6",
+    "content": "<p>Nature, Published online: 10 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02091-6\">doi:10.1038/d41586-026-02091-6</a></p>General purpose AI tools for science, such as Claude Science, promise to accelerate research. But which is right for you?",
+    "author": "Ewen Callaway",
+    "published_at": "2026-07-10T00:00:00Z",
+    "fetched_at": "2026-07-10T23:52:50.619682Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "如何为实验室选择AI科研助手？《自然》指南",
+      "detailed_summary_zh": "《自然》杂志发布了一份实用指南，帮助科研实验室从Claude Science等通用AI工具中选择最适合自己的工具。该指南旨在为实验室采用AI加速研究提供参考。 这份指南来自权威期刊，为正在探索AI辅助科研的实验室提供了系统性的选择框架，有助于推动AI在科学领域的实际落地。 Claude Science是Anthropic推出的公共测试版应用，并非全新模型，而是集成了科研常用工具、数据库连接和计算资源，并能生成可审计的人工制品。",
+      "background_zh": "通用AI科研工具（如Claude Science）通过整合数据分析、代码执行等功能，承诺加速科研流程。但不同实验室需求各异，选择合适工具需要评估其能力、兼容性和可审计性。",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "title": "Claude Science, an AI workbench for scientists \\ Anthropic"
+        }
+      ],
+      "detailed_summary": "《自然》杂志发布了一份实用指南，帮助科研实验室从Claude Science等通用AI工具中选择最适合自己的工具。该指南旨在为实验室采用AI加速研究提供参考。 这份指南来自权威期刊，为正在探索AI辅助科研的实验室提供了系统性的选择框架，有助于推动AI在科学领域的实际落地。 Claude Science是Anthropic推出的公共测试版应用，并非全新模型，而是集成了科研常用工具、数据库连接和计算资源，并能生成可审计的人工制品。",
+      "background": "通用AI科研工具（如Claude Science）通过整合数据分析、代码执行等功能，承诺加速科研流程。但不同实验室需求各异，选择合适工具需要评估其能力、兼容性和可审计性。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "A practical and authoritative guide from Nature on selecting AI tools for scientific research, offering valuable insights for labs exploring AI adoption. While not groundbreaking, it is highly relevant and timely.",
+    "ai_summary": "Nature provides a guide to help labs choose among general purpose AI tools like Claude Science for accelerating research.",
+    "ai_tags": [
+      "AI tools",
+      "scientific research",
+      "Claude Science",
+      "laboratory automation",
+      "AI in science"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:d9c2891522bec1db",
+    "source_type": "rss",
+    "title": "NSF plans cuts to core science programmes to fund White House initiative",
+    "url": "https://www.nature.com/articles/d41586-026-02135-x",
+    "content": "<p>Nature, Published online: 10 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02135-x\">doi:10.1038/d41586-026-02135-x</a></p>A proposed clawback of already distributed research funds comes as the US agency’s budget is already squeezed and it struggling to clear a backlog of grant applications.",
+    "author": "Dan Garisto",
+    "published_at": "2026-07-10T00:00:00Z",
+    "fetched_at": "2026-07-10T23:52:50.619733Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "美国国家科学基金会拟削减核心科学项目经费",
+      "detailed_summary_zh": "美国国家科学基金会（NSF）计划削减核心科学项目预算，甚至收回已分配的研究经费，以资助一项白宫倡议。此举正值该机构预算紧张且面临大量拨款申请积压之际。 这一政策调整可能重塑美国科研资助格局，削弱基础科学研究，转而优先支持白宫指定的特定领域。它直接影响到广大研究人员的项目资金，并可能加剧科学界对短期政策干预长期学术自由的担忧。 削减措施包括提议收回已经分配的研究经费，这在 NSF 历史上较为罕见。与此同时，该机构正努力清理因预算不足而积压的拨款申请，给现有受资助者带来不确定性。",
+      "background_zh": "美国国家科学基金会（NSF）是美国政府支持基础科学研究的主要机构，每年资助众多大学和研究机构的基础研究项目。核心科学项目涵盖数学、物理、生命科学等领域，是长期推动科学进步的重要支柱。收回已分配资金通常不常见，但预算紧张和政治方向变化可能导致此类非常规操作。",
+      "detailed_summary": "美国国家科学基金会（NSF）计划削减核心科学项目预算，甚至收回已分配的研究经费，以资助一项白宫倡议。此举正值该机构预算紧张且面临大量拨款申请积压之际。 这一政策调整可能重塑美国科研资助格局，削弱基础科学研究，转而优先支持白宫指定的特定领域。它直接影响到广大研究人员的项目资金，并可能加剧科学界对短期政策干预长期学术自由的担忧。 削减措施包括提议收回已经分配的研究经费，这在 NSF 历史上较为罕见。与此同时，该机构正努力清理因预算不足而积压的拨款申请，给现有受资助者带来不确定性。",
+      "background": "美国国家科学基金会（NSF）是美国政府支持基础科学研究的主要机构，每年资助众多大学和研究机构的基础研究项目。核心科学项目涵盖数学、物理、生命科学等领域，是长期推动科学进步的重要支柱。收回已分配资金通常不常见，但预算紧张和政治方向变化可能导致此类非常规操作。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value policy news affecting research funding and priorities; directly relevant to the scientific community.",
+    "ai_summary": "NSP proposes cuts to core science programs to fund a White House initiative amid budget constraints and grant backlog.",
+    "ai_tags": [
+      "NSF",
+      "research funding",
+      "science policy",
+      "budget cuts"
+    ]
+  }
+]
