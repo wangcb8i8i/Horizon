@@ -1,0 +1,597 @@
+[
+  {
+    "id": "hackernews:story:48884853",
+    "source_type": "hackernews",
+    "title": "Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS",
+    "url": "https://scrapfly.dev/posts/browser-math-os-fingerprint/",
+    "content": "\n--- Top Comments ---\n\n[Aurornis]: &gt; One tanh call on the right input is a per-OS signature. Claim macOS, return Linux math bits, and you have contradicted your own User-Agent. They (or rather the LLM that wrote this) missed that this is possibly fingerprintable to browser version range, which is slightly more interesting. Most users aren&#x27;t spoofing their user agent headers to be a different operating system. Most fingerprinting solutions aren&#x27;t trying to infer your operating system, they only care about semi-uniq...\n\n[jeroenhd]: Kind of a smart move by this company: write up an AI analysis of all fingerprinting techniques in hopes they get fixed after outrage so their scraping company can make more money. If it weren&#x27;t for companies like this, fingerprinting wouldn&#x27;t be so ubiquitous and the internet would be a better place in general. I prefer articles like this coming from the other side of the battle (fingerprint.js and friends) because at least their motives are clear.\n\n[sjrd]: I guess that&#x27;s one more good reason to push for correctly rounded transcendental functions. I recently learned that they&#x27;re basically solved now. [1] [1]  https:&#x2F;&#x2F;arith2026.org&#x2F;program.html  (2nd keynote)\n\n[omoikane]: I hope this eventually ends up in  https:&#x2F;&#x2F;coveryourtracks.eff.org&#x2F;  so I can see how unique my math functions are relative to a larger population.\n\n[Retr0id]: Thanks for the writeup, claude",
+    "author": "joahnn_s",
+    "published_at": "2026-07-12T21:12:11Z",
+    "fetched_at": "2026-07-12T23:44:42.523989Z",
+    "metadata": {
+      "score": 209,
+      "descendants": 99,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48884853",
+      "comment_count": 5,
+      "title_zh": "Chromium 148中Math.tanh可被用于操作系统指纹识别",
+      "detailed_summary_zh": "Chromium 148的Math.tanh函数实现依赖于底层操作系统，不同OS返回不同结果，从而可以被用于浏览器指纹识别，识别用户所使用的操作系统。 这是一个新的浏览器指纹识别向量，能绕过传统的用户代理检测，进一步威胁用户隐私。它表明即使是浏览器内置的JavaScript数学函数也可能成为追踪手段，需要浏览器厂商和隐私工具重视并采取对策。 V8引擎对大多数数学函数使用自带的llvm-libc库，但Math.tanh直接调用宿主操作系统的数学库（如macOS的libsystem_m、Linux的glibc、Windows的UCRT），导致结果出现系统间差异。此外，CSS三角函数和Web Audio的FFT实现也同样存在操作系统依赖性。",
+      "background_zh": "浏览器指纹识别是通过收集浏览器版本、屏幕分辨率、已安装字体、时区等特征来唯一标识用户的技术，常用于广告追踪和反欺诈。JavaScript的Math函数精度在标准中定义为“实现相关”，因此不同浏览器、不同操作系统上的相同计算可能产生微小差异，这为指纹识别提供了可能。",
+      "community_discussion_zh": "社区讨论指出，该技术可能更有效地识别浏览器版本范围而非仅操作系统，但大多数用户不会伪造用户代理，因此实用性有限。有观点认为这篇文章是Scrapfly公司利用AI分析指纹技术以推广其反爬服务；也有评论呼吁推动正确舍入的数学函数来消除此类指纹差异。",
+      "sources": [
+        {
+          "url": "https://scrapfly.dev/posts/browser-math-os-fingerprint/",
+          "title": "Your Browser Does Math Differently on Every OS, and Anti-Bot Systems Read the Bits · scrapfly.dev"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=48884853",
+          "title": "Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS | Hacker News"
+        },
+        {
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math",
+          "title": "Math - JavaScript - MDN Web Docs"
+        }
+      ],
+      "detailed_summary": "Chromium 148的Math.tanh函数实现依赖于底层操作系统，不同OS返回不同结果，从而可以被用于浏览器指纹识别，识别用户所使用的操作系统。 这是一个新的浏览器指纹识别向量，能绕过传统的用户代理检测，进一步威胁用户隐私。它表明即使是浏览器内置的JavaScript数学函数也可能成为追踪手段，需要浏览器厂商和隐私工具重视并采取对策。 V8引擎对大多数数学函数使用自带的llvm-libc库，但Math.tanh直接调用宿主操作系统的数学库（如macOS的libsystem_m、Linux的glibc、Windows的UCRT），导致结果出现系统间差异。此外，CSS三角函数和Web Audio的FFT实现也同样存在操作系统依赖性。",
+      "background": "浏览器指纹识别是通过收集浏览器版本、屏幕分辨率、已安装字体、时区等特征来唯一标识用户的技术，常用于广告追踪和反欺诈。JavaScript的Math函数精度在标准中定义为“实现相关”，因此不同浏览器、不同操作系统上的相同计算可能产生微小差异，这为指纹识别提供了可能。",
+      "community_discussion": "社区讨论指出，该技术可能更有效地识别浏览器版本范围而非仅操作系统，但大多数用户不会伪造用户代理，因此实用性有限。有观点认为这篇文章是Scrapfly公司利用AI分析指纹技术以推广其反爬服务；也有评论呼吁推动正确舍入的数学函数来消除此类指纹差异。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value discovery of a new browser fingerprinting vector using Math.tanh, with strong community discussion (99 comments, 209 points) highlighting implications and limitations, including calls for correctly rounded math functions. While not a full paradigm shift, it directly impacts browser privacy and security.",
+    "ai_summary": "Chromium 148's Math.tanh implementation is OS-dependent, enabling fingerprinting across platforms.",
+    "ai_tags": [
+      "fingerprinting",
+      "browser security",
+      "privacy",
+      "JavaScript",
+      "Chromium"
+    ]
+  },
+  {
+    "id": "hackernews:story:48883275",
+    "source_type": "hackernews",
+    "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+    "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "content": "This started based off of a hunch. We usually use OpenCode, but were &#x27;forced&#x27; to use Claude Code for a while due to issues with Meridian. In that time, we saw the usage meter rise much, much more quickly than when using OpenCode.<p>This was the initial anecdotal evidence, but we undertook this small study to collect empirical data:<p>We added logging between the agentic coding tool (Claude Code and OpenCode) and Anthropic&#x27;s endpoint, and captured all requests (and the returned usage blocks).<p>With one caveat (toward the end of the post) we found unambiguously that Claude Code was far more inefficient in terms of its cache strategy and its harness token usage than OpenCode.\n\n\n--- Top Comments ---\n\n[mcv]: What really burns tokens is sub agents. I once gave Claude Code a pretty big task, and it immediately launched 7 sub agents which burned through my budget before even one of them was finished. Tried again 5 hours later: same result. If I let the main agent do the same task sequentially, it was no problem at all. I don&#x27;t know if it&#x27;s really just communication and orchestration that makes sub agents so inefficient, or if Anthropic figured that most people using sub agents pay per toke...\n\n[korrectional]: My opinion is that claude code uses more tokens simply because Anthropic makes more money that way and forces people into their subscriptions. This is supported by the fact that they won&#x27;t let you use your sub on a different coding agent. I use pi btw.\n\n[GodelNumbering]: It is not the raw prompt size that matters ultimately, otherwise Pi (and variants) would be the lowest costing agents. What matters is how efficient the prompt it. Prompt minimalism often gets conflated with efficiency. Having said that, CC does seem bloated for what it does. What matters even more is tooling quality. Bad&#x2F;buggy tooling causes a lot more roundtrips that wipes out all gains from initial greedy approach. A few months ago, I did a full benchmark run of 7 agents over 8 tasks ...\n\n[systima]: UPDATE: After reading PUSH_AX&#x27;s valid comment:\n```\nThis is like saying contractor (A) asked for $33,000 to undertake the work and contractor (B) asked for $7,000\nAre we measuring and caring about the right thing?\n```\nWe will update the post to include: 1) A more in-depth task.\n2) Qualitative results comparison.\n3) As soon as possible, a reproduction of the inputs and outputs.\n\n[jakozaur]: This isn’t limited to large system prompts. Coding-agent harnesses are also becoming more aggressive about using tools, even for trivial requests. In our tests, prompts such as “Hey” or “commit” sometimes triggered 30+ tool calls:  https:&#x2F;&#x2F;quesma.com&#x2F;blog&#x2F;the-true-cost-of-saying-hi-to-an-ai-...  Tokenflation seems very real: the number of tokens consumed by simple tasks keeps increasing.",
+    "author": "systima",
+    "published_at": "2026-07-12T18:25:51Z",
+    "fetched_at": "2026-07-12T23:44:42.524059Z",
+    "metadata": {
+      "score": 412,
+      "descendants": 230,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48883275",
+      "comment_count": 5,
+      "title_zh": "研究显示Claude Code token开销远高于OpenCode",
+      "detailed_summary_zh": "一项实证研究发现，Claude Code每次请求平均发送约33,000个token，而OpenCode仅发送约7,000个token，表明Claude Code的系统提示和缓存策略导致更高的token消耗。 token开销直接影响使用成本，对于依赖API调用的大规模开发团队，这一差距可能导致显著的费用差异，并促使开发者重新评估编码代理的效率和经济性。 研究者在Claude Code和OpenCode与Anthropic端点之间添加日志记录，捕获所有请求和返回的usage块，排除了特殊情况的干扰后，确认Claude Code因更大的系统提示和低效的缓存策略而消耗更多token。",
+      "background_zh": "Claude Code是Anthropic推出的终端编码代理工具，能够理解代码库、编辑文件并运行命令。OpenCode是一个开源编码代理，支持在终端、IDE或桌面使用。两者都连接Anthropic的语言模型，但架构和优化策略不同，导致token使用效率差异。",
+      "community_discussion_zh": "社区评论中，有人指出子代理（sub agents）会大量消耗token，而Claude Code的缓存策略可能被设计为增加用量以鼓励订阅；另一些人强调，除了初始提示大小，工具质量和减少往返调用同样重要，单纯比较token数量可能不够全面。",
+      "sources": [
+        {
+          "url": "https://claude.com/product/claude-code",
+          "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
+        },
+        {
+          "url": "https://www.anthropic.com/claude-code?ref=contraption.co",
+          "title": "Claude Code : Deep Coding at Terminal Velocity \\ Anthropic"
+        }
+      ],
+      "detailed_summary": "一项实证研究发现，Claude Code每次请求平均发送约33,000个token，而OpenCode仅发送约7,000个token，表明Claude Code的系统提示和缓存策略导致更高的token消耗。 token开销直接影响使用成本，对于依赖API调用的大规模开发团队，这一差距可能导致显著的费用差异，并促使开发者重新评估编码代理的效率和经济性。 研究者在Claude Code和OpenCode与Anthropic端点之间添加日志记录，捕获所有请求和返回的usage块，排除了特殊情况的干扰后，确认Claude Code因更大的系统提示和低效的缓存策略而消耗更多token。",
+      "background": "Claude Code是Anthropic推出的终端编码代理工具，能够理解代码库、编辑文件并运行命令。OpenCode是一个开源编码代理，支持在终端、IDE或桌面使用。两者都连接Anthropic的语言模型，但架构和优化策略不同，导致token使用效率差异。",
+      "community_discussion": "社区评论中，有人指出子代理（sub agents）会大量消耗token，而Claude Code的缓存策略可能被设计为增加用量以鼓励订阅；另一些人强调，除了初始提示大小，工具质量和减少往返调用同样重要，单纯比较token数量可能不够全面。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement and substantive community discussion, including methodological critiques and deeper insights about agent efficiency, validate the importance of this empirical token overhead comparison between Claude Code and OpenCode.",
+    "ai_summary": "Empirical study shows Claude Code sends significantly more tokens per request than OpenCode due to larger system prompts and cache strategy.",
+    "ai_tags": [
+      "AI agents",
+      "token usage",
+      "Claude Code",
+      "OpenCode",
+      "cost efficiency"
+    ]
+  },
+  {
+    "id": "hackernews:story:48880170",
+    "source_type": "hackernews",
+    "title": "Old and new apps, via modern coding agents",
+    "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+    "content": "\n--- Top Comments ---\n\n[recursivedoubts]: Building visualizations with LLMs has been a major boost for my CS classes:  https:&#x2F;&#x2F;htmx.org&#x2F;essays&#x2F;universities-and-ai&#x2F;#demos-visualiza...  Many visualizations that I have always wanted but just didn&#x27;t have the time to build, I now have. To give an example, I wanted a simplified 8-bit computer to complement the 16-bit teaching computer I use and designed this in a few days with the help of claude:  https:&#x2F;&#x2F;bdp.cs.montana.edu&#x2F;\n\n[luciana1u]: Terry Tao using coding agents to build apps means we&#x27;re one step away from a Fields Medalist asking an LLM why his Docker container won&#x27;t start, just like the rest of us.\n\n[semiquaver]: There is infinite latent demand for software, most especially  outside  the traditionally software-focused spaces. If LLMs stopped improving today it would take us 10 years to catch up to the new software-writing abilities that have become available. This is a great illustration of that fact.\n\n[wffurr]: Nice balanced perspective there at the end: &quot;as such [LLM-coded interactive] supplements are not mission-critical to the core of the paper, I again feel that the downside risk of using guided interaction with LLM agents to generate such visualizations is acceptable.&quot; It&#x27;s a tool. Good for some things but not others and generally not to be trusted.\n\n[luciana1u]: Terry Tao using coding agents feels like watching a Michelin-starred chef discover microwave dinners and get genuinely excited about them.",
+    "author": "subset",
+    "published_at": "2026-07-12T11:09:42Z",
+    "fetched_at": "2026-07-12T23:44:42.524111Z",
+    "metadata": {
+      "score": 395,
+      "descendants": 111,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48880170",
+      "comment_count": 5,
+      "title_zh": "陶哲轩谈用LLM编码代理构建应用",
+      "detailed_summary_zh": "著名数学家陶哲轩在博客中分享了他使用基于LLM的编码代理（如Claude）制作数据可视化和交互式应用的经验，并讨论了这类工具的潜力和局限性。 这展示了LLM编码代理正在降低软件创建的门槛，使非专业程序员也能快速构建定制化工具，可能对教育、科研和日常工作产生深远影响。 陶哲轩指出，LLM生成的代码适合作为论文补充的非关键部分，但不宜用于核心任务；他同时强调，用户仍需具备一定的审查能力以规避风险。",
+      "background_zh": "LLM编码代理是一种结合大语言模型生成能力与迭代调试的自动化开发工具，它通过编译、运行反馈不断改进代码。这类工具近年因“氛围编程”（Vibe Coding）概念而流行，允许用户用自然语言描述需求并快速获得可运行程序。",
+      "community_discussion_zh": "社区评论整体积极，认为LLM编码代理显著提升了教学效率（如快速生成8位计算机模拟器）和软件开发普及度。也有调侃称“菲尔兹奖得主也开始像普通人一样向LLM求助”，同时认可平衡视角：这是有用的工具，但需要谨慎对待其输出。",
+      "sources": [
+        {
+          "url": "https://www.emergentmind.com/topics/llm-based-coding-agents",
+          "title": "LLM - Based Coding Agents"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2510.12399",
+          "title": "A Survey of Vibe Coding with Large Language Models"
+        }
+      ],
+      "detailed_summary": "著名数学家陶哲轩在博客中分享了他使用基于LLM的编码代理（如Claude）制作数据可视化和交互式应用的经验，并讨论了这类工具的潜力和局限性。 这展示了LLM编码代理正在降低软件创建的门槛，使非专业程序员也能快速构建定制化工具，可能对教育、科研和日常工作产生深远影响。 陶哲轩指出，LLM生成的代码适合作为论文补充的非关键部分，但不宜用于核心任务；他同时强调，用户仍需具备一定的审查能力以规避风险。",
+      "background": "LLM编码代理是一种结合大语言模型生成能力与迭代调试的自动化开发工具，它通过编译、运行反馈不断改进代码。这类工具近年因“氛围编程”（Vibe Coding）概念而流行，允许用户用自然语言描述需求并快速获得可运行程序。",
+      "community_discussion": "社区评论整体积极，认为LLM编码代理显著提升了教学效率（如快速生成8位计算机模拟器）和软件开发普及度。也有调侃称“菲尔兹奖得主也开始像普通人一样向LLM求助”，同时认可平衡视角：这是有用的工具，但需要谨慎对待其输出。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (395 points, 111 comments) with insightful discussion featuring a renowned mathematician. Community comments add depth, debating the role of LLMs in software creation and teaching. The balanced perspective and practical examples make it valuable, though the concept of coding agents is not entirely new.",
+    "ai_summary": "Terry Tao discusses using LLM-based coding agents to build visualizations and apps, highlighting both potential and limitations.",
+    "ai_tags": [
+      "AI",
+      "coding agents",
+      "LLMs",
+      "software development",
+      "education"
+    ]
+  },
+  {
+    "id": "hackernews:story:48884322",
+    "source_type": "hackernews",
+    "title": "Irish datacenters now guzzle 23% of the country's electricity",
+    "url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+    "content": "\n--- Top Comments ---\n\n[cadamsdotcom]: Just to be contrarian: what we&#x27;re talking about is &quot;electricity use from economic activity&quot;. This should be good for Ireland but they&#x27;ll need to build energy capacity to keep up. It&#x27;s misplaced to be angry about datacenters themselves. There IS value being created, or people wouldn&#x27;t use the tools. Construction creates jobs, manufacturing the machines in the buildings is a huge global industry; the value people gain in their work and play is considered worthwhile...\n\n[Waterluvian]: How do the data center people protect their expensive data center from colossal rate hikes? They can’t just pick up and move. So has Ireland made an agreement with them in some way?\n\n[mrtksn]: Isn&#x27;t this a similar issue of doctors raised by taxpayers money doing hair transplant and cosmetic surgeries instead of working in much less profitable hospitals with sick people or European scientists and engineers risen by public education working in American tech companies or super rich people from all over the world buying all the homes in London which is valuable not because of its resources but because of the people there and now causing housing problems? They all have the same iss...\n\n[pizzafeelsright]: That is about 3% of California&#x27;s total energy usage Or about 11,000 GWh which is about 4% of California which means without the theatrics: California has 4x more data centers than Ireland. California: ~810 watts per person.\n(278,000 GWh &#x2F; 39.4 million people) Ireland: ~690 watts per person.\n(32,000 GWh &#x2F; 5.3 million people) We have air conditioning and that may be why we use more POWAH\n\n[hudo]: And got electricity price hike last year, and now few weeks ago again, from ~25c kwh, to around 35c kwh! They say its reliance on fossil fuels.\nNot just that, think Ireland has one of the most expensive broadbands in the EU!",
+    "author": "Bender",
+    "published_at": "2026-07-12T20:16:12Z",
+    "fetched_at": "2026-07-12T23:44:42.524135Z",
+    "metadata": {
+      "score": 183,
+      "descendants": 137,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48884322",
+      "comment_count": 5,
+      "title_zh": "爱尔兰数据中心耗电占全国23%",
+      "detailed_summary_zh": "最新数据显示，爱尔兰的数据中心现消耗该国约23%的电力，这一比例较往年显著上升。 该数据引发了对数据中心经济价值与能源负担之间平衡的广泛讨论，可能影响全球科技公司的选址决策和国家的能源政策。 数据中心虽带来就业和经济活动，但同时也推高了居民电价（近年上涨约40%），且爱尔兰宽带费用在欧洲属于较高水平。",
+      "background_zh": "数据中心需要大量电力运行服务器和冷却系统。爱尔兰凭借低企业税和凉爽气候吸引了众多科技巨头建设数据中心，但电力需求激增已对电网造成压力。",
+      "community_discussion_zh": "评论中有人认为数据中心创造了价值，不应一味批评；也有人担忧电价上涨和基础设施压力；另有用户将爱尔兰与加州对比，指出加州数据中心人均耗电更高但批评较少。",
+      "detailed_summary": "最新数据显示，爱尔兰的数据中心现消耗该国约23%的电力，这一比例较往年显著上升。 该数据引发了对数据中心经济价值与能源负担之间平衡的广泛讨论，可能影响全球科技公司的选址决策和国家的能源政策。 数据中心虽带来就业和经济活动，但同时也推高了居民电价（近年上涨约40%），且爱尔兰宽带费用在欧洲属于较高水平。",
+      "background": "数据中心需要大量电力运行服务器和冷却系统。爱尔兰凭借低企业税和凉爽气候吸引了众多科技巨头建设数据中心，但电力需求激增已对电网造成压力。",
+      "community_discussion": "评论中有人认为数据中心创造了价值，不应一味批评；也有人担忧电价上涨和基础设施压力；另有用户将爱尔兰与加州对比，指出加州数据中心人均耗电更高但批评较少。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (183 points, 137 comments) with substantive discussion on energy consumption, economic trade-offs, and comparisons to other regions. The statistic is significant and relevant to current debates on tech infrastructure and energy policy.",
+    "ai_summary": "Ireland's datacenters now consume 23% of the country's electricity, sparking discussion on economic value versus energy strain.",
+    "ai_tags": [
+      "energy",
+      "datacenters",
+      "infrastructure",
+      "Ireland",
+      "electricity"
+    ]
+  },
+  {
+    "id": "hackernews:story:48883343",
+    "source_type": "hackernews",
+    "title": "I love LLMs, I hate hype",
+    "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+    "content": "\n--- Top Comments ---\n\n[SwellJoe]: This line: &quot;this is my main argument against the valuation of frontier labs. It’s not that AI won’t create that much value, it’s that they won’t capture it.&quot; That is a very astute and concise way to explain everything about how the frontier labs are behaving and how they&#x27;re trying to push more people to pay token rates for the best models. At the current subscription prices ($100 or $200 a month for a generous, though bounded, amount of tokens), frontier models are a no-brainer...\n\n[hamandcheese]: &gt; where’s all this new magical software that the productivity improvements should imply? It&#x27;s running, privately, in my homelab. I think we are entering what I call the &quot;have it your way&quot; era. If an open source project doesn&#x27;t do exactly what you want it to do, fork it, or create a new version. It&#x27;s too easy. This makes me a bit concerned about the future of open source. Upstreaming used to be worth it, since maintaining a fork is effort too. But now the balance ha...\n\n[TheAceOfHearts]: At least for me, the jump in productivity has resulted in building stripped down one-off software for my highly specific use-cases. You can use an LLM to create anything but you still need to know what it is that you&#x27;re building, and you need to think through how everything should work or the LLM will just fill it with sausage. You can tell that the models are still quite jagged and limited by the mixed quality from a lot of the software that these presumed trillion dollar companies are ...\n\n[kenforthewin]: I felt the same way in 2024-2025. Then Sonnet 4 was released, and things started feeling different. Opus 4.5 was another step change for me. Everything feels like it&#x27;s accelerating, and timelines are getting crunched. I guess in some ways I envy OP, who would &quot;bet everything&quot; against ASI - the truth is I don&#x27;t know, and I don&#x27;t think anyone knows, where this ends.\n\n[dom96]: I love LLMs too, but I am concerned about their cost. They are all still very subsidised. Is there any guarantee that I&#x27;ll be able to run a Opus 4.8-level model on my personal computer before the big AI labs decide to hike up the prices?",
+    "author": "therepanic",
+    "published_at": "2026-07-12T18:31:56Z",
+    "fetched_at": "2026-07-12T23:44:42.524176Z",
+    "metadata": {
+      "score": 284,
+      "descendants": 165,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48883343",
+      "comment_count": 5,
+      "title_zh": "我热爱LLM，我厌恶炒作",
+      "detailed_summary_zh": "George Hotz发表博客文章，表达对大型语言模型（LLM）的喜爱，同时批评围绕AI的过度炒作。他提出AI确实创造价值，但前沿实验室可能无法捕获这些价值。 作为AI领域知名人物，Hotz的观点有助于平衡当前对AI的过度乐观，提醒关注价值分配和开源力量。文章引发关于AI估值、生产力提升和开源未来的深入讨论。 Hotz认为前沿实验室的估值过高，因为价值可能流向用户而非开发者。他观察到生产力提升并未转化为公开可见的软件创新，而是被用于私有定制化项目。",
+      "background_zh": "大型语言模型（LLM）是能够理解和生成人类语言的人工智能系统，如GPT系列。近年来，LLM引发巨大炒作，部分公司估值极高。开源LLM（如Llama）的兴起使个人和小团队也能构建定制解决方案。",
+      "community_discussion_zh": "社区评论普遍认同Hotz的观点，认为前沿实验室难以捕获AI创造的价值。有用户指出生产力提升体现在私有homelab项目中，并担忧开源生态的平衡可能被打破。也有用户提到模型迭代（如Sonnet 4）正在加速进步，对ASI时间线持不确定态度。",
+      "detailed_summary": "George Hotz发表博客文章，表达对大型语言模型（LLM）的喜爱，同时批评围绕AI的过度炒作。他提出AI确实创造价值，但前沿实验室可能无法捕获这些价值。 作为AI领域知名人物，Hotz的观点有助于平衡当前对AI的过度乐观，提醒关注价值分配和开源力量。文章引发关于AI估值、生产力提升和开源未来的深入讨论。 Hotz认为前沿实验室的估值过高，因为价值可能流向用户而非开发者。他观察到生产力提升并未转化为公开可见的软件创新，而是被用于私有定制化项目。",
+      "background": "大型语言模型（LLM）是能够理解和生成人类语言的人工智能系统，如GPT系列。近年来，LLM引发巨大炒作，部分公司估值极高。开源LLM（如Llama）的兴起使个人和小团队也能构建定制解决方案。",
+      "community_discussion": "社区评论普遍认同Hotz的观点，认为前沿实验室难以捕获AI创造的价值。有用户指出生产力提升体现在私有homelab项目中，并担忧开源生态的平衡可能被打破。也有用户提到模型迭代（如Sonnet 4）正在加速进步，对ASI时间线持不确定态度。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Insightful blog post from a notable figure (George Hotz) offering a nuanced perspective on LLMs and hype. High community engagement with substantive comments discussing valuation, productivity, and open source implications, adding significant depth to the discussion.",
+    "ai_summary": "George Hotz expresses appreciation for LLMs while criticizing the surrounding hype, arguing that AI creates value but frontier labs may fail to capture it.",
+    "ai_tags": [
+      "LLMs",
+      "AI Hype",
+      "Open Source",
+      "Productivity"
+    ]
+  },
+  {
+    "id": "hackernews:story:48881830",
+    "source_type": "hackernews",
+    "title": "Don't you mean extinct?",
+    "url": "https://fabiensanglard.net/extinct/index.html",
+    "content": "\n--- Top Comments ---\n\n[ChiperSoft]: This analogy has layers that OP probably doesn&#x27;t recognize. The film industry loves cgi because none of the digital vfx houses are unionized and they can treat the artists like crap. It severely devalued a ton of skilled labor around miniature and set design. Now, after 20 years of hard swing into cgi, people are starting to recognize just how much better movies from the practical era looked, and there is a push back towards it. Project Hail Mary was predominantly practical effects, for ...\n\n[singpolyma3]: I mostly like this article but &gt; Those who refuse to use an LLM will fall behind because they won&#x27;t be able to produce as much Seems like a silly and needlessly aggressive take. Fall behind what? Able to produce &quot;as much&quot; what? I&#x27;ve never been evaluated on volume in my life. Nor have co workers who were severely &quot;behind&quot; ever feared for their jobs.\n\n[lnrd]: &gt; Writing every line by hand is no longer the norm. Those who refuse to use an LLM will fall behind because they won&#x27;t be able to produce as much &gt; It remains important to be able to read the code and understand the architecture. As a result, I reduce my velocity by iterating over my PR until it reaches the same level of quality I would have produced &quot;by hand&quot; I do that too and when I do it I&#x27;m not sure anymore if I&#x27;m &quot;producing as much more&quot; than if I...\n\n[tambourine_man]: Did Tippett enjoy working on the Dinosaur Input Device as much as he did with his go-motion technique? I see employability being discussed far more often than joy. If your motivation was selling as many clothes as possible, then the industrial textile revolution was miraculous. If you enjoyed knitting threads together, it was the crushing victory of mediocrity.\n\n[amluto]: &gt; Writing tests used to be a pain. This is no longer the case. It is ok to request unit tests&#x2F;CI tests for each PR. These have never been more important since large refactors are becoming increasingly common. Human and LLM review may miss stuff but good tests should catch breakages. The default behavior is not necessarily good. You end up with tests that match the code, but you don’t necessarily end up with tests that test the behavior you care about.  And then, if the LLM tries to de...",
+    "author": "zdw",
+    "published_at": "2026-07-12T15:17:20Z",
+    "fetched_at": "2026-07-12T23:44:42.524226Z",
+    "metadata": {
+      "score": 178,
+      "descendants": 105,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48881830",
+      "comment_count": 5,
+      "title_zh": "电影特效到CGI的转型与LLM影响软件开发类比",
+      "detailed_summary_zh": "文章将电影行业从实际特效转向CGI的过程，类比于软件工程中从手写代码转向使用大型语言模型（LLM）的趋势。作者认为，拒绝LLM的开发者将因产出不足而落后，但阅读和理解代码的能力仍然重要。 这个类比引发了对技术采用中不可逆变革的深入讨论，提醒开发者LLM可能像CGI改变电影制作一样，根本性地改变软件开发流程、技能要求和行业结构。 电影行业转向CGI的部分原因是非工会化的数字特效公司能降低成本，但如今人们又开始怀念实际特效的质感。类似地，软件开发中使用LLM虽能提高生产率，但也可能带来质量下降或技能贬值的问题，甚至可能出现反弹。",
+      "background_zh": "实际特效指使用物理模型、微缩景观等实景技术，而CGI通过数字手段创建视觉效果。类似地，传统软件开发中每一行代码都由人类编写，而LLM（如GPT-4）能自动生成代码片段。电影工业中，CGI曾降低成本和时间，但如今部分创作者和观众重新认可实际特效的独特价值。",
+      "community_discussion_zh": "社区评论总体上认可这个类比，但指出更深层次：电影业转向CGI部分因非工会化降低成本，而CGI泛滥后又引发对实际特效的回归。一些开发者质疑“生产率落后”的说法，认为软件工程中很少以代码量评价绩效。还有评论强调使用LLM需反复迭代PR来保证质量，实际提速有限，并讨论了工作乐趣与效率之间的矛盾。",
+      "sources": [
+        {
+          "url": "https://www.sei.cmu.edu/blog/application-of-large-language-models-llms-in-software-engineering-overblown-hype-or-disruptive-change/",
+          "title": "Application of Large Language Models (LLMs) in Software Engineering: Overblown Hype or Disruptive Change? | CMU Software Engineering Institute"
+        },
+        {
+          "url": "https://www.researchgate.net/publication/375989472_THE_EVOLUTION_OF_VISUAL_EFFECTS_IN_CINEMA_A_JOURNEY_FROM_PRACTICAL_EFFECTS_TO_CGI",
+          "title": "(PDF) the evolution of visual effects in cinema: a journey from..."
+        },
+        {
+          "url": "https://www.studiobinder.com/blog/what-is-cgi-meaning-definition/",
+          "title": "What is CGI ? How CGI Works in Movies and Animation"
+        }
+      ],
+      "detailed_summary": "文章将电影行业从实际特效转向CGI的过程，类比于软件工程中从手写代码转向使用大型语言模型（LLM）的趋势。作者认为，拒绝LLM的开发者将因产出不足而落后，但阅读和理解代码的能力仍然重要。 这个类比引发了对技术采用中不可逆变革的深入讨论，提醒开发者LLM可能像CGI改变电影制作一样，根本性地改变软件开发流程、技能要求和行业结构。 电影行业转向CGI的部分原因是非工会化的数字特效公司能降低成本，但如今人们又开始怀念实际特效的质感。类似地，软件开发中使用LLM虽能提高生产率，但也可能带来质量下降或技能贬值的问题，甚至可能出现反弹。",
+      "background": "实际特效指使用物理模型、微缩景观等实景技术，而CGI通过数字手段创建视觉效果。类似地，传统软件开发中每一行代码都由人类编写，而LLM（如GPT-4）能自动生成代码片段。电影工业中，CGI曾降低成本和时间，但如今部分创作者和观众重新认可实际特效的独特价值。",
+      "community_discussion": "社区评论总体上认可这个类比，但指出更深层次：电影业转向CGI部分因非工会化降低成本，而CGI泛滥后又引发对实际特效的回归。一些开发者质疑“生产率落后”的说法，认为软件工程中很少以代码量评价绩效。还有评论强调使用LLM需反复迭代PR来保证质量，实际提速有限，并讨论了工作乐趣与效率之间的矛盾。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement with insightful comments debating the analogy between CGI and LLMs, and practical implications for software development. The article likely provides a thoughtful perspective on technology adoption and obsolescence.",
+    "ai_summary": "The article draws a parallel between the film industry's transition from practical effects to CGI and the current shift towards using LLMs in software development, sparking a rich discussion.",
+    "ai_tags": [
+      "technology adoption",
+      "LLMs",
+      "software engineering",
+      "industry trends",
+      "AI impact"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:23a1f39abb5664ba",
+    "source_type": "rss",
+    "title": "Slow Software: The Case for High-latency Systems Development",
+    "url": "https://www.sigops.org/2026/slow-software-the-case-for-high-latency-systems-development/",
+    "content": "<p><a href=\"https://lobste.rs/s/3v4hbc/slow_software_case_for_high_latency\">Comments</a></p>",
+    "author": "sigops.org via typesanitizer",
+    "published_at": "2026-07-12T16:47:39Z",
+    "fetched_at": "2026-07-12T23:44:42.593496Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "practices"
+      ],
+      "title_zh": "慢软件：高延迟系统设计的辩护",
+      "detailed_summary_zh": "ACM SIGOPS发表一篇观点文章，主张高延迟系统具有被忽略的优势，应当作为一种有意的设计选择。 该文章挑战了系统设计领域长期追求低延迟的主流范式，可能引发对延迟取舍的重新思考，影响软件架构师和开发者的设计决策。 文章来自ACM SIGOPS这一权威组织，标题为《Slow Software: The Case for High-latency Systems Development》，但其正文内容尚未公开，仅提供Lobste.rs评论链接。",
+      "background_zh": "在系统设计中，延迟是指数据从发送到接收所需的时间，高延迟意味着显著延迟。通常，工程师会尽力降低延迟以提升用户体验，但高延迟在某些场景下（如批处理、节能、容错）可能带来好处。SIGOPS是计算机操作系统领域的顶级学术团体，其发表的观点文章通常具有很强的影响力。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/SIGOPS",
+          "title": "SIGOPS"
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/system-design/high-latency-vs-low-latency-system-design/",
+          "title": "High Latency vs Low Latency | System Design - GeeksforGeeks"
+        }
+      ],
+      "detailed_summary": "ACM SIGOPS发表一篇观点文章，主张高延迟系统具有被忽略的优势，应当作为一种有意的设计选择。 该文章挑战了系统设计领域长期追求低延迟的主流范式，可能引发对延迟取舍的重新思考，影响软件架构师和开发者的设计决策。 文章来自ACM SIGOPS这一权威组织，标题为《Slow Software: The Case for High-latency Systems Development》，但其正文内容尚未公开，仅提供Lobste.rs评论链接。",
+      "background": "在系统设计中，延迟是指数据从发送到接收所需的时间，高延迟意味着显著延迟。通常，工程师会尽力降低延迟以提升用户体验，但高延迟在某些场景下（如批处理、节能、容错）可能带来好处。SIGOPS是计算机操作系统领域的顶级学术团体，其发表的观点文章通常具有很强的影响力。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Provocative contrarian viewpoint from a respected venue (SIGOPS) challenging low-latency dogma; likely sparks insightful discussion in the community (comments on lobste.rs).",
+    "ai_summary": "Argues that high-latency systems have overlooked benefits and should be considered a deliberate design choice.",
+    "ai_tags": [
+      "systems design",
+      "latency",
+      "software engineering",
+      "opinion",
+      "SIGOPS"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:609d940c974254af",
+    "source_type": "rss",
+    "title": "Hacking Apple - SQL Injection to Remote Code Execution",
+    "url": "https://projectdiscovery.io/blog/hacking-apple-with-sql-injection",
+    "content": "<p><a href=\"https://lobste.rs/s/axamxi/hacking_apple_sql_injection_remote_code\">Comments</a></p>",
+    "author": "projectdiscovery.io via ni5arga",
+    "published_at": "2026-07-12T10:50:03Z",
+    "fetched_at": "2026-07-12T23:44:42.593568Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "黑客利用SQL注入攻破苹果系统实现远程代码执行",
+      "detailed_summary_zh": "一名安全研究员公开了如何通过SQL注入漏洞，成功从苹果公司系统中获取远程代码执行权限。 这一发现表明即便是大型科技公司也可能存在严重Web安全漏洞，攻击者可能利用此类漏洞获取敏感数据或完全控制服务器。 该漏洞链从SQL注入开始，结合其他攻击技术最终实现了远程代码执行。目前苹果公司已修复该漏洞。",
+      "background_zh": "SQL注入是一种常见Web漏洞，攻击者通过在输入框中插入恶意SQL语句，能操纵数据库。远程代码执行（RCE）则允许攻击者在服务器上运行任意命令，是最严重的漏洞之一。",
+      "detailed_summary": "一名安全研究员公开了如何通过SQL注入漏洞，成功从苹果公司系统中获取远程代码执行权限。 这一发现表明即便是大型科技公司也可能存在严重Web安全漏洞，攻击者可能利用此类漏洞获取敏感数据或完全控制服务器。 该漏洞链从SQL注入开始，结合其他攻击技术最终实现了远程代码执行。目前苹果公司已修复该漏洞。",
+      "background": "SQL注入是一种常见Web漏洞，攻击者通过在输入框中插入恶意SQL语句，能操纵数据库。远程代码执行（RCE）则允许攻击者在服务器上运行任意命令，是最严重的漏洞之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value security research demonstrating a real-world exploit chain from SQL injection to RCE against Apple, likely with technical depth and community discussion on Lobste.rs.",
+    "ai_summary": "Security researcher details how SQL injection in Apple's systems led to remote code execution, highlighting critical vulnerability.",
+    "ai_tags": [
+      "security",
+      "sql-injection",
+      "apple",
+      "remote-code-execution",
+      "web-security"
+    ]
+  },
+  {
+    "id": "hackernews:story:48884395",
+    "source_type": "hackernews",
+    "title": "Tiny Emulators",
+    "url": "https://floooh.github.io/tiny8bit-preview/index.html",
+    "content": "\n--- Top Comments ---\n\n[Lerc]: I love the pin level emulation model of this.  The self contained modular behaviour of components has real flexibility. For a long time I have wondered if extremely thin but explicitly defined interfaces are an under-explored domain for interoperability. Beyond simple chip emulation, any set of values that are sampled on each side of the interface at defined times, and a small set of signals to provided temporal access.    Be it pins, a small set of registers, or a memory mapped region, it se...\n\n[gabrielsroka]: It&#x27;s at least 8 years old  https:&#x2F;&#x2F;hn.algolia.com&#x2F;?query=Tiny%20Emulators&amp;type=story&amp;da...\n\n[infinite_spin]: just want to mention that some of these have the volume turned up a bit higher than I expected, which you don&#x27;t notice until you click on the game",
+    "author": "naves",
+    "published_at": "2026-07-12T20:23:05Z",
+    "fetched_at": "2026-07-12T23:44:42.524027Z",
+    "metadata": {
+      "score": 111,
+      "descendants": 3,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48884395",
+      "comment_count": 3,
+      "title_zh": "Tiny Emulators：引脚级模块化8位模拟器",
+      "detailed_summary_zh": "Andre Weissflog 的 Tiny Emulators 项目展示了一种适用于 8 位系统的引脚级模块化模拟方法，允许在浏览器中运行多个 8 位计算机的软件。 这种方法通过自包含模块和明确定义的接口实现了高度灵活性，为模拟器设计和互操作性带来新思路，对复古计算爱好者和模拟器开发者有重要参考价值。 该模拟器基于 WebAssembly 在浏览器中运行，支持 KC85/2/3/4、Amstrad CPC 等多种 8 位计算机，但部分游戏音量大且项目已有 8 年历史。",
+      "background_zh": "引脚级模拟是一种精确模拟硬件的方法，通过模拟芯片上每个引脚的电平变化和时序来保持兼容性。传统模拟通常只模拟指令集或内存映射，而引脚级模拟更细致但性能开销大。Tiny Emulators 正是采用这种模型，将组件视为独立模块并通过引脚交互。",
+      "community_discussion_zh": "评论普遍赞赏其设计，Lerc 认为引脚级模拟的模块化接口是互操作性中未被充分探索的领域；infinite_spin 提醒部分游戏音量较大；gabrielsroka 指出项目已有 8 年历史。",
+      "sources": [
+        {
+          "url": "https://floooh.github.io/tiny8bit/",
+          "title": "Tiny Emulators"
+        },
+        {
+          "url": "https://blog.adafruit.com/2025/04/28/the-tiny-emulators-allows-8-bit-gameplay-in-browser/",
+          "title": "The Tiny Emulators allows 8-bit gameplay in browser"
+        },
+        {
+          "url": "https://8bitnews.io/article/tiny-emulators",
+          "title": "Tiny Emulators"
+        }
+      ],
+      "detailed_summary": "Andre Weissflog 的 Tiny Emulators 项目展示了一种适用于 8 位系统的引脚级模块化模拟方法，允许在浏览器中运行多个 8 位计算机的软件。 这种方法通过自包含模块和明确定义的接口实现了高度灵活性，为模拟器设计和互操作性带来新思路，对复古计算爱好者和模拟器开发者有重要参考价值。 该模拟器基于 WebAssembly 在浏览器中运行，支持 KC85/2/3/4、Amstrad CPC 等多种 8 位计算机，但部分游戏音量大且项目已有 8 年历史。",
+      "background": "引脚级模拟是一种精确模拟硬件的方法，通过模拟芯片上每个引脚的电平变化和时序来保持兼容性。传统模拟通常只模拟指令集或内存映射，而引脚级模拟更细致但性能开销大。Tiny Emulators 正是采用这种模型，将组件视为独立模块并通过引脚交互。",
+      "community_discussion": "评论普遍赞赏其设计，Lerc 认为引脚级模拟的模块化接口是互操作性中未被充分探索的领域；infinite_spin 提醒部分游戏音量较大；gabrielsroka 指出项目已有 8 年历史。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value due to the novel pin-level emulation model and modular design that prompted insightful community discussion praising its flexibility. However, it is not groundbreaking as it is 8 years old and has limited recent impact.",
+    "ai_summary": "Tiny Emulators showcases a pin-level modular emulation approach for 8-bit systems, sparking appreciation for its design flexibility.",
+    "ai_tags": [
+      "emulation",
+      "retrocomputing",
+      "modular design",
+      "8-bit",
+      "hobbyist"
+    ]
+  },
+  {
+    "id": "hackernews:story:48882716",
+    "source_type": "hackernews",
+    "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+    "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+    "content": "\n--- Top Comments ---\n\n[kristianp]: &gt; Numbers like that buy a model a real migration effort. Such a silly choice of words. I wish the human directing the LLM writing the article put some effort into rewriting the worst examples of LLM style. &gt; But it did extremely well, and the promise was immediate and specific: builds finishing in less than half the wall-clock time, at 27% lower cost, scoring at or above our incumbent on completed work. The way the LLMs write (Claude perhaps?) With short phrases separated by colons, com...\n\n[thiagoperes]: We run a lot of varied, tiny, simple workflows that were previously running on 5.4-nano and mini. We transitioned them to 5.6 and noticed exactly this range of improvement across the board. In a few cases, we had improvements in classification. I think a lot of people miss that for many companies, a model upgrade like this is basically a one liner. Even if you have an amazing model router architecture (which we do for our golden flows), it’s just not worth it. Not to mention reliability and s...\n\n[bob1029]: &gt; we’ve made GPT 5.6 Sol the default model powering every Ploy workspace I would consider Luna for parts of the workload that touch actual tools. It is surprisingly capable and it runs fast. Sol is great at talking to the human and orchestration of agent calls, but it&#x27;s just too expensive to use everywhere. You can get 5 Luna runs for the cost of 1 Sol run. Statistically speaking, going from one to five samples is a pretty big deal.\n\n[arikrahman]: Migrating my workflow to Reasonix with cache hits on Deepseek make requests practically free, and that&#x27;s on unsubsidized American providers.\n\n[blfr]: &gt; Ploy’s agent builds and edits real marketing websites. It plans a page, reads the codebase, writes components, generates imagery, screenshots its own work, and decides when it’s done. That job description sets a very high bar for a model, and we test every frontier release against it. For the four months Opus held the default slot (first Opus 4.7, then 4.8), nothing we tested beat it. Well, unlike OP I haven&#x27;t run a rigorous test, but I still would expect Fable to be significantly b...",
+    "author": "brryant",
+    "published_at": "2026-07-12T17:13:07Z",
+    "fetched_at": "2026-07-12T23:44:42.524088Z",
+    "metadata": {
+      "score": 101,
+      "descendants": 25,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48882716",
+      "comment_count": 5,
+      "title_zh": "迁移AI代理至GPT-5.6：速度快2.2倍，成本低27%",
+      "detailed_summary_zh": "Ploy公司将其生产环境中的AI代理从Opus模型迁移至GPT-5.6系列的Sol和Luna模型，实现了2.2倍的构建速度和27%的成本降低。 这一迁移展示了GPT-5.6在实际生产环境中的显著性能提升和成本效益，为其他企业在模型选择与迁移时提供了具体参考，验证了模型升级对业务的实际价值。 Ploy的AI代理负责构建和编辑营销网站，迁移后在分类任务上也有改进。但Sol模型成本较高，因此仅用于核心编排，而Luna模型用于实际工具调用，一次Sol的开销可运行五次Luna。",
+      "background_zh": "GPT-5.6是OpenAI于2026年7月发布的模型系列，包含Sol（旗舰推理）、Terra（通用）和Luna（轻量快速）三个版本，分别针对不同复杂度的任务。企业常需根据成本与性能权衡选择适合的模型。",
+      "community_discussion_zh": "社区评论中，有用户认为原文的LLM写作风格不佳，但也有用户表示自己迁移到GPT-5.6后获得了类似改进。部分评论强调了模型路由策略的重要性，认为将Sol用于关键任务、Luna用于高频调用可平衡成本与效果。",
+      "sources": [
+        {
+          "url": "https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained",
+          "title": "GPT - 5 . 6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?"
+        },
+        {
+          "url": "https://kie.ai/gpt-5-6",
+          "title": "OpenAI GPT - 5 . 6 API: Frontier Reasoning and Agentic Coding... | Kie.ai"
+        }
+      ],
+      "detailed_summary": "Ploy公司将其生产环境中的AI代理从Opus模型迁移至GPT-5.6系列的Sol和Luna模型，实现了2.2倍的构建速度和27%的成本降低。 这一迁移展示了GPT-5.6在实际生产环境中的显著性能提升和成本效益，为其他企业在模型选择与迁移时提供了具体参考，验证了模型升级对业务的实际价值。 Ploy的AI代理负责构建和编辑营销网站，迁移后在分类任务上也有改进。但Sol模型成本较高，因此仅用于核心编排，而Luna模型用于实际工具调用，一次Sol的开销可运行五次Luna。",
+      "background": "GPT-5.6是OpenAI于2026年7月发布的模型系列，包含Sol（旗舰推理）、Terra（通用）和Luna（轻量快速）三个版本，分别针对不同复杂度的任务。企业常需根据成本与性能权衡选择适合的模型。",
+      "community_discussion": "社区评论中，有用户认为原文的LLM写作风格不佳，但也有用户表示自己迁移到GPT-5.6后获得了类似改进。部分评论强调了模型路由策略的重要性，认为将Sol用于关键任务、Luna用于高频调用可平衡成本与效果。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value content with concrete performance metrics (2.2x faster, 27% cheaper) from a production migration. Community discussion adds validation with user experiences and strategic note on model routing trade-offs. Not groundbreaking but practically important for AI engineering.",
+    "ai_summary": "A production AI agent migration to GPT-5.6 yielded 2.2x speed improvements and 27% cost reduction, with community discussion highlighting real-world applicability and model selection strategies.",
+    "ai_tags": [
+      "AI agents",
+      "GPT-5.6",
+      "performance optimization",
+      "cost reduction",
+      "production migration"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:c9e0ab7be6065313",
+    "source_type": "rss",
+    "title": "Closing a three-year-old issue using Rust arenas",
+    "url": "https://giacomocavalieri.me/writing/gleam-rust-arenas",
+    "content": "<p><a href=\"https://lobste.rs/s/7840ca/closing_three_year_old_issue_using_rust\">Comments</a></p>",
+    "author": "giacomocavalieri.me by giacomo_cavalieri",
+    "published_at": "2026-07-12T18:58:31Z",
+    "fetched_at": "2026-07-12T23:44:42.593309Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rust",
+        "performance"
+      ],
+      "title_zh": "Rust arena内存管理解决三年旧问题",
+      "detailed_summary_zh": "一篇技术文章详细介绍了如何使用Rust中的arena分配器来解决一个存在三年的内存管理问题，展示了一种巧妙的内存管理技巧。 这一案例展示了arena分配在解决长期内存问题中的实际价值，对Rust社区和系统编程领域具有启发意义。它提供了一种高效的内存管理策略，可能被更多项目采纳。 Arena分配器通过预先分配一大块连续内存并线性分配对象，最后统一释放，从而减少分配和释放的开销。Rust中的arena常用于管理同生命周期对象，并支持通过指针比较实现快速相等性判断。",
+      "background_zh": "内存管理中的arena分配是一种策略，它预先分配一大块连续内存，在该区域内顺序分配对象，然后一次性释放整个区域。与传统malloc/free相比，arena分配减少了大量小操作，特别适合管理具有相同生命周期的对象。Rust的编译器rustc内部就广泛使用了arena来管理内存。",
+      "sources": [
+        {
+          "url": "https://medium.com/@syntaxSavage/arena-allocation-in-rust-fast-memory-for-short-lived-objects-2e55a89257d6",
+          "title": "Arena Allocation in Rust: Fast Memory for Short-Lived Objects | by SyntaxSavage | Medium"
+        },
+        {
+          "url": "https://rustc-dev-guide.rust-lang.org/memory.html",
+          "title": "Memory management in rustc - Rust Compiler Development Guide"
+        }
+      ],
+      "detailed_summary": "一篇技术文章详细介绍了如何使用Rust中的arena分配器来解决一个存在三年的内存管理问题，展示了一种巧妙的内存管理技巧。 这一案例展示了arena分配在解决长期内存问题中的实际价值，对Rust社区和系统编程领域具有启发意义。它提供了一种高效的内存管理策略，可能被更多项目采纳。 Arena分配器通过预先分配一大块连续内存并线性分配对象，最后统一释放，从而减少分配和释放的开销。Rust中的arena常用于管理同生命周期对象，并支持通过指针比较实现快速相等性判断。",
+      "background": "内存管理中的arena分配是一种策略，它预先分配一大块连续内存，在该区域内顺序分配对象，然后一次性释放整个区域。与传统malloc/free相比，arena分配减少了大量小操作，特别适合管理具有相同生命周期的对象。Rust的编译器rustc内部就广泛使用了arena来管理内存。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive using Rust arenas to solve a long-standing issue, demonstrating a clever approach to memory management. The content is relevant to Rust and systems programming, and the linked comments may provide additional insights.",
+    "ai_summary": "How Rust arenas were used to resolve a three-year-old issue, showcasing a novel memory management technique.",
+    "ai_tags": [
+      "Rust",
+      "arenas",
+      "memory management"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:4ba65e8f5dcaf999",
+    "source_type": "rss",
+    "title": "InfiniteDiffusion: Bridging Learned Fidelity and Procedural Utility for Open-World Terrain Generation",
+    "url": "https://xandergos.github.io/terrain-diffusion/",
+    "content": "<p><a href=\"https://lobste.rs/s/ncsslp/infinitediffusion_bridging_learned\">Comments</a></p>",
+    "author": "xandergos.github.io via Yogthos",
+    "published_at": "2026-07-12T19:56:07Z",
+    "fetched_at": "2026-07-12T23:44:42.593452Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "cogsci",
+        "programming"
+      ],
+      "title_zh": "InfiniteDiffusion：融合扩散模型与程序化生成的地形算法",
+      "detailed_summary_zh": "InfiniteDiffusion是一种无需训练的算法，它重新设计了扩散模型的采样过程，实现了惰性和无边界生成，从而将扩散模型的高保真度与程序化噪声的实用性（如无缝无限范围、种子一致性和常数时间生成）结合起来。 该研究对游戏开发和AI领域具有重要意义，因为它弥合了AI生成内容的高保真度与程序化生成的实用效率之间的鸿沟，有望革新开放世界地形的生成方式。 该算法无需额外训练，可直接应用于现有扩散模型；它支持生成无缝衔接的无限大地形，且每次生成结果可通过种子复现，时间开销恒定，类似传统Perlin噪声但质量更高。",
+      "background_zh": "传统程序化地形生成依赖于Perlin噪声等数学函数，虽然快速且可无限扩展，但缺乏真实感；而扩散模型能生成高保真图像，但通常需要大量计算且难以扩展到任意大的场景。InfiniteDiffusion将两者的优势结合，提供了一种实用且高质量的解决方案。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2512.08309",
+          "title": "[2512.08309] InfiniteDiffusion: Bridging Learned Fidelity and Procedural Utility for Open-World Terrain Generation"
+        },
+        {
+          "url": "https://xandergos.github.io/terrain-diffusion/",
+          "title": "InfiniteDiffusion"
+        },
+        {
+          "url": "https://github.com/xandergos/terrain-diffusion",
+          "title": "GitHub - xandergos/ terrain -diffusion: Procedural generation with..."
+        }
+      ],
+      "detailed_summary": "InfiniteDiffusion是一种无需训练的算法，它重新设计了扩散模型的采样过程，实现了惰性和无边界生成，从而将扩散模型的高保真度与程序化噪声的实用性（如无缝无限范围、种子一致性和常数时间生成）结合起来。 该研究对游戏开发和AI领域具有重要意义，因为它弥合了AI生成内容的高保真度与程序化生成的实用效率之间的鸿沟，有望革新开放世界地形的生成方式。 该算法无需额外训练，可直接应用于现有扩散模型；它支持生成无缝衔接的无限大地形，且每次生成结果可通过种子复现，时间开销恒定，类似传统Perlin噪声但质量更高。",
+      "background": "传统程序化地形生成依赖于Perlin噪声等数学函数，虽然快速且可无限扩展，但缺乏真实感；而扩散模型能生成高保真图像，但通常需要大量计算且难以扩展到任意大的场景。InfiniteDiffusion将两者的优势结合，提供了一种实用且高质量的解决方案。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Novel application of diffusion models to open-world terrain generation, bridging AI fidelity with procedural utility. Significant for game development and AI research, but not yet a major breakthrough. Discussion on Lobste.rs could add value, but not included here.",
+    "ai_summary": "InfiniteDiffusion combines learned fidelity from diffusion models with procedural utility for generating open-world terrains.",
+    "ai_tags": [
+      "diffusion-models",
+      "procedural-generation",
+      "terrain-generation",
+      "game-development",
+      "ai"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:43d5b77fe98cd532",
+    "source_type": "rss",
+    "title": "EF Core 11 makes your split queries faster",
+    "url": "https://steven-giesel.com/blogPost/d4401fd0-805a-4703-9d9e-5fe3b57c25ea",
+    "content": "<p><a href=\"https://lobste.rs/s/ovkyow/ef_core_11_makes_your_split_queries_faster\">Comments</a></p>",
+    "author": "steven-giesel.com via martinald",
+    "published_at": "2026-07-12T14:02:22Z",
+    "fetched_at": "2026-07-12T23:44:42.593587Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "dotnet"
+      ],
+      "title_zh": "EF Core 11 提升拆分查询性能",
+      "detailed_summary_zh": "EF Core 11 引入了针对拆分查询的性能优化，使得使用 AsSplitQuery() 方法时查询执行更快。 这一改进直接提升了 EF Core 在处理包含多个集合加载的复杂查询时的效率，减少了因多次数据库往返带来的延迟，尤其有益于数据密集型应用。 拆分查询通过将单个大型 JOIN 查询分解为多个较小 SQL 查询来避免笛卡尔乘积问题，但此前存在额外的性能开销；EF Core 11 优化了这一过程，使拆分查询整体速度更快。",
+      "background_zh": "Entity Framework Core（EF Core）是 .NET 平台的对象关系映射（ORM）框架。当查询包含多个导航属性（如包含多个子集合）时，EF Core 默认使用单个 JOIN 查询，可能导致数据重复（笛卡尔乘积）和性能下降。拆分查询通过使用 AsSplitQuery() 方法，为每个集合执行单独的 SQL 查询，但过去会带来额外的数据库往返开销。",
+      "sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/ef/core/querying/single-split-queries",
+          "title": "Single vs. Split Queries - EF Core | Microsoft Learn"
+        },
+        {
+          "url": "https://dev.to/stevsharp/optimize-ef-core-queries-with-assplitquery-20on",
+          "title": "🚀 Optimize EF Core Queries with AsSplitQuery() - DEV Community"
+        }
+      ],
+      "detailed_summary": "EF Core 11 引入了针对拆分查询的性能优化，使得使用 AsSplitQuery() 方法时查询执行更快。 这一改进直接提升了 EF Core 在处理包含多个集合加载的复杂查询时的效率，减少了因多次数据库往返带来的延迟，尤其有益于数据密集型应用。 拆分查询通过将单个大型 JOIN 查询分解为多个较小 SQL 查询来避免笛卡尔乘积问题，但此前存在额外的性能开销；EF Core 11 优化了这一过程，使拆分查询整体速度更快。",
+      "background": "Entity Framework Core（EF Core）是 .NET 平台的对象关系映射（ORM）框架。当查询包含多个导航属性（如包含多个子集合）时，EF Core 默认使用单个 JOIN 查询，可能导致数据重复（笛卡尔乘积）和性能下降。拆分查询通过使用 AsSplitQuery() 方法，为每个集合执行单独的 SQL 查询，但过去会带来额外的数据库往返开销。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Useful performance improvement for EF Core users, but incremental in nature. The blog post likely provides technical depth, and the Lobsters discussion may add value, though not groundbreaking.",
+    "ai_summary": "EF Core 11 introduces optimizations to make split queries faster.",
+    "ai_tags": [
+      "Entity Framework",
+      "C#",
+      "Performance",
+      ".NET",
+      "Database"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8c4163736ec9aa84",
+    "source_type": "rss",
+    "title": "Unauthenticated RCE in Motorola's MR2600 Router",
+    "url": "https://mrbruh.com/motorola/",
+    "content": "<p><a href=\"https://lobste.rs/s/s1jwea/unauthenticated_rce_motorola_s_mr2600\">Comments</a></p>",
+    "author": "mrbruh.com via raymii",
+    "published_at": "2026-07-12T14:03:38Z",
+    "fetched_at": "2026-07-12T23:44:42.593631Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "Motorola MR2600路由器存在未认证远程代码执行漏洞",
+      "detailed_summary_zh": "安全研究员披露了Motorola MR2600路由器中的一个未认证远程代码执行漏洞，攻击者无需身份验证即可完全控制设备。 该漏洞影响广泛使用的家用路由器，可能被恶意利用发起网络攻击或窃取隐私，凸显了IoT设备安全性的薄弱环节。 漏洞详情及PoC（概念验证代码）已在个人博客上公开，但官方尚未发布固件更新修复该问题。",
+      "background_zh": "远程代码执行（RCE）漏洞允许攻击者在目标设备上运行任意代码，未认证意味着无需登录凭据即可触发。此类漏洞在路由器等物联网设备中尤为危险，因为它们常被用作网络攻击的跳板。",
+      "sources": [
+        {
+          "url": "https://www.motorola.com/us/en/p/motoaccessories/motohome/modems---routers/motorolamr2600",
+          "title": "motorola mr2600 | MOTOROLAMR2600 | motorola"
+        },
+        {
+          "url": "https://www.amazon.com/MOTOROLA-AC2600-Gigabit-Extended-MR2600/dp/B07CDQNHRX",
+          "title": "Amazon.com: Motorola MR2600 Smart WiFi Router with Range Boost | Easy Plug and Play Setup | Up to 64 Devices | Dual Band Gigabit Speeds | Live Chat Support : Electronics"
+        }
+      ],
+      "detailed_summary": "安全研究员披露了Motorola MR2600路由器中的一个未认证远程代码执行漏洞，攻击者无需身份验证即可完全控制设备。 该漏洞影响广泛使用的家用路由器，可能被恶意利用发起网络攻击或窃取隐私，凸显了IoT设备安全性的薄弱环节。 漏洞详情及PoC（概念验证代码）已在个人博客上公开，但官方尚未发布固件更新修复该问题。",
+      "background": "远程代码执行（RCE）漏洞允许攻击者在目标设备上运行任意代码，未认证意味着无需登录凭据即可触发。此类漏洞在路由器等物联网设备中尤为危险，因为它们常被用作网络攻击的跳板。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important security vulnerability with potential real-world impact, but limited to a specific router model. Discussion quality cannot be assessed as comments are not provided.",
+    "ai_summary": "Disclosure of an unauthenticated remote code execution vulnerability in the Motorola MR2600 router.",
+    "ai_tags": [
+      "security",
+      "vulnerability",
+      "RCE",
+      "IoT",
+      "router"
+    ]
+  }
+]
