@@ -1,0 +1,836 @@
+[
+  {
+    "id": "rss:www.nature.com_nature.rss:75e95ec00afab733",
+    "source_type": "rss",
+    "title": "Perovskite–organic tandem solar cells with a photo-transformable stabilizer",
+    "url": "https://www.nature.com/articles/s41586-026-10869-x",
+    "content": "<p>Nature, Published online: 13 July 2026; <a href=\"https://www.nature.com/articles/s41586-026-10869-x\">doi:10.1038/s41586-026-10869-x</a></p>Perovskite–organic tandem solar cells with a photo-transformable stabilizer",
+    "author": "Yongfang Li",
+    "published_at": "2026-07-13T00:00:00Z",
+    "fetched_at": "2026-07-13T23:45:37.955485Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "光可转化稳定剂提升钙钛矿-有机叠层太阳能电池性能",
+      "detailed_summary_zh": "研究人员引入了一种名为TDB（4-[3-(三氟甲基)-3H-二氮丙啶-3-基]苄胺）的光可转化添加剂，通过两步策略显著提升了宽带隙钙钛矿子电池的稳定性和效率，进而实现了高效耐久的钙钛矿-有机叠层太阳能电池。 该研究发表于《Nature》，解决了钙钛矿-有机叠层太阳能电池商业化面临的关键稳定性问题，为低成本、高效率的光伏技术开辟了新路径。 TDB添加剂在光照下原位形成交联网络，有效抑制了钙钛矿中的离子迁移和相分离，使叠层电池在连续运行1000小时后仍保持初始效率的90%以上。",
+      "background_zh": "叠层太阳能电池通过叠加不同带隙的材料来吸收更宽光谱，理论效率远高于单结电池。钙钛矿-有机叠层结合了钙钛矿的高效吸光能力和有机材料的柔韧性，但钙钛矿层的不稳定性一直是商业化障碍。光可转化稳定剂是一种能在光照下发生化学变化并起到保护作用的添加剂，相比传统策略更具针对性。",
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/s41586-026-10869-x",
+          "title": "Perovskite-organic tandem solar cells with a photo-transformable stabilizer"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Tandem_solar_cell",
+          "title": "Tandem solar cell"
+        },
+        {
+          "url": "https://biotechgrid.com/perovskite-organic-tandem-solar-cells-enhanced-by-photo-transformable-stabilizer/",
+          "title": "Perovskite-Organic Tandem Solar Cells Enhanced by Photo-Transformable ..."
+        }
+      ],
+      "detailed_summary": "研究人员引入了一种名为TDB（4-[3-(三氟甲基)-3H-二氮丙啶-3-基]苄胺）的光可转化添加剂，通过两步策略显著提升了宽带隙钙钛矿子电池的稳定性和效率，进而实现了高效耐久的钙钛矿-有机叠层太阳能电池。 该研究发表于《Nature》，解决了钙钛矿-有机叠层太阳能电池商业化面临的关键稳定性问题，为低成本、高效率的光伏技术开辟了新路径。 TDB添加剂在光照下原位形成交联网络，有效抑制了钙钛矿中的离子迁移和相分离，使叠层电池在连续运行1000小时后仍保持初始效率的90%以上。",
+      "background": "叠层太阳能电池通过叠加不同带隙的材料来吸收更宽光谱，理论效率远高于单结电池。钙钛矿-有机叠层结合了钙钛矿的高效吸光能力和有机材料的柔韧性，但钙钛矿层的不稳定性一直是商业化障碍。光可转化稳定剂是一种能在光照下发生化学变化并起到保护作用的添加剂，相比传统策略更具针对性。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Published in Nature, this research addresses a critical stability challenge in perovskite-organic tandem solar cells, which is a major barrier to commercialization. The photo-transformable stabilizer represents a novel approach with significant potential impact on renewable energy technology.",
+    "ai_summary": "Researchers developed a photo-transformable stabilizer to enhance the performance and durability of perovskite-organic tandem solar cells.",
+    "ai_tags": [
+      "solar cells",
+      "perovskite",
+      "tandem cells",
+      "stabilizer",
+      "materials science"
+    ]
+  },
+  {
+    "id": "hackernews:story:48896665",
+    "source_type": "hackernews",
+    "title": "Building and shipping Mac and iOS apps without ever opening Xcode",
+    "url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/",
+    "content": "\n--- Top Comments ---\n\n[octavore]: Shameless plug: I&#x27;ve been working on strudel [0], a CLI that uses a lot of the same ideas in this post and allows you to build&#x2F;sign&#x2F;notarize Mac (and iOS) apps without touching Xcode. It has a dry run mode so you can see the actual commands being run, which was important to me to have so there&#x27;s no mystery about what&#x27;s happening. I should blog about more this, but I also went to some effort to add support free iOS provisioning with just an Apple ID (using internal API...\n\n[codazoda]: One down-side to this is that it does require you to run the agent on your Mac instead of in a Sandbox. I do this too and there are lots of problems I can&#x27;t solve in a sandbox. I know a lot of you are throwing your hands up at the years of security practices we&#x27;re throwing out the window when we do that. The fact that xAI uploaded someone&#x27;s home directory, including their SSH keys, is giving me serious pause at my choices here. Generally, I don&#x27;t worry about my machine bei...\n\n[kxxx]: I&#x27;ve been building and testing my iOS app just for fun via Linux only. Surprisingly, it&#x27;s very easy.  This works like a charm:  https:&#x2F;&#x2F;github.com&#x2F;xtool-org&#x2F;xtool  You do not need to upload to TestFlight or the App Store; you can just install the app locally to your iPhone via usb -- even from Linux! When in doubt, just ask your coding agent of choice to help you create and upload a Hello World iOS app.  It&#x27;s really easy.\n\n[CharlesW]: If it&#x27;s okay to mention my own complementary open source project, Axiom¹ does a good job of helping coding harnesses know how to do this effectively for Apple OS development. In addition to a deep roster of skills and agencts, Axiom includes several for-LLM tools².  xclog ,  xcprof ,  xcsym , and  xcui  are designed to be used by LLMs, and expose capabilities in a token-efficient way. These tools are equally helpful for non-Axiom skills&#x2F;agents. ¹ Axiom:  https:&#x2F;&#x2F;charleswil...\n\n[WhitneyLand]: Moving beyond the hype headline, everyone will still need to use Xcode for at least some debugging, no way around that. As for the builds, your agent probably already knows how to do a lot of this from the command line, although explicit suggestions can help it build faster for different situations. As for XcodeGen, you may find it unnecessary overhead if you&#x27;re already using Xcode file system synced groups. For iOS my biggest suggestion would be to enable App Store Connect skills for yo...",
+    "author": "speckx",
+    "published_at": "2026-07-13T18:22:16Z",
+    "fetched_at": "2026-07-13T23:45:35.243069Z",
+    "metadata": {
+      "score": 244,
+      "descendants": 114,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48896665",
+      "comment_count": 5,
+      "title_zh": "命令行构建iOS/Mac应用，无需Xcode",
+      "detailed_summary_zh": "一篇技术文章演示了如何完全通过命令行工具（如 xcodebuild、altool）来构建、签名、公证和发布 iOS 与 Mac 应用，整个过程无需打开 Xcode 图形界面。 这为 iOS/macOS 开发者提供了更灵活的构建和 CI/CD 工作流，减少对 Xcode 的依赖，尤其适合自动化环境和偏好命令行的开发者。社区相关项目（如 strudel、xtool）进一步扩展了这种可能性。 文章使用 xcodebuild 进行编译，altool 上传应用，并处理代码签名和公证。社区工具 strudel 提供了 CLI 抽象，xtool 甚至支持从 Linux 构建 iOS 应用。但这类方法要求运行在 Mac 上而非沙箱，可能存在安全风险。",
+      "background_zh": "Xcode 是苹果官方集成开发环境，但其底层命令行工具 xcodebuild 允许开发者在不启动 GUI 的情况下完成构建和测试。Fastlane 等框架已广泛用于自动化 iOS 发布流程。本文展示了更纯粹的命令行方案。",
+      "community_discussion_zh": "评论者分享了 strudel、xtool、Axiom 等替代工具，并讨论了安全权衡（如需要运行代理在 Mac 上可能带来风险）。整体氛围积极，社区对这种减少 Xcode 依赖的方法表现出浓厚兴趣。",
+      "sources": [
+        {
+          "url": "https://danfabulich.medium.com/xcodebuild-cli-cheat-sheet-b7ee7b3d5fc6",
+          "title": "xcodebuild CLI cheat sheet - Medium"
+        },
+        {
+          "url": "https://github.com/fastlane/fastlane",
+          "title": "GitHub - fastlane/fastlane: 🚀 The easiest way to automate building and releasing your iOS and Android apps"
+        },
+        {
+          "url": "https://developer.apple.com/documentation/xcode/xcode-command-line-tool-reference",
+          "title": "Xcode command-line tool reference - Apple Developer"
+        }
+      ],
+      "detailed_summary": "一篇技术文章演示了如何完全通过命令行工具（如 xcodebuild、altool）来构建、签名、公证和发布 iOS 与 Mac 应用，整个过程无需打开 Xcode 图形界面。 这为 iOS/macOS 开发者提供了更灵活的构建和 CI/CD 工作流，减少对 Xcode 的依赖，尤其适合自动化环境和偏好命令行的开发者。社区相关项目（如 strudel、xtool）进一步扩展了这种可能性。 文章使用 xcodebuild 进行编译，altool 上传应用，并处理代码签名和公证。社区工具 strudel 提供了 CLI 抽象，xtool 甚至支持从 Linux 构建 iOS 应用。但这类方法要求运行在 Mac 上而非沙箱，可能存在安全风险。",
+      "background": "Xcode 是苹果官方集成开发环境，但其底层命令行工具 xcodebuild 允许开发者在不启动 GUI 的情况下完成构建和测试。Fastlane 等框架已广泛用于自动化 iOS 发布流程。本文展示了更纯粹的命令行方案。",
+      "community_discussion": "评论者分享了 strudel、xtool、Axiom 等替代工具，并讨论了安全权衡（如需要运行代理在 Mac 上可能带来风险）。整体氛围积极，社区对这种减少 Xcode 依赖的方法表现出浓厚兴趣。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (244 points, 114 comments) and substantive discussion about alternative tools (strudel, xtool) elevate this technical deep-dive. The topic is highly relevant to iOS/macOS developers seeking workflow flexibility, though not groundbreaking.",
+    "ai_summary": "Demonstrates building and shipping iOS and Mac apps entirely from the command line without ever opening Xcode.",
+    "ai_tags": [
+      "iOS development",
+      "macOS development",
+      "Xcode alternative",
+      "command-line tools",
+      "CI/CD"
+    ]
+  },
+  {
+    "id": "hackernews:story:48893639",
+    "source_type": "hackernews",
+    "title": "The art and engineering of Sega CD Silpheed",
+    "url": "https://fabiensanglard.net/silpheed/index.html",
+    "content": "\n--- Top Comments ---\n\n[inigyou]: Delete the si parameter from your YouTube link. It identifies your YouTube account to Google. Fixed link:  https:&#x2F;&#x2F;youtu.be&#x2F;GBS332N6wig?t=1749\n\n[jonhohle]: The Sega CD is my favorite console and I was fortunate enough to have one growing up. Silpheed was unlike anything else. Unlike most FMV games, Silpheed actually felt like controlling a movie. During the first level when laser blasts are tearing through the fleet gigantic ships filling the screen with debris, I could barely believe what I was seeing. As the article points out, while it is an FMV game, it tries to fool you into thinking it’s a polygon based game. The Sega CD had no 3D capabili...\n\n[chromadon]: If you&#x27;ve never seen Overdrive 2 by Titan (a demo scene group), it&#x27;s unbelievable what the MegaDrive can do stock.  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=gWVmPtr9O0g  I&#x27;m reasonably familiar with the hardware, I&#x27;ve written some games from scratch and I still have absolutely no idea how they did most of it.\n\n[bantunes]: This was submitted by a bot :D I subscribe to Fabien&#x27;s RSS and he must have changed something in the server because I got this post on my RSS reader (again, as it&#x27;s an old post), and here it is submitted to HN (again)\n\n[fredoralive]: I think the article is sorta wrong about the sound setup, the Mega Drive I does have a sound input on the expansion port, and mixes it into its sound output. Otherwise stuff like RF cables wouldn&#x27;t get Mega CD based audio (and you can do silly stuff like a Mega Drive II, which doesn&#x27;t have a headphone port, with a Mega CD I). I was going to say the patch cable setup was just a passive aid to take the Mega Drive I&#x27;s minijack stereo output (the big DIN AV connector on the rear on...",
+    "author": "ibobev",
+    "published_at": "2026-07-13T14:52:33Z",
+    "fetched_at": "2026-07-13T23:45:35.243170Z",
+    "metadata": {
+      "score": 203,
+      "descendants": 40,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48893639",
+      "comment_count": 5,
+      "title_zh": "Sega CD《Silpheed》图形与声音工程深度解析",
+      "detailed_summary_zh": "Fabien Sanglard发表了一篇对Sega CD游戏《Silpheed》图形和声音工程的技术分析文章，详细解析了其伪3D渲染和音频实现。 该分析揭示了在16位硬件上实现电影化视觉和沉浸式音频的创新技术，对于游戏开发者和复古硬件爱好者具有重要的参考价值，展示了早期CD-ROM游戏的工程智慧。 文章指出《Silpheed》利用Sega CD的VDP图形芯片进行精灵缩放和旋转，并通过Ricoh RF5C164 PCM芯片播放8通道音频；游戏采用预渲染FMV与动态精灵结合的方式模拟3D场景，而非真正的多边形渲染。",
+      "background_zh": "Sega CD是世嘉为Mega Drive/Genesis推出的CD-ROM扩展，增加了更快的CPU和定制图形芯片，支持CD音轨和图形增强。《Silpheed》最初于1986年在PC-8801上发布，Sega CD移植版以其倾斜视角和缩放精灵营造的伪3D效果而闻名。该游戏通过预渲染的爆炸和飞船场景结合实时操控，给玩家带来“控制电影”般的体验。",
+      "community_discussion_zh": "社区评论普遍赞赏文章的技术深度，jonhohle回忆了游戏带来的震撼视觉体验；fredoralive纠正了文章关于音频连接的描述，指出Mega Drive I扩展端口具备音频输入功能；chromadon则提及了Mega Drive演示《Overdrive 2》的惊人效果，进一步展示了硬件的潜力。",
+      "sources": [
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Sega_CD",
+          "title": "Sega CD - Wikipedia"
+        },
+        {
+          "url": "https://jsgroth.dev/blog/posts/sega-cd-pcm-overview/",
+          "title": "Sega CD PCM Chip - An Overview | jsgroth's blog"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Silpheed",
+          "title": "Silpheed - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Fabien Sanglard发表了一篇对Sega CD游戏《Silpheed》图形和声音工程的技术分析文章，详细解析了其伪3D渲染和音频实现。 该分析揭示了在16位硬件上实现电影化视觉和沉浸式音频的创新技术，对于游戏开发者和复古硬件爱好者具有重要的参考价值，展示了早期CD-ROM游戏的工程智慧。 文章指出《Silpheed》利用Sega CD的VDP图形芯片进行精灵缩放和旋转，并通过Ricoh RF5C164 PCM芯片播放8通道音频；游戏采用预渲染FMV与动态精灵结合的方式模拟3D场景，而非真正的多边形渲染。",
+      "background": "Sega CD是世嘉为Mega Drive/Genesis推出的CD-ROM扩展，增加了更快的CPU和定制图形芯片，支持CD音轨和图形增强。《Silpheed》最初于1986年在PC-8801上发布，Sega CD移植版以其倾斜视角和缩放精灵营造的伪3D效果而闻名。该游戏通过预渲染的爆炸和飞船场景结合实时操控，给玩家带来“控制电影”般的体验。",
+      "community_discussion": "社区评论普遍赞赏文章的技术深度，jonhohle回忆了游戏带来的震撼视觉体验；fredoralive纠正了文章关于音频连接的描述，指出Mega Drive I扩展端口具备音频输入功能；chromadon则提及了Mega Drive演示《Overdrive 2》的惊人效果，进一步展示了硬件的潜力。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-quality technical deep-dive into a classic game's engineering, with active community discussion providing additional insights and corrections.",
+    "ai_summary": "A detailed technical analysis of the Sega CD game Silpheed's graphics and sound engineering.",
+    "ai_tags": [
+      "game development",
+      "sega cd",
+      "retro computing",
+      "hardware",
+      "technical deep-dive"
+    ]
+  },
+  {
+    "id": "hackernews:story:48897878",
+    "source_type": "hackernews",
+    "title": "Telegram's t.me domain has been suspended",
+    "url": "https://www.whois.com/whois/t.me",
+    "content": "\n--- Top Comments ---\n\n[sebastiennight]: Of course we launched our Telegram channel just this weekend, so I am feeling pretty happy that I enforced a 15-year old SOP that says &quot;never email links to 3rd-party domains ; always use a redirect&quot;... Swapping the redirect now for telegram.me, which hopefully won&#x27;t go down simultaneously\n\n[RJSquirel]: I can&#x27;t believe they use GoDaddy as a registrar.\n\n[water-data-dude]: You can read an explanation of the status codes on the icann website. The explanation for clientRenewProhibited was interesting: &quot;This status code tells your domain&#x27;s registry to reject requests to renew your domain. It is an uncommon status that is usually enacted during legal disputes or when your domain is subject to deletion.&quot; Similar language for some of the other statuses like serverDeleteProhibited.  https:&#x2F;&#x2F;www.icann.org&#x2F;epp#clientRenewProhibited\n\n[driverdan]: Archive warrior&#x27;s default project is mirroring t.me links. If you&#x27;re running it you&#x27;ll need to switch to a different project. It isn&#x27;t handling the domain not resolving well, it stuck in timeout backoffs.\n\n[anigbrowl]: Telegram is currently the target of legal&#x2F;regulatory investigations by Russia (alleged extremism), France (likewise), and India (alleged facilitation of national exam leaking&#x2F;cheating). I&#x27;m guessing the latter since it&#x27;s the most recent and arguably has the most fiscal heft. Also very surprised to see Telegram was reliant on GoDaddy, notorious for its lack of transparency.",
+    "author": "Tiberium",
+    "published_at": "2026-07-13T19:52:25Z",
+    "fetched_at": "2026-07-13T23:45:35.243198Z",
+    "metadata": {
+      "score": 222,
+      "descendants": 151,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48897878",
+      "comment_count": 5,
+      "title_zh": "Telegram短域名 t.me 被暂停",
+      "detailed_summary_zh": "Telegram 的短域名 t.me 被暂停，导致无法正常解析。该域名由 GoDaddy 注册，并出现了 clientRenewProhibited 等 ICANN 状态码。 此次暂停可能影响大量用户通过 t.me 短链接访问 Telegram 内容，也凸显了域名注册商在配合执法调查中的重要角色。 根据 ICANN 状态码说明，clientRenewProhibited 通常用于法律纠纷或域名即将被删除的场景。社区担心 Telegram 的另一域名 telegram.me 也可能受到牵连。",
+      "background_zh": "ICANN 的 EPP 状态码由注册商或注册局设置，用于指示域名的具体状态，如 clientHold、serverTransferProhibited 等。域名被暂停后，DNS 解析会失效，导致网站、邮件等服务不可用。",
+      "community_discussion_zh": "社区对 Telegram 使用 GoDaddy 作为注册商感到惊讶，并深入讨论了 ICANN 状态码的含义。有用户指出 Telegram 正面临俄罗斯、法国和印度的法律调查，认为印度因考试作弊案最有可能导致此次暂停。",
+      "sources": [
+        {
+          "url": "https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en",
+          "title": "EPP Status Codes | What Do They Mean, and Why Should I Know? - ICANN"
+        },
+        {
+          "url": "https://www.icann.org/en/system/files/files/epp-status-codes-30jun11-en.pdf",
+          "title": "PDF EPP_status_codes_table - ICANN"
+        }
+      ],
+      "detailed_summary": "Telegram 的短域名 t.me 被暂停，导致无法正常解析。该域名由 GoDaddy 注册，并出现了 clientRenewProhibited 等 ICANN 状态码。 此次暂停可能影响大量用户通过 t.me 短链接访问 Telegram 内容，也凸显了域名注册商在配合执法调查中的重要角色。 根据 ICANN 状态码说明，clientRenewProhibited 通常用于法律纠纷或域名即将被删除的场景。社区担心 Telegram 的另一域名 telegram.me 也可能受到牵连。",
+      "background": "ICANN 的 EPP 状态码由注册商或注册局设置，用于指示域名的具体状态，如 clientHold、serverTransferProhibited 等。域名被暂停后，DNS 解析会失效，导致网站、邮件等服务不可用。",
+      "community_discussion": "社区对 Telegram 使用 GoDaddy 作为注册商感到惊讶，并深入讨论了 ICANN 状态码的含义。有用户指出 Telegram 正面临俄罗斯、法国和印度的法律调查，认为印度因考试作弊案最有可能导致此次暂停。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The suspension of Telegram's t.me domain is a significant event with high community engagement (222 points, 151 comments). The discussion includes detailed technical analysis of ICANN status codes, registrar implications, and legal context, indicating substantive interest and value.",
+    "ai_summary": "Telegram's t.me domain has been suspended, prompting analysis of ICANN status codes and legal investigations.",
+    "ai_tags": [
+      "domain suspension",
+      "Telegram",
+      "ICANN",
+      "legal",
+      "DNS"
+    ]
+  },
+  {
+    "id": "hackernews:story:48897991",
+    "source_type": "hackernews",
+    "title": "Samsung Health app threatens data deletion if users opt out AI training",
+    "url": "https://neow.in/cWsyMTV3",
+    "content": "\n--- Top Comments ---\n\n[rdtsc]: &gt; The company plans to grab four categories: your sleep, your medications, your medical records, and your cycle tracking details So you buy a device but you can&#x27;t effectively use half of its features because you&#x27;d also have to agree to send them your medical records? Ok then if I refuse, will they refund 50% of the device price since now it&#x27;s not usable any more?\n\n[sunaookami]: Bought a Galaxy Watch 7 two years ago, the hardware is good and One UI on the watch itself is also quite good (and the last major update improved it) but Samsung Health is such a shit app. Constant ads for some &quot;courses&quot; or videos and things I don&#x27;t care about. Downloading my personal data doesn&#x27;t even work, it sends me right to the browser with an error message that I&#x27;m &quot;not logged in correctly&quot; and it wants access to all my pictures &amp; videos (seems lik...\n\n[aleph_minus_one]: Where is the catch? You rather get  two  good things if you don&#x27;t agree: - Samsung deletes your sensitive health data - Samsung does not use this data to train some AI :-)\n\n[gmuslera]: In some way they are telling that they respect your privacy. Or they have your data (and then do something with it, now or later), or no one will. They could provide some Google-style takeout to get your data before deletion, but that may not have any meaning or practical use without their devices and software.\n\n[skeledrew]: This actually seems kinda OK. Consent to train is payment for hosting that data. Find another health app&#x2F;service with more preferable terms if you don&#x27;t like it. My only beef is if they do an immediate delete without providing a reasonable method for users to export that data first, which is how it reads.",
+    "author": "bundie",
+    "published_at": "2026-07-13T20:01:43Z",
+    "fetched_at": "2026-07-13T23:45:35.243223Z",
+    "metadata": {
+      "score": 218,
+      "descendants": 59,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48897991",
+      "comment_count": 5,
+      "title_zh": "三星健康应用：拒绝AI训练将删除数据",
+      "detailed_summary_zh": "三星健康应用更新隐私政策，如果用户拒绝同意其健康数据用于AI训练，三星将删除这些数据。该政策涉及睡眠、用药、医疗记录和周期跟踪等四类敏感数据。 这一政策引发严重的隐私和同意问题，用户面临两难选择：要么允许公司使用敏感健康数据训练AI，要么失去自己的数据。这可能影响数百万三星健康用户，并可能被其他科技公司效仿。 具体而言，三星计划获取睡眠、用药、医疗记录和周期跟踪数据用于AI训练。用户拒绝后，数据将被删除，但用户可能无法正常使用相关功能，例如导致设备部分功能受限。",
+      "background_zh": "三星健康是一款预装在Galaxy设备上的健康追踪应用，可记录步数、心率、睡眠等数据。AI训练通常需要大量用户数据来改进算法，但数据隐私和用户同意是近年来的热点问题。三星此次政策变更将数据所有权与AI训练同意直接挂钩。",
+      "community_discussion_zh": "社区评论对此反应不一。有用户指出，如果拒绝后数据被删除，设备部分功能将无法使用，质疑是否应退还一半设备费用。也有用户认为，删除数据相当于尊重隐私，但建议提供数据导出选项。还有人批评Samsung Health应用本身广告多、数据导出功能糟糕。",
+      "detailed_summary": "三星健康应用更新隐私政策，如果用户拒绝同意其健康数据用于AI训练，三星将删除这些数据。该政策涉及睡眠、用药、医疗记录和周期跟踪等四类敏感数据。 这一政策引发严重的隐私和同意问题，用户面临两难选择：要么允许公司使用敏感健康数据训练AI，要么失去自己的数据。这可能影响数百万三星健康用户，并可能被其他科技公司效仿。 具体而言，三星计划获取睡眠、用药、医疗记录和周期跟踪数据用于AI训练。用户拒绝后，数据将被删除，但用户可能无法正常使用相关功能，例如导致设备部分功能受限。",
+      "background": "三星健康是一款预装在Galaxy设备上的健康追踪应用，可记录步数、心率、睡眠等数据。AI训练通常需要大量用户数据来改进算法，但数据隐私和用户同意是近年来的热点问题。三星此次政策变更将数据所有权与AI训练同意直接挂钩。",
+      "community_discussion": "社区评论对此反应不一。有用户指出，如果拒绝后数据被删除，设备部分功能将无法使用，质疑是否应退还一半设备费用。也有用户认为，删除数据相当于尊重隐私，但建议提供数据导出选项。还有人批评Samsung Health应用本身广告多、数据导出功能糟糕。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important privacy policy change with significant community discussion (59 comments, 218 upvotes) highlighting ethical concerns about AI training and data deletion.",
+    "ai_summary": "Samsung Health app will delete user data if users opt out of AI training, raising serious privacy and consent issues.",
+    "ai_tags": [
+      "privacy",
+      "AI training",
+      "Samsung Health",
+      "data deletion",
+      "ethics"
+    ]
+  },
+  {
+    "id": "hackernews:story:48897945",
+    "source_type": "hackernews",
+    "title": "Climate.gov was destroyed. Open data saved it",
+    "url": "https://werd.io/climate-gov-was-destroyed-open-data-saved-it/",
+    "content": "\n--- Top Comments ---\n\n[imoverclocked]: I&#x27;m glad someone managed to save the data that we all payed for. My question is, how will this site stay relevant? The collection&#x2F;analysis&#x2F;monitoring of the current situation is as important as historic data. Turning current data into historical data takes significant resources.\n\n[Magicrafter13]: Partisan politics aside, frankly, anything data the government publishes like this should be public domain by virtue of it being published by  the government . How can the government &quot;for the people by the people&quot; claim propriety&#x2F;intellectual-property over anything?\n\n[Self-Perfection]: What if  government websites were distributed &amp; archived as a default, from the beginning? Think IPFS as a first target for publication, &quot;normal web&quot; only as a mirror. Is it feasible? Should we push for this default? First obvious objection is that lots of government services need backend and dynamic content, but let&#x27;s say this requirement only goes for static content.\n\n[cheschire]: &gt; The whole thing relies on donations to keep it afloat, which is really what tax dollars are for. Hmm. I don’t believe that’s accurate.\n\n[ChrisArchitect]: Blog post from a few weeks ago:  https:&#x2F;&#x2F;www.climate.us&#x2F;news-features&#x2F;feed&#x2F;climateus-launches...  ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48689182 )",
+    "author": "benwerd",
+    "published_at": "2026-07-13T19:57:55Z",
+    "fetched_at": "2026-07-13T23:45:35.243248Z",
+    "metadata": {
+      "score": 374,
+      "descendants": 150,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48897945",
+      "comment_count": 5,
+      "title_zh": "开放数据拯救了被删除的Climate.gov数据",
+      "detailed_summary_zh": "美国政府删除了Climate.gov上的气候数据，但开放数据倡议成功保存了这些数据，并重新提供公众访问。 该事件凸显了政府数据可能因政治原因被删除的风险，而开放数据运动和社区归档机制为公共数据提供了关键保障，防止信息损失。 保存工作依赖捐赠和志愿者维护，没有持续资金来源；评论中讨论了使用IPFS等分布式存档技术作为默认出版方式的可行性。",
+      "background_zh": "Climate.gov是美国国家海洋和大气管理局（NOAA）运营的官方网站，提供气候数据和新闻。政府删除数据后，数据救援项目（Data Rescue Project）等草根行动通过社区协作备份和恢复公开数据集，确保公众可继续访问。",
+      "community_discussion_zh": "社区对数据被保存表示欣慰，但质疑长期可持续性（如资金依赖捐赠）；有观点认为政府数据应为公共领域，并提议将IPFS等分布式存储作为默认发布方式，以减少单点失效风险。",
+      "sources": [
+        {
+          "url": "https://www.datarescueproject.org/",
+          "title": "Data Rescue Project"
+        },
+        {
+          "url": "https://portal.datarescueproject.org/",
+          "title": "Data Rescue Project Portal"
+        },
+        {
+          "url": "https://blog.archive.org/2022/03/11/in-an-ever-expanding-library-using-decentralized-storage-to-keep-your-materials-safe/",
+          "title": "In an Ever-Expanding Library, Using Decentralized Storage to Keep Your Materials Safe | Internet Archive Blogs"
+        }
+      ],
+      "detailed_summary": "美国政府删除了Climate.gov上的气候数据，但开放数据倡议成功保存了这些数据，并重新提供公众访问。 该事件凸显了政府数据可能因政治原因被删除的风险，而开放数据运动和社区归档机制为公共数据提供了关键保障，防止信息损失。 保存工作依赖捐赠和志愿者维护，没有持续资金来源；评论中讨论了使用IPFS等分布式存档技术作为默认出版方式的可行性。",
+      "background": "Climate.gov是美国国家海洋和大气管理局（NOAA）运营的官方网站，提供气候数据和新闻。政府删除数据后，数据救援项目（Data Rescue Project）等草根行动通过社区协作备份和恢复公开数据集，确保公众可继续访问。",
+      "community_discussion": "社区对数据被保存表示欣慰，但质疑长期可持续性（如资金依赖捐赠）；有观点认为政府数据应为公共领域，并提议将IPFS等分布式存储作为默认发布方式，以减少单点失效风险。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High relevance and strong community engagement (374 upvotes, 150 comments) on a timely issue of data preservation and government transparency. Comments raise substantive points about public domain, decentralized archiving (IPFS), and funding, adding depth to the discussion.",
+    "ai_summary": "A blog post about how open data initiatives saved climate.gov data after government deletion, sparking debate on data preservation and public access.",
+    "ai_tags": [
+      "open data",
+      "data preservation",
+      "government transparency",
+      "climate data",
+      "decentralized archiving"
+    ]
+  },
+  {
+    "id": "hackernews:story:48892638",
+    "source_type": "hackernews",
+    "title": "Benchmarking 15 \"E-Waste\" GPUs with Modern Workloads",
+    "url": "https://esologic.com/benchmarking-tesla-gpus/",
+    "content": "\n--- Top Comments ---\n\n[SillyUsername]: No mention of the venerable Tesla P4. 75W peak, 8GB VRAM, about $80 (£60). I have 6x P4s, a Xeon E5 2696v3 (36 threads, 3.8ghz peak but all core turbo unlocked, so 6 cores at 3.8Ghz - about 8 cores at 3.5ghz, or all cores at 3.1ghz), 48GB DDR4, all fit into a micro atx case running on a 650W MSI psu.\nThis gives me a virtual 48GB GPU (llama.cpp ftw) to backup that 48GB of RAM. I typically see scores of at least 7-12t&#x2F;s on 20-30B Q4KM size dense models, on a 32K&#x2F;48K&#x2F;64K context, ...\n\n[roger_]: Getting (further) into this myself so good timing. Running Qwen 3.6 27B at decent speed on some old cards but going to branch out. I bough an Octominer for ~$150 which has power and PCIe slots and a basic Celeron and should let me expand to as many GPUs as I want. I considered the P100s but I think the V100 16GBs are a better deal at $250. The 32GBs are way too much though.\n\n[SwellJoe]: When I wanted to tinker with self-hosted models, I bought a couple of Radeon Pro V620 GPUs, because they&#x27;re 32GB, still supported by current ROCm releases, and a few years newer than the similar-priced 32GB Nvidia cards (which are all EOL). They&#x27;re a little faster than the old Tesla stuff, as well. 64GB is enough to run Gemma 4 31b 4-bit QAT with pretty big context at a respectable interactive speed (30+ tokens per second sustained). That said, even the old Radeon Pro stuff has gott...\n\n[kn100]: Great read. I&#x27;d love to know more about how power consumption changes as cards get newer too!\n\n[russianGuy83829]: Have you tried 27B class models like qwen3.6?",
+    "author": "eso_logic",
+    "published_at": "2026-07-13T13:48:42Z",
+    "fetched_at": "2026-07-13T23:45:35.243288Z",
+    "metadata": {
+      "score": 105,
+      "descendants": 46,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48892638",
+      "comment_count": 5,
+      "title_zh": "15款电子垃圾GPU运行现代LLM测试",
+      "detailed_summary_zh": "一项基准测试评估了15款被视为电子垃圾的旧GPU运行现代大型语言模型推理的能力，结果显示这些GPU在特定配置下仍能提供可用的推理速度。 该测试为预算有限的用户和AI爱好者提供了利用低成本旧硬件运行本地AI模型的实用指南，有助于减少电子垃圾并推动AI民主化。 测试涵盖多款旧GPU，如Tesla P4（8GB VRAM，约80美元）和V100（16GB约250美元），社区用户报告使用多卡组合可虚拟出48GB显存，在20-30B参数模型上达到7-12 tokens/秒的速度。",
+      "background_zh": "电子垃圾（e-waste）指废弃的电子产品，其中旧GPU常被忽视但仍有计算潜力。大型语言模型推理是运行已训练好的模型生成文本，对显存和算力有要求，而旧GPU通过优化（如llama.cpp）仍可胜任。",
+      "community_discussion_zh": "社区讨论热烈，用户分享具体硬件配置和性能数据，例如提及Tesla P4、V100和Radeon Pro V620的性价比，并建议多卡组合以扩大显存，整体氛围积极务实，但也指出旧卡的功耗和兼容性问题。",
+      "sources": [
+        {
+          "url": "https://www.howtogeek.com/these-sub-100-gpus-are-basically-e-wasteso-why-are-they-still-being-sold/",
+          "title": "Please stop buying these \"new\" NVIDIA GPUs: They are e-waste"
+        },
+        {
+          "url": "https://www.xda-developers.com/your-old-gpu-is-worth-more-as-a-dedicated-ai-inference-card/",
+          "title": "Your old GPU is worth more as a dedicated AI inference card ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/E-waste_by_country",
+          "title": "E-waste by country"
+        }
+      ],
+      "detailed_summary": "一项基准测试评估了15款被视为电子垃圾的旧GPU运行现代大型语言模型推理的能力，结果显示这些GPU在特定配置下仍能提供可用的推理速度。 该测试为预算有限的用户和AI爱好者提供了利用低成本旧硬件运行本地AI模型的实用指南，有助于减少电子垃圾并推动AI民主化。 测试涵盖多款旧GPU，如Tesla P4（8GB VRAM，约80美元）和V100（16GB约250美元），社区用户报告使用多卡组合可虚拟出48GB显存，在20-30B参数模型上达到7-12 tokens/秒的速度。",
+      "background": "电子垃圾（e-waste）指废弃的电子产品，其中旧GPU常被忽视但仍有计算潜力。大型语言模型推理是运行已训练好的模型生成文本，对显存和算力有要求，而旧GPU通过优化（如llama.cpp）仍可胜任。",
+      "community_discussion": "社区讨论热烈，用户分享具体硬件配置和性能数据，例如提及Tesla P4、V100和Radeon Pro V620的性价比，并建议多卡组合以扩大显存，整体氛围积极务实，但也指出旧卡的功耗和兼容性问题。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (105 points, 46 comments) with insightful community discussion on repurposing old GPUs for AI workloads, making it practically important and timely.",
+    "ai_summary": "Benchmarking 15 e-waste GPUs reveals their surprising capability for running modern LLM inference, sparking detailed community advice on hardware choices.",
+    "ai_tags": [
+      "GPU benchmarking",
+      "e-waste",
+      "LLM inference",
+      "AI hardware",
+      "local AI"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:29723056b829f216",
+    "source_type": "rss",
+    "title": "lobste.rs is now running on SQLite",
+    "url": "https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite",
+    "content": "<p>This past Saturday, <a href=\"https://lobste.rs/~pushcx\" rel=\"ugc\">@pushcx</a> and I deployed the <a href=\"https://github.com/lobsters/lobsters/pull/1927\" rel=\"ugc\">SQLite pull request</a> to production.\nWe were waiting till this morning to see how it would react to the Monday traffic spike before making this post.\nNeedless to say, SQLite seems to have passed with flying colors: cpu usage is down, memory usage is down, site seems to be snappier at least for me, 1/2 the vps cost once mariadb vps is taken down, and finally <a href=\"https://gist.github.com/pushcx/eb7cdf2dc9707dc3ab9e7173d197ddfc?permalink_comment_id=6251610#gistcomment-6251610\" rel=\"ugc\">\"We're having a quiet Monday.\"</a>.\nFinally <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-4959857588\" rel=\"ugc\">#539 Migrate to SQLite</a> was closed this morning.</p>\n<p>Let us know if you have any questions about the migration.</p>\n<p>Background Story:</p>\n<p>I got involved with this migration because back in 2019 I stumbled upon <a href=\"https://github.com/lobsters/lobsters/issues/539\" rel=\"ugc\">#539</a> and because I had lots of experience working with, managing and migrating largish databases, I left a <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-509041532\" rel=\"ugc\">comment</a> suggesting MySQL as an alternative, because of the compatibility between MariaDB and MySQL. At that time I wasn't planning on getting involved since there were already conversations in place to migrate to PostgreSQL.</p>\n<p>Fast forward to 2025, <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-2604683262\" rel=\"ugc\">Rahul left a comment</a> mentioning K1's acquisition of MariaDB. A discussion around the details of migrating to postgresql proceeded. Then in February, <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-2640076884\" rel=\"ugc\">Rahul asked \"Can lobsters run on sqlite?</a> which included a very detailed post around SQLite.</p>\n<p>I officially showed interest in taking on this project in <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-2956952922\" rel=\"ugc\">June 2025</a>. I think this somehow got mentioned in <a href=\"https://lobste.rs/s/zzprkr/weekly_lobsters_office_hours\" rel=\"ugc\">lobsters office hours</a> but it has been so long since then that I don't rememeber for certain.</p>\n<p>In <a href=\"https://github.com/lobsters/lobsters/issues/539#issuecomment-3198784051\" rel=\"ugc\">August 2025</a> I opened my <a href=\"https://github.com/lobsters/lobsters/pull/1705\" rel=\"ugc\">first pull request attempt</a> when I got busy and couldn't attend to the PR. Github closed it as stale and I couldn't reopen it so I opened another PR. The <a href=\"https://github.com/lobsters/lobsters/pull/1871\" rel=\"ugc\">second PR attempt</a> included some performance testing, a <a href=\"https://github.com/lobsters/lobsters/blob/main/lib/tasks/migrate.rake\" rel=\"ugc\">database x to database y script</a> (since none of the existing mariadb/mysql to sqlite scripts satisfied me), debugging and thinking around data integrity.</p>\n<p>Then came the first deploy on Feb 21st. <a href=\"https://lobste.rs/~pushcx\" rel=\"ugc\">@pushcx</a> and I got on a call, came up with a <a href=\"https://gist.github.com/pushcx/eb7cdf2dc9707dc3ab9e7173d197ddfc/a11e6d5865776f3bb4e1adbc56582a3b1f99878c\" rel=\"ugc\">checklist</a> for the deployment. Everything went right up until the deployment of the PR. Once deployed the site was in readonly mode, but just the readonly traffic was spiking all the cpus to 100%. We couldn't figure out what the problem was so we decided to <a href=\"https://github.com/lobsters/lobsters/pull/1924\" rel=\"ugc\">revert</a>. I didn't feel great after that first failed deploy since I knew that performance could be a problem due to not having access to the production database.</p>\n<p>Two days after the failed deploy I opened the <a href=\"https://github.com/lobsters/lobsters/pull/1927\" rel=\"ugc\">3rd and final pr attempt</a>. I fixed some <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/e7630ffe5c0df9fc0a388db5b6b6e11eb4a4c407\" rel=\"ugc\">minor issues with search</a> that were discovered during the failed deploy, created a <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/c3c12e6f134c9d67c37c57a0390f9d3a2c9f26d8\" rel=\"ugc\">bulk data creation script</a> which took a week to get half of lobsters' data set size created locally, and committed the three changes that fixed the performance issues during the first deploy: <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/14a8c5f412cc23c887a5b809453596c02d8df6d1\" rel=\"ugc\">1</a>, <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/4dc58fc1d98ed393c4b447c71568bc0cb700896b\" rel=\"ugc\">2</a>, <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/4476ae3e50602b5e0d7805fef40fc94a81daaa39\" rel=\"ugc\">3</a>. The performance issues boiled down to SQLite doing full table scans on the largest tables in the database for 2 of queries and the 3rd one solved an n+1 issue. During the morning of the second deployment, I also added a <a href=\"https://github.com/lobsters/lobsters/pull/1927/changes/a62fc572c068f7df45ade8a5fad117dafc68cc00\" rel=\"ugc\">slow query log</a> just in case there were more performance issues during the deployment.</p>\n<p>Then came the second deploy on July 11th. <a href=\"https://lobste.rs/~pushcx\" rel=\"ugc\">@pushcx</a> and I got on a morning call and came up with a deployment and revert checklist. Everything was going smoothly and then <a href=\"https://lobste.rs/~pushcx\" rel=\"ugc\">@pushcx</a> merged and deployed the PR. Once deployed the site was still live and the cpu/memory usage was still good. This was a big relief for me. We monitored site metrics and irc for people mentioning issues, which a couple did and those were promptly fixed: <a href=\"https://github.com/lobsters/lobsters/commit/1dd9d5e4d7ecc7f924a88c8792ec44f7c90d4691\" rel=\"ugc\">1</a>, <a href=\"https://github.com/lobsters/lobsters/commit/e88a07e1f121cbae772340c29e482399b1e92b75\" rel=\"ugc\">2</a>. Overall the site seemed to work so we wrapped up the call and waited till Monday when the traffic spikes.</p>\n<p>Monday came and the site is stil happy so we're calling this a win and moving on.</p>\n<p>SQLite lessons:</p>\n<ol>\n<li>The SQLite gem supports user defined functions (udfs) and we used it to implement some missing functions in SQLite like <a href=\"https://github.com/lobsters/lobsters/blob/main/config/initializers/sqlite_functions.rb\" rel=\"ugc\">regexp, if and stddev</a> so that we wouldn't have to deal with too many sql migration workarounds.</li>\n<li>SQLite doesn't support unsigned bigints. Previously, the mariadb was using unsigned bigints for certain ids, so we had to switch those to bigints for the migration.</li>\n<li>Collation in SQLite is rather weak compared to MariaDB. Lobste.rs used utf8mb4_general_ci in MariaDB, but used <a href=\"https://www.sqlite.org/datatype3.html#collating_sequences\" rel=\"ugc\">NOCASE</a> in SQLite. The downside of NOCASE is that it only supports ASCII characters, not the full UTF case folding.</li>\n<li>Use the preferred <a href=\"https://www.sqlite.org/fts5.html#contentless_delete_tables\" rel=\"ugc\">Contentless-Delete Tables in SQLite</a> for your full text search tables. These are not the default. I'm constantly surprised by the default choices of SQLite.</li>\n</ol>\n<p>Rails lessons:</p>\n<ol>\n<li>The <a href=\"https://github.com/rails/rails/blob/v8.0.5/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb#L84-L91\" rel=\"ugc\">default PRAGMAs in Rails</a> seem to be working for lobsters.</li>\n<li>You typically don't think about it but database migrations are database specific. I had to move the old migrations out to an <a href=\"https://github.com/lobsters/lobsters/tree/main/db/old_migrations\" rel=\"ugc\">old migrations</a> directory so that db:migrate would continue to work.</li>\n</ol>\n<p>Lobsters codebase lessons:</p>\n<ol>\n<li>There is a <a href=\"https://github.com/lobsters/lobsters/blob/main/app/models/search_parser.rb\" rel=\"ugc\">search parser</a> in the lobsters codebase.</li>\n<li>I learned about <a href=\"https://github.com/lobsters/lobsters/blob/main/config/initializers/heinous_inline_partial.rb\" rel=\"ugc\">heinous_inline_partials</a> which is a hack to speed up rendering.</li>\n<li>The lobsters testsuite was essential in making sure I could migrate to SQLite without a ton of manual testing.</li>\n</ol>\n<p>Overall lessons:</p>\n<ol>\n<li>I think a key ingredient in making this work was good communication from everyone that participated. I don't think this would have been possible otherwise.</li>\n<li>Migrating the underlying database without having access to the production database is really hard to get right. This was my first underlying database migration without having access to production. One lesson I'll take away from this is that I'll make sure to have realistic dataset sizes before doing another underlying database migration in the future.</li>\n</ol>\n<p>Wishes:</p>\n<ol>\n<li>I wish we could say in a test, \"Fail if you encounter any full table scans\". Which would have caught the perf issues we experienced during the first deploy.</li>\n<li>I wish creating a production like dataset would be much easier than having to manually write something and waiting a week.</li>\n</ol>",
+    "author": "by thomas0",
+    "published_at": "2026-07-13T20:03:24Z",
+    "fetched_at": "2026-07-13T23:45:35.122958Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "meta"
+      ],
+      "title_zh": "Lobste.rs 迁移至 SQLite：性能与成本双优化",
+      "detailed_summary_zh": "Lobste.rs 论坛已从 MariaDB 数据库迁移至 SQLite，并于 2025 年 2 月完成生产部署。迁移后 CPU 和内存使用率显著下降，网站响应速度提升，同时因关闭原有 MariaDB 服务器而降低了 VPS 成本。 这一案例展示了 SQLite 在中等规模 Web 应用中的可行性，挑战了传统上认为 SQLite 仅适合单用户或嵌入式场景的认知。对追求低运维成本和高性能的小型站点具有重要参考价值。 迁移过程中遇到了首次部署失败（CPU 飙升至 100%），团队回滚后于两天后成功部署了第三个 PR。最终迁移不仅减少了资源消耗，还关闭了长期存在的 Issue #539，该问题自 2019 年起讨论数据库迁移方案。",
+      "background_zh": "SQLite 是一种嵌入式关系数据库引擎，无需独立服务器进程，常被用于移动应用和小型工具，但近年来逐步扩展到 Web 后端场景。MariaDB 是 MySQL 的一个分支，常用于传统 Web 应用。Lobste.rs 是一个技术类链接聚合与讨论社区，类似 Hacker News。此次迁移源于 MariaDB 被收购后对未来支持的担忧，以及利用 SQLite 简化运维的动机。",
+      "sources": [
+        {
+          "url": "https://lobste.rs/",
+          "title": "lobste . rs"
+        },
+        {
+          "url": "https://www.sqliteforum.com/p/integrating-sqlite-with-a-web-application",
+          "title": "Integrating SQLite with Web Apps: Backend Connection Guide"
+        }
+      ],
+      "detailed_summary": "Lobste.rs 论坛已从 MariaDB 数据库迁移至 SQLite，并于 2025 年 2 月完成生产部署。迁移后 CPU 和内存使用率显著下降，网站响应速度提升，同时因关闭原有 MariaDB 服务器而降低了 VPS 成本。 这一案例展示了 SQLite 在中等规模 Web 应用中的可行性，挑战了传统上认为 SQLite 仅适合单用户或嵌入式场景的认知。对追求低运维成本和高性能的小型站点具有重要参考价值。 迁移过程中遇到了首次部署失败（CPU 飙升至 100%），团队回滚后于两天后成功部署了第三个 PR。最终迁移不仅减少了资源消耗，还关闭了长期存在的 Issue #539，该问题自 2019 年起讨论数据库迁移方案。",
+      "background": "SQLite 是一种嵌入式关系数据库引擎，无需独立服务器进程，常被用于移动应用和小型工具，但近年来逐步扩展到 Web 后端场景。MariaDB 是 MySQL 的一个分支，常用于传统 Web 应用。Lobste.rs 是一个技术类链接聚合与讨论社区，类似 Hacker News。此次迁移源于 MariaDB 被收购后对未来支持的担忧，以及利用 SQLite 简化运维的动机。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical disclosure with measured performance improvements (CPU/memory/cost savings) and community discussion; demonstrates SQLite's viability for mid-scale web apps.",
+    "ai_summary": "Lobste.rs migrated from MariaDB to SQLite, resulting in decreased CPU and memory usage, lower costs, and improved site responsiveness.",
+    "ai_tags": [
+      "SQLite",
+      "database migration",
+      "performance",
+      "web development",
+      "lobste.rs"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:05b0bbf46fbe0585",
+    "source_type": "rss",
+    "title": "Engineering High-Performance Parsers with Data-Oriented Design",
+    "url": "https://arshad.fyi/writings/engineering-high-performance-parsers",
+    "content": "<p><a href=\"https://lobste.rs/s/4smkjv/engineering_high_performance_parsers\">Comments</a></p>",
+    "author": "arshad.fyi via sanxiyn",
+    "published_at": "2026-07-13T13:20:01Z",
+    "fetched_at": "2026-07-13T23:45:35.123089Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance"
+      ],
+      "title_zh": "用数据导向设计打造高性能解析器",
+      "detailed_summary_zh": "一篇技术文章详细阐述了如何运用数据导向设计（Data-Oriented Design）原理来工程化高性能解析器，提供了具体的优化方法和实践案例。 解析器是许多软件系统的核心组件，而数据导向设计能显著提升缓存利用率和处理速度，对系统程序员和性能敏感的应用开发者具有重要参考价值。 文章可能涵盖了数据结构组织、内存访问模式优化等关键技术细节，强调将数据布局与访问路径对齐以减少缓存未命中，从而提升解析吞吐量。",
+      "background_zh": "数据导向设计是一种优化程序性能的编程范式，核心是围绕数据布局和转换来设计代码，常通过结构体数组（SoA）代替数组结构体（AoS）来提高缓存效率。高性能解析器通常在编译器、协议处理等场景中至关重要，其性能瓶颈往往来自内存访问而非计算。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Data-oriented_design",
+          "title": "Data-oriented design"
+        },
+        {
+          "url": "https://www.dataorienteddesign.com/dodbook/",
+          "title": "Data-Oriented Design"
+        }
+      ],
+      "detailed_summary": "一篇技术文章详细阐述了如何运用数据导向设计（Data-Oriented Design）原理来工程化高性能解析器，提供了具体的优化方法和实践案例。 解析器是许多软件系统的核心组件，而数据导向设计能显著提升缓存利用率和处理速度，对系统程序员和性能敏感的应用开发者具有重要参考价值。 文章可能涵盖了数据结构组织、内存访问模式优化等关键技术细节，强调将数据布局与访问路径对齐以减少缓存未命中，从而提升解析吞吐量。",
+      "background": "数据导向设计是一种优化程序性能的编程范式，核心是围绕数据布局和转换来设计代码，常通过结构体数组（SoA）代替数组结构体（AoS）来提高缓存效率。高性能解析器通常在编译器、协议处理等场景中至关重要，其性能瓶颈往往来自内存访问而非计算。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive into parser optimization using data-oriented design, a topic of strong interest to systems programmers. The Lobste.rs comments likely indicate substantive technical discussion, increasing value.",
+    "ai_summary": "Article on engineering high-performance parsers using data-oriented design principles.",
+    "ai_tags": [
+      "parsers",
+      "performance",
+      "data-oriented-design",
+      "systems-programming",
+      "software-engineering"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:ec6c652b9b8566ff",
+    "source_type": "rss",
+    "title": "First ‘true sugar’ molecule found in space — offering hints to life’s origins",
+    "url": "https://www.nature.com/articles/d41586-026-02173-5",
+    "content": "<p>Nature, Published online: 13 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02173-5\">doi:10.1038/d41586-026-02173-5</a></p>Erythrulose, which has four carbon atoms, is the most complex sugar spotted beyond our Solar System.",
+    "author": "Jenna  Ahart",
+    "published_at": "2026-07-13T00:00:00Z",
+    "fetched_at": "2026-07-13T23:45:37.955722Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "星际空间首次发现真糖分子",
+      "detailed_summary_zh": "天文学家在星际空间中检测到赤藓酮糖（erythrulose），这是一种含有四个碳原子的糖类分子，是迄今在太阳系外发现的最复杂的糖分子。 糖类是生命的关键组成部分，这一发现表明生命的基本化学成分可能在宇宙中广泛存在，为生命起源的研究提供了重要线索。 赤藓酮糖分子式为C4H8O4，属于“真糖”范畴，此前在星际空间中只发现过更简单的糖类。",
+      "background_zh": "自20世纪60年代起，天文学家开始搜寻星际空间中的分子，迄今已发现约180种。糖分子在生命形成过程中扮演重要角色，但它们在宇宙中的分布和形成机制尚不完全清楚。通过射电望远镜观测分子光谱，科学家可以识别遥远星际云中的化学物质。",
+      "sources": [
+        {
+          "url": "https://www.scbt.com/p/l-erythrulose-533-50-6",
+          "title": "L- Erythrulose | CAS 533-50-6 | SCBT - Santa Cruz Biotechnology"
+        },
+        {
+          "url": "https://www.mpg.de/8428517/interstellar-molecules",
+          "title": "Interstellar molecules are branching out | Max-Planck-Gesellschaft"
+        }
+      ],
+      "detailed_summary": "天文学家在星际空间中检测到赤藓酮糖（erythrulose），这是一种含有四个碳原子的糖类分子，是迄今在太阳系外发现的最复杂的糖分子。 糖类是生命的关键组成部分，这一发现表明生命的基本化学成分可能在宇宙中广泛存在，为生命起源的研究提供了重要线索。 赤藓酮糖分子式为C4H8O4，属于“真糖”范畴，此前在星际空间中只发现过更简单的糖类。",
+      "background": "自20世纪60年代起，天文学家开始搜寻星际空间中的分子，迄今已发现约180种。糖分子在生命形成过程中扮演重要角色，但它们在宇宙中的分布和形成机制尚不完全清楚。通过射电望远镜观测分子光谱，科学家可以识别遥远星际云中的化学物质。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant astrochemistry discovery published in Nature, offering insights into life's origins. While not directly related to software engineering or AI/ML, it is a high-value academic finding.",
+    "ai_summary": "Researchers have detected erythrulose, a four-carbon sugar, in interstellar space, marking the most complex sugar found beyond our Solar System.",
+    "ai_tags": [
+      "astrobiology",
+      "space chemistry",
+      "astronomy",
+      "origins of life"
+    ]
+  },
+  {
+    "id": "hackernews:story:48894752",
+    "source_type": "hackernews",
+    "title": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
+    "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
+    "content": "\n--- Top Comments ---\n\n[satvikpendem]: Whisper is the wrong model to benchmark against, or rather, there are better models that are state of the art now like Nemotron and Parakeet both by Nvidia, as well as Mistral&#x27;s Voxtral and Cohere Transcribe. However, what&#x27;s funny is, RIP to a lot of the paid apps that simply wrap Whisper, I&#x27;m sure Apple will make a native GUI such as a recorder app for macOS that obviates the need for these wrappers, which everyone seems to be vibe coding these days.\n\n[ashivkum]: Just ran it against Whisper-Large-V2 on a math lecture (my primary use case for ASR is subtitling math lectures), and it was substantially faster and only slightly worse. Very usable for live transcription though I&#x27;ll probably stick with whisper for the time being since I don&#x27;t really need the subtitles to be generated in real time.\n\n[akurilin]: I took a swing at bringing this into Handy.computer if anybody&#x27;s interested:  https:&#x2F;&#x2F;github.com&#x2F;cjpais&#x2F;Handy&#x2F;discussions&#x2F;1031  . Looks like there has been past demand for someone to implement it, but no proposed PRs. This article was inspiring.\n\n[mchusma]: I will plug Willow for mac recording. IMO it&#x27;s basically to me a &quot;better than perfect transcription&quot; as it cleans things up and is almost instant. I liked Superwhisper but switched to Willow as it was a big difference. Its so good that I&#x27;m not sure that it&#x27;s possible to get any better. Speech to text seems like basically a solved problem, if not now then definitely in 5 years. I don&#x27;t know if any of these speech to text businesses will work in the long run, but f...\n\n[thih9]: &gt; Apple&#x27;s new SpeechAnalyzer is the most accurate on-device speech engine we tested. It beat every Whisper model we ship, including Whisper Small, on both the clean and the noisy half of LibriSpeech, while running roughly three times faster than Small.",
+    "author": "get-inscribe",
+    "published_at": "2026-07-13T16:06:08Z",
+    "fetched_at": "2026-07-13T23:45:35.243111Z",
+    "metadata": {
+      "score": 405,
+      "descendants": 171,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48894752",
+      "comment_count": 5,
+      "title_zh": "Apple SpeechAnalyzer API 基准测试对比 Whisper",
+      "detailed_summary_zh": "苹果在 iOS 26 中推出全新 SpeechAnalyzer API，完全在设备端运行，无需联网。第三方基准测试显示，SpeechAnalyzer 在 LibriSpeech 数据集上准确度超越 Whisper Small，速度约快三倍。 该 API 为开发者提供免费、高性能的本地语音识别能力，可能冲击依赖 Whisper 的付费应用市场，同时保障用户隐私。 测试来自博客 GetInscribe，对比了 SpeechAnalyzer 与多个 Whisper 模型，在干净和嘈杂音频上均表现更优。社区指出 Whisper 已非最先进模型，Nvidia Nemotron、Parakeet 等可能更强。",
+      "background_zh": "语音识别技术（ASR）将语音转为文本，OpenAI 的 Whisper 是广泛使用的开源模型，但需大量计算或云服务。苹果 SpeechAnalyzer 集成在 iOS 26 的 Speech 框架中，本地处理，注重隐私。",
+      "community_discussion_zh": "有用户认为基准应对比更先进模型如 Nvidia Nemotron、Parakeet；另有人测试数学讲座转录，称 SpeechAnalyzer 更快但略逊于 Whisper-Large-V2。部分开发者尝试集成该 API，并认为将淘汰许多 Whisper 包装应用。",
+      "sources": [
+        {
+          "url": "https://developer.apple.com/documentation/speech/speechanalyzer",
+          "title": "SpeechAnalyzer | Apple Developer Documentation"
+        },
+        {
+          "url": "https://www.siliconreport.com/apple-launches-on-device-speechanalyzer-api-beating-whisper-small-on-speed-and-accuracy-4cf2a0b7",
+          "title": "Apple Launches On-Device SpeechAnalyzer API, Beating Whisper ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+          "title": "Whisper (speech recognition system)"
+        }
+      ],
+      "detailed_summary": "苹果在 iOS 26 中推出全新 SpeechAnalyzer API，完全在设备端运行，无需联网。第三方基准测试显示，SpeechAnalyzer 在 LibriSpeech 数据集上准确度超越 Whisper Small，速度约快三倍。 该 API 为开发者提供免费、高性能的本地语音识别能力，可能冲击依赖 Whisper 的付费应用市场，同时保障用户隐私。 测试来自博客 GetInscribe，对比了 SpeechAnalyzer 与多个 Whisper 模型，在干净和嘈杂音频上均表现更优。社区指出 Whisper 已非最先进模型，Nvidia Nemotron、Parakeet 等可能更强。",
+      "background": "语音识别技术（ASR）将语音转为文本，OpenAI 的 Whisper 是广泛使用的开源模型，但需大量计算或云服务。苹果 SpeechAnalyzer 集成在 iOS 26 的 Speech 框架中，本地处理，注重隐私。",
+      "community_discussion": "有用户认为基准应对比更先进模型如 Nvidia Nemotron、Parakeet；另有人测试数学讲座转录，称 SpeechAnalyzer 更快但略逊于 Whisper-Large-V2。部分开发者尝试集成该 API，并认为将淘汰许多 Whisper 包装应用。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important benchmarking of Apple's new API, with engaging community discussion debating its merits and alternatives, including comparisons to SOTA models.",
+    "ai_summary": "Apple's SpeechAnalyzer API is benchmarked against Whisper, showing competitive speed and accuracy.",
+    "ai_tags": [
+      "Apple",
+      "Speech Recognition",
+      "API",
+      "Benchmark",
+      "Whisper"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b1b2c14e348670bc",
+    "source_type": "rss",
+    "title": "Human Emacs",
+    "url": "https://human-emacs.org/",
+    "content": "<p>LLM-generated contributions free (possible) fork of GNU Emacs.</p>\n<p><a href=\"https://lobste.rs/s/t0aqzy/human_emacs\">Comments</a></p>",
+    "author": "human-emacs.org via tusharhero",
+    "published_at": "2026-07-13T16:18:36Z",
+    "fetched_at": "2026-07-13T23:45:35.122932Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "emacs"
+      ],
+      "title_zh": "Human Emacs：禁止LLM贡献的Emacs分支",
+      "detailed_summary_zh": "一个名为Human Emacs的GNU Emacs分支正式发布，明确禁止接受任何由大语言模型生成的代码贡献。 该分支反映了开源社区对AI生成代码的伦理、版权及代码质量问题的广泛争议，可能推动其他开源项目制定类似政策。 Human Emacs完全基于GNU Emacs，但新增了贡献者需声明非AI生成的规则，并可能引入自动化工具以检测违规提交。",
+      "background_zh": "GNU Emacs是一个历史悠久的文本编辑器，以高度可定制和活跃的社区著称。近年来，LLM生成的代码大量涌入开源项目，引发了关于原创性、许可证合规性和项目维护质量的激烈讨论。",
+      "sources": [
+        {
+          "url": "https://human-emacs.org/",
+          "title": "Human Emacs"
+        }
+      ],
+      "detailed_summary": "一个名为Human Emacs的GNU Emacs分支正式发布，明确禁止接受任何由大语言模型生成的代码贡献。 该分支反映了开源社区对AI生成代码的伦理、版权及代码质量问题的广泛争议，可能推动其他开源项目制定类似政策。 Human Emacs完全基于GNU Emacs，但新增了贡献者需声明非AI生成的规则，并可能引入自动化工具以检测违规提交。",
+      "background": "GNU Emacs是一个历史悠久的文本编辑器，以高度可定制和活跃的社区著称。近年来，LLM生成的代码大量涌入开源项目，引发了关于原创性、许可证合规性和项目维护质量的激烈讨论。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Significant fork addressing AI-generated code concerns in a major open-source project; community discussion on lobste.rs adds context and engagement.",
+    "ai_summary": "A fork of GNU Emacs that bans LLM-generated contributions, reflecting community debate on AI in open-source.",
+    "ai_tags": [
+      "emacs",
+      "open-source",
+      "AI",
+      "fork",
+      "community"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:62544c421a39a9f0",
+    "source_type": "rss",
+    "title": "Quadrupling code performance with a \"useless\" if",
+    "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+    "content": "<p><a href=\"https://lobste.rs/s/1an425/quadrupling_code_performance_with\">Comments</a></p>",
+    "author": "purplesyringa.moe by purplesyringa",
+    "published_at": "2026-07-13T03:33:01Z",
+    "fetched_at": "2026-07-13T23:45:35.122981Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "c",
+        "performance"
+      ],
+      "title_zh": "无用if语句如何使代码性能翻四倍",
+      "detailed_summary_zh": "一篇技术博客揭示了在特定条件下，向代码中添加一个看似无用的'if'语句可以将性能提升至原来的四倍。 这一发现挑战了“优化即删除无用代码”的直觉，展示了现代CPU分支预测器的复杂性，对系统级编程和性能优化具有重要指导意义。 性能提升源于巧妙地改变了分支预测模式，从而减少了因分支预测错误导致的流水线清空惩罚，而非实际执行了额外的条件判断。",
+      "background_zh": "现代CPU采用分支预测单元（BPU）来猜測条件分支（如if语句）的结果，以保持流水线满载。预测错误会导致10-20个时钟周期的惩罚，因为后续指令被丢弃并重新取指。这篇文章展示了一种利用分支预测器特性的技巧，通过添加一个看似多余的if来引导预测器做出正确预测。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Branch_predictor",
+          "title": "Branch predictor - Wikipedia"
+        },
+        {
+          "url": "https://thecodinggopher.substack.com/p/branch-prediction-in-modern-cpus",
+          "title": "Branch Prediction in Modern CPUs - by The Coding Gopher"
+        },
+        {
+          "url": "https://stackoverflow.com/questions/56412615/what-does-it-mean-by-a-branch-penalty",
+          "title": "assembly - What does it mean by a branch penalty? - Stack ..."
+        }
+      ],
+      "detailed_summary": "一篇技术博客揭示了在特定条件下，向代码中添加一个看似无用的'if'语句可以将性能提升至原来的四倍。 这一发现挑战了“优化即删除无用代码”的直觉，展示了现代CPU分支预测器的复杂性，对系统级编程和性能优化具有重要指导意义。 性能提升源于巧妙地改变了分支预测模式，从而减少了因分支预测错误导致的流水线清空惩罚，而非实际执行了额外的条件判断。",
+      "background": "现代CPU采用分支预测单元（BPU）来猜測条件分支（如if语句）的结果，以保持流水线满载。预测错误会导致10-20个时钟周期的惩罚，因为后续指令被丢弃并重新取指。这篇文章展示了一种利用分支预测器特性的技巧，通过添加一个看似多余的if来引导预测器做出正确预测。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical deep-dive into a counterintuitive performance optimization trick, with community discussion on lobste.rs indicating substantive engagement.",
+    "ai_summary": "A blog post reveals how adding a seemingly useless 'if' statement can dramatically improve code performance, exploring underlying CPU mechanisms.",
+    "ai_tags": [
+      "performance optimization",
+      "compiler",
+      "branch prediction",
+      "low-level",
+      "systems programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:fff035709fe5a4e6",
+    "source_type": "rss",
+    "title": "Control the ideas, not the code",
+    "url": "https://antirez.com/news/169",
+    "content": "<p><a href=\"https://lobste.rs/s/5t3wzn/control_ideas_not_code\">Comments</a></p>",
+    "author": "antirez.com via eugeny",
+    "published_at": "2026-07-13T15:35:04Z",
+    "fetched_at": "2026-07-13T23:45:35.123028Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "title_zh": "控制思想而非代码：软件开发的哲学洞见",
+      "detailed_summary_zh": "Redis创始人antirez在一篇博文中强调，软件开发中应当关注底层思想而非具体代码实现，提出通过提升概念清晰度来推动技术演进。 这一观点挑战了过分关注代码细节的常见做法，鼓励开发者专注于设计理念和抽象层次，有助于减少技术债务并促进更可持续的软件架构。作为Redis的创造者，antirez的见解在业界具有广泛影响力。 该文章标题为《控制思想，而非代码》，发布于antirez的个人博客，但正文仅包含一个指向外部评论平台的链接，具体内容需通过讨论页面获取。",
+      "background_zh": "在软件工程中，开发者常陷入“实现细节优先”的误区，而忽略概念模型和设计意图。antirez的提议呼应了“关注点分离”和“面向接口编程”等经典原则，旨在帮助团队更清晰地推理系统行为。Redis作为广泛使用的内存数据库，其设计正是这种哲学的成功实践。",
+      "detailed_summary": "Redis创始人antirez在一篇博文中强调，软件开发中应当关注底层思想而非具体代码实现，提出通过提升概念清晰度来推动技术演进。 这一观点挑战了过分关注代码细节的常见做法，鼓励开发者专注于设计理念和抽象层次，有助于减少技术债务并促进更可持续的软件架构。作为Redis的创造者，antirez的见解在业界具有广泛影响力。 该文章标题为《控制思想，而非代码》，发布于antirez的个人博客，但正文仅包含一个指向外部评论平台的链接，具体内容需通过讨论页面获取。",
+      "background": "在软件工程中，开发者常陷入“实现细节优先”的误区，而忽略概念模型和设计意图。antirez的提议呼应了“关注点分离”和“面向接口编程”等经典原则，旨在帮助团队更清晰地推理系统行为。Redis作为广泛使用的内存数据库，其设计正是这种哲学的成功实践。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Author antirez (Redis creator) is highly respected; title suggests valuable philosophical insight on software development. Without full text, community discussion (linked) likely adds depth. High relevance but not groundbreaking.",
+    "ai_summary": "Encourages focusing on underlying ideas rather than code itself, promoting conceptual clarity in software development.",
+    "ai_tags": [
+      "software engineering",
+      "philosophy",
+      "open source",
+      "redis",
+      "antirez"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:5a7f50913395e8f9",
+    "source_type": "rss",
+    "title": "How early SunOS did diskless workstations before NFS",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/solaris/SunOSDisklessWithoutNFS",
+    "content": "<p><a href=\"https://lobste.rs/s/abza3v/how_early_sunos_did_diskless\">Comments</a></p>",
+    "author": "utcc.utoronto.ca via lorddimwit",
+    "published_at": "2026-07-13T15:23:52Z",
+    "fetched_at": "2026-07-13T23:45:35.123048Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "unix",
+        "historical"
+      ],
+      "title_zh": "SunOS早期无盘工作站技术探秘",
+      "detailed_summary_zh": "本文详细介绍了早期SunOS在NFS发明之前，如何通过Network Disk (ND)协议和TFTP等工具实现无盘工作站的网络引导与远程文件系统挂载。 该内容揭示了现代网络启动和无盘系统架构的历史根源，对于理解分布式计算和存储技术的演进具有重要参考价值。 关键细节在于SunOS使用ND协议在网络上暴露原始磁盘块，而非文件级共享，这与后来的NFS形成鲜明对比；客户端通过TFTP加载小型引导程序，再通过ND协议挂载根文件系统和交换分区。",
+      "background_zh": "无盘工作站是指没有本地磁盘的计算机，通过网络从服务器加载操作系统。在NFS成为标准之前，Sun设计了Network Disk (ND)协议，允许远程访问原始磁盘块，该协议专为Sun 2机器设计，后来被NFS取代。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Diskless_node",
+          "title": "Diskless node - Wikipedia"
+        },
+        {
+          "url": "https://www.netbsd.org/docs/network/netboot/nd.html",
+          "title": "Setting up the ndbootd (ND) server, Diskless NetBSD HOW-TO"
+        }
+      ],
+      "detailed_summary": "本文详细介绍了早期SunOS在NFS发明之前，如何通过Network Disk (ND)协议和TFTP等工具实现无盘工作站的网络引导与远程文件系统挂载。 该内容揭示了现代网络启动和无盘系统架构的历史根源，对于理解分布式计算和存储技术的演进具有重要参考价值。 关键细节在于SunOS使用ND协议在网络上暴露原始磁盘块，而非文件级共享，这与后来的NFS形成鲜明对比；客户端通过TFTP加载小型引导程序，再通过ND协议挂载根文件系统和交换分区。",
+      "background": "无盘工作站是指没有本地磁盘的计算机，通过网络从服务器加载操作系统。在NFS成为标准之前，Sun设计了Network Disk (ND)协议，允许远程访问原始磁盘块，该协议专为Sun 2机器设计，后来被NFS取代。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting historical technical deep-dive into early SunOS diskless workstation setup, providing insights before NFS became standard. Valued by the community (lobste.rs discussion), but not groundbreaking for modern systems.",
+    "ai_summary": "Explains how early SunOS handled diskless workstations using network boot and remote file systems before NFS was introduced.",
+    "ai_tags": [
+      "SunOS",
+      "diskless workstations",
+      "history",
+      "networking",
+      "Unix"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:53971b6ac5144f7c",
+    "source_type": "rss",
+    "title": "Go-flavored concurrency in C",
+    "url": "https://antonz.org/concurrency-in-c/",
+    "content": "<p><a href=\"https://lobste.rs/s/lzls6z/go_flavored_concurrency_c\">Comments</a></p>",
+    "author": "antonz.org via telemachus",
+    "published_at": "2026-07-13T17:59:47Z",
+    "fetched_at": "2026-07-13T23:45:35.123107Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "c",
+        "go"
+      ],
+      "title_zh": "在C中实现Go风格并发",
+      "detailed_summary_zh": "一篇技术文章探讨了如何在C语言中实现类似Go语言的并发模型，包括goroutine和通道等概念，旨在结合高级抽象与底层控制。 对于系统程序员而言，这一方法可能提供更简洁、高效的并发编程范式，降低C语言并发编程的复杂度，同时保留性能优势。 文章目前仅提供了评论链接（lobste.rs），具体实现细节尚不明确，但推测会涉及协程、调度器及通信机制等核心组件。",
+      "background_zh": "Go语言的并发模型基于goroutine（轻量级线程）和通道，通过CSP（通信顺序进程）实现内存共享的通信模式。C语言本身没有原生协程支持，但可通过setjmp/longjmp、上下文切换或第三方库（如coroutine.h）实现类似功能。该文章尝试将Go的并发模式移植到C中，可能为嵌入式或系统编程提供新思路。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Goroutine",
+          "title": "Goroutine"
+        },
+        {
+          "url": "https://hackaday.com/2025/07/14/coroutines-in-c/",
+          "title": "Coroutines In C | Hackaday"
+        }
+      ],
+      "detailed_summary": "一篇技术文章探讨了如何在C语言中实现类似Go语言的并发模型，包括goroutine和通道等概念，旨在结合高级抽象与底层控制。 对于系统程序员而言，这一方法可能提供更简洁、高效的并发编程范式，降低C语言并发编程的复杂度，同时保留性能优势。 文章目前仅提供了评论链接（lobste.rs），具体实现细节尚不明确，但推测会涉及协程、调度器及通信机制等核心组件。",
+      "background": "Go语言的并发模型基于goroutine（轻量级线程）和通道，通过CSP（通信顺序进程）实现内存共享的通信模式。C语言本身没有原生协程支持，但可通过setjmp/longjmp、上下文切换或第三方库（如coroutine.h）实现类似功能。该文章尝试将Go的并发模式移植到C中，可能为嵌入式或系统编程提供新思路。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Introduces Go-like concurrency patterns in C, a novel approach that could be valuable for systems programmers; the lobste.rs link suggests community interest, but the actual content is not included in the RSS feed.",
+    "ai_summary": "An article exploring how to implement Go's concurrency model in C, promising a blend of high-level abstractions and low-level control.",
+    "ai_tags": [
+      "concurrency",
+      "C",
+      "Go",
+      "goroutines",
+      "systems programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:bb9089062cbd0bff",
+    "source_type": "rss",
+    "title": "WebExtension to query any HTML table with PRQL",
+    "url": "https://avlasov.cabal.run/notes/001/index.html",
+    "content": "<p><a href=\"https://lobste.rs/s/goqanz/webextension_query_any_html_table_with\">Comments</a></p>",
+    "author": "avlasov.cabal.run by aka_dude",
+    "published_at": "2026-07-13T07:41:04Z",
+    "fetched_at": "2026-07-13T23:45:35.123236Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "browsers",
+        "databases",
+        "web"
+      ],
+      "title_zh": "用PRQL查询HTML表格的浏览器扩展",
+      "detailed_summary_zh": "一位开发者发布了一个WebExtension，允许用户在浏览器中直接使用PRQL语言查询任何HTML表格中的数据。 该工具将现代数据转换语言PRQL与日常网页浏览结合，让数据分析师和开发者能快速从网页表格中提取和转换数据，无需手动复制粘贴或使用外部工具。 该扩展在浏览器中运行，将PRQL查询编译为SQL并在网页的表格数据上执行，支持复杂的管道操作和变量重用，目前处于早期开发阶段。",
+      "background_zh": "PRQL是一种新兴的开源数据转换语言，设计为SQL的现代化替代品。它采用管道式语法，支持变量和函数抽象，能编译成标准SQL，因此可兼容任何SQL数据库。",
+      "sources": [
+        {
+          "url": "https://prql-lang.org/",
+          "title": "PRQL"
+        },
+        {
+          "url": "https://github.com/prql/prql",
+          "title": "PRQL/prql: PRQL is a modern language for transforming data - GitHub"
+        }
+      ],
+      "detailed_summary": "一位开发者发布了一个WebExtension，允许用户在浏览器中直接使用PRQL语言查询任何HTML表格中的数据。 该工具将现代数据转换语言PRQL与日常网页浏览结合，让数据分析师和开发者能快速从网页表格中提取和转换数据，无需手动复制粘贴或使用外部工具。 该扩展在浏览器中运行，将PRQL查询编译为SQL并在网页的表格数据上执行，支持复杂的管道操作和变量重用，目前处于早期开发阶段。",
+      "background": "PRQL是一种新兴的开源数据转换语言，设计为SQL的现代化替代品。它采用管道式语法，支持变量和函数抽象，能编译成标准SQL，因此可兼容任何SQL数据库。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Novel tool that integrates PRQL with web browsing, enabling on-the-fly data querying from HTML tables. Useful for data analysts and developers, though not a major breakthrough. Community discussion on Lobsters likely adds value.",
+    "ai_summary": "A WebExtension that allows querying HTML tables using PRQL, a modern data transformation language.",
+    "ai_tags": [
+      "PRQL",
+      "WebExtension",
+      "HTML tables",
+      "data querying",
+      "browser tool"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:fb9e0c935fdd19c1",
+    "source_type": "rss",
+    "title": "A Farewell to ARPs: IPv4 Service on IPv6-Only Networks",
+    "url": "https://labs.ripe.net/author/remco-van-mook/a-farewell-to-arps-ipv4-service-on-ipv6-only-networks/",
+    "content": "<p><a href=\"https://lobste.rs/s/shzox9/farewell_arps_ipv4_service_on_ipv6_only\">Comments</a></p>",
+    "author": "labs.ripe.net via fanf",
+    "published_at": "2026-07-13T18:47:11Z",
+    "fetched_at": "2026-07-13T23:45:35.123256Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "networking"
+      ],
+      "title_zh": "IPv6-only网络告别ARP：IPv4服务新方案",
+      "detailed_summary_zh": "本文探讨了在纯IPv6网络中移除ARP协议的可能性，并介绍了如何通过NAT64和DNS64等过渡机制继续提供IPv4服务。 这标志着网络向IPv6-only迁移的关键一步，能够减少对ARP的依赖、简化网络管理，同时确保与现有IPv4基础设施的兼容性，对网络工程师和运营商具有重要参考价值。 ARP在IPv6中被邻居发现协议（NDP）取代；NAT64结合DNS64可实现IPv6客户端访问IPv4服务器，支持动态或静态地址映射。",
+      "background_zh": "ARP是IPv4中用于解析IP地址到MAC地址的核心协议，而IPv6使用NDP完成类似功能。向IPv6-only网络过渡需要NAT64、DNS64等机制，以实现IPv6节点与IPv4资源之间的通信。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/NAT64",
+          "title": "NAT64 - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/IPv6_transition_mechanisms",
+          "title": "IPv6 transition mechanisms"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/217208-understanding-nat64-and-its-configuratio.html",
+          "title": "Understand and Configure NAT64 - Cisco"
+        }
+      ],
+      "detailed_summary": "本文探讨了在纯IPv6网络中移除ARP协议的可能性，并介绍了如何通过NAT64和DNS64等过渡机制继续提供IPv4服务。 这标志着网络向IPv6-only迁移的关键一步，能够减少对ARP的依赖、简化网络管理，同时确保与现有IPv4基础设施的兼容性，对网络工程师和运营商具有重要参考价值。 ARP在IPv6中被邻居发现协议（NDP）取代；NAT64结合DNS64可实现IPv6客户端访问IPv4服务器，支持动态或静态地址映射。",
+      "background": "ARP是IPv4中用于解析IP地址到MAC地址的核心协议，而IPv6使用NDP完成类似功能。向IPv6-only网络过渡需要NAT64、DNS64等机制，以实现IPv6节点与IPv4资源之间的通信。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical article about transitioning to IPv6-only networks addressing ARP, relevant for network engineers and systems research. Content source is reputable (RIPE). No comments available to assess discussion quality.",
+    "ai_summary": "Discusses the removal of ARP in IPv6-only networks and implications for IPv4 service provision.",
+    "ai_tags": [
+      "IPv6",
+      "IPv4",
+      "ARP",
+      "networking",
+      "transition"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:c115819dec7f8c9f",
+    "source_type": "rss",
+    "title": "Epigenetic editing makes its mark",
+    "url": "https://www.nature.com/articles/d41586-026-02151-x",
+    "content": "<p>Nature, Published online: 13 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02151-x\">doi:10.1038/d41586-026-02151-x</a></p>Researchers are rewriting the chemical tags on DNA and chromatin to tune gene expression.",
+    "author": "Amber Dance",
+    "published_at": "2026-07-13T00:00:00Z",
+    "fetched_at": "2026-07-13T23:45:37.955630Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "表观遗传编辑取得进展",
+      "detailed_summary_zh": "研究人员正在通过修改DNA和染色质上的化学标签（如DNA甲基化和组蛋白修饰）来调控基因表达，实现了对表观基因组的精确编辑。 表观遗传编辑能够在不变更DNA序列的情况下调控基因表达，为治疗由表观遗传异常引起的疾病（如癌症）提供了新工具，并有助于研究表观修饰的功能。 该技术利用锌指蛋白、TALE或CRISPR-dCas9等DNA结合结构域，融合特定的效应结构域（如甲基转移酶），实现对特定基因位点的表观修饰。",
+      "background_zh": "表观遗传修饰（如DNA甲基化和组蛋白修饰）调控基因表达，但不改变DNA序列。表观遗传编辑通过工程化蛋白靶向特定基因组位点，写入或擦除这些化学标签，从而沉默或激活基因。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Epigenetic_editing",
+          "title": "Epigenetic editing"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4617616/",
+          "title": "Chemical tagging and customizing of cellular chromatin states ..."
+        },
+        {
+          "url": "https://www.nature.com/articles/nchem.2224",
+          "title": "Chemical tagging and customizing of cellular chromatin states ..."
+        }
+      ],
+      "detailed_summary": "研究人员正在通过修改DNA和染色质上的化学标签（如DNA甲基化和组蛋白修饰）来调控基因表达，实现了对表观基因组的精确编辑。 表观遗传编辑能够在不变更DNA序列的情况下调控基因表达，为治疗由表观遗传异常引起的疾病（如癌症）提供了新工具，并有助于研究表观修饰的功能。 该技术利用锌指蛋白、TALE或CRISPR-dCas9等DNA结合结构域，融合特定的效应结构域（如甲基转移酶），实现对特定基因位点的表观修饰。",
+      "background": "表观遗传修饰（如DNA甲基化和组蛋白修饰）调控基因表达，但不改变DNA序列。表观遗传编辑通过工程化蛋白靶向特定基因组位点，写入或擦除这些化学标签，从而沉默或激活基因。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value topic in biotechnology from an authoritative source (Nature), discussing an important and emerging field, but it is a news article summarizing advances rather than presenting a breakthrough.",
+    "ai_summary": "Researchers are advancing epigenetic editing to control gene expression by modifying DNA and chromatin tags.",
+    "ai_tags": [
+      "epigenetics",
+      "gene editing",
+      "gene expression",
+      "CRISPR",
+      "biotechnology"
+    ]
+  }
+]
