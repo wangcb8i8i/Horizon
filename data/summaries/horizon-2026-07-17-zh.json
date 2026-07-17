@@ -1,0 +1,440 @@
+[
+  {
+    "id": "hackernews:story:48947560",
+    "source_type": "hackernews",
+    "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+    "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+    "content": "\n--- Top Comments ---\n\n[tulio_ribeiro]: Didn&#x27;t know a rocky planet in the habitable zone of a red dwarf could retain atmosphere against intense stellar stripping. Red dwarfs are known to be cooler (the habitable zone is therefore closer) and unstable. I don&#x27;t think LHS 1140b is &quot;Earth-like&quot; at all. Rather, it&#x27;s more like a mini-Neptune, being boiled off by its star. Edit: JWST emission spectroscopy of LHS 1140b as it passes behind its star rules out a mini-Neptune.  https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F...\n\n[tsoukase]: I think we should focus at the solution of Fermi paradox, especially the short time window factor. Life on earth evolved for billions of years, while one of it&#x27;s creatures is capable to receive&#x2F;send messages to space for only 50. That leads to a factor of billions&#x2F;50 reduction at the calculated probability of alien life discovery. Multiply that with another billions&#x2F;xxx at the receiver side, if they are similarly able to communicate for only a few centuries at best. I assu...\n\n[mekdoonggi]: We should build a solar lens telescope. By the time we&#x27;re ready to use it, we&#x27;ll have a bunch of candidates to point it at.\n\n[smb06]: I feel like I&#x27;ve been hearing about atmosphere on Earth-like planets for a while. Or maybe I&#x27;ve missed some nuance.\n\n[jimbokun]: 48 light years is in our back yard. Close enough that we could probably develop a probe to get there in the next few centuries and check it out.  What are the current popular candidates for propulsion systems capable of accelerating to near the speed of light?",
+    "author": "neversaydie",
+    "published_at": "2026-07-17T14:06:13Z",
+    "fetched_at": "2026-07-17T23:44:25.613465Z",
+    "metadata": {
+      "score": 345,
+      "descendants": 219,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48947560",
+      "comment_count": 5,
+      "title_zh": "首次在宜居带类地行星发现大气层",
+      "detailed_summary_zh": "天文学家利用詹姆斯·韦伯太空望远镜（JWST）在距离地球约48光年的红矮星LHS 1140周围，于其宜居带内的岩石行星LHS 1140b上检测到大气层，这是首次在类地宜居带行星上确认存在大气。 这一发现是系外行星科学的里程碑，表明红矮星周围的岩石行星可能保留大气层，为寻找潜在宜居环境提供了关键线索，并推动了对外星生命可能性的探索。 研究团队通过JWST的发射光谱技术，观测行星在掩星期间（行星经过恒星后方）的光谱，排除了迷你海王星的假说，确认了LHS 1140b的岩石性质并探测到大气层信号。该行星位于红矮星的宜居带内，但红矮星的强烈耀发活动通常被认为会剥蚀大气。",
+      "background_zh": "宜居带是指恒星周围温度允许液态水存在的区域，但红矮星作为最小的主序星，其宜居带非常靠近恒星，且表面活动剧烈，常被认为不利于大气保持。此前，天文学家仅在更大的气态行星或非宜居带岩石行星上检测到大气。JWST的高灵敏度使直接探测类地行星大气成为可能。",
+      "community_discussion_zh": "社区用户tulio_ribeiro起初怀疑红矮星行星能否保留大气，但随后引用arXiv论文指出JWST数据已排除迷你海王星模型。其他用户讨论了费米悖论、太阳透镜望远镜以及未来探测器的推进方案。总体而言，社区对发现持积极态度，但强调需更多观测验证。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Habitable_zone",
+          "title": "Habitable zone - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Red_dwarf_star",
+          "title": "Red dwarf star"
+        }
+      ],
+      "detailed_summary": "天文学家利用詹姆斯·韦伯太空望远镜（JWST）在距离地球约48光年的红矮星LHS 1140周围，于其宜居带内的岩石行星LHS 1140b上检测到大气层，这是首次在类地宜居带行星上确认存在大气。 这一发现是系外行星科学的里程碑，表明红矮星周围的岩石行星可能保留大气层，为寻找潜在宜居环境提供了关键线索，并推动了对外星生命可能性的探索。 研究团队通过JWST的发射光谱技术，观测行星在掩星期间（行星经过恒星后方）的光谱，排除了迷你海王星的假说，确认了LHS 1140b的岩石性质并探测到大气层信号。该行星位于红矮星的宜居带内，但红矮星的强烈耀发活动通常被认为会剥蚀大气。",
+      "background": "宜居带是指恒星周围温度允许液态水存在的区域，但红矮星作为最小的主序星，其宜居带非常靠近恒星，且表面活动剧烈，常被认为不利于大气保持。此前，天文学家仅在更大的气态行星或非宜居带岩石行星上检测到大气。JWST的高灵敏度使直接探测类地行星大气成为可能。",
+      "community_discussion": "社区用户tulio_ribeiro起初怀疑红矮星行星能否保留大气，但随后引用arXiv论文指出JWST数据已排除迷你海王星模型。其他用户讨论了费米悖论、太阳透镜望远镜以及未来探测器的推进方案。总体而言，社区对发现持积极态度，但强调需更多观测验证。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Groundbreaking discovery of an atmosphere on a rocky exoplanet in the habitable zone, confirmed by JWST. Community discussion adds scientific depth and context, correcting initial misconceptions and exploring implications.",
+    "ai_summary": "Astronomers have detected the first atmosphere on a rocky, Earth-like planet within the habitable zone of a red dwarf star, a milestone for exoplanet science.",
+    "ai_tags": [
+      "exoplanet",
+      "atmosphere",
+      "habitable zone",
+      "JWST",
+      "astronomy"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:b4297bf5c14f1cb4",
+    "source_type": "rss",
+    "title": "Man’s ability to make sperm restored after testicular tissue transplant: what scientists think",
+    "url": "https://www.nature.com/articles/d41586-026-02191-3",
+    "content": "<p>Nature, Published online: 17 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02191-3\">doi:10.1038/d41586-026-02191-3</a></p>Testicle sample removed from a ten-year-old before chemotherapy and frozen proves viable 16 years later.",
+    "author": "Heidi Ledford",
+    "published_at": "2026-07-17T00:00:00Z",
+    "fetched_at": "2026-07-17T23:44:26.199536Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "冷冻16年睾丸组织移植成功恢复精子产生",
+      "detailed_summary_zh": "一名10岁男孩在化疗前冷冻的睾丸组织，经过16年后被移植回体内，成功恢复了精子产生能力。这是首次在人类中证明冷冻睾丸组织移植可恢复生育能力。 这项突破为因癌症治疗而面临不孕风险的青春期前男孩提供了保留生育能力的希望，未来他们有可能通过自身冷冻组织成为生物学父亲。该成果标志着生殖医学领域的重要进步。 该组织在液氮中保存了16年，移植后患者体内检测到了精子产生。不过，目前尚不确定这些精子是否足以实现自然受孕，且该技术仍处于实验阶段，存在引入恶性细胞的风险。",
+      "background_zh": "对于尚未产生精子的男孩，化疗可能永久破坏生殖细胞。冷冻睾丸组织是实验性方法，通过保存精原干细胞，未来可将其移植回睾丸以恢复精子生成。此前仅在动物模型中成功，人类移植的成功是首次。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cryopreservation_of_testicular_tissue",
+          "title": "Cryopreservation of testicular tissue"
+        },
+        {
+          "url": "https://oncofertility.msu.edu/resources/for-patients/fertility-options/testicular-tissue-cryopreservation/",
+          "title": "Testicular Tissue Cryopreservation - The Oncofertility Consortium"
+        }
+      ],
+      "detailed_summary": "一名10岁男孩在化疗前冷冻的睾丸组织，经过16年后被移植回体内，成功恢复了精子产生能力。这是首次在人类中证明冷冻睾丸组织移植可恢复生育能力。 这项突破为因癌症治疗而面临不孕风险的青春期前男孩提供了保留生育能力的希望，未来他们有可能通过自身冷冻组织成为生物学父亲。该成果标志着生殖医学领域的重要进步。 该组织在液氮中保存了16年，移植后患者体内检测到了精子产生。不过，目前尚不确定这些精子是否足以实现自然受孕，且该技术仍处于实验阶段，存在引入恶性细胞的风险。",
+      "background": "对于尚未产生精子的男孩，化疗可能永久破坏生殖细胞。冷冻睾丸组织是实验性方法，通过保存精原干细胞，未来可将其移植回睾丸以恢复精子生成。此前仅在动物模型中成功，人类移植的成功是首次。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "This is a significant medical breakthrough in fertility preservation and reproductive medicine, demonstrating successful restoration of sperm production from testicular tissue frozen before chemotherapy, with potential major impact on cancer survivors. Published in Nature, it is both novel and clinically important.",
+    "ai_summary": "Testicular tissue removed from a boy before chemotherapy and frozen for 16 years was successfully transplanted to restore sperm production.",
+    "ai_tags": [
+      "medical research",
+      "fertility",
+      "cryopreservation",
+      "oncology",
+      "reproductive biology"
+    ]
+  },
+  {
+    "id": "hackernews:story:48952880",
+    "source_type": "hackernews",
+    "title": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+    "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+    "content": "\n--- Top Comments ---\n\n[neaden]: If you think using a machine to evaluate how well a human is showing empathy is a good idea, you probably shouldn&#x27;t have any position of power.\n\n[doodlebugging]: This problem with workplace AI interfering with nurses ability to manage healthcare obligations for their clients is not confined to Kaiser. UHC has also introduced the AI surveillance tools and are using it to do similar things.\n\n[dependsontheq]: Thinks that are not allowed in the EU thanks to the AI Act.\n\n[9x39]: It sucks because AI reduces call center costs in many toil tasks very effectively, regardless of whether you want to help or dissuade customers - it&#x27;s just well-suited to the task and it&#x27;s going to accelerate. It&#x27;s a win for capital and the technology implementers, even if it&#x27;s a loser for the call center employees and callers. Some of the tech is pretty scary. One big vendor&#x27;s solution [0] can provide not just AI agents but also use AI to snoop on calls in progress, ...\n\n[cromka]: I&#x27;d like to think it&#x27;s not meant to make life better for a regular nurse, but rather to weed out the abusive ones? At least that&#x27;s how I see it from my flawed, post-communist country perspective.",
+    "author": "gnabgib",
+    "published_at": "2026-07-17T22:26:30Z",
+    "fetched_at": "2026-07-17T23:44:25.613352Z",
+    "metadata": {
+      "score": 126,
+      "descendants": 89,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48952880",
+      "comment_count": 5,
+      "title_zh": "Kaiser护士抗议AI监控恶化工作与护理",
+      "detailed_summary_zh": "Kaiser Permanente的护士们报告称，AI驱动的监视工具（如通话分析和行为评估系统）正在加重工作压力并损害患者护理质量。 此事揭示了AI在医疗工作场所监控中的伦理困境，可能影响患者安全和医护人员士气，并促使行业和监管机构重新审视AI使用边界。 护士指出AI工具无法准确评估移情等软技能，反而增加不必要压力；社区评论提到欧盟AI法案已禁止此类用于评估员工的系统。",
+      "background_zh": "工作场所AI监控通过分析语音、行为来评估员工效率，在客服等行业已普及。Kaiser和UHC等医疗机构引入类似工具，声称提升效率，但医护界批评它们忽视护理的复杂性和人性化需求。",
+      "community_discussion_zh": "多数评论批评AI评估移情是荒谬的，并指出UHC也有同样问题；有用户提到欧盟AI法案已禁止此类做法，但也有人认为AI可能有助于识别不称职者。",
+      "sources": [
+        {
+          "url": "https://www.hikvision.com/mena-en/products/ITS-Products/Smart-Surveillance-Systems/Smart-Surveillance-Cameras/ids-tcm403-ai-/",
+          "title": "iDS-TCM403- AI - Smart Surveillance Systems"
+        }
+      ],
+      "detailed_summary": "Kaiser Permanente的护士们报告称，AI驱动的监视工具（如通话分析和行为评估系统）正在加重工作压力并损害患者护理质量。 此事揭示了AI在医疗工作场所监控中的伦理困境，可能影响患者安全和医护人员士气，并促使行业和监管机构重新审视AI使用边界。 护士指出AI工具无法准确评估移情等软技能，反而增加不必要压力；社区评论提到欧盟AI法案已禁止此类用于评估员工的系统。",
+      "background": "工作场所AI监控通过分析语音、行为来评估员工效率，在客服等行业已普及。Kaiser和UHC等医疗机构引入类似工具，声称提升效率，但医护界批评它们忽视护理的复杂性和人性化需求。",
+      "community_discussion": "多数评论批评AI评估移情是荒谬的，并指出UHC也有同样问题；有用户提到欧盟AI法案已禁止此类做法，但也有人认为AI可能有助于识别不称职者。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The content addresses a critical issue of AI in healthcare, specifically workplace surveillance harming nurses and patient care. The community discussion is substantive, with comments highlighting ethical concerns, comparisons to other companies, and regulatory perspectives. High engagement (126 points, 89 comments) indicates strong interest and validation from the HN community.",
+    "ai_summary": "AI-powered surveillance tools at Kaiser are worsening nurses' working conditions and patient care, sparking a debate on workplace AI ethics and regulation.",
+    "ai_tags": [
+      "AI",
+      "healthcare",
+      "workplace surveillance",
+      "ethics",
+      "nursing"
+    ]
+  },
+  {
+    "id": "hackernews:story:48950122",
+    "source_type": "hackernews",
+    "title": "Learning a few things about running SQLite",
+    "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+    "content": "\n--- Top Comments ---\n\n[striking]: &gt; Maybe one day I’ll learn to read a query plan. With SQLite&#x27;s `.expert` mode you can delay that day a little longer:  https:&#x2F;&#x2F;www.sqlite.org&#x2F;cli.html#index_recommendations_sqlite...      sqlite&gt; CREATE TABLE x1(a, b, c);                  -- Create table in database \n  sqlite&gt; .expert\n  sqlite&gt; SELECT * FROM x1 WHERE a=? AND b&gt;?;        -- Analyze this SELECT \n  CREATE INDEX x1_idx_000123a7 ON x1(a, b);\n\n  0|0|0|SEARCH TABLE x1 USING INDEX x1_idx_000123a7 (a...\n\n[simonw]: &gt; I’ve been backing up to AWS, which is always a pain because it’s annoying to navigate the AWS console to generate credentials. I got  so annoyed  with that a few years ago that I ended up building a whole tool just to solve that one problem:     uvx s3-credentials create my-existing-s3-bucket\n  \nThis spits out read-write credentials that are scoped JUST for that bucket. You can add --read-only or --write-only to have credentials that are further locked down, or even add --prefix foo&#x2F...\n\n[wwind123]: Why not try a real database like Postgres? It&#x27;s not as light-weight, but when operations get complicated, real databases are much easier to work with. I had a website that started with SQLLite, but when it got complicated enough, I spent two days to migrate the whole thing to Postgres. With current LLM coding agents, it&#x27;s not that hard.\n\n[andrewaylett]: I run my backups like this:       OUT=&quot;${i}.sql.zst&quot;\n    PART=&quot;${OUT}.part&quot;\n    sqlite3 -readonly &quot;${i}&quot; .dump | zstd --fast --rsyncable -v -o &quot;${PART}&quot; -\n    mv &quot;${PART}&quot; &quot;${OUT}&quot;\n  \nThat doesn&#x27;t block writers (when the writer uses WAL), and gives me a dump that&#x27;s compressed well while also being easy to sync.  My Home Assistant DB is 1.8GB, my dump is 286MB compressed, and I&#x27;d guess 90% of that is consistent from one...\n\n[noxer]: As for the DELETE issue the easy solutions are: -Delete it batches -Delay between batches -Preload the rowids before deleteing with SELECT (Select does not block) Additionally if data was added sequentially primary to the same table the data is likely stored this way in the file and deleting it in this or in reversed order can be faster (depends on storage medium and other factors).\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/ryksor/learning_few_things_about_running_sqlite\">Comments</a></p>",
+    "author": "surprisetalk",
+    "published_at": "2026-07-17T17:45:41Z",
+    "fetched_at": "2026-07-17T23:44:25.613495Z",
+    "metadata": {
+      "score": 134,
+      "descendants": 36,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48950122",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases"
+      ],
+      "merged_sources": [
+        "rss",
+        "hackernews"
+      ],
+      "title_zh": "Julia Evans分享SQLite运行实用技巧",
+      "detailed_summary_zh": "Julia Evans发布博客，分享了SQLite的实际运行技巧，包括使用.expert模式自动推荐索引、备份策略和查询优化方法。 这些技巧能帮助开发者更高效地使用SQLite，提升查询性能和备份可靠性。Julia Evans是知名的技术作家，其内容实用性强，社区反响热烈。 .expert模式可以分析SQL查询并推荐创建索引，简化性能调优；备份时推荐使用.dump命令结合压缩和增量同步，以减少阻塞和存储开销。",
+      "background_zh": "SQLite是一种轻量级嵌入式关系数据库，常用于移动应用和本地存储。.expert是SQLite命令行工具的一个功能，用于索引建议。备份是数据库运维的重要环节，需要注意避免长时间锁表。",
+      "community_discussion_zh": "社区评论积极，多数人赞赏.expert模式的实用性，有用户分享了用s3-credentials工具简化AWS备份凭证的方法，也有人提供了备份命令示例。部分讨论涉及DELETE操作的批量处理，另有用户提出在复杂场景下可考虑迁移到PostgreSQL。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=48950122",
+          "title": "Learning a few things about running SQLite | Hacker News"
+        },
+        {
+          "url": "https://sqlite.org/cli.html",
+          "title": "Command Line Shell For SQLite"
+        }
+      ],
+      "detailed_summary": "Julia Evans发布博客，分享了SQLite的实际运行技巧，包括使用.expert模式自动推荐索引、备份策略和查询优化方法。 这些技巧能帮助开发者更高效地使用SQLite，提升查询性能和备份可靠性。Julia Evans是知名的技术作家，其内容实用性强，社区反响热烈。 .expert模式可以分析SQL查询并推荐创建索引，简化性能调优；备份时推荐使用.dump命令结合压缩和增量同步，以减少阻塞和存储开销。",
+      "background": "SQLite是一种轻量级嵌入式关系数据库，常用于移动应用和本地存储。.expert是SQLite命令行工具的一个功能，用于索引建议。备份是数据库运维的重要环节，需要注意避免长时间锁表。",
+      "community_discussion": "社区评论积极，多数人赞赏.expert模式的实用性，有用户分享了用s3-credentials工具简化AWS备份凭证的方法，也有人提供了备份命令示例。部分讨论涉及DELETE操作的批量处理，另有用户提出在复杂场景下可考虑迁移到PostgreSQL。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value: Practical tips from a respected author (Julia Evans) on SQLite usage, with substantial community engagement (134 upvotes, 36 comments) and insightful discussion on backup strategies and query optimization.",
+    "ai_summary": "Julia Evans shares practical tips for running SQLite, including using .expert mode for index recommendations and backup strategies.",
+    "ai_tags": [
+      "SQLite",
+      "database",
+      "backup",
+      "query optimization",
+      "tools"
+    ]
+  },
+  {
+    "id": "hackernews:story:48946010",
+    "source_type": "hackernews",
+    "title": "Evidence of inconsistencies in evaluation process and selection of winners",
+    "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423",
+    "content": "\n--- Top Comments ---\n\n[ecshafer]: AI is useful. But the amount of people that are simply offloading all of their thinking to AI and blindly accepting the answer is absurd. Kaggle is most likely using ai to assess the submissions and are not using any common sense by blindly accepting the results.\n\n[hoppp]: I don&#x27;t know about this exact competition but overall fair hackathons have been killed by AI. It all seems fine from the outside but all the code is generated in all the projects and judging happens via AI, I have seen projects win because they prompt inject that they are the winners. It used to be about human skill, now it&#x27;s about ideas and of course insiders are the main winners.\n\n[throwfaraway135]: AI submissions and AI judges a match made in (AI) heaven.\n\n[mr_toad]: People have been using brute force methods to win Kaggle competitions since the beginning (and other people have been complaining about it just as long). At its core, ML is all about computer generated models (automated feature selection, hyper parameter tuning).  Many (most?) of the models produced in Kaggle are already black boxes and have been for a long time.  The model that won the Netflix prize was never used in production for that reason. Using an LLM to generate code to generate a bla...\n\n[ryukoposting]: I thought Kaggle was a website where you download dubious CSV files of annualized bean consumption in Bolivia, or whatever. Was Kaggle ever a reputable source of original research, or a source of anything with any provenance at all? That would be news to me. The fact that 25 grand was involved this time is unique, I guess.",
+    "author": "twerkmeister",
+    "published_at": "2026-07-17T11:30:00Z",
+    "fetched_at": "2026-07-17T23:44:25.613624Z",
+    "metadata": {
+      "score": 434,
+      "descendants": 268,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48946010",
+      "comment_count": 5,
+      "title_zh": "Kaggle竞赛曝AI评估不公与提示注入问题",
+      "detailed_summary_zh": "Kaggle上的一场讨论揭露了人工智能生成的提交和AI评委导致评估流程不一致、竞争公正性受损的问题，包括提示注入攻击和内部人员利用优势获胜的现象。 这一事件凸显了在数据科学竞赛中依赖AI评估的严重缺陷，可能损害Kaggle平台的可信度，并引发对整个机器学习社区中自动化评审机制的反思。 讨论指出，参赛者通过提示注入让AI评委误判他们为获胜者，同时内部人员可能借助对系统的了解获得不正当优势，而AI生成的代码提交使传统评审标准失效。",
+      "background_zh": "Kaggle是一个面向数据科学家和机器学习从业者的在线竞赛平台，由Google于2017年收购，用户通过竞赛解决实际问题。提示注入是一种利用大语言模型无法区分系统指令和用户输入的漏洞，设计恶意提示以操控模型行为的攻击方式。",
+      "community_discussion_zh": "社区普遍对现状表示不满，认为AI滥用破坏了比赛的公平性；有人指出AI评委盲目接受结果，而内部人员成为主要赢家；也有看法认为Kaggle竞赛本身长期存在模型黑箱问题，AI只是放大了已有弊端。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kaggle",
+          "title": "Kaggle - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Prompt_injection_attack",
+          "title": "Prompt injection attack"
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/machine-learning/what-is-kaggle/",
+          "title": "What is Kaggle? - GeeksforGeeks"
+        }
+      ],
+      "detailed_summary": "Kaggle上的一场讨论揭露了人工智能生成的提交和AI评委导致评估流程不一致、竞争公正性受损的问题，包括提示注入攻击和内部人员利用优势获胜的现象。 这一事件凸显了在数据科学竞赛中依赖AI评估的严重缺陷，可能损害Kaggle平台的可信度，并引发对整个机器学习社区中自动化评审机制的反思。 讨论指出，参赛者通过提示注入让AI评委误判他们为获胜者，同时内部人员可能借助对系统的了解获得不正当优势，而AI生成的代码提交使传统评审标准失效。",
+      "background": "Kaggle是一个面向数据科学家和机器学习从业者的在线竞赛平台，由Google于2017年收购，用户通过竞赛解决实际问题。提示注入是一种利用大语言模型无法区分系统指令和用户输入的漏洞，设计恶意提示以操控模型行为的攻击方式。",
+      "community_discussion": "社区普遍对现状表示不满，认为AI滥用破坏了比赛的公平性；有人指出AI评委盲目接受结果，而内部人员成为主要赢家；也有看法认为Kaggle竞赛本身长期存在模型黑箱问题，AI只是放大了已有弊端。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement with substantive discussion highlighting critical flaws in AI-driven evaluation and competition integrity, signaling a significant issue for the AI/ML community.",
+    "ai_summary": "Discussion on Kaggle exposes how AI-generated submissions and AI judges lead to evaluation inconsistencies and competition integrity concerns, including prompt injection and insider advantages.",
+    "ai_tags": [
+      "AI evaluation",
+      "Kaggle",
+      "competition integrity",
+      "prompt injection",
+      "AI-generated code"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0a05820b5bbf167d",
+    "source_type": "rss",
+    "title": "We are Changing our Developer Productivity Experiment Design",
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "content": "<p>Followup to <a href=\"https://lobste.rs/s/1batvy\" rel=\"ugc\">their 2025 study that showed a 19% decrease in productivity</a>.</p>\n<p><a href=\"https://github.com/METR/Measuring-Late-2025-AI-on-OSS-Devs\" rel=\"ugc\">Data repo</a>.</p>\n<p><a href=\"https://lobste.rs/s/u9lvze/we_are_changing_our_developer\">Comments</a></p>",
+    "author": "metr.org via pushcx",
+    "published_at": "2026-07-17T12:51:36Z",
+    "fetched_at": "2026-07-17T23:44:25.429498Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vibecoding"
+      ],
+      "title_zh": "METR更改AI开发者生产力实验设计",
+      "detailed_summary_zh": "METR宣布更改其测量AI对开发者生产力影响的实验设计，这是对2025年一项研究的跟进，该研究发现AI导致开发者生产力下降19%。 这一改变可能影响对AI在软件开发中实际效果的解释，因为之前的19%下降结论曾引发广泛讨论，新设计将有助于验证结果的可信度。 具体实验设计变更尚未详细披露，但METR已公开数据仓库（GitHub），社区可通过评论链接跟踪讨论。",
+      "background_zh": "METR（模型评估与威胁研究）是一家位于加州伯克利的非营利研究机构，专注于评估前沿AI模型在长期自主任务中的能力。2025年，METR发布研究称AI辅助编程导致开发者生产力下降19%，该结果在社区中引起争议，部分人质疑实验设计的合理性。",
+      "sources": [
+        {
+          "url": "https://metr.org/",
+          "title": "METR"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/METR",
+          "title": "METR - Wikipedia"
+        },
+        {
+          "url": "https://metr.org/research/",
+          "title": "Research - METR"
+        }
+      ],
+      "detailed_summary": "METR宣布更改其测量AI对开发者生产力影响的实验设计，这是对2025年一项研究的跟进，该研究发现AI导致开发者生产力下降19%。 这一改变可能影响对AI在软件开发中实际效果的解释，因为之前的19%下降结论曾引发广泛讨论，新设计将有助于验证结果的可信度。 具体实验设计变更尚未详细披露，但METR已公开数据仓库（GitHub），社区可通过评论链接跟踪讨论。",
+      "background": "METR（模型评估与威胁研究）是一家位于加州伯克利的非营利研究机构，专注于评估前沿AI模型在长期自主任务中的能力。2025年，METR发布研究称AI辅助编程导致开发者生产力下降19%，该结果在社区中引起争议，部分人质疑实验设计的合理性。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "This is an important follow-up to a highly discussed study on AI's impact on developer productivity, addressing experimental design changes that could affect interpretation of results. The community discussion (linked comments) adds value by providing diverse viewpoints.",
+    "ai_summary": "METR announces changes to their experiment design for measuring AI's effect on developer productivity, following their previous study that showed a 19% decrease.",
+    "ai_tags": [
+      "AI",
+      "developer productivity",
+      "experiment design",
+      "METR",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:9d1126e460d39392",
+    "source_type": "rss",
+    "title": "PACT: Anonymous Credentials for the Web – Mozilla Hacks",
+    "url": "https://hacks.mozilla.org/2026/06/pact-anonymous-credentials-for-the-web/",
+    "content": "<p><a href=\"https://lobste.rs/s/6pdyiy/pact_anonymous_credentials_for_web\">Comments</a></p>",
+    "author": "hacks.mozilla.org via brn",
+    "published_at": "2026-07-17T06:01:54Z",
+    "fetched_at": "2026-07-17T23:44:25.429569Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "privacy"
+      ],
+      "title_zh": "Mozilla发布PACT匿名凭证协议",
+      "detailed_summary_zh": "Mozilla于2026年6月23日公布了PACT（Private Access Control Tokens）协议设计，这是一种用于网络验证的匿名凭证系统，旨在替代CAPTCHA并保护用户隐私。 该协议能够在不泄露用户身份的前提下验证人类，有望终结烦人的CAPTCHA测试，同时保持网络开放性和隐私性，对抵御机器人攻击和隐私保护具有重大意义。 PACT允许网站向用户颁发匿名凭证，用户可以在不暴露个人信息的情况下证明自己是人类；协议基于密码学匿名凭证技术，由Mozilla与社区合作开发。",
+      "background_zh": "当前网站常使用CAPTCHA区分人类和机器人，但CAPTCHA用户体验差且存在隐私风险。匿名凭证是一种密码学方案，允许用户选择性披露属性（如“我是人类”）而不泄露身份，Chaum在30年前就提出了这一概念。",
+      "sources": [
+        {
+          "url": "https://hacks.mozilla.org/2026/06/pact-anonymous-credentials-for-the-web/",
+          "title": "PACT: Anonymous Credentials for the Web - hacks.mozilla.org"
+        }
+      ],
+      "detailed_summary": "Mozilla于2026年6月23日公布了PACT（Private Access Control Tokens）协议设计，这是一种用于网络验证的匿名凭证系统，旨在替代CAPTCHA并保护用户隐私。 该协议能够在不泄露用户身份的前提下验证人类，有望终结烦人的CAPTCHA测试，同时保持网络开放性和隐私性，对抵御机器人攻击和隐私保护具有重大意义。 PACT允许网站向用户颁发匿名凭证，用户可以在不暴露个人信息的情况下证明自己是人类；协议基于密码学匿名凭证技术，由Mozilla与社区合作开发。",
+      "background": "当前网站常使用CAPTCHA区分人类和机器人，但CAPTCHA用户体验差且存在隐私风险。匿名凭证是一种密码学方案，允许用户选择性披露属性（如“我是人类”）而不泄露身份，Chaum在30年前就提出了这一概念。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Mozilla's introduction of PACT is a significant step for privacy on the web, addressing anonymous credentials—a timely topic given increasing privacy concerns. The source (Mozilla Hacks) and the subject's relevance to web standards and cryptography indicate high value, though the lack of community discussion or detailed content prevents a top score.",
+    "ai_summary": "Mozilla introduces PACT, a protocol for anonymous credentials to enhance web privacy.",
+    "ai_tags": [
+      "cryptography",
+      "privacy",
+      "web standards",
+      "Mozilla"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:e27b280526d236f1",
+    "source_type": "rss",
+    "title": "Wearable sensors on the face are invisible to the eye",
+    "url": "https://www.nature.com/articles/d41586-026-02193-1",
+    "content": "<p>Nature, Published online: 17 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02193-1\">doi:10.1038/d41586-026-02193-1</a></p>Electrodes that measure brain waves and more cannot be seen or felt.",
+    "author": "Nature",
+    "published_at": "2026-07-17T00:00:00Z",
+    "fetched_at": "2026-07-17T23:44:26.199461Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "不可见电极实现脸部隐形生理监测",
+      "detailed_summary_zh": "Nature杂志报道了一种完全不可见的脸部电极，能够测量脑电波等生理信号，且肉眼看不见、触觉也感觉不到。 该技术突破了传统可穿戴传感器在美观和舒适度上的限制，为脑机接口和生物识别领域带来革命性进步，有望推动全天候、无感化健康监测的普及。 这种电极由东京大学等机构研发，采用薄且可拉伸的材料，贴在脸上完全隐形，能无创测量EEG等生理信号，且不影响日常活动。",
+      "background_zh": "传统脑电图电极通常需要凝胶或可见的贴片，不仅影响外观，还可能引起皮肤不适。新电极通过特殊材料设计，实现与皮肤的高度贴合和光学透明，解决了传统电极的可见性和佩戴感问题。",
+      "sources": [
+        {
+          "url": "https://chemrxiv.org/doi/full/10.26434/chemrxiv-2025-tbtx6",
+          "title": "Fully invisible and unperceivable skin electrodes for facial physiological monitoring free from appearance artifacts | ChemRxiv"
+        },
+        {
+          "url": "https://lifeboat.com/blog/2026/07/the-invisible-wearable-new-skin-sensors-advance-health-monitoring",
+          "title": "The invisible wearable: New skin sensors advance health monitoring – Lifeboat News: The Blog"
+        },
+        {
+          "url": "https://talker.news/2026/07/15/invisible-sensors-thinner-than-human-hair-could-revolutionize-health/",
+          "title": "Invisible sensors thinner than human hair could revolutionize health"
+        }
+      ],
+      "detailed_summary": "Nature杂志报道了一种完全不可见的脸部电极，能够测量脑电波等生理信号，且肉眼看不见、触觉也感觉不到。 该技术突破了传统可穿戴传感器在美观和舒适度上的限制，为脑机接口和生物识别领域带来革命性进步，有望推动全天候、无感化健康监测的普及。 这种电极由东京大学等机构研发，采用薄且可拉伸的材料，贴在脸上完全隐形，能无创测量EEG等生理信号，且不影响日常活动。",
+      "background": "传统脑电图电极通常需要凝胶或可见的贴片，不仅影响外观，还可能引起皮肤不适。新电极通过特殊材料设计，实现与皮肤的高度贴合和光学透明，解决了传统电极的可见性和佩戴感问题。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant research highlight from Nature about invisible wearable sensors for brain-computer interfaces, indicating a notable advancement in biometrics and neuroscience. Lack of community discussion but high source credibility.",
+    "ai_summary": "Invisible facial electrodes can measure brain waves and other physiological signals without being seen or felt.",
+    "ai_tags": [
+      "wearable technology",
+      "brain-computer interface",
+      "invisible sensors",
+      "neuroscience",
+      "biometrics"
+    ]
+  },
+  {
+    "id": "hackernews:story:48947717",
+    "source_type": "hackernews",
+    "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+    "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+    "content": "\n--- Top Comments ---\n\n[OsrsNeedsf2P]: It&#x27;s incredible Simon still believes pelicans on bikes aren&#x27;t part of the training set, despite hundreds of them on blogs, forums, and Github. Stuff we put in our company blog shows up known by LLMs 6 months later, and we have 1000x less traffic than Simon&#x27;s own website\n\n[devttyeu]: &gt; How does the prompt “Generate an SVG of a pelican riding a bicycle” add up to 95 input tokens? OpenAI’s tokenizer counts 10, Anthropic’s counts 10 for Opus 4.6, 30 for Opus 4.7 and 25 for Sonnet 5&#x2F;Fable 5. Prompting “hi” to Kimi K3 counted 86 tokens, suggesting there may be an 85 token hidden system prompt. It refused to leak it though. This is quite possibly reasoning-effort prompt which is injected before the opening &lt;think&gt; token whenever you set a custom reasoning effort, ...\n\n[btown]: &gt; The biggest limitation of the pelican is that it doesn’t touch at all on the thing that matters most for today’s model: agentic tool calling and the ability to operate tools reliably as conversations grow in length. In all seriousness, I propose SWE-bench-adversarial-pelican-gen: it&#x27;s like SWE-bench, but the harness gets interrupted every 5 turns&#x2F;tool-calls and is asked to produce an SVG of an arbitrary animal before being told to continue, and every few tool call outputs add c...\n\n[michaelbuckbee]: Like Simon concludes the article, the main use of this isn&#x27;t to say which model is &quot;better&quot;, but to try and poke at the model to sort out things like quality vs cost vs speed. So I put together a quick comparison of the last couple iterations of Opus, Fable and now Kimi. Kimi is cheapest by 5x but also slowest by 2x  https:&#x2F;&#x2F;9gpyw4uxr2.evvl.io&#x2F;\n\n[ianberdin]: Our answer to Pelican benchmark:  https:&#x2F;&#x2F;playcode.io&#x2F;blog&#x2F;macbook-svg-benchmark",
+    "author": "droidjj",
+    "published_at": "2026-07-17T14:21:51Z",
+    "fetched_at": "2026-07-17T23:44:25.613521Z",
+    "metadata": {
+      "score": 247,
+      "descendants": 139,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48947717",
+      "comment_count": 5,
+      "title_zh": "从鹈鹕基准测试看Kimi K3的评估陷阱",
+      "detailed_summary_zh": "Simon Willison分析Kimi K3在“鹈鹕骑自行车”创意任务上的表现，发现其分词器异常并将简单提示“hi”编码为86个token，疑似存在隐藏系统提示。 该讨论凸显了当前LLM评估中训练数据污染、分词器差异和隐藏提示等问题，对开发者选择评估方法和理解模型行为有重要参考价值。 Kimi K3的隐藏系统提示可能占用约85个token，而OpenAI和Anthropic模型仅需10个；社区还提出结合工具调用的更鲁棒评估方案，如SWE-bench-对抗-鹈鹕。",
+      "background_zh": "“鹈鹕骑自行车”是Simon Willison于2024年底创建的LLM非正式基准，通过要求模型生成SVG图片来测试其代码生成能力。Kimi K3是Kimi公司发布的2.8万亿参数开源模型，支持100万token上下文。",
+      "community_discussion_zh": "有评论质疑该任务可能受训练数据污染，因网上已有大量类似示例；另有人建议关注长对话中工具调用能力。整体讨论反映了对现有评估方法局限性的普遍关注。",
+      "sources": [
+        {
+          "url": "https://grokipedia.com/page/Pelican_on_a_bicycle_AI_benchmark",
+          "title": "Pelican on a bicycle (AI benchmark)"
+        },
+        {
+          "url": "https://github.com/simonw/pelican-bicycle",
+          "title": "GitHub - simonw/pelican-bicycle: LLM benchmark: Generate an ..."
+        },
+        {
+          "url": "https://www.kimi.com/blog/kimi-k3",
+          "title": "Kimi K 3 Tech Blog: Open Frontier Intelligence"
+        }
+      ],
+      "detailed_summary": "Simon Willison分析Kimi K3在“鹈鹕骑自行车”创意任务上的表现，发现其分词器异常并将简单提示“hi”编码为86个token，疑似存在隐藏系统提示。 该讨论凸显了当前LLM评估中训练数据污染、分词器差异和隐藏提示等问题，对开发者选择评估方法和理解模型行为有重要参考价值。 Kimi K3的隐藏系统提示可能占用约85个token，而OpenAI和Anthropic模型仅需10个；社区还提出结合工具调用的更鲁棒评估方案，如SWE-bench-对抗-鹈鹕。",
+      "background": "“鹈鹕骑自行车”是Simon Willison于2024年底创建的LLM非正式基准，通过要求模型生成SVG图片来测试其代码生成能力。Kimi K3是Kimi公司发布的2.8万亿参数开源模型，支持100万token上下文。",
+      "community_discussion": "有评论质疑该任务可能受训练数据污染，因网上已有大量类似示例；另有人建议关注长对话中工具调用能力。整体讨论反映了对现有评估方法局限性的普遍关注。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting analysis of LLM evaluation using a creative task, with valuable community discussion about tokenization, hidden prompts, and training data contamination. Not groundbreaking but high relevance to AI/ML community.",
+    "ai_summary": "Simon Willison's article examines the 'pelican on a bicycle' benchmark for Kimi K3, while HN commenters discuss tokenizer quirks and propose more robust evaluations.",
+    "ai_tags": [
+      "LLM",
+      "benchmarking",
+      "Kimi K3",
+      "tokenization",
+      "AI evaluation"
+    ]
+  },
+  {
+    "id": "hackernews:story:48947825",
+    "source_type": "hackernews",
+    "title": "The state of open source AI",
+    "url": "https://stateofopensource.ai/",
+    "content": "\n--- Top Comments ---\n\n[babblingfish]: Speculation: open models is what will kill Anthropic and OpenAI. Hyperscalers can run the models without a licensing fee. Apple can make them smaller and put them on the device. The frontier models are an edge and a liability. They&#x27;re astronomically expensive to train. Without them, their models will fade into obscurity. Their marketing depends on people believing the models are meaningfully different, as people have sweatily argued on this forum. Personally, I&#x27;m not convinced there...\n\n[GodelNumbering]: Exactly 4 months ago, the marketshare on openrouter was 60%-40% in favor of closed models. Now it&#x27;s 63%-37% in favor of open models. On March 19th, the open models processed 888B tokens in aggregate, yesterday, they processed 4.19T tokens in aggregate. That&#x27;s almost 5x in 4 months! I can&#x27;t think of the right intensifier to describe this level of growth. If you are looking for more details (as inferred by openrouter data), I built a dashboard that updates daily:  https:&#x2F;&#x...\n\n[hughw]: This presentation is painful to read. It&#x27;s an LLM&#x27;s idea of a CTO presentation. I&#x27;m overwhelmed by charts, only slightly connected to the text around them. But no matter, it looks like a CTO slide deck. HIGH IMPACT. Much better would be if the CTO of Mozilla had actually articulated their own analysis.\n\n[andymatuschak]: The prose is, of course, LLM-generated.  https:&#x2F;&#x2F;www.pangram.com&#x2F;history&#x2F;29a71663-e6b2-4db6-87bd-b943...  I&#x27;d be curious to learn more about how&#x2F;why executives come to sign their names to this kind of writing. Maybe it feels like a natural iteration of the pre-existing experience of signing one&#x27;s name to an assistant&#x27;s manuscript, or a press release from staff in Comms? I don&#x27;t know execs who do this kind of thing, so would be grateful for any obse...\n\n[Catloafdev]: As someone that&#x27;s generally for the proliferation of open models, I want to take this seriously, but it&#x27;s really difficult when it was clearly written by AI. I guess they fired whoever used to write copy for these things. Edit: to be clear, I&#x27;m not trying to just dunk on them, I think it&#x27;s actively hurting their own point to do this, and counter-productive when people can easily clock it - it makes some percent of the audience immediately tune out.",
+    "author": "rellem",
+    "published_at": "2026-07-17T14:31:10Z",
+    "fetched_at": "2026-07-17T23:44:25.613541Z",
+    "metadata": {
+      "score": 353,
+      "descendants": 259,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48947825",
+      "comment_count": 5,
+      "title_zh": "开源AI现状引热议：Mozilla CTO报告遭批",
+      "detailed_summary_zh": "Mozilla CTO发布关于开源AI现状的演示报告，但被批评为由LLM生成、内容肤浅，反而激发了社区对开放模型快速增长的深入讨论。 社区数据表明开源模型市场份额在4个月内从40%飙升至63%，日处理token数增长近5倍，可能对闭源AI公司（如OpenAI、Anthropic）构成重大威胁，重塑AI产业格局。 原报告被指为AI生成，缺乏深入分析；但有社区成员基于OpenRouter数据构建了动态仪表板，详细展示了开源模型的高速增长。",
+      "background_zh": "开源AI指模型权重、代码等公开可用的AI系统，与封闭商业模型相对。近年来开源模型性能快速提升，成本优势显著，吸引了大量开发者和企业采用。",
+      "community_discussion_zh": "评论中数据驱动分析指出开源模型增长迅猛，有预测称闭源公司可能被淘汰；但同时多位用户批评原报告质量低下，认为Mozilla CTO应亲自撰写而非依赖AI生成内容。",
+      "detailed_summary": "Mozilla CTO发布关于开源AI现状的演示报告，但被批评为由LLM生成、内容肤浅，反而激发了社区对开放模型快速增长的深入讨论。 社区数据表明开源模型市场份额在4个月内从40%飙升至63%，日处理token数增长近5倍，可能对闭源AI公司（如OpenAI、Anthropic）构成重大威胁，重塑AI产业格局。 原报告被指为AI生成，缺乏深入分析；但有社区成员基于OpenRouter数据构建了动态仪表板，详细展示了开源模型的高速增长。",
+      "background": "开源AI指模型权重、代码等公开可用的AI系统，与封闭商业模型相对。近年来开源模型性能快速提升，成本优势显著，吸引了大量开发者和企业采用。",
+      "community_discussion": "评论中数据驱动分析指出开源模型增长迅猛，有预测称闭源公司可能被淘汰；但同时多位用户批评原报告质量低下，认为Mozilla CTO应亲自撰写而非依赖AI生成内容。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The original report is criticized as superficial and LLM-generated, but the high engagement and insightful community comments (especially data-driven analysis) make it a valuable discussion on the shift toward open models.",
+    "ai_summary": "The Mozilla CTO's presentation on the state of open source AI, while criticized as poorly written, sparked a detailed community debate about the rapid growth and dominance of open models over closed ones.",
+    "ai_tags": [
+      "open source",
+      "AI",
+      "LLMs",
+      "model growth",
+      "community discussion"
+    ]
+  }
+]
