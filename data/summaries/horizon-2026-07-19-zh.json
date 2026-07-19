@@ -1,0 +1,561 @@
+[
+  {
+    "id": "hackernews:story:48966120",
+    "source_type": "hackernews",
+    "title": "Qwen 3.8",
+    "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+    "content": "<a href=\"https:&#x2F;&#x2F;www.qwencloud.com&#x2F;pricing&#x2F;token-plan\" rel=\"nofollow\">https:&#x2F;&#x2F;www.qwencloud.com&#x2F;pricing&#x2F;token-plan</a>\n\n\n--- Top Comments ---\n\n[adrian_b]: I assume that this announcement has been prompted by that of Moonshot AI, which has just announced a 2.8T parameter open-weights LLM, Kimi K3, to be published on Huggingface by 27 July. Now the response of Alibaba is that they will also publish soon a big open weights LLM, the 2.4T parameter Qwen 3.8. I wonder if Alibaba has always planned to make this big LLM open weights, or they have chosen to do this now, to better compete with Moonshot AI. In any case, from this competition in LLMs, we win.\n\n[simonw]: (I can&#x27;t draw a pelican for this one because Alibaba Cloud have flagged my email address and won&#x27;t let me pay them for access. So I&#x27;m waiting for the open weights release, or for the new model to show up on OpenRouter.)\n\n[nsbk]: Bring it on! Hoping that they release smaller sizes of Qwen3.8. I use the 35B MoE and 27B dense models locally and most of the time I don’t need to reach out to Claude. Extremely useful specially when requests include sensitive and&#x2F;or personal data\n\n[overgard]: I&#x27;ve been using Qwen 3.6 27B with LMStudio, and I was pleasantly surprised with it, although it was a little slow. I found mtplx last night, and it really wasn&#x27;t an exaggeration to say that it ran the model 2-3x faster which was super impressive. I&#x27;m trying to move to local models as much as I can, and I&#x27;m finding that it&#x27;s becoming more and more practical. Admittedly this is on a $6000 dollar laptop (M5 Max Macbook with the specs maxxed out), so the hardware is still...\n\n[5701652400]: in my experience of 1 month daily use, Qwen 3.7 Pro is just unusable. wastes too much time, goes off track, useless stuck loops, cannot debug at all. Deepseek V4 Pro is night-and-day compare to Qwen. actually Qwen models seems the worst SWE experience so far. and it is super expensive compare to Deepseek. cannot delegate anything to it, cannot use it real-time low-level tasks either. totally unusable.",
+    "author": "nh43215rgb",
+    "published_at": "2026-07-19T08:44:57Z",
+    "fetched_at": "2026-07-19T23:50:55.341275Z",
+    "metadata": {
+      "score": 748,
+      "descendants": 530,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48966120",
+      "comment_count": 5,
+      "title_zh": "阿里发布2.4万亿参数开源模型Qwen 3.8",
+      "detailed_summary_zh": "阿里巴巴宣布推出Qwen 3.8，一个拥有2.4万亿参数的开源权重大语言模型，旨在与Moonshot AI的Kimi K3（2.8万亿参数）竞争。 此举标志着中国AI巨头在开源大模型领域展开激烈竞争，将推动模型性能提升和本地化部署，惠及开发者和企业用户。 Qwen 3.8的参数规模为2.4T，小于Kimi K3的2.8T，但阿里巴巴强调其开放权重（open weights）特性，允许用户本地运行和微调。",
+      "background_zh": "开源权重模型（open-weights LLM）是指模型权重公开可下载，用户可在自有硬件上部署和定制，相比闭源API更注重隐私和成本控制。参数数量（如2.4T）衡量模型规模，通常越大能力越强，但硬件需求也更高。Qwen系列是阿里巴巴开发的千问模型家族，Qwen 3.8是其最新版本。",
+      "community_discussion_zh": "社区对此反应积极，有用户期待较小尺寸版本以便本地运行，但也有用户批评Qwen 3.7 Pro在编程任务中表现不佳且成本高，认为DeepSeek V4 Pro更优。",
+      "sources": [
+        {
+          "url": "https://onyx.app/self-hosted-llm-leaderboard",
+          "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model ..."
+        },
+        {
+          "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+          "title": "China's Moonshot AI unveils Kimi K3 that rivals OpenAI, Anthropic"
+        },
+        {
+          "url": "https://www.geeky-gadgets.com/moonshot-ai-kimi-k3-review/",
+          "title": "Kimi K3 Open Source AI Rivals GPT 5.6 Sol with 2.8T ..."
+        }
+      ],
+      "detailed_summary": "阿里巴巴宣布推出Qwen 3.8，一个拥有2.4万亿参数的开源权重大语言模型，旨在与Moonshot AI的Kimi K3（2.8万亿参数）竞争。 此举标志着中国AI巨头在开源大模型领域展开激烈竞争，将推动模型性能提升和本地化部署，惠及开发者和企业用户。 Qwen 3.8的参数规模为2.4T，小于Kimi K3的2.8T，但阿里巴巴强调其开放权重（open weights）特性，允许用户本地运行和微调。",
+      "background": "开源权重模型（open-weights LLM）是指模型权重公开可下载，用户可在自有硬件上部署和定制，相比闭源API更注重隐私和成本控制。参数数量（如2.4T）衡量模型规模，通常越大能力越强，但硬件需求也更高。Qwen系列是阿里巴巴开发的千问模型家族，Qwen 3.8是其最新版本。",
+      "community_discussion": "社区对此反应积极，有用户期待较小尺寸版本以便本地运行，但也有用户批评Qwen 3.7 Pro在编程任务中表现不佳且成本高，认为DeepSeek V4 Pro更优。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "High engagement (748 points, 530 comments) with substantive discussion about competition and local usage. The announcement of a 2.4T parameter open-weights LLM from a major player like Alibaba is a significant development in AI, prompting community excitement and analysis of implications.",
+    "ai_summary": "Alibaba announces Qwen 3.8, a 2.4T parameter open-weights LLM, competing with Moonshot AI's Kimi K3.",
+    "ai_tags": [
+      "LLM",
+      "open-weights",
+      "Alibaba Qwen",
+      "AI competition",
+      "large language model"
+    ]
+  },
+  {
+    "id": "hackernews:story:48968606",
+    "source_type": "hackernews",
+    "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+    "url": "https://news.ycombinator.com/item?id=48968606",
+    "content": "I might be the only SRE on Earth with his own bowling center. It&#x27;s a more in-depth gig than you&#x27;d think.<p>My family and I bought an abandoned 8-lane bowling center in the rural mid-west. In our small town there weren&#x27;t many recreation options for families. You&#x27;ve heard of a food desert? This is an R&amp;R desert.<p>It had been abandoned for a good reason. The roof leaks, the electrical system was constantly surging, and my 70-year-old bowling equipment (still) doesn&#x27;t work perfectly. The system that keeps your score is particularly interesting to me. It&#x27;s the thing you watch during your game, but it fades into the background beyond that. Turns out these things are really cool, but absurdly expensive.<p>Ours was installed in 2008 and cost six figures. It&#x27;s calculating ball speed and trajectory, camera-based pin detection (object detection and trig, on ICs!), runs the fouling, the animations, the pinsetting machine and ball return. Very cool stuff for its age.<p>From the business perspective, my facility only cost me $105k. To forklift-replace the score keeping system runs anywhere between $80-$120k, depending on features, vendor, and unit age. No upgrades or service contracts, mind you, and every feature and customization is a new line item. That&#x27;s for a 1:1 replacement on a system installed in 2008. Incredible, given how fast the tech world moves.<p>Replacement parts cost a shocking $4000 per pair of lanes. But wait, the bowling machines themselves are 70 years old, so what&#x27;s this &quot;advanced&quot; system actually doing back there? Actuating a single relay to trigger that big old machine. Everything else is strictly mechanical. Meanwhile I&#x27;ve got a six-figure invoice in my hand. I&#x27;m upset.<p>Given the state of open hardware, computer vision, real-time event streaming, and open source running megascale products worldwide, there had to be a way to do this myself.<p>So far I&#x27;ve built an equivalent prototype for about $200 per lane-pair, $400 if you&#x27;re fancy. ESP32 and ESPNow with an RS485 fallback, reporting to a raspberry pi lane computer that&#x27;s really just redis and a state machine bolted to an ESP32 gateway for the mesh.<p>Since it&#x27;s all ESP32, I&#x27;ve got a fistful of spare controllers in a drawer, pre-flashed or waiting to be. All common off-the-shelf hardware: microcontrollers wired to relays, optocouplers, and IR-break-beam sensors, each running slightly different firmware. Writing the firmware and protocol is the actual hard part.<p>It&#x27;s an ESPNow star-topology mesh: each node emits events from its sensors and accepts commands for its controls, reporting to a gateway node connected to the raspi over UART. From there it&#x27;s event streaming: RX packets get translated and tossed into redis, commands relay back out to the mesh as needed. RS485 sits underneath as a wired fallback for noisy RF environments.<p>Once the data&#x27;s in redis, it&#x27;s familiar middleware&#x2F;React&#x2F;websocket&#x2F;pub-sub stuff. Any React dev can build their own UI and bowling animations. Since it all runs on commodity hardware, I can do legit anything I want as the proprietor, and I own all my data. Repairs take five minutes; I can swap the rig on a lane pair in under 10. I&#x27;d bet a house like mine could go from zero to running in an hour or two.<p>We&#x27;re calling it OpenLaneLink, and I plan to open source the hardware, firmware, and software stack when it&#x27;s ready. Bowling is fun, and I want to help keep it affordable for alleys like mine.\nI hate vendor lock-in. I&#x27;m not a fan of closed systems, calling support for every hiccup, or paying to &quot;white label&quot; my own equipment. Want to go Tron-themed for a night? Good luck finding a neon neumorphic theme in something bought at the turn of the century.<p>All that bugged me. Sure, bowling equipment is niche, but the open hardware and software landscape is amazing.<p>Thanks for reading! Let me know if anyone&#x27;s interested in more posts about this bowling nonsense.\n\n\n--- Top Comments ---\n\n[vikbez]: Lol, nice! It depends on what you mean by &quot;owning a bowling center,&quot; but it looks like there are at least two of us into this :D I bought a really old fully mechanical (and automated!) mini bowling lane. It works without a CPU, except for the score display, which originally used a 1970 Intel D8749H (MCS-48)! Just like yours, the only thing that turns this machine on is a single relay :D\nOn my model, I also get feedback on the pin status and a &quot;ball received&quot; signal, so I c...\n\n[msisk6]: I grew up behind the bowling machines. My dad was a bowling machine mechanic and worked on machines all around the midwest. He often moon-lite as the on-duty mechanic during league nights and I&#x27;d go with him. Mostly he worked at the local 16-lane alley with ancient AMF machines. The logic was all relays in a &quot;chassis&quot; on each machine. Relays would fail, pins and balls would end up where they&#x27;re not supposed to be, folks would roll the ball into the sweep. All kinds of stuf...\n\n[HeyLaughingBoy]: Thank you for posting this, it reaffirms what I&#x27;ve been thinking for so long. There are many opportunities to retrofit old systems of all types with modern low-cost embedded technologies. Around 2019 or so I was approached by an engineer who had a small business retrofitting very old machine tools with modern motion controls. Think very large lathes and planers. The problem they had was that in order to get these systems working with newer controls, they had to make time-consuming modifi...\n\n[ColdStream]: There is only one thing left to do. Get an old copy of Lightwave from the 90&#x27;s and make more of those bizarre strike animations.\n\n[section33]: Right now I&#x27;m working on adding LED + DMX DJ light control - I kinda want to be able to order LED strips to &quot;chase&quot; a ball as it goes down the lane or back up the return. I plan on triggering laser-light shows and such with the DMX controller. Eventually, I want to allow a customer walk up to the lane, tap to pay and start bowling immediately, too. Kiosk-ize bowling alleys, yknow? I&#x27;m pumped. So much room for activities!",
+    "author": "section33",
+    "published_at": "2026-07-19T14:41:16Z",
+    "fetched_at": "2026-07-19T23:50:55.341209Z",
+    "metadata": {
+      "score": 1266,
+      "descendants": 141,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48968606",
+      "comment_count": 5,
+      "title_zh": "用1600美元ESP32替代12万美元保龄球计分系统",
+      "detailed_summary_zh": "一位前SRE购买了一座废弃的保龄球中心，并自制了一套基于ESP32的开源计分系统OpenLaneLink，将原本6位数的商业系统成本降至约每对球道200美元。 此举展示了用现代开源硬件和软件大幅降低传统工业设备成本的可行性，挑战了供应商锁定和高昂维护费的模式，可能激励更多小型场馆自行改造。 系统采用ESP32和ESPNow形成星形拓扑无线网络，以RS485作为无线干扰时的有线回退，树莓派作为中央网关运行Redis和状态机，上层用React/WebSocket构建用户界面。",
+      "background_zh": "保龄球中心的自动计分系统通常由专用厂商（如Brunswick、AMF）提供，整套更换费高达8万至12万美元，且配件昂贵、定制困难。ESP32是廉价低功耗微控制器，支持Wi-Fi和蓝牙，适合物联网应用。",
+      "community_discussion_zh": "评论区反响热烈，多位有类似经历的读者分享了自己改造旧设备（如机械保龄球道、机床）的经验，一致认同用现代嵌入技术替代老旧昂贵系统的巨大潜力。有人提议用DMX控制灯光特效，进一步扩展功能。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=48968606",
+          "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s | Hacker News"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Automatic_scorer",
+          "title": "Automatic scorer - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一位前SRE购买了一座废弃的保龄球中心，并自制了一套基于ESP32的开源计分系统OpenLaneLink，将原本6位数的商业系统成本降至约每对球道200美元。 此举展示了用现代开源硬件和软件大幅降低传统工业设备成本的可行性，挑战了供应商锁定和高昂维护费的模式，可能激励更多小型场馆自行改造。 系统采用ESP32和ESPNow形成星形拓扑无线网络，以RS485作为无线干扰时的有线回退，树莓派作为中央网关运行Redis和状态机，上层用React/WebSocket构建用户界面。",
+      "background": "保龄球中心的自动计分系统通常由专用厂商（如Brunswick、AMF）提供，整套更换费高达8万至12万美元，且配件昂贵、定制困难。ESP32是廉价低功耗微控制器，支持Wi-Fi和蓝牙，适合物联网应用。",
+      "community_discussion": "评论区反响热烈，多位有类似经历的读者分享了自己改造旧设备（如机械保龄球道、机床）的经验，一致认同用现代嵌入技术替代老旧昂贵系统的巨大潜力。有人提议用DMX控制灯光特效，进一步扩展功能。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value: showcases practical application of embedded systems to replace an expensive commercial system, with strong community engagement and insightful comments sharing related experiences and technical details.",
+    "ai_summary": "A former SRE buys an abandoned bowling center and replaces a six-figure scoring system with inexpensive ESP32-based hardware.",
+    "ai_tags": [
+      "embedded systems",
+      "hardware hacking",
+      "cost reduction",
+      "retrofitting",
+      "ESP32"
+    ]
+  },
+  {
+    "id": "hackernews:story:48971738",
+    "source_type": "hackernews",
+    "title": "AI advice made people 3x less accurate but 2x confident, researchers found",
+    "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+    "content": "\n--- Top Comments ---\n\n[reticulates]: Advice and information subreddits have gone to shit because of AI usage. A large number of people seem to think that when someone asks a question, what they really want is not someone with direct knowledge, but instead someone to relay the question to ChatGPT and post the result as if it is their own hard earned knowledge and insight. I have no idea about the quality of this research but in the real world (well, real-ish, as real as Reddit can be) it is stark, people aren’t just refusing to s...\n\n[dwohnitmok]: This study is pretty bad. The comment ( https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48970182 ) on the other link with the direct PDF explains the problem well, which is that nothing here being tested is specific to AI systems. This study gave people access to an LLM that the researchers knew would give incorrect answers to certain questions, and then quizzed people on those questions, with the option to not respond to a given question if they are unsure about the answer. This is akin ...\n\n[wisty]: AI pessimist view. Even if AI gets smarter it will still be agreeable, and people will use it to more confidently reinforce thier stupider ideas, especially in areas where they lack the knowledge to know if they are right. Even if this can be solved, technically, people won&#x27;t want to use the model that says they are wrong, so they will choose the glib lies that reinforce their beliefs. Freedown of speech forces people to think they may be wrong, but freedom of association lets people avo...\n\n[imoverclocked]: I saw a post that some teachers are now asking students to ask ChatGPT to do their assignments… and then critique it where it is wrong. I feel like this might be an interesting method for places where the default response tends to be someone submitting copy-pasta: just give the ai-response and then have community discussion around what it missed.",
+    "author": "rbanffy",
+    "published_at": "2026-07-19T21:18:10Z",
+    "fetched_at": "2026-07-19T23:50:55.341250Z",
+    "metadata": {
+      "score": 197,
+      "descendants": 93,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48971738",
+      "comment_count": 4,
+      "title_zh": "AI建议使准确率降低3倍但信心倍增",
+      "detailed_summary_zh": "一项研究发现，当人们使用AI建议时，回答准确率降低约3倍，但自信心却提升约2倍。该研究揭示了人类过度依赖AI可能带来的认知偏差。 这一发现值得警惕，因为它表明人们可能在不知不觉中因AI建议而变得更自信，但判断力却显著下降。这对教育、专业决策和日常信息处理领域有深远影响，提醒我们需要更谨慎地评估AI辅助的可靠性。 研究涉及参与者被要求回答一系列问题，其中部分问题AI会给出错误答案，但参与者无法区分正确与错误建议。结果表明，即使AI错了，人们也更倾向于接受其建议，且随后对自己答案的信心反而增加。",
+      "background_zh": "随着大型语言模型的普及，越来越多的人依赖AI获取信息和解答疑惑。然而，AI并非总是正确，且其输出往往带有误导性。这项研究关注的是人类与AI交互中的“过度依赖”现象——即人们倾向于高估AI正确性，并因此削弱自身批判性思维。",
+      "community_discussion_zh": "社区评论中，有用户批评研究方法，认为研究设计的本质是让参与者面对已知会出错的AI，这并非AI特有的问题；也有人悲观地认为，即使AI变得更智能，人们仍会选择能强化自身错误信念的“谄媚答案”。此外，有教师提出让学生先获得AI回答再批判其错误的创新教学方式。",
+      "detailed_summary": "一项研究发现，当人们使用AI建议时，回答准确率降低约3倍，但自信心却提升约2倍。该研究揭示了人类过度依赖AI可能带来的认知偏差。 这一发现值得警惕，因为它表明人们可能在不知不觉中因AI建议而变得更自信，但判断力却显著下降。这对教育、专业决策和日常信息处理领域有深远影响，提醒我们需要更谨慎地评估AI辅助的可靠性。 研究涉及参与者被要求回答一系列问题，其中部分问题AI会给出错误答案，但参与者无法区分正确与错误建议。结果表明，即使AI错了，人们也更倾向于接受其建议，且随后对自己答案的信心反而增加。",
+      "background": "随着大型语言模型的普及，越来越多的人依赖AI获取信息和解答疑惑。然而，AI并非总是正确，且其输出往往带有误导性。这项研究关注的是人类与AI交互中的“过度依赖”现象——即人们倾向于高估AI正确性，并因此削弱自身批判性思维。",
+      "community_discussion": "社区评论中，有用户批评研究方法，认为研究设计的本质是让参与者面对已知会出错的AI，这并非AI特有的问题；也有人悲观地认为，即使AI变得更智能，人们仍会选择能强化自身错误信念的“谄媚答案”。此外，有教师提出让学生先获得AI回答再批判其错误的创新教学方式。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important study on AI advice effects, with high community engagement and insightful comments critiquing methodology and raising broader implications.",
+    "ai_summary": "Study finds AI advice reduces accuracy but boosts confidence, raising concerns about over-reliance on AI.",
+    "ai_tags": [
+      "AI",
+      "critical thinking",
+      "human-AI interaction",
+      "overconfidence",
+      "study"
+    ]
+  },
+  {
+    "id": "hackernews:story:48967256",
+    "source_type": "hackernews",
+    "title": "Minecraft: Java Edition now uses SDL3",
+    "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+    "content": "\n--- Top Comments ---\n\n[malteeez]: The lwjgl bindings for this were written by a member of the GTNH modpack team, thereby completing the chain of vanilla-&gt;modded-&gt;vanilla once more  https:&#x2F;&#x2F;github.com&#x2F;LWJGL&#x2F;lwjgl3&#x2F;pull&#x2F;1033\n\n[shakna]: &gt; Known Issues &gt; Exclusive fullscreen mode on Windows may cause the game to crash in certain situations, especially when using multiple monitors &gt; Entering Exclusive fullscreen mode crashes the game on Wayland Those, together, kinda seem like the kind of blocking bug that would usually delay a snapshot... Lets hoping it gets fixed before release lands...\n\n[velcrovan]: Anyone got any advice for a techy dad with no (zero) Minecraft experience who wants to set up a Minecraft server for the family in 2026? Kids right now are playing on their iPads, and (sometimes) old macbooks&#x2F;windows PCs.\n\n[hiccuphippo]: Icculus has some great videos of porting games from SDL2 to 3, here&#x27;s the one porting Doom:  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ixdeGhsoxy8\n\n[LelouBil]: It&#x27;s really amazing how much Minecraft is becoming more and more a game engine on it&#x27;s own rather than just a game.",
+    "author": "ObviouslyFlamer",
+    "published_at": "2026-07-19T11:48:18Z",
+    "fetched_at": "2026-07-19T23:50:55.341296Z",
+    "metadata": {
+      "score": 256,
+      "descendants": 167,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48967256",
+      "comment_count": 5,
+      "title_zh": "Minecraft Java版快照26.3.4采用SDL3",
+      "detailed_summary_zh": "Minecraft: Java Edition的快照26.3.4将底层图形和输入库从SDL2升级到了SDL3，以改善跨平台的窗口管理和输入处理。 这次升级意味着Minecraft将获得更稳定和现代的跨平台支持，同时SDL3的采用也可能推动其他游戏项目跟进迁移，对游戏开发生态有积极影响。 新版使用了社区贡献的LWJGL绑定（由GTNH模组包团队成员编写），但也存在已知问题：在Windows多显示器设置下独占全屏可能崩溃，以及在Wayland下进入独占全屏会崩溃。",
+      "background_zh": "SDL（Simple DirectMedia Layer）是一个跨平台的多媒体库，用于处理视频、音频、输入等，广泛用于游戏开发。SDL3于2025年1月正式发布，相比SDL2带来了更简化的API和改进的硬件加速支持。Minecraft Java版之前使用SDL2，此次升级是为了跟上库的发展并获得更好性能。",
+      "community_discussion_zh": "社区对这次升级普遍表示关注和认可，有评论指出LWJGL绑定由GTNH模组包团队贡献，实现了“原版→模组→原版”的循环。也有人对已知的崩溃问题表示担忧，希望正式版前能修复。还有用户对Minecraft越来越像一个游戏引擎而非单纯游戏表示惊叹。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer",
+          "title": "Simple DirectMedia Layer - Wikipedia"
+        },
+        {
+          "url": "https://wiki.libsdl.org/",
+          "title": "SDL Wiki: SDL3/FrontPage"
+        }
+      ],
+      "detailed_summary": "Minecraft: Java Edition的快照26.3.4将底层图形和输入库从SDL2升级到了SDL3，以改善跨平台的窗口管理和输入处理。 这次升级意味着Minecraft将获得更稳定和现代的跨平台支持，同时SDL3的采用也可能推动其他游戏项目跟进迁移，对游戏开发生态有积极影响。 新版使用了社区贡献的LWJGL绑定（由GTNH模组包团队成员编写），但也存在已知问题：在Windows多显示器设置下独占全屏可能崩溃，以及在Wayland下进入独占全屏会崩溃。",
+      "background": "SDL（Simple DirectMedia Layer）是一个跨平台的多媒体库，用于处理视频、音频、输入等，广泛用于游戏开发。SDL3于2025年1月正式发布，相比SDL2带来了更简化的API和改进的硬件加速支持。Minecraft Java版之前使用SDL2，此次升级是为了跟上库的发展并获得更好性能。",
+      "community_discussion": "社区对这次升级普遍表示关注和认可，有评论指出LWJGL绑定由GTNH模组包团队贡献，实现了“原版→模组→原版”的循环。也有人对已知的崩溃问题表示担忧，希望正式版前能修复。还有用户对Minecraft越来越像一个游戏引擎而非单纯游戏表示惊叹。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant update to a widely-used game, adopting a major library upgrade (SDL3). High community engagement (256 points, 167 comments) with substantive discussion about technical details, migration, and bugs. Demonstrates cross-industry impact on game development.",
+    "ai_summary": "Minecraft: Java Edition snapshot 26.3.4 adopts SDL3, improving cross-platform input and windowing, sparking technical discussion on migration challenges and community contributions.",
+    "ai_tags": [
+      "Minecraft",
+      "SDL3",
+      "game development",
+      "cross-platform",
+      "rendering"
+    ]
+  },
+  {
+    "id": "hackernews:story:48966569",
+    "source_type": "hackernews",
+    "title": "Claude Code uses Bun written in Rust now",
+    "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "content": "\n--- Top Comments ---\n\n[weakfish]: Maybe I’m taking crazy pills, but I’m still stuck on “why the hell does a TUI need to run in terminal React by way of JavaScript” The fact that Anthropic felt the need to buy a runtime so they could make their TUI better speaks more to the quality of engineering than anything else IMO. If rewrites are so easy, why not rewrite CC in a native language? Would’ve been a hell of a lot cheaper.\n\n[mrothroc]: Drilling into the original article where Jarred explained the reasoning behind the change, It&#x27;s pretty clear that under zig the team was doing things by hand that are automatic in rust. Humans and agents share one thing: they are both non-deterministic. He talks about the issue of tracking memory lifecycles manually in zig so it can be explicitly freed. As expected, this leads to a long list of bugs where people missed things. Rust does this automatically. It removes an entire class of e...\n\n[gabrieledarrigo]: Bah. Personally my take on the entire affair is quite negative, whatever Jarred or Simonw says about it. I think Bun owned by Anthropic and the entire rewrite with AI is not the real point (even if it&#x27;s quite interesting, though). My take is that Jarred, and Bun,didn&#x27;t demonstrate a serious, adult approach, from &quot;this is my branch, you are overreacting&quot; message to just proceeding with a 1mil+ PR merged in less than month. The communication is the issue, and it was handled ...\n\n[embedding-shape]: &gt; For me this outputs Bun v1.4.0 (macOS arm64). The most recent release of Bun on GitHub is currently v1.3.14 from May 12th, so that v1.4.0 version number in Claude supports them shipping a preview of a not-yet-released Bun version. And so, the FOSS project &quot;Bun&quot; silently dies in darkness and is now something completely else. I&#x27;m glad I still had &quot;Investigate if Bun is worth it&quot; on my TODO list and hadn&#x27;t yet gotten to it. What is the governance structure for ...\n\n[GuB-42]: Why all the mess with Bun? Couldn&#x27;t they have rewritten Claude Code in Rust directly? No more need for a JS runtime, better performance, etc... If their agents can do Zig to Rust, why not JS to Rust?",
+    "author": "tosh",
+    "published_at": "2026-07-19T10:03:23Z",
+    "fetched_at": "2026-07-19T23:50:55.341321Z",
+    "metadata": {
+      "score": 368,
+      "descendants": 502,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48966569",
+      "comment_count": 5,
+      "title_zh": "Claude Code 改用 Rust 重写的 Bun 运行时",
+      "detailed_summary_zh": "Anthropic 旗下的 Claude Code 现在使用 Bun 作为 JavaScript 运行时，而 Bun 已被从 Zig 语言重写为 Rust 语言。 这一变化涉及两个重大决策：Claude Code 选择第三方运行时以及 Bun 核心语言的迁移，引发了关于技术选型、工程管理和开源治理的广泛讨论。 Claude Code 是一个基于 React 的终端 UI 应用，选择 Bun 是因为性能优势；Bun 的重写合并了一个超过 100 万行代码的 Pull Request，且在短短一个月内完成。",
+      "background_zh": "Bun 是一个 JavaScript 运行时，最初用 Zig 编写（一种需要手动管理内存的系统语言）。Rust 同样是一种系统语言，但通过所有权机制自动管理内存。Claude Code 是 Anthropic 的 AI 编程工具。这次重写引发了社区对工程质量和沟通方式的争议。",
+      "community_discussion_zh": "社区评论中，有开发者质疑为何一个 TUI 应用需要依赖 JavaScript 运行时，也有人支持 Rust 的自动内存管理能减少内存错误。但多数人批评项目负责人的沟通方式不当，认为 Bun 的治理不透明且重写过程过于激进。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bun_(software)",
+          "title": "Bun (software) - Wikipedia"
+        },
+        {
+          "url": "https://bun.sh/",
+          "title": "Bun — A fast all-in-one JavaScript runtime"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Zig_(programming_language)",
+          "title": "Zig (programming language)"
+        }
+      ],
+      "detailed_summary": "Anthropic 旗下的 Claude Code 现在使用 Bun 作为 JavaScript 运行时，而 Bun 已被从 Zig 语言重写为 Rust 语言。 这一变化涉及两个重大决策：Claude Code 选择第三方运行时以及 Bun 核心语言的迁移，引发了关于技术选型、工程管理和开源治理的广泛讨论。 Claude Code 是一个基于 React 的终端 UI 应用，选择 Bun 是因为性能优势；Bun 的重写合并了一个超过 100 万行代码的 Pull Request，且在短短一个月内完成。",
+      "background": "Bun 是一个 JavaScript 运行时，最初用 Zig 编写（一种需要手动管理内存的系统语言）。Rust 同样是一种系统语言，但通过所有权机制自动管理内存。Claude Code 是 Anthropic 的 AI 编程工具。这次重写引发了社区对工程质量和沟通方式的争议。",
+      "community_discussion": "社区评论中，有开发者质疑为何一个 TUI 应用需要依赖 JavaScript 运行时，也有人支持 Rust 的自动内存管理能减少内存错误。但多数人批评项目负责人的沟通方式不当，认为 Bun 的治理不透明且重写过程过于激进。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to a major architectural shift in a widely-used tool (Claude Code/Bun), with substantial community discussion (502 comments) covering technical trade-offs, engineering decisions, and communication controversies.",
+    "ai_summary": "Claude Code now runs on Bun, which has been rewritten from Zig to Rust, sparking debate about technical choices and project management.",
+    "ai_tags": [
+      "bun",
+      "rust",
+      "claude code",
+      "rewrite",
+      "javascript runtime"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:11a4c801bff62c83",
+    "source_type": "rss",
+    "title": "Mathematicians still don’t know the fastest way to multiply numbers",
+    "url": "https://www.scientificamerican.com/article/mathematicians-still-dont-know-the-fastest-way-to-multiply-numbers/",
+    "content": "<p><a href=\"https://lobste.rs/s/otiash/mathematicians_still_don_t_know_fastest\">Comments</a></p>",
+    "author": "scientificamerican.com via carlomonte",
+    "published_at": "2026-07-19T07:50:55Z",
+    "fetched_at": "2026-07-19T23:50:55.384390Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "math"
+      ],
+      "title_zh": "数学家仍未找到最快乘法算法",
+      "detailed_summary_zh": "《科学美国人》发表文章指出，寻找两个整数相乘的最快算法仍是未解决的开放问题。尽管已有多种快速算法，但最优复杂度尚未确定。 乘法是计算的基础操作，其效率直接影响计算机科学、密码学和数值计算等领域。这个问题的解决可能带来算法理论的重大突破和实践性能提升。 目前最快的理论算法是2019年Harvey和van der Hoeven提出的O(n log n)算法，但因常数过大无法实际使用。实际中常用Schönhage-Strassen算法（复杂度O(n log n log log n)）。",
+      "background_zh": "乘法算法从小学的O(n²)方法，发展到1960年Karatsuba的O(n^1.58)、1971年Schönhage-Strassen，以及2007年Fürer的改进。核心思路包括分治和快速傅里叶变换（FFT）。问题在于是否存在真正最优的复杂度下界。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication",
+          "title": "Computational complexity of matrix multiplication - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Karatsuba_algorithm",
+          "title": "Karatsuba algorithm"
+        }
+      ],
+      "detailed_summary": "《科学美国人》发表文章指出，寻找两个整数相乘的最快算法仍是未解决的开放问题。尽管已有多种快速算法，但最优复杂度尚未确定。 乘法是计算的基础操作，其效率直接影响计算机科学、密码学和数值计算等领域。这个问题的解决可能带来算法理论的重大突破和实践性能提升。 目前最快的理论算法是2019年Harvey和van der Hoeven提出的O(n log n)算法，但因常数过大无法实际使用。实际中常用Schönhage-Strassen算法（复杂度O(n log n log log n)）。",
+      "background": "乘法算法从小学的O(n²)方法，发展到1960年Karatsuba的O(n^1.58)、1971年Schönhage-Strassen，以及2007年Fürer的改进。核心思路包括分治和快速傅里叶变换（FFT）。问题在于是否存在真正最优的复杂度下界。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value article covering a fundamental open problem in computational complexity with historical context and practical implications. The topic is central to theoretical computer science and mathematics, and the Lobsters discussion likely provides insightful community perspectives.",
+    "ai_summary": "Scientific American article explores the unresolved question of the fastest algorithm for multiplying numbers, a fundamental problem in computer science.",
+    "ai_tags": [
+      "algorithms",
+      "computational complexity",
+      "mathematics",
+      "open problem"
+    ]
+  },
+  {
+    "id": "hackernews:story:48965850",
+    "source_type": "hackernews",
+    "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
+    "url": "https://github.com/openai/codex/pull/33972/files",
+    "content": "\n--- Top Comments ---\n\n[tekacs]: I know a lot of people like to say that compaction makes this moot, but the level of detail you lose across compaction is wildly too much for most things that I do, unfortunately. Perhaps if your plans don&#x27;t have as much detail, or if you&#x27;re not, for example, having a discussion with a lot of nitty-gritty then it&#x27;s fine? The lack of long context is the main reason that I still end up using Anthropic. The worst is when you need it to hold for example a number of papers in its he...\n\n[dannyw]: This was tweeted about when it happened, with some explanation from Tibo here:  https:&#x2F;&#x2F;x.com&#x2F;thsottiaux&#x2F;status&#x2F;2076543065045795309\n\n[damsta]: Not a fan of their context compaction and I feel like 1M-token context should minimum today. Each day I see how GPT 5.5 and 5.6 struggle a bit after each compaction before they get to the full speed, sometimes focusing too much on some older steering message that made it into the compacted context.\n\n[onetrickwolf]: I don&#x27;t know if this is why they did it, but I think it is generally a mistake to go beyond this context size anyway. I don&#x27;t think people realize how much dumber the models get at larger contexts and how much more the token cost is. I never let claude get about 300k and in general I don&#x27;t compact, I just divide up the work in chunks where I can fit it into 300k and I try to keep really clean and slim docs and modular code bases. It&#x27;s still kind of annoying, sometimes the ...\n\n[throwatdem12311]: I primarily use Opus for my day to day and I &#x2F;clear often.  1M context sound great but it quickly degrades once you start hitting the 50% mark.  I usually just &#x2F;clear once I hit between 30 and 40 percent context and get much better results from the model.  Compaction doesn’t really help much in my experience, starting fresh and having the model front load its context from scratch works much better IME.  I have multiple skills with a pile of markdown docs organized by feature to assi...",
+    "author": "AmazingTurtle",
+    "published_at": "2026-07-19T07:54:39Z",
+    "fetched_at": "2026-07-19T23:50:55.341364Z",
+    "metadata": {
+      "score": 290,
+      "descendants": 142,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48965850",
+      "comment_count": 5,
+      "title_zh": "OpenAI 将 Codex 上下文窗口从 372k 缩小至 272k",
+      "detailed_summary_zh": "OpenAI 通过 GitHub 提交将 Codex 模型的上下文大小从 372k 标记减少到 272k，相当于减少约 10 万 token。这一改动引发了社区关于上下文压缩利弊的广泛讨论。 上下文窗口大小直接影响 AI 代码生成的质量和细节保留能力。此举可能导致模型在处理长文档或复杂任务时丢失关键信息，进而影响开发者的使用体验和模型选择偏好。 上下文压缩是一种通过删除低信号 token 来减少窗口的技术，但不像摘要那样保留全部细节。社区评论指出，超过 50% 的上下文使用后模型质量下降明显，而压缩后的内容可能遗漏重要细节。",
+      "background_zh": "大型语言模型的上下文窗口是指模型一次能处理的 token 数量上限。为了在有限窗口内容纳更多信息，一些系统采用上下文压缩（context compaction）技术，即删除不重要的 token 以腾出空间。这种策略虽然降低了计算开销，但也可能牺牲信息的完整性和准确性。",
+      "community_discussion_zh": "社区对此意见不一。部分用户认为压缩会导致细节丢失，尤其在需要精细讨论的场景下表现不佳，因此更倾向于使用 Anthropic 等提供长上下文的模型。另一些用户则认为，过长的上下文会降低模型智能，建议将对话分段，每段控制在 300k 以内，并手动清除旧上下文以获得更好效果。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)",
+          "title": "OpenAI Codex (AI agent) - Wikipedia"
+        },
+        {
+          "url": "https://www.morphllm.com/context-compaction",
+          "title": "Context Compaction: Delete Noise, Keep Signal | Technical Guide"
+        }
+      ],
+      "detailed_summary": "OpenAI 通过 GitHub 提交将 Codex 模型的上下文大小从 372k 标记减少到 272k，相当于减少约 10 万 token。这一改动引发了社区关于上下文压缩利弊的广泛讨论。 上下文窗口大小直接影响 AI 代码生成的质量和细节保留能力。此举可能导致模型在处理长文档或复杂任务时丢失关键信息，进而影响开发者的使用体验和模型选择偏好。 上下文压缩是一种通过删除低信号 token 来减少窗口的技术，但不像摘要那样保留全部细节。社区评论指出，超过 50% 的上下文使用后模型质量下降明显，而压缩后的内容可能遗漏重要细节。",
+      "background": "大型语言模型的上下文窗口是指模型一次能处理的 token 数量上限。为了在有限窗口内容纳更多信息，一些系统采用上下文压缩（context compaction）技术，即删除不重要的 token 以腾出空间。这种策略虽然降低了计算开销，但也可能牺牲信息的完整性和准确性。",
+      "community_discussion": "社区对此意见不一。部分用户认为压缩会导致细节丢失，尤其在需要精细讨论的场景下表现不佳，因此更倾向于使用 Anthropic 等提供长上下文的模型。另一些用户则认为，过长的上下文会降低模型智能，建议将对话分段，每段控制在 300k 以内，并手动清除旧上下文以获得更好效果。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Reduction in context size for OpenAI's Codex model is notable and sparks high-quality community discussion about context compression trade-offs, though not a groundbreaking development.",
+    "ai_summary": "OpenAI reduces Codex model context size, prompting community debate on the pros and cons of context compaction.",
+    "ai_tags": [
+      "OpenAI",
+      "Codex",
+      "context window",
+      "AI models",
+      "code generation"
+    ]
+  },
+  {
+    "id": "hackernews:story:48966713",
+    "source_type": "hackernews",
+    "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+    "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+    "content": "\n--- Top Comments ---\n\n[JimsonYang]: I thought &#x27;hardware is hard&#x27; is a VC statement to apply a broad stroke for why its hard to make succesful hardware companies (that gives 100x returns) For reasons other commentors have already mentioned-scale, logistics, revisions.  And for reasons they havent mentioned-cash flow\n\n[skippyfish]: Hardware has a reputation for being hard for three reasons. First, it scales differently than software. It&#x27;s far harder to design something you want to make a million of than something you want to make ten of. Second, it&#x27;s harder to anticipate, test, and correct all the things that can go wrong on the user end. Some people will put batteries the wrong way, some will drop the device on the ground, some will connect it to some vintage equipment you have never seen in your life, etc. A...\n\n[starky]: &gt;But for me the take away still is: “hardware is as hard as you make it”. I dislike this statement. Hardware is as hard as the product dictates it needs to be. A 25 component PCBA and a clamshell of 2 injection molded parts is about as simple of a product as you can make. Heck, most people would just buy an off the shelf clamshell for that type of product. That doesn&#x27;t work for the vast majority of products, building a product with 20 COTS parts plus 60 custom tooled parts, and 4 comp...\n\n[DavidPiper]: Very happy JamCorder customer here. I&#x27;ve started playing in improv shows since I bought it too, and it&#x27;s nice to have those on record! It&#x27;s rare that I come across a product I have literally zero complaints about, or any feedback to offer. Even my concern that it was tied to an app that might disappear one day is of course covered by the fact that it&#x27;s all just MIDI files on a card. Thank you so much for making this, it&#x27;s basically a perfect product for me and I love ...\n\n[j-bos]: Inquiring minds want to know: what is your anti-counterfeit strategy or is the fact that you&#x27;re keeping it under your hat part of the strategy? Also, pretty cool that you set up your website real fast. Would you mind adding your Twitter link onto the site?",
+    "author": "chipweinberger",
+    "published_at": "2026-07-19T10:34:58Z",
+    "fetched_at": "2026-07-19T23:50:55.341387Z",
+    "metadata": {
+      "score": 385,
+      "descendants": 192,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48966713",
+      "comment_count": 5,
+      "title_zh": "卖出2500台MIDI录音机：硬件没那么难",
+      "detailed_summary_zh": "作者分享了他销售2500台MIDI录音机（JamCorder）的经验，并提出了“硬件并不难”的观点，挑战了常见的“硬件很难”论调。 该观点为硬件创业者提供了新的思路，表明通过简化设计和合理规划，硬件产品开发并非不可逾越的障碍，可能激励更多人进入硬件领域。 作者强调其产品仅使用25个元件的PCB和两个注塑件，认为硬件难度取决于产品本身的复杂性，而非硬件固有的特性。",
+      "background_zh": "MIDI录音机是一种记录乐器数字接口（MIDI）数据的设备，常用于音乐创作和演出。传统上，硬件开发被认为比软件开发更困难，涉及供应链、制造、物流等复杂环节。",
+      "community_discussion_zh": "评论中，用户JimsonYang认为“硬件很难”是风投的说法，关注规模、物流和现金流等挑战；skippyfish列举了硬件扩展和用户端问题的困难；starky则指出硬件难度取决于产品复杂度，简单产品并不难。整体观点分化，有人认同作者，也有人强调硬件的固有挑战。",
+      "detailed_summary": "作者分享了他销售2500台MIDI录音机（JamCorder）的经验，并提出了“硬件并不难”的观点，挑战了常见的“硬件很难”论调。 该观点为硬件创业者提供了新的思路，表明通过简化设计和合理规划，硬件产品开发并非不可逾越的障碍，可能激励更多人进入硬件领域。 作者强调其产品仅使用25个元件的PCB和两个注塑件，认为硬件难度取决于产品本身的复杂性，而非硬件固有的特性。",
+      "background": "MIDI录音机是一种记录乐器数字接口（MIDI）数据的设备，常用于音乐创作和演出。传统上，硬件开发被认为比软件开发更困难，涉及供应链、制造、物流等复杂环节。",
+      "community_discussion": "评论中，用户JimsonYang认为“硬件很难”是风投的说法，关注规模、物流和现金流等挑战；skippyfish列举了硬件扩展和用户端问题的困难；starky则指出硬件难度取决于产品复杂度，简单产品并不难。整体观点分化，有人认同作者，也有人强调硬件的固有挑战。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (385 points, 192 comments) with substantive discussion about hardware scaling and challenges; provides practical insights from real experience challenging the common 'hardware is hard' narrative.",
+    "ai_summary": "The author shares lessons from selling 2,500 MIDI recorders, arguing that hardware development is manageable with the right approach.",
+    "ai_tags": [
+      "hardware",
+      "MIDI",
+      "entrepreneurship",
+      "product development"
+    ]
+  },
+  {
+    "id": "hackernews:story:48969291",
+    "source_type": "hackernews",
+    "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
+    "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+    "content": "\n--- Top Comments ---\n\n[Alifatisk]: &gt; Over the past 48 hours, demand has pushed close to the limits of our current capacity. To protect the experience of existing subscribers, we&#x27;re temporarily pausing new subscriptions and prioritizing compute for current members. Existing subscribed users are not affected. Such a beautiful paragraph to read, a company that prioritizes their current customers and focus on keeping them satisfied instead of just focusing on fast growth.\n\n[thevinter]: Personal anecdote: I exhausted my Claude usage yesterday so I decided to spend 20$ to try Kimi while I was at it. Logged in, paid, downloaded Kimi Code, set it to use K3 and prompted something along the lines of: &quot;Check this repository and find all the settings that can be passed as input related to hardware, I&#x2F;O, thread control or networking. Produce a report&quot;. It thought for about 12 minutes and then told me I had exhausted my daily quota. (The next day Fable did the same tas...\n\n[impossiblefork]: I think the Kimi thing is super cool, especially that they have so many RNN&#x2F;linear attention layers (3x more than they have full attention). I haven&#x27;t yet tried it though. It seems like it would be extremely reasonable for long context tasks and I guess this fits the times. I suspect that the reason it has so many parameters is the same reason that compute optimal xLSTMs have some many parameters, and the success of this model makes me a bit unhappy that we haven&#x27;t gotten an xL...\n\n[abalashov]: I&#x27;ve been using Kimi for coding tasks for close to six months now, and haven&#x27;t looked back. I&#x27;ll periodically try something on Claude to make sure I&#x27;m not missing anything, but I&#x27;ve been very happy. I just do the OpenRouter thing. My use of LLMs is narrow enough that cost is a negligible consideration either way.\n\n[ezekiel68]: I tried it through siliconflow (I have no relationship to them other than as a normal customer) with the command line Pi agent and it&#x27;s pretty good at adding features to a rust lang code repo.  Compared to Deepseek V4 Pro there, M3 is about 3X the cost for non-cached input tokens and 5X the cost for output tokens. (both offering a 1M token context window).  It certainly wasn&#x27;t worh 5X the output of the Deepseek model for my uses, though. I couldn&#x27;t find any info on how they (si...",
+    "author": "serialx",
+    "published_at": "2026-07-19T16:02:25Z",
+    "fetched_at": "2026-07-19T23:50:55.341430Z",
+    "metadata": {
+      "score": 193,
+      "descendants": 67,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48969291",
+      "comment_count": 5,
+      "title_zh": "Moonshot AI因Kimi K3需求火爆暂停新订阅",
+      "detailed_summary_zh": "Moonshot AI于近日宣布，由于旗下Kimi K3模型需求在48小时内逼近容量极限，为保障现有订阅用户的体验，公司决定暂时停止接受新订阅，并将计算资源优先分配给现有用户。 这一举措反映出Kimi K3作为一款2.8万亿参数的开源模型，在市场上获得了极高的关注度和需求，同时也体现了Moonshot AI以用户为中心、不盲目追求增长的战略，可能成为AI行业客户运营的新标杆。 Kimi K3是Moonshot AI于2026年7月发布的最新大语言模型，采用Kimi Delta注意力机制和注意力残差结构，原生支持视觉能力，上下文窗口达100万tokens。此次暂停仅针对新订阅用户，已有订阅用户不受任何影响。",
+      "background_zh": "Moonshot AI是一家成立于2023年的中国人工智能公司，由清华大学校友创立，专注于开发先进的大语言模型以实现通用人工智能。其Kimi系列聊天机器人以超长上下文支持著称，K3是该系列的最新旗舰模型，也是全球首个开源的超3T参数级别模型。",
+      "community_discussion_zh": "社区评论普遍赞扬Moonshot AI优先保障现有用户的做法，认为这是客户导向的体现。但也有用户反映，在试用中遇到了配额限制问题——例如有用户付费后因K3单日配额用尽而无法完成任务。部分技术讨论则聚焦于K3大量采用RNN/线性注意力层（是全注意力层的三倍），认为这种架构可能对长上下文任务极为有利。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kimi_K3",
+          "title": "Kimi K3"
+        },
+        {
+          "url": "https://openlm.ai/kimi-k3/",
+          "title": "Kimi K3 - openlm.ai"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+          "title": "Moonshot AI - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Moonshot AI于近日宣布，由于旗下Kimi K3模型需求在48小时内逼近容量极限，为保障现有订阅用户的体验，公司决定暂时停止接受新订阅，并将计算资源优先分配给现有用户。 这一举措反映出Kimi K3作为一款2.8万亿参数的开源模型，在市场上获得了极高的关注度和需求，同时也体现了Moonshot AI以用户为中心、不盲目追求增长的战略，可能成为AI行业客户运营的新标杆。 Kimi K3是Moonshot AI于2026年7月发布的最新大语言模型，采用Kimi Delta注意力机制和注意力残差结构，原生支持视觉能力，上下文窗口达100万tokens。此次暂停仅针对新订阅用户，已有订阅用户不受任何影响。",
+      "background": "Moonshot AI是一家成立于2023年的中国人工智能公司，由清华大学校友创立，专注于开发先进的大语言模型以实现通用人工智能。其Kimi系列聊天机器人以超长上下文支持著称，K3是该系列的最新旗舰模型，也是全球首个开源的超3T参数级别模型。",
+      "community_discussion": "社区评论普遍赞扬Moonshot AI优先保障现有用户的做法，认为这是客户导向的体现。但也有用户反映，在试用中遇到了配额限制问题——例如有用户付费后因K3单日配额用尽而无法完成任务。部分技术讨论则聚焦于K3大量采用RNN/线性注意力层（是全注意力层的三倍），认为这种架构可能对长上下文任务极为有利。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (193 points, 67 comments) and community discussion that dives into model architecture (RNN/linear attention) and user experience, indicating strong interest. While not a breakthrough, it reflects significant demand and a customer-focused response.",
+    "ai_summary": "Moonshot AI suspends new Kimi K3 subscriptions due to overwhelming demand, prioritizing existing users.",
+    "ai_tags": [
+      "Moonshot AI",
+      "Kimi K3",
+      "subscription",
+      "demand",
+      "AI"
+    ]
+  },
+  {
+    "id": "hackernews:story:48966769",
+    "source_type": "hackernews",
+    "title": "The death and rebirth of my home server",
+    "url": "https://sgt.hootr.club/blog/home-server-rebirth/",
+    "content": "\n--- Top Comments ---\n\n[inigyou]: Raspberry Pis are notorious for SD card corruption with unknown causes. In this era you might replace it with a mini-PC (NUC style).\n\n[arjie]: Classic power failure and raspberry pi with SD cards. When I last set up things for my parents, I simply imaged a bunch of SD cards and had the data stored on an external hard drive. I live in the US and they live in India and this is for their RaspBMC. With the SD cards they just swap a broken one with a new one and call it a day. Been 12 years or so now. Went back to their home a few years ago and everything but the opensubtitles integration works. I was surprised. I could never recreate it...\n\n[Venn1]: My Raspberry Pi 4 has been used to run both a Jitsi and Trackmania server over the years. I never considered using the SD card since it can boot and run from a USB 3 flash drive. Later on, I picked up an Argon One case to add a SATA SSD. Thankfully, modern Rockchip SBCs tend to come with NVMe slots.\n\n[ungreased0675]: I use a Waveshare hat for my Pi 5s. It does PoE and has a spot for an SSD. What I particularly like about this setup is the single wire running to each board, looks very clean.\n\n[dzonga]: this would have been the perfect era for home servers - but damn Ram is expensive. every other component is cheap enough but not Ram.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/k6ph7c/death_rebirth_my_home_server\">Comments</a></p>",
+    "author": "steinuil",
+    "published_at": "2026-07-19T10:44:31Z",
+    "fetched_at": "2026-07-19T23:50:55.341463Z",
+    "metadata": {
+      "score": 118,
+      "descendants": 76,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=48966769",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "nix"
+      ],
+      "merged_sources": [
+        "rss",
+        "hackernews"
+      ],
+      "title_zh": "家庭服务器的报废与重生",
+      "detailed_summary_zh": "一篇博客文章记录了作者家庭服务器因SD卡损坏而故障，随后重建的过程。社区评论建议使用Intel NUC等迷你PC或NVMe SSD来避免SD卡损坏问题。 许多家庭服务器爱好者依赖Raspberry Pi和SD卡，但SD卡容易损坏，导致数据丢失。本文和社区讨论提供了实用的替代方案，有助于提升家庭服务器的稳定性和可靠性。 作者可能仍在使用Raspberry Pi，但社区强调使用USB或NVMe SSD启动可以避免SD卡损坏。此外，有评论提到现代Rockchip SBC已配备NVMe插槽。",
+      "background_zh": "Raspberry Pi是流行的单板计算机，常用于家庭服务器。其SD卡作为存储介质容易因频繁读写或电源故障而损坏。Intel NUC是一种小型迷你PC，具有更强的性能和稳定性，常被推荐作为Raspberry Pi的替代品。",
+      "community_discussion_zh": "社区评论普遍认同Raspberry Pi的SD卡损坏问题，并分享了多种解决方案，如使用USB 3.0闪存盘、Argon One外壳加SATA SSD，或直接采用带有NVMe插槽的Rockchip SBC。用户“arjie”分享了通过预置多张SD卡并定期更换的经验，显示长期运行的可行性。总体而言，讨论实用且具有建设性。",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ce_xaNk9fIk",
+          "title": "What Can You Do with an Intel NUC ? - YouTube"
+        },
+        {
+          "url": "https://www.coolblue.be/en/advice/what-is-a-barebone.html",
+          "title": "What's a barebone? - Coolblue - anything for a smile"
+        }
+      ],
+      "detailed_summary": "一篇博客文章记录了作者家庭服务器因SD卡损坏而故障，随后重建的过程。社区评论建议使用Intel NUC等迷你PC或NVMe SSD来避免SD卡损坏问题。 许多家庭服务器爱好者依赖Raspberry Pi和SD卡，但SD卡容易损坏，导致数据丢失。本文和社区讨论提供了实用的替代方案，有助于提升家庭服务器的稳定性和可靠性。 作者可能仍在使用Raspberry Pi，但社区强调使用USB或NVMe SSD启动可以避免SD卡损坏。此外，有评论提到现代Rockchip SBC已配备NVMe插槽。",
+      "background": "Raspberry Pi是流行的单板计算机，常用于家庭服务器。其SD卡作为存储介质容易因频繁读写或电源故障而损坏。Intel NUC是一种小型迷你PC，具有更强的性能和稳定性，常被推荐作为Raspberry Pi的替代品。",
+      "community_discussion": "社区评论普遍认同Raspberry Pi的SD卡损坏问题，并分享了多种解决方案，如使用USB 3.0闪存盘、Argon One外壳加SATA SSD，或直接采用带有NVMe插槽的Rockchip SBC。用户“arjie”分享了通过预置多张SD卡并定期更换的经验，显示长期运行的可行性。总体而言，讨论实用且具有建设性。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (118 points, 76 comments) with practical, insightful community advice on avoiding SD card corruption using USB/NVMe SSDs. The content is valuable for home server enthusiasts but not groundbreaking.",
+    "ai_summary": "A personal account of rebuilding a home server after a failure, with community advice on using NUCs and SSDs to avoid SD card corruption.",
+    "ai_tags": [
+      "home-server",
+      "raspberry-pi",
+      "self-hosting",
+      "hardware",
+      "SSDs"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a943092b27b3a6a7",
+    "source_type": "rss",
+    "title": "The Zen of Parallel Programming",
+    "url": "https://smolnero.com/posts/the-zen-of-parallel-programming",
+    "content": "<p><a href=\"https://lobste.rs/s/m2shhj/zen_parallel_programming\">Comments</a></p>",
+    "author": "smolnero.com via lalitm",
+    "published_at": "2026-07-19T20:19:38Z",
+    "fetched_at": "2026-07-19T23:50:55.384591Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "practices"
+      ],
+      "title_zh": "并行编程的禅意",
+      "detailed_summary_zh": "本文从哲学视角探讨了并行编程，可能提供了相关见解和最佳实践。 在多核处理器时代，并行编程至关重要，这类哲学思考有助于开发者建立正确的并发思维，提升软件性能与可靠性。 文章发布于 smolnero.com，并在 lobste.rs 上有评论链接，表明社区对此话题有讨论。",
+      "background_zh": "并行编程指同时执行多个计算任务，常用于提升程序性能。与串行编程不同，它面临竞态条件、死锁等复杂问题，需要深入理解并发模型。",
+      "detailed_summary": "本文从哲学视角探讨了并行编程，可能提供了相关见解和最佳实践。 在多核处理器时代，并行编程至关重要，这类哲学思考有助于开发者建立正确的并发思维，提升软件性能与可靠性。 文章发布于 smolnero.com，并在 lobste.rs 上有评论链接，表明社区对此话题有讨论。",
+      "background": "并行编程指同时执行多个计算任务，常用于提升程序性能。与串行编程不同，它面临竞态条件、死锁等复杂问题，需要深入理解并发模型。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Title suggests a thoughtful, philosophical take on parallel programming, a topic of high relevance in software engineering. The presence of a comments link on lobste.rs indicates community discussion, which may add depth and validation.",
+    "ai_summary": "Explores philosophical aspects of parallel programming, likely offering insights and best practices.",
+    "ai_tags": [
+      "parallel programming",
+      "concurrency",
+      "software engineering",
+      "best practices",
+      "programming philosophy"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:86809463e1db8b37",
+    "source_type": "rss",
+    "title": "Introduction to Formal Verification with Lean (Part 1)",
+    "url": "https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)",
+    "content": "<p><a href=\"https://lobste.rs/s/ymnnmv/introduction_formal_verification_with\">Comments</a></p>",
+    "author": "hashcloak.com via nemin",
+    "published_at": "2026-07-19T17:35:03Z",
+    "fetched_at": "2026-07-19T23:50:55.384631Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "formalmethods"
+      ],
+      "title_zh": "使用Lean进行形式化验证的入门教程",
+      "detailed_summary_zh": "本教程系列的第一部分介绍了形式化验证的基本概念以及如何使用Lean定理证明器进行验证。 形式化验证能极大提高关键系统的可靠性，而Lean作为开源证明助手，此教程降低了学习门槛，有助于推广形式化方法在软件开发中的应用。 该教程是系列的第一部分，适合初学者；后续部分可能涵盖更高级的定理证明技术。Lean基于演算结构且支持函数式编程。",
+      "background_zh": "形式化验证是运用数学方法严格证明系统满足特定规格的过程，常用于密码协议、操作系统等关键领域。Lean是一个开源的交互式定理证明器和编程语言，由微软研究院发起，正逐步成为主流的形式化验证工具之一。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Lean_theorem_prover",
+          "title": "Lean theorem prover"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Formal_verification",
+          "title": "Formal verification"
+        }
+      ],
+      "detailed_summary": "本教程系列的第一部分介绍了形式化验证的基本概念以及如何使用Lean定理证明器进行验证。 形式化验证能极大提高关键系统的可靠性，而Lean作为开源证明助手，此教程降低了学习门槛，有助于推广形式化方法在软件开发中的应用。 该教程是系列的第一部分，适合初学者；后续部分可能涵盖更高级的定理证明技术。Lean基于演算结构且支持函数式编程。",
+      "background": "形式化验证是运用数学方法严格证明系统满足特定规格的过程，常用于密码协议、操作系统等关键领域。Lean是一个开源的交互式定理证明器和编程语言，由微软研究院发起，正逐步成为主流的形式化验证工具之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value tutorial on formal verification with Lean, an important but niche topic. Likely well-received in technical communities, though not groundbreaking.",
+    "ai_summary": "Introduction to formal verification using the Lean theorem prover, part 1 of a tutorial series.",
+    "ai_tags": [
+      "formal verification",
+      "Lean",
+      "theorem proving",
+      "software correctness"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:9776510761634d42",
+    "source_type": "rss",
+    "title": "Studying Linux Schedulers, and Why Metrics Matter",
+    "url": "https://pradyun.net/blog/metrics_matter.html",
+    "content": "<p><a href=\"https://lobste.rs/s/i0nfve/studying_linux_schedulers_why_metrics\">Comments</a></p>",
+    "author": "pradyun.net by pgn",
+    "published_at": "2026-07-19T00:45:01Z",
+    "fetched_at": "2026-07-19T23:50:55.384650Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "hardware",
+        "performance"
+      ],
+      "title_zh": "Linux调度器研究：指标的重要性",
+      "detailed_summary_zh": "一篇技术文章深入探讨了Linux调度器的工作原理，并强调了性能指标在分析调度行为中的关键作用。 对于系统工程师和开发者而言，理解调度器行为并正确使用性能指标，有助于优化系统性能和资源利用率。 文章可能涉及CFS和EEVDF等调度器，并指出仅凭单一指标（如平均负载）可能误导性能分析。",
+      "background_zh": "Linux内核使用多种调度算法（如CFS和EEVDF）来管理进程的CPU时间分配。性能指标（如CPU使用率、等待时间）用于监控和调优系统。但选择错误的指标可能导致错误结论。",
+      "sources": [
+        {
+          "url": "https://docs.kernel.org/scheduler/index.html",
+          "title": "Scheduler — The Linux Kernel documentation"
+        },
+        {
+          "url": "https://linuxvox.com/blog/what-scheduling-algorithms-does-linux-kernel-use/",
+          "title": "Linux Kernel Scheduling Algorithms Explained: A Guide for OS ..."
+        }
+      ],
+      "detailed_summary": "一篇技术文章深入探讨了Linux调度器的工作原理，并强调了性能指标在分析调度行为中的关键作用。 对于系统工程师和开发者而言，理解调度器行为并正确使用性能指标，有助于优化系统性能和资源利用率。 文章可能涉及CFS和EEVDF等调度器，并指出仅凭单一指标（如平均负载）可能误导性能分析。",
+      "background": "Linux内核使用多种调度算法（如CFS和EEVDF）来管理进程的CPU时间分配。性能指标（如CPU使用率、等待时间）用于监控和调优系统。但选择错误的指标可能导致错误结论。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive into Linux schedulers and the importance of metrics for performance analysis, valuable for systems engineers but not a major breakthrough.",
+    "ai_summary": "Explores Linux scheduler behavior and emphasizes the critical role of metrics in understanding performance.",
+    "ai_tags": [
+      "Linux",
+      "schedulers",
+      "performance",
+      "systems",
+      "metrics"
+    ]
+  }
+]
