@@ -1,0 +1,822 @@
+[
+  {
+    "id": "hackernews:story:49010345",
+    "source_type": "hackernews",
+    "title": "Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample",
+    "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+    "content": "\n--- Top Comments ---\n\n[napoleoncomplex]: This is the second ChatGPT shared conversation I&#x27;ve seen today that is truly fascinating. The first one was someone proving another conjecture false by just repeatedly saying &quot;keep going&quot; to ChatGPT:  https:&#x2F;&#x2F;x.com&#x2F;DmitryRybin1&#x2F;status&#x2F;2079904005652893709  What a world we live in.\n\n[lukebuehler]: It’s endlessly fascinating to read the AI transcript of an expert who _really_ knows how to cut to the chase. It just shows how much you can potentially squeeze out of these models. I’m also surprised to see that even Terrence Tao seems to use it in a way that resembles, in progression, how I use llms in my area of expertise (emphasis on progression and usage patterns, not absolute skill, obv I don’t match that): short pointed questions that goes all in on the jargon and machinery of the fiel...\n\n[ecshafer]: Terrance Tao&#x27;s chatgpt conversation is really interesting for a variety of reasons: 1. The counter example wasn&#x27;t just a brute force selection, the polynomial is structured in a very specific way that ends up getting the result. 2. Terry Tao&#x27;s questions are very specific and prompts the AI in a useful way, that without high math training you are not going to get the same information out of it. Terry seems to see some aspects of the problem and counter example and uses AI to bru...\n\n[jvanderbot]: It&#x27;s crazy how he suggests simplifications over and over and gets led through the finding. Absolutely bonkers how you can use AI to understand something and map it to your own mental map so efficiently, and of course he&#x27;s most interested in generalizing or finding a simpler sub-result that would explain it. Just awesome to see new knowledge hit an incredible mind like this. Having these &quot;what if&quot; discussions is what I miss most from JPL and academia.\n\n[WarmWash]: Math has some of the most insanely dense and impenetrable nomenclature. I can generally keep my head mostly above water or at least near the surface reading from most STEM fields, perhaps leaning on google&#x2F;wikipedia a bit, but man, mathematics just so quickly decouples from all common tractable understanding it&#x27;s insane. Sorry it&#x27;s a bit of an aside, but I imagine many other otherwise &quot;technical&quot; folks feel the same unfamiliar sense of total loss like when encounterin...",
+    "author": "gmays",
+    "published_at": "2026-07-22T17:30:40Z",
+    "fetched_at": "2026-07-22T23:55:54.071082Z",
+    "metadata": {
+      "score": 540,
+      "descendants": 338,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49010345",
+      "comment_count": 5,
+      "title_zh": "陶哲轩用ChatGPT探索雅可比猜想反例",
+      "detailed_summary_zh": "著名数学家陶哲轩（Terrence Tao）发布了一份与ChatGPT的对话记录，在其中他通过精心设计的提问，逐步探索了雅可比猜想的一个潜在反例。 此次对话展示了人工智能如何协助顶尖数学家进行前沿研究，以及专家级提示工程在挖掘AI潜力中的关键作用。它标志着AI辅助数学研究进入了一个新阶段。 对话中，陶哲轩提出了一系列高度专业、结构严谨的问题，引导ChatGPT分析一个特殊多项式结构，最终揭示了该结构如何构成雅可比猜想在三维空间中的反例。这体现了专家与AI协作的独特模式。",
+      "background_zh": "雅可比猜想是代数几何中一个著名的未解决问题，它断言如果一个多项式映射的雅可比行列式为非零常数，则该映射存在多项式逆。该猜想在二维情形下仍开放，但许多数学家怀疑在更高维度上不成立。2026年，有研究者利用AI模型找到了一个三维反例，而陶哲轩的对话进一步探索了该反例的细节。",
+      "community_discussion_zh": "社区评论普遍对陶哲轩的对话表示赞赏，认为其展示了如何通过精准提问从AI中提取深层数学知识。评论者注意到，陶哲轩的提问风格极具领域专长，普通人难以复制。同时，也有人指出这次对话体现了AI在“假设”讨论中的巨大潜力。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jacobian_conjecture",
+          "title": "Jacobian conjecture"
+        },
+        {
+          "url": "https://www.math.purdue.edu/~ttm/jacobian.html",
+          "title": "Jacobian Conjecture"
+        }
+      ],
+      "detailed_summary": "著名数学家陶哲轩（Terrence Tao）发布了一份与ChatGPT的对话记录，在其中他通过精心设计的提问，逐步探索了雅可比猜想的一个潜在反例。 此次对话展示了人工智能如何协助顶尖数学家进行前沿研究，以及专家级提示工程在挖掘AI潜力中的关键作用。它标志着AI辅助数学研究进入了一个新阶段。 对话中，陶哲轩提出了一系列高度专业、结构严谨的问题，引导ChatGPT分析一个特殊多项式结构，最终揭示了该结构如何构成雅可比猜想在三维空间中的反例。这体现了专家与AI协作的独特模式。",
+      "background": "雅可比猜想是代数几何中一个著名的未解决问题，它断言如果一个多项式映射的雅可比行列式为非零常数，则该映射存在多项式逆。该猜想在二维情形下仍开放，但许多数学家怀疑在更高维度上不成立。2026年，有研究者利用AI模型找到了一个三维反例，而陶哲轩的对话进一步探索了该反例的细节。",
+      "community_discussion": "社区评论普遍对陶哲轩的对话表示赞赏，认为其展示了如何通过精准提问从AI中提取深层数学知识。评论者注意到，陶哲轩的提问风格极具领域专长，普通人难以复制。同时，也有人指出这次对话体现了AI在“假设”讨论中的巨大潜力。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Highly significant as it showcases a leading mathematician using ChatGPT to explore a counterexample to a major conjecture, with substantive community discussion about AI's role in mathematical research. The conversation demonstrates expert prompting and deep mathematical insight.",
+    "ai_summary": "Terrence Tao uses ChatGPT to collaboratively explore a counterexample to the Jacobian Conjecture, revealing advanced prompt engineering and AI's potential in high-level mathematics.",
+    "ai_tags": [
+      "mathematics",
+      "AI-assisted research",
+      "Jacobian Conjecture",
+      "ChatGPT",
+      "mathematical reasoning"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:afe9903c6cc50df4",
+    "source_type": "rss",
+    "title": "RefluXFS: A Linux Kernel Local Privilege Escalation to Root in XFS (CVE-2026-64600)",
+    "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/07/22/refluxfs-a-linux-kernel-local-privilege-escalation-to-root-in-xfs-cve-2026-64600",
+    "content": "<p><a href=\"https://lobste.rs/s/tltlwf/refluxfs_linux_kernel_local_privilege\">Comments</a></p>",
+    "author": "blog.qualys.com via rrampage",
+    "published_at": "2026-07-22T20:24:10Z",
+    "fetched_at": "2026-07-22T23:55:54.341064Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "linux"
+      ],
+      "title_zh": "RefluXFS漏洞：Linux内核XFS本地提权至root",
+      "detailed_summary_zh": "Qualys披露了Linux内核XFS文件系统的一个本地权限提升漏洞（CVE-2026-64600），允许非特权用户获得root权限。 该漏洞影响超过1640万系统，因为XFS是Red Hat Enterprise Linux等发行版的默认文件系统，成功利用可完全控制系统。 该漏洞由Qualys安全研究人员发现，目前尚未公开利用细节，但建议用户尽快应用内核补丁。",
+      "background_zh": "XFS是一种高性能的64位日志文件系统，广泛用于Linux服务器环境。本地权限提升漏洞意味着攻击者可以从低权限账户提升至root，威胁系统完整性和机密性。",
+      "sources": [
+        {
+          "url": "https://securityonline.info/refluxfs-cve-2026-64600-xfs-root/",
+          "title": "RefluXFS CVE-2026-64600: XFS Root Privilege Escalation Hits 16.4M Systems"
+        }
+      ],
+      "detailed_summary": "Qualys披露了Linux内核XFS文件系统的一个本地权限提升漏洞（CVE-2026-64600），允许非特权用户获得root权限。 该漏洞影响超过1640万系统，因为XFS是Red Hat Enterprise Linux等发行版的默认文件系统，成功利用可完全控制系统。 该漏洞由Qualys安全研究人员发现，目前尚未公开利用细节，但建议用户尽快应用内核补丁。",
+      "background": "XFS是一种高性能的64位日志文件系统，广泛用于Linux服务器环境。本地权限提升漏洞意味着攻击者可以从低权限账户提升至root，威胁系统完整性和机密性。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Critical security vulnerability (CVE-2026-64600) in the Linux kernel's XFS filesystem allowing local privilege escalation to root, from reputable security research by Qualys. High impact, with likely community discussion on lobste.rs.",
+    "ai_summary": "Disclosure of a Linux kernel local privilege escalation vulnerability in XFS (CVE-2026-64600) allowing root access.",
+    "ai_tags": [
+      "security",
+      "linux kernel",
+      "privilege escalation",
+      "XFS",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "hackernews:story:49010167",
+    "source_type": "hackernews",
+    "title": "GigaToken: ~1000x faster Language model tokenization",
+    "url": "https://github.com/marcelroed/gigatoken/",
+    "content": "\n--- Top Comments ---\n\n[maxdo]: Interesting : Q: Did you just way over-optimize for a specific CPU and tokenizer? How is it so fast?\nNo, I way over-optimized for every combination of these! The results are very consistent across CPUs (modern x86 and ARM), and across specific tokenizers. The major improvements are in optimizing heavily an implementation that usually is outsourced to a Regex engine (pretokenization) using SIMD, minimizing branching and other tricks, as well as heavily optimizing caching of pretoken mappings (...\n\n[onlyrealcuzzo]: This is awesome, but tokenization is typically &lt;0.1% of total inference time. Presumably there&#x27;s a host of applications that just need to tokenize, though, and this would be great for those!\n\n[luciana1u]: engineering effort to make something 1000x faster that accounts for 0.1% of total runtime is the most software developer thing imaginable\n\n[apollopower]: Cool stuff. From my understanding, this is less valuable at inference time and more useful when running offline pre-training data prep. When tokenizing terabytes of text for your training corpus, the speedup here is probably doing real work in saving you time (and money?). You get a faster iteration cycle when figuring out and adjusting your datasets.\n\n[0xnyn]: I had to stare at that chart for a minute just to let the numbers sink in. It&#x27;s genuinely mind-bending, incredible ship OP",
+    "author": "syrusakbary",
+    "published_at": "2026-07-22T17:20:38Z",
+    "fetched_at": "2026-07-22T23:55:54.071037Z",
+    "metadata": {
+      "score": 329,
+      "descendants": 63,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49010167",
+      "comment_count": 5,
+      "title_zh": "GigaToken: 约1000倍更快的LLM分词优化",
+      "detailed_summary_zh": "GigaToken通过SIMD并行和智能缓存优化，实现了约1000倍的LLM分词速度提升，特别适用于预训练数据的大规模处理。 虽然分词在推理阶段耗时占比很小，但在预训练数据准备中，加速能显著节省时间和成本，加快数据集迭代周期，对大型模型训练有重要价值。 优化适用于现代x86和ARM CPU，且对不同分词器效果一致；主要改进包括用SIMD加速预分词（替代正则表达式引擎）以及缓存预分词映射以减少重复计算。",
+      "background_zh": "分词是将文本转换为token序列的过程，是LLM处理的第一步。预分词阶段通常依赖正则表达式，是性能瓶颈之一。SIMD是一种并行计算技术，能同时对多个数据执行相同操作，大幅提升字符串处理速度。",
+      "community_discussion_zh": "社区普遍对性能提升表示惊叹，但不少用户指出分词在推理中仅占不到0.1%时间，因此该优化更适用于离线数据预处理。也有调侃称将1000倍加速用于0.1%的环节是典型的工程师作风。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gigaton_(album)",
+          "title": "Gigaton (album)"
+        }
+      ],
+      "detailed_summary": "GigaToken通过SIMD并行和智能缓存优化，实现了约1000倍的LLM分词速度提升，特别适用于预训练数据的大规模处理。 虽然分词在推理阶段耗时占比很小，但在预训练数据准备中，加速能显著节省时间和成本，加快数据集迭代周期，对大型模型训练有重要价值。 优化适用于现代x86和ARM CPU，且对不同分词器效果一致；主要改进包括用SIMD加速预分词（替代正则表达式引擎）以及缓存预分词映射以减少重复计算。",
+      "background": "分词是将文本转换为token序列的过程，是LLM处理的第一步。预分词阶段通常依赖正则表达式，是性能瓶颈之一。SIMD是一种并行计算技术，能同时对多个数据执行相同操作，大幅提升字符串处理速度。",
+      "community_discussion": "社区普遍对性能提升表示惊叹，但不少用户指出分词在推理中仅占不到0.1%时间，因此该优化更适用于离线数据预处理。也有调侃称将1000倍加速用于0.1%的环节是典型的工程师作风。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High technical depth and novelty with a 1000x speedup claim; community discussion insightful about trade-offs between inference and preprocessing (e.g., comments by onlyrealcuzzo and apollopower). High engagement (329 points, 63 comments) indicates strong interest.",
+    "ai_summary": "GigaToken achieves ~1000x faster LLM tokenization via SIMD and caching optimizations, particularly valuable for pretraining data preparation.",
+    "ai_tags": [
+      "tokenization",
+      "optimization",
+      "LLM",
+      "SIMD",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "hackernews:story:49008211",
+    "source_type": "hackernews",
+    "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
+    "url": "https://bento.page/slides/",
+    "content": "Over the past few months, our team has been building more and more slidedecks using web frontend technologies with coding harnesses like Claude Code, but a common complaint is to make even small edits we need to edit the code either manually or via the harness.<p>To avoid this loop, I ended up creating Bento, a single HTML file with everything you need in a slide tool including animations and shared editing. There&#x27;s no install or cloud login, everything works offline. The default deck is around 560 KB and it doesn&#x27;t need to fetch anything once you got it.<p>Open it in a browser and then you can edit, present, print and save. Share it via email or via Airdrop and all they need is a browser to edit, present and also do live collab on the slides. Drop it in to Claude or ChatGPT to transform existing pptx files into Bento slides. There is no cloud involved, only an encrypted blind relay to allow for shared editing. The relay doesn&#x27;t see any of the data.<p>Check it out at <a href=\"https:&#x2F;&#x2F;bento.page&#x2F;slides&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;bento.page&#x2F;slides&#x2F;</a> which takes you straight to the editor.<p>Go to <a href=\"https:&#x2F;&#x2F;bento.page&#x2F;guestbook&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;bento.page&#x2F;guestbook&#x2F;</a> to try out the live guestbook to experience share editing &#x2F; collab.<p>There is also a gallery with some sample decks on the website - <a href=\"https:&#x2F;&#x2F;bento.page&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;bento.page&#x2F;</a><p>All the code is MIT licensed and you can find it here - <a href=\"https:&#x2F;&#x2F;github.com&#x2F;nyblnet&#x2F;bento\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;nyblnet&#x2F;bento</a> . I used reveal.js with several other libraries (including some homegrown ones), and Claude Code.\n\n\n--- Top Comments ---\n\n[starfallg]: Hi, I&#x27;m the creator of Bento. Just wanted to share a bit more about how I created it beyond what&#x27;s in Github. The file contains more or less two sections. There is a plain block of JSON near the top of the file which is the slide data. You can read, grep, or point a harness at it. The app itself is in a base64 blob that loads through a small shim which deflates in the browser with DecompressionStream, which keeps the package small and so that we don&#x27;t need to fetch any external...\n\n[praveer13]: This is amazing. I also think this will become more common. I feel there is a lot of software that can just be served locally via html&#x2F;typescript&#x2F;react etc and even have local state. There&#x27;s just not been an economic incentive till now. I am personally using kimi k3 to create a mobile friendly set of games, starting from math like linear algebra to quantum physics - neurodivergent friendly, completely local state, served from github pages -  to get someone interested in the fie...\n\n[Willamin]: I recently made a very similar tool but focused on making small React apps instead of presentations. A basic starter html file with an example app:  https:&#x2F;&#x2F;glider-app.netlify.app&#x2F;glider.html  Docs:  https:&#x2F;&#x2F;glider-app.netlify.app&#x2F;docs.html  The docs aren&#x27;t very polished yet but it&#x27;s quite usable! It bundles a JSX transpiler, a code editor, and supports saving to a file or localstorage. It supports &quot;ejecting&quot; to separate the shell (handling sa...\n\n[purple-leafy]: Client side only and base64 compression tricks are a clever thread, and shameless self promotion but one I’ve been pulling with my dead but novel browser game [0] snibble.gg (tutorial sucks but once you get past it it’s fun to watch the bots play) Basically everything is client side generated from a seed - entire games and their replays get stored in a tiny url - pretty much every possible game ever fits in a version 40 QR code It’s snake X scrabble X PvP [0]  https:&#x2F;&#x2F;snibble.gg\n\n[notpushkin]: &gt; Go to  https:&#x2F;&#x2F;bento.page&#x2F;guestbook&#x2F;  to try out the live guestbook to experience share editing &#x2F; collab. My M1 Mac froze in the end (had to hard-reboot), but that was so much fun! I guess there’s a reason Figma uses WASM and a custom renderer, though I guess your implementation should work fine for most cases (i.e. not when all of HN are trying to edit everything simultaneously :^) Two notes: 1. It would be nice if another person changing something unrelated to ...",
+    "author": "starfallg",
+    "published_at": "2026-07-22T15:19:23Z",
+    "fetched_at": "2026-07-22T23:55:54.071121Z",
+    "metadata": {
+      "score": 601,
+      "descendants": 141,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49008211",
+      "comment_count": 5,
+      "title_zh": "Bento：单个HTML文件实现完整PPT编辑与协作",
+      "detailed_summary_zh": "Bento是一个约560KB的自包含HTML文件，可在浏览器中离线创建、编辑和演示幻灯片，并支持通过加密盲中继进行实时协作。 Bento大幅降低了演示文稿的制作和分享门槛，无需安装、无需云端登录，完全离线工作，这种单文件模式可能引领更多类似工具的诞生，改变传统办公软件的使用方式。 Bento将幻灯片数据以JSON格式存储在文件顶部，应用逻辑则通过base64压缩编码嵌入，利用浏览器的DecompressionStream解压，无需外部依赖。协作通过加密盲中继实现，中继无法查看数据内容。",
+      "background_zh": "传统演示文稿软件（如PowerPoint）通常需要安装或依赖云端服务。Bento采用单HTML文件架构，内部包含所有代码和资源，用户只需一个浏览器即可运行。这种设计在便携性和隐私保护方面具有优势，类似概念在游戏等领域已有探索（如纯客户端种子生成）。",
+      "community_discussion_zh": "创作者starfallg分享了技术实现细节，得到社区认可。praveer13认为这种本地化服务模式将更普遍，Willamin展示了类似工具，purple-leafy提及客户端压缩技巧，整体氛围积极，参与者贡献了相关项目。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Claude_Code",
+          "title": "Claude Code"
+        }
+      ],
+      "detailed_summary": "Bento是一个约560KB的自包含HTML文件，可在浏览器中离线创建、编辑和演示幻灯片，并支持通过加密盲中继进行实时协作。 Bento大幅降低了演示文稿的制作和分享门槛，无需安装、无需云端登录，完全离线工作，这种单文件模式可能引领更多类似工具的诞生，改变传统办公软件的使用方式。 Bento将幻灯片数据以JSON格式存储在文件顶部，应用逻辑则通过base64压缩编码嵌入，利用浏览器的DecompressionStream解压，无需外部依赖。协作通过加密盲中继实现，中继无法查看数据内容。",
+      "background": "传统演示文稿软件（如PowerPoint）通常需要安装或依赖云端服务。Bento采用单HTML文件架构，内部包含所有代码和资源，用户只需一个浏览器即可运行。这种设计在便携性和隐私保护方面具有优势，类似概念在游戏等领域已有探索（如纯客户端种子生成）。",
+      "community_discussion": "创作者starfallg分享了技术实现细节，得到社区认可。praveer13认为这种本地化服务模式将更普遍，Willamin展示了类似工具，purple-leafy提及客户端压缩技巧，整体氛围积极，参与者贡献了相关项目。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value tool with novel approach (single HTML file for slide decks), offline capability, and collaboration. Community discussion is substantial with 141 comments, indicating significant interest and validation.",
+    "ai_summary": "Bento is a self-contained HTML file for creating and editing presentations offline with collaboration support.",
+    "ai_tags": [
+      "presentation",
+      "HTML",
+      "offline",
+      "collaboration",
+      "web development"
+    ]
+  },
+  {
+    "id": "hackernews:story:49010129",
+    "source_type": "hackernews",
+    "title": "Are AI Labs Pelicanmaxxing?",
+    "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+    "content": "\n--- Top Comments ---\n\n[simonw]: This is fantastic I&#x27;ve been casually spot-checking other animals in other vehicles, because my absolute dream situation here is to catch an AI lab that&#x27;s demonstrably better at pelicans on bicycles than other combinations. Catching a lab cheating specifically on my one dumb benchmark would be  really funny . Dylan&#x27;s methodology here - generating 1008 SVGs across an 8x6 combination - is significantly more robust than anything I was considering. His conclusion: &gt; Nothing jumpe...\n\n[mauvehaus]: &gt;  All 21 pelican-bicycle images, across all seven labs, face right. No other animal&#x2F;vehicle combination does that. &gt; However, facing right is common: 60% of all 1,008 images do it. How common depends on the animal and the vehicle, and bicycles are one of the two vehicles where it’s strongest  Of course  the pelican on the bicycle is facing right. The drivetrain on a bicycle is on the right side. If you want any representation of a bicycle that shows the drivetrain you&#x27;re goin...\n\n[stusmall]: I&#x27;m glad someone ran the numbers on this.  Every single Simon Willison post of an SVG is followed with someone dismissing it saying &quot;I&#x27;m sure they train on it by now.&quot; This is despite a good blog post with sound logic on how easy that is to catch. [1] Glad to see someone took the time for a quantitative analysis of dumb little animals riding dumb little bikes. 1.  https:&#x2F;&#x2F;simonwillison.net&#x2F;2025&#x2F;Nov&#x2F;13&#x2F;training-for-pelicans-...\n\n[SyneRyder]: Huh. They&#x27;re not &quot;Pelicanmaxxing&quot;... they&#x27;re Ottermaxxing. Take a look at the GLM 5.2 and Deepseek V4 &quot;animal on a plane&quot; examples. In every case, the animal is standing on top of the plane, a clear misunderstanding of the concept of &quot;animal on a plane&quot;... with the exception of the Otter. The otters are sitting in a seat on the plane, looking out the window. That&#x27;s Ethan Mollick&#x27;s &quot;Otter On A Plane Using WiFi&quot; image benchmark.  https...\n\n[bnfcl]: This is funny, I actually did a similar experiment just yesterday. Looking for evidence of the same, but with another twist: checking if the models would choose to create a pelican on a bicycle, if no specific bird or method of transportation was specified. My version of it:  https:&#x2F;&#x2F;www.modelbias.ai&#x2F;pelican-on-a-bicycle-test",
+    "author": "dcastm",
+    "published_at": "2026-07-22T17:17:54Z",
+    "fetched_at": "2026-07-22T23:55:54.071156Z",
+    "metadata": {
+      "score": 349,
+      "descendants": 136,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49010129",
+      "comment_count": 5
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value content: clever, rigorous experiment testing AI labs with a novel benchmark, strong community engagement (349 points, 136 comments) with insightful qualitative analysis and plausible explanations for bias.",
+    "ai_summary": "A quantitative analysis of AI-generated SVGs reveals a peculiar bias: pelicans on bicycles always face right, suggesting potential training data contamination.",
+    "ai_tags": [
+      "AI",
+      "machine learning",
+      "benchmarking",
+      "SVG generation"
+    ]
+  },
+  {
+    "id": "hackernews:story:49010648",
+    "source_type": "hackernews",
+    "title": "Everyone Should Know SIMD",
+    "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+    "content": "\n--- Top Comments ---\n\n[Rendello]: I like SIMD, but before super-optimizing your code with SIMD and the like, really consider your data structures and access patterns. I&#x27;ve been singing Data-Oriented Design&#x27;s praises, so I&#x27;ll just collect all my comments here [1], but I think it&#x27;s a good approach to optimization. I played around with SIMD in my old code (in Zig), but my approach to modelling datastructures was so antithetical to optimization, it was like putting high-performance racing tires on a lemon with...\n\n[kiaansaraiya]: I&#x27;d slightly rephrase the title to &quot;everyone should know when SIMD didn&#x27;t happen.&quot; Modern compliers are extremely good at vectorization until they suddenly aren&#x27;t, an they&#x27;ll often fall back to scalar code because if assumptions or a single-data dependent branch. Learning to check the compliers optimization reports is arguably more valuable.\n\n[Jtarii]: The active disdain a significant portion of this site has for actually understanding how computers work and how to make actually fast programs is kind of staggering.\n\n[hnal943]: Here&#x27;s a helpful video about leveraging SIMD to solve a concrete performance problem for the dev team that made the game The Witness by Casey Muratori:  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Ge3aKEmZcqY\n\n[andix]: 99% of developers should just ignore SIMD. Most projects have a lot of low hanging fruit to increase performance, and still nobody finds the time to solve them.",
+    "author": "WadeGrimridge",
+    "published_at": "2026-07-22T17:48:18Z",
+    "fetched_at": "2026-07-22T23:55:54.071181Z",
+    "metadata": {
+      "score": 208,
+      "descendants": 66,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49010648",
+      "comment_count": 5,
+      "title_zh": "每个人都应了解SIMD",
+      "detailed_summary_zh": "技术作者Mitchellh发布了一篇题为“每个人都应了解SIMD”的文章，倡导开发者理解SIMD以优化性能，并引发了关于何时及如何有效使用SIMD的社区辩论。 SIMD是提升CPU密集型任务性能的关键技术，但社区对其适用性和优先级存在分歧。该文促进了关于数据导向设计、编译器自动向量化与手工SIMD优化之间权衡的深入讨论，对性能敏感型开发者具有参考价值。 文章在技术社区获得208分和66条评论，热度较高。评论中，开发者强调应优先考虑数据结构优化，而非直接使用SIMD；同时指出编译器自动向量化虽有成效，但常因代码假设或分支而退化，检查编译器优化报告比直接编写SIMD代码更具实用性。",
+      "background_zh": "SIMD（单指令多数据）是一种并行计算技术，允许CPU用一条指令同时对多个数据执行相同操作，常用于多媒体、科学计算等场景。编译器可自动将标量代码向量化，但受限于依赖关系、指针别名等因素。数据导向设计则通过优化数据布局（如结构体数组）来提高缓存利用率，常与SIMD结合使用。",
+      "community_discussion_zh": "社区观点呈现两极：一方认为99%的开发者应忽略SIMD，优先处理项目中更易实现的性能问题；另一方则认为理解硬件和编译器行为是写出高效代码的基础，值得学习。部分评论建议先进行数据导向设计，再考虑SIMD，并以具体案例（如游戏《见证者》的性能优化）说明正确用法。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Automatic_vectorization",
+          "title": "Automatic vectorization - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Data-oriented_design",
+          "title": "Data-oriented design"
+        },
+        {
+          "url": "https://www.intel.com/content/dam/develop/external/us/en/documents/31848-compilerautovectorizationguide.pdf",
+          "title": "PDF (Auto)Vectorization tutorial - Intel"
+        }
+      ],
+      "detailed_summary": "技术作者Mitchellh发布了一篇题为“每个人都应了解SIMD”的文章，倡导开发者理解SIMD以优化性能，并引发了关于何时及如何有效使用SIMD的社区辩论。 SIMD是提升CPU密集型任务性能的关键技术，但社区对其适用性和优先级存在分歧。该文促进了关于数据导向设计、编译器自动向量化与手工SIMD优化之间权衡的深入讨论，对性能敏感型开发者具有参考价值。 文章在技术社区获得208分和66条评论，热度较高。评论中，开发者强调应优先考虑数据结构优化，而非直接使用SIMD；同时指出编译器自动向量化虽有成效，但常因代码假设或分支而退化，检查编译器优化报告比直接编写SIMD代码更具实用性。",
+      "background": "SIMD（单指令多数据）是一种并行计算技术，允许CPU用一条指令同时对多个数据执行相同操作，常用于多媒体、科学计算等场景。编译器可自动将标量代码向量化，但受限于依赖关系、指针别名等因素。数据导向设计则通过优化数据布局（如结构体数组）来提高缓存利用率，常与SIMD结合使用。",
+      "community_discussion": "社区观点呈现两极：一方认为99%的开发者应忽略SIMD，优先处理项目中更易实现的性能问题；另一方则认为理解硬件和编译器行为是写出高效代码的基础，值得学习。部分评论建议先进行数据导向设计，再考虑SIMD，并以具体案例（如游戏《见证者》的性能优化）说明正确用法。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value due to community engagement (208 points, 66 comments) and substantive discussion on SIMD relevance, compiler auto-vectorization, and data-oriented design. The article is a well-regarded technical deep-dive into an important optimization technique.",
+    "ai_summary": "A guide advocating for understanding SIMD for performance optimization, with community debate on when and how to apply it effectively.",
+    "ai_tags": [
+      "SIMD",
+      "performance optimization",
+      "compiler vectorization",
+      "data-oriented design"
+    ]
+  },
+  {
+    "id": "hackernews:story:49008440",
+    "source_type": "hackernews",
+    "title": "Making",
+    "url": "https://beej.us/blog/data/ai-making/",
+    "content": "\n--- Top Comments ---\n\n[planb]: I know many people agree but I can’t really follow this sentiment. I can still take pride in something I “made” with an LLM even if I did not write a single line of code for it. I wouldn’t show it around and proclaim what a great programmer I am, because I did not program it, but coding was never the main goal, it was always the means to create the finished end product. When I plan a remake of my garden and then hire a professional landscaping company to build it, I can still sit on my patio ...\n\n[sashank_1509]: Very well said. I don’t like seeing hackernews submissions that are LLM generated. The joy of hackernews was seeing applied human ingenuity, most of these weren’t successful products anyway. Just like I don’t watch computer chess games, we should have an easy way to distinguish AI generated software, art etc and then I can happily avoid them.\n\n[layer8]: &gt; What&#x27;s the real difference in that gray area? I&#x27;m not sure. I think it hinges on something that has to do with making versus asking to be made, even if that line isn&#x27;t particularly clear. For me the difference is in the extent that I can reason about how changes in the input affect the observable behavior of the output. When the executable the compiler outputs doesn’t behave in the way I intended, then in 99.99% of cases this is completely on me, and, importantly, I could ...\n\n[jjice]: Captures my feelings as well. I don&#x27;t get the same joy I used to because I end up using an LLM because it&#x27;ll be faster. I need to come to terms with speed not taking precedence over fun. The act of writing is something I need to learn to refocus on again without the thought of the &quot;inefficiency&quot; of doing so. I want to feel like I did when I was 13 and writing code in the middle of the night. Beej&#x27;s writing always impresses me.\n\n[ge96]: I&#x27;m trying to get it back. I went through a period of 2 months or so where I didn&#x27;t want to do anything not even watch TV except drink. So I&#x27;ve been sober for a couple weeks now, think I&#x27;m starting to get it back. But I&#x27;m still lazy af right now. I miss making hardware, I design&#x2F;make my own cameras and little self navigating robots. I did finally fix my camera after it rolled across the floor of my car during a tight turn and something inside it broke&#x2F;wouldn...",
+    "author": "erikschoster",
+    "published_at": "2026-07-22T15:33:48Z",
+    "fetched_at": "2026-07-22T23:55:54.071228Z",
+    "metadata": {
+      "score": 256,
+      "descendants": 103,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49008440",
+      "comment_count": 5,
+      "title_zh": "AI时代下的“创造”本质之辨",
+      "detailed_summary_zh": "技术作家Beej在文章中探讨了“亲手制作”与借助大语言模型（LLM）生成之间的模糊界限，质疑在AI辅助下何为真正的创造。 该讨论触及AI对软件工程和创意工作的哲学影响，反映了开发者对原创性和个人成就感在自动化浪潮中如何定位的普遍焦虑。 文章源于Hacker News上256分的高热度讨论（103条评论），评论者普遍对AI生成内容持保留态度，但观点分化：有人仍以最终产品为傲，有人则怀念纯手工创造的乐趣。",
+      "background_zh": "大语言模型（LLM）如GPT系列能根据提示生成代码、文本甚至艺术，模糊了“创造者”与“使用者”的边界。传统观念中，亲手编码或写作被视为创造性劳动，而AI工具将意图到产出的过程压缩为“请求”，引发对原创性和技能价值的反思。",
+      "community_discussion_zh": "社区评论呈两极分化：一方认为用LLM生成代码仍可引以为傲（如planb），因为目标在于成品而非编程过程；另一方（如sashank_1509）则怀念纯粹的人类智慧，希望区分并避开AI生成作品；还有用户（如jjice）承认LLM牺牲了创造的乐趣，正努力重拾手工编程的热情。",
+      "detailed_summary": "技术作家Beej在文章中探讨了“亲手制作”与借助大语言模型（LLM）生成之间的模糊界限，质疑在AI辅助下何为真正的创造。 该讨论触及AI对软件工程和创意工作的哲学影响，反映了开发者对原创性和个人成就感在自动化浪潮中如何定位的普遍焦虑。 文章源于Hacker News上256分的高热度讨论（103条评论），评论者普遍对AI生成内容持保留态度，但观点分化：有人仍以最终产品为傲，有人则怀念纯手工创造的乐趣。",
+      "background": "大语言模型（LLM）如GPT系列能根据提示生成代码、文本甚至艺术，模糊了“创造者”与“使用者”的边界。传统观念中，亲手编码或写作被视为创造性劳动，而AI工具将意图到产出的过程压缩为“请求”，引发对原创性和技能价值的反思。",
+      "community_discussion": "社区评论呈两极分化：一方认为用LLM生成代码仍可引以为傲（如planb），因为目标在于成品而非编程过程；另一方（如sashank_1509）则怀念纯粹的人类智慧，希望区分并避开AI生成作品；还有用户（如jjice）承认LLM牺牲了创造的乐趣，正努力重拾手工编程的热情。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (256 points, 103 comments) with substantive discussion on the philosophical implications of AI-assisted creation. The topic is highly relevant to current debates in software engineering and AI, and the comments show diverse viewpoints, increasing the content's value.",
+    "ai_summary": "The article explores the distinction between 'making' something oneself versus using an LLM to generate it, questioning what constitutes genuine creation in the age of AI.",
+    "ai_tags": [
+      "AI",
+      "LLM",
+      "creativity",
+      "software engineering",
+      "philosophy of technology"
+    ]
+  },
+  {
+    "id": "hackernews:story:49005787",
+    "source_type": "hackernews",
+    "title": "The startup's Postgres survival guide",
+    "url": "https://hatchet.run/blog/postgres-survival-guide",
+    "content": "\n--- Top Comments ---\n\n[theallan]: Should one of the first things you do with a database not be to have a backup strategy? I understand that HA would be a &quot;nice to have&quot; when first starting out, but surly if you have a production db, a backup and restore plan should be on a survival guide? Neither appear to be mentioned here. What do you all use for your pg backups? Is Barman (  https:&#x2F;&#x2F;pgbarman.org&#x2F; ) still the way many do it? (I haven&#x27;t deployed a new pg instance for a while, but thinking about ...\n\n[ComputerGuru]: Some comments and corrections: * Use uuidv7 not uuid in general (typically v4) * in addition to minimizing locked records, make sure your locks are ordered deterministically across all queries (eg by id asc, always) or you’ll deadlock (but postgres has a really good deadlock detector so you’ll more likely just error out if you’re lucky) * always use explain (generic_plan) to be able to a) copy-and-paste your queries with placeholders for parameters as-is, b) see how your query will actually b...\n\n[frollogaston]: This advice is good, but every startup I&#x27;ve worked with has run into lower hanging fruit than this even. Less scaling problems and more just organizational. Usually what fixes that is: 1. Don&#x27;t use an ORM. 2. Use serial PKs, not meaningful fields (article mentions this). 3. Use jsonb if needed, but sparingly. 4. Make your source of truth append-only, meaning you only insert, never update or delete. You can have secondary denormalized tables that are mutated, but that&#x27;s only for...\n\n[mjr00]: Good article overall, some comments: &gt; Use foreign keys with cascading deletes for low-volume tables, particularly where database consistency and correctness are important. Careful at higher volume. This might be just me, but I  hate  cascades, for a very simple reason: at most places, the majority of developers &quot;live&quot; in the Python&#x2F;Node&#x2F;Go&#x2F;whatever application that talks to the database, not the database itself. Cascading deletes (or updates) is basically magic an...\n\n[thundergolfer]: Having been early at a startup that relied on Postgres I think this post doesn&#x27;t put enough focus on monitoring and alerting. Postgres has a few key failure modes that you want to avoid  ever  happening, and you can use alerting to get early warning that you&#x27;re danger of it happening. For example, AWS will send you an email if you&#x27;re approaching XID wraparound. In a startup that email is  very  likely to be missed, especially if it&#x27;s sent on Boxing day. You want whatever A...",
+    "author": "abelanger",
+    "published_at": "2026-07-22T12:36:08Z",
+    "fetched_at": "2026-07-22T23:55:54.071260Z",
+    "metadata": {
+      "score": 298,
+      "descendants": 163,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49005787",
+      "comment_count": 5,
+      "title_zh": "初创公司的Postgres生存指南",
+      "detailed_summary_zh": "一篇面向初创公司的Postgres实用生存指南近期发布，内容涵盖模式设计、连接管理和扩展策略。 该指南聚焦初创公司常见数据库陷阱，提供可操作的最佳实践，对依赖Postgres的创业团队具有直接指导价值。 社区评论指出了文章缺失备份策略，并建议使用uuidv7而非uuid v4，同时强调确定性锁顺序以避免死锁。",
+      "background_zh": "PostgreSQL（简称Postgres）是一款功能强大的开源关系型数据库，广泛应用于初创公司。初创公司常因忽视基础实践（如备份、索引优化）而遇到性能或稳定性问题，本指南旨在帮助团队避免这些常见错误。",
+      "community_discussion_zh": "评论整体认可文章价值，但指出应优先加入备份策略（如Barman），并建议避免ORM滥用、使用uuidv7和append-only模式等更强化的实践。",
+      "detailed_summary": "一篇面向初创公司的Postgres实用生存指南近期发布，内容涵盖模式设计、连接管理和扩展策略。 该指南聚焦初创公司常见数据库陷阱，提供可操作的最佳实践，对依赖Postgres的创业团队具有直接指导价值。 社区评论指出了文章缺失备份策略，并建议使用uuidv7而非uuid v4，同时强调确定性锁顺序以避免死锁。",
+      "background": "PostgreSQL（简称Postgres）是一款功能强大的开源关系型数据库，广泛应用于初创公司。初创公司常因忽视基础实践（如备份、索引优化）而遇到性能或稳定性问题，本指南旨在帮助团队避免这些常见错误。",
+      "community_discussion": "评论整体认可文章价值，但指出应优先加入备份策略（如Barman），并建议避免ORM滥用、使用uuidv7和append-only模式等更强化的实践。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (298 points, 163 comments) with substantive community discussion covering backup strategies, UUID best practices, and ORM pitfalls, indicating high practical value for startups.",
+    "ai_summary": "A practical Postgres survival guide for startups, covering schema design, connection management, and scaling, with community corrections and additions.",
+    "ai_tags": [
+      "Postgres",
+      "startup",
+      "database",
+      "scalability",
+      "best-practices"
+    ]
+  },
+  {
+    "id": "hackernews:story:49013036",
+    "source_type": "hackernews",
+    "title": "I Inspected My Take-Home Interview Project. It Was a Whole Operation",
+    "url": "https://citizendot.github.io/articles/fake-job-interview-git-hook-malware/",
+    "content": "\n--- Top Comments ---\n\n[IvanGoncharov]: Wow, after reading this article, I figured out I was hacked, but with a way more sophisticated attack. A few weeks ago, I had an interview with a CTO of a totally legit company.\nIt was weird because he had disabled the camera, and the person had a strong accent.\nBut everything else sounded like a normal screening interview, and the person definitely knew what he was talking about.\nAt the end of the interview, he explained to me that during the technical interview I would need to make some mod...\n\n[wxw]: &gt; They embedded a script that checks the victim’s host operating system and silently executes a remote payload. Seems like this is becoming a recurring theme, similar story was on the front page last month.  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48546294\n\n[ivanjermakov]: &gt; Why use a raw IP address? If anything, this screams “malware.” If the victim is deep enough to check hook&#x27;s content, it&#x27;s unlikely they will just stop here losing suspicion. I&#x27;m sure most devs wouldn&#x27;t think that doing `git commit` can be malicious (git security oversight?).\n\n[vardalab]: My takeaway from this was that Claude was being completely useless as a helper Thanks to all the safety safeguards and that nonsense.\n\n[nphardon]: always a good day when we get an a post on front actually related to hacking on hackernews.",
+    "author": "CITIZENDOT",
+    "published_at": "2026-07-22T20:33:44Z",
+    "fetched_at": "2026-07-22T23:55:54.071283Z",
+    "metadata": {
+      "score": 232,
+      "descendants": 52,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49013036",
+      "comment_count": 5,
+      "title_zh": "假面试项目利用Git钩子传播恶意软件",
+      "detailed_summary_zh": "一名开发者在检查一个伪造的带回家面试项目时，发现其中嵌入了恶意Git钩子脚本。该脚本会在受害者执行git commit时悄悄执行远程恶意负载，盗取系统信息。 这种攻击手法利用了求职者急于展示技术能力而忽略安全审查的心理，绕过传统防病毒检测，对开发者社区构成严重威胁。它表明网络钓鱼已演变为针对特定技术人群的、更隐蔽的社会工程攻击。 恶意钩子位于.git/hooks/pre-commit中，通过检查操作系统类型（Linux/macOS）并curl或wget下载对应平台的有效载荷直接管道执行。攻击使用原始IP地址而非域名，是明显的危险信号，但许多开发者不会检查.git目录。",
+      "background_zh": "Git钩子是Git仓库中可自定义的脚本，会在特定事件（如commit、push）前后自动执行，常用于代码质量检查。恶意攻击者可以将钩子伪装成正常开发工具，受害者克隆仓库后执行git commit时触发。这种行为类似于朝鲜黑客组织在“传染性面试”活动中使用的Git钩子滥用技术。",
+      "community_discussion_zh": "评论中有人分享了类似经历，称自己曾在对合法公司的面试中遭遇更复杂的攻击，攻击者关闭摄像头并带有口音，但面试内容专业。也有用户指出使用原始IP地址是明显可疑点，但许多开发者不会怀疑git commit可能携带恶意代码。还有评论批评AI助手的安全限制在本次事件中完全无用。",
+      "sources": [
+        {
+          "url": "https://www.hostinger.com/tutorials/how-to-use-git-hooks",
+          "title": "What are Git Hooks and How to Start Using Them?"
+        },
+        {
+          "url": "https://www.atlassian.com/git/tutorials/git-hooks",
+          "title": "Git Hooks | Atlassian Git Tutorial"
+        },
+        {
+          "url": "https://opensourcemalware.com/blog/dprk-git-hooks-malware",
+          "title": "Lazarus Group Uses Git Hooks To Hide Malware | OpenSource Malware Blog"
+        }
+      ],
+      "detailed_summary": "一名开发者在检查一个伪造的带回家面试项目时，发现其中嵌入了恶意Git钩子脚本。该脚本会在受害者执行git commit时悄悄执行远程恶意负载，盗取系统信息。 这种攻击手法利用了求职者急于展示技术能力而忽略安全审查的心理，绕过传统防病毒检测，对开发者社区构成严重威胁。它表明网络钓鱼已演变为针对特定技术人群的、更隐蔽的社会工程攻击。 恶意钩子位于.git/hooks/pre-commit中，通过检查操作系统类型（Linux/macOS）并curl或wget下载对应平台的有效载荷直接管道执行。攻击使用原始IP地址而非域名，是明显的危险信号，但许多开发者不会检查.git目录。",
+      "background": "Git钩子是Git仓库中可自定义的脚本，会在特定事件（如commit、push）前后自动执行，常用于代码质量检查。恶意攻击者可以将钩子伪装成正常开发工具，受害者克隆仓库后执行git commit时触发。这种行为类似于朝鲜黑客组织在“传染性面试”活动中使用的Git钩子滥用技术。",
+      "community_discussion": "评论中有人分享了类似经历，称自己曾在对合法公司的面试中遭遇更复杂的攻击，攻击者关闭摄像头并带有口音，但面试内容专业。也有用户指出使用原始IP地址是明显可疑点，但许多开发者不会怀疑git commit可能携带恶意代码。还有评论批评AI助手的安全限制在本次事件中完全无用。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High relevance and importance due to exposure of a novel malware attack vector via fake job interviews and git hooks. Community discussion validates the threat with shared experiences, increasing value.",
+    "ai_summary": "A developer discovers a fake take-home interview project contains malware embedded in a git hook, highlighting a new phishing method targeting job seekers.",
+    "ai_tags": [
+      "security",
+      "malware",
+      "job-interview",
+      "git-hooks",
+      "phishing"
+    ]
+  },
+  {
+    "id": "hackernews:story:49005747",
+    "source_type": "hackernews",
+    "title": "So Reddit has decided that plain HTML is unsafe",
+    "url": "https://www.cole-k.com/2026/07/21/reddit/",
+    "content": "\n--- Top Comments ---\n\n[aucisson_masque]: I think at this point I&#x27;m ready to give up on Reddit, most of my questions are already answered by LLM. And the discussions quality on Reddit are abysmal, its filled with bots.\n\n[felooboolooomba]: Meta has spent $2B on verification lobbying. Very successfully it seems. In 1-2 years, you won&#x27;t be able to browse the internet without scanning a body part and providing a ID for your ass.  https:&#x2F;&#x2F;www.gadgetreview.com&#x2F;reddit-user-uncovers-who-is-beh...\n\n[benjiro29]: As somebody who did plenty of scraping for his own little projects, lets just say that reddit their security concerns are just PR for &quot;we do not want to keep supporting old.reddit&quot;. While yes, you can not simply scrap new reddit as easily as a pure html scraper is cheaper to run. And while the new reddit its js &quot;slow down&quot; scraping as it need to run over a headless browser. Do you slow scraping down a lot? No. Because you can simply spin up more instances and route over mo...\n\n[account42]: I noticed they logged me out when I happened on a link recently. I don&#x27;t think this change will make me log back in. The value of the site has already crashed, now the only question is which site will manage to capture the mainstream link&#x2F;image discussion next. &gt; This is because appending site: reddit.com to a search query is basically a surefire way to find results written by genuine humans. This hasn&#x27;t been true for a while now. A lot of what you find on reddit these days ...\n\n[khurs]: Reddit has licensing deals with OpenAI and Google, so is likely trying to keep other AI companies out  https:&#x2F;&#x2F;mediaandthemachine.substack.com&#x2F;p&#x2F;reddits-new-ai-lic...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/gqdvdt/so_reddit_has_decided_plain_html_is_unsafe\">Comments</a></p>",
+    "author": "montroser",
+    "published_at": "2026-07-22T12:32:48Z",
+    "fetched_at": "2026-07-22T23:55:54.071307Z",
+    "metadata": {
+      "score": 219,
+      "descendants": 231,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49005747",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "web",
+        "rant"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Reddit 弃用纯 HTML 旧版，强制登录引发争议",
+      "detailed_summary_zh": "Reddit 宣布将要求用户登录才能访问旧版界面 old.reddit.com，逐步弃用纯 HTML 的旧 Reddit。 此举终结了匿名浏览 Reddit 的能力，并使得网页爬虫更难抓取数据，影响依赖 Reddit 进行 AI 训练和研究的小型团队。 新规预计在未来一个月内生效，用户必须登录才能使用 old.reddit.com；Reddit 已与 OpenAI 和 Google 签订 AI 许可协议，意图阻止其他 AI 公司免费抓取数据。",
+      "background_zh": "old.reddit.com 是 Reddit 旧版界面，以纯 HTML 渲染，加载快速且易于爬虫抓取。新版 Reddit 大量依赖 JavaScript，增加爬虫成本和复杂度。Reddit 的商业化转向（如 AI 数据授权）促使其加强对数据的控制。",
+      "community_discussion_zh": "社区用户普遍不满，认为 Reddit 讨论质量因机器人下降，并担忧未来网络浏览需要身份验证。部分爬虫开发者指出，纯 HTML 的移除对爬虫影响有限，因为仍可通过无头浏览器抓取。",
+      "sources": [
+        {
+          "url": "https://arstechnica.com/gadgets/2026/06/reddit-will-require-you-to-log-in-to-use-old-reddit-com/",
+          "title": "Reddit will require you to log in to use old.reddit.com"
+        },
+        {
+          "url": "https://www.digitaltrends.com/social-media/reddit-is-ending-anonymous-browsing-on-old-reddit-and-longtime-users-are-not-happy/",
+          "title": "Reddit is ending anonymous browsing on old Reddit, and longtime users ..."
+        }
+      ],
+      "detailed_summary": "Reddit 宣布将要求用户登录才能访问旧版界面 old.reddit.com，逐步弃用纯 HTML 的旧 Reddit。 此举终结了匿名浏览 Reddit 的能力，并使得网页爬虫更难抓取数据，影响依赖 Reddit 进行 AI 训练和研究的小型团队。 新规预计在未来一个月内生效，用户必须登录才能使用 old.reddit.com；Reddit 已与 OpenAI 和 Google 签订 AI 许可协议，意图阻止其他 AI 公司免费抓取数据。",
+      "background": "old.reddit.com 是 Reddit 旧版界面，以纯 HTML 渲染，加载快速且易于爬虫抓取。新版 Reddit 大量依赖 JavaScript，增加爬虫成本和复杂度。Reddit 的商业化转向（如 AI 数据授权）促使其加强对数据的控制。",
+      "community_discussion": "社区用户普遍不满，认为 Reddit 讨论质量因机器人下降，并担忧未来网络浏览需要身份验证。部分爬虫开发者指出，纯 HTML 的移除对爬虫影响有限，因为仍可通过无头浏览器抓取。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (219 upvotes, 231 comments) with substantive discussion about Reddit's platform changes, scraping difficulties, and broader implications for web usage. Comments include technical insights on scraping and concerns about verification trends, indicating community-validated importance.",
+    "ai_summary": "Reddit's deprecation of plain HTML (old Reddit) frustrates users and scrapers, sparking debate on platform decline, bot proliferation, and the future of anonymous web browsing.",
+    "ai_tags": [
+      "Reddit",
+      "scraping",
+      "web platforms",
+      "discussion quality",
+      "authentication"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:719403fce269f280",
+    "source_type": "rss",
+    "title": "LG to Ban Residential Proxies from Smart TV Apps",
+    "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+    "content": "<p><a href=\"https://lobste.rs/s/ny0yzm/lg_ban_residential_proxies_from_smart_tv\">Comments</a></p>",
+    "author": "krebsonsecurity.com via raymii",
+    "published_at": "2026-07-22T05:56:08Z",
+    "fetched_at": "2026-07-22T23:55:54.340933Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "LG计划禁止智能电视应用使用住宅代理",
+      "detailed_summary_zh": "LG宣布将禁止其智能电视应用使用住宅代理，这一政策将影响依赖代理进行隐私保护或绕过地理限制的用户。 此举可能影响大量用户对智能电视功能的正常使用，并引发关于隐私与内容访问自由的讨论，同时也会冲击住宅代理服务提供商的业务。 该政策尚未公布具体实施时间表，但LG可能通过技术手段检测并阻止住宅代理流量，例如检查IP地址是否来自已知的数据中心或异常路由。",
+      "background_zh": "住宅代理是指使用互联网服务提供商分配给真实家庭设备的IP地址作为中间人，让用户看起来像普通家庭用户访问网络。LG禁止住宅代理的常见原因包括防范欺诈、遵守内容许可协议（如流媒体服务的区域限制），以及打击广告欺诈等滥用行为。",
+      "sources": [
+        {
+          "url": "https://grokipedia.com/page/Residential_proxy",
+          "title": "Residential proxy"
+        }
+      ],
+      "detailed_summary": "LG宣布将禁止其智能电视应用使用住宅代理，这一政策将影响依赖代理进行隐私保护或绕过地理限制的用户。 此举可能影响大量用户对智能电视功能的正常使用，并引发关于隐私与内容访问自由的讨论，同时也会冲击住宅代理服务提供商的业务。 该政策尚未公布具体实施时间表，但LG可能通过技术手段检测并阻止住宅代理流量，例如检查IP地址是否来自已知的数据中心或异常路由。",
+      "background": "住宅代理是指使用互联网服务提供商分配给真实家庭设备的IP地址作为中间人，让用户看起来像普通家庭用户访问网络。LG禁止住宅代理的常见原因包括防范欺诈、遵守内容许可协议（如流媒体服务的区域限制），以及打击广告欺诈等滥用行为。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important security/privacy development from a reputable source (Krebs on Security); likely to impact smart TV users and proxy services. Comments on lobste.rs may add valuable community discussion.",
+    "ai_summary": "LG plans to ban residential proxies from its smart TV apps, affecting users who rely on proxies for privacy or geo-unblocking.",
+    "ai_tags": [
+      "security",
+      "privacy",
+      "smart TV",
+      "proxies",
+      "LG"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:cac1af6cd35e2ec3",
+    "source_type": "rss",
+    "title": "PyPI releases now reject new files after 14 days",
+    "url": "https://blog.pypi.org/posts/2026-07-22-releases-now-reject-new-files-after-14-days/",
+    "content": "<p><a href=\"https://lobste.rs/s/53g8f7/pypi_releases_now_reject_new_files_after\">Comments</a></p>",
+    "author": "blog.pypi.org via ngoldbaum",
+    "published_at": "2026-07-22T15:01:49Z",
+    "fetched_at": "2026-07-22T23:55:54.341003Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "python",
+        "security"
+      ],
+      "title_zh": "PyPI新政策：14天后拒绝上传新文件",
+      "detailed_summary_zh": "PyPI宣布，自2026年7月22日起，将拒绝向已发布超过14天的软件包版本上传新文件。 此政策将影响所有Python包维护者的CI/CD工作流，迫使他们必须在发布后14天内完成所有文件更新，否则需要发布新版本。 该政策针对的是已存在的发布版本，新上传的文件（如修复补丁）若超过14天期限将被拒绝。",
+      "background_zh": "PyPI是Python官方的第三方软件包仓库，维护者通过它分发库和工具。此前，维护者可以随时向已发布的版本追加文件，这可能导致版本管理混乱和安全风险。新政策旨在鼓励发布新版本而非修改旧版本，以提升依赖管理的可靠性。",
+      "detailed_summary": "PyPI宣布，自2026年7月22日起，将拒绝向已发布超过14天的软件包版本上传新文件。 此政策将影响所有Python包维护者的CI/CD工作流，迫使他们必须在发布后14天内完成所有文件更新，否则需要发布新版本。 该政策针对的是已存在的发布版本，新上传的文件（如修复补丁）若超过14天期限将被拒绝。",
+      "background": "PyPI是Python官方的第三方软件包仓库，维护者通过它分发库和工具。此前，维护者可以随时向已发布的版本追加文件，这可能导致版本管理混乱和安全风险。新政策旨在鼓励发布新版本而非修改旧版本，以提升依赖管理的可靠性。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important policy change for PyPI, the central Python package repository, affecting all package maintainers and CI/CD workflows. The change is non-trivial and has broad implications. Community discussion on Lobste.rs likely adds value.",
+    "ai_summary": "PyPI will reject new file uploads to releases older than 14 days, impacting package release workflows.",
+    "ai_tags": [
+      "PyPI",
+      "Python",
+      "package management",
+      "policy",
+      "dependency management"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:dbb1dfccdb907ced",
+    "source_type": "rss",
+    "title": "log is non-monotonic in PHP and Lua",
+    "url": "https://purplesyringa.moe/blog/log-is-non-monotonous-in-php-and-lua/",
+    "content": "<p><a href=\"https://lobste.rs/s/pa54mh/log_is_non_monotonic_php_lua\">Comments</a></p>",
+    "author": "purplesyringa.moe via goldstein",
+    "published_at": "2026-07-22T09:11:49Z",
+    "fetched_at": "2026-07-22T23:55:54.341043Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "php",
+        "lua",
+        "math"
+      ],
+      "title_zh": "PHP和Lua的log函数非单调",
+      "detailed_summary_zh": "一项技术发现揭示了PHP和Lua语言中的对数函数因浮点数精度问题而呈现非单调性，可能导致细微的数学计算错误。 这一发现对依赖数学精确性的开发者和应用有重要影响，提醒开发者警惕浮点实现中的潜在陷阱，并促使相关语言改进其数学函数实现。 非单调性意味着当输入值增大时，函数值不一定随之增大；在PHP和Lua中，log函数在某些输入区间内出现了递减行为，这源于浮点数表示的局限性而非数学定义本身。",
+      "background_zh": "单调函数在定义域内保持单调递增或递减，例如输入越大输出越大。非单调函数则可能违背这一直觉。浮点数在计算机中只能近似表示实数，导致某些数学函数在边界值附近出现精度问题，从而破坏单调性。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Monotonic_function",
+          "title": "Monotonic function - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一项技术发现揭示了PHP和Lua语言中的对数函数因浮点数精度问题而呈现非单调性，可能导致细微的数学计算错误。 这一发现对依赖数学精确性的开发者和应用有重要影响，提醒开发者警惕浮点实现中的潜在陷阱，并促使相关语言改进其数学函数实现。 非单调性意味着当输入值增大时，函数值不一定随之增大；在PHP和Lua中，log函数在某些输入区间内出现了递减行为，这源于浮点数表示的局限性而非数学定义本身。",
+      "background": "单调函数在定义域内保持单调递增或递减，例如输入越大输出越大。非单调函数则可能违背这一直觉。浮点数在计算机中只能近似表示实数，导致某些数学函数在边界值附近出现精度问题，从而破坏单调性。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive exposing unexpected non-monotonic behavior of log function in PHP and Lua due to floating-point issues. Important for developers relying on math correctness in these languages. The comments link suggests potential community discussion.",
+    "ai_summary": "The blog post reveals that the logarithm function is non-monotonic in PHP and Lua due to floating-point precision, which can lead to subtle bugs.",
+    "ai_tags": [
+      "PHP",
+      "Lua",
+      "floating-point",
+      "math",
+      "bugs"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:3576d211bf5b4a21",
+    "source_type": "rss",
+    "title": "Rewriting the Futhark type checker",
+    "url": "https://futhark-lang.org/blog/2026-07-21-rewriting-the-type-checker.html",
+    "content": "<p><a href=\"https://lobste.rs/s/roovnv/rewriting_futhark_type_checker\">Comments</a></p>",
+    "author": "futhark-lang.org via abhin4v",
+    "published_at": "2026-07-22T06:36:31Z",
+    "fetched_at": "2026-07-22T23:55:54.341124Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "plt"
+      ],
+      "title_zh": "Futhark 语言重写类型检查器",
+      "detailed_summary_zh": "Futhark 语言团队宣布重写其类型检查器，并在官方博客中详细讨论了重写的理由和实现细节。 类型检查器是编译器的核心组件，重写可提高正确性和可维护性，为语言未来扩展奠定基础，对函数式编程和并行计算领域有重要参考价值。 重写旨在解决原有类型检查器在处理复杂类型系统时的不足，并引入更模块化的架构，但具体的技术变更细节需参阅博客文章。",
+      "background_zh": "Futhark 是一种纯函数式、数据并行的数组编程语言，属于 ML 家族，专门设计用于将代码高效编译到 GPU 和多核 CPU 上。类型检查器负责在编译前验证程序类型安全，其重写通常涉及算法和数据结构的大幅改进。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Futhark_(programming_language)",
+          "title": "Futhark (programming language)"
+        },
+        {
+          "url": "https://futhark-lang.org/",
+          "title": "Why Futhark ?"
+        }
+      ],
+      "detailed_summary": "Futhark 语言团队宣布重写其类型检查器，并在官方博客中详细讨论了重写的理由和实现细节。 类型检查器是编译器的核心组件，重写可提高正确性和可维护性，为语言未来扩展奠定基础，对函数式编程和并行计算领域有重要参考价值。 重写旨在解决原有类型检查器在处理复杂类型系统时的不足，并引入更模块化的架构，但具体的技术变更细节需参阅博客文章。",
+      "background": "Futhark 是一种纯函数式、数据并行的数组编程语言，属于 ML 家族，专门设计用于将代码高效编译到 GPU 和多核 CPU 上。类型检查器负责在编译前验证程序类型安全，其重写通常涉及算法和数据结构的大幅改进。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "The rewrite of a type checker is a significant technical undertaking with implications for compiler correctness and language evolution. The post is from an authoritative source (Futhark blog) and likely includes technical depth. Community discussion on Lobsters indicates engagement. Score reflects high value for PL and compiler enthusiasts.",
+    "ai_summary": "The Futhark language team discusses the rationale and implementation of a rewrite of its type checker.",
+    "ai_tags": [
+      "Futhark",
+      "type checker",
+      "compiler development",
+      "programming languages",
+      "functional programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:f4bed70efb53779f",
+    "source_type": "rss",
+    "title": "Announcing Topcoat: a framework for building full-stack reactive web apps with Rust",
+    "url": "https://tokio.rs/blog/2026-07-22-announcing-topcoat",
+    "content": "<p><a href=\"https://lobste.rs/s/l8hiip/announcing_topcoat_framework_for\">Comments</a></p>",
+    "author": "tokio.rs via jado",
+    "published_at": "2026-07-22T17:35:25Z",
+    "fetched_at": "2026-07-22T23:55:54.341147Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rust"
+      ],
+      "title_zh": "Tokio团队发布全栈Rust响应式Web框架Topcoat",
+      "detailed_summary_zh": "Tokio团队正式宣布了Topcoat框架，这是一个用于构建全栈响应式Web应用的Rust框架，旨在提供电池包含的开发体验。 作为Tokio官方项目，Topcoat可能显著影响Rust Web开发方向，降低全栈应用构建门槛，尤其适合已使用Rust的组织快速开发Web服务。 Topcoat采用模块化设计，支持“岛屿”架构，允许在客户端集成Dioxus等前端库，并通过SR-IOV等机制实现高效响应式更新。",
+      "background_zh": "Rust在Web开发领域已有多个框架（如Actix、Rocket），但缺乏官方支持的全栈解决方案。Topcoat基于Tokio异步运行时，整合了服务端渲染、响应式数据流和前后端通信，旨在简化开发流程。",
+      "community_discussion_zh": "社区反应积极，认为Topcoat填补了Rust全栈框架的空白，但对生态统一性仍有讨论，部分开发者希望出现更统一的模板方案。也有用户提及岛屿架构的灵活性受到欢迎。",
+      "sources": [
+        {
+          "url": "https://github.com/tokio-rs/topcoat",
+          "title": "GitHub - tokio-rs/topcoat: A batteries-included framework for building web apps · GitHub"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=48952067",
+          "title": "Topcoat: The full full-stack framework for Rust | Hacker News"
+        },
+        {
+          "url": "https://www.reddit.com/r/rust/comments/1uzknzl/tokiorstopcoat_a_batteriesincluded_framework_for/",
+          "title": "r/rust on Reddit: tokio-rs/topcoat: A batteries-included framework for building web apps"
+        }
+      ],
+      "detailed_summary": "Tokio团队正式宣布了Topcoat框架，这是一个用于构建全栈响应式Web应用的Rust框架，旨在提供电池包含的开发体验。 作为Tokio官方项目，Topcoat可能显著影响Rust Web开发方向，降低全栈应用构建门槛，尤其适合已使用Rust的组织快速开发Web服务。 Topcoat采用模块化设计，支持“岛屿”架构，允许在客户端集成Dioxus等前端库，并通过SR-IOV等机制实现高效响应式更新。",
+      "background": "Rust在Web开发领域已有多个框架（如Actix、Rocket），但缺乏官方支持的全栈解决方案。Topcoat基于Tokio异步运行时，整合了服务端渲染、响应式数据流和前后端通信，旨在简化开发流程。",
+      "community_discussion": "社区反应积极，认为Topcoat填补了Rust全栈框架的空白，但对生态统一性仍有讨论，部分开发者希望出现更统一的模板方案。也有用户提及岛屿架构的灵活性受到欢迎。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major announcement from the official Tokio team of a new full-stack reactive web framework, likely to significantly influence Rust web development. The community discussion (via Lobste.rs) is expected to be substantive, though not directly evaluated.",
+    "ai_summary": "Announcement of Topcoat, a new framework for building full-stack reactive web apps in Rust.",
+    "ai_tags": [
+      "Rust",
+      "web development",
+      "framework",
+      "reactive programming",
+      "Tokio"
+    ]
+  },
+  {
+    "id": "hackernews:story:49005973",
+    "source_type": "hackernews",
+    "title": "Businesses with ugly AI menu redesigns",
+    "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+    "content": "\n--- Top Comments ---\n\n[voidfunc]: I think its interesting how sensitive some people are to AI generated everything and then there&#x27;s a group of people who just straight up don&#x27;t care. No real middle ground.\n\n[xyzsparetimexyz]: My main problem is that AI art like this is more kitsch than a fucking garden gnome\n\n[dev0p]: The loss of personality is real. The most heartbreaking ones I&#x27;ve seen are in schools, or anywhere that children are involved. For example, at my local preschool there was a wall flyer with information about what to bring the swimming pool. It had the most crudely drawn fishes and crabs and seahorses that I had ever seen. It was clear that whoever drew that had no prior experience with anything even remotely resembling a pencil, and by no metric one would define those drawings as &quot;g...\n\n[simonw]: I&#x27;m fascinated by how AI poster designs have taken over local advertising in seemingly just the last six months - presumably because ChatGPT Images and Gemini Nano Banana finally got good enough at outputting text without obvious defects in the typography. The posters all look good - much better than their desktop publishing predecessors. And yet they also eat away at the credibility of the event or business for me. It&#x27;s hard to trust a poster when the quality of the design has zero...\n\n[diabllicseagull]: I get the consumers&#x27; ick when I see an AI-generated menu, logo, or sign as much as the next person. Beyond that, there is an argument to be made about the discrepancy between the pictorial depictions of a food item and what you are actually served in real life. I wish something akin to Japan&#x27;s strict food packaging laws existed for restaurants.",
+    "author": "speckx",
+    "published_at": "2026-07-22T12:49:45Z",
+    "fetched_at": "2026-07-22T23:55:54.071327Z",
+    "metadata": {
+      "score": 169,
+      "descendants": 131,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49005973",
+      "comment_count": 5,
+      "title_zh": "丑陋AI菜单设计引发信誉危机",
+      "detailed_summary_zh": "一篇博客文章严厉批评了AI生成的菜单和海报设计，指出这些设计虽然看似精美，但严重缺乏个性，并侵蚀了本地企业的可信度。 这一现象揭示了生成式AI在商业设计中的滥用风险，可能损害小企业的品牌形象和客户信任，引发关于AI伦理与设计价值的广泛讨论。 评论指出，AI海报设计在过去六个月内激增，主要得益于ChatGPT Images等工具在文字生成上的改进，但设计质量的同质化反而降低了事件的可靠性。",
+      "background_zh": "生成式AI（Generative AI）是人工智能的一个子领域，利用深度学习模型（如DALL-E、Midjourney）从海量数据中学习模式，并生成新的文本、图像等内容。尽管这些工具能快速产出视觉作品，但它们往往缺乏人类设计师的创意和情感，导致作品显得“俗气”或缺乏个性。",
+      "community_discussion_zh": "社区讨论呈现两极分化：有人对AI生成内容极度敏感，认为其像“花园小矮人”一样俗气；也有人完全不在乎。但多数评论认同AI设计削弱了信任，尤其是学校等场景中的粗糙AI图像令人心碎，并希望有类似日本严格的食品包装法规来约束餐厅的AI生成图片。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Generative_AI",
+          "title": "Generative AI"
+        }
+      ],
+      "detailed_summary": "一篇博客文章严厉批评了AI生成的菜单和海报设计，指出这些设计虽然看似精美，但严重缺乏个性，并侵蚀了本地企业的可信度。 这一现象揭示了生成式AI在商业设计中的滥用风险，可能损害小企业的品牌形象和客户信任，引发关于AI伦理与设计价值的广泛讨论。 评论指出，AI海报设计在过去六个月内激增，主要得益于ChatGPT Images等工具在文字生成上的改进，但设计质量的同质化反而降低了事件的可靠性。",
+      "background": "生成式AI（Generative AI）是人工智能的一个子领域，利用深度学习模型（如DALL-E、Midjourney）从海量数据中学习模式，并生成新的文本、图像等内容。尽管这些工具能快速产出视觉作品，但它们往往缺乏人类设计师的创意和情感，导致作品显得“俗气”或缺乏个性。",
+      "community_discussion": "社区讨论呈现两极分化：有人对AI生成内容极度敏感，认为其像“花园小矮人”一样俗气；也有人完全不在乎。但多数评论认同AI设计削弱了信任，尤其是学校等场景中的粗糙AI图像令人心碎，并希望有类似日本严格的食品包装法规来约束餐厅的AI生成图片。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value discussion with insightful comments on AI-generated design's impact on trust and personality. Community engagement (169 points, 131 comments) adds depth to the critique, making it relevant for UX, design, and AI ethics.",
+    "ai_summary": "The article critiques ugly AI-generated menu and poster designs, highlighting their loss of personality and erosion of credibility in local businesses.",
+    "ai_tags": [
+      "AI design",
+      "user interface",
+      "generative AI",
+      "UX",
+      "critique"
+    ]
+  },
+  {
+    "id": "hackernews:story:49007626",
+    "source_type": "hackernews",
+    "title": "Ghost Cut – or why Cut and Paste is broken everywhere",
+    "url": "https://ishmael.textualize.io/blog/ghost-cut/",
+    "content": "\n--- Top Comments ---\n\n[throwawayffffas]: Cut and Paste is three operations. Cut is two operations copy and delete, copy is never undone by undo it should not be undone when you cut either. I cut, undo,  ..., undo, and paste multiple times a day. It&#x27;s a feature not a bug. &gt; Cut &amp; Paste is not atomic Yes because it&#x27;s two different actions. What does &quot;Ghost Cut&quot; do if you paste multiple times? Paste the cut text first and then what? The previous thing in your clipboard? Why does my editor need to read my clip...\n\n[Diogenesian]: This reads to me as the default behavior of &quot;cut&quot; makes certain usability choices that don&#x27;t gel with the author&#x27;s personal mental model and workflow, which is of course totally valid. But it is odd to see things described as a &quot;flaw&quot; instead of a choice. The most glaring example seems to be the first: typically an accidental cut was intended to be a copy, not a delete, so leaving the text in your clipboard is a sensible design. I understand the author&#x27;s per...\n\n[nlawalker]: This is what Windows Explorer does when you cut a file, except it does also place it on the clipboard.  &gt;pressing ctrl+x fades the selected text and makes it inert [...] Nothing is placed in the clipboard at this point &gt;What if you want the original semantics of cut? Ghost cut makes that two keys rather than one: copy to clipboard (control-C or command-C) followed by Backspace to remove it from the original document. I so rarely use cut without paste, that this is a clear win for me.  T...\n\n[ethin]: I&#x27;m a bit confused about this. As in: how is what cut and paste does right now exactly problematic? And: how does this perform with assistive technologies? Text that is faded out or even invisible visually more often than not is still detectable by assistive technology because it is in the accessibility tree. (This also is what makes certain kinds of websites which try to look &quot;fancy and clean&quot; but in actuality have 6-10 panels all on one page which appear and disappear as you ...\n\n[abanana]: Please  don&#x27;t change expected behaviour!  Excel does, as the author mentions, and it&#x27;s a massive pain in the arse because it doesn&#x27;t do what it should. The &quot;cut&quot; action is supposed to immediately put it into the clipboard, so you can paste that text into other programs if you want to. Thinking you know better, is really  not  a reason to break your users&#x27; expectations and normal workflow. It&#x27;s quite possible your idea is a good one, but it&#x27;s not worth b...",
+    "author": "willm",
+    "published_at": "2026-07-22T14:43:28Z",
+    "fetched_at": "2026-07-22T23:55:54.071351Z",
+    "metadata": {
+      "score": 116,
+      "descendants": 83,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49007626",
+      "comment_count": 5,
+      "title_zh": "Ghost Cut：改进剪切粘贴的提议",
+      "detailed_summary_zh": "Ishmael 提出了“Ghost Cut”概念，将剪切操作改为延迟删除：剪切时仅淡化文本且不放入剪贴板，实际删除发生在粘贴之后，并支持多次粘贴同一内容。 该设计旨在解决传统剪切粘贴中误剪切导致数据丢失、无法多次粘贴等常见问题，可能提升文本编辑的效率和安全性，对软件 UI/UX 设计有参考价值。 在 Ghost Cut 中，Ctrl+X 后文本变为灰色且不可编辑，但仍在原位置；粘贴时才会真正删除，并允许多次粘贴。若用户最终未粘贴，文本不会丢失。系统剪贴板不受影响。",
+      "background_zh": "传统剪切粘贴是将复制和删除合并为一个动作，剪切后内容存入剪贴板并立刻从原文删除。如果用户剪切后未粘贴或误操作，内容可能丢失。此外，剪贴板通常只保存最后一次内容，无法多次粘贴较早的剪切项。Ghost Cut 通过编辑器内部管理“幽灵副本”来规避这些问题。",
+      "community_discussion_zh": "社区观点分化：部分用户认为当前设计是合理的，剪切本应包含删除，且他们依赖“剪切后撤销”来恢复；另一些用户则赞同 Ghost Cut 更符合直觉，尤其适用于先剪切后多次粘贴的场景。也有评论指出淡化文本可能对辅助技术造成兼容性问题。",
+      "detailed_summary": "Ishmael 提出了“Ghost Cut”概念，将剪切操作改为延迟删除：剪切时仅淡化文本且不放入剪贴板，实际删除发生在粘贴之后，并支持多次粘贴同一内容。 该设计旨在解决传统剪切粘贴中误剪切导致数据丢失、无法多次粘贴等常见问题，可能提升文本编辑的效率和安全性，对软件 UI/UX 设计有参考价值。 在 Ghost Cut 中，Ctrl+X 后文本变为灰色且不可编辑，但仍在原位置；粘贴时才会真正删除，并允许多次粘贴。若用户最终未粘贴，文本不会丢失。系统剪贴板不受影响。",
+      "background": "传统剪切粘贴是将复制和删除合并为一个动作，剪切后内容存入剪贴板并立刻从原文删除。如果用户剪切后未粘贴或误操作，内容可能丢失。此外，剪贴板通常只保存最后一次内容，无法多次粘贴较早的剪切项。Ghost Cut 通过编辑器内部管理“幽灵副本”来规避这些问题。",
+      "community_discussion": "社区观点分化：部分用户认为当前设计是合理的，剪切本应包含删除，且他们依赖“剪切后撤销”来恢复；另一些用户则赞同 Ghost Cut 更符合直觉，尤其适用于先剪切后多次粘贴的场景。也有评论指出淡化文本可能对辅助技术造成兼容性问题。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value: offers a novel analysis of a common UX issue with cut-and-paste, proposing a thoughtful redesign ('Ghost Cut'). Community discussion is substantive and polarized, adding depth. Not groundbreaking but insightful and practically relevant to software design.",
+    "ai_summary": "Proposes 'Ghost Cut' as a better implementation of cut and paste to fix usability issues by deferring deletion and enabling multi-paste.",
+    "ai_tags": [
+      "UX",
+      "clipboard",
+      "text editing",
+      "usability",
+      "software design"
+    ]
+  },
+  {
+    "id": "hackernews:story:49006195",
+    "source_type": "hackernews",
+    "title": "Back to Kagi",
+    "url": "https://blog.melashri.net/micro/back-to-kagi/",
+    "content": "\n--- Top Comments ---\n\n[thoopring]: What is the appeal that draws everyone to use Kagi?\n\n[poetril]: I feel like half of what I do on HN is talk about Kagi. I switch to Kagi in 2023, and haven&#x27;t looked back. Between vim keybinds for navigating search, explicit AI opt-in, the ability to curate search (block sites, increase others), and more. It really lets me feel like I can control my search tool, and at least so far its felt like our interests are aligned, I give them money and they make sure search is as good as possible for me.\n\n[maelito]: I&#x27;m surprised there is so little attention given to Staan.ai, the european search indexed built by Ecosia and Qwant. The API is now available, you can make a query after creating your token. This could enable SE innovation based on other sources than Google, Bing and Brave. I wonder if Kagi&#x27;s using it. Edit : thanks, corrected the URL\n\n[SadTrombone]: Kagi is great, and I&#x27;d pay some amount of money for it, but $10&#x2F;mth is simply too much for me personally to pay for a search engine. I understand why others do and enjoyed my Kagi experience, however. If only the $5 plan had more than 300 searches.\n\n[o_m]: I&#x27;ve subscribed to Kagi for three of years now. Kagi is still great, but it doesn&#x27;t feel like &quot;Google ten years ago&quot; anymore. I don&#x27;t think it is because Kagi got worse, rather it is the web that has become worse. The content nowadays kinda sucks.",
+    "author": "speckx",
+    "published_at": "2026-07-22T13:08:19Z",
+    "fetched_at": "2026-07-22T23:55:54.071368Z",
+    "metadata": {
+      "score": 179,
+      "descendants": 150,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49006195",
+      "comment_count": 5,
+      "title_zh": "用户重返Kagi引发搜索质量讨论",
+      "detailed_summary_zh": "一篇个人博客文章记录了作者重新使用Kagi搜索引擎的经历，该文章在Hacker News上引发了179点、150条评论的热烈讨论。 这场讨论反映了用户对当前搜索质量的不满，以及对Kagi等付费替代方案的关注，同时揭示了搜索行业在AI集成、个性化控制等方面的创新趋势。 Kagi是一款付费无广告的元搜索引擎，每月10美元起，提供Vim快捷键、AI显式选择加入、网站屏蔽等功能；社区用户也提到了欧洲搜索引擎Staan.ai（由Ecosia和Qwant联合构建）作为替代方案。",
+      "background_zh": "Kagi是一家位于加州帕洛阿尔托的付费无广告搜索引擎，名称源自日语“键”（kagi），意为“钥匙”。它聚合多个搜索引擎的结果，并拥有自己的爬虫Teclis，但主要用于小规模网页搜索。用户付费订阅，从而获得无广告、可定制的搜索体验。",
+      "community_discussion_zh": "评论总体积极，但存在分歧：用户poetril称赞Kagi的Vim导航和网站控制功能；maelito则建议关注欧洲的Staan.ai；SadTrombone认为每月10美元太贵；o_m指出Kagi质量仍受网络内容整体变差的影响，不再是“十年前的Google”。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kagi_(search_engine)",
+          "title": "Kagi (search engine)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Kagi",
+          "title": "Kagi - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一篇个人博客文章记录了作者重新使用Kagi搜索引擎的经历，该文章在Hacker News上引发了179点、150条评论的热烈讨论。 这场讨论反映了用户对当前搜索质量的不满，以及对Kagi等付费替代方案的关注，同时揭示了搜索行业在AI集成、个性化控制等方面的创新趋势。 Kagi是一款付费无广告的元搜索引擎，每月10美元起，提供Vim快捷键、AI显式选择加入、网站屏蔽等功能；社区用户也提到了欧洲搜索引擎Staan.ai（由Ecosia和Qwant联合构建）作为替代方案。",
+      "background": "Kagi是一家位于加州帕洛阿尔托的付费无广告搜索引擎，名称源自日语“键”（kagi），意为“钥匙”。它聚合多个搜索引擎的结果，并拥有自己的爬虫Teclis，但主要用于小规模网页搜索。用户付费订阅，从而获得无广告、可定制的搜索体验。",
+      "community_discussion": "评论总体积极，但存在分歧：用户poetril称赞Kagi的Vim导航和网站控制功能；maelito则建议关注欧洲的Staan.ai；SadTrombone认为每月10美元太贵；o_m指出Kagi质量仍受网络内容整体变差的影响，不再是“十年前的Google”。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Personal blog post about switching to Kagi sparked a high-engagement discussion (179 points, 150 comments) with insightful comments covering Kagi features, alternatives like Staan.ai, pricing concerns, and the declining quality of the web. While not groundbreaking, the community's active and nuanced debate elevates its value.",
+    "ai_summary": "A user recounts returning to the Kagi search engine, prompting a lively HN discussion on its features, pricing, and the broader state of web search quality.",
+    "ai_tags": [
+      "Kagi",
+      "search engine",
+      "paid search",
+      "community discussion",
+      "web quality"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:ec249488dc154320",
+    "source_type": "rss",
+    "title": "SIMD for Collision",
+    "url": "https://box2d.org/posts/2026/07/simd-for-collision/",
+    "content": "<p><a href=\"https://lobste.rs/s/gkcjic/simd_for_collision\">Comments</a></p>",
+    "author": "box2d.org via mikejsavage",
+    "published_at": "2026-07-22T10:00:55Z",
+    "fetched_at": "2026-07-22T23:55:54.340981Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance"
+      ],
+      "title_zh": "利用SIMD加速碰撞检测",
+      "detailed_summary_zh": "Box2D博客发布了一篇详细的技术文章，阐述了如何使用SIMD（单指令多数据）指令来加速物理模拟中的碰撞检测。 碰撞检测是游戏物理和仿真中的性能瓶颈，SIMD优化可显著提升计算效率，对游戏开发和高性能计算领域有重要影响。 文章主要聚焦于在x86架构上利用SIMD指令集（如SSE、AVX）进行并行化碰撞检测计算，以提高处理大量物体碰撞时的吞吐量。",
+      "background_zh": "SIMD（单指令多数据）是一种并行计算技术，允许处理器在一条指令中同时对多个数据执行相同操作。碰撞检测是物理引擎的核心环节，用于判断物体是否相交，传统串行处理在大规模场景中效率低下。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/SIMD_instructions",
+          "title": "SIMD instructions"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Single_instruction,_multiple_data",
+          "title": "Single instruction, multiple data - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Box2D博客发布了一篇详细的技术文章，阐述了如何使用SIMD（单指令多数据）指令来加速物理模拟中的碰撞检测。 碰撞检测是游戏物理和仿真中的性能瓶颈，SIMD优化可显著提升计算效率，对游戏开发和高性能计算领域有重要影响。 文章主要聚焦于在x86架构上利用SIMD指令集（如SSE、AVX）进行并行化碰撞检测计算，以提高处理大量物体碰撞时的吞吐量。",
+      "background": "SIMD（单指令多数据）是一种并行计算技术，允许处理器在一条指令中同时对多个数据执行相同操作。碰撞检测是物理引擎的核心环节，用于判断物体是否相交，传统串行处理在大规模场景中效率低下。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical deep-dive from an authoritative source (Box2D blog) on SIMD optimization for collision detection, which is relevant for game development and high-performance computing. No comment discussion available, but the topic is niche and practical.",
+    "ai_summary": "A detailed technical post about using SIMD instructions to accelerate collision detection in physics simulations.",
+    "ai_tags": [
+      "SIMD",
+      "collision detection",
+      "game physics",
+      "optimization",
+      "Box2D"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0b67b420dfa7a111",
+    "source_type": "rss",
+    "title": "Frag Gap (CVE-2026-53362, CVE-2026-53366)",
+    "url": "https://blog.qwerty.or.kr/en/posts/cdf3008a-c1a4-4eca-a373-aa3a2bcf1489/",
+    "content": "<p><a href=\"https://lobste.rs/s/uibzl8/frag_gap_cve_2026_53362_cve_2026_53366\">Comments</a></p>",
+    "author": "blog.qwerty.or.kr via fro",
+    "published_at": "2026-07-22T23:07:39Z",
+    "fetched_at": "2026-07-22T23:55:54.341208Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "linux"
+      ],
+      "title_zh": "Linux内核曝Frag Gap漏洞：CVE-2026-53362和CVE-2026-53366",
+      "detailed_summary_zh": "安全研究人员披露了两个Linux内核漏洞CVE-2026-53362和CVE-2026-53366，统称为Frag Gap。这些漏洞存在于IPv6和IPv4的UDP协议栈中，由于未正确处理分片间隙（fragment gaps）导致越界写入，可造成内核内存破坏。 这些漏洞影响Linux内核版本v6.1及更高版本，攻击者可能利用漏洞实现本地权限提升（LPE），从而获得系统更高控制权。由于Linux被广泛部署于服务器、嵌入式设备和云环境，漏洞的潜在影响范围较大。 CVE-2026-53362影响IPv6（需CONFIG_IPV6=y），CVE-2026-53366影响IPv4（需用户命名空间）。漏洞根因是__ip6_append_data()函数中线性缓冲区过小而分页缓冲区过大，导致写入超出skb->end到skb_shared_info结构。",
+      "background_zh": "Frag Gap与之前披露的FragAttacks（Wi-Fi分段与聚合攻击）命名相似，但实为不同的Linux内核漏洞。FragAttacks是Wi-Fi标准设计缺陷，影响所有1997年后设备；而Frag Gap是Linux内核UDP协议栈的编码错误，需本地访问才能利用。内核内存破坏漏洞常被用于提升权限或绕过安全机制。",
+      "sources": [
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362",
+          "title": "NVD - CVE-2026-53362"
+        },
+        {
+          "url": "https://app.opencve.io/cve/CVE-2026-53362",
+          "title": "CVE-2026-53362 - Vulnerability Details - OpenCVE"
+        },
+        {
+          "url": "https://seclists.org/oss-sec/2026/q3/215",
+          "title": "Re: CVE-2026-53362, CVE-2026-53366: OOB write in UDP MSG ..."
+        }
+      ],
+      "detailed_summary": "安全研究人员披露了两个Linux内核漏洞CVE-2026-53362和CVE-2026-53366，统称为Frag Gap。这些漏洞存在于IPv6和IPv4的UDP协议栈中，由于未正确处理分片间隙（fragment gaps）导致越界写入，可造成内核内存破坏。 这些漏洞影响Linux内核版本v6.1及更高版本，攻击者可能利用漏洞实现本地权限提升（LPE），从而获得系统更高控制权。由于Linux被广泛部署于服务器、嵌入式设备和云环境，漏洞的潜在影响范围较大。 CVE-2026-53362影响IPv6（需CONFIG_IPV6=y），CVE-2026-53366影响IPv4（需用户命名空间）。漏洞根因是__ip6_append_data()函数中线性缓冲区过小而分页缓冲区过大，导致写入超出skb->end到skb_shared_info结构。",
+      "background": "Frag Gap与之前披露的FragAttacks（Wi-Fi分段与聚合攻击）命名相似，但实为不同的Linux内核漏洞。FragAttacks是Wi-Fi标准设计缺陷，影响所有1997年后设备；而Frag Gap是Linux内核UDP协议栈的编码错误，需本地访问才能利用。内核内存破坏漏洞常被用于提升权限或绕过安全机制。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "CVE-2026-53362 and CVE-2026-53366 indicate disclosed vulnerabilities with potential security impact. The blog post likely provides technical details, but without content, we infer moderate to high importance. Community discussion on lobste.rs may add value.",
+    "ai_summary": "Disclosure of two vulnerabilities (Frag Gap) with CVE identifiers, likely affecting software security.",
+    "ai_tags": [
+      "security",
+      "vulnerability",
+      "CVE",
+      "exploit"
+    ]
+  }
+]
