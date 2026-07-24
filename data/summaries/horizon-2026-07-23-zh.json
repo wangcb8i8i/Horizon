@@ -1,0 +1,967 @@
+[
+  {
+    "id": "hackernews:story:49021597",
+    "source_type": "hackernews",
+    "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
+    "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+    "content": "\n--- Top Comments ---\n\n[1970-01-01]: All Stealth bombers are upgraded with Cyberdyne computers, becoming fully unmanned. Afterwards they fly with a perfect operational record. The Skynet funding bill is passed. The system goes on-line on August 4, 1997. Human decisions are removed from strategic defense. Skynet begins to learn at a geometric rate. It becomes self-aware at 2:14 a.m. Eastern time, August 29. In a panic, they try to pull the plug.\n\n[SoftTalker]: &gt; The kit utilizes a novel interface with the aircraft’s flight controls and mission systems, allowing a pilot to toggle between traditional human control and AI control with the flip of a switch.  This ensures a safe, reliable environment for human-on-the-loop experimentation.  How, exactly, does that ensure a safe reliable environment? Humans are pretty bad at suddenly taking over when an automatic system reaches its limits and throws a problem in the human&#x27;s lap. A lot of air upset...\n\n[CrzyLngPwd]: So, it&#x27;s a drone with uncessercary baggage such life support and a pilot that can&#x27;t stand the Gs well. For some reason I am reminded of Dark Star :-)\n\n[Zsfe510asG]: The article smells of AI psychosis. They are already &quot;orchestrating&quot;. In the first Iraq war, they went in and won. In the second one, it took years to sort of occupy the country. Now they struggle against Iran and &quot;orchestrate&quot; F-16s that can be shot down instantly by AA weapons. Since COVID the world has collectively lost its mind.",
+    "author": "r2sk5t",
+    "published_at": "2026-07-23T13:51:36Z",
+    "fetched_at": "2026-07-23T23:53:54.432534Z",
+    "metadata": {
+      "score": 162,
+      "descendants": 177,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49021597",
+      "comment_count": 4,
+      "title_zh": "DARPA与美国空军成功试飞AI控制F-16",
+      "detailed_summary_zh": "DARPA和美国空军成功完成了由人工智能完全控制的F-16战斗机飞行测试，这是自主空战技术从模拟走向现实的关键一步。 此次测试标志着人工智能在复杂、高速的军事航空环境中取得了重大突破，可能彻底改变未来空战模式，加速无人作战平台的部署。 测试飞机配备了特殊接口，允许飞行员通过开关在人类操控和AI操控之间切换，保证了人机协作实验的安全性。AI算法此前已在模拟器中与人类飞行员进行过数千次格斗训练。",
+      "background_zh": "DARPA的“空战进化”（ACE）项目旨在通过将人机协作格斗作为挑战问题，建立对作战自主性的信任。该项目从2020年左右开始，AI算法从控制模拟F-16逐步发展到2024年实现真实F-16空中格斗测试，最终达成2026年的全自主飞行。",
+      "community_discussion_zh": "社区评论中既有对《终结者》式未来武器的调侃，也有对AI控制飞机安全性的严肃质疑，例如担心人类突然接手时应对能力不足。总体情绪混合了幽默和警惕，反映出公众对自主武器系统的复杂态度。",
+      "sources": [
+        {
+          "url": "https://www.darpa.mil/research/programs/air-combat-evolution",
+          "title": "ACE | DARPA"
+        },
+        {
+          "url": "https://defensescoop.com/2024/04/17/darpa-ace-ai-dogfighting-flight-tests-f16/",
+          "title": "Pentagon takes AI dogfighting to next level in real-world flight tests against human F-16 pilot | DefenseScoop"
+        }
+      ],
+      "detailed_summary": "DARPA和美国空军成功完成了由人工智能完全控制的F-16战斗机飞行测试，这是自主空战技术从模拟走向现实的关键一步。 此次测试标志着人工智能在复杂、高速的军事航空环境中取得了重大突破，可能彻底改变未来空战模式，加速无人作战平台的部署。 测试飞机配备了特殊接口，允许飞行员通过开关在人类操控和AI操控之间切换，保证了人机协作实验的安全性。AI算法此前已在模拟器中与人类飞行员进行过数千次格斗训练。",
+      "background": "DARPA的“空战进化”（ACE）项目旨在通过将人机协作格斗作为挑战问题，建立对作战自主性的信任。该项目从2020年左右开始，AI算法从控制模拟F-16逐步发展到2024年实现真实F-16空中格斗测试，最终达成2026年的全自主飞行。",
+      "community_discussion": "社区评论中既有对《终结者》式未来武器的调侃，也有对AI控制飞机安全性的严肃质疑，例如担心人类突然接手时应对能力不足。总体情绪混合了幽默和警惕，反映出公众对自主武器系统的复杂态度。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Significant milestone in AI-controlled military aviation, highly relevant to AI and defense technology. High community engagement (162 points, 177 comments) indicates strong interest, though comments are mixed with jokes and skepticism.",
+    "ai_summary": "DARPA and U.S. Air Force successfully fly an AI-controlled F-16, marking a major step in autonomous aerial combat.",
+    "ai_tags": [
+      "AI",
+      "DARPA",
+      "autonomous systems",
+      "military aviation",
+      "F-16"
+    ]
+  },
+  {
+    "id": "hackernews:story:49027892",
+    "source_type": "hackernews",
+    "title": "Couple pay >$800k for a gene-editing therapy for their daughter. She died.",
+    "url": "https://www.science.org/content/article/exclusive-death-girl-chinese-gene-editing-trial-was-never-made-public",
+    "content": "\n--- Top Comments ---\n\n[maxall4]: I&#x27;m honestly quite shocked that the physicians&#x2F;scientists involved would choose to use an AAV for a brain-targeted gene therapy. There is just so much data demonstrating that these vectors are quite immunoreactive: most of the approved gene therapies based on AAVs carry black box labels for liver failure caused by an immune reaction to the viral capsid. Admittedly, AAVs are the most derisked vector for gene therapies, but infusing them directly into someone&#x27;s brain and expectin...\n\n[senderista]: Many years ago I was attending pre-surgery for a hip replacement surgery for my sister, who had known severe reactions to anesthesia (actually required a tracheotomy for a previous reaction). The anesthesiologist asked to speak to us privately and informed us that in their opinion, my sister had maybe a 1&#x2F;3 chance of not surviving the surgery. They also mentioned that this was a breach of protocol and they could get in trouble for talking to us directly, but their conscience wouldn&#x27;...\n\n[lconnell962]: An article about the complicated issue that is a child with a non-lethal developmental disorder getting a treatment that ends with the tragedy of the headline. The article might be sensationalizing the situation, but it makes the doctor out like a monster and as the facts read I can&#x27;t say I disagree. That the treatment was inconclusive in the animal studies isn&#x27;t particularly shocking. The brain is one of the more complicated parts of a human body after all. Ethics and safty concern...\n\n[fabian2k]: There&#x27;s so many ethical problems with the events as described in the article. The worst to me seems to be that the researchers&#x2F;doctors seem to have downplayed the risks here. Which for a never before tried gene therapy that is meant to work inside the brain are absolutely enormous. The ethical issues around the money seem minor in comparison with that and the fact that they seem to have ignored similar side effects in the monkey experiments.\n\n[Terr_]: &gt; The paper had an enthusiastic reception. “These promising results might pave the way for the development of an effective clinical treatment,” Kevin Bender, a neuroscientist at UC San Francisco, wrote in an accompanying commentary. At the time, Bender had no idea that a girl had received it and was already dead. Meanwhile, Chinese state media, CCTV, called the work “the first ray of hope” for “countless families suffering such diseases.” Oof, there&#x27;s something deeply unjust about tha...",
+    "author": "Shortness8",
+    "published_at": "2026-07-23T20:52:19Z",
+    "fetched_at": "2026-07-23T23:53:54.432633Z",
+    "metadata": {
+      "score": 235,
+      "descendants": 137,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49027892",
+      "comment_count": 5,
+      "title_zh": "付费超过80万美元的基因编辑治疗导致女儿死亡",
+      "detailed_summary_zh": "一对夫妇为患有发育障碍的女儿支付超过80万美元接受实验性基因编辑疗法，但该疗法导致女儿死亡，这一悲剧案例此前从未被公开报道。 这起事件凸显了未经充分验证的实验性基因疗法对患者带来的巨大风险，尤其在涉及儿童和脑部治疗时，伦理审查和安全性评估的重要性更为突出。 该疗法使用腺相关病毒（AAV）载体将基因导入大脑，但AAV载体已知具有免疫原性，可能导致严重不良反应。动物实验中也出现了类似副作用，但医生可能低估了风险。",
+      "background_zh": "基因疗法通过载体将正常基因或编辑工具送入细胞，以治疗遗传疾病。AAV是常用的病毒载体之一，但因其可能引发免疫反应而带有黑框警告。将AAV直接注入大脑尤其危险，因为脑部免疫反应难以控制。",
+      "community_discussion_zh": "社区评论普遍批评医生低估风险，尤其质疑选择AAV用于脑部基因治疗。有评论指出，AAV载体的免疫反应风险在已获批疗法中已有记录，而直接注入大脑的风险更大。另一些人认为文章可能夸大事实，但医生表现出的伦理问题仍不可接受。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Adeno-associated_virus",
+          "title": "Adeno-associated virus - Wikipedia"
+        },
+        {
+          "url": "https://www.addgene.org/guides/aav/",
+          "title": "Adeno-Associated Viral (AAV) Vector Guide"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Gene_therapy",
+          "title": "Gene therapy - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一对夫妇为患有发育障碍的女儿支付超过80万美元接受实验性基因编辑疗法，但该疗法导致女儿死亡，这一悲剧案例此前从未被公开报道。 这起事件凸显了未经充分验证的实验性基因疗法对患者带来的巨大风险，尤其在涉及儿童和脑部治疗时，伦理审查和安全性评估的重要性更为突出。 该疗法使用腺相关病毒（AAV）载体将基因导入大脑，但AAV载体已知具有免疫原性，可能导致严重不良反应。动物实验中也出现了类似副作用，但医生可能低估了风险。",
+      "background": "基因疗法通过载体将正常基因或编辑工具送入细胞，以治疗遗传疾病。AAV是常用的病毒载体之一，但因其可能引发免疫反应而带有黑框警告。将AAV直接注入大脑尤其危险，因为脑部免疫反应难以控制。",
+      "community_discussion": "社区评论普遍批评医生低估风险，尤其质疑选择AAV用于脑部基因治疗。有评论指出，AAV载体的免疫反应风险在已获批疗法中已有记录，而直接注入大脑的风险更大。另一些人认为文章可能夸大事实，但医生表现出的伦理问题仍不可接受。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "High importance due to the tragic outcome of an experimental gene therapy, raising critical ethical and safety questions. The community discussion adds depth with technical criticisms of AAV vectors and ethical concerns, indicating strong engagement and diverse viewpoints.",
+    "ai_summary": "A couple paid over $800k for an experimental gene-editing therapy that led to their daughter's death, highlighting risks and ethical issues in cutting-edge treatments.",
+    "ai_tags": [
+      "gene therapy",
+      "ethics",
+      "AAV",
+      "clinical trial",
+      "safety"
+    ]
+  },
+  {
+    "id": "hackernews:story:49023016",
+    "source_type": "hackernews",
+    "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+    "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+    "content": "<a href=\"https:&#x2F;&#x2F;littletech.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;littletech.org&#x2F;</a><p><a href=\"https:&#x2F;&#x2F;static.politico.com&#x2F;4a&#x2F;bf&#x2F;9c4021d8404386b0a311dcccf0e5&#x2F;lta-open-weight-ai-letter-7-22-26.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;static.politico.com&#x2F;4a&#x2F;bf&#x2F;9c4021d8404386b0a311dcccf0...</a>\n\n\n--- Top Comments ---\n\n[capevace]: I‘m not even sure what the argument for banning Chinese models&#x2F;open weights even is supposed to be? 1. if it’s to stop hackers doing hacking things with „uncontrollable models“ then, well… they’re already doing something illegal to begin with, why would they care about breaking another law running these models? 2. if it’s to stop foreign actors, then that ban would not apply to them anyway 3. it’s not stopping distillation either, Chinese labs are already banned from using US frontier mo...\n\n[Frannky]: People want to get from A to B. Someone makes a rule to stop them. So they go from A to C to B instead — or settle for something close enough to B. The rule-makers don&#x27;t stop anyone, and often the end state is worse than before the rule existed. This happens constantly with tech and the laws that try to contain it. Tech is like reality: there are endless routes to roughly the same destination, and rules are slow. The asymmetry is the whole problem — you only need to find one new route; t...\n\n[GodelNumbering]: Proprietary model weights are IP, their outputs are not IP and I can&#x27;t imagine a court decision that would rule otherwise because that would set an extremely far reaching and dangerous precedent, even for American businesses. I don&#x27;t think distillation as &#x27;stealing IP&#x27; has any legal legs. They can probably claim violation of ToS at best because the terms of use do prohibit use for training rival models.\n\n[vkaku]: Read this thread when you get the time:  https:&#x2F;&#x2F;x.com&#x2F;_vkaku&#x2F;status&#x2F;2080352797606744209  Open Data+Open Models gives everyone else an advantage and bringing regulatory capture here should be appealed and brought to the FTC and the courts to challenge such regulations. Startups need better than this whole lock down into four overvalued frontier models in the US sort of thing\n\n[zarzavat]: Someone explain to me how the US would stop people from using Chinese models? Anyone in Europe can download and run a Chinese model and serve it up on the open internet to people in the US. What can the US do about that? The only thing the US can  maybe  do is ban exports of high powered GPUs to the EU. However the EU can retaliate by banning export of ASML machines to the US, so I don&#x27;t think the US has that card to play.",
+    "author": "theanonymousone",
+    "published_at": "2026-07-23T15:18:40Z",
+    "fetched_at": "2026-07-23T23:53:54.432356Z",
+    "metadata": {
+      "score": 675,
+      "descendants": 612,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49023016",
+      "comment_count": 5,
+      "title_zh": "创始人吁美勿禁中国开源权重AI",
+      "detailed_summary_zh": "多位美国初创公司创始人联名致信特朗普政府，敦促不要禁止中国开源权重AI模型，认为此举将扼杀创新且难以执行。 该事件涉及AI开放与封闭的全球政策博弈，可能影响美国初创企业的技术获取和AI生态的竞争格局。 信中强调，禁止中国开源权重AI模型无助于阻止恶意使用，反而会损害美国初创企业获取先进AI技术的能力，并可能推动中国模型走向更封闭的专有路线。",
+      "background_zh": "开源权重AI模型是指公开训练后的模型权重（即内部参数），允许开发者下载、微调和部署。这类模型通常比完全闭源的商业模型更开放，但权重本身仍可能受版权或协议约束。近年来，中国发布了多个强大的开源权重模型（如Qwen、DeepSeek），引发美国对技术外流和安全的担忧。",
+      "community_discussion_zh": "社区评论普遍质疑禁令的有效性，认为恶意行为者不会遵守法律，且蒸馏（用模型输出训练竞品）在法律上难以被认定侵权。部分评论指出，限制开源权重只会迫使开发者寻找变通路径，最终效果适得其反。",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/pulse/open-weight-ai-what-we-finally-opened-bonnet-nicolas-pistorio-n3ulf",
+          "title": "Open - weight AI : what if we finally opened the bonnet ?"
+        },
+        {
+          "url": "https://artificialanalysis.ai/models",
+          "title": "Comparison of AI Models across Intelligence, Performance, and Price"
+        },
+        {
+          "url": "https://openai.com/open-models/",
+          "title": "Advanced open - weight reasoning models to customize for any use..."
+        }
+      ],
+      "detailed_summary": "多位美国初创公司创始人联名致信特朗普政府，敦促不要禁止中国开源权重AI模型，认为此举将扼杀创新且难以执行。 该事件涉及AI开放与封闭的全球政策博弈，可能影响美国初创企业的技术获取和AI生态的竞争格局。 信中强调，禁止中国开源权重AI模型无助于阻止恶意使用，反而会损害美国初创企业获取先进AI技术的能力，并可能推动中国模型走向更封闭的专有路线。",
+      "background": "开源权重AI模型是指公开训练后的模型权重（即内部参数），允许开发者下载、微调和部署。这类模型通常比完全闭源的商业模型更开放，但权重本身仍可能受版权或协议约束。近年来，中国发布了多个强大的开源权重模型（如Qwen、DeepSeek），引发美国对技术外流和安全的担忧。",
+      "community_discussion": "社区评论普遍质疑禁令的有效性，认为恶意行为者不会遵守法律，且蒸馏（用模型输出训练竞品）在法律上难以被认定侵权。部分评论指出，限制开源权重只会迫使开发者寻找变通路径，最终效果适得其反。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value policy debate on open-weight AI regulation with strong community engagement (612 comments) and substantive discussion on IP, distillation, and geopolitical implications.",
+    "ai_summary": "Startup founders urge the U.S. government not to block Chinese open-weight AI models, arguing it would hinder innovation and be ineffective.",
+    "ai_tags": [
+      "AI policy",
+      "open source",
+      "regulation",
+      "geopolitics",
+      "open-weight models"
+    ]
+  },
+  {
+    "id": "hackernews:story:49022038",
+    "source_type": "hackernews",
+    "title": "Software rendering in 500 lines of bare C++",
+    "url": "https://haqr.eu/tinyrenderer/",
+    "content": "\n--- Top Comments ---\n\n[articulatepang]: I went through this a few months ago in Rust. I wrote all the code by hand, no LLMs. Then I went ahead and added a small &quot;game&quot; on top, plus some special effects like pixelization shaders and chromatic aberration at the edge of a flashlight.  https:&#x2F;&#x2F;github.com&#x2F;kshitijl&#x2F;tinyrenderer-rs  if anyone is interested! The repo has lots and lots of in-progress screenshots so you can see the renderer come to life, plus all the hilarious visual bugs along the way. I learne...\n\n[nkanaev]: This resource, along with Mathematics for Computer Graphics by John Vince [1], was truly indispensable when I wrote my own software renderer [2]. This was long before LLMs, so the whole process took me at least a couple months - most of it trying to wrap my head around math behind computer graphics and tracking down C segmentation faults. Fun times. [1]:  https:&#x2F;&#x2F;www.amazon.co.uk&#x2F;Mathematics-Computer-Graphics-John-...  [2]:  https:&#x2F;&#x2F;github.com&#x2F;nkanaev&#x2F;tipsy\n\n[whartung]: Is the Foley&#x2F;Van Dam book still a go to resource for this? It seems it was updated in 2013, but, honestly, I’m more familiar with the ‘82 edition that was dedicated to 2D. Back in the day, it was The Book for computer graphics.\n\n[bob1029]: I wish we could have just one of these tutorials properly cover the concern of triangle clipping. This is the part that I struggle with the most in a software renderer. If you are going to be building a practical one, this is something you will eventually have to deal with, even for super basic scenes. Any time geometry intersects the view frustum you need to clip those triangles.\n\n[espetro]: Finally an engineering feat that&#x27;s not built in Rust\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/p4xo2i/software_rendering_500_lines_bare_c\">Comments</a></p>",
+    "author": "mpweiher",
+    "published_at": "2026-07-23T14:17:40Z",
+    "fetched_at": "2026-07-23T23:53:54.432410Z",
+    "metadata": {
+      "score": 233,
+      "descendants": 42,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49022038",
+      "comment_count": 5,
+      "title_zh": "500行C++实现软件渲染器教程引发热议",
+      "detailed_summary_zh": "一篇经典的软件渲染器教程在社区再次获得高关注，该教程仅用约500行C++代码从头构建了一个功能完整的软件渲染器。 该教程是学习计算机图形学底层原理的宝贵资源，社区用户积极分享用其他语言（如Rust）重写的实现，极大丰富了学习路径和实践经验。 教程以极简代码量覆盖了三角形光栅化、Z-buffer、纹理映射等核心渲染管线步骤；社区用户articulatepang用Rust重写并添加了像素化着色器、色差特效等额外内容。",
+      "background_zh": "软件渲染器指完全由CPU计算生成图形，不依赖GPU硬件加速。通过手动实现渲染管线，开发者能深入理解图形学基础概念，如坐标变换、裁剪、光栅化等，是图形编程入门的重要练习。",
+      "community_discussion_zh": "社区用户积极分享自己重写的版本（如Rust实现），并讨论了三角形裁剪等实际难点；有用户提到在LLM出现前，手动完成此类项目耗时数周，但收获巨大；另有用户询问经典教材如Foley/Van Dam是否仍值得参考。",
+      "detailed_summary": "一篇经典的软件渲染器教程在社区再次获得高关注，该教程仅用约500行C++代码从头构建了一个功能完整的软件渲染器。 该教程是学习计算机图形学底层原理的宝贵资源，社区用户积极分享用其他语言（如Rust）重写的实现，极大丰富了学习路径和实践经验。 教程以极简代码量覆盖了三角形光栅化、Z-buffer、纹理映射等核心渲染管线步骤；社区用户articulatepang用Rust重写并添加了像素化着色器、色差特效等额外内容。",
+      "background": "软件渲染器指完全由CPU计算生成图形，不依赖GPU硬件加速。通过手动实现渲染管线，开发者能深入理解图形学基础概念，如坐标变换、裁剪、光栅化等，是图形编程入门的重要练习。",
+      "community_discussion": "社区用户积极分享自己重写的版本（如Rust实现），并讨论了三角形裁剪等实际难点；有用户提到在LLM出现前，手动完成此类项目耗时数周，但收获巨大；另有用户询问经典教材如Foley/Van Dam是否仍值得参考。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value due to widespread recognition as a classic resource for learning software rendering, combined with high community engagement (233 points, 42 comments) where users share implementations, experiences, and related references, adding practical depth.",
+    "ai_summary": "A classic tutorial on building a software renderer from scratch in C++ in 500 lines, with active community discussion sharing implementations and learning insights.",
+    "ai_tags": [
+      "software rendering",
+      "graphics programming",
+      "C++",
+      "tutorial",
+      "computer graphics"
+    ]
+  },
+  {
+    "id": "hackernews:story:49023019",
+    "source_type": "hackernews",
+    "title": "Why Software Factories Fail (or: harness engineering is not enough)",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+    "content": "\n--- Top Comments ---\n\n[cadamsdotcom]: Love the idea of RL for codebase health. And a benchmark to measure against! Imagine a &quot;MaintainabilityBench&quot; that rewards models which detect code duplication while working on a task and perform some refactor instead of glibly duplicating; or that detect the need for a new architectural layer, or that hoist a type constraint so there&#x27;s no need for dumb casts. You can keep on imagining scenarios. There are probably a few hundred distinct elements to RL for. The books &quot;Work...\n\n[fishtoaster]: There&#x27;s some good ideas and points in here, but this bit threw me: &gt; # We tried this\n&gt; In July 2025 we went full lights-off Isn&#x27;t it pretty well-accepted at this point that the models underwent a step-change in usefulness around fall 2025 &#x2F; spring 2026?  I know that  I  was able to start handing agents whole features after that, but not before. I feel like any perspective&#x2F;experience on &quot;what agents can&#x2F;can&#x27;t do&quot; from before that period is... maybe...\n\n[rglynn]: To me, the thing that stands out about the whole state we&#x27;re in here is PR review. Yes, in an ideal world, PRs read well, are a joy to review, reflect what you discussed etc etc. We have to be real; there is only so much we can do to that end. I&#x27;m not sure how the best teams do PR review, from my perspective it  sucks . I&#x27;m talking specifically about the UX. I&#x27;ve always hated Github&#x27;s PR page, so I typically reviewed by pulling down the branch and opening the diff wit...\n\n[jadar]: &gt; So, why can&#x27;t models do software maintainability? I feel like the explanation does nothing to actually elucidate why models can&#x27;t do it. Is it an inherent weakness of LLMs? Training processes? The typical &quot;this is crap&quot; that we constantly hear? It goes on to write about RL and how there&#x27;s no penalty for bad design. But that sort of side-steps the question and makes you ask: &quot;why not do RL and make a penalty for bad design?&quot; Of course the models aren&#x2...\n\n[firasd]: I think there is a fundamental issue here of what building software even  means  If you think you can just assign Github tickets to AI agents and go drink daiquiris on the beach I think you&#x27;ll find that you end up with more and more towers of abstraction and indirection. There are &#x27;points of view&#x27; that emerge during coding I think. And at some point you as a human have to be like &quot;wait... what if we use Redis here&quot;. &quot;Wait.. the API is already returning the data w...",
+    "author": "dhorthy",
+    "published_at": "2026-07-23T15:18:48Z",
+    "fetched_at": "2026-07-23T23:53:54.432436Z",
+    "metadata": {
+      "score": 142,
+      "descendants": 127,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49023019",
+      "comment_count": 5,
+      "title_zh": "软件工厂失败原因：仅靠装备工程不够",
+      "detailed_summary_zh": "本文指出，当前AI辅助软件开发中的“软件工厂”模式失败，因为过于依赖装备工程（harness engineering），而忽视了更深入的方法，例如针对代码库健康的强化学习（RL）和更好的代码审查（PR review）实践。 这一讨论对软件工程和AI社区意义重大，它揭示了当前AI编码代理策略的局限性，并为未来实现更可维护的代码生成指明了方向——即需要从开发者行为中学习并改善代码审查流程。 文章提到，模型在2025年秋季至2026年春季期间能力大幅提升，因此此前关于代理能力的观点可能已不适用。社区成员还建议创建“可维护性基准”（MaintainabilityBench），奖励检测代码重复、重构或引入新架构层的行为。",
+      "background_zh": "装备工程是一种新兴方法论，侧重于设计系统、工具、约束和反馈循环（即“装备”）来使AI代理可靠工作，而非手动编写代码。然而，本文认为仅靠装备工程不足以维护代码库长期健康，需要结合强化学习（从开发者行为中学习）以及改进的代码审查工具。",
+      "community_discussion_zh": "评论普遍赞同将强化学习用于代码库健康，但质疑模型目前无法处理可维护性的根本原因（是LLM固有缺陷还是训练问题？）。多位用户强烈抱怨GitHub的PR审查界面体验差，并指出2025年末后模型能力有所跃升，因此早期经验应谨慎参考。",
+      "sources": [
+        {
+          "url": "https://grokipedia.com/page/Harness_engineering",
+          "title": "Harness engineering"
+        },
+        {
+          "url": "https://www.augmentcode.com/blog/reinforcement-learning-from-developer-behaviors",
+          "title": "Reinforcement learning from developer behaviors: A breakthrough in code generation quality | Augment Code"
+        }
+      ],
+      "detailed_summary": "本文指出，当前AI辅助软件开发中的“软件工厂”模式失败，因为过于依赖装备工程（harness engineering），而忽视了更深入的方法，例如针对代码库健康的强化学习（RL）和更好的代码审查（PR review）实践。 这一讨论对软件工程和AI社区意义重大，它揭示了当前AI编码代理策略的局限性，并为未来实现更可维护的代码生成指明了方向——即需要从开发者行为中学习并改善代码审查流程。 文章提到，模型在2025年秋季至2026年春季期间能力大幅提升，因此此前关于代理能力的观点可能已不适用。社区成员还建议创建“可维护性基准”（MaintainabilityBench），奖励检测代码重复、重构或引入新架构层的行为。",
+      "background": "装备工程是一种新兴方法论，侧重于设计系统、工具、约束和反馈循环（即“装备”）来使AI代理可靠工作，而非手动编写代码。然而，本文认为仅靠装备工程不足以维护代码库长期健康，需要结合强化学习（从开发者行为中学习）以及改进的代码审查工具。",
+      "community_discussion": "评论普遍赞同将强化学习用于代码库健康，但质疑模型目前无法处理可维护性的根本原因（是LLM固有缺陷还是训练问题？）。多位用户强烈抱怨GitHub的PR审查界面体验差，并指出2025年末后模型能力有所跃升，因此早期经验应谨慎参考。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value discussion on AI-assisted software development failure modes, with engaged community providing insightful comments on RL for codebase health, model capability timelines, and PR review pain points. Relevance to software engineering and AI/ML, strong community validation (142 points, 127 comments).",
+    "ai_summary": "Argues that software factories fail because harness engineering is insufficient, highlighting the need for deeper approaches like RL for codebase health and better PR review practices.",
+    "ai_tags": [
+      "software engineering",
+      "AI-assisted development",
+      "code review",
+      "reinforcement learning",
+      "agent capabilities"
+    ]
+  },
+  {
+    "id": "hackernews:story:49022634",
+    "source_type": "hackernews",
+    "title": "Learn OpenGL, extensive tutorial resource for learning Modern OpenGL",
+    "url": "https://learnopengl.com/",
+    "content": "\n--- Top Comments ---\n\n[cyber_kinetist]: The one and only Holy Bible of Graphics Programming. If you&#x27;re starting to learn computer graphics, just study through the entire site and do the examples one by one. It doesn&#x27;t matter one bit that it uses a slightly outdated API called OpenGL - you&#x27;re supposed to learn how to render things first, not about some weird obscure hardware &#x2F; driver details! After you&#x27;ve learned it, you can start learning CUDA if you want to do some more low-level compute stuff on the GPU (...\n\n[oumua_don17]: If you really want to learn from first principles, I&#x27;d recommend writing a software renderer without any graphics API. If you&#x27;re looking for a course, see [1]. Next up, extend the software renderer to render a 3D character model (an obj file will suffice) which [1] covers and animate that 3D model with skeletal animation all the while on the CPU. Use quake&#x27;s md5mesh and md5anim files to render the skeletal animation from [2]. This just lays down a clear foundation of what a ren...\n\n[mawadev]: I cannot imagine a field more rewarding than programming with opengl when you grew up playing games. I&#x27;m talking about hobbyist engine type of development. It is almost like therapy for any dev that does web&#x2F;cloud stuff during a day job.\n\n[AyanamiKaine]: If you want to use the learned knowledge I would recommend to use something like Sokol [0] or use the SDL-GPU API [1]. While Sokol is more higher level both can be used. Otherwise learn opengl is a really good introduction. [0]  https:&#x2F;&#x2F;github.com&#x2F;floooh&#x2F;sokol \n[1]  https:&#x2F;&#x2F;wiki.libsdl.org&#x2F;SDL3&#x2F;CategoryGPU\n\n[BraveOPotato]: Shaders used to not make any sense to me. The tutorial writes a simple expression and boom the screen is displaying all kinds of funky things. Then I realized you&#x27;re just writing code that executes on all pixels sequentially. That made it easier to understand",
+    "author": "ibobev",
+    "published_at": "2026-07-23T14:53:34Z",
+    "fetched_at": "2026-07-23T23:53:54.432489Z",
+    "metadata": {
+      "score": 167,
+      "descendants": 94,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49022634",
+      "comment_count": 5,
+      "title_zh": "学习现代OpenGL的权威教程资源",
+      "detailed_summary_zh": "LearnOpenGL.com 提供了一套全面且深入的现代OpenGL教程，被广泛认为是图形编程的“圣经”级资源。社区对其高度评价，认为它是初学者学习渲染的最佳起点。 该资源帮助无数开发者从零开始理解现代图形编程，弥补了理论与实践之间的鸿沟。对于游戏开发、仿真和可视化领域的从业者来说，它是不可或缺的学习材料。 教程内容涵盖了从基础管线到高级效果（如PBR、阴影）的完整知识体系，所有示例代码均可直接运行。虽然OpenGL本身被视为“略过时”的API，但其核心渲染概念仍是跨平台学习的基石。",
+      "background_zh": "OpenGL（开放图形库）是一个跨平台的图形API，用于渲染2D和3D矢量图形。现代OpenGL（3.3+）采用可编程着色器管线，与旧版固定管线有显著不同。LearnOpenGL.com由Joey de Vries创建，是一个完全免费、持续更新的在线教程，被全球开发者推荐为入门首选。",
+      "community_discussion_zh": "社区普遍将其视为“图形编程圣经”，认为即使API略旧，学习渲染原理才是核心。有评论建议先写软件渲染器理解底层，再学习OpenGL；也有人推荐结合Sokol或SDL-GPU进行实践。整体氛围积极，认可度高。",
+      "detailed_summary": "LearnOpenGL.com 提供了一套全面且深入的现代OpenGL教程，被广泛认为是图形编程的“圣经”级资源。社区对其高度评价，认为它是初学者学习渲染的最佳起点。 该资源帮助无数开发者从零开始理解现代图形编程，弥补了理论与实践之间的鸿沟。对于游戏开发、仿真和可视化领域的从业者来说，它是不可或缺的学习材料。 教程内容涵盖了从基础管线到高级效果（如PBR、阴影）的完整知识体系，所有示例代码均可直接运行。虽然OpenGL本身被视为“略过时”的API，但其核心渲染概念仍是跨平台学习的基石。",
+      "background": "OpenGL（开放图形库）是一个跨平台的图形API，用于渲染2D和3D矢量图形。现代OpenGL（3.3+）采用可编程着色器管线，与旧版固定管线有显著不同。LearnOpenGL.com由Joey de Vries创建，是一个完全免费、持续更新的在线教程，被全球开发者推荐为入门首选。",
+      "community_discussion": "社区普遍将其视为“图形编程圣经”，认为即使API略旧，学习渲染原理才是核心。有评论建议先写软件渲染器理解底层，再学习OpenGL；也有人推荐结合Sokol或SDL-GPU进行实践。整体氛围积极，认可度高。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Highly valuable resource widely regarded as the go-to tutorial for modern OpenGL. Community discussion reinforces its importance with strong endorsements and constructive suggestions for further learning. High engagement (167 points, 94 comments) indicates broad community validation.",
+    "ai_summary": "A comprehensive and highly recommended tutorial resource for learning modern OpenGL.",
+    "ai_tags": [
+      "OpenGL",
+      "graphics programming",
+      "tutorial",
+      "computer graphics",
+      "learning resources"
+    ]
+  },
+  {
+    "id": "hackernews:story:49024643",
+    "source_type": "hackernews",
+    "title": "The arguments against open source AI are bad",
+    "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+    "content": "\n--- Top Comments ---\n\n[petcat]: This is not &quot;open source&quot; AI. Photoshop source code + OSI license = open source Photoshop binary = open weight Photoshop SAAS web app = closed model like GPT, Opus&#x2F;Fable etc. There is nothing &quot;open source&quot; about the Chinese models in question.  All they&#x27;re doing is allowing you to run their binary yourself instead of through their API. If you want actual open source then you would need to look at like OLMo 3  https:&#x2F;&#x2F;allenai.org&#x2F;\n\n[nater5000]: &gt;Much of the angst around China&#x27;s models centers on &quot;losing the AI race&quot;. But what&#x27;s the goal of this race? Is it to develop the best model? To sell the most tokens? To destroy humanity first? Some people would say it is reaching some sort of singularity. Even if you don&#x27;t buy into a more sci-fi interpretation of this, there are pretty grounded arguments one could make that there is some sort of &quot;goal&quot; in AI development that, if realized, would effectivel...\n\n[valicord]: OpenAI exec scaremongering about &quot;A nonliving, invisible, dangerous, and infinitely self- replicating agent escaped from a Chinese lab&quot; mere 4 days before  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48997548  is hilarious\n\n[MostlyStable]: Just to add on to other comments: reasonable people can disagree about the degree of safety concern with near to medium term AI. But to not address the arguments at all is, in my opinion, a serious mark against the value of this article.\n\n[QuadmasterXLII]: “you can not stop X” is a shitty lazy stupid argument for “X is not bad.” No comment  on the rest of the article.",
+    "author": "jjfoooo4",
+    "published_at": "2026-07-23T16:49:57Z",
+    "fetched_at": "2026-07-23T23:53:54.432575Z",
+    "metadata": {
+      "score": 181,
+      "descendants": 131,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49024643",
+      "comment_count": 5,
+      "title_zh": "反开源AI的论据站不住脚",
+      "detailed_summary_zh": "一篇博客文章系统地反驳了反对开源AI的常见论点，特别针对中国AI模型（如Qwen、DeepSeek）的批评，认为这些论据缺乏实质内容且带有偏见。 该文章引发了社区对开源AI定义、安全风险以及地缘政治竞争的激烈讨论，反映了AI领域开放与封闭路径之间的持续分歧，对政策制定者和开发者均有重要参考价值。 文章指出，许多批评者混淆了“开放权重”与“真正开源”的概念；实际上，中国模型如Qwen部分采用Apache 2.0许可，但并非所有模型都符合OSI开源定义，且训练数据通常不公开。",
+      "background_zh": "开源AI通常指模型权重和代码在允许自由使用、修改和再分发的许可下发布。中国公司如阿里巴巴（Qwen）和深度求索（DeepSeek）发布了大量开放权重的模型，但许可类型多样，从完全开源（Apache 2.0）到仅开放权重的自定义许可不等。美国对中国AI发展的担忧部分源于地缘政治竞争和潜在安全风险。",
+      "community_discussion_zh": "评论中有人赞同文章观点，认为对开源AI的恐惧被夸大；但也有不少批评者指出文章未重视安全风险，并强调“开放权重”不等于“开源”，真正的开源应如Allen AI的OLMo模型那样完全透明。整体讨论多元，但缺乏共识。",
+      "sources": [
+        {
+          "url": "https://opensourceaimodels.net/licenses",
+          "title": "Open-source AI model license comparison · Open Source AI Models"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Qwen",
+          "title": "Qwen - Wikipedia"
+        },
+        {
+          "url": "https://platform.deepseek.com/",
+          "title": "Join DeepSeek API platform to access our AI models , developer..."
+        }
+      ],
+      "detailed_summary": "一篇博客文章系统地反驳了反对开源AI的常见论点，特别针对中国AI模型（如Qwen、DeepSeek）的批评，认为这些论据缺乏实质内容且带有偏见。 该文章引发了社区对开源AI定义、安全风险以及地缘政治竞争的激烈讨论，反映了AI领域开放与封闭路径之间的持续分歧，对政策制定者和开发者均有重要参考价值。 文章指出，许多批评者混淆了“开放权重”与“真正开源”的概念；实际上，中国模型如Qwen部分采用Apache 2.0许可，但并非所有模型都符合OSI开源定义，且训练数据通常不公开。",
+      "background": "开源AI通常指模型权重和代码在允许自由使用、修改和再分发的许可下发布。中国公司如阿里巴巴（Qwen）和深度求索（DeepSeek）发布了大量开放权重的模型，但许可类型多样，从完全开源（Apache 2.0）到仅开放权重的自定义许可不等。美国对中国AI发展的担忧部分源于地缘政治竞争和潜在安全风险。",
+      "community_discussion": "评论中有人赞同文章观点，认为对开源AI的恐惧被夸大；但也有不少批评者指出文章未重视安全风险，并强调“开放权重”不等于“开源”，真正的开源应如Allen AI的OLMo模型那样完全透明。整体讨论多元，但缺乏共识。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High engagement (181 points, 131 comments) with substantive debate on open source AI definitions, safety, and geopolitics. The article addresses current controversies, and comments provide nuanced counterpoints, raising the value of the discussion.",
+    "ai_summary": "A blog post refuting common arguments against open source AI, particularly focusing on Chinese models, with community discussion debating definitions and safety concerns.",
+    "ai_tags": [
+      "open source AI",
+      "AI safety",
+      "geopolitics",
+      "deep learning",
+      "policy"
+    ]
+  },
+  {
+    "id": "hackernews:story:49022137",
+    "source_type": "hackernews",
+    "title": "Fields Medals 2026",
+    "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+    "content": "\n--- Top Comments ---\n\n[siva7]: &quot;harmonic analysis and geometric measure theory, including applications of multiscale and decoupling techniques to the local smoothing conjecture for the planar wave equation, and major advances in Fourier restriction, Falconer distance sets, Furstenberg sets in the plane, and the Kakeya problem in three dimensions.&quot; I&#x27;m not sure there is another profession in the world where it&#x27;s impossible to explain to a layman on what the winners of their most prestigious award have wo...\n\n[rahimnathwani]: The winners were inadvertently announced early:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48905091\n\n[hackandthink]: Scary stuff from one of the winners: &quot;A Taxonomy of Omnicidal Futures Involving Artificial Intelligence&quot; (Jacob Tsimerman, Andrew Critch)  https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2507.09369\n\n[mkagenius]: One was IMO gold medal winner as well.\n\n[rvz]: Well deserved. Congratulations to them!\n\n--- From rss ---\n<p>Nature, Published online: 23 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02169-1\">doi:10.1038/d41586-026-02169-1</a></p>Two of the four are the first Chinese-born winners of the prize since 1982.",
+    "author": "nill0",
+    "published_at": "2026-07-23T14:23:51Z",
+    "fetched_at": "2026-07-23T23:53:54.432612Z",
+    "metadata": {
+      "score": 126,
+      "descendants": 58,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49022137",
+      "comment_count": 5,
+      "title_zh": "2026年菲尔兹奖揭晓，四位数学家获殊荣",
+      "detailed_summary_zh": "2026年菲尔兹奖获奖者公布，授予四位数学家，以表彰他们在调和分析、几何测度论、傅里叶限制、Falconer距离集、Furstenberg集以及Kakeya问题等领域的突破性贡献。 菲尔兹奖是数学界最高荣誉，此次颁奖尤其引人注目：两位华裔数学家自1982年以来首次获奖，同时一位获奖者还共同撰写了关于AI可能带来毁灭性未来的论文，引发广泛讨论。 获奖者的研究工作涉及局部平滑猜想、多尺度与解耦技术、以及三维Kakeya问题；颁奖消息曾因意外提前泄露；此外，其中一位获奖者（Jacob Tsimerman）与Andrew Critch合著了《AI引发的毁灭性未来分类学》论文。",
+      "background_zh": "调和分析是研究函数与信号分解为基本波动的数学分支，核心工具包括傅里叶变换和小波分析；几何测度论则利用测度理论研究欧几里得空间中集合的几何性质，可处理非光滑曲面。这两大领域为上述获奖成果提供了理论基石。",
+      "community_discussion_zh": "社区讨论热烈：有评论感慨数学最高奖项成果难以向大众解释；有评论提及奖项提前泄露事件；还有评论指出一位获奖者涉足AI风险研究，并引用其论文标题；此外，多位评论者对获奖者表示祝贺。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Harmonic_analysis",
+          "title": "Harmonic analysis"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Geometric_measure_theory",
+          "title": "Geometric measure theory - Wikipedia"
+        }
+      ],
+      "detailed_summary": "2026年菲尔兹奖获奖者公布，授予四位数学家，以表彰他们在调和分析、几何测度论、傅里叶限制、Falconer距离集、Furstenberg集以及Kakeya问题等领域的突破性贡献。 菲尔兹奖是数学界最高荣誉，此次颁奖尤其引人注目：两位华裔数学家自1982年以来首次获奖，同时一位获奖者还共同撰写了关于AI可能带来毁灭性未来的论文，引发广泛讨论。 获奖者的研究工作涉及局部平滑猜想、多尺度与解耦技术、以及三维Kakeya问题；颁奖消息曾因意外提前泄露；此外，其中一位获奖者（Jacob Tsimerman）与Andrew Critch合著了《AI引发的毁灭性未来分类学》论文。",
+      "background": "调和分析是研究函数与信号分解为基本波动的数学分支，核心工具包括傅里叶变换和小波分析；几何测度论则利用测度理论研究欧几里得空间中集合的几何性质，可处理非光滑曲面。这两大领域为上述获奖成果提供了理论基石。",
+      "community_discussion": "社区讨论热烈：有评论感慨数学最高奖项成果难以向大众解释；有评论提及奖项提前泄露事件；还有评论指出一位获奖者涉足AI风险研究，并引用其论文标题；此外，多位评论者对获奖者表示祝贺。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major award announcement with significant importance to mathematics community; strong community discussion (58 comments) including early leak and connections to AI research.",
+    "ai_summary": "Fields Medals 2026 winners announced, recognizing breakthroughs in harmonic analysis, geometric measure theory, and other areas.",
+    "ai_tags": [
+      "fields-medal",
+      "mathematics",
+      "awards",
+      "academic-research"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:924bc0d1fdf998b5",
+    "source_type": "rss",
+    "title": "I Inspected My Take-Home Interview Project. It Was a Whole Operation",
+    "url": "https://citizendot.github.io/articles/fake-job-interview-git-hook-malware/",
+    "content": "<p><a href=\"https://lobste.rs/s/5nhto6/i_inspected_my_take_home_interview\">Comments</a></p>",
+    "author": "citizendot.github.io via trousers",
+    "published_at": "2026-07-23T01:54:48Z",
+    "fetched_at": "2026-07-23T23:53:54.284349Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "入职编程测试项目被植入恶意软件",
+      "detailed_summary_zh": "作者发现其收到的“入职前编程测试”项目实际包含恶意代码，整个招聘流程疑似是一场针对求职者的攻击活动。该恶意软件伪装成正常的代码面试，意图窃取敏感数据。 此事件暴露了招聘流程中的严重安全漏洞，求职者可能在不知情的情况下将恶意代码带入公司环境，导致数据泄露或供应链感染。它提醒所有开发者在运行陌生人提供的代码时必须保持警惕。 恶意代码可能通过Git钩子或SVG文件隐藏，例如使用OTTERCOOKIE恶意软件变种。建议将面试项目隔离在虚拟机或容器中运行，并仔细检查脚本和图像文件。",
+      "background_zh": "Take-home interview（回家作业面试）是许多科技公司用来评估程序员技能的常见方式，但这也为攻击者提供了植入恶意代码的机会。Git钩子是Git版本控制中的自动脚本执行机制，可被滥用来运行恶意命令。近年来，已有多起利用伪造编程面试投递恶意软件的攻击事件。",
+      "sources": [
+        {
+          "url": "https://www.intelfusions.com/news/contagious-interview-svg-steganography-ottercookie-developers",
+          "title": "North Korean hackers hide malware in SVG flags to trap... | IntelFusions"
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/malware-take-home-assignment-denis-zhbankov-nnt3f",
+          "title": "Malware in a Take - Home Assignment"
+        },
+        {
+          "url": "https://trojan-killer.net/fake-coding-interviews-ottercookie-svg-malware/",
+          "title": "Fake Coding Interviews Hide OTTERCOOKIE in SVG Files"
+        }
+      ],
+      "detailed_summary": "作者发现其收到的“入职前编程测试”项目实际包含恶意代码，整个招聘流程疑似是一场针对求职者的攻击活动。该恶意软件伪装成正常的代码面试，意图窃取敏感数据。 此事件暴露了招聘流程中的严重安全漏洞，求职者可能在不知情的情况下将恶意代码带入公司环境，导致数据泄露或供应链感染。它提醒所有开发者在运行陌生人提供的代码时必须保持警惕。 恶意代码可能通过Git钩子或SVG文件隐藏，例如使用OTTERCOOKIE恶意软件变种。建议将面试项目隔离在虚拟机或容器中运行，并仔细检查脚本和图像文件。",
+      "background": "Take-home interview（回家作业面试）是许多科技公司用来评估程序员技能的常见方式，但这也为攻击者提供了植入恶意代码的机会。Git钩子是Git版本控制中的自动脚本执行机制，可被滥用来运行恶意命令。近年来，已有多起利用伪造编程面试投递恶意软件的攻击事件。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Discusses a significant security concern where a take-home interview project contained malware, highlighting risks in recruitment practices. The topic is highly relevant to software engineering and cybersecurity, and community comments likely add insightful discussion.",
+    "ai_summary": "Investigation reveals a take-home interview project was embedded with malware, exposing a security threat in hiring practices.",
+    "ai_tags": [
+      "security",
+      "malware",
+      "job interview",
+      "cybersecurity",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:04a84f055689f1a9",
+    "source_type": "rss",
+    "title": "Silent Replacement of Trusted macOS App Executables",
+    "url": "https://mysk.blog/2026/07/23/macos-overwrite-app-executables/",
+    "content": "<p><a href=\"https://lobste.rs/s/dxaogf/silent_replacement_trusted_macos_app\">Comments</a></p>",
+    "author": "mysk.blog via juri",
+    "published_at": "2026-07-23T13:37:15Z",
+    "fetched_at": "2026-07-23T23:53:54.284394Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "mac"
+      ],
+      "title_zh": "macOS应用可执行文件静默替换漏洞",
+      "detailed_summary_zh": "研究人员发现一种方法，可以在不需要管理员权限的情况下，静默替换macOS系统中受信任应用的可执行文件，从而绕过代码签名验证。 该漏洞使得恶意软件能够伪装成合法应用，严重影响macOS系统的安全性，可能导致用户数据泄露或系统被控制。 攻击可能利用macOS代码签名机制的缺陷或dylib劫持技术，具体细节在原始文章中描述，但需要进一步验证。",
+      "background_zh": "macOS通过代码签名确保应用来源可信，但历史上曾出现绕过漏洞。dylib劫持是一种利用动态库加载顺序加载恶意代码的技术，常被用于绕过安全检测。",
+      "sources": [
+        {
+          "url": "https://www.darkreading.com/vulnerabilities-threats/macos-bypass-flaw-lets-attackers-sign-malicious-code-as-apple",
+          "title": "MacOS Bypass Flaw Lets Attackers Sign Malicious Code as Apple"
+        },
+        {
+          "url": "https://www.cyberark.com/resources/threat-research-blog/a-deep-dive-into-penetration-testing-of-macos-applications-part-3",
+          "title": "A Deep Dive into Penetration Testing of macOS Applications (Part 3)"
+        }
+      ],
+      "detailed_summary": "研究人员发现一种方法，可以在不需要管理员权限的情况下，静默替换macOS系统中受信任应用的可执行文件，从而绕过代码签名验证。 该漏洞使得恶意软件能够伪装成合法应用，严重影响macOS系统的安全性，可能导致用户数据泄露或系统被控制。 攻击可能利用macOS代码签名机制的缺陷或dylib劫持技术，具体细节在原始文章中描述，但需要进一步验证。",
+      "background": "macOS通过代码签名确保应用来源可信，但历史上曾出现绕过漏洞。dylib劫持是一种利用动态库加载顺序加载恶意代码的技术，常被用于绕过安全检测。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value security vulnerability discovery affecting macOS trusted executables; potential for silent replacement indicates significant risk and technical depth. The lobste.rs discussion may provide valuable insights and validation.",
+    "ai_summary": "Describes a method for silently replacing trusted macOS app executables, posing a security threat.",
+    "ai_tags": [
+      "macOS",
+      "security",
+      "vulnerability",
+      "executables"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8feab9b4bd7923cd",
+    "source_type": "rss",
+    "title": "How MVCC and Transactions Work in RocksDB",
+    "url": "https://artem.krylysov.com/blog/2026/07/23/how-mvcc-and-transactions-work-in-rocksdb/",
+    "content": "<p><a href=\"https://lobste.rs/s/6kkxbx/how_mvcc_transactions_work_rocksdb\">Comments</a></p>",
+    "author": "artem.krylysov.com via eatonphil",
+    "published_at": "2026-07-23T16:14:57Z",
+    "fetched_at": "2026-07-23T23:53:54.284603Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "c++"
+      ],
+      "title_zh": "RocksDB中MVCC与事务实现深度解析",
+      "detailed_summary_zh": "该文章详细解释了RocksDB内部如何实现多版本并发控制（MVCC）和事务机制。 RocksDB作为广泛部署的嵌入式存储引擎，深入理解其MVCC和事务实现有助于系统工程师优化读写性能并确保数据一致性。 文章可能涉及RocksDB基于LSM-tree的版本存储、事务快照隔离及冲突检测等具体技术细节。",
+      "background_zh": "MVCC（多版本并发控制）是一种数据库技术，通过保留数据的多个版本来实现非阻塞读取，提高并发性能。RocksDB是Facebook开源的嵌入式键值存储引擎，基于LevelDB优化，专为高速存储设计，采用LSM-tree结构。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/RocksDB",
+          "title": "RocksDB"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Multiversion_concurrency_control",
+          "title": "Multiversion concurrency control - Wikipedia"
+        }
+      ],
+      "detailed_summary": "该文章详细解释了RocksDB内部如何实现多版本并发控制（MVCC）和事务机制。 RocksDB作为广泛部署的嵌入式存储引擎，深入理解其MVCC和事务实现有助于系统工程师优化读写性能并确保数据一致性。 文章可能涉及RocksDB基于LSM-tree的版本存储、事务快照隔离及冲突检测等具体技术细节。",
+      "background": "MVCC（多版本并发控制）是一种数据库技术，通过保留数据的多个版本来实现非阻塞读取，提高并发性能。RocksDB是Facebook开源的嵌入式键值存储引擎，基于LevelDB优化，专为高速存储设计，采用LSM-tree结构。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive on MVCC and transactions in RocksDB, a widely-used storage engine. The content explains internal mechanisms and is highly relevant for systems engineers and database practitioners. Community discussion (Lobste.rs) likely adds value.",
+    "ai_summary": "Explains how MVCC and transactions are implemented in RocksDB.",
+    "ai_tags": [
+      "RocksDB",
+      "MVCC",
+      "transactions",
+      "database internals"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:5309fb71a9b61d12",
+    "source_type": "rss",
+    "title": "Pip 26.2: –only-deps solves 16 years of app deployment hacks",
+    "url": "https://jamesoclaire.com/2026/07/23/pip-26-2-only-deps-solves-16-years-of-app-deployment-hacks/",
+    "content": "<p><a href=\"https://lobste.rs/s/wh1vv3/pip_26_2_only_deps_solves_16_years_app\">Comments</a></p>",
+    "author": "jamesoclaire.com via dominicm",
+    "published_at": "2026-07-23T05:50:21Z",
+    "fetched_at": "2026-07-23T23:53:54.284643Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "python"
+      ],
+      "title_zh": "Pip 26.2 引入 --only-deps 解决部署难题",
+      "detailed_summary_zh": "Pip 26.2 版本新增了 --only-deps 全局标志，允许用户仅安装项目的依赖项，而无需安装项目本身。该功能通过 PR #13895 实现，解决了长期以来的部署痛点。 这一功能解决了 16 年来 Python 应用部署中的常见 hack，简化了 Docker 镜像构建等场景下的依赖安装流程。它将提升 Python 包管理的一致性和效率，减少临时工作脚本的维护成本。 新标志可与 pip install 配合使用，例如 pip install --only-deps . 会安装 pyproject.toml 中声明的所有依赖，但跳过包本身的安装。该功能支持可选依赖组（如 extras）。",
+      "background_zh": "pip 是 Python 的官方包安装器。在依赖管理场景中，用户经常需要先安装依赖（如下载编译依赖）再安装项目本身，传统做法是安装后再卸载，或者使用 requirements.txt 等变通方法。--only-deps 提供了原生支持，消除了这些 hack。",
+      "sources": [
+        {
+          "url": "https://github.com/pypa/pip/issues/11440",
+          "title": "Add `--only-deps` (and `--only-build-deps`) option(s) · Issue #11440 · pypa/pip"
+        },
+        {
+          "url": "https://jamesoclaire.com/2026/07/23/pip-26-2-only-deps-solves-16-years-of-app-deployment-hacks/",
+          "title": "Pip 26.2: –only-deps solves 16 years of app deployment hacks – James O'Claire"
+        }
+      ],
+      "detailed_summary": "Pip 26.2 版本新增了 --only-deps 全局标志，允许用户仅安装项目的依赖项，而无需安装项目本身。该功能通过 PR #13895 实现，解决了长期以来的部署痛点。 这一功能解决了 16 年来 Python 应用部署中的常见 hack，简化了 Docker 镜像构建等场景下的依赖安装流程。它将提升 Python 包管理的一致性和效率，减少临时工作脚本的维护成本。 新标志可与 pip install 配合使用，例如 pip install --only-deps . 会安装 pyproject.toml 中声明的所有依赖，但跳过包本身的安装。该功能支持可选依赖组（如 extras）。",
+      "background": "pip 是 Python 的官方包安装器。在依赖管理场景中，用户经常需要先安装依赖（如下载编译依赖）再安装项目本身，传统做法是安装后再卸载，或者使用 requirements.txt 等变通方法。--only-deps 提供了原生支持，消除了这些 hack。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "New pip feature that addresses a long-standing deployment pain point, with potential to simplify Python app deployment workflows. Community discussion likely includes practical insights on adoption and impact.",
+    "ai_summary": "Pip 26.2 introduces --only-deps, a feature that elegantly resolves a 16-year-old app deployment hack by allowing installation of dependencies without the package itself.",
+    "ai_tags": [
+      "Python",
+      "pip",
+      "deployment",
+      "package-management",
+      "dependencies"
+    ]
+  },
+  {
+    "id": "hackernews:story:49028037",
+    "source_type": "hackernews",
+    "title": "Tell HN: Namecheap gave my account to an unverified third party",
+    "url": "https://news.ycombinator.com/item?id=49028037",
+    "content": "I’ve been a NameCheap customer for 13 years. I’ve also helped out an old college club paying for a .com they use (that is registered to me under my name, address, and phone number). During a recent leadership transition, the incoming club lead wanted to make changes to the DNS and didn’t know to contact me. They figured out the domain name was parked at NameCheap, so they initiated a password reset using the domain name. I got a password reset email and immediately filed a NameCheap support ticket saying “I did not initiate this”. They called me to verify I was the one who filed the ticket, and then followed up with a canned email with tips like check your anti-virus.<p>The incoming club leader was persistent though, and called NameCheap support. He convinced them the domain registered in my name and address really belonged to his club, and with no verification or validation whatsoever, NameCheap changed my password, and changed the email address associated with my account. All because someone simply asked nicely on a phone call.<p>Meanwhile in the background, someone advised the new club leader who I was and we were able to connect and get things transferred over. Ultimately I was happy to give them access or even ownership if they wanted (student club turnover being what it is, it’s likely a domain doesn’t get renewed and gets gobbled up by a squatter, which is why I was keeping it current for them).<p>But NameCheap had no way of knowing any of this. As far as NameCheap was aware, this was a personal account of mine. They demonstrated they were perfectly able to pick up a phone and call me (to verify my initial support ticket) but when someone calls them and says “but I really want access to that account” they don’t bother?<p>I’d hesitate to even call this social engineering. It’s clearly a massive vulnerability. I’ve already moved a dozen of my most critical domains out of NameCheap after seeing just how easy it is for a third party to completely take over a NameCheap account: just ask nicely.\n\n\n--- Top Comments ---\n\n[petecooper]: +1 for Porkbun. I use tld-list.com to shop around for registrars when I need a TLD that Porkbun don&#x27;t handle.\n\n[pilingual]: Namecheap has been owned by a private equity firm for several months now. It would be nice to have a nonprofit registrar so jumping every few years isn&#x27;t necessary.\n\n[Adachi91]: I moved from Namecheap 2 years ago when I had auto renew on but it did not auto-renew, which their system automatically turns your domain into an advertisement hell page. Transfer system was locked and I contacted them and told them to transfer it to my other registrar or I would file an ICANN complaint. I moved it to my main registrar (Hover) which while more expensive I haven&#x27;t a problem with them in the decades I&#x27;ve been with them. My original registrar shutdown sometime in the m...\n\n[geuis]: I&#x27;ve been a long, long term customer of Namecheap as well. Domain privacy protection is a feature that Namecheap provides for all valid domains. Its included by default at no extra cost. The poster didn&#x27;t indicate if they had this feature enabled or not for the domain. It would have prevented the college club person from even seeing their email address to initiate a password reset. This clearly isn&#x27;t an answer for NC&#x27;s customer support personnel and company policies. But I...\n\n[ryandrake]: This kind of story makes me wonder what&#x27;s the most popular&#x2F;valuable domain I can take control of simply by being convincing over the phone. Sounds tempting! I can&#x27;t even log in to most web sites anymore without doing a side-trip to my E-mail inbox, &quot;for enhanced security,&quot; but these clowns let you just take a domain by asking nicely!\n\n--- From hackernews ---\nI’ve been building Echo (<a href=\"https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;</a>), an experiment in making one AI system out of a pool of open-weight models rather than choosing a single model and using it for every task.<p>It started with a simple experiment. I took a group of models, including GLM-5.2, Kimi K2.7 and others, and ran them on the same evaluations. Then I measured what would happen if, for each problem, you somehow knew in advance which models would be useful and how their outputs should be combined.<p>That hypothetical system performed substantially better than any individual model in the pool. Of course, it is not something you can actually deploy because it relies on knowing which decisions were good after seeing the result. Echo is my attempt to recover some of that advantage without having that information in advance.<p>For each request, Echo decides how much computation to allocate, which models should participate, and how their work should be combined. Some prompts may only need a relatively small amount of inference, while others benefit from multiple models working on different parts of the problem.<p>One thing that surprised me while building it was how complementary the models are. A model that is clearly weaker overall can still be extremely useful on particular problems or as part of a combination.<p>On my first evaluation mix, Echo consistently performed better than the best individual model in its pool. It also reached roughly the same aggregate result as Fable, which I used as one of the stronger comparison systems, at around one third of the inference cost.<p>There are still some cases where Echo makes the wrong allocation or combination decision. I’m currently spending a lot of time understanding those failures, as well as testing whether the same approach holds up on coding and agentic tasks where measuring the quality of each decision becomes much harder.<p>I built a chat interface (echo.tracerml.ai) and an OpenAI-compatible API (<a href=\"https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;docs&#x2F;api\" rel=\"nofollow\">https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;docs&#x2F;api</a>) so the system can be tested outside the evaluation setup.<p>Here is a short&#x2F;high level video on how it works: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lJFJSvOdXhg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lJFJSvOdXhg</a><p>I wrote up the evaluation methodology, individual model results, costs and current limitations here: <a href=\"https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;eval\" rel=\"nofollow\">https:&#x2F;&#x2F;echo.tracerml.ai&#x2F;eval</a><p>I would love for you to try it! Especially if you hit any weird failure cases or places where the allocation looks unintuitive.\n\n\n--- Top Comments ---\n\n[qainsights]: Can&#x27;t sign up: `too many authentication attempts`\n\n[dluan]: So this is the dogpile.com of the askjeeves, alta vista, and lycos approach? Time is a flat circle?\n\n[cheema33]: &gt; Fable-level results at 1&#x2F;3 the cost I am guessing this is not targeting those of us on the heavily subsidized $200&#x2F;mo plans. Sure, these plans may be temporary, but none of us really know how temporary they are. Until then, 1&#x2F;3rd of the published API pricing is not very appealing.\n\n[islambaraka]: What signals does Echo use to decide which models should participate before it has seen their outputs?\n\n[raver1975]: I can&#x27;t sign up: too many authentication attempts",
+    "author": "Thrashed",
+    "published_at": "2026-07-23T21:05:29Z",
+    "fetched_at": "2026-07-23T23:53:54.432594Z",
+    "metadata": {
+      "score": 315,
+      "descendants": 113,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49028037",
+      "comment_count": 5,
+      "merged_sources": [
+        "hackernews"
+      ],
+      "title_zh": "Namecheap安全漏洞：客服未经验证移交账户",
+      "detailed_summary_zh": "一名用户报告称，Namecheap客服在未进行任何身份验证的情况下，仅凭一个第三方电话请求就更改了其账户密码和关联邮箱，导致账户被完全接管。 此事件暴露了域名注册商在账户恢复流程中的严重安全漏洞，可能被社交工程攻击利用，导致用户域名被劫持或数据泄露，影响所有Namecheap用户的信任。 受害者已提交工单并接到客服回电确认身份，但后续客服仍接受了第三方的声称，直接修改了账户凭证；Namecheap未使用双因素认证或额外验证步骤。",
+      "background_zh": "域名注册商是管理域名注册和DNS设置的服务商，账户安全性至关重要。社交工程是一种通过心理操纵获取信息或系统访问权限的攻击方式，常见于电话诈骗（vishing）。域名劫持可能导致网站无法访问、数据泄露或恶意重定向。",
+      "community_discussion_zh": "社区用户对Namecheap的安全措施表示强烈批评，并推荐Porkbun、Hover等替代注册商；有用户指出Namecheap已被私募股权收购后服务质量下降；也有人建议启用域名隐私保护（WHOIS隐私）来防止公开暴露注册信息。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Social_engineering_attack",
+          "title": "Social engineering attack"
+        },
+        {
+          "url": "https://www.icann.org/en/blogs/details/documentation-is-key-to-recovering-hijacked-domain-names-14-4-2016-en",
+          "title": "Documentation is Key to Recovering Hijacked Domain Names"
+        },
+        {
+          "url": "https://www.namesilo.com/blog/en/domain-security/inside-a-domain-hijack-attempt-how-attackers-exploit-registrar-gaps-and-how-to-stop-them",
+          "title": "Domain Hijack Attempt: How Attackers Exploit Registrar Gaps? |"
+        }
+      ],
+      "detailed_summary": "一名用户报告称，Namecheap客服在未进行任何身份验证的情况下，仅凭一个第三方电话请求就更改了其账户密码和关联邮箱，导致账户被完全接管。 此事件暴露了域名注册商在账户恢复流程中的严重安全漏洞，可能被社交工程攻击利用，导致用户域名被劫持或数据泄露，影响所有Namecheap用户的信任。 受害者已提交工单并接到客服回电确认身份，但后续客服仍接受了第三方的声称，直接修改了账户凭证；Namecheap未使用双因素认证或额外验证步骤。",
+      "background": "域名注册商是管理域名注册和DNS设置的服务商，账户安全性至关重要。社交工程是一种通过心理操纵获取信息或系统访问权限的攻击方式，常见于电话诈骗（vishing）。域名劫持可能导致网站无法访问、数据泄露或恶意重定向。",
+      "community_discussion": "社区用户对Namecheap的安全措施表示强烈批评，并推荐Porkbun、Hover等替代注册商；有用户指出Namecheap已被私募股权收购后服务质量下降；也有人建议启用域名隐私保护（WHOIS隐私）来防止公开暴露注册信息。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important security warning about a major domain registrar's support vulnerability, with high community engagement (315 points, 113 comments) providing additional context and discussion of alternatives.",
+    "ai_summary": "Namecheap's support team gave domain account access to an unverified third party, exposing a serious security flaw.",
+    "ai_tags": [
+      "security",
+      "namecheap",
+      "domain registrar",
+      "account takeover",
+      "trust"
+    ]
+  },
+  {
+    "id": "hackernews:story:49024691",
+    "source_type": "hackernews",
+    "title": "What happened to TheNumbers.com",
+    "url": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+    "content": "\n--- Top Comments ---\n\n[primitivesuave]: A couple years ago, I was running a website which allowed the public to view all the US government handouts to small businesses during the COVID-19 pandemic. It also tracked all the fraudulent loans being prosecuted by the DOJ, and allowed anyone to run structured queries over the public dataset. There was a &quot;donate&quot; button which took in ~$2k in donations over the lifetime of the site, and you could download the entire underlying dataset (around 10 GB uncompressed) for free directly...\n\n[ethagnawl]: At the risk of oversimplifying things from a distance, this site -- especially the free, public-facing part of it -- seems like it would be an ideal candidate for a rewrite using static site generator&#x2F;framework. That, coupled with a bot-aware CDN should keep them online at a reasonable cost for many years to come. Otherwise, I&#x27;m very curious to know more about their old and new architecture and what sorts of mitigation&#x2F;scaling strategies they&#x27;ve started using to keep the s...\n\n[abetusk]: I think people are missing one of the points of the article. It&#x27;s not just that agents are hammering the site, it&#x27;s that there might be lurking vulnerabilities that allow malicious usage, which is why it went down, then came back up with a fraction of the data and a reduced design. The article says (speculates?) that malicious users are trying to get privileged access for an edge in prediction market betting. From the article: &gt; If you could see The Numbers data before everyone e...\n\n[podgietaru]: &quot;One Reddit theory even suggested it was a deliberate rug pull designed to cripple the free site to push people towards paid products.&quot; I know this isn&#x27;t really the point of the article, but I&#x27;ve been thinking about this a lot. I wonder if we&#x27;re going to see more resources go this way. I used to publish little doo-dads as opensource software. Not because it was something that was legitimately ground breaking or anything (it absolutely wasn&#x27;t) but because I had a ...\n\n[gajus]: What a throwback. Back in 2015 I have started Applaudience, which at the time was the only provider of real-time cinema ticket sales data. I still remember comparing our numbers against TheNumbers.com as part of calibration. I have since moved on to other businesses, but this remains one of my favorite pieces of technology that I have developed. Would love to bring it back one day.",
+    "author": "nickthegreek",
+    "published_at": "2026-07-23T16:53:33Z",
+    "fetched_at": "2026-07-23T23:53:54.432324Z",
+    "metadata": {
+      "score": 266,
+      "descendants": 117,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49024691",
+      "comment_count": 5,
+      "title_zh": "TheNumbers.com 遭恶意爬虫攻击被迫精简",
+      "detailed_summary_zh": "分析文章指出，TheNumbers.com 因遭到恶意爬虫的持续抓取，导致服务器不堪重负而下线；重新上线后，网站大幅减少了免费数据并简化了设计。 此事凸显了小型数据网站面对自动化攻击时的脆弱性，并暗示恶意爬取可能用于预测市场套利，对数据所有者和用户都构成风险。 文章推测，攻击者可能利用安全漏洞获取特权访问，以便在预测市场（如Polymarket）中提前获得数据优势。网站运营者被迫大幅削减免费数据以降低服务器负载。",
+      "background_zh": "网络爬虫是自动抓取网站内容的程序，恶意爬虫会未经授权大规模抓取数据，可能导致服务器过载或数据被盗。预测市场是通过交易合约来预测事件结果的平台，数据若提前泄露可能被用于不正当套利。",
+      "community_discussion_zh": "社区评论指出，问题不仅是爬虫流量，更在于可能存在安全漏洞导致恶意访问；也有评论建议改用静态站点生成器和CDN来缓解攻击；还有人猜测是运营者故意减少免费数据以推动付费产品。",
+      "sources": [
+        {
+          "url": "https://www.cequence.ai/blog/bot-management/the-danger-of-web-scraping-and-how-to-prevent-it/",
+          "title": "How to Prevent Web Scraping Attacks and Block Malicious Bots"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Prediction_market",
+          "title": "Prediction market"
+        }
+      ],
+      "detailed_summary": "分析文章指出，TheNumbers.com 因遭到恶意爬虫的持续抓取，导致服务器不堪重负而下线；重新上线后，网站大幅减少了免费数据并简化了设计。 此事凸显了小型数据网站面对自动化攻击时的脆弱性，并暗示恶意爬取可能用于预测市场套利，对数据所有者和用户都构成风险。 文章推测，攻击者可能利用安全漏洞获取特权访问，以便在预测市场（如Polymarket）中提前获得数据优势。网站运营者被迫大幅削减免费数据以降低服务器负载。",
+      "background": "网络爬虫是自动抓取网站内容的程序，恶意爬虫会未经授权大规模抓取数据，可能导致服务器过载或数据被盗。预测市场是通过交易合约来预测事件结果的平台，数据若提前泄露可能被用于不正当套利。",
+      "community_discussion": "社区评论指出，问题不仅是爬虫流量，更在于可能存在安全漏洞导致恶意访问；也有评论建议改用静态站点生成器和CDN来缓解攻击；还有人猜测是运营者故意减少免费数据以推动付费产品。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Discusses important web security and scalability issues with real-world implications; the high engagement and thoughtful community comments add to the value.",
+    "ai_summary": "An analysis of the takedown of TheNumbers.com due to malicious scraping and potential security vulnerabilities.",
+    "ai_tags": [
+      "web scraping",
+      "security",
+      "infrastructure",
+      "prediction markets",
+      "data"
+    ]
+  },
+  {
+    "id": "hackernews:story:49025984",
+    "source_type": "hackernews",
+    "title": "Building on ATProto",
+    "url": "https://lukekanies.com/writing/building-on-atproto/",
+    "content": "\n--- Top Comments ---\n\n[pfraze]: Luke&#x27;s feedback on the permissioned data proposal is pretty interesting. The current proposal has a kind of locational element to permissions, where a record&#x27;s URI reflects the access control, and I can understand why that would be jarring. I&#x27;m talking with the team about whether we think that&#x27;s something that could change, and what a change like that would cost. We&#x27;re still in the collecting feedback phase so it&#x27;s good to hear how it hits people. Regarding his o...\n\n[MarceColl]: I&#x27;ve been building a board game community on ATProto. The idea revolves in trying to build the feeling of local clubs but online, instead of &quot;PLAY NOW&quot; being on the landing page (although you can play now if you want) it&#x27;s organized around clubs. I also wanted to move away from one game oriented community. I play Go and Chess and I would love clubs to be for mixed games. You can create leagues, or tournaments, etc. As an extension of that I&#x27;ve been building a small la...\n\n[ekosz]: Reading articles like this one, I do think people are trying to put a square peg (their applications) through a round hole (ATProto). The ATProto was designed around all data being public. You write public data to a user&#x27;s PDS and then any application can read that public data and do something with it. If all data was private (encrypted?) by default then that would defeat half of all of ATProto&#x27;s goals. Imagine someone starts startup A on-top of the ATProto. They raise some money, g...\n\n[arikrahman]: I switched from codeberg to tangled, and the transition couldn&#x27;t have been smoother. Being on the ATmosphere really helps with peace of mind.\n\n[vzaliva]: The intention is good. I like the reviews idea. Since the author has hit the limitations of ATProto, could ActivityPub be an answer?",
+    "author": "speckx",
+    "published_at": "2026-07-23T18:23:50Z",
+    "fetched_at": "2026-07-23T23:53:54.432379Z",
+    "metadata": {
+      "score": 117,
+      "descendants": 57,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49025984",
+      "comment_count": 5,
+      "title_zh": "ATProto应用构建：公共数据与权限需求的矛盾",
+      "detailed_summary_zh": "一篇博客文章和Hacker News讨论指出，在AT协议上构建应用时，其所有数据默认公开的设计与需要私密或权限数据的场景存在根本矛盾。 这揭示了去中心化社交协议设计中的核心权衡，可能影响开发者选择平台以及ATProto生态的未来发展方向。 Luke Kanies在文章中批评当前权限数据提案将访问控制编码到记录URI中，认为这破坏了设计一致性；社区成员pfraze回应称团队正在收集反馈。",
+      "background_zh": "AT Protocol（ATProto）是Bluesky社交网络的基础协议，采用联邦架构，所有数据默认公开存储于个人数据服务器（PDS）上，任何应用都可读取。这种设计旨在实现数据可移植性和互操作性，但难以支持需要细粒度权限的应用场景。",
+      "community_discussion_zh": "评论者ekosz认为许多应用试图将方形钉子（私有数据需求）放入圆孔（ATProto公开设计），并指出如果数据默认加密会破坏协议核心优势。另有人分享了在ATProto上构建桌游社区的成功体验，也有用户质疑是否应改用ActivityPub。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AT_Protocol",
+          "title": "AT Protocol - Wikipedia"
+        },
+        {
+          "url": "https://atproto.com/",
+          "title": "AT Protocol"
+        }
+      ],
+      "detailed_summary": "一篇博客文章和Hacker News讨论指出，在AT协议上构建应用时，其所有数据默认公开的设计与需要私密或权限数据的场景存在根本矛盾。 这揭示了去中心化社交协议设计中的核心权衡，可能影响开发者选择平台以及ATProto生态的未来发展方向。 Luke Kanies在文章中批评当前权限数据提案将访问控制编码到记录URI中，认为这破坏了设计一致性；社区成员pfraze回应称团队正在收集反馈。",
+      "background": "AT Protocol（ATProto）是Bluesky社交网络的基础协议，采用联邦架构，所有数据默认公开存储于个人数据服务器（PDS）上，任何应用都可读取。这种设计旨在实现数据可移植性和互操作性，但难以支持需要细粒度权限的应用场景。",
+      "community_discussion": "评论者ekosz认为许多应用试图将方形钉子（私有数据需求）放入圆孔（ATProto公开设计），并指出如果数据默认加密会破坏协议核心优势。另有人分享了在ATProto上构建桌游社区的成功体验，也有用户质疑是否应改用ActivityPub。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value technical discussion about ATProto design tradeoffs with substantive community comments providing diverse viewpoints on data permission and privacy challenges.",
+    "ai_summary": "A blog post and HN discussion about building applications on the AT Protocol, focusing on the tension between public-by-design data and the need for permissioned or private data.",
+    "ai_tags": [
+      "ATProto",
+      "decentralization",
+      "protocol design",
+      "privacy",
+      "social networks"
+    ]
+  },
+  {
+    "id": "hackernews:story:49022911",
+    "source_type": "hackernews",
+    "title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+    "url": "https://github.com/palmier-io/palmier-pro",
+    "content": "Hi HN, we are Marcos and Harrison, cofounders of Palmier (<a href=\"https:&#x2F;&#x2F;palmier.io\">https:&#x2F;&#x2F;palmier.io</a>). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos:<p>- Making some AI transitions: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hbM_-eR1GX4\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hbM_-eR1GX4</a><p>- Multicam editing with Codex: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=SjS2q2LT1q8\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=SjS2q2LT1q8</a><p>- Cutting long form clips into shorts: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=PR66eN2ouuQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=PR66eN2ouuQ</a><p>We built Palmier Pro as an internal tool when we were making AI launch videos for other startups. The main problem it solved in the beginning was the back-and-forth between AI generation platform and video editor. The iteration loop was awkward: AI videos → download → import to editor → edit → realize we need to change the AI video → repeat. So we built a minimal video editor where we could let Claude generate AI videos inside the editor.<p>As we gave more and more tools to the agent, we wanted to push to see what else agents can do in the video editing space. So today, your Claude&#x2F;Codex can:<p>- Manage projects inside Palmier Pro<p>- Import media from a public URL or filesystem to the project, and organize them in folders<p>- Search media (by embedding footages using SigLIP2 running locally)<p>- Edit the timeline (tracks&#x2F;clips&#x2F;keyframes operations)<p>- Generate images, videos, sound effects, captions, music<p>- Export videos<p>There are two ways for LLMs to interact with the editor: by connecting to the local MCP server, or using the in-app chat. Both use the same tools and APIs exposed by the video editor.<p>We have seen people using MCP server to connect to their own workflow to automate massive-scale video editing (e.g. given this same podcast style, replicate it with other footages that I have). We have also seen people using the in-app chat where it lives closer to the editor UI, with lower latency for faster iteration.<p>We don&#x27;t believe that AI is going to replace human creativity (nor should it), but where it can really help is in automating the gruntwork in video editing. Most work in the editing workflow is more mechanical than creative. Our vision is to build a video editor where AI can enable more individuals to create.<p>Throughout our experiments, AI is not very good at creative editing, but given a pattern (transcription-based, beat-based), it can do a decent job at rough cut.<p>We built Palmier Pro in Swift as an MVP because we wanted better performance and minimal dependencies (no nodejs&#x2F;webview), with some native macOS APIs like SpeechAnalyzer and CoreML for us to run some models locally. We use SpeechAnalyzer for local transcriber, SigLip2 to embed video frames, beat_this for beat detection, Silero VAD for silence detection, all running locally. The tradeoff is that we don&#x27;t support Linux or Windows at the moment.<p>Palmier Pro is open source and free to try out (macOS 26 only at the moment, though - we&#x27;ll support more platforms over time, but for now are focusing on iterating the core product).<p>No login required except for the AI generation features, which route requests to our backend. We are offering free credits on sign up so you can try out the AI generation as well.<p>We&#x27;d love to hear your feedback!\n\n\n--- Top Comments ---\n\n[Marciplan]: This looks great! Have you thought about dropping the &#x27;subscription&#x27;-part and &#x27;just&#x27; selling credits instead? Here&#x27;s my thinking as a SaaS founder: when I launch a product, I don&#x27;t need a video every month. So a monthly pricing makes me do this little calculation every time: &quot;do I need a video this month? nah. Then I&#x27;ll wait. I lose the early-bird price, but I still net out cheaper.&quot; And since there&#x27;s no yearly option, there&#x27;s nothing pul...\n\n[nsbk]: This is what I have been waiting for in order to process my massive action camera library, I will definitely give it a try! I will start with older standard GoPro videos, and hope that by the time I make it to the Insta360 videos the editor supports 360 video (unless it does already!)\n\n[misterchocolat]: I&#x27;ve been following Marcos&#x27;s youtube channel and it&#x27;s so great to see that they&#x27;ve  finally found their thing. Looks like an awesome product that people actually want. Well done.\n\n[mrkstu]: I assume using Swift means cross-platform support is tertiary at best? I have mostly Macs in my workflow so not an issue for me, but its good to have that plainly stated if so. Being able to edit a long video to pull out different speakers segments automatically or do automatic edits of speaker transitions would be great- I&#x27;ll give it a try and see what scenarios are best suited for our use cases...\n\n[didriksg]: Seems super convenient! I spent yesterday trying to edit a simple video for a project by hand and it was not a fun experience! Will check it out!",
+    "author": "harrisontin",
+    "published_at": "2026-07-23T15:11:37Z",
+    "fetched_at": "2026-07-23T23:53:54.432513Z",
+    "metadata": {
+      "score": 109,
+      "descendants": 17,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49022911",
+      "comment_count": 5,
+      "title_zh": "Palmier Pro：开源AI视频编辑器，集成MCP服务器",
+      "detailed_summary_zh": "Palmier Pro 是一款新发布的开源 macOS 视频编辑器，内置 AI 生成功能及本地 MCP 服务器，允许 AI 代理（如 Claude 或 Codex）直接操作项目、导入媒体、编辑时间线并生成视频内容。 它消除了传统视频编辑中 AI 生成与编辑之间的来回切换痛点，降低了内容创作的门槛，尤其适用于自动处理重复性编辑任务；同时作为开源项目，为开发者提供了可定制的 AI 视频编辑基础。 该编辑器使用 Swift 和原生 macOS API 构建，本地运行 SigLIP2 嵌入、Silero VAD 静音检测和 beat_this 节拍检测等模型；目前仅支持 macOS，AI 生成功能需要登录并可获得免费试用积分。",
+      "background_zh": "MCP（模型上下文协议）是由 Anthropic 推出的开放标准，允许 AI 应用与外部工具或数据源建立安全双向连接。Palmier Pro 将 MCP 服务器集成到视频编辑器中，使 AI 代理能直接调用编辑器的 API 执行复杂操作，如自动化多机位剪辑或批量生成短视频片段。",
+      "community_discussion_zh": "评论中用户对订阅定价表达了顾虑，建议改为纯按量付费模式；也有用户期待未来支持 360 视频编辑和跨平台；多位用户表示这个工具解决了他们的实际需求，并看好其自动剪辑能力。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+          "title": "Model Context Protocol - Wikipedia"
+        },
+        {
+          "url": "https://modelcontextprotocol.io/docs/learn/server-concepts",
+          "title": "Understanding MCP servers - Model Context Protocol"
+        },
+        {
+          "url": "https://www.anthropic.com/news/model-context-protocol",
+          "title": "Introducing the Model Context Protocol \\ Anthropic"
+        }
+      ],
+      "detailed_summary": "Palmier Pro 是一款新发布的开源 macOS 视频编辑器，内置 AI 生成功能及本地 MCP 服务器，允许 AI 代理（如 Claude 或 Codex）直接操作项目、导入媒体、编辑时间线并生成视频内容。 它消除了传统视频编辑中 AI 生成与编辑之间的来回切换痛点，降低了内容创作的门槛，尤其适用于自动处理重复性编辑任务；同时作为开源项目，为开发者提供了可定制的 AI 视频编辑基础。 该编辑器使用 Swift 和原生 macOS API 构建，本地运行 SigLIP2 嵌入、Silero VAD 静音检测和 beat_this 节拍检测等模型；目前仅支持 macOS，AI 生成功能需要登录并可获得免费试用积分。",
+      "background": "MCP（模型上下文协议）是由 Anthropic 推出的开放标准，允许 AI 应用与外部工具或数据源建立安全双向连接。Palmier Pro 将 MCP 服务器集成到视频编辑器中，使 AI 代理能直接调用编辑器的 API 执行复杂操作，如自动化多机位剪辑或批量生成短视频片段。",
+      "community_discussion": "评论中用户对订阅定价表达了顾虑，建议改为纯按量付费模式；也有用户期待未来支持 360 视频编辑和跨平台；多位用户表示这个工具解决了他们的实际需求，并看好其自动剪辑能力。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value open-source video editor with built-in AI features, novel integration of MCP server and AI generation. Positive community engagement with substantive discussion on pricing and features (e.g., 360 video support). Not groundbreaking but a significant practical tool for macOS users.",
+    "ai_summary": "An open-source macOS video editor integrating AI generation and an MCP server for agent connectivity.",
+    "ai_tags": [
+      "video editing",
+      "AI",
+      "open-source",
+      "macOS",
+      "tools"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8325004204ca07b2",
+    "source_type": "rss",
+    "title": "Everyone Should Know SIMD",
+    "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+    "content": "<p><a href=\"https://lobste.rs/s/gpqa52/everyone_should_know_simd\">Comments</a></p>",
+    "author": "mitchellh.com via seg6",
+    "published_at": "2026-07-23T15:33:26Z",
+    "fetched_at": "2026-07-23T23:53:54.284277Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance",
+        "zig"
+      ]
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Timely educational content from a respected author advocating for SIMD knowledge, a key optimization technique. The title suggests a comprehensive deep-dive, and the Lobste.rs discussion link implies community validation, though specifics are unavailable. Not groundbreaking but high value for engineers.",
+    "ai_summary": "An article arguing that all developers should learn about SIMD (Single Instruction, Multiple Data) for performance optimization.",
+    "ai_tags": [
+      "SIMD",
+      "performance",
+      "optimization",
+      "parallel computing"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:8d33b039fb13176a",
+    "source_type": "rss",
+    "title": "John C. Dvorak has died",
+    "url": "http://oldvcr.blogspot.com/2026/07/john-c-dvorak-has-died.html",
+    "content": "<p><a href=\"https://lobste.rs/s/ap3z0l/john_c_dvorak_has_died\">Comments</a></p>",
+    "author": "oldvcr.blogspot.com via raymii",
+    "published_at": "2026-07-23T02:09:50Z",
+    "fetched_at": "2026-07-23T23:53:54.284372Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "person"
+      ],
+      "title_zh": "科技专栏作家John C. Dvorak去世",
+      "detailed_summary_zh": "知名科技专栏作家和评论家John C. Dvorak于近日去世，这一消息在科技社区引起广泛关注。 John C. Dvorak是科技新闻界的标志性人物，他的去世标志着科技评论领域一个时代的结束，许多从业者和读者将缅怀他的独特见解。 具体的去世日期和原因尚未公开，但他的博客发布了讣告，诸多科技媒体和社区成员开始分享悼念文章。",
+      "background_zh": "John C. Dvorak自1980年代起活跃于科技新闻界，曾为多家知名杂志撰写专栏，并主持播客节目。他以尖锐、有时颇具争议的评论风格著称，对个人计算机和互联网的发展有深刻影响。",
+      "detailed_summary": "知名科技专栏作家和评论家John C. Dvorak于近日去世，这一消息在科技社区引起广泛关注。 John C. Dvorak是科技新闻界的标志性人物，他的去世标志着科技评论领域一个时代的结束，许多从业者和读者将缅怀他的独特见解。 具体的去世日期和原因尚未公开，但他的博客发布了讣告，诸多科技媒体和社区成员开始分享悼念文章。",
+      "background": "John C. Dvorak自1980年代起活跃于科技新闻界，曾为多家知名杂志撰写专栏，并主持播客节目。他以尖锐、有时颇具争议的评论风格著称，对个人计算机和互联网的发展有深刻影响。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "John C. Dvorak was a prominent and influential figure in tech journalism; his passing is significant for the tech community, and the linked comments likely include tributes and reflections, adding community value.",
+    "ai_summary": "Tech columnist and pundit John C. Dvorak has passed away.",
+    "ai_tags": [
+      "obituary",
+      "tech journalism",
+      "John C. Dvorak"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:4c61f91d88ba322a",
+    "source_type": "rss",
+    "title": "The PImpl idiom and the C++26 std::indirect type",
+    "url": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
+    "content": "<p><a href=\"https://lobste.rs/s/gtxmc4/pimpl_idiom_c_26_std_indirect_type\">Comments</a></p>",
+    "author": "mariusbancila.ro via raymii",
+    "published_at": "2026-07-23T16:58:59Z",
+    "fetched_at": "2026-07-23T23:53:54.284414Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "c++"
+      ],
+      "title_zh": "C++26 std::indirect 简化 PImpl 惯用法",
+      "detailed_summary_zh": "C++26 引入了 std::indirect 类型，这是一种拥有值语义的堆分配包装器，可用于更简洁地实现 PImpl 惯用法。 传统 PImpl 实现依赖指针（如 std::unique_ptr），存在复制语义和 const 传播问题。std::indirect 提供了真正的值语义，能够正确管理对象生命周期并避免手动编写特殊成员函数，对大型 C++ 项目的封装和编译防火墙有重要意义。 std::indirect 对象在移动后变为无值（valueless）状态，其复制操作会深拷贝堆上对象，从而保证值语义的正确性。编译器会根据 std::indirect 自动生成正确的默认成员函数，减少样板代码。",
+      "background_zh": "PImpl（Pointer to Implementation）是 C++ 中常用的设计模式，将类的实现细节隐藏在私有指针后，以减少编译依赖。传统上常使用 std::unique_ptr 或原始指针实现，但需要手动编写复制和移动操作，且 const 传播不完美。std::indirect 是 C++26 标准库新增的类模板，它封装堆分配的对象并提供值语义，可自动处理复制、移动和析构。",
+      "sources": [
+        {
+          "url": "https://jiixyj.github.io/blog/c++/2025/05/27/value-of-std-indirect",
+          "title": "What Is the Value of std::indirect"
+        },
+        {
+          "url": "https://en.cppreference.com/cpp/memory/indirect",
+          "title": "std::indirect - cppreference.com"
+        }
+      ],
+      "detailed_summary": "C++26 引入了 std::indirect 类型，这是一种拥有值语义的堆分配包装器，可用于更简洁地实现 PImpl 惯用法。 传统 PImpl 实现依赖指针（如 std::unique_ptr），存在复制语义和 const 传播问题。std::indirect 提供了真正的值语义，能够正确管理对象生命周期并避免手动编写特殊成员函数，对大型 C++ 项目的封装和编译防火墙有重要意义。 std::indirect 对象在移动后变为无值（valueless）状态，其复制操作会深拷贝堆上对象，从而保证值语义的正确性。编译器会根据 std::indirect 自动生成正确的默认成员函数，减少样板代码。",
+      "background": "PImpl（Pointer to Implementation）是 C++ 中常用的设计模式，将类的实现细节隐藏在私有指针后，以减少编译依赖。传统上常使用 std::unique_ptr 或原始指针实现，但需要手动编写复制和移动操作，且 const 传播不完美。std::indirect 是 C++26 标准库新增的类模板，它封装堆分配的对象并提供值语义，可自动处理复制、移动和析构。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value technical article on a concrete C++26 feature (std::indirect) that impacts design patterns like PImpl. No discussion provided, but the topic is relevant and timely for C++ developers.",
+    "ai_summary": "Explores how the upcoming C++26 std::indirect type can simplify and improve the PImpl idiom.",
+    "ai_tags": [
+      "C++",
+      "C++26",
+      "PImpl idiom",
+      "std::indirect",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d559665e18ee9992",
+    "source_type": "rss",
+    "title": "Carbon Memory Safety first deep dive",
+    "url": "https://drive.google.com/file/d/1tQlzpnbWZfn2WtTFMoJgF93QteByBBwm/view",
+    "content": "<p><a href=\"https://lobste.rs/s/rdg7lw/carbon_memory_safety_first_deep_dive\">Comments</a></p>",
+    "author": "drive.google.com via nikola",
+    "published_at": "2026-07-23T10:57:35Z",
+    "fetched_at": "2026-07-23T23:53:54.284669Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "video",
+        "plt"
+      ],
+      "title_zh": "Carbon语言内存安全深度解析",
+      "detailed_summary_zh": "近日发布了一篇名为《Carbon Memory Safety first deep dive》的文章，首次深入探讨了Google Carbon语言在内存安全方面的特性和设计决策。 内存安全是系统编程语言的核心挑战，Carbon旨在成为C++的继任者，其内存安全设计对推动系统编程的安全性和可靠性具有重要意义，可能影响未来编程语言的演进方向。 该文章以深度分析著称，详细介绍了Carbon语言如何通过设计实现内存安全，但内容托管在Google Drive上，限制了直接评估。",
+      "background_zh": "Carbon是Google于2022年发布的开源实验性编程语言，专注于与C++的互操作性，旨在解决C++演进缓慢的问题，同时保持高性能。内存安全是指程序避免内存相关错误（如缓冲区溢出、空指针解引用）的能力，是系统编程的关键考量。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Carbon_(programming_language)",
+          "title": "Carbon (programming language) - Wikipedia"
+        },
+        {
+          "url": "https://thenewstack.io/google-launches-carbon-an-experimental-replacement-for-c/",
+          "title": "Google Launches Carbon, an Experimental Replacement for C++ - The New Stack"
+        }
+      ],
+      "detailed_summary": "近日发布了一篇名为《Carbon Memory Safety first deep dive》的文章，首次深入探讨了Google Carbon语言在内存安全方面的特性和设计决策。 内存安全是系统编程语言的核心挑战，Carbon旨在成为C++的继任者，其内存安全设计对推动系统编程的安全性和可靠性具有重要意义，可能影响未来编程语言的演进方向。 该文章以深度分析著称，详细介绍了Carbon语言如何通过设计实现内存安全，但内容托管在Google Drive上，限制了直接评估。",
+      "background": "Carbon是Google于2022年发布的开源实验性编程语言，专注于与C++的互操作性，旨在解决C++演进缓慢的问题，同时保持高性能。内存安全是指程序避免内存相关错误（如缓冲区溢出、空指针解引用）的能力，是系统编程的关键考量。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value: In-depth analysis of memory safety in Carbon, a prominent new systems language from Google. The lobste.rs comments indicate community engagement, though the content is behind a Google Drive link, limiting direct assessment.",
+    "ai_summary": "A comprehensive exploration of memory safety features and design decisions in Google's Carbon language.",
+    "ai_tags": [
+      "Carbon",
+      "Memory Safety",
+      "Systems Programming",
+      "Language Design"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b2a32269cfd5ed46",
+    "source_type": "rss",
+    "title": "Tracking TCP lifespans using eBPF (2016)",
+    "url": "https://www.brendangregg.com/blog/2016-11-30/linux-bcc-tcplife.html",
+    "content": "<p><a href=\"https://lobste.rs/s/d1kkzy/tracking_tcp_lifespans_using_ebpf_2016\">Comments</a></p>",
+    "author": "brendangregg.com via typesanitizer",
+    "published_at": "2026-07-23T21:34:18Z",
+    "fetched_at": "2026-07-23T23:53:54.284688Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "networking"
+      ],
+      "title_zh": "Brendan Gregg 展示用 eBPF 追踪 TCP 连接生命周期",
+      "detailed_summary_zh": "Brendan Gregg 于 2016 年发布博客，介绍了基于 eBPF 和 BCC 的新工具 tcplife，该工具能够追踪 TCP 会话的打开和关闭事件，并输出每个会话的生命周期时长等详细信息。 tcplife 让系统管理员和性能工程师无需修改内核代码即可动态追踪 TCP 连接生命周期，有助于诊断网络性能问题和优化服务，展示了 eBPF 在 Linux 网络监控中的实际价值。 tcplife 通过内核动态追踪（kprobes）和 eBPF 实现，可捕获 TCP 连接的建立与关闭，输出 PID、端口、数据量、时长等信息，支持按 PID 或端口过滤，并能显示时间戳和吞吐量统计。",
+      "background_zh": "eBPF（扩展伯克利包过滤器）是 Linux 内核的一项技术，允许安全高效地运行用户定义的程序；BCC 是基于 eBPF 的工具集，方便创建追踪程序。tcplife 是 BCC 工具之一，专门用于追踪 TCP 会话生命周期。",
+      "sources": [
+        {
+          "url": "https://www.brendangregg.com/blog/2016-11-30/linux-bcc-tcplife.html",
+          "title": "Linux bcc/BPF tcplife: TCP Lifespans"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/EBPF",
+          "title": "EBPF"
+        },
+        {
+          "url": "https://manpages.debian.org/testing/bpfcc-tools/tcplife-bpfcc.8.en.html",
+          "title": "tcplife-bpfcc(8) — bpfcc-tools — Debian testing — Debian Manpages"
+        }
+      ],
+      "detailed_summary": "Brendan Gregg 于 2016 年发布博客，介绍了基于 eBPF 和 BCC 的新工具 tcplife，该工具能够追踪 TCP 会话的打开和关闭事件，并输出每个会话的生命周期时长等详细信息。 tcplife 让系统管理员和性能工程师无需修改内核代码即可动态追踪 TCP 连接生命周期，有助于诊断网络性能问题和优化服务，展示了 eBPF 在 Linux 网络监控中的实际价值。 tcplife 通过内核动态追踪（kprobes）和 eBPF 实现，可捕获 TCP 连接的建立与关闭，输出 PID、端口、数据量、时长等信息，支持按 PID 或端口过滤，并能显示时间戳和吞吐量统计。",
+      "background": "eBPF（扩展伯克利包过滤器）是 Linux 内核的一项技术，允许安全高效地运行用户定义的程序；BCC 是基于 eBPF 的工具集，方便创建追踪程序。tcplife 是 BCC 工具之一，专门用于追踪 TCP 会话生命周期。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Valuable technical deep-dive into eBPF for TCP tracking by a renowned expert. Though from 2016, the techniques remain relevant. Discussion quality unknown from snippet.",
+    "ai_summary": "Brendan Gregg demonstrates using eBPF and BCC's tcplife tool to track TCP connection lifespans in Linux.",
+    "ai_tags": [
+      "eBPF",
+      "TCP",
+      "Linux performance",
+      "BCC",
+      "networking"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:02c2b37fc4be7f2e",
+    "source_type": "rss",
+    "title": "Could small-team science be dying out?",
+    "url": "https://www.nature.com/articles/d41586-026-02174-4",
+    "content": "<p>Nature, Published online: 23 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02174-4\">doi:10.1038/d41586-026-02174-4</a></p>The proportion of one- and two-author papers in the Nature Index is shrinking rapidly, as science done by big teams continues to surge.",
+    "author": "James Mitchell Crow",
+    "published_at": "2026-07-23T00:00:00Z",
+    "fetched_at": "2026-07-23T23:53:57.292429Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "小团队科学研究正在消亡？",
+      "detailed_summary_zh": "《自然》杂志报道称，在自然指数收录的论文中，单作者和双作者论文的比例正在迅速下降，而大型团队合作的研究持续激增。 这一趋势可能改变科研资助模式和学术职业路径，因为大型团队主导的科研可能挤压小团队的创新空间，影响科学多样性。 该分析基于自然指数数据，指出小型团队（一至两位作者）的论文占比正在快速萎缩，反映出科研合作日益大型化的结构性变化。",
+      "background_zh": "小团队科学通常指由少数研究人员组成的灵活研究单元，而自然指数是衡量高质量科研产出的重要指标。近年来，随着大型设施和跨学科项目的增多，由数十甚至上百位作者署名的大团队论文越来越普遍。",
+      "detailed_summary": "《自然》杂志报道称，在自然指数收录的论文中，单作者和双作者论文的比例正在迅速下降，而大型团队合作的研究持续激增。 这一趋势可能改变科研资助模式和学术职业路径，因为大型团队主导的科研可能挤压小团队的创新空间，影响科学多样性。 该分析基于自然指数数据，指出小型团队（一至两位作者）的论文占比正在快速萎缩，反映出科研合作日益大型化的结构性变化。",
+      "background": "小团队科学通常指由少数研究人员组成的灵活研究单元，而自然指数是衡量高质量科研产出的重要指标。近年来，随着大型设施和跨学科项目的增多，由数十甚至上百位作者署名的大团队论文越来越普遍。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value analysis of a significant trend in scientific publishing, well-sourced from Nature, with implications for research funding and collaboration. No community comments available.",
+    "ai_summary": "The article reports that small-team science is declining as large-team collaborations dominate publishing.",
+    "ai_tags": [
+      "science policy",
+      "research trends",
+      "collaboration",
+      "academia"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:2e9d8c002b655389",
+    "source_type": "rss",
+    "title": "Breathalyser can tell if you are burning fat from a single exhalation",
+    "url": "https://www.nature.com/articles/d41586-026-02295-w",
+    "content": "<p>Nature, Published online: 23 July 2026; <a href=\"https://www.nature.com/articles/d41586-026-02295-w\">doi:10.1038/d41586-026-02295-w</a></p>The compact device can measure when the body is in ketosis and could help people to manage weight loss.",
+    "author": "Mohana Basu",
+    "published_at": "2026-07-23T00:00:00Z",
+    "fetched_at": "2026-07-23T23:53:57.292505Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "新型呼气检测仪可单次呼气判断脂肪燃烧状态",
+      "detailed_summary_zh": "《自然》杂志于2026年7月23日发表了一项研究，研究人员开发出一种紧凑型呼气检测仪，能够通过单次呼气检测人体是否处于酮症状态。 该设备为非侵入性监测酮症提供了便捷手段，有望帮助人们更有效地管理体重和减肥进程，同时避免了传统血液或尿液检测的不便。 该检测仪通过测量呼气中的丙酮浓度来判断酮症水平，研究显示呼气丙酮与血液β-羟基丁酸（BHB）水平具有良好的相关性。",
+      "background_zh": "酮症是一种代谢状态，当身体燃烧脂肪而非碳水化合物供能时，会生成酮体（包括丙酮），丙酮可通过呼吸排出。目前已有商业化的酮体呼吸测试仪，但通常体积较大或精度有限。",
+      "sources": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835940/",
+          "title": "The Ketogenic Diet: Breath Acetone Sensing Technology - PMC"
+        }
+      ],
+      "detailed_summary": "《自然》杂志于2026年7月23日发表了一项研究，研究人员开发出一种紧凑型呼气检测仪，能够通过单次呼气检测人体是否处于酮症状态。 该设备为非侵入性监测酮症提供了便捷手段，有望帮助人们更有效地管理体重和减肥进程，同时避免了传统血液或尿液检测的不便。 该检测仪通过测量呼气中的丙酮浓度来判断酮症水平，研究显示呼气丙酮与血液β-羟基丁酸（BHB）水平具有良好的相关性。",
+      "background": "酮症是一种代谢状态，当身体燃烧脂肪而非碳水化合物供能时，会生成酮体（包括丙酮），丙酮可通过呼吸排出。目前已有商业化的酮体呼吸测试仪，但通常体积较大或精度有限。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Published in Nature, this describes a novel compact device for non-invasive ketosis detection, which is a significant development in health technology with potential practical applications.",
+    "ai_summary": "Researchers developed a compact breathalyser that can detect ketosis from a single exhalation, potentially aiding weight loss management.",
+    "ai_tags": [
+      "breathalyser",
+      "ketosis",
+      "health tech",
+      "sensors",
+      "weight loss"
+    ]
+  }
+]
