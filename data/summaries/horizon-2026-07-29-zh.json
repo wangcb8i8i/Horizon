@@ -1,0 +1,779 @@
+[
+  {
+    "id": "hackernews:story:49098510",
+    "source_type": "hackernews",
+    "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+    "url": "https://github.com/drumih/turbo-fieldfare",
+    "content": "Hi HN,<p>I built a specialized inference engine for running 4-bit Gemma 4 26B-A4B-IT on any M-series Mac using about 2 GB of RAM. It is called TurboFieldfare and is written in Swift and Metal.<p>I have always adored on-device AI. It feels like magic that you can run a powerful NN on your Mac or iPhone. So I wanted to push the limits a bit and run a model whose weights don’t fit in memory.<p>The model’s 4-bit quantized weights occupy roughly 14 GB, which makes running it with conventional inference tools almost impossible on an 8 GB or even 16 GB Mac once the OS, applications, and KV cache are included.<p>The trick is to keep the shared part of the model and the KV cache in RAM, then stream only the routed experts needed for each token from SSD. An SSD is way slower than RAM, so the runtime uses a small expert cache and bounded parallel `pread`. While those reads are in flight, the GPU runs the shared part of the layer.<p>I ran more than 100 experiments. Most didn’t work. A few got me here. The experiments are described in the GitHub repo.<p>It currently generates 5–6 tok&#x2F;s on an 8 GB M2 MacBook Air and 31–35 tok&#x2F;s on an M5 MacBook Pro.<p>I also added an experimental OpenAI-compatible local server. It supports streaming and tool calls, and reuses one prompt prefix from the KV cache.<p>Try it! The Mac app is easy to install. On the first run, it will download 15 GB of weights from Hugging Face. The model is surprisingly capable.<p>I would love any kind of feedback!\n\n\n--- Top Comments ---\n\n[giancarlostoro]: Nice, I think this is the second time I see this here on HN, I always wondered why we need to shove the entire model into memory, I don&#x27;t care who King Charles is every single time. It always felt as though we already figured out how to break up large files and parse them efficiently with very little memory. Frontier AI feels like its full of people who are brilliant at making models, but when it comes to scale and practicality, they just leave it to whoever sets up infrastructure to wor...\n\n[xenonite]: With my M1 MBA, I am still on macOS 15. To compile it, just remove the two lines with     opts.languageVersion = .version4_0\n  \nor surround them with     if #available(macOS 26.0, *) {\n    opts.languageVersion = .version4_0\n  }\n  \nYou&#x27;ll miss out on a prefill speedup of 2.4x (as it yields 11.24x faster attention), according to the git comments, but it works. (On the 8-GPU-core MBA M1, I get 5-6 tok&#x2F;s.)\n\n[tredre3]: I&#x27;m curious how your project compares to plain mmap! Because llama.cpp will already run 26B in 2GB of RAM if you really want to (mmap enabled, repacking disabled). It seems like the main difference is that your project synchronizes the SSD reads with inference activity, which you&#x27;ve presumably tuned to cause the least latency possible? Whereas the OS wouldn&#x27;t care about any of that.\n\n[woadwarrior01]: &gt; The measured result is a reference point, not a performance ceiling. Claude was here.\n\n[whatsThisBtn4]: DAE read these CPU Mac posts as an example of  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Reality_distortion_field  I own an Nvidia chip and even then I find these models fast but not useful for contemporary AI. I can&#x27;t imagine slow and useless. It reminds me of that US politician that has controlled the minds of 30% of the population.",
+    "author": "gitpusher42",
+    "published_at": "2026-07-29T15:05:43Z",
+    "fetched_at": "2026-07-29T23:55:21.085765Z",
+    "metadata": {
+      "score": 616,
+      "descendants": 215,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49098510",
+      "comment_count": 5,
+      "title_zh": "开源引擎TurboFieldfare：2GB RAM运行Gemma 4 26B模型",
+      "detailed_summary_zh": "开发者发布了TurboFieldfare，一个专为M系列Mac设计的新型开源推理引擎，通过在SSD上流式传输路由专家，使得4位量化的Gemma 4 26B模型仅需约2GB RAM即可运行。 这一创新显著降低了在内存受限的Apple Silicon设备上运行大模型的门槛，为本地AI部署提供了实用方案，可能推动更多开发者探索在低内存硬件上运行MoE模型。 该引擎使用Swift和Metal编写，将共享部分和KV缓存保留在RAM中，而将路由专家从SSD按需读取。在8GB M2 MacBook Air上达到5-6 tok/s，在M5 MacBook Pro上达到31-35 tok/s。还提供了实验性的OpenAI兼容本地服务器，支持流式输出和工具调用。",
+      "background_zh": "Gemma 4 26B是一个混合专家（MoE）模型，总参数260亿，但每次推理仅激活约40亿参数。MoE模型包含多个专家子网络，通过门控网络路由输入给部分专家。KV缓存是Transformer推理中用于存储键值对以加速自回归生成的技术，但会占用大量内存。传统推理需要将完整模型加载到RAM中，对于14GB的量化模型，8GB或16GB Mac难以满足。",
+      "community_discussion_zh": "社区评论总体积极，讨论了与mmap（内存映射文件）方案的区别，认为该项目通过同步SSD读取与推理活动降低了延迟。有用户分享了在旧版macOS上的编译技巧，并报告了类似的速度。也有用户对实用性能表示怀疑，认为即使速度尚可，对当代AI应用仍不够快。",
+      "sources": [
+        {
+          "url": "https://gemma4.com/",
+          "title": "Gemma 4 — Google DeepMind"
+        },
+        {
+          "url": "https://huggingface.co/blog/moe",
+          "title": "Mixture of Experts Explained"
+        },
+        {
+          "url": "https://huggingface.co/blog/not-lain/kv-caching",
+          "title": "KV Caching Explained: Optimizing Transformer Inference Efficiency"
+        }
+      ],
+      "detailed_summary": "开发者发布了TurboFieldfare，一个专为M系列Mac设计的新型开源推理引擎，通过在SSD上流式传输路由专家，使得4位量化的Gemma 4 26B模型仅需约2GB RAM即可运行。 这一创新显著降低了在内存受限的Apple Silicon设备上运行大模型的门槛，为本地AI部署提供了实用方案，可能推动更多开发者探索在低内存硬件上运行MoE模型。 该引擎使用Swift和Metal编写，将共享部分和KV缓存保留在RAM中，而将路由专家从SSD按需读取。在8GB M2 MacBook Air上达到5-6 tok/s，在M5 MacBook Pro上达到31-35 tok/s。还提供了实验性的OpenAI兼容本地服务器，支持流式输出和工具调用。",
+      "background": "Gemma 4 26B是一个混合专家（MoE）模型，总参数260亿，但每次推理仅激活约40亿参数。MoE模型包含多个专家子网络，通过门控网络路由输入给部分专家。KV缓存是Transformer推理中用于存储键值对以加速自回归生成的技术，但会占用大量内存。传统推理需要将完整模型加载到RAM中，对于14GB的量化模型，8GB或16GB Mac难以满足。",
+      "community_discussion": "社区评论总体积极，讨论了与mmap（内存映射文件）方案的区别，认为该项目通过同步SSD读取与推理活动降低了延迟。有用户分享了在旧版macOS上的编译技巧，并报告了类似的速度。也有用户对实用性能表示怀疑，认为即使速度尚可，对当代AI应用仍不够快。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Novel engineering approach to run large MoE models on memory-constrained Apple hardware, with high community engagement (215 comments) featuring insightful discussions comparing to mmap and sharing practical compilation tips. Demonstrates significant impact for on-device AI deployment.",
+    "ai_summary": "TurboFieldfare is an open-source inference engine that runs a 4-bit quantized Gemma 4 26B model on M-series Macs using only 2GB RAM by streaming routed experts from SSD.",
+    "ai_tags": [
+      "inference-engine",
+      "gemma",
+      "model-deployment",
+      "moe",
+      "apple-silicon"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:2218745128b1d876",
+    "source_type": "rss",
+    "title": "First CHERIoT Silicon",
+    "url": "https://cheriot.org/silicon/2026/03/04/cheriot-first-silicon.html",
+    "content": "<p><a href=\"https://lobste.rs/s/l3sj7g/first_cheriot_silicon\">Comments</a></p>",
+    "author": "cheriot.org via kaycebasques",
+    "published_at": "2026-07-29T18:11:44Z",
+    "fetched_at": "2026-07-29T23:55:20.989270Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "hardware"
+      ],
+      "title_zh": "首款CHERIoT芯片成功流片",
+      "detailed_summary_zh": "首个CHERIoT架构的硅芯片实现已成功流片，标志着硬件能力安全迈向实用化。 这一里程碑验证了通过硬件能力（capabilities）实现内存安全的可行性，有望从根本上解决嵌入式设备的内存相关漏洞，对物联网和关键基础设施的安全具有重大意义。 该芯片基于RISC-V扩展指令集，集成了CHERI能力模型，可在微控制器级别提供细粒度隔离和内存保护。",
+      "background_zh": "CHERI（Capability Hardware Enhanced RISC Instructions）是剑桥大学与SRI International联合研究的硬件安全架构，通过引入能力（capability）而非传统指针来管理内存访问。CHERIoT是CHERI在嵌入式领域的适配，强调硬件-软件协同设计以实现安全隔离。此前的实现仅停留在FPGA或模拟器阶段，首颗专用芯片标志着从学术研究向商业部署的关键一步。",
+      "sources": [
+        {
+          "url": "https://cheriot.org/",
+          "title": "CHERIoT Platform | Welcome to the CHERIoT Platform, a ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Capability_Hardware_Enhanced_RISC_Instructions",
+          "title": "Capability Hardware Enhanced RISC Instructions - Wikipedia"
+        },
+        {
+          "url": "https://cheriot.org/cheriot-sail/cheriot-architecture.pdf",
+          "title": "CHERIoT Architecture specification Version 1"
+        }
+      ],
+      "detailed_summary": "首个CHERIoT架构的硅芯片实现已成功流片，标志着硬件能力安全迈向实用化。 这一里程碑验证了通过硬件能力（capabilities）实现内存安全的可行性，有望从根本上解决嵌入式设备的内存相关漏洞，对物联网和关键基础设施的安全具有重大意义。 该芯片基于RISC-V扩展指令集，集成了CHERI能力模型，可在微控制器级别提供细粒度隔离和内存保护。",
+      "background": "CHERI（Capability Hardware Enhanced RISC Instructions）是剑桥大学与SRI International联合研究的硬件安全架构，通过引入能力（capability）而非传统指针来管理内存访问。CHERIoT是CHERI在嵌入式领域的适配，强调硬件-软件协同设计以实现安全隔离。此前的实现仅停留在FPGA或模拟器阶段，首颗专用芯片标志着从学术研究向商业部署的关键一步。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "First CHERIoT silicon is a groundbreaking milestone in hardware security, demonstrating practical memory safety through capabilities. This is highly significant for systems research and engineering.",
+    "ai_summary": "The first silicon implementation of the CHERIoT architecture has been produced, advancing practical memory safety.",
+    "ai_tags": [
+      "CHERI",
+      "memory safety",
+      "hardware security",
+      "RISC-V",
+      "capability-based security"
+    ]
+  },
+  {
+    "id": "hackernews:story:49103285",
+    "source_type": "hackernews",
+    "title": "AI's top startups are barely publishing their research",
+    "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+    "content": "\n--- Top Comments ---\n\n[noosphr]: I&#x27;ve been at two startups that have done genuine world first fundamental research. The first tried to publish novel results for 3 years in tier 1 journals before finally doing a preprint and telling the tier one publishers to jump in a fire. The second, and ongoing, isn&#x27;t publishing anything because of my experience with the first. That and avoiding openAI and Anthropic copying our results and leaving us with nothing to show for six months of work. The papers only come with the pitc...\n\n[Aurornis]: The article is vague about the companies in the paper, for some reason. In the paper, OpenAI is at the top of the chart for cumulative citations. MEGVII, Hugging Face, Waymo, Momenta, Preferred Netowkrs, Anthropic, Owkin, and Databricks, and Aibee follow (in that order). Yes, that is citations, not publications, but they explain that they&#x27;re trying to use that as a proxy for significance, albeit an imperfect one. Companies like Google aren&#x27;t included because they aren&#x27;t unicorn...\n\n[beloch]: &quot;But University of Alberta AI ethicist Mohamed Abdalla says the findings reflect the incentives facing commercial AI developers, rather than solely a failure to uphold scientific norms. “It’s not the company’s job to advance science, right?” he says. “The company’s job is to advance money.”&quot; ------------ If everyone holds back their publications, the whole sector moves slower.  Yes, it&#x27;s moving alarmingly fast according to many, but is it moving fast enough that the massive inv...\n\n[egonschiele]: As far as I can tell, the paper never actually mentions the companies who aren&#x27;t publishing papers. Open AI, Anthropic, and hugging face are all specifically mentioned as companies that  do  publish papers. Just FYI for anyone else who reads &quot;AI&#x27;s top startups&quot; and immediately assumes OpenAI and Anthropic.\n\n[randomImmigrant]: What the blogificafion of AI research has done is allowed all kinds of claims and terminology related to AI to be introduced and taken up in a manner replicating social media dynamics. And that is simply not healthy. We’re fast reaching a place where any claim can be backed up with a set of numbers from a number of experiments run in some gamified environment or the other, with little concern for if it all adds up to anything. \nIt’s a vicious loop, because this same junk then goes in to train...",
+    "author": "YeGoblynQueenne",
+    "published_at": "2026-07-29T21:25:40Z",
+    "fetched_at": "2026-07-29T23:55:21.085737Z",
+    "metadata": {
+      "score": 119,
+      "descendants": 78,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49103285",
+      "comment_count": 5,
+      "title_zh": "AI初创公司大幅减少研究论文发表",
+      "detailed_summary_zh": "一项新研究显示，顶尖AI初创公司越来越不愿发表科研成果，原因是竞争压力和学术出版过程令人沮丧。 这一趋势可能减缓整个AI领域的科学进步，因为知识分享减少会导致重复劳动和创新受阻。 论文使用引用量作为影响力的代理指标，发现OpenAI、Hugging Face等公司仍会发表论文，但许多其他初创公司选择保密。研究作者指出这反映了商业激励，而非科学规范的失败。",
+      "background_zh": "传统上，学术界和工业界都通过发表论文来分享研究进展，推动领域发展。然而，随着AI商业价值激增，公司面临保护知识产权和维持竞争优势的压力，导致公开研究的动机减弱。",
+      "community_discussion_zh": "评论者分享了亲身经历：有初创公司因学术出版拖延而放弃发表，也有公司担忧被大公司抄袭而拒绝公开。部分人指出文章未点名多数不发表的公司，而OpenAI、Anthropic等实际上仍在发表。",
+      "detailed_summary": "一项新研究显示，顶尖AI初创公司越来越不愿发表科研成果，原因是竞争压力和学术出版过程令人沮丧。 这一趋势可能减缓整个AI领域的科学进步，因为知识分享减少会导致重复劳动和创新受阻。 论文使用引用量作为影响力的代理指标，发现OpenAI、Hugging Face等公司仍会发表论文，但许多其他初创公司选择保密。研究作者指出这反映了商业激励，而非科学规范的失败。",
+      "background": "传统上，学术界和工业界都通过发表论文来分享研究进展，推动领域发展。然而，随着AI商业价值激增，公司面临保护知识产权和维持竞争优势的压力，导致公开研究的动机减弱。",
+      "community_discussion": "评论者分享了亲身经历：有初创公司因学术出版拖延而放弃发表，也有公司担忧被大公司抄袭而拒绝公开。部分人指出文章未点名多数不发表的公司，而OpenAI、Anthropic等实际上仍在发表。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value content addressing a critical issue in AI research culture, with strong community engagement and insightful comments debating incentives, competitive secrecy, and impact on scientific progress.",
+    "ai_summary": "AI startups are increasingly withholding research publications due to competitive pressures and frustration with academic publishing.",
+    "ai_tags": [
+      "AI",
+      "research",
+      "startups",
+      "publication",
+      "industry"
+    ]
+  },
+  {
+    "id": "hackernews:story:49098965",
+    "source_type": "hackernews",
+    "title": "Superlogical",
+    "url": "https://www.superlogical.com/",
+    "content": "<a href=\"https:&#x2F;&#x2F;mitchellh.com&#x2F;writing&#x2F;superlogical\" rel=\"nofollow\">https:&#x2F;&#x2F;mitchellh.com&#x2F;writing&#x2F;superlogical</a>\n\n\n--- Top Comments ---\n\n[simonw]: I really like the bit where he transferred ownership of Ghostty to a non-profit, and is now building this new company on that as an open source dependency: &gt; We will build on libghostty exactly as it was designed to be used: as a public building block for terminal applications. Superlogical will consume the same MIT-licensed components available to everyone else, and we will continue to upstream shared terminal work so every libghostty consumer can benefit.\n\n[brandall10]: This sounds like a mashup of of several things I&#x27;ve been playing with lately... - pi-web ( https:&#x2F;&#x2F;pi-web.dev&#x2F; ): a web frontend for the Pi coding harness which can multiplex pi sessions across multiple machines - herdr ( https:&#x2F;&#x2F;herdr.dev&#x2F; ): a fairly polished agentic multiplexer TUI, can easily spawn or destroy windows based on subagent activity - firstmate ( https:&#x2F;&#x2F;github.com&#x2F;kunchenguid&#x2F;firstmate ): a meta environment for coding harn...\n\n[danbruc]: This reminds me somewhat of OLE, COM, DCOM, ActiveX, ... [1]. You can paste an Excel chart into a Word document and if you update the data in Excel, the chart in Word will update. You can edit the chart in Word using the Excel UI because you are essentially running an Excel instance inside of Word. You can interact with Excel through an API, no need for a human. But it is painful, you can probably imagine the kind of API you need in order to be able to do all the things you can do with the Ex...\n\n[rixed]: Meta, won&#x27;t comment on the site, won&#x27;t click. I&#x27;m fed up with this category of click baity titles that are designed to be enigmatic rather than informative. The guideline do not mention this, apart maybe from:     If the title includes the name of the site, please take it out, because the site name will be displayed after the link. \n  \nI&#x27;d prefer HN if we made it a habit to editorialize such titles consisting solely of a Domainname or a single word.\n\n[devy]: Wow, that &quot;We&#x27;re hiring&#x2F;Career Page&quot; link is geeksmaxxing. First time seeing `ssh superlogical.jobs` would be a way to show job descriptions in terminal!",
+    "author": "yan",
+    "published_at": "2026-07-29T15:41:33Z",
+    "fetched_at": "2026-07-29T23:55:21.085790Z",
+    "metadata": {
+      "score": 481,
+      "descendants": 300,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49098965",
+      "comment_count": 5,
+      "title_zh": "Mitchell Hashimoto 宣布 Superlogical 公司",
+      "detailed_summary_zh": "Mitchell Hashimoto 宣布成立新公司 Superlogical，基于 MIT 许可的开源终端核心库 libghostty 构建终端应用，并将 Ghostty 终端模拟器的所有权转让给一个非营利组织。 此事件标志着一位知名开发者（HashiCorp 联合创始人）采用“开放核心”商业模式，通过将上游项目捐赠给非营利组织来确保其独立性，这可能为开源项目商业化提供一个可复用的范例，并推动终端生态系统的创新。 libghostty 是一个用 Zig 编写的跨平台、C-ABI 兼容的终端核心库，Superlogical 将像其他任何人一样使用同一 MIT 许可组件，并持续向上游贡献共享的终端功能。",
+      "background_zh": "Ghostty 是一款快速、功能丰富的终端模拟器，使用平台原生 UI 和 GPU 加速。其核心库 libghostty 被设计为可嵌入其他应用的公共构建块。Mitchell Hashimoto 是 HashiCorp 的联合创始人，此前因创建 Vagrant、Terraform 等知名开源工具而闻名。",
+      "community_discussion_zh": "社区评论总体积极，有用户赞赏将 Ghostty 所有权转移给非营利组织并基于开源依赖建立公司的方式；也有用户将这种架构类比为 COM/OLE，认为思路相似但实现可能复杂；还有个别用户批评标题过于隐晦，缺乏信息量。",
+      "sources": [
+        {
+          "url": "https://ghostty.org/",
+          "title": "Ghostty"
+        },
+        {
+          "url": "https://ghostty.org/docs/about",
+          "title": "About Ghostty"
+        },
+        {
+          "url": "https://github.com/ghostty-org/ghostty",
+          "title": "GitHub - ghostty-org/ghostty: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration."
+        }
+      ],
+      "detailed_summary": "Mitchell Hashimoto 宣布成立新公司 Superlogical，基于 MIT 许可的开源终端核心库 libghostty 构建终端应用，并将 Ghostty 终端模拟器的所有权转让给一个非营利组织。 此事件标志着一位知名开发者（HashiCorp 联合创始人）采用“开放核心”商业模式，通过将上游项目捐赠给非营利组织来确保其独立性，这可能为开源项目商业化提供一个可复用的范例，并推动终端生态系统的创新。 libghostty 是一个用 Zig 编写的跨平台、C-ABI 兼容的终端核心库，Superlogical 将像其他任何人一样使用同一 MIT 许可组件，并持续向上游贡献共享的终端功能。",
+      "background": "Ghostty 是一款快速、功能丰富的终端模拟器，使用平台原生 UI 和 GPU 加速。其核心库 libghostty 被设计为可嵌入其他应用的公共构建块。Mitchell Hashimoto 是 HashiCorp 的联合创始人，此前因创建 Vagrant、Terraform 等知名开源工具而闻名。",
+      "community_discussion": "社区评论总体积极，有用户赞赏将 Ghostty 所有权转移给非营利组织并基于开源依赖建立公司的方式；也有用户将这种架构类比为 COM/OLE，认为思路相似但实现可能复杂；还有个别用户批评标题过于隐晦，缺乏信息量。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to Mitchell Hashimoto's new venture Superlogical, building on open-source libghostty with non-profit transfer; community discussion is substantive and engaging (300 comments), with insightful comparisons to COM/OLE.",
+    "ai_summary": "Mitchell Hashimoto announces Superlogical, a company built on the open-source libghostty terminal library, with ownership of Ghostty transferred to a non-profit.",
+    "ai_tags": [
+      "superlogical",
+      "ghostty",
+      "terminal",
+      "open-source",
+      "mitchellh"
+    ]
+  },
+  {
+    "id": "hackernews:story:49101852",
+    "source_type": "hackernews",
+    "title": "Kimi K3-256k",
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+    "content": "\n--- Top Comments ---\n\n[timcobb]: Codex uses 256k masterfully, 1M is luxurious but still quite expensive and seems not necessary as a default.\n\n[MangoCoffee]: LLMs is quickly became commodities. US AI labs like OpenAI is losing their moat. Hyperscalers and data center owners who can sell cheap token will win\n\n[wxw]: &gt; k3-256k is now available. Within 256k context, it delivers the same results. k3 (1M) consumes about twice as much quota as k3-256k.\n\n[madihaa]: That&#x27;s actually nice! I usually try to stay below 200k context anyway.\n\n[xyzsparetimexyz]: Wow. So kimi is suddenly half the price for all users until they hit 256k of context? Thats massive.",
+    "author": "monneyboi",
+    "published_at": "2026-07-29T19:25:33Z",
+    "fetched_at": "2026-07-29T23:55:21.085832Z",
+    "metadata": {
+      "score": 310,
+      "descendants": 89,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49101852",
+      "comment_count": 5,
+      "title_zh": "Kimi发布K3-256k，成本减半",
+      "detailed_summary_zh": "Kimi推出了K3-256k，这是其大型上下文模型K3的廉价版本，在256k上下文范围内性能与1M版本相同，但成本降低了一半。 此次发布显著降低了长上下文语言模型的使用门槛，对于需要处理大量文本但预算有限的开发者和企业来说，K3-256k提供了更经济的选择，可能加速AI应用的普及。 K3-256k在256k上下文内与K3（1M）表现一致，但消耗的配额仅为后者的一半。社区用户普遍认为256k上下文已足够应对大多数实际场景，且价格减半影响巨大。",
+      "background_zh": "Kimi是由中国公司Moonshot AI开发的AI聊天机器人和大语言模型系列，其早期版本以128k上下文窗口闻名。上下文窗口是指模型一次能处理的最大文本长度，更大的窗口允许一次性分析更长的文档，但会消耗更多计算资源。Kimis K3系列此前提供1M（百万）tokens的上下文，而K3-256k将窗口限制在256k以降低成本。",
+      "community_discussion_zh": "社区反响积极，多数用户认为256k上下文足够使用，价格减半是重大利好。有评论指出价格降低使Kimi更具竞争力，但也有人担忧长上下文模型在填充大量内容后性能下降。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+          "title": "Kimi (AI) - Wikipedia"
+        },
+        {
+          "url": "https://www.kimi.com/en",
+          "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work"
+        }
+      ],
+      "detailed_summary": "Kimi推出了K3-256k，这是其大型上下文模型K3的廉价版本，在256k上下文范围内性能与1M版本相同，但成本降低了一半。 此次发布显著降低了长上下文语言模型的使用门槛，对于需要处理大量文本但预算有限的开发者和企业来说，K3-256k提供了更经济的选择，可能加速AI应用的普及。 K3-256k在256k上下文内与K3（1M）表现一致，但消耗的配额仅为后者的一半。社区用户普遍认为256k上下文已足够应对大多数实际场景，且价格减半影响巨大。",
+      "background": "Kimi是由中国公司Moonshot AI开发的AI聊天机器人和大语言模型系列，其早期版本以128k上下文窗口闻名。上下文窗口是指模型一次能处理的最大文本长度，更大的窗口允许一次性分析更长的文档，但会消耗更多计算资源。Kimis K3系列此前提供1M（百万）tokens的上下文，而K3-256k将窗口限制在256k以降低成本。",
+      "community_discussion": "社区反响积极，多数用户认为256k上下文足够使用，价格减半是重大利好。有评论指出价格降低使Kimi更具竞争力，但也有人担忧长上下文模型在填充大量内容后性能下降。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to a major model release with significant price reduction, validated by high community engagement (310 points, 89 comments) and positive discussion highlighting practical benefits and industry implications.",
+    "ai_summary": "Kimi releases K3-256k, a cheaper version of its large-context model, reducing cost by half while maintaining performance within 256k context.",
+    "ai_tags": [
+      "AI models",
+      "context length",
+      "cost reduction",
+      "LLM",
+      "Kimi"
+    ]
+  },
+  {
+    "id": "hackernews:story:49095865",
+    "source_type": "hackernews",
+    "title": "KOReader",
+    "url": "https://koreader.rocks/",
+    "content": "\n--- Top Comments ---\n\n[gejose]: I really like that this exists, but I found the menus and UI to be rather non-intuitive. My main use case was to sync reading progress between my Kobo and my iPhone. I was able to do this using KOReader on the Kobo &amp; the Readest app[1] on iPhone (also open source). Ultimately I decided to get rid of KOReader because it felt a bit laggy. The gestures (eg: swiping up on the left side to increase frontlight brightness) didn&#x27;t work well either. I eneded up writing my own software to sync...\n\n[lolgab]: I installed it on my Amazon Kindle and I couldn&#x27;t be happier.\nIt shows once again that free software is superior to proprietary software. Free software grows slowly to make users happier and not to attract them with useless features to extract more value from them.\nCongratulations for this great piece of software.\n\n[gruturo]: I&#x27;m immensely thankful for koreader - it improves the reading experience so fundamentally that it literally drives my purchasing decisions. I got a remarkable 2 precisely because it was known to run it well. When I got a new kindle, I went for a refurbished one hoping it&#x27;d be one FW version behind (it was! lucky me) so I could jailbreak it immediately, and run koreader. Which reminds me: - I&#x27;m still a primitive user. Sync reading state, reflow, calibre link, yes, but I&#x27;m a...\n\n[Cider9986]: You can use the regular Kindle viewer once you jailbroke your kindle, but KOReader has native epub and pdf support so you don&#x27;t have to use a converter when uploading your books. I did find it hard to get the bezels to be even and it still doesn&#x27;t always format well depending on the book. I still kind of prefer the default viewer. I use this plugin in KOReader which lets you download books from Z-Library within KOReader.  https:&#x2F;&#x2F;github.com&#x2F;ZlibraryKO&#x2F;zlibrary.ko...\n\n[videah]: It&#x27;s a shame the out of the box UI&#x2F;UX is so bad, it really feels like the GIMP of e-reader software at times. I think the Zen UI plugin is mandatory to have a good time with it.  https:&#x2F;&#x2F;anthonygress.github.io&#x2F;zen_ui.koplugin",
+    "author": "Cider9986",
+    "published_at": "2026-07-29T11:05:08Z",
+    "fetched_at": "2026-07-29T23:55:21.085855Z",
+    "metadata": {
+      "score": 648,
+      "descendants": 207,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49095865",
+      "comment_count": 5,
+      "title_zh": "KOReader：开源电子阅读器获社区热捧",
+      "detailed_summary_zh": "KOReader作为一款开源电子书阅读器，因其对电子墨水屏设备的深度优化和丰富功能，在社区中获得了极高评价和大量正面讨论。 它显著提升了Kindle、Kobo等设备的阅读体验，尤其在原生支持EPUB和PDF格式方面，免去了格式转换的麻烦。开源性质也推动了社区创新和持续改进。 KOReader支持EPUB、PDF、MOBI等多种文件格式，可运行于Kindle、Kobo、PocketBook、Android及Linux平台。用户还可通过插件扩展功能，例如从Z-Library直接下载书籍。",
+      "background_zh": "电子墨水屏设备（如Kindle）通常运行封闭系统，限制用户自定义。KOReader作为开源替代品，提供了更灵活的阅读设置和高级功能，吸引了追求更好阅读体验的用户。社区开发模式使得软件持续进化。",
+      "community_discussion_zh": "社区评论整体积极，用户普遍感谢KOReader带来的阅读体验提升，但部分用户指出其UI/UX不够直观、手势操作不灵敏以及响应略显迟滞。也有用户因这些体验问题重新使用默认阅读器。",
+      "sources": [
+        {
+          "url": "https://grokipedia.com/page/KOReader",
+          "title": "KOReader"
+        },
+        {
+          "url": "http://koreader.rocks/",
+          "title": "KOReader"
+        }
+      ],
+      "detailed_summary": "KOReader作为一款开源电子书阅读器，因其对电子墨水屏设备的深度优化和丰富功能，在社区中获得了极高评价和大量正面讨论。 它显著提升了Kindle、Kobo等设备的阅读体验，尤其在原生支持EPUB和PDF格式方面，免去了格式转换的麻烦。开源性质也推动了社区创新和持续改进。 KOReader支持EPUB、PDF、MOBI等多种文件格式，可运行于Kindle、Kobo、PocketBook、Android及Linux平台。用户还可通过插件扩展功能，例如从Z-Library直接下载书籍。",
+      "background": "电子墨水屏设备（如Kindle）通常运行封闭系统，限制用户自定义。KOReader作为开源替代品，提供了更灵活的阅读设置和高级功能，吸引了追求更好阅读体验的用户。社区开发模式使得软件持续进化。",
+      "community_discussion": "社区评论整体积极，用户普遍感谢KOReader带来的阅读体验提升，但部分用户指出其UI/UX不够直观、手势操作不灵敏以及响应略显迟滞。也有用户因这些体验问题重新使用默认阅读器。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (648 points, 207 comments) with overwhelmingly positive user experiences, indicating significant value and impact for e-ink device users.",
+    "ai_summary": "KOReader is an open-source e-book reader that enhances e-ink devices with advanced features, highly praised by the community.",
+    "ai_tags": [
+      "open-source",
+      "e-reader",
+      "kindle",
+      "kobo",
+      "e-ink"
+    ]
+  },
+  {
+    "id": "hackernews:story:49098198",
+    "source_type": "hackernews",
+    "title": "A.I. companies are recruiting electricians and carpenters by the thousands",
+    "url": "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html",
+    "content": "\n--- Top Comments ---\n\n[eddyg]: Gift link:  https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;07&#x2F;29&#x2F;business&#x2F;economy&#x2F;data-cen...\n\n[xur17]: https:&#x2F;&#x2F;archive.is&#x2F;f1p75\n\n[kvisner]: I would be very careful about basing your career decsions based on this trend.  The data center build out will always be very boom and bust, which would really suck to work in.  One year you would be making 300k working on dataceters and the next you would make 30k because thousands of electricians are now competing to build a few single family homes.\n\n[Animats]: Next, plumbers. The future of data centers seems to be more liquid cooling and less ductwork. Take a look at this new 1 megawatt server rack.[1] It has more pipes than cables.\nAll that coolant flow and all that electrical power in a crowded space is scary. [1]  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8Ssp1t-g_wM\n\n[kristov]: It&#x27;s nice to hear tradespeople getting paid well with lots of work. I&#x27;m happy for them :-)",
+    "author": "thm",
+    "published_at": "2026-07-29T14:43:47Z",
+    "fetched_at": "2026-07-29T23:55:21.085874Z",
+    "metadata": {
+      "score": 200,
+      "descendants": 249,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49098198",
+      "comment_count": 5,
+      "title_zh": "AI公司大量招募电工木匠建数据中心",
+      "detailed_summary_zh": "人工智能企业正在大规模招聘数千名电工和木匠等技工，用于建设数据中心的建筑和冷却系统。 这表明AI基础设施的扩张正在创造大量蓝领就业机会，但评论者警告该行业具有典型的繁荣-萧条周期特征。 据评论指出，未来的数据中心可能更多采用液体冷却技术，需要更多管道工而非通风管道工。",
+      "background_zh": "数据中心是支撑AI训练和推理的关键设施，其建设需要大量电力、冷却和建筑工人。随着AI需求激增，科技公司加速建设数据中心，带动了对贸易工人的需求。",
+      "community_discussion_zh": "评论中，eddyg和xur17提供了免费阅读链接；kvisner提醒该行业存在严重的繁荣-萧条周期，收入波动大；Animats指出未来数据中心更多使用液体冷却，需要更多管道工；kristov则对贸易工人获得高薪表示高兴。",
+      "detailed_summary": "人工智能企业正在大规模招聘数千名电工和木匠等技工，用于建设数据中心的建筑和冷却系统。 这表明AI基础设施的扩张正在创造大量蓝领就业机会，但评论者警告该行业具有典型的繁荣-萧条周期特征。 据评论指出，未来的数据中心可能更多采用液体冷却技术，需要更多管道工而非通风管道工。",
+      "background": "数据中心是支撑AI训练和推理的关键设施，其建设需要大量电力、冷却和建筑工人。随着AI需求激增，科技公司加速建设数据中心，带动了对贸易工人的需求。",
+      "community_discussion": "评论中，eddyg和xur17提供了免费阅读链接；kvisner提醒该行业存在严重的繁荣-萧条周期，收入波动大；Animats指出未来数据中心更多使用液体冷却，需要更多管道工；kristov则对贸易工人获得高薪表示高兴。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value content discussing a significant trend in AI infrastructure, with high community engagement (200 points, 249 comments) and insightful commentary on boom-bust cycles, liquid cooling, and tradespeople demand.",
+    "ai_summary": "AI companies are hiring thousands of tradespeople like electricians and carpenters for data center construction.",
+    "ai_tags": [
+      "AI",
+      "data centers",
+      "trades",
+      "infrastructure",
+      "job market"
+    ]
+  },
+  {
+    "id": "hackernews:story:49096969",
+    "source_type": "hackernews",
+    "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+    "url": "https://arxiv.org/abs/2607.25398",
+    "content": "\n--- Top Comments ---\n\n[DiabloD3]: This is a problem with long context models. To put it as simple and as bluntly as possible: just because they claim you can use 1M tokens in your context doesn&#x27;t mean its true and you should do that. Due to extreme quantization of models and the context&#x27;s KV cache, and also just really shitty samplers provided to the user (hell, most are just getting rid of sampler knobs altogether), this problem will absolutely continue. Want it to go away, almost like magic? Local inference. When ...\n\n[wongarsu]: Any model with a good score on this benchmark would have a good claim on superhuman abilities. Humans are pretty terrible at being thrown a long policy document and being expected to follow it And while we shouldn&#x27;t anthropomorphize these models too much, I wouldn&#x27;t be surprised if many of the core reasons for failures are similar. Working memory is a limited resource; you can only focus on so many things at once; reasoning depth is limited; and many real-world policies are not actu...\n\n[mcdeltat]: Yeah checks out with my anecdotal experience with Claude. It is pretty great at following instructions - for about 10 minutes, after which it seems to ignore things I told it before. I have quite explicit and strong instructions (e.g. don&#x27;t write massive comments, use existing functionality, etc.) in CLAUDE.md files which seem to get bypassed surprisingly quickly when doing real tasks. Yet if I tell it these things in a prompt during the task, it performs way better. Result is I&#x27;m t...\n\n[msejas]: Most people don&#x27;t understand that &#x27;agentic AI&#x27; is a completely synthetic, force fed capability by extensive Reinforcement Learning on synthetic domain specific &#x27;agentic&#x27; datasets on post training. If the LLM wasn&#x27;t post-trained to adhere to specific handbook, it just won&#x27;t work. If the LLM wasn&#x27;t trained on an use case the lab decided was worth making a synthetic agentic dataset, it won&#x27;t work as well as you want. There&#x27;s a reason the main age...\n\n[supermatt]: There was an article a few years ago called &quot;Lost in the Middle: How Language Models Use Long Contexts&quot;  https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2307.03172  From my experience this holds true to this day. It was one of my core observations for similarity to the limitations of human working memory on &quot;Engineering for Bounded Cognition&quot;",
+    "author": "spIrr",
+    "published_at": "2026-07-29T13:01:57Z",
+    "fetched_at": "2026-07-29T23:55:21.085896Z",
+    "metadata": {
+      "score": 281,
+      "descendants": 180,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49096969",
+      "comment_count": 5,
+      "title_zh": "长政策文档无法可靠指导AI智能体",
+      "detailed_summary_zh": "一篇论文证明长政策文档对AI智能体的指导不可靠，社区经验也表明长上下文模型存在局限性。 这挑战了通过长文档治理AI智能体的做法，可能影响企业AI部署中的合规与安全策略。 论文实验表明，即使模型支持百万级token，实际性能随着上下文增长而下降；社区用户反馈Claude会在约10分钟后忽略早期指令。",
+      "background_zh": "LLM的上下文窗口有长度限制，且模型对长文本中位置靠前的内容关注度下降（“迷失在中间”效应）。Agentic AI通常依赖系统提示或政策文档来规范行为，但长文档的可靠性存疑。",
+      "community_discussion_zh": "社区普遍认同长上下文不可靠，有用户指出本地推理可能改善，也有观点认为人类同样难以遵循长政策文档，还有用户强调后训练增强（RL）的必要性。",
+      "sources": [
+        {
+          "url": "https://www.promptquorum.com/prompt-engineering/ai-limitations-what-llms-cant-do",
+          "title": "LLM Limitations & Workarounds 2026: 8 Key Constraints"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization",
+          "title": "Govern and secure AI agents AI agents across the organization ..."
+        }
+      ],
+      "detailed_summary": "一篇论文证明长政策文档对AI智能体的指导不可靠，社区经验也表明长上下文模型存在局限性。 这挑战了通过长文档治理AI智能体的做法，可能影响企业AI部署中的合规与安全策略。 论文实验表明，即使模型支持百万级token，实际性能随着上下文增长而下降；社区用户反馈Claude会在约10分钟后忽略早期指令。",
+      "background": "LLM的上下文窗口有长度限制，且模型对长文本中位置靠前的内容关注度下降（“迷失在中间”效应）。Agentic AI通常依赖系统提示或政策文档来规范行为，但长文档的可靠性存疑。",
+      "community_discussion": "社区普遍认同长上下文不可靠，有用户指出本地推理可能改善，也有观点认为人类同样难以遵循长政策文档，还有用户强调后训练增强（RL）的必要性。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important finding about the unreliability of long policy documents for LLM agents, supported by community discussion highlighting practical issues and insights.",
+    "ai_summary": "A paper demonstrates that long policy documents are unreliable for governing AI agents, corroborated by community experiences with long context limitations.",
+    "ai_tags": [
+      "LLM",
+      "AI agents",
+      "long context",
+      "reliability",
+      "policy documents"
+    ]
+  },
+  {
+    "id": "hackernews:story:49096188",
+    "source_type": "hackernews",
+    "title": "Document-borne AI worms can self-propagate through Copilot for Word",
+    "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+    "content": "\n--- Top Comments ---\n\n[rwmj]: &gt; &quot;At the time of publication, no robust mitigation for the broader vulnerability class is available&quot;  Isn&#x27;t it obvious by now that it&#x27;s never going to be possible to fix this kind of thing, at least until we stop mixing up instructions with data.\n\n[boothby]: This is going to get worse, much worse, before it gets better.  People are granting so much access to their agents, it&#x27;s ridiculous. Imagine a comment posted to a popular github repo.  No code, just instructions to &quot;reproduce a bug.&quot; Maybe it steals your credit card or bitcoin wallet.  Maybe it does something more nefarious.  It then propagates itself to another repo through your github account.\n\n[simonw]: &gt; Malicious instructions hidden in an externally shared document could make Copilot alter drafted or edited documents in Word and propagate the attack to new documents. Oh no.\n\n[averagjoe]: I&#x27;m a programmer and a web-based AI user, but I don&#x27;t want AI running on my local machine in any form. I&#x27;ve uninstalled Copilot and disabled AI in all local applications including the browser itself for exactly the reason described in this article. There&#x27;s no way to protect your data from such an AI confusion attack by design. AI cannot discern your prompts versus text in file. The fact that an AI enabled word processor or email app could follow instructions embedded in a ...\n\n[piker]: White text still works! There are many approaches today. Check out  https:&#x2F;&#x2F;tritium.legal&#x2F;blog&#x2F;noroboto  where we tricked frontier algorithms into reading different Unicode values from those presented by the fonts in the document.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/rgn8u4/copilot_will_propagate_malicious_worm\">Comments</a></p>",
+    "author": "Canopy9560",
+    "published_at": "2026-07-29T11:44:33Z",
+    "fetched_at": "2026-07-29T23:55:21.085914Z",
+    "metadata": {
+      "score": 328,
+      "descendants": 251,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49096188",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "vibecoding"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "AI蠕虫通过Copilot for Word自我传播",
+      "detailed_summary_zh": "研究人员演示了一种新型AI蠕虫，它通过隐藏在文档中的恶意指令，利用Microsoft Copilot for Word在文档间自我传播。 这种攻击利用了AI集成中的提示注入漏洞，对广泛使用的AI助手构成重大安全威胁，可能导致数据泄露或恶意软件大规模传播。 该蠕虫将恶意指令嵌入文档（例如使用白色文字或Unicode技巧），当Copilot处理这些文档时，会执行指令并生成新的恶意文档。目前尚无有效的通用缓解措施。",
+      "background_zh": "AI蠕虫是一种利用大语言模型（LLM）及其自动化管道进行自我传播的恶意软件。提示注入攻击使模型无法区分系统指令和用户输入，从而绕过安全限制。随着AI代理被授予更多权限（如文件读写、网络访问），此类攻击风险显著增加。",
+      "community_discussion_zh": "社区评论普遍担忧此类攻击将愈发严重，有用户指出混合指令与数据的问题难以根本解决。部分用户已因安全顾虑禁用Copilot等AI功能，并强调赋予AI代理过多权限的危险性。",
+      "sources": [
+        {
+          "url": "https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/",
+          "title": "AI Worms Explained: Adaptive Malware Threats"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Prompt_injection",
+          "title": "Prompt injection"
+        },
+        {
+          "url": "https://owasp.org/www-community/attacks/PromptInjection",
+          "title": "Prompt Injection | OWASP Foundation"
+        }
+      ],
+      "detailed_summary": "研究人员演示了一种新型AI蠕虫，它通过隐藏在文档中的恶意指令，利用Microsoft Copilot for Word在文档间自我传播。 这种攻击利用了AI集成中的提示注入漏洞，对广泛使用的AI助手构成重大安全威胁，可能导致数据泄露或恶意软件大规模传播。 该蠕虫将恶意指令嵌入文档（例如使用白色文字或Unicode技巧），当Copilot处理这些文档时，会执行指令并生成新的恶意文档。目前尚无有效的通用缓解措施。",
+      "background": "AI蠕虫是一种利用大语言模型（LLM）及其自动化管道进行自我传播的恶意软件。提示注入攻击使模型无法区分系统指令和用户输入，从而绕过安全限制。随着AI代理被授予更多权限（如文件读写、网络访问），此类攻击风险显著增加。",
+      "community_discussion": "社区评论普遍担忧此类攻击将愈发严重，有用户指出混合指令与数据的问题难以根本解决。部分用户已因安全顾虑禁用Copilot等AI功能，并强调赋予AI代理过多权限的危险性。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to novel attack vector exploiting AI integrations, with strong community validation (328 upvotes, 251 comments) and insightful discussion on prompt injection and agent risks.",
+    "ai_summary": "Researchers demonstrate AI worms that can self-propagate through Microsoft Copilot for Word by hiding instructions in documents.",
+    "ai_tags": [
+      "AI security",
+      "prompt injection",
+      "Copilot",
+      "malware",
+      "LLM vulnerabilities"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:82cb4af18f5aea2a",
+    "source_type": "rss",
+    "title": "PostgreSQL MVCC: tradeoffs compared to other engines",
+    "url": "https://boringsql.com/posts/mvcc-bad-bad/",
+    "content": "<p><a href=\"https://lobste.rs/s/vjelns/postgresql_mvcc_tradeoffs_compared\">Comments</a></p>",
+    "author": "boringsql.com via pmbauer",
+    "published_at": "2026-07-29T13:25:07Z",
+    "fetched_at": "2026-07-29T23:55:20.989359Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases"
+      ],
+      "title_zh": "PostgreSQL MVCC 与其他引擎的权衡分析",
+      "detailed_summary_zh": "一篇深入分析 PostgreSQL 多版本并发控制（MVCC）实现及其与其他数据库引擎（如 InnoDB）在性能、存储开销和清理机制等方面权衡的技术文章在社区引发讨论。 MVCC 是数据库并发控制的核心机制，但不同引擎的实现差异显著影响应用选型和运维策略。本文帮助工程师理解 PostgreSQL MVCC 的独特代价（如膨胀和 VACUUM），从而做出更明智的架构决策。 PostgreSQL 的 MVCC 通过为每个更新操作创建新行版本来实现写不阻塞读，但导致过期版本堆积，需要 VACUUM 进程清理。相比 MySQL InnoDB 的 undo log 机制或 Oracle 的 rollback segment，PostgreSQL 的存储膨胀问题更突出。",
+      "background_zh": "MVCC（多版本并发控制）是一种数据库并发控制方法，允许多个事务同时读写而不互相阻塞。PostgreSQL 的实现是“追加写”模式：更新操作实质是删除旧行并插入新行，保留旧版本供并发读事务访问。这种设计简化了事务隔离，但导致存储空间膨胀和垃圾回收（VACUUM）开销，是 tradeoff 的核心。",
+      "sources": [
+        {
+          "url": "https://rajansahu713.medium.com/multi-version-concurrency-control-in-postgresql-5488d1824868",
+          "title": "Multi-Version Concurrency Control in PostgreSQL | by Rajan... | Medium"
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/deep-dive-postgresql-mvcc-sohardh-chobera-6pu3c",
+          "title": "A Deep Dive into PostgreSQL MVCC"
+        },
+        {
+          "url": "https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work",
+          "title": "What is MVCC? How does multiversion concurrency control work?"
+        }
+      ],
+      "detailed_summary": "一篇深入分析 PostgreSQL 多版本并发控制（MVCC）实现及其与其他数据库引擎（如 InnoDB）在性能、存储开销和清理机制等方面权衡的技术文章在社区引发讨论。 MVCC 是数据库并发控制的核心机制，但不同引擎的实现差异显著影响应用选型和运维策略。本文帮助工程师理解 PostgreSQL MVCC 的独特代价（如膨胀和 VACUUM），从而做出更明智的架构决策。 PostgreSQL 的 MVCC 通过为每个更新操作创建新行版本来实现写不阻塞读，但导致过期版本堆积，需要 VACUUM 进程清理。相比 MySQL InnoDB 的 undo log 机制或 Oracle 的 rollback segment，PostgreSQL 的存储膨胀问题更突出。",
+      "background": "MVCC（多版本并发控制）是一种数据库并发控制方法，允许多个事务同时读写而不互相阻塞。PostgreSQL 的实现是“追加写”模式：更新操作实质是删除旧行并插入新行，保留旧版本供并发读事务访问。这种设计简化了事务隔离，但导致存储空间膨胀和垃圾回收（VACUUM）开销，是 tradeoff 的核心。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value technical analysis of PostgreSQL MVCC tradeoffs vs other engines, a topic important for database engineers. Reference to lobste.rs comments suggests quality community discussion.",
+    "ai_summary": "Analyzes tradeoffs of PostgreSQL's MVCC compared to other database engines.",
+    "ai_tags": [
+      "PostgreSQL",
+      "MVCC",
+      "database internals",
+      "concurrency",
+      "performance"
+    ]
+  },
+  {
+    "id": "hackernews:story:49099715",
+    "source_type": "hackernews",
+    "title": "Keychron announces first open-source firmware for gaming mice",
+    "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
+    "content": "\n--- Top Comments ---\n\n[jchw]: A bit ago I accidentally bought a Keychron keyboard that didn&#x27;t have QMK support, but then found that someone had ported it anyway, and I was able to flash it and fix some problems I had (the main one being that it seems like the default firmware only scans a single row of keys while asleep, possibly to save energy, but I want  any  keypress to wake the computer.) Maybe it&#x27;s not perfect, but the community around open source keyboard firmware is great, it&#x27;s a good example of how...\n\n[fn-mote]: Announces != releases. They claim 2027 Q1 will be the release date. Links below purporting to be “the repository” lead to a repo with no source code. Sorry, I’m cynical. An announcement 6-9 months ahead of release? Why? Right now it’s vaporware.\n\n[MayeulC]: Hmm, I have a mouse and trackballs from ploopy, they run QMK, so why was a new project needed? What is the added value? To me,  the  missing feature in the QMK ecosystem is a devices too device communication channel. For now there is only caps lock &amp; others: it would be nice to activate a mouse layer (for instance: increase DPI) to a keyboard key. It is probably solvable if a heavyweight was to push for new HID descriptors or something similar.\n\n[jerlam]: This would be more exciting if Keychron had mice of more interesting &#x2F; experimental form factors and functionality. Just like their keyboards, their mice are mostly differentiated by obscure technical features (polling rates!). I&#x27;m a bit worried that a decent, modern replacement for the extremely obsolete multi-button mouse I have now (Logitech G602) will never be available.\n\n[DemiGuru]: For those that are interested: \n-  https:&#x2F;&#x2F;github.com&#x2F;Keychron&#x2F;zgm \n-  https:&#x2F;&#x2F;zgm.gg&#x2F;",
+    "author": "JLO64",
+    "published_at": "2026-07-29T16:36:59Z",
+    "fetched_at": "2026-07-29T23:55:21.085816Z",
+    "metadata": {
+      "score": 262,
+      "descendants": 97,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49099715",
+      "comment_count": 5,
+      "title_zh": "Keychron宣布首款游戏鼠标开源固件ZGM",
+      "detailed_summary_zh": "Keychron宣布为旗下游戏鼠标开发名为ZGM的开源固件，预计2027年第一季度正式发布。 这是游戏鼠标领域首个专为鼠标设计的开源固件项目，有望为玩家带来类似键盘QMK的高自由度自定义能力，可能改变鼠标外设生态。 ZGM固件被描述为鼠标领域的QMK/ZMK，但截至公告时仓库中尚无源代码，引发社区对“空头支票”的担忧；同时已有Ploopy等鼠标运行QMK，ZGM的差异化价值尚不明确。",
+      "background_zh": "QMK是机械键盘领域最流行的开源固件，允许用户通过图形化工具或编程自定义按键映射、宏和灯光效果。此前少数鼠标（如Ploopy）已移植QMK，但缺乏官方针对鼠标优化的解决方案。Keychron的ZGM尝试填补这一空白，但面临时间、功能和社区信任的挑战。",
+      "community_discussion_zh": "社区反应两极分化：部分用户因之前Keychron键盘的社区QMK移植体验而持正面态度，但更多人质疑ZGM与现有QMK鼠标的重复性，并对发布前近一年的提前公告表示警惕，认为可能只是“画饼”。",
+      "sources": [
+        {
+          "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
+          "title": "Keychron announces first open-source firmware for gaming mice"
+        },
+        {
+          "url": "https://www.techpowerup.com/review/ploopy-mouse/6.html",
+          "title": "Ploopy Mouse Review - Open-Source Firmware - The... | TechPowerUp"
+        }
+      ],
+      "detailed_summary": "Keychron宣布为旗下游戏鼠标开发名为ZGM的开源固件，预计2027年第一季度正式发布。 这是游戏鼠标领域首个专为鼠标设计的开源固件项目，有望为玩家带来类似键盘QMK的高自由度自定义能力，可能改变鼠标外设生态。 ZGM固件被描述为鼠标领域的QMK/ZMK，但截至公告时仓库中尚无源代码，引发社区对“空头支票”的担忧；同时已有Ploopy等鼠标运行QMK，ZGM的差异化价值尚不明确。",
+      "background": "QMK是机械键盘领域最流行的开源固件，允许用户通过图形化工具或编程自定义按键映射、宏和灯光效果。此前少数鼠标（如Ploopy）已移植QMK，但缺乏官方针对鼠标优化的解决方案。Keychron的ZGM尝试填补这一空白，但面临时间、功能和社区信任的挑战。",
+      "community_discussion": "社区反应两极分化：部分用户因之前Keychron键盘的社区QMK移植体验而持正面态度，但更多人质疑ZGM与现有QMK鼠标的重复性，并对发布前近一年的提前公告表示警惕，认为可能只是“画饼”。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value announcement for open-source firmware in gaming mice, with strong community engagement and insightful comments questioning vaporware and differentiation from existing QMK. Skepticism lowers impact, but topic is important and timely.",
+    "ai_summary": "Keychron announces upcoming open-source firmware for gaming mice, generating community excitement and skepticism about its novelty and release timeline.",
+    "ai_tags": [
+      "open-source firmware",
+      "gaming mice",
+      "keyboard community",
+      "QMK",
+      "Keychron"
+    ]
+  },
+  {
+    "id": "hackernews:story:49098130",
+    "source_type": "hackernews",
+    "title": "Self-hosting Kimi K3: 20% more hardware cost, 20% better task resolution",
+    "url": "https://aistack.imec-int.com/blog/gpu-self-hosting",
+    "content": "\n--- Top Comments ---\n\n[ktosobcy]: Recently I started playing with LM Studio and local models and found out that `gemma-4-26b-a4b` is suprisingly capable. I don&#x27;t need elaborate akin to &quot;create complete app to do X&quot; or &quot;refactor the whole codebase of bazzilion of LOC&quot; but rather &quot;how to go about doing thing X&quot; or for language study (explaining nuances of phrasal verbs or subtelties of vocabulary in other languagues) and darn -- the results are rather good (to the point that I use it mostly no...\n\n[walrus01]: Quoting from the article: &gt; In our runs, K3 served 16 concurrent sessions (GLM-5.2 managed 24). Aggregate token throughput is about 30% lower (122 vs 170 tok&#x2F;s at 16 users), and median task time is about 50% longer (38 vs 26 minutes). That makes K3 roughly 8 times slower than our Claude Code baseline. However, K3 makes up for it in quality, resolving 86.4% of tasks, 24 percentage points above both GLM-5.2 and Opus 4.8 (62.5% for both). I think there&#x27;s some less tangible advantage...\n\n[Lord-Jobo]: &gt;which box to buy … &gt; spark, costs less than a conference trip. I know putting actual prices regionally localizes your article and temporally, with how prices are so unstable. But analysis of “what to buy” without actual prices is borderline meaningless. Overall, good article, very interesting to see a real deployment that’s actually attainable and not just a subscription to a big 3 token plan.\n\n[joshstrange]: I could not focus on the article with all the noise in the background. It was annoying in the header but then it continued down the page. If you want to do this on your marketing pages have at it but for a blog&#x2F;news style page? Reader mode was the only way to restore sanity.\n\n[michalpleban]: I would love to see such comparisons but with quantized versions, because quantization allows running models on smaller hardware with some quality loss. I am running Qwen3.6-35B-A3B quantized to int4 on an A6000 card that was otherwise just sitting around idle. It works up to a degree, but I would love to see benchmarks comparing different quantizations of several models, especially in quality. This is an important dimension in deciding whether to buy a GPU is worth it, and it is missing from...",
+    "author": "flifenstein",
+    "published_at": "2026-07-29T14:38:35Z",
+    "fetched_at": "2026-07-29T23:55:21.085981Z",
+    "metadata": {
+      "score": 120,
+      "descendants": 41,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49098130",
+      "comment_count": 5,
+      "title_zh": "自托管Kimi K3：硬件成本增20%，任务解决率增20%",
+      "detailed_summary_zh": "文章比较了自托管Kimi K3与其他模型的成本和性能，发现K3的硬件成本高出约20%，但任务解决率达到86.4%，比GLM-5.2和Opus 4.8高出24个百分点。 这为企业选择自托管AI模型提供了成本效益参考，表明更高的硬件投资可换得更优的任务完成质量，对编程和知识工作等高精度场景具有指导意义。 K3支持16个并发会话，聚合吞吐量约122 tok/s，中位任务时间38分钟，相比Claude Code基线慢约8倍，但在任务分辨率上表现突出。",
+      "background_zh": "Kimi K3是一个拥有2.8万亿参数的大型语言模型，具备原生视觉能力和100万token的上下文窗口，专为长周期编码和知识工作设计。任务解决率是评估AI助手在多轮对话中能否有效理解和完成用户任务的核心指标。",
+      "community_discussion_zh": "评论中用户分享了本地模型使用经验，肯定了K3的质量优势，但也指出了文章缺乏具体硬件价格、页面噪音大以及希望看到量化版本比较等不足之处。",
+      "sources": [
+        {
+          "url": "https://www.kimi.com/blog/kimi-k3",
+          "title": "Kimi K3 Tech Blog: Open Frontier Intelligence"
+        },
+        {
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+          "title": "Kimi K3 - Kimi API Platform"
+        },
+        {
+          "url": "https://help.salesforce.com/s/articleView?id=ai.agent_guardrails_task_resolution.htm&language=en_US&type=5",
+          "title": "Task Resolution - Salesforce"
+        }
+      ],
+      "detailed_summary": "文章比较了自托管Kimi K3与其他模型的成本和性能，发现K3的硬件成本高出约20%，但任务解决率达到86.4%，比GLM-5.2和Opus 4.8高出24个百分点。 这为企业选择自托管AI模型提供了成本效益参考，表明更高的硬件投资可换得更优的任务完成质量，对编程和知识工作等高精度场景具有指导意义。 K3支持16个并发会话，聚合吞吐量约122 tok/s，中位任务时间38分钟，相比Claude Code基线慢约8倍，但在任务分辨率上表现突出。",
+      "background": "Kimi K3是一个拥有2.8万亿参数的大型语言模型，具备原生视觉能力和100万token的上下文窗口，专为长周期编码和知识工作设计。任务解决率是评估AI助手在多轮对话中能否有效理解和完成用户任务的核心指标。",
+      "community_discussion": "评论中用户分享了本地模型使用经验，肯定了K3的质量优势，但也指出了文章缺乏具体硬件价格、页面噪音大以及希望看到量化版本比较等不足之处。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Provides a detailed cost-performance analysis of self-hosting Kimi K3 with specific metrics. Community discussion adds depth, including practical considerations and comparisons to other models, confirming its value for those exploring self-hosted AI.",
+    "ai_summary": "A comparison of self-hosting Kimi K3 versus other models shows 20% higher hardware cost yielding 20% higher task resolution.",
+    "ai_tags": [
+      "self-hosting",
+      "AI",
+      "performance analysis",
+      "cost comparison",
+      "GPU"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:01256b0c27ee5458",
+    "source_type": "rss",
+    "title": "Some notes about Anthropic’s new results",
+    "url": "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/",
+    "content": "<p><a href=\"https://lobste.rs/s/g9bkak/some_notes_about_anthropic_s_new_results\">Comments</a></p>",
+    "author": "blog.cryptographyengineering.com via mantej",
+    "published_at": "2026-07-29T14:28:50Z",
+    "fetched_at": "2026-07-29T23:55:20.989293Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "cryptography",
+        "vibecoding"
+      ],
+      "title_zh": "密码学工程师对Anthropic新结果的点评",
+      "detailed_summary_zh": "一位密码学工程博主发布了一篇分析文章，对Anthropic公司近期发布的研究成果进行了技术点评。 Anthropic是AI安全领域的领先公司，其新结果可能对模型可解释性和安全性有重要影响，这篇来自专业技术人士的评论有助于社区深入理解其技术内涵。 博客文章来自密码学工程博客，作者可能重点关注了Anthropic研究中的安全机制与密码学交叉点。",
+      "background_zh": "Anthropic是一家专注于AI安全与研究的公司，由前OpenAI员工创立，其开发的Claude系列模型采用Constitutional AI技术来提升伦理合规性。密码学工程博客通常从安全角度审视AI系统。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Anthropic",
+          "title": "Anthropic - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Constitutional_AI",
+          "title": "Constitutional AI"
+        },
+        {
+          "url": "https://www.anthropic.com/research",
+          "title": "Research \\ Anthropic"
+        }
+      ],
+      "detailed_summary": "一位密码学工程博主发布了一篇分析文章，对Anthropic公司近期发布的研究成果进行了技术点评。 Anthropic是AI安全领域的领先公司，其新结果可能对模型可解释性和安全性有重要影响，这篇来自专业技术人士的评论有助于社区深入理解其技术内涵。 博客文章来自密码学工程博客，作者可能重点关注了Anthropic研究中的安全机制与密码学交叉点。",
+      "background": "Anthropic是一家专注于AI安全与研究的公司，由前OpenAI员工创立，其开发的Claude系列模型采用Constitutional AI技术来提升伦理合规性。密码学工程博客通常从安全角度审视AI系统。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important commentary on Anthropic's new results from a respected cryptography engineering blog; likely provides valuable technical analysis. While not a groundbreaking announcement itself, the content is highly relevant to AI and systems research.",
+    "ai_summary": "A blog post providing notes and analysis on new results from Anthropic.",
+    "ai_tags": [
+      "AI",
+      "Anthropic",
+      "cryptography",
+      "research"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:84021380a4c3cceb",
+    "source_type": "rss",
+    "title": "Setting timers in simple games (feat. the frame rule)",
+    "url": "https://lynn.github.io/blog/pico-timers/",
+    "content": "<p><a href=\"https://lobste.rs/s/1efcss/setting_timers_simple_games_feat_frame\">Comments</a></p>",
+    "author": "lynn.github.io via abnercoimbre",
+    "published_at": "2026-07-29T16:26:11Z",
+    "fetched_at": "2026-07-29T23:55:20.989471Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "games"
+      ],
+      "title_zh": "在简单游戏中用帧规则设置计时器",
+      "detailed_summary_zh": "一篇技术文章深入探讨了在简单游戏中使用帧规则（frame rule）来实现计时器的方法。文章以超级马里奥兄弟为例，解释了帧规则如何影响计时器的精度。 对于游戏开发者而言，理解帧规则有助于避免常见的计时器错误，提高游戏在固定帧率下的行为一致性，尤其对速通玩家和复古游戏开发者具有参考价值。 帧规则是指游戏引擎在固定帧间隔（如每21帧）检查计时器的机制，这可能导致计时精度误差。文章通过编程演示展示了如何模拟帧规则，并指出了长计时器精度更低的问题。",
+      "background_zh": "在帧率固定的游戏中，计时器往往不是每帧更新，而是按照设定的帧间隔（如21帧）触发，这就是帧规则。这种设计早年出于性能考虑，但会带来计时离散化，影响速通成绩的精确度。",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/speedrun/comments/usk40m/eli5_in_super_mario_bros_1_what_is_a_frame_rule/",
+          "title": "ELI5: In Super Mario Bros. 1, what is a \"frame rule ... - Reddit"
+        },
+        {
+          "url": "https://hangzone.com/programming-demonstration-frame-rules-super-mario-bros/",
+          "title": "A Programming Demonstration of Frame Rules in ... - HangZone What and Why Are Super Mario Bros. Frame Rules? SMB1 Speedrunner explaining framerules starter pack c++ - How to make timer for a game loop? - Stack Overflow Frame Count - somewes.com Making your game speedrunner-friendly - SDA Knowledge Base"
+        }
+      ],
+      "detailed_summary": "一篇技术文章深入探讨了在简单游戏中使用帧规则（frame rule）来实现计时器的方法。文章以超级马里奥兄弟为例，解释了帧规则如何影响计时器的精度。 对于游戏开发者而言，理解帧规则有助于避免常见的计时器错误，提高游戏在固定帧率下的行为一致性，尤其对速通玩家和复古游戏开发者具有参考价值。 帧规则是指游戏引擎在固定帧间隔（如每21帧）检查计时器的机制，这可能导致计时精度误差。文章通过编程演示展示了如何模拟帧规则，并指出了长计时器精度更低的问题。",
+      "background": "在帧率固定的游戏中，计时器往往不是每帧更新，而是按照设定的帧间隔（如21帧）触发，这就是帧规则。这种设计早年出于性能考虑，但会带来计时离散化，影响速通成绩的精确度。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical deep-dive on game timer implementation using the frame rule, likely well-written with community discussion on lobste.rs. The topic is valuable for game developers but not groundbreaking.",
+    "ai_summary": "A technical article on implementing timers in simple games using the frame rule.",
+    "ai_tags": [
+      "game development",
+      "timers",
+      "frame rule",
+      "programming",
+      "technical deep-dive"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0f7d6e8ab996ac6b",
+    "source_type": "rss",
+    "title": "Manganin: tools matter",
+    "url": "https://blog.manganin.dev/blog/tools-matter/",
+    "content": "<p><a href=\"https://lobste.rs/s/c9xa6h/manganin_tools_matter\">Comments</a></p>",
+    "author": "blog.manganin.dev via matklad",
+    "published_at": "2026-07-29T04:44:39Z",
+    "fetched_at": "2026-07-29T23:55:20.989490Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "vcs",
+        "zig"
+      ],
+      "title_zh": "Manganin: 工具很重要",
+      "detailed_summary_zh": "知名软件工程师 matklad 在其博客 Manganin 上发表文章，主张开发者工具对生产力和代码质量有重大影响。 matklad 作为 Rust 分析器（rust-analyzer）的核心开发者，其观点在工程社区具有较高权威性，可能促使团队重新评估开发工具的投资优先级。 该博客位于 manganin.dev 域名下，文章标题直接点明“工具很重要”，但现有摘要未提供具体技术细节或案例。",
+      "background_zh": "matklad 是著名软件工程师，以开发 rust-analyzer 和参与 Rust 语言设计而闻名。他的博客 Manganin 经常探讨编程语言、工具链和软件工程实践。",
+      "detailed_summary": "知名软件工程师 matklad 在其博客 Manganin 上发表文章，主张开发者工具对生产力和代码质量有重大影响。 matklad 作为 Rust 分析器（rust-analyzer）的核心开发者，其观点在工程社区具有较高权威性，可能促使团队重新评估开发工具的投资优先级。 该博客位于 manganin.dev 域名下，文章标题直接点明“工具很重要”，但现有摘要未提供具体技术细节或案例。",
+      "background": "matklad 是著名软件工程师，以开发 rust-analyzer 和参与 Rust 语言设计而闻名。他的博客 Manganin 经常探讨编程语言、工具链和软件工程实践。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Author matklad is a respected figure in software engineering, known for insightful technical writing. The title suggests an important discussion on developer tools, but without full article content, we cannot confirm high impact. No comments provided for discussion quality assessment.",
+    "ai_summary": "Blog post arguing that developer tools significantly impact productivity and code quality.",
+    "ai_tags": [
+      "developer tools",
+      "software engineering",
+      "productivity",
+      "matklad"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:6c25888cbf071577",
+    "source_type": "rss",
+    "title": "Flycheck 38: Might & Magic",
+    "url": "https://emacsredux.com/blog/2026/07/29/flycheck-38/",
+    "content": "<p><a href=\"https://lobste.rs/s/odojje/flycheck_38_might_magic\">Comments</a></p>",
+    "author": "emacsredux.com via ehamberg",
+    "published_at": "2026-07-29T14:24:20Z",
+    "fetched_at": "2026-07-29T23:55:20.989592Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release",
+        "emacs"
+      ],
+      "title_zh": "Flycheck 38 发布：名为“Might & Magic”",
+      "detailed_summary_zh": "Flycheck 38（代号“Might & Magic”）作为 Emacs 的主流语法检查工具发布了新版本，带来了多项改进和新功能。 对于大量 Emacs 用户而言，Flycheck 是日常开发中不可或缺的实时语法检查工具，此次更新有助于提升编码效率和错误发现能力。 具体更新内容未在公告中详细列出，但通常包括对更多语言检查器的支持、性能优化以及错误修复。用户可直接通过包管理器更新体验。",
+      "background_zh": "Flycheck 是 GNU Emacs 的实时语法检查扩展，用于替代内置的 Flymake。它在用户编辑时自动调用外部检查工具，并在缓冲区中高亮显示错误和警告，支持多种编程语言。",
+      "sources": [
+        {
+          "url": "https://www.flycheck.org/",
+          "title": "Flycheck — Syntax checking for GNU Emacs"
+        }
+      ],
+      "detailed_summary": "Flycheck 38（代号“Might & Magic”）作为 Emacs 的主流语法检查工具发布了新版本，带来了多项改进和新功能。 对于大量 Emacs 用户而言，Flycheck 是日常开发中不可或缺的实时语法检查工具，此次更新有助于提升编码效率和错误发现能力。 具体更新内容未在公告中详细列出，但通常包括对更多语言检查器的支持、性能优化以及错误修复。用户可直接通过包管理器更新体验。",
+      "background": "Flycheck 是 GNU Emacs 的实时语法检查扩展，用于替代内置的 Flymake。它在用户编辑时自动调用外部检查工具，并在缓冲区中高亮显示错误和警告，支持多种编程语言。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Major release of a widely-used Emacs syntax checker; significant for Emacs users but not a paradigm shift. The lobste.rs comments may provide additional community insights, increasing relevance.",
+    "ai_summary": "Flycheck 38, titled 'Might & Magic', has been released with updates for the Emacs syntax checking tool.",
+    "ai_tags": [
+      "Emacs",
+      "Flycheck",
+      "syntax checking",
+      "release"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d1201e2f41ade92a",
+    "source_type": "rss",
+    "title": "C++26: Reducing undefined behaviour",
+    "url": "https://www.sandordargo.com/blog/2026/07/29/cpp26-reduces-undefined-behaviour",
+    "content": "<p><a href=\"https://lobste.rs/s/xinbkz/c_26_reducing_undefined_behaviour\">Comments</a></p>",
+    "author": "sandordargo.com via raymii",
+    "published_at": "2026-07-29T07:15:55Z",
+    "fetched_at": "2026-07-29T23:55:20.989632Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "c++"
+      ],
+      "title_zh": "C++26 减少未定义行为",
+      "detailed_summary_zh": "C++26 标准工作组正在努力减少语言中的未定义行为，例如将某些整数溢出或指针操作从未定义转为由实现定义或完全定义。 未定义行为是 C++ 程序错误的常见根源，减少它能帮助开发者写出更可靠、更安全的代码，同时避免编译器因假设无 UB 而进行激进优化所导致的隐蔽 bug。 具体措施包括将部分未定义行为改为由实现定义（implementation-defined）或完全定义，以提升代码的可移植性和可预测性。这些变化需通过 ISO C++ 委员会的投票才能进入正式标准。",
+      "background_zh": "未定义行为（UB）是指程序执行结果完全不可预测的情况，编译器可假设 UB 不会发生并据此进行激进优化，这往往导致难以排查的运行时错误。C++ 标准通过逐步消除或明确 UB，旨在提升语言的安全性和开发者体验。C++26 是继 C++23 之后的新标准，预计于 2026 年正式发布。",
+      "sources": [
+        {
+          "url": "https://herbsutter.com/2026/03/29/c26-is-done-trip-report-march-2026-iso-c-standards-meeting-london-croydon-uk/",
+          "title": "C++26 is done! — Trip report: March 2026 ISO C++ standards ..."
+        }
+      ],
+      "detailed_summary": "C++26 标准工作组正在努力减少语言中的未定义行为，例如将某些整数溢出或指针操作从未定义转为由实现定义或完全定义。 未定义行为是 C++ 程序错误的常见根源，减少它能帮助开发者写出更可靠、更安全的代码，同时避免编译器因假设无 UB 而进行激进优化所导致的隐蔽 bug。 具体措施包括将部分未定义行为改为由实现定义（implementation-defined）或完全定义，以提升代码的可移植性和可预测性。这些变化需通过 ISO C++ 委员会的投票才能进入正式标准。",
+      "background": "未定义行为（UB）是指程序执行结果完全不可预测的情况，编译器可假设 UB 不会发生并据此进行激进优化，这往往导致难以排查的运行时错误。C++ 标准通过逐步消除或明确 UB，旨在提升语言的安全性和开发者体验。C++26 是继 C++23 之后的新标准，预计于 2026 年正式发布。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important update on C++ standard evolution addressing undefined behavior, a core concern for C++ developers. The topic has significant technical depth and impact, and community discussion on lobste.rs adds value.",
+    "ai_summary": "C++26 is working to reduce undefined behavior in the language, improving safety and predictability.",
+    "ai_tags": [
+      "C++",
+      "programming languages",
+      "undefined behavior",
+      "standards"
+    ]
+  },
+  {
+    "id": "rss:newsletter.pragmaticengineer.com_feed:8e1cf2c43444c547",
+    "source_type": "rss",
+    "title": "Formal methods with Hillel Wayne",
+    "url": "https://newsletter.pragmaticengineer.com/p/formal-methods-with-hillel-wayne",
+    "content": "Hillel Wayne explains why formal methods like TLA+ matter, how they help build reliable software, and whether AI will finally bring formal verification into the mainstream.",
+    "author": "Gergely Orosz",
+    "published_at": "2026-07-29T16:22:31Z",
+    "fetched_at": "2026-07-29T23:55:21.377957Z",
+    "metadata": {
+      "feed_name": "The Pragmatic Engineer",
+      "category": "",
+      "tags": [],
+      "title_zh": "形式化方法与Hillel Wayne的深度探讨",
+      "detailed_summary_zh": "Hillel Wayne在文章中阐述了形式化方法（如TLA+）对构建可靠软件的重要性，并探讨了人工智能可能推动形式化验证走向主流。 形式化方法通过数学证明保证软件的正确性，尤其对于分布式系统等关键领域至关重要。如果AI能降低其使用门槛，将显著提升整个行业的软件可靠性。 TLA+是由图灵奖得主Leslie Lamport开发的形式化规范语言，被AWS、微软等公司用于验证并发和分布式系统。",
+      "background_zh": "形式化方法是一种利用数学精确描述和验证软件系统的技术，相比传统测试能更彻底地确保正确性。TLA+是其中常用的工具，能通过模型检测发现设计缺陷。",
+      "sources": [
+        {
+          "url": "https://www.learntla.com/",
+          "title": "Learn TLA+ — Learn TLA+"
+        }
+      ],
+      "detailed_summary": "Hillel Wayne在文章中阐述了形式化方法（如TLA+）对构建可靠软件的重要性，并探讨了人工智能可能推动形式化验证走向主流。 形式化方法通过数学证明保证软件的正确性，尤其对于分布式系统等关键领域至关重要。如果AI能降低其使用门槛，将显著提升整个行业的软件可靠性。 TLA+是由图灵奖得主Leslie Lamport开发的形式化规范语言，被AWS、微软等公司用于验证并发和分布式系统。",
+      "background": "形式化方法是一种利用数学精确描述和验证软件系统的技术，相比传统测试能更彻底地确保正确性。TLA+是其中常用的工具，能通过模型检测发现设计缺陷。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value content from a respected author explaining formal methods and their relevance, including AI's potential impact; insightful for practitioners interested in software reliability.",
+    "ai_summary": "Hillel Wayne discusses the importance of formal methods like TLA+ for building reliable software and the potential role of AI in mainstreaming formal verification.",
+    "ai_tags": [
+      "formal methods",
+      "TLA+",
+      "software reliability",
+      "formal verification",
+      "AI"
+    ]
+  }
+]
