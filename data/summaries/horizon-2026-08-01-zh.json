@@ -1,0 +1,579 @@
+[
+  {
+    "id": "hackernews:story:49137060",
+    "source_type": "hackernews",
+    "title": "Postmortem for Kernel Soundness Bug #14576",
+    "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+    "content": "\n--- Top Comments ---\n\n[gr_norm]: &gt; The practical consequence: checking with an independent kernel still works, since it required two distinct bugs in two implementations, but users who rely on it need current versions of both. Things like this aren&#x27;t too surprising, given that even much simpler type checkers like Rust&#x27;s have soundness issues occasionally. I think it&#x27;s very important to view verified results not as an absolute and unbreakable guarantee, just an extraordinarily strong one where (1) the surfac...\n\n[dafelst]: Feels appropriate for bugs in a formal proof system: &gt; Beware of bugs in the above code; I have only proved it correct, not tried it. -Knuth, 1977\n\n[Gehinnn]: Has there ever been a bug that allowed to prove a previously unproven statement, without allowing the user to prove &quot;false&quot; by exploiting the bug directly? If every bug-exploiting proof would make it easy to prove false, putting a bounty on proving false could increase trust in the validity of verified but obscure Lean proofs.\n\n[michaelfm1211]: Reminds me of this:  https:&#x2F;&#x2F;mathoverflow.net&#x2F;questions&#x2F;513742&#x2F;are-we-stuck-with-...  I know this is an implementation bug not a meta-theory bug, but I&#x27;d almost consider the fact soundness bugs are possible as a bug in the ideology, or at least a severe drawback. Stuff like this just wouldn&#x27;t happen in Metamath. In a future where AI is autogenerating formalizations, why not have the AI use a harder but airtight system like Metamath?\n\n[vatsachak]: And everyone who&#x27;s been into this stuff for a while has had their prediction come through. If AI is water, Lean is the pipe and collatz is a clog on one end, then surely we&#x27;ll find the cracks.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/ojcl8j/postmortem_for_lean_kernel_soundness_bug\">Comments</a></p>",
+    "author": "juhopitk",
+    "published_at": "2026-08-01T18:32:20Z",
+    "fetched_at": "2026-08-01T23:50:51.704519Z",
+    "metadata": {
+      "score": 104,
+      "descendants": 37,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49137060",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "plt"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Lean 内核健全性漏洞 #14576 事后剖析",
+      "detailed_summary_zh": "Lean 证明助手的主要开发者 Leonardo de Moura 发布了关于内核健全性漏洞 #14576 的事后分析，详细讨论了该漏洞对证明验证的实际影响。社区随即围绕形式化证明系统的信任问题展开了热烈讨论。 Lean 是广泛使用的证明助手，内核健全性漏洞可能动摇用户对形式化验证结果可靠性的信任。此事件凸显了即使被高度信赖的证明系统，其实现层面的 bug 仍可能影响所有依赖 Lean 进行数学形式化和软件验证的用户。 事后分析指出，使用独立的替代内核进行验证仍然有效，因为要利用此漏洞需要两个不同实现中同时存在两种不同的 bug，但用户必须确保两个版本都更新到最新。社区评论还提到，更简单、经过更深入验证的系统（如 Metamath）可能不易出现此类实现层面的健全性问题。",
+      "background_zh": "Lean 是一个基于演算构造（Calculus of Inductive Constructions）的证明助手和函数式编程语言，其内核是一段最小化的软件，用于检查和构造逻辑证明。健全性（soundness）是逻辑系统的基本性质，指所有可证明的公式在语义上都是有效的；内核一旦存在 bug，理论上可能导致错误命题被证明为真。形式化验证社区通常将证明助手的保证视为极强但并非绝对，本次事件正是这一观点的例证。",
+      "community_discussion_zh": "评论者引用了高德纳（Knuth）的名言“我只证明了正确性，没有尝试过”，提醒人们形式化证明系统同样可能存在缺陷。有人认为这类实现 bug 暴露了“意识形态上的缺陷”，并主张在 AI 自动生成形式化证明的未来，应优先采用更简单且更难出错像 Metamath 之类的系统。还有人建议设立悬赏以证明“false”，借此提升对经过验证但晦涩的 Lean 证明的信任度。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Lean_(proof_assistant)",
+          "title": "Lean (proof assistant)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Soundness_(logic)",
+          "title": "Soundness (logic)"
+        },
+        {
+          "url": "https://ammkrn.github.io/type_checking_in_lean4/whats_a_kernel.html",
+          "title": "What's a kernel? - Type Checking in Lean 4"
+        }
+      ],
+      "detailed_summary": "Lean 证明助手的主要开发者 Leonardo de Moura 发布了关于内核健全性漏洞 #14576 的事后分析，详细讨论了该漏洞对证明验证的实际影响。社区随即围绕形式化证明系统的信任问题展开了热烈讨论。 Lean 是广泛使用的证明助手，内核健全性漏洞可能动摇用户对形式化验证结果可靠性的信任。此事件凸显了即使被高度信赖的证明系统，其实现层面的 bug 仍可能影响所有依赖 Lean 进行数学形式化和软件验证的用户。 事后分析指出，使用独立的替代内核进行验证仍然有效，因为要利用此漏洞需要两个不同实现中同时存在两种不同的 bug，但用户必须确保两个版本都更新到最新。社区评论还提到，更简单、经过更深入验证的系统（如 Metamath）可能不易出现此类实现层面的健全性问题。",
+      "background": "Lean 是一个基于演算构造（Calculus of Inductive Constructions）的证明助手和函数式编程语言，其内核是一段最小化的软件，用于检查和构造逻辑证明。健全性（soundness）是逻辑系统的基本性质，指所有可证明的公式在语义上都是有效的；内核一旦存在 bug，理论上可能导致错误命题被证明为真。形式化验证社区通常将证明助手的保证视为极强但并非绝对，本次事件正是这一观点的例证。",
+      "community_discussion": "评论者引用了高德纳（Knuth）的名言“我只证明了正确性，没有尝试过”，提醒人们形式化证明系统同样可能存在缺陷。有人认为这类实现 bug 暴露了“意识形态上的缺陷”，并主张在 AI 自动生成形式化证明的未来，应优先采用更简单且更难出错像 Metamath 之类的系统。还有人建议设立悬赏以证明“false”，借此提升对经过验证但晦涩的 Lean 证明的信任度。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "A detailed postmortem of a soundness bug in a widely-used proof assistant (Lean) with substantive community discussion about implications for verified proofs, trust, and comparisons to other systems. High technical depth and relevance to formal verification and software engineering.",
+    "ai_summary": "Postmortem of a kernel soundness bug in Lean, discussing its practical impact on proof verification and community reactions on trust in formal proof systems.",
+    "ai_tags": [
+      "Lean",
+      "formal verification",
+      "proof assistants",
+      "soundness",
+      "bug"
+    ]
+  },
+  {
+    "id": "hackernews:story:49136821",
+    "source_type": "hackernews",
+    "title": "How Google helped destroy adoption of RSS feeds (2023)",
+    "url": "https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds",
+    "content": "\n--- Top Comments ---\n\n[throwaway63467]: The Internet in the early 2000s felt a little more special as compared to today, when 99.999 % of content is locked in a handful of walled gardens. I mean sure everything we had then is still possible but let’s be honest everything about the web is fine tuned to deliver ads to our eyeballs, browsers, operating systems and even protocols are being designed with ad delivery in mind. Even the privacy friendly browsers just exist to serve ads when I think about it. Kind of sad really, but I guess...\n\n[bakemawaytoys]: Google’s obviously fake excuse for killing their RSS reader (declining usage) was especially maddening at the time because they were pushing Google+ - which _nobody_ used.\n\n[betenoire]: Google Reader going away felt like the beginning of the end the internet as I knew it. I miss websites\n\n[orzi]: Don&#x27;t forget Mozilla removing Live Bookmarks (RSS feeds showed up directly in your bookmarks menu) and RSS feed subscriptions in Firefox 64.  https:&#x2F;&#x2F;www.gijsk.com&#x2F;blog&#x2F;2018&#x2F;10&#x2F;firefox-removes-core-prod...\n\n[schappim]: Google tried to kill RSS, but it is not dead, in fact it is still a huge part of the Open Web Initiative. There is no performance hit or real resource cost in supporting RSS. If big platforms like Shopify can do it, we can support RSS feeds (and more) too! I&#x27;ve recently added RSS and other alternative representations to our Rails based ecom store[1] and rails makes it super easy[1a]. If you&#x27;re using Rails it is basically free to add RSS feeds w&#x2F; the &#x27;feed&#x27; or &#x27;rs...",
+    "author": "pudgywalsh",
+    "published_at": "2026-08-01T18:07:07Z",
+    "fetched_at": "2026-08-01T23:50:51.704582Z",
+    "metadata": {
+      "score": 342,
+      "descendants": 114,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49136821",
+      "comment_count": 5,
+      "title_zh": "谷歌如何让RSS走向衰落",
+      "detailed_summary_zh": "一篇题为《谷歌如何帮助摧毁RSS》的分析文章指出，谷歌的一系列决策——尤其是2013年关闭Google Reader——是RSS从主流走向边缘的关键因素。文章重新审视了这一历史事件，认为谷歌的行为加速了RSS在普通用户中的衰落。 这一分析之所以重要，是因为它揭示了一家科技巨头对开放网络标准的影响：当谷歌关闭Reader后，大量用户转向封闭的平台，内容逐渐被锁定在少数“围墙花园”中。对于关注开放网络、内容分发和去中心化的人来说，这提供了一个警示性的案例。 Google Reader曾是流行的RSS/Atom聚合器，谷歌当时给出的关闭理由是用户减少和新闻消费习惯改变，但在当时被认为是一种托词，因为谷歌正大力推广Google+。此外，社区评论还提到Mozilla在Firefox 64中移除了RSS订阅功能，进一步削弱了RSS的入口。",
+      "background_zh": "RSS（Really Simple Syndication）是一种基于XML的网络信息聚合格式，允许用户通过一个阅读器订阅多个网站的更新，而无需逐一访问。Google Reader是谷歌推出的RSS阅读器，曾是这类工具的代名词，2013年关闭后引发大量用户不满。开放网络（Open Web）理念主张网络应自由访问、不受少数大型科技企业控制，而RSS被视为开放网络的重要组成之一。",
+      "community_discussion_zh": "评论区整体情绪偏向怀旧和不满：有用户感叹2000年代初的互联网更有“特别感”，如今绝大多数内容被锁定在少数平台中；也有用户认为谷歌以“使用量下降”为由关闭Reader是“明显虚假的借口”，真正目的是推广无人使用的Google+。不过，也有声音指出RSS并未死亡，它仍是开放网络的重要组成部分，并且在Rails等框架中几乎零成本就能添加RSS支持。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/RSS",
+          "title": "RSS - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Google_Reader",
+          "title": "Google Reader - Wikipedia"
+        },
+        {
+          "url": "https://www.wired.com/2013/06/why-google-reader-got-the-ax/",
+          "title": "Why Google Reader Really Got the Axe | WIRED"
+        }
+      ],
+      "detailed_summary": "一篇题为《谷歌如何帮助摧毁RSS》的分析文章指出，谷歌的一系列决策——尤其是2013年关闭Google Reader——是RSS从主流走向边缘的关键因素。文章重新审视了这一历史事件，认为谷歌的行为加速了RSS在普通用户中的衰落。 这一分析之所以重要，是因为它揭示了一家科技巨头对开放网络标准的影响：当谷歌关闭Reader后，大量用户转向封闭的平台，内容逐渐被锁定在少数“围墙花园”中。对于关注开放网络、内容分发和去中心化的人来说，这提供了一个警示性的案例。 Google Reader曾是流行的RSS/Atom聚合器，谷歌当时给出的关闭理由是用户减少和新闻消费习惯改变，但在当时被认为是一种托词，因为谷歌正大力推广Google+。此外，社区评论还提到Mozilla在Firefox 64中移除了RSS订阅功能，进一步削弱了RSS的入口。",
+      "background": "RSS（Really Simple Syndication）是一种基于XML的网络信息聚合格式，允许用户通过一个阅读器订阅多个网站的更新，而无需逐一访问。Google Reader是谷歌推出的RSS阅读器，曾是这类工具的代名词，2013年关闭后引发大量用户不满。开放网络（Open Web）理念主张网络应自由访问、不受少数大型科技企业控制，而RSS被视为开放网络的重要组成之一。",
+      "community_discussion": "评论区整体情绪偏向怀旧和不满：有用户感叹2000年代初的互联网更有“特别感”，如今绝大多数内容被锁定在少数平台中；也有用户认为谷歌以“使用量下降”为由关闭Reader是“明显虚假的借口”，真正目的是推广无人使用的Google+。不过，也有声音指出RSS并未死亡，它仍是开放网络的重要组成部分，并且在Rails等框架中几乎零成本就能添加RSS支持。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value historical analysis of tech industry decisions impacting open web standards, backed by strong community engagement and discussion reflecting technical and cultural significance.",
+    "ai_summary": "An analysis of how Google's actions, particularly killing Google Reader, contributed to the decline of RSS adoption on the web.",
+    "ai_tags": [
+      "RSS",
+      "Google",
+      "Open Web",
+      "Tech History",
+      "Web Standards"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:d645898534661fda",
+    "source_type": "rss",
+    "title": "Apple Screen Sharing Pre-Auth RCE",
+    "url": "https://warez.sl0p.foo/apple-screensharing-rce/",
+    "content": "<p><a href=\"https://lobste.rs/s/t1wy9l/apple_screen_sharing_pre_auth_rce\">Comments</a></p>",
+    "author": "warez.sl0p.foo via fro",
+    "published_at": "2026-08-01T19:39:20Z",
+    "fetched_at": "2026-08-01T23:50:51.591449Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "mac"
+      ],
+      "title_zh": "苹果屏幕共享曝出预认证RCE漏洞",
+      "detailed_summary_zh": "安全研究人员公开了一个苹果屏幕共享（Apple Screen Sharing）的预认证远程代码执行（pre-auth RCE）漏洞。该漏洞允许攻击者在无需任何凭据的情况下，通过网络远程在目标 Mac 上执行任意代码。 屏幕共享是 macOS 内置功能，常被用于远程管理和支持，且可能暴露在网络上。预认证 RCE 意味着攻击者只需网络可达即可完全控制目标设备，对个人和企业用户都构成严重威胁。 公告内容非常简短，未披露具体 CVE 编号、受影响版本或补丁信息，仅附有 Lobsters 讨论链接。预认证 RCE 的本质是攻击者不需要密码或用户交互，仅凭网络可达性和精心构造的输入即可利用。",
+      "background_zh": "远程代码执行（RCE）是一类允许攻击者远程在目标系统上执行任意命令或代码的漏洞，通常被认为是最危险的网络安全威胁之一。'预认证'（pre-auth）表示漏洞可在登录之前被触发，无需提供任何有效凭据，进一步降低了利用门槛。苹果屏幕共享是 macOS 自带的远程桌面功能，若该漏洞被大规模利用，攻击者可以像合法用户一样控制受影响的 Mac。",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/securedotcom_cybersecurity-beyondtrust-ai-activity-7426970504378413056-30mk",
+          "title": "BeyondTrust Patched: AI-Discovered Pre - Auth RCE ... | LinkedIn"
+        },
+        {
+          "url": "https://innovirtuoso.com/ai/patch-tuesday-may-2026-cve-analysis-pre-auth-rces-and-the-rise-of-ai-discovered-bugs/",
+          "title": "Patch Tuesday May 2026: CVE Analysis, Pre ‑ Auth RCEs , and the..."
+        },
+        {
+          "url": "https://www.n-able.com/blog/remote-code-execution",
+          "title": "RCE: Remote Code Execution Explained - N-able"
+        }
+      ],
+      "detailed_summary": "安全研究人员公开了一个苹果屏幕共享（Apple Screen Sharing）的预认证远程代码执行（pre-auth RCE）漏洞。该漏洞允许攻击者在无需任何凭据的情况下，通过网络远程在目标 Mac 上执行任意代码。 屏幕共享是 macOS 内置功能，常被用于远程管理和支持，且可能暴露在网络上。预认证 RCE 意味着攻击者只需网络可达即可完全控制目标设备，对个人和企业用户都构成严重威胁。 公告内容非常简短，未披露具体 CVE 编号、受影响版本或补丁信息，仅附有 Lobsters 讨论链接。预认证 RCE 的本质是攻击者不需要密码或用户交互，仅凭网络可达性和精心构造的输入即可利用。",
+      "background": "远程代码执行（RCE）是一类允许攻击者远程在目标系统上执行任意命令或代码的漏洞，通常被认为是最危险的网络安全威胁之一。'预认证'（pre-auth）表示漏洞可在登录之前被触发，无需提供任何有效凭据，进一步降低了利用门槛。苹果屏幕共享是 macOS 自带的远程桌面功能，若该漏洞被大规模利用，攻击者可以像合法用户一样控制受影响的 Mac。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Pre-auth RCE in Apple Screen Sharing is a critical security vulnerability with high potential impact. The content itself is sparse but the topic is significant and likely to generate valuable community discussion on Lobsters.",
+    "ai_summary": "Announcement of a pre-auth remote code execution vulnerability in Apple Screen Sharing.",
+    "ai_tags": [
+      "security",
+      "apple",
+      "RCE",
+      "vulnerability",
+      "screen sharing"
+    ]
+  },
+  {
+    "id": "hackernews:story:49138188",
+    "source_type": "hackernews",
+    "title": "Diátaxis",
+    "url": "https://diataxis.fr/",
+    "content": "\n--- Top Comments ---\n\n[rkangel]: I and my team did a full set of documentation for handing over a codebase to the client. A large complex codebase with accumulated history and subtle reasons why things were done. Diataxis was  fantastic . It took a bit of effort to work out what the page titles were to cover everything we needed, but then when you were writing a page it was glorious. It was so clear what you were saying and what &quot;voice&quot; you were writing in. If it&#x27;s a Reference page you&#x27;re all descriptive,...\n\n[DanieleProcida]: I&#x27;d like to take advantage of the attention it&#x27;s getting to point out that I am working on translating Diátaxis into other languages  https:&#x2F;&#x2F;diataxis.fr&#x2F;translation&#x2F; , and you can see an in-progress version with some partially completed translations at  https:&#x2F;&#x2F;diataxis-translated.readthedocs.io&#x2F;translation&#x2F; .\n\n[Hnrobert42]: I urge people to not read this. Once you do, you will see all documentation will as the flawed and confusing mess it is. Ignorance is bliss!\n\n[conradludgate]: I never saw the point in Diataxis, but honestly while vibe coding it&#x27;s pretty convenient to tell an LLM &quot;do diataxis&quot; and get decent first pass documentation out of it.\n\n[jamilbk]: We just invested a good amount of time restructuring our docs for Diátaxis. It was helpful, but I wouldn&#x27;t take it as gospel. The important thing to remember is that each piece of content should be one of the four types. If you&#x27;re embarking upon a refactoring &#x2F; rewriting journey for your docs, the only advice I&#x27;d share is to actually read the website beginning to end before starting. Especially this page:  https:&#x2F;&#x2F;diataxis.fr&#x2F;complex-hierarchies&#x2F; . The ...",
+    "author": "ryanseys",
+    "published_at": "2026-08-01T20:33:27Z",
+    "fetched_at": "2026-08-01T23:50:51.704476Z",
+    "metadata": {
+      "score": 133,
+      "descendants": 21,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49138188",
+      "comment_count": 5,
+      "title_zh": "Diátaxis 文档框架讨论：实践经验与翻译计划",
+      "detailed_summary_zh": "在 Hacker News 的这次讨论中，多位实践者分享了使用 Diátaxis 框架重构文档的实际经验；框架作者 Daniele Procida 同时宣布正在将 Diátaxis 翻译为多种语言，并提供了进行中的翻译版本（diataxis-translated.readthedocs.io）。 Diátaxis 是技术文档领域广泛采用的方法论，本次讨论汇聚了真实使用体验（包括正面与批评意见），对技术写作实践者有重要参考价值；多语言翻译计划也将帮助更多非英语读者理解和应用该框架。 Diátaxis 将文档分为教程、操作指南、参考和解释四种类型；实践者提醒，重构前应通读完整的官方指南（尤其是“complex hierarchies”页面），且不要将其奉为绝对标准——关键在于让每部分内容只归属于其中一种类型。",
+      "background_zh": "Diátaxis（源自希腊语，意为“横向排列”）是 Daniele Procida 提出的一种技术文档组织框架，核心思想是文档存在四种基本类型，分别对应四种不同需求：教程（学习）、操作指南（解决问题）、参考（信息查询）和解释（理解）。该框架被广泛采用，例如 Canonical 曾基于它重构 Ubuntu 文档，以帮助用户更高效地定位所需资源。",
+      "community_discussion_zh": "整体氛围积极而务实：有实践者称 Diátaxis 让文档写作变得清晰（rkangel），也有用户认为它并非万能并提醒不要奉为圭臬（jamilbk）；还有人调侃一旦读了就会看穿所有文档的缺陷（Hnrobert42），以及发现它对指导 LLM 生成初步文档很方便（conradludgate）。",
+      "sources": [
+        {
+          "url": "https://diataxis.fr/",
+          "title": "Diátaxis"
+        },
+        {
+          "url": "https://diataxis.fr/start-here/",
+          "title": "Start here - Diátaxis in five minutes - Diátaxis"
+        },
+        {
+          "url": "https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation",
+          "title": "Diátaxis , a new foundation for Canonical documentation | Ubuntu"
+        }
+      ],
+      "detailed_summary": "在 Hacker News 的这次讨论中，多位实践者分享了使用 Diátaxis 框架重构文档的实际经验；框架作者 Daniele Procida 同时宣布正在将 Diátaxis 翻译为多种语言，并提供了进行中的翻译版本（diataxis-translated.readthedocs.io）。 Diátaxis 是技术文档领域广泛采用的方法论，本次讨论汇聚了真实使用体验（包括正面与批评意见），对技术写作实践者有重要参考价值；多语言翻译计划也将帮助更多非英语读者理解和应用该框架。 Diátaxis 将文档分为教程、操作指南、参考和解释四种类型；实践者提醒，重构前应通读完整的官方指南（尤其是“complex hierarchies”页面），且不要将其奉为绝对标准——关键在于让每部分内容只归属于其中一种类型。",
+      "background": "Diátaxis（源自希腊语，意为“横向排列”）是 Daniele Procida 提出的一种技术文档组织框架，核心思想是文档存在四种基本类型，分别对应四种不同需求：教程（学习）、操作指南（解决问题）、参考（信息查询）和解释（理解）。该框架被广泛采用，例如 Canonical 曾基于它重构 Ubuntu 文档，以帮助用户更高效地定位所需资源。",
+      "community_discussion": "整体氛围积极而务实：有实践者称 Diátaxis 让文档写作变得清晰（rkangel），也有用户认为它并非万能并提醒不要奉为圭臬（jamilbk）；还有人调侃一旦读了就会看穿所有文档的缺陷（Hnrobert42），以及发现它对指导 LLM 生成初步文档很方便（conradludgate）。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Diátaxis is a well-regarded documentation framework, and this HN discussion includes practical experiences (positive and critical) plus author engagement about translations, making it high-value for technical writers though not groundbreaking.",
+    "ai_summary": "Discussion of Diátaxis, a documentation framework, with practitioners sharing their experiences and the author announcing translation efforts.",
+    "ai_tags": [
+      "documentation",
+      "technical-writing",
+      "diataxis",
+      "developer-experience",
+      "knowledge-management"
+    ]
+  },
+  {
+    "id": "hackernews:story:49134599",
+    "source_type": "hackernews",
+    "title": "The Art of 64-bit Assembly",
+    "url": "https://nostarch.com/art-64-bit-assembly-v2",
+    "content": "\n--- Top Comments ---\n\n[skippyfish]: I know that we&#x27;re discouraged from meta-comments, but what is going on in this thread? It&#x27;s a nearly 800-page book about the art of programming. A huge amount of work on a topic that should be dear to our hearts. News for hackers, right? But somehow, the discussion has three themes. It&#x27;s 50+ comments of &quot;I don&#x27;t like the first sentence of the marketing copy&quot;, &quot;I don&#x27;t like the tool the author is using&quot;, and &quot;what would happen if we train an LL...\n\n[MaskRay]: Interesting to see that people are still spending much time on assembly languages :) \nI&#x27;ve had a lot of fun with it in recent years as well. (Shameless plug: I&#x27;ve written a few on LLVM integrated assembler regarding better fragments and improving expressions and relocations). When comparing GNU Assembler and MASM, GAS is missing many features: while loop, string processing (.e.g strlen) &gt; page 3: &quot;It’s important to understand that MASM converts macro invocation arguments to ...\n\n[tensegrist]: i&#x27;m sorry, starting with &quot;you can ask AI to … [but it&#x27;ll do an incomplete and bad job]&quot; and then launching forth into a hundred words of AI-produced text is not very appetizing i hope this is the publisher&#x27;s fault and the author replaces it with something decent of their own. contrary to the opinions i&#x27;ve heard around (including elsewhere on this thread) learning asm is still meaningful today and it&#x27;s something i&#x27;d like to get better at so i will consid...\n\n[iamcreasy]: I built compiler that compiles to 16bit x86 via MASM. This books feel like a natural next step, but I was wondering if there is a linux equivalent book I can choose instead?\n\n[woadwarrior01]: Wow, I can&#x27;t believe that the author is still updating the book! I&#x27;d learnt protected mode assembly from an older version of this book, decades ago. And IIRC, there was an even older 16-bit version of the book back then.",
+    "author": "0x54MUR41",
+    "published_at": "2026-08-01T14:09:00Z",
+    "fetched_at": "2026-08-01T23:50:51.704553Z",
+    "metadata": {
+      "score": 172,
+      "descendants": 83,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49134599",
+      "comment_count": 5,
+      "title_zh": "《64位汇编艺术》新版发布",
+      "detailed_summary_zh": "No Starch Press 宣布推出《The Art of 64-bit Assembly》的新版本，这是一本近 800 页的 x86-64 汇编编程指南，重点介绍使用 MASM（Microsoft Macro Assembler）及相关工具链进行底层编程。 汇编语言仍是性能关键系统、操作系统内核和设备驱动等场景的重要工具，这本篇幅巨大的专著为开发者提供了深入的低层编程参考。该书发布在 Hacker News 上引发热烈讨论，反映出社区对底层技术话题的持续兴趣。 新版针对 64 位 x86-64 架构，主要使用微软的 MASM 汇编器，其 64 位版本 ML64 用于生成 64 位目标代码。书中还涉及与 GNU Assembler（GAS）的差异，例如 GAS 缺少宏循环和字符串处理等便捷功能。",
+      "background_zh": "汇编语言是一种与机器码一一对应的低级编程语言，允许开发者精确控制硬件资源，常用于实时嵌入式系统、操作系统内核和设备驱动等场景。x86-64 是 AMD 和 Intel 推出的 64 位指令集架构，是当前主流桌面和服务器的标准。MASM 即微软宏汇编器，使用 Intel 语法，随 Visual Studio 等 SDK 分发，历史上曾用于 RollerCoaster Tycoon 等知名游戏的开发。",
+      "community_discussion_zh": "HN 讨论中，部分评论批评该书营销文案及开篇使用 AI 生成文字，认为不够吸引人；另有开发者讨论 MASM 与 GAS 的优劣，并感叹仍有很多人投入汇编语言研究。也有读者回忆从早期版本学习汇编的经历，并询问是否有针对 Linux 的同等书籍。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/MASM",
+          "title": "MASM"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/X86_assembly_language",
+          "title": "X86 assembly language"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Assembly_language",
+          "title": "Assembly language - Wikipedia"
+        }
+      ],
+      "detailed_summary": "No Starch Press 宣布推出《The Art of 64-bit Assembly》的新版本，这是一本近 800 页的 x86-64 汇编编程指南，重点介绍使用 MASM（Microsoft Macro Assembler）及相关工具链进行底层编程。 汇编语言仍是性能关键系统、操作系统内核和设备驱动等场景的重要工具，这本篇幅巨大的专著为开发者提供了深入的低层编程参考。该书发布在 Hacker News 上引发热烈讨论，反映出社区对底层技术话题的持续兴趣。 新版针对 64 位 x86-64 架构，主要使用微软的 MASM 汇编器，其 64 位版本 ML64 用于生成 64 位目标代码。书中还涉及与 GNU Assembler（GAS）的差异，例如 GAS 缺少宏循环和字符串处理等便捷功能。",
+      "background": "汇编语言是一种与机器码一一对应的低级编程语言，允许开发者精确控制硬件资源，常用于实时嵌入式系统、操作系统内核和设备驱动等场景。x86-64 是 AMD 和 Intel 推出的 64 位指令集架构，是当前主流桌面和服务器的标准。MASM 即微软宏汇编器，使用 Intel 语法，随 Visual Studio 等 SDK 分发，历史上曾用于 RollerCoaster Tycoon 等知名游戏的开发。",
+      "community_discussion": "HN 讨论中，部分评论批评该书营销文案及开篇使用 AI 生成文字，认为不够吸引人；另有开发者讨论 MASM 与 GAS 的优劣，并感叹仍有很多人投入汇编语言研究。也有读者回忆从早期版本学习汇编的经历，并询问是否有针对 Linux 的同等书籍。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "A substantial 800-page book on 64-bit assembly for x86-64 is a valuable technical resource; the HN thread has meaningful discussion about MASM, GAS, and the relevance of assembly today, though some meta-commentary on marketing copy and AI use slightly detracts. Strong community engagement (172 points, 83 comments) indicates broad interest.",
+    "ai_summary": "Announcement and community discussion of a comprehensive new edition of 'The Art of 64-bit Assembly', covering low-level programming with MASM and related tooling.",
+    "ai_tags": [
+      "assembly",
+      "low-level programming",
+      "x86-64",
+      "book",
+      "MASM"
+    ]
+  },
+  {
+    "id": "hackernews:story:49136736",
+    "source_type": "hackernews",
+    "title": "NetBSD 11.0",
+    "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+    "content": "\n--- Top Comments ---\n\n[haberman]: I often wonder what the current status is of the BSDs (FreeBSD, OpenBSD, NetBSD).  Who uses them, who works on them, what is their motivation for doing so?  How do they compare to Linux these days, in terms of size, feature set, security hardening, etc?  Is their usage&#x2F;development happening at a relatively constant level, or is it growing&#x2F;shrinking?\n\n[cyberpunk]: The release announcement has better details:  https:&#x2F;&#x2F;www.netbsd.org&#x2F;releases&#x2F;formal-11&#x2F;NetBSD-11.0.html\n\n[Panino]: From the linked release announcement: &gt; Improvements to the npf(7) firewall, including layer 2 and user&#x2F;group filtering That&#x27;s a valuable, useful feature &gt; New MICROVM kernel for x86... it can boot in about 10 ms That could open some doors, nice There are some good hardware improvements too.\n\n[jbs789]: As someone reading this fresh, they are almost apologetic for a release with open issues. But presumably the release closes off many more than it creates. I could see any other author&#x2F;org approaching the messaging very differently!\n\n[gregdaniels421]: Ages ago I know someone did the work to get wine running on a then modern NetBSD, has that effort been kept up, and can it run reasonable programs?  Ideally someone has tried it with some success, I am hoping to try running NetBSD on an old thinkpad, but I need some software for a SDR dongle that was only written for Windows, and works great under Wine on linux.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/pvrnor/netbsd_11_0_released\">Comments</a></p>",
+    "author": "jaypatelani",
+    "published_at": "2026-08-01T17:56:41Z",
+    "fetched_at": "2026-08-01T23:50:51.704627Z",
+    "metadata": {
+      "score": 195,
+      "descendants": 82,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49136736",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release",
+        "netbsd"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "NetBSD 11.0 正式发布，引入 NPF 改进与极速 MICROVM 内核",
+      "detailed_summary_zh": "NetBSD 11.0 正式发布，带来了 NPF 防火墙的多项改进，包括新增第二层（layer 2）以及用户/组过滤支持；同时还引入了面向 x86 的全新 MICROVM 内核，可在约 10 毫秒内完成启动。此外，该版本还包含一些硬件支持方面的增强。 这是 NetBSD 这一历史悠久的开源操作系统的重要版本更新，对 BSD 生态和依赖 NetBSD 的嵌入式/虚拟化场景意义重大。MICROVM 内核能让整个虚拟机仅占约 10MB 且启动极快，有望推动轻量级虚拟化和边缘计算应用；NPF 的新过滤能力也使防火墙配置更灵活。 根据发布说明，NPF 的改进包括 layer 2 过滤和基于用户/组的过滤规则；MICROVM 内核专为 x86 设计，据称启动时间约为 10 毫秒，整个虚拟机镜像可控制在 10MB 以内。此外，该版本还有多项硬件支持改进，但官方发布说明也表示仍存在一些待解决的问题。",
+      "background_zh": "NetBSD 是一款免费、开源的类 Unix 操作系统，以极高的可移植性著称，支持从大型服务器到嵌入式设备的众多硬件平台。NPF 是 NetBSD 上开发的状态ful数据包过滤防火墙，功能上类似 Linux 的 iptables 或 OpenBSD 的 PF。MICROVM 是 NetBSD 提供的一种专门面向虚拟机场景的精简内核，像 smolBSD 这类项目就利用它来构建体积小、启动速度极快的虚拟机镜像。",
+      "community_discussion_zh": "评论区中，有用户对 BSD 家族（FreeBSD、OpenBSD、NetBSD）的现状与发展动力表示好奇，并希望了解其与 Linux 在规模、安全加固等方面的对比。多数评论对新功能持肯定态度，例如认为 NPF 的 layer 2 和用户/组过滤非常实用，MICROVM 的启动速度也可能带来新应用场景；也有用户提到 NetBSD 在 Wine 兼容性方面的疑问。整体氛围积极，但同时反映出 NetBSD 在桌面和实用软件生态上的关注点。",
+      "sources": [
+        {
+          "url": "https://www.wikiwand.com/EN/NPF_(firewall)",
+          "title": "NPF ( firewall ) - Wikiwand"
+        },
+        {
+          "url": "https://ostechnix.com/build-10mb-netbsd-vms-boot-10ms-smolbsd/",
+          "title": "Build 10MB NetBSD VMs That Boot in 10ms Using... - OSTechNix"
+        },
+        {
+          "url": "https://netbsd.org/releases/formal-11/NetBSD-11.0.html",
+          "title": "Announcing NetBSD 11.0 RC7 (July 21, 2026)"
+        }
+      ],
+      "detailed_summary": "NetBSD 11.0 正式发布，带来了 NPF 防火墙的多项改进，包括新增第二层（layer 2）以及用户/组过滤支持；同时还引入了面向 x86 的全新 MICROVM 内核，可在约 10 毫秒内完成启动。此外，该版本还包含一些硬件支持方面的增强。 这是 NetBSD 这一历史悠久的开源操作系统的重要版本更新，对 BSD 生态和依赖 NetBSD 的嵌入式/虚拟化场景意义重大。MICROVM 内核能让整个虚拟机仅占约 10MB 且启动极快，有望推动轻量级虚拟化和边缘计算应用；NPF 的新过滤能力也使防火墙配置更灵活。 根据发布说明，NPF 的改进包括 layer 2 过滤和基于用户/组的过滤规则；MICROVM 内核专为 x86 设计，据称启动时间约为 10 毫秒，整个虚拟机镜像可控制在 10MB 以内。此外，该版本还有多项硬件支持改进，但官方发布说明也表示仍存在一些待解决的问题。",
+      "background": "NetBSD 是一款免费、开源的类 Unix 操作系统，以极高的可移植性著称，支持从大型服务器到嵌入式设备的众多硬件平台。NPF 是 NetBSD 上开发的状态ful数据包过滤防火墙，功能上类似 Linux 的 iptables 或 OpenBSD 的 PF。MICROVM 是 NetBSD 提供的一种专门面向虚拟机场景的精简内核，像 smolBSD 这类项目就利用它来构建体积小、启动速度极快的虚拟机镜像。",
+      "community_discussion": "评论区中，有用户对 BSD 家族（FreeBSD、OpenBSD、NetBSD）的现状与发展动力表示好奇，并希望了解其与 Linux 在规模、安全加固等方面的对比。多数评论对新功能持肯定态度，例如认为 NPF 的 layer 2 和用户/组过滤非常实用，MICROVM 的启动速度也可能带来新应用场景；也有用户提到 NetBSD 在 Wine 兼容性方面的疑问。整体氛围积极，但同时反映出 NetBSD 在桌面和实用软件生态上的关注点。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Major release of a widely-used open-source OS, though niche compared to Linux. Community comments provide useful discussion on features and comparisons, adding value.",
+    "ai_summary": "NetBSD 11.0 is released, introducing improvements to the NPF firewall, a new MICROVM kernel with ~10ms boot time, and other hardware enhancements.",
+    "ai_tags": [
+      "NetBSD",
+      "BSD",
+      "operating system",
+      "release",
+      "open source"
+    ]
+  },
+  {
+    "id": "hackernews:story:49133889",
+    "source_type": "hackernews",
+    "title": "RipGrep musl binaries occasionally segfault during very-large searches",
+    "url": "https://github.com/BurntSushi/ripgrep/issues/3494",
+    "content": "\n--- Top Comments ---\n\n[ndesaulniers]: Heh, from the kernel patch:  https:&#x2F;&#x2F;lore.kernel.org&#x2F;all&#x2F;CALCETrXbj__SFQMzPZhES5y6-sh4np-...  &gt; I saw a fun bug report in ripgrep and a studious but pretty bad\nAI-generated analysis Referring to  https:&#x2F;&#x2F;github.com&#x2F;dfoxfranke&#x2F;ripgrep-3494-analysis  which I indeed thought &quot;that&#x27;s an awful lot written to have been written by a human.&quot; Looks like that thread is from...today!\n\n[Orphis]: I get why people don&#x27;t bother replacing the default allocator from musl all the time (it&#x27;s there, convenient). But in an application whose purpose is to be FAST, I find it weird they haven&#x27;t bothered replacing it with another more performant one. mallocng is bad at dealing with contention during multithreading. I&#x27;ve had applications that usually were I&#x2F;O bound suddenly become &quot;malloc&quot; bound when building with musl in multithreaded scenarios (and only just 8 ...\n\n[dosman33]: Anyone running ripgrep on a an HPC cluster against a large cluster filesystem needs to stop and redesign their workflow. This generates high amounts of small I&#x2F;O which is the Achilles heel of any large cluster filesystem. You are exporting your workload onto the metadata mechanisms of the filesystem rather keeping it within the higher bandwidth capable memory subsystem on your cluster. It doesn&#x27;t take but a couple users running these types of jobs simultaneously to bring a high-band...\n\n[hyperpape]: The analysis of the kernel bug may be a better thing to link to:  https:&#x2F;&#x2F;github.com&#x2F;dfoxfranke&#x2F;ripgrep-3494-analysis .\n\n[sligor]: So, why the bug triggers only with muslc and not other libc ?",
+    "author": "throwaway2037",
+    "published_at": "2026-08-01T12:34:25Z",
+    "fetched_at": "2026-08-01T23:50:51.704655Z",
+    "metadata": {
+      "score": 241,
+      "descendants": 162,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49133889",
+      "comment_count": 5,
+      "title_zh": "ripgrep 的 musl 二进制在超大搜索中偶发段错误",
+      "detailed_summary_zh": "ripgrep 的一个 bug 报告指出，使用 musl libc 静态链接的二进制在非常大型的搜索过程中会偶尔发生段错误（segfault）。该问题引发了社区对内存分配器行为与内核交互的深入分析，并产生了一篇由 AI 协助撰写的技术分析文章。 该问题可能影响在大型文件系统上使用 musl 构建的 ripgrep 用户的稳定性，尤其是那些依赖静态链接或轻量级容器的场景。同时，它也揭示了 musl 默认内存分配器在多线程高并发场景下的性能与正确性问题，对系统程序员具有参考价值。 社区分析指向 musl 的默认分配器 mallocng 与内核虚拟内存管理（如 mmap 和 munmap 的交互）之间的行为，可能触发段错误。相关分析文档由用户 dfoxfranke 发布在 GitHub 仓库 ripgrep-3494-analysis 中，并提到了一个相关内核补丁讨论。",
+      "background_zh": "musl 是一个轻量级、符合标准的 C 标准库实现，常用于静态链接和容器镜像，其默认内存分配器 mallocng 在多线程争用下性能不佳。ripgrep 是一款高性能的正则搜索工具，会递归扫描目录树，在超大搜索中会产生大量并发内存分配与释放操作，从而暴露出底层分配器与内核之间的边界问题。",
+      "community_discussion_zh": "社区讨论中，有用户指出 mallocng 在多线程争用下会导致应用从 I/O 密集变为 malloc 密集，因此质疑 ripgrep 为何不替换更高效的分配器。也有用户建议，在 HPC 集群文件系统上运行 ripgrep 应重新设计工作流，因为大量小 I/O 会压垮集群元数据机制。还有人提问为何只有 muslc 触发该问题而其他 libc 不会，引发了更深层的技术讨论。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Musl_libc",
+          "title": "Musl libc"
+        },
+        {
+          "url": "https://www.musl-libc.org/intro.html",
+          "title": "musl - Introduction"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Memory_allocator",
+          "title": "Memory allocator"
+        }
+      ],
+      "detailed_summary": "ripgrep 的一个 bug 报告指出，使用 musl libc 静态链接的二进制在非常大型的搜索过程中会偶尔发生段错误（segfault）。该问题引发了社区对内存分配器行为与内核交互的深入分析，并产生了一篇由 AI 协助撰写的技术分析文章。 该问题可能影响在大型文件系统上使用 musl 构建的 ripgrep 用户的稳定性，尤其是那些依赖静态链接或轻量级容器的场景。同时，它也揭示了 musl 默认内存分配器在多线程高并发场景下的性能与正确性问题，对系统程序员具有参考价值。 社区分析指向 musl 的默认分配器 mallocng 与内核虚拟内存管理（如 mmap 和 munmap 的交互）之间的行为，可能触发段错误。相关分析文档由用户 dfoxfranke 发布在 GitHub 仓库 ripgrep-3494-analysis 中，并提到了一个相关内核补丁讨论。",
+      "background": "musl 是一个轻量级、符合标准的 C 标准库实现，常用于静态链接和容器镜像，其默认内存分配器 mallocng 在多线程争用下性能不佳。ripgrep 是一款高性能的正则搜索工具，会递归扫描目录树，在超大搜索中会产生大量并发内存分配与释放操作，从而暴露出底层分配器与内核之间的边界问题。",
+      "community_discussion": "社区讨论中，有用户指出 mallocng 在多线程争用下会导致应用从 I/O 密集变为 malloc 密集，因此质疑 ripgrep 为何不替换更高效的分配器。也有用户建议，在 HPC 集群文件系统上运行 ripgrep 应重新设计工作流，因为大量小 I/O 会压垮集群元数据机制。还有人提问为何只有 muslc 触发该问题而其他 libc 不会，引发了更深层的技术讨论。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting bug report with a detailed community discussion touching on musl's allocator behavior, kernel patches, and AI-generated analysis. High engagement (241 points, 162 comments) and technical depth make it valuable for systems programmers, though it's not a groundbreaking breakthrough.",
+    "ai_summary": "A ripgrep issue about occasional segfaults in musl binaries during very large searches triggers an insightful community analysis of allocator and kernel-level interactions.",
+    "ai_tags": [
+      "ripgrep",
+      "musl",
+      "allocator",
+      "debugging",
+      "systems programming"
+    ]
+  },
+  {
+    "id": "hackernews:story:49134694",
+    "source_type": "hackernews",
+    "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
+    "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/",
+    "content": "\n--- Top Comments ---\n\n[Waterluvian]: It feels like there’s this weird layer to  domestic and international politics where you do a lot of signalling to one audience while simultaneously winking at other audiences that you’re not actually serious. (I can never tell who is getting winked at…) I feel like WYSIWYG politics is what most of us want, but probably doesn’t actually work. The Ned Stark character that is righteous and right and quickly meets the headman’s axe of the game theory and brinksmanship of everyone else.\n\n[panarchy]: Canada is so lucky to have someone like Michael Geist. He&#x27;s been reporting on and doing in depth investigations on privacy invasions for about 2 decades now.\n\n[leonvoss]: &gt;As of May 2026, the following 76 participants have signed the treaty: Algeria, Angola, Australia, Austria, Azerbaijan, Belarus, Belgium, Brazil, Brunei, Burkina Faso, Cambodia, Columbia, Chile, China, Costa Rica, Ivory Coast, Cuba, Czechia, North Korea, Democratic Republic of the Congo, Djibouti, Dominican Republic, Ecuador, Egypt, European Union, Fiji, France, Ghana, Greece, Guinea-Bissau, Iran, Ireland, Jamaica, Kazakhstan, Laos, Libya, Luxembourg, Malaysia, Maldives, Mali, Mauritius, M...\n\n[alephnerd]: So has Australia, the EU, and the UK [0]. That said, being a signatory has limited impact as long as it isn&#x27;t ratified. [0] -  https:&#x2F;&#x2F;treaties.un.org&#x2F;pages&#x2F;ViewDetails.aspx?src=TREATY&amp;mt...\n\n[bethekidyouwant]: Canada signs most UN stuff",
+    "author": "iamnothere",
+    "published_at": "2026-08-01T14:19:51Z",
+    "fetched_at": "2026-08-01T23:50:51.704702Z",
+    "metadata": {
+      "score": 255,
+      "descendants": 137,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49134694",
+      "comment_count": 5,
+      "title_zh": "加拿大签署联合国网络犯罪公约被批为监控条约",
+      "detailed_summary_zh": "加拿大悄然签署了《联合国网络犯罪公约》（又称“河内公约”），该公约于2024年12月由联合国大会通过，2025年10月在河内开放签署。此举被批评者视为以打击网络犯罪为名的监控条约，对隐私和数字权利构成广泛威胁。 这项签署对加拿大的数字权利和隐私保护具有潜在的重大影响，也可能为其他国家扩大网络监控提供借口。由于公约对网络犯罪的界定模糊，且依赖各国自行解释人权保障，人权组织和科技公司担忧其会被滥用于压制言论和扩大监控。 截至2026年5月，已有约76个参与方签署该公约，但仅卡塔尔、阿塞拜疆和越南批准。加拿大目前仅为签署国，尚未批准；签署仅表明意向，不产生国内法律效力。批评者还指出，公约中“网络犯罪”定义宽泛，可涵盖任何利用技术实施的犯罪。",
+      "background_zh": "《联合国网络犯罪公约》由俄罗斯于2017年提议，2024年12月24日经联合国大会协商一致通过，并于2025年10月在越南河内举行签署仪式。该公约旨在促进打击网络犯罪的国际合作，但人权组织和政策专家批评其缺乏人权保障措施，可能助长威权政府的监控和数据收集行为。",
+      "community_discussion_zh": "社区评论整体持怀疑态度，有用户认为存在“所见即所得”政治与暗地信号的不一致，但多数人希望看到真诚的政策。许多评论赞赏迈克尔·盖斯特长期调查隐私侵犯，同时有人指出加拿大、澳大利亚、欧盟和英国都已签署，但签署不等于批准，实际影响有限。也有评论认为加拿大只是签署大多数联合国条约而已，不必过度解读。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_Nations_Convention_against_Cybercrime",
+          "title": "United Nations Convention against Cybercrime"
+        },
+        {
+          "url": "https://www.unodc.org/unodc/en/cybercrime/convention/home.html",
+          "title": "United Nations Convention against Cybercrime"
+        },
+        {
+          "url": "https://en.vietnamplus.vn/topic/hanoi-convention-169.vnp",
+          "title": "Hanoi Convention | Vietnam+ (VietnamPlus)"
+        }
+      ],
+      "detailed_summary": "加拿大悄然签署了《联合国网络犯罪公约》（又称“河内公约”），该公约于2024年12月由联合国大会通过，2025年10月在河内开放签署。此举被批评者视为以打击网络犯罪为名的监控条约，对隐私和数字权利构成广泛威胁。 这项签署对加拿大的数字权利和隐私保护具有潜在的重大影响，也可能为其他国家扩大网络监控提供借口。由于公约对网络犯罪的界定模糊，且依赖各国自行解释人权保障，人权组织和科技公司担忧其会被滥用于压制言论和扩大监控。 截至2026年5月，已有约76个参与方签署该公约，但仅卡塔尔、阿塞拜疆和越南批准。加拿大目前仅为签署国，尚未批准；签署仅表明意向，不产生国内法律效力。批评者还指出，公约中“网络犯罪”定义宽泛，可涵盖任何利用技术实施的犯罪。",
+      "background": "《联合国网络犯罪公约》由俄罗斯于2017年提议，2024年12月24日经联合国大会协商一致通过，并于2025年10月在越南河内举行签署仪式。该公约旨在促进打击网络犯罪的国际合作，但人权组织和政策专家批评其缺乏人权保障措施，可能助长威权政府的监控和数据收集行为。",
+      "community_discussion": "社区评论整体持怀疑态度，有用户认为存在“所见即所得”政治与暗地信号的不一致，但多数人希望看到真诚的政策。许多评论赞赏迈克尔·盖斯特长期调查隐私侵犯，同时有人指出加拿大、澳大利亚、欧盟和英国都已签署，但签署不等于批准，实际影响有限。也有评论认为加拿大只是签署大多数联合国条约而已，不必过度解读。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value privacy/security policy development with significant implications for digital rights; strong community engagement (255 points, 137 comments) featuring substantive discussion of treaty implications and political signaling.",
+    "ai_summary": "Canada's quiet signing of the UN Cybercrime Convention is critiqued as a disguised surveillance treaty with broad implications for privacy and digital rights.",
+    "ai_tags": [
+      "privacy",
+      "surveillance",
+      "international law",
+      "cybercrime",
+      "Canada"
+    ]
+  },
+  {
+    "id": "hackernews:story:49135257",
+    "source_type": "hackernews",
+    "title": "Cursor removed cost information from the usage page and CSV export",
+    "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+    "content": "\n--- Top Comments ---\n\n[tosh]: I can only recommend to regularly measure how many tokens a harness+model combination uses for a certain task There are huge token efficiency&#x2F;bloat differences between agents while working on the same tasks, using the same model, in the same environment Yesterday I ran 10 agentic tasks using GPT 5.6 Sol in an ubuntu 26.04 vm a couple of times with different harnesses and got vastly different token usage.     +-------------+-----------+-----------+-----------+-----------+--------+\n  | Har...\n\n[aroman]: I was an early and passionate adopter and paying customer of Cursor (since 2023!), but it’s probably been 6 months since I opened it. These days I “write” code with claude code and codex, and read&#x2F;review it on GitHub. If I need to read it locally, I use a plain text editor. Can someone help me understand what value cursor offers in 2026?\n\n[jonjohnsen]: (I work at Cursor) You can still see what you’re billed on the Spending page. We did accidentally break dollar costs in the Usage CSV export yesterday while cleaning up an old feature flag. That was not intentional and the CSV export is fixed now. That feature flag also showed a dollar usage graph to some self-serve users. The confusing part was included plan usage shown as $, which is not what you’re billed (on-demand usage is). Some people read it as actual spend, so we decided to remove th...\n\n[xvxvx]: Elon will be paying his staff in tokens in the future. Grocery stores will have on-demand pricing shown in tokens, and prices will change from the time you pick up the product and you pay at the checkout. It’s Ok, Elon said money won’t exist soon anyway…\n\n[slashdave]: Cursor achieved fast adoption by making it simple to move from Visual Studio code. Double-edged sword. It is also simple to move back to VS code and agent extensions.",
+    "author": "EugeneOZ",
+    "published_at": "2026-08-01T15:25:21Z",
+    "fetched_at": "2026-08-01T23:50:51.704729Z",
+    "metadata": {
+      "score": 292,
+      "descendants": 125,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49135257",
+      "comment_count": 5,
+      "title_zh": "Cursor 移除用量费用显示引发透明度争议",
+      "detailed_summary_zh": "Cursor 最近从用量页面和 CSV 导出中移除了美元费用信息，引发用户不满。Cursor 员工回应称 CSV 导出费用列是清理旧功能时意外损坏，现已修复，但同时也确认有意移除部分自助用户的美元用量图表，因为其将套餐内用量显示为美元容易造成混淆。 此举触及 AI 编程工具计价透明度的核心问题，影响大量依赖 Cursor 监控开发成本的开发者。在 Cursor 快速商业化的背景下，用户对费用可见性和工具实际价值的关注显著上升，该事件可能促使其他 AI 工具重新审视用量展示方式。 据员工 jonjohnsen 说明，账单仍可在 Spending 页面查看，被移除的美元用量图表仅对部分自助用户展示，且混淆点在于将包含的套餐用量（非实际按需计费）显示为美元。CSV 导出的美元费用列属于意外损坏，目前已修复。",
+      "background_zh": "Cursor 是由 Anysphere 公司开发的 AI 编程编辑器，基于 Visual Studio Code 分叉而来，支持通过自然语言指令编辑代码、搜索代码库和执行命令。它采用按需计费模式，用户需要关注 token 消耗和费用。自 2022 年成立以来，Cursor 估值和营收快速增长，至 2026 年初年经常性收入已超过 30 亿美元。",
+      "community_discussion_zh": "社区讨论呈现多元观点：有用户建议定期测量不同 agent 框架在同一任务上的 token 效率，因为差异巨大；一位自 2023 年起的老用户质疑 Cursor 在 2026 年的价值，称已转向 Claude Code 和 Codex；也有用户指出 Cursor 从 VS Code 迁移容易，但迁移回去同样容易，这既是优势也是风险。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cursor_(code_editor)",
+          "title": "Cursor (code editor)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cursor_(company)",
+          "title": "Cursor (company) - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Cursor 最近从用量页面和 CSV 导出中移除了美元费用信息，引发用户不满。Cursor 员工回应称 CSV 导出费用列是清理旧功能时意外损坏，现已修复，但同时也确认有意移除部分自助用户的美元用量图表，因为其将套餐内用量显示为美元容易造成混淆。 此举触及 AI 编程工具计价透明度的核心问题，影响大量依赖 Cursor 监控开发成本的开发者。在 Cursor 快速商业化的背景下，用户对费用可见性和工具实际价值的关注显著上升，该事件可能促使其他 AI 工具重新审视用量展示方式。 据员工 jonjohnsen 说明，账单仍可在 Spending 页面查看，被移除的美元用量图表仅对部分自助用户展示，且混淆点在于将包含的套餐用量（非实际按需计费）显示为美元。CSV 导出的美元费用列属于意外损坏，目前已修复。",
+      "background": "Cursor 是由 Anysphere 公司开发的 AI 编程编辑器，基于 Visual Studio Code 分叉而来，支持通过自然语言指令编辑代码、搜索代码库和执行命令。它采用按需计费模式，用户需要关注 token 消耗和费用。自 2022 年成立以来，Cursor 估值和营收快速增长，至 2026 年初年经常性收入已超过 30 亿美元。",
+      "community_discussion": "社区讨论呈现多元观点：有用户建议定期测量不同 agent 框架在同一任务上的 token 效率，因为差异巨大；一位自 2023 年起的老用户质疑 Cursor 在 2026 年的价值，称已转向 Claude Code 和 Codex；也有用户指出 Cursor 从 VS Code 迁移容易，但迁移回去同样容易，这既是优势也是风险。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High value: significant discussion about AI coding tool transparency, with an official Cursor employee response and broader debate on tool value, backed by strong community engagement (292 points, 125 comments).",
+    "ai_summary": "Cursor's temporary removal of usage cost info and CSV export bug sparks community debate about transparency and value of AI coding tools.",
+    "ai_tags": [
+      "Cursor",
+      "AI coding tools",
+      "usage transparency",
+      "LLM",
+      "developer tools"
+    ]
+  },
+  {
+    "id": "hackernews:story:49130604",
+    "source_type": "hackernews",
+    "title": "Flint: A Visualization Language for the AI Era",
+    "url": "https://microsoft.github.io/flint-chart/",
+    "content": "\n--- Top Comments ---\n\n[akst]: Even in the Era AI, GGPlot&#x27;s API is still the best charting API. The name &quot;Grammar of Graphics&quot; isn&#x27;t just marketing, they literally sought to write a god damn grammar to was capable of expressing all possible qualitative graphics. They even wrote a book about how they went about it (not that it speaks to the quality of the API)  https:&#x2F;&#x2F;link.springer.com&#x2F;book&#x2F;10.1007&#x2F;0-387-28695-0  I actually stumbled upon this book when I was trying to look up ho...\n\n[data-ottawa]: I have tried using Flint vs asking the AI to generate a Vega lite spec directly, and in my opinion Flint was not as nice of a solution. Flint is fine for doing predetermined chat types, with very low customization. But I found using an agent or sub agent to create the Vega spec directly allowed for a lot more flexibility, and ultimately that means higher quality visualizations (stuff like adding points for min and max on a timeseries, or adding a callout marker for a date where some event hap...\n\n[shepherdjerred]: So this is one interface that can render to multiple charting backends? If AI is writing the &quot;Flint&quot;, why not just have it write the backend code instead? I&#x27;m not sure why I would want pluggable charting backends. I can see an argument for providing simpler APIs for LLMs, though, so that it can be more token efficient for example.\n\n[1vuio0pswjnm7]: 02 Jul 2026 04:28:21 UTC Microsoft&#x2F;Flint-Chart  https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;flint-chart   https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48756577  [ok] 08 Jul 2026 17:46:12 UTC Show HN: Microsoft releases Flint, a visualization language for AI agents  https:&#x2F;&#x2F;microsoft.github.io&#x2F;flint-chart&#x2F;#&#x2F;   https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48834924  [ok]\n\n[Imanari]: What is wrong with &quot;please make plot XYZ in plotly?&quot;",
+    "author": "vinhnx",
+    "published_at": "2026-08-01T02:45:09Z",
+    "fetched_at": "2026-08-01T23:50:51.704757Z",
+    "metadata": {
+      "score": 246,
+      "descendants": 66,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49130604",
+      "comment_count": 5,
+      "title_zh": "微软发布Flint：面向AI时代的可视化语言",
+      "detailed_summary_zh": "微软发布了Flint，一种专为AI智能体设计的可视化中间语言，能以简洁、可人工编辑的规范生成富有表现力的图表。该项目已在GitHub开源，并在微软研究院博客上正式介绍。 Flint旨在为AI的高层意图与底层渲染引擎之间提供中间路径，有望让AI生成的图表更可控、更易编辑，并减少令牌消耗。它可能影响开发者构建AI图表工具的方式，但同时也面临与Vega-Lite等既有方案竞争。 Flint是一种可视化中间语言，可对接多种后端渲染引擎，并支持从紧凑的规范生成精美的图表，AI智能体可以更高效地使用它。目前社区反馈显示，它在高度定制化方面可能不如直接生成Vega-Lite规范灵活。",
+      "background_zh": "可视化语法（grammar of graphics）是一种用结构化方式描述图表的框架，例如R语言的ggplot2和JSON语法的Vega-Lite都建立在这一思想之上。Vega-Lite是一种基于JSON的声明式可视化语法，能编译为Vega规范，是AI生成图表时常用的方案。Flint的出现试图在此类语法之上进一步简化AI与渲染引擎之间的交互。",
+      "community_discussion_zh": "社区对Flint的评价以质疑为主。有用户认为直接让AI生成Vega-Lite规范更灵活，Flint只适合预定图表类型且自定义能力有限；也有人质疑为什么要引入可插拔后端，直接生成目标后端代码即可。此外，有评论称赞ggplot2的API仍是最好用的图表接口，但也有人承认Flint的简洁规范可能对LLM更节省令牌。",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/",
+          "title": "Flint : A visualization language for the AI era - Microsoft Research"
+        },
+        {
+          "url": "https://github.com/microsoft/flint-chart",
+          "title": "GitHub - microsoft / flint -chart: 🪄 Flint is a visualization language ..."
+        },
+        {
+          "url": "https://vega.github.io/vega/",
+          "title": "A Visualization Grammar | Vega"
+        }
+      ],
+      "detailed_summary": "微软发布了Flint，一种专为AI智能体设计的可视化中间语言，能以简洁、可人工编辑的规范生成富有表现力的图表。该项目已在GitHub开源，并在微软研究院博客上正式介绍。 Flint旨在为AI的高层意图与底层渲染引擎之间提供中间路径，有望让AI生成的图表更可控、更易编辑，并减少令牌消耗。它可能影响开发者构建AI图表工具的方式，但同时也面临与Vega-Lite等既有方案竞争。 Flint是一种可视化中间语言，可对接多种后端渲染引擎，并支持从紧凑的规范生成精美的图表，AI智能体可以更高效地使用它。目前社区反馈显示，它在高度定制化方面可能不如直接生成Vega-Lite规范灵活。",
+      "background": "可视化语法（grammar of graphics）是一种用结构化方式描述图表的框架，例如R语言的ggplot2和JSON语法的Vega-Lite都建立在这一思想之上。Vega-Lite是一种基于JSON的声明式可视化语法，能编译为Vega规范，是AI生成图表时常用的方案。Flint的出现试图在此类语法之上进一步简化AI与渲染引擎之间的交互。",
+      "community_discussion": "社区对Flint的评价以质疑为主。有用户认为直接让AI生成Vega-Lite规范更灵活，Flint只适合预定图表类型且自定义能力有限；也有人质疑为什么要引入可插拔后端，直接生成目标后端代码即可。此外，有评论称赞ggplot2的API仍是最好用的图表接口，但也有人承认Flint的简洁规范可能对LLM更节省令牌。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting new tool from Microsoft for AI-driven visualization, but community discussion critically compares it to existing solutions like Vega-Lite, noting potential limitations in flexibility. The debate adds valuable insight.",
+    "ai_summary": "Microsoft introduces Flint, a visualization language designed for AI-generated charts, but community discussion questions its advantages over directly generating Vega-Lite or using existing grammar-of-graphics APIs.",
+    "ai_tags": [
+      "visualization",
+      "AI",
+      "Microsoft",
+      "charting",
+      "language-design"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:18afdc7ffd168c3a",
+    "source_type": "rss",
+    "title": "An old-new take on argument parsing in Rust",
+    "url": "https://jmmv.dev/2026/07/hello-getoptsargs.html",
+    "content": "<p><a href=\"https://lobste.rs/s/vrd28h/old_new_take_on_argument_parsing_rust\">Comments</a></p>",
+    "author": "jmmv.dev by jmmv",
+    "published_at": "2026-08-01T19:31:15Z",
+    "fetched_at": "2026-08-01T23:50:51.591396Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "unix",
+        "rust"
+      ],
+      "title_zh": "Rust 参数解析的旧新视角",
+      "detailed_summary_zh": "开发者 jmmv 发布文章《An old-new take on argument parsing in Rust》，提出一种结合历史经验与新兴实践的 Rust 参数解析思路。该文章目前已在 lobste.rs 上引发讨论。 该文章可能影响 Rust CLI 工具开发者的设计选择，并引发关于参数解析库取舍的讨论。由于作者是经验丰富的开发者，其观点具有较高的参考价值。 文章的具体技术细节未在摘要中给出，但从 URL 路径中的“getoptsargs”来看，其内容可能涉及对 getopts 这类传统参数解析方式的重新审视。评论集中在 lobste.rs 上，目前未见其他渠道的转载信息。",
+      "background_zh": "参数解析是命令行工具开发中的常见需求，Rust 生态中已有 clap、structopt 等多个成熟的参数解析库。所谓的“旧新视角”可能指借鉴 Unix 传统工具的参数解析方式，并在 Rust 的安全性和类型系统下融入现代设计理念，从而提供一种有别于现有库的替代方案。",
+      "detailed_summary": "开发者 jmmv 发布文章《An old-new take on argument parsing in Rust》，提出一种结合历史经验与新兴实践的 Rust 参数解析思路。该文章目前已在 lobste.rs 上引发讨论。 该文章可能影响 Rust CLI 工具开发者的设计选择，并引发关于参数解析库取舍的讨论。由于作者是经验丰富的开发者，其观点具有较高的参考价值。 文章的具体技术细节未在摘要中给出，但从 URL 路径中的“getoptsargs”来看，其内容可能涉及对 getopts 这类传统参数解析方式的重新审视。评论集中在 lobste.rs 上，目前未见其他渠道的转载信息。",
+      "background": "参数解析是命令行工具开发中的常见需求，Rust 生态中已有 clap、structopt 等多个成熟的参数解析库。所谓的“旧新视角”可能指借鉴 Unix 传统工具的参数解析方式，并在 Rust 的安全性和类型系统下融入现代设计理念，从而提供一种有别于现有库的替代方案。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "This is a technical article from a known developer (jmmv) about a novel perspective on argument parsing in Rust. It is likely to be well-written and thought-provoking, with active community discussion on lobste.rs. However, it is not a major breakthrough or paradigm shift, so it falls in the high-value range.",
+    "ai_summary": "An article proposing an 'old-new' approach to argument parsing in Rust, likely with a historical or unconventional twist.",
+    "ai_tags": [
+      "Rust",
+      "argument-parsing",
+      "CLI",
+      "software-development",
+      "lobste.rs"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:bf04d062e3dcc1a6",
+    "source_type": "rss",
+    "title": "Test the Email Verification Protocol with an origin trial",
+    "url": "https://developer.chrome.com/blog/email-verification-protocol-origin-trial",
+    "content": "<p><a href=\"https://lobste.rs/s/72ni5s/test_email_verification_protocol_with\">Comments</a></p>",
+    "author": "developer.chrome.com via eatonphil",
+    "published_at": "2026-08-01T12:34:25Z",
+    "fetched_at": "2026-08-01T23:50:51.591493Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "browsers",
+        "email"
+      ],
+      "title_zh": "Chrome 开启邮箱验证协议源试用",
+      "detailed_summary_zh": "Chrome 宣布开启一项新的源试用（origin trial），用于测试名为“Email Verification Protocol”（EVP）的邮箱验证协议。开发者可以注册源试用，在真实站点上尝试该协议并提交反馈。 该协议有望让 Web 应用在不发送邮件、也不让用户离开当前页面的情况下验证邮箱地址，从而简化注册和登录流程。此试验对 Web 标准和在线身份验证领域的进展具有重要意义，可能影响未来的浏览器默认行为。 源试用要求开发者在 Chrome 源试用面板中注册自己的域名，并获得一个由 Google 签发的加密令牌（token），然后将令牌部署到站点上即可启用该功能。当前协议草案由 IETF 维护（draft-hardt-email-verification-00），其中定义了浏览器如何从签发者获取邮箱验证令牌并呈现给依赖方（RP），邮箱域名需要委托验证能力。",
+      "background_zh": "源试用（Origin Trial）是 Chrome 提供的一种机制，允许开发者在正式发布前试用新特性，并帮助浏览器团队评估其效果和安全性。传统邮箱验证通常依赖发送验证邮件或用户跳转，而 EVP 试图在 HTTP 层解决这个问题，让浏览器直接代表用户完成验证。",
+      "sources": [
+        {
+          "url": "https://developer.chrome.com/docs/web-platform/origin-trials",
+          "title": "Get started with origin trials | Web Platform | Chrome for Developers"
+        },
+        {
+          "url": "https://www.ietf.org/archive/id/draft-hardt-email-verification-00.html",
+          "title": "Email Verification Protocol"
+        },
+        {
+          "url": "https://www.w3.org/events/meetings/9d36f30a-3f6f-4e82-b7b2-1c88546e57e5/",
+          "title": "12 November 2025 | Email Verification Protocol | Calendar"
+        }
+      ],
+      "detailed_summary": "Chrome 宣布开启一项新的源试用（origin trial），用于测试名为“Email Verification Protocol”（EVP）的邮箱验证协议。开发者可以注册源试用，在真实站点上尝试该协议并提交反馈。 该协议有望让 Web 应用在不发送邮件、也不让用户离开当前页面的情况下验证邮箱地址，从而简化注册和登录流程。此试验对 Web 标准和在线身份验证领域的进展具有重要意义，可能影响未来的浏览器默认行为。 源试用要求开发者在 Chrome 源试用面板中注册自己的域名，并获得一个由 Google 签发的加密令牌（token），然后将令牌部署到站点上即可启用该功能。当前协议草案由 IETF 维护（draft-hardt-email-verification-00），其中定义了浏览器如何从签发者获取邮箱验证令牌并呈现给依赖方（RP），邮箱域名需要委托验证能力。",
+      "background": "源试用（Origin Trial）是 Chrome 提供的一种机制，允许开发者在正式发布前试用新特性，并帮助浏览器团队评估其效果和安全性。传统邮箱验证通常依赖发送验证邮件或用户跳转，而 EVP 试图在 HTTP 层解决这个问题，让浏览器直接代表用户完成验证。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Announces a new origin trial for a potentially impactful email verification protocol from Chrome, which is relevant to web standards and security. The content itself is minimal, but the topic is notable. Discussion link present but no substantive comments included.",
+    "ai_summary": "Chrome announces an origin trial for testing a new email verification protocol.",
+    "ai_tags": [
+      "Chrome",
+      "email verification",
+      "origin trial",
+      "web standards",
+      "security"
+    ]
+  }
+]
