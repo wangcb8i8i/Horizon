@@ -5,401 +5,415 @@ date: 2026-08-07
 lang: zh
 ---
 
-> From 31 items, 17 important content pieces were selected
+> From 34 items, 18 important content pieces were selected
 
 ---
 
-1. [Zapscape 漏洞：KVM/x86 客户机到主机逃逸](#item-1) ⭐️ 9.0/10
-2. [AMD 收购 Taalas：将 AI 模型蚀刻进硅片以提升推理性能](#item-2) ⭐️ 8.0/10
-3. [用《Mario Kart》角色数值解释 Pareto 前沿](#item-3) ⭐️ 8.0/10
-4. [品味是最后剩下的东西](#item-4) ⭐️ 8.0/10
-5. [OpenAI 改进 GPT-5.6 Sol 并向免费用户扩大 Luna 访问](#item-5) ⭐️ 8.0/10
-6. [Qwen3.8 Max 登顶 Agentic Index 基准，引发社区热议](#item-6) ⭐️ 8.0/10
-7. [tl;dv 验证缺陷致 18 万场会议录像泄露](#item-7) ⭐️ 8.0/10
-8. [Crubit：C++与 Rust 的双向互操作绑定生成器](#item-8) ⭐️ 8.0/10
-9. [Herdr 加入 Y Combinator，运行时保持开源](#item-9) ⭐️ 7.0/10
-10. [ProvenMetal 推出美国本土 PCB 快速组装服务](#item-10) ⭐️ 7.0/10
-11. [AI 代理审批游戏：人类漏掉三分之一的威胁指令](#item-11) ⭐️ 7.0/10
-12. [Zig 的 Io.Threaded 设计为何值得关注](#item-12) ⭐️ 7.0/10
-13. [一段文本同时是有效 DOS COM 可执行文件](#item-13) ⭐️ 7.0/10
-14. [2026 年如何制作 Nintendo 64 游戏：硬核制作指南](#item-14) ⭐️ 7.0/10
-15. [Schrodingers-TOCTOU：运行的不是你写的程序](#item-15) ⭐️ 7.0/10
-16. [Futhark 语言终于加入递归函数支持](#item-16) ⭐️ 7.0/10
-17. [不进行光栅化的 3D SVG 渲染器：投影纹理的新方法](#item-17) ⭐️ 7.0/10
+1. [DeepSeek V4 Flash 0731 发布：性能大增，速度与成本成亮点](#item-1) ⭐️ 8.0/10
+2. [汇编耻辱堂：异常缓慢的 x86 指令合集](#item-2) ⭐️ 8.0/10
+3. [科技从业者正对职业失去信仰](#item-3) ⭐️ 8.0/10
+4. [OpenAI 公布 Astra 关键网络能力评估并加强安全控制](#item-4) ⭐️ 8.0/10
+5. [SDSS 发布包含 50 万个超大质量黑洞的全天图](#item-5) ⭐️ 8.0/10
+6. [pgrust 让 Postgres 分析提速 300 倍](#item-6) ⭐️ 8.0/10
+7. [Cloudflare 推出 Kitesurf：基于 V8 隔离区的智能体优先浏览器](#item-7) ⭐️ 8.0/10
+8. [与爬虫搏斗一年：150 万页网站的防护与代价](#item-8) ⭐️ 8.0/10
+9. [新墨西哥州法院裁定 Meta 赔偿 5.67 亿美元](#item-9) ⭐️ 8.0/10
+10. [甲骨文禁止 OpenJDK 接受 AI 生成代码](#item-10) ⭐️ 7.0/10
+11. [暗夜天文应用被误判为占星术，App Store 审查引发争议](#item-11) ⭐️ 7.0/10
+12. [AI 需求火爆，2027 年内存产能已被预订一空](#item-12) ⭐️ 7.0/10
+13. [Wyzer：用编排编程保障分布式安全的新型语言](#item-13) ⭐️ 7.0/10
+14. [PS3 模拟器在 ARM 上实现高速运行](#item-14) ⭐️ 7.0/10
+15. [从约束模型到可玩的解谜游戏](#item-15) ⭐️ 7.0/10
+16. [设备如何自行发现加密 DNS](#item-16) ⭐️ 7.0/10
+17. [REpsych：让反汇编器显示骷髅的编译器](#item-17) ⭐️ 7.0/10
+18. [ABD 算法与法定人数复制的边界探讨](#item-18) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Zapscape 漏洞：KVM/x86 客户机到主机逃逸](https://github.com/V4bel/Zapscape) ⭐️ 9.0/10
+## [DeepSeek V4 Flash 0731 发布：性能大增，速度与成本成亮点](https://arcprize.org/results/deepseek-v4-flash-0731) ⭐️ 8.0/10
 
-安全研究人员披露了 Zapscape（CVE-2026-64561），这是一个影响 Linux 内核 KVM 的严重漏洞，可让客户机虚拟机中的特权攻击者逃逸到宿主机。该漏洞在 Intel 和 AMD 平台上均有效。 该漏洞直接破坏了虚拟机隔离这一虚拟化的核心安全基础，使攻击者可能访问宿主机操作系统及其他所有虚拟机。云服务商和多租户环境面临严重风险，需要尽快部署补丁。 Zapscape 是 KVM/x86 影子 MMU 中的一个释放后使用（use-after-free）漏洞，当客户机使用嵌套虚拟化时触发。攻击者需要先在 L1 客户机内获得内核级代码执行权限，但成功利用后即可完全控制宿主机。
+DeepSeek 发布了 V4 Flash 0731 版本，这是 V4 Flash 系列的更新版本，而非数月前的预览版，带来了显著的整体性能提升。该模型采用 MoE 架构，总参数 284B、激活参数 13B，支持 100 万 tokens 的上下文窗口，推理速度和成本控制表现突出。 作为被广泛使用的 AI 模型，这次更新以极低的成本提供了接近顶级模型的体验，使中小开发者和个人用户能够以更低门槛使用高性能 AI。它进一步加剧了大模型市场的性价比竞争，可能推动更多应用场景从闭源 API 转向开源或低成本模型。 模型为混合专家（MoE）结构，总参数量 284B，但每个 token 仅激活 13B 参数，兼顾性能与效率。社区实测在双 RTX Pro 6000 Blackwell 上，prefill 速度约 8k tok/s，单流生成约 250 tok/s，且单日多会话使用成本可控制在 5 美元以内。
 
-rss · Lobsters · Aug 6, 17:31
+hackernews · tosh · Aug 7, 17:56 · [社区讨论](https://news.ycombinator.com/item?id=49214008)
 
-**背景**: KVM（Kernel-based Virtual Machine）是 Linux 内核中的虚拟化模块，可将宿主机划分为多个隔离的虚拟机。影子 MMU 用于管理客户机的内存页表，是 KVM 保证内存隔离的关键组件；嵌套虚拟化则允许在虚拟机内再运行虚拟机（L1 和 L2 层级）。当影子 MMU 出现释放后使用等内存安全错误时，客户机代码就可能突破隔离边界，实现所谓的“客户机到主机逃逸”。
+**背景**: DeepSeek（深度求索）是中国一家私人 AI 公司，由梁文峰于 2023 年创立，其前身是量化对冲基金 High-Flyer。该公司以开源大语言模型闻名，例如 DeepSeek-V3（671B 参数、激活 37B）。MoE（混合专家）架构是一种将模型拆分为多个专家子网络、每次只激活其中一部分的技术，能在不显著增加推理成本的前提下扩大模型容量。百万级上下文窗口则允许模型一次性处理超长文本。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html">New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape...</a></li>
-<li><a href="https://www.openwall.com/lists/oss-security/2026/08/06/6">oss-security - Zapscape : Guest-to-Host Escape in KVM /x86...</a></li>
-<li><a href="https://github.com/V4bel/Zapscape/blob/main/assets/write-up.md">Zapscape /assets/write-up.md at main · V4bel/ Zapscape · GitHub</a></li>
+<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#KVM`, `#virtualization`, `#exploit`, `#x86`
+**社区讨论**: 社区整体反馈积极，大量用户称赞该版本“感觉像升了一整个档次”，速度极快且成本低到可以忽略，甚至有用户表示 10 美元可获得 140 美元额度的 token。但也有用户反映，相比上一版 Flash，新版本在 Agent 场景下容易出现无限循环、不执行工具调用而浪费 token，以及话题漂移等稳定性问题；此外还有个别无关讨论（如 Claude 账号被封）出现在评论区。
+
+**标签**: `#AI`, `#DeepSeek`, `#LLM`, `#benchmark`, `#model release`
 
 ---
 
 <a id="item-2"></a>
-## [AMD 收购 Taalas：将 AI 模型蚀刻进硅片以提升推理性能](https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344) ⭐️ 8.0/10
+## [汇编耻辱堂：异常缓慢的 x86 指令合集](https://github.com/xoreaxeaxeax/asm-hall-of-shame) ⭐️ 8.0/10
 
-AMD 宣布收购 AI 芯片初创公司 Taalas，后者专注于将 AI 模型直接转化为定制硅片实现。Taalas 称其“Hardcore Models”可将推理效率提升 1000 倍，无需外部内存或软件。 这项收购对 AI 推理硬件市场意义重大，AMD 有望借此在 AI 推理领域提供更高能效的解决方案，挑战 NVIDIA 的主导地位。它也可能改变模型部署的成本结构，让更便宜、更快的推理服务成为可能，影响开发者和云厂商。 Taalas 的“Hardcore Models”通过自动化流程将训练好的神经网络直接编译成定制硅片，相当于“模型即计算机”，避免了软件与硬件转换的开销。但社区质疑模型迭代速度快，硬件固化后可能落后于最新模型版本，除非成本足够低以形成市场。
+汇编耻辱堂（Assembly Hall of Shame）是安全研究员 Christopher Domas（@xoreaxeaxeax）发布的一个精选集，收录了各种异常缓慢的 x86 指令，并按“性能垫底”程度进行排名。 该项目揭示了 CPU 设计中反直觉的性能特征，对底层性能优化和硬件安全研究（如利用慢指令触发 SMI）具有重要参考价值。它提醒开发者某些看似简单的指令可能带来极大的性能开销。 项目附带了测量规则，例如被陷入、模拟或虚拟化的指令只能计时陷阱本身而非处理程序；目前排行榜中有通过写入 ACPI I/O 端口耗时 12 毫秒的条目，疑似陷入 SMM 处理。作者还关联了另一个项目 smiiiiiiiiiiiiiiii，用于利用慢指令突破 SMI。
 
-hackernews · itvision · Aug 6, 20:23 · [社区讨论](https://news.ycombinator.com/item?id=49201970)
+hackernews · Lobsters · Aug 7, 18:01 · [社区讨论](https://news.ycombinator.com/item?id=49214098)
 
-**背景**: 传统 AI 推理依赖通用 GPU 或专用加速器运行软件模型，而 Taalas 提供将 AI 模型直接蚀刻到硅片上的方案。这种方法理论上能大幅提升速度和能效，但灵活性较差，模型更新需要重新制造芯片。Taalas 声称其平台能快速将任意 AI 模型转化为定制硅片，实现 1000 倍的效率提升。
+**背景**: x86 指令的延迟通常以时钟周期衡量，但某些指令因微码实现或硬件怪癖而异常缓慢。研究者通常借助 Agner Fog 的指令表和 uops.info 等资源获取延迟、吞吐量数据；该项目以“耻辱堂”形式将最慢指令集中展示，便于社区探讨。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://taalas.com/">Taalas | The model is The Computer</a></li>
-<li><a href="https://medium.com/garden-research/embedding-intelligence-into-silicon-51ffdc151b69">Embedding Intelligence into Silicon : Deep Dive on Taalas</a></li>
-<li><a href="https://www.crunchbase.com/organization/taalas">Taalas - Crunchbase Company Profile & Funding</a></li>
+<li><a href="https://github.com/xoreaxeaxeax/asm-hall-of-shame">GitHub - xoreaxeaxeax/asm-hall-of-shame: Racing to the bottom of CPU performance · GitHub</a></li>
+<li><a href="https://www.agner.org/optimize/instruction_tables.pdf">Introduction 4. Instruction tables - Agner</a></li>
+<li><a href="https://uops.info/">uops.info - Latency, Throughput, and Port Usage Information</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论热烈，有网友感叹未来 AI 速度提升可能带来难以想象的变革，也有人质疑为何 OpenAI 或 Anthropic 没有抢先收购，认为这是构建护城河的关键。还有评论指出模型快速迭代会让蚀刻在硅上的模型很快过时，同时应区分“峰值性能”与“可靠性能”的差距。
+**社区讨论**: 评论区对此项目兴趣浓厚，有用户指出 12 毫秒的 ACPI 写操作很可能陷入 SMM 处理，也有人提到作者的其他作品（如仅用 mov 指令的编译器和可扰乱调试器的编译器 repsych）。整体氛围积极，还引出了 Core War 等相关的底层编程话题。
 
-**标签**: `#AMD`, `#AI inference`, `#acquisition`, `#hardware`, `#silicon`
+**标签**: `#assembly`, `#x86`, `#low-level programming`, `#security`, `#CPU`
 
 ---
 
 <a id="item-3"></a>
-## [用《Mario Kart》角色数值解释 Pareto 前沿](https://www.mayerowitz.io/blog/mario-meets-pareto) ⭐️ 8.0/10
+## [科技从业者正对职业失去信仰](https://www.noemamag.com/why-is-everyone-in-tech-so-sad/) ⭐️ 8.0/10
 
-一篇名为《Mario Meets Pareto》的技术博客用《Mario Kart》的角色属性来直观解释 Pareto 前沿（Pareto frontier）概念。该文在 Hacker News 上获得 868 分和 150 条评论，引发广泛讨论。 这篇博客将抽象的多目标优化概念与大众熟悉的游戏场景结合，降低了理解门槛，有助于开发者更清晰地认识工程中的权衡取舍（trade-off）。社区讨论进一步延伸到软件安全与用户体验的权衡、以及游戏内装备优化等实际问题，显示了该概念的广泛适用性。 文章以速度与加速两个属性为例，展示哪些角色处于 Pareto 前沿上；处于前沿上的角色在二者之间做出此消彼长的取舍。评论中指出《超级马里奥赛车》速通玩家会选择 Bowser 或 DK 等位于前沿边缘的角色，而 WoW 玩家曾用 Pareto 剪枝方法优化海量装备组合。
+Noema Magazine 刊发文章《为什么科技圈人人都那么悲伤》，深入剖析科技从业者中普遍存在的幻灭感与职业倦怠，认为行业当初许下的美好承诺已经变味。这篇文章在社区获得高度关注（325 分、473 条评论），折射出科技行业情绪上的显著转变。 它标志着科技行业文化的一个重要转折点：曾以乐观主义和“改变世界”为标签的行业，如今大批从业者却对职业前景感到迷茫与疲惫。如果这种情绪持续蔓延，可能影响人才留存、创新动力，以及科技行业对新一代求职者的吸引力。 这并非技术突破类报道，而是一篇聚焦行业文化与心理健康的评论文章，文中以印刷业的历史命运作为类比：这门延续数百年的体面技能行业，最终被照相排版、桌面出版和电脑控制印刷机等技术变迁所淘汰。评论区的讨论还提到，即便没有 AI，整天围绕 EBITDA 等财务指标工作也会让人感觉做的事情“不够真实”。
 
-hackernews · theanonymousone · Aug 6, 11:24 · [社区讨论](https://news.ycombinator.com/item?id=49195231)
+hackernews · RickJWagner · Aug 7, 12:42 · [社区讨论](https://news.ycombinator.com/item?id=49209539)
 
-**背景**: Pareto 前沿（又称 Pareto front 或 Pareto curve）是多目标优化中所有 Pareto 有效解的集合；一个解被称为 Pareto 最优，是指不存在另一个解能在不使任一目标变差的情况下改进至少一个目标。该概念由经济学家 Vilfredo Pareto 提出，现已被广泛应用于工程、经济学和算法设计等领域。
+**背景**: 科技行业长期以来以“改变世界”的使命感和乐观前景吸引人才，从业者通常期望自己的劳动能创造真实的社会价值。但在实际工作中，许多人被商业指标、公司政治和赶工文化裹挟，理想与现实之间的落差成为职业倦怠的主要来源。此外，科技工作者日常身处的网络环境日益充满敌意与对立，进一步加剧了精神消耗。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Pareto_front">Pareto front - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Pareto_efficiency">Pareto efficiency - Wikipedia</a></li>
+**社区讨论**: 评论区整体情绪以共鸣和认同为主，许多从业者表示文章讲出了自己的心声。有评论者以印刷业的消亡为例，警示整个技术工种可能因产业变迁而彻底消失；也有人将问题归因于商业指标（如 EBITDA）与真实价值追求之间的冲突，并指出今天的网络环境已变得极度有毒，令人只想下线逃避。还有评论者提到，这篇文章因点赞/评论比例的门槛很快掉出首页，颇为可惜。
 
-</ul>
-</details>
-
-**社区讨论**: 讨论气氛积极，开发者 jerf 指出许多关于“鱼与熊掌不可兼得”的断言只有在已经处于 Pareto 前沿时才成立，否则可能是伪命题；用户 uzerfcwn 分享了在《魔兽世界》中利用分治与 Pareto 剪枝处理超过 100^15 种配装方案的真实案例。还有评论提到速通策略中选择位于前沿边缘的重型角色，呼应了文章的核心思想。
-
-**标签**: `#pareto-frontier`, `#optimization`, `#mario-kart`, `#game-design`, `#algorithms`
+**标签**: `#tech culture`, `#mental health`, `#software industry`, `#career`, `#web toxicity`
 
 ---
 
 <a id="item-4"></a>
-## [品味是最后剩下的东西](https://notashelf.dev/posts/taste-is-all-thats-left) ⭐️ 8.0/10
+## [OpenAI 公布 Astra 关键网络能力评估并加强安全控制](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/) ⭐️ 8.0/10
 
-一篇题为《品味是最后剩下的东西》的文章提出，在 AI 生成代码成为常态的当下，人类独有的“品味”仍是不可替代的核心品质。文章在技术社区获得 8.0 分高分评价，并引发关于 AI 与人类判断力的广泛讨论。 文章引发的讨论促使开发者重新思考“手艺”、“品味”与“判断力”在 AI 辅助开发中的价值，对软件工程实践和人机协作方式具有启发意义。在 AI 生成内容日益普及的背景下，这一观点有助于厘清人类在技术创造中的独特角色。 文章评分 8.0，评论区围绕“品味”与“判断力”的定义展开辩论，有人引用苏珊·桑塔格的观点支持品味的核心地位，也有人批评 LLM 生成内容质量低下，认为其只能解决眼前问题而缺乏长期价值。
+OpenAI 发布了针对下一代模型 Astra 的初步网络安全评估，表示无法排除其具备“关键”级网络攻击能力，并因此暂停了部分内部开发工作。同时，OpenAI 宣布将对更高能力模型实施更严格的安全控制，包括隔离测试环境。 这是 AI 安全领域的一个重要节点，意味着前沿模型正接近或可能达到能够自主发现零日漏洞的关键阈值。该事件将影响 AI 监管政策、企业安全实践以及红队测试等安全服务的提供方式。 根据 OpenAI 的 Preparedness Framework，达到“关键网络安全”阈值意味着模型无需人工干预即可识别并利用多个加固真实系统中的零日漏洞。OpenAI 还提到其 Daybreak 项目已通过受控方式提供 GPT-5.5-Cyber 等网络定向模型，用于授权红队、渗透测试和漏洞验证。
 
-hackernews · Lobsters · Aug 6, 17:01 · [社区讨论](https://news.ycombinator.com/item?id=49199346)
+hackernews · artninja1988 · Aug 7, 16:39 · [社区讨论](https://news.ycombinator.com/item?id=49213029)
 
-**背景**: 随着 GPT 等大型语言模型在代码生成、文本写作等领域的普及，AI 生成内容的质量成为开发者关注的话题。一些开发者开始反思：当 AI 可以生成大量代码时，人类的价值体现在哪里？“品味”——即对好坏的直觉判断与审美选择——被视为区分人类与机器的关键特质之一。本文正是在这一背景下，探讨 AI 时代人类判断力的意义。
+**背景**: 关键网络能力（Critical Cyber Capabilities）指的是能够发动网络攻击和操作的能力，是网络空间中类似传统军事作战系统的组成部分。OpenAI 的 Preparedness Framework 将模型对现实世界造成风险的等级进行划分，其中“关键”级表示最高的网络安全风险。此次披露基于对 Astra 的评估，并伴随着对内部开发和部署的调整。
 
-**社区讨论**: 评论区整体讨论热烈，观点呈两极：有人认同品味的核心地位，引用哲学观点支持；也有人认为“品味”一词过于模糊，更倾向用“判断力”，并批评 LLM 生成内容虽能解决眼前问题但长期缺乏价值。还有资深开发者以自身经验强调，品味需要长期试错积累，而 AI 代理构建的软件内部质量存疑。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/">Responding to the next frontier of critical cyber capabilities</a></li>
+<li><a href="https://www.reuters.com/legal/litigation/openai-flags-possible-critical-cybersecurity-risk-upcoming-model-tightens-2026-08-07/">OpenAI flags possible critical cybersecurity risk in upcoming ...</a></li>
+<li><a href="https://www.unite.ai/openai-says-upcoming-astra-model-may-cross-critical-cybersecurity-threshold/">OpenAI Says Upcoming Astra Model May Cross Critical ...</a></li>
 
-**标签**: `#AI`, `#software-engineering`, `#LLM`, `#craftsmanship`, `#taste`
+</ul>
+</details>
+
+**社区讨论**: 评论区中有用户分享亲身经验，称 AI 模型 Sol 在代码审计中能在几分钟内发现远程代码执行漏洞，表现出色。但也有用户质疑 OpenAI 未披露首次安全事件细节，认为“更严格的控制”缺乏透明度；还有人讽刺 OpenAI“既是网络安全问题的制造者，也是解决方案的提供者”，并建议将数据从这些平台迁回本地。
+
+**标签**: `#AI security`, `#OpenAI`, `#cyber capabilities`, `#AI agents`, `#vulnerability discovery`
 
 ---
 
 <a id="item-5"></a>
-## [OpenAI 改进 GPT-5.6 Sol 并向免费用户扩大 Luna 访问](https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/) ⭐️ 8.0/10
+## [SDSS 发布包含 50 万个超大质量黑洞的全天图](https://www.sdss.org/black-hole-mapper-release-20/) ⭐️ 8.0/10
 
-OpenAI 宣布对 ChatGPT 中的 GPT-5.6 Sol 模型进行改进，同时向免费用户扩大 GPT-5.6 Luna 的访问权限，免费用户将能使用推理功能（即“思考”开关）。 这标志着先进推理能力首次大规模向免费用户开放，可能显著扩大 AI 的普及范围。社区评论认为这一举措对世界的实际影响可能超过所有新的付费模型和编码智能体之和。 GPT-5.6 系列包含 Luna、Terra、Sol 三个变体，其中 Luna 是成本效率最高的模型，上下文窗口达 1,050,000 个 token，最大输出 128,000 个 token。Sol 则是能力最强的旗舰模型，在编码、科学和网络安全方面表现更强，目前以预览形式推出。
+SDSS 发布了其黑洞绘制计划（Black Hole Mapper）的数据，生成了包含约 50 万个超大质量黑洞的全天星图。同时，eROSITA X 射线巡天也发布了第二半天区目录，将已知 X 射线源数量增加至 200 万个。 这一数据发布将极大促进对超大质量黑洞及其在宇宙大尺度结构中作用的研究，也为天文学家和宇宙学家提供了宝贵的多波段观测资料。与 eROSITA X 射线数据的联合发布，使科学家能够更全面地探索黑洞的分布和演化。 该全天图基于 SDSS 的观测数据，而 eROSITA 目录覆盖了 1.5 年的运行数据，并与 SDSS 合作发布。社区评论中提到图中的网格状区域可能是一种天空采样伪影，而非真实结构，这反映了数据处理中的潜在技术问题。
 
-hackernews · tedsanders · Aug 6, 17:02 · [社区讨论](https://news.ycombinator.com/item?id=49199357)
+hackernews · MarcoDewey · Aug 7, 15:24 · [社区讨论](https://news.ycombinator.com/item?id=49211921)
 
-**背景**: GPT-5.6 是 OpenAI 于 2026 年 7 月 9 日发布的大语言模型家族，按能力从低到高分为 Luna、Terra 和 Sol 三个版本。由于美国政府限制，该系列最初于 2026 年 6 月 26 日仅向少数受信任合作伙伴提供有限预览，之后才全面公开发布。
+**背景**: 斯隆数字巡天（SDSS）是一个大型多光谱成像和光谱红移巡天项目，使用位于新墨西哥州阿帕奇角天文台的 2.5 米宽视场光学望远镜。该项目始于 2000 年，旨在系统地绘制夜空地图，研究宇宙和黑洞。第五阶段 SDSS-V 涉及超过 40 家机构合作伙伴，黑洞绘制计划是其中重要组成部分。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.6_Sol">GPT-5.6 Sol</a></li>
-<li><a href="https://openrouter.ai/openai/gpt-5.6-luna">GPT-5.6 Luna - API Pricing & Benchmarks | OpenRouter</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT-5.6 Sol: a next-generation model | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sloan_Digital_Sky_Survey">Sloan Digital Sky Survey</a></li>
+<li><a href="https://sloan.org/programs/research/sloan-digital-sky-survey">Sloan Digital Sky Survey</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论整体认为免费用户获得推理功能影响深远，但也有观点指出这并非 OpenAI 的“绝望之举”，因为 Claude 早已向免费用户提供 Sonnet。还有用户对界面中出现推理按钮表示不满，另有评论认为 OpenAI 正感受到模型商品化带来的竞争压力，未来可能更多转向 B2B 营销。
+**社区讨论**: 评论中，xioxox 提到了 eROSITA X 射线巡天的同步发布，使已知 X 射线源数量翻倍；epistasis 表示这些大规模宇宙地图重新点燃了他对天文学的兴趣，并指出其与基因组学数据分析的相似性。csallen 询问了绘制超大质量黑洞与绘制星系的区别，而 RagnarD 和 gwerbin 则对图中的网格状区域提出了疑问，怀疑是测量伪影。整体讨论积极且富有技术性。
 
-**标签**: `#OpenAI`, `#GPT-5.6`, `#ChatGPT`, `#AI`, `#reasoning models`
+**标签**: `#astronomy`, `#black holes`, `#SDSS`, `#data release`, `#sky survey`
 
 ---
 
 <a id="item-6"></a>
-## [Qwen3.8 Max 登顶 Agentic Index 基准，引发社区热议](https://artificialanalysis.ai/?intelligence=agentic-index) ⭐️ 8.0/10
+## [pgrust 让 Postgres 分析提速 300 倍](https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/) ⭐️ 8.0/10
 
-阿里巴巴的 Qwen3.8 Max 在 Artificial Analysis 的 Agentic Index 中被评为综合最佳模型，超越 Opus 5 等竞争对手。该模型刚刚发布，为 2.4 万亿参数的 MoE 模型，支持 100 万 tokens 上下文。 这表明中国 AI 模型在智能体能力上已追平甚至超越西方头部模型，对全球 AI 竞争格局产生重要影响。同时，这一结果也引发了对基准可靠性、模型实际体验以及未来本地小模型潜力的广泛讨论。 Agentic Index 是 Artificial Analysis Intelligence Index 中智能体能力基准的加权平均值（包含 GDPval-AA v2 和³-Banking）。社区用户反映榜单结果会波动，例如 Qwen 得分从 55.4 变为 58.4，而 Opus Max 从 55.3 变为 59.2，因此需要谨慎看待排名。该模型在 OpenRouter 上的定价为每百万输入 tokens 2 美元、每百万输出 tokens 6 美元，开放权重预计下周发布。
+pgrust 项目发布了技术细节，展示如何通过批处理、算子融合和 SIMD 指令，让 PostgreSQL 在处理分析型查询时速度提升约 300 倍，并强调对正确性的重视。 这一成果表明，在不改变 SQL 语义的前提下，采用现代查询执行技术可以大幅提升 Postgres 的分析性能，可能影响数据库社区对执行引擎优化的思路，并推动 Postgres 生态演进。 pgrust 是用 Rust 重写 PostgreSQL 的实验项目，目前能通过 Postgres 回归测试，但作者坦承仍有大量 bug。团队采用形式化验证和差分模糊测试，已证明超过 1000 个用户可见函数与 Postgres 逻辑一致。
 
-hackernews · apitman · Aug 6, 18:44 · [社区讨论](https://news.ycombinator.com/item?id=49200652)
+hackernews · poly2it · Aug 7, 11:00 · [社区讨论](https://news.ycombinator.com/item?id=49208535)
 
-**背景**: Agentic AI 是指能够自主追求目标、使用工具并采取行动的 AI 系统，是当前生成式 AI 的重要发展方向。Artificial Analysis 的 Agentic Index 是衡量模型智能体能力的常用基准之一。Qwen3.8 Max 是阿里巴巴 Qwen 系列的最新旗舰模型，采用 2.4 万亿参数 MoE 架构，是 Qwen 家族目前能力最强的模型。
+**背景**: PostgreSQL 是传统行式存储数据库，处理分析型查询时逐行执行算子，性能受限。批处理将数据按块处理以减少开销，算子融合避免中间结果物化，SIMD 让 CPU 一次处理多条数据。pgrust 尝试用 Rust 重写 Postgres 以实验这些技术。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/">Alibaba Qwen Releases Qwen3.8-Max: A 2.4 Trillion Parameter MoE Model and the Most Capable One in the Qwen Family to Date - MarkTechPost</a></li>
-<li><a href="https://www.qwencloud.com/models/qwen3.8-max">Qwen3.8-Max - QwenCloud</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Agentic_AI">Agentic AI</a></li>
+<li><a href="https://pgrust.com/">pgrust — postgres, rewritten in rust</a></li>
+<li><a href="https://github.com/malisper/pgrust">GitHub - malisper/ pgrust : Postgres rewritten in Rust , now faster than...</a></li>
+<li><a href="https://arxiv.org/pdf/1610.09166">Push vs. Pull-Based Loop Fusion in Query Engines - arXiv.org</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区整体认为中国 AI 已追上来了，但许多用户质疑该基准的稳定性，指出刷新后排名会发生变化。也有用户反馈 Qwen 在排查复杂 bug 时表现出色，并期待后续 27B 等更小尺寸的模型能在本地运行。另有用户认为任何把 Opus 5 列为最佳的结果都缺乏可信度。
+**社区讨论**: 作者回应了正确性担忧，称优先级是验证逻辑一致性。有评论者认为即使性能优越，用户仍可能因信任 Postgres 核心团队而不会选择 pgrust；也有人赞赏自适应规划等创新，希望其能证明这类技术的可行性。另有用户询问 I/O 调度器细节，以及用 ramfs/tmpfs 提升性能的偏好。
 
-**标签**: `#AI`, `#benchmarks`, `#Qwen`, `#agentic AI`, `#model evaluation`
+**标签**: `#postgres`, `#database`, `#query-engine`, `#SIMD`, `#performance`
 
 ---
 
 <a id="item-7"></a>
-## [tl;dv 验证缺陷致 18 万场会议录像泄露](https://bobdahacker.com/blog/tldv-hack) ⭐️ 8.0/10
+## [Cloudflare 推出 Kitesurf：基于 V8 隔离区的智能体优先浏览器](https://blog.cloudflare.com/kitesurf/) ⭐️ 8.0/10
 
-安全研究员发现，AI 会议记录工具 tl;dv 因缺乏验证机制，暴露了 181,874 场会议录像，任何已认证用户都能读取其他用户的会议数据。 该漏洞严重影响企业隐私与合规，因为会议录像常包含商业机密和个人信息。它也凸显了 AI 会议记录工具在权限验证方面的普遍风险，促使团队重新评估此类工具。 漏洞与 Firebase 配置错误有关，导致认证用户可以越权访问他人数据。尽管 tl;dv 官方宣称代码审查严格，但此事件表明生产环境中的验证仍可能缺失。
+Cloudflare 发布了 Kitesurf，一个基于开源 Blitz 引擎、运行在 V8 隔离区中的“智能体优先”浏览器。该浏览器旨在让 AI 代理像人类一样在浏览器中执行自动化任务。 这标志着 Cloudflare 从 CDN 和安全领域进一步扩展至 AI 代理基础设施，可能重塑浏览器自动化、网页抓取和 AI 代理的部署方式。同时，它也引发了关于 Cloudflare 同时提供反机器人保护和代理浏览器的双重角色的争议。 Kitesurf 基于 DioxusLabs 的 Blitz 引擎，这是一个用 Rust 编写的模块化 HTML/CSS 渲染引擎。据 Blitz 的作者称，Cloudflare 计划将 Kitesurf 的补丁开源并上游合并到 Blitz 项目中。
 
-rss · Lobsters · Aug 6, 11:22
+hackernews · Lobsters · Aug 7, 10:42 · [社区讨论](https://news.ycombinator.com/item?id=49208393)
 
-**背景**: tl;dv 是一款 AI 驱动的会议记录工具，可自动录制、转录 Zoom 和 Google Meet 会议并生成摘要。此类工具通常将录音存储在云端，若权限验证不严，就可能造成大规模数据泄露。
+**背景**: V8 隔离区是 Google V8 引擎中的轻量级执行上下文，允许边缘平台在单个进程中运行数千个租户，而无需容器或虚拟机。Blitz 是一个用 Rust 实现的独立 Web 引擎，提供灵活的低层 API，适用于浏览器、应用运行时等场景。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.happyscribe.com/blog/tldv-security-breach">tl ; dv Security Breach: What It Means for Anyone Building or Using an...</a></li>
-<li><a href="https://tldv.io/features/security-commitment/">tl ; dv Security Information</a></li>
-<li><a href="https://topaitools-com.firebaseapp.com/tools/tl-dv">tl ; dv : Meeting Solution | Top AI Tools</a></li>
+<li><a href="https://github.com/DioxusLabs/blitz">DioxusLabs/ blitz : A radically modular HTML/CSS rendering engine ...</a></li>
+<li><a href="https://nlnet.nl/project/Blitz/">NLnet; Blitz - a modular web renderer</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#privacy`, `#vulnerability`, `#data exposure`, `#meeting recordings`
+**社区讨论**: 评论区对 Kitesurf 总体持观望态度。Blitz 作者 nicoburns 确认 Kitesurf 基于 Blitz 并计划开源；minraws 担心 Cloudflare 同时经营 CDN/安全与代理业务存在利益冲突；QuantumNomad_ 质疑 Cloudflare 是否会让自家 CDN 的防机器人机制拦截其代理浏览器；cautiouscat 则询问这类浏览器代理的实际应用场景。
+
+**标签**: `#browser`, `#AI-agents`, `#Cloudflare`, `#web-scraping`, `#V8`
 
 ---
 
 <a id="item-8"></a>
-## [Crubit：C++与 Rust 的双向互操作绑定生成器](https://crubit.rs/) ⭐️ 8.0/10
+## [与爬虫搏斗一年：150 万页网站的防护与代价](https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/) ⭐️ 8.0/10
 
-Crubit 是谷歌开源的双向绑定生成器，用于自动生成 C++ 与 Rust 之间的互操作代码。它让开发者可以方便地在现有 C++ 项目中引入 Rust 代码，或将 C++ 代码集成到 Rust 项目中。 这一工具填补了 C++ 与 Rust 混合代码库中的关键空白，能显著降低跨语言调用的复杂性和维护成本。对于正在逐步采用 Rust 的系统软件项目，Crubit 可以加速迁移进程并促进两大生态的融合。 Crubit 的目标是成为面向开源用户的、基于 IDL 的 FFI 工具，并提供 Cargo 集成，以适配不同控制强度的构建环境。目前项目在 GitHub 上开发，并持续更新其功能与状态。
+一位网站所有者公开分享其拥有 150 万页面的网站过去一年与网络爬虫斗争的经历，指出爬虫流量曾导致账单飙升约 500%，并介绍使用 Cloudflare 防护的效果及其局限。 这一案例凸显了 AI 爬虫对独立网站运营者的成本与资源压力，也引发了对 Cloudflare 等集中式防护服务的依赖、工作量证明替代方案以及静态站点优化等关键权衡的讨论，对维护开放网络生态具有参考意义。 评论区提出 Anubis 等开源方案，通过工作量证明挑战在访问前验证真实浏览器，适用于不依赖 Cloudflare 等 CDN 的站点；另有观点建议放弃 Cloudflare D1 数据库并改为静态托管以降低成本，指出该站点日常成本约 90 美元/月，峰值时激增 500%。
 
-rss · Lobsters · Aug 6, 17:47
+hackernews · petercooper · Aug 7, 14:51 · [社区讨论](https://news.ycombinator.com/item?id=49211386)
 
-**背景**: C++ 和 Rust 都是系统级编程语言，但在同一项目中混用两者需要处理跨语言函数调用（FFI，即外部函数接口）的复杂性。手动编写绑定既费时又容易出错，Crubit 通过自动化绑定生成解决了这一问题。
+**背景**: 网络爬虫是自动抓取网页数据的程序，近年 AI 公司大规模抓取数据训练模型，导致网站流量异常增加。工作量证明（Proof of Work）是一种让客户端执行一定计算任务以证明其非自动化程序的机制，Anubis 即基于此原理。许多网站因担心性能和安全而使用 Cloudflare 等防护服务，但这将访问控制权集中于第三方。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/google/crubit">GitHub - google/crubit: A bidirectional bindings generator for C++ and Rust. · GitHub</a></li>
-<li><a href="https://crubit.rs/overview/status">Are We Crubit Yet? - Crubit Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anubis_(software)">Anubis (software) - Wikipedia</a></li>
+<li><a href="https://github.com/danielbardsley/anti-scraper">GitHub - danielbardsley/anti-scraper: Proof of concept for ...</a></li>
+<li><a href="https://aitoolly.com/ai-news/article/2026-07-07-website-security-evolution-implementing-anubis-proof-of-work-to-combat-aggressive-ai-data-scraping-a">Anubis: Using Proof-of-Work to Stop Aggressive AI Scraping</a></li>
 
 </ul>
 </details>
 
-**标签**: `#C++`, `#Rust`, `#interop`, `#systems programming`, `#tooling`
+**社区讨论**: 社区讨论活跃，主要观点包括：担忧将访问控制权交给 Cloudflare 等大公司会破坏开放网络；推荐 Anubis 等工作量证明方案作为替代；建议改用静态站点以规避数据库成本；也有人提到 Claude 搜索机器人大量抓取却只带来极少数真实访客，并坦承自己的站点同样依赖爬虫，反映出内容运营者的矛盾处境。
+
+**标签**: `#web scraping`, `#bot mitigation`, `#Cloudflare`, `#cost optimization`, `#static sites`
 
 ---
 
 <a id="item-9"></a>
-## [Herdr 加入 Y Combinator，运行时保持开源](https://herdr.dev/blog/herdr-is-joining-y-combinator/) ⭐️ 7.0/10
+## [新墨西哥州法院裁定 Meta 赔偿 5.67 亿美元](https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta) ⭐️ 8.0/10
 
-Herdr 宣布加入 Y Combinator，并将其运行时从 AGPL 许可切换为 Apache 许可，以鼓励更广泛的采用。该工具定位为编码代理（coding agent）运行于其上的运行时，且明确表示运行时仍然保持开源。 这标志着 AI 编码工具领域又一家初创公司获得 YC 背书，并通过更宽松的开源许可降低开发者采用门槛。随着终端复用器与多代理编码赛道日益拥挤，Herdr 的融资和许可策略可能对后续竞争格局产生影响。 Herdr 是一个终端复用器兼多代理编码运行时，可运行在笔记本电脑、桌面或租赁服务器上。YC 已投资多个同类竞争项目，如 Superset、cmux、Emdash、Orca 等；Apache 许可比 AGPL 更宽松，允许更自由地使用、修改和集成。
+美国新墨西哥州一家法院裁定 Meta Platforms 因旗下社交媒体平台对儿童心理健康造成伤害，须支付 5.67 亿美元赔偿金，并对其面向未成年人的产品做出整改。据《华尔街日报》报道，判决总额可能高达 9.42 亿美元，其中 5.67 亿美元专门用于青少年心理健康基金。 这是美国州级法院针对大型科技公司未成年人保护问题开出的巨额罚单之一，标志着社交媒体平台在青少年心理健康方面面临更严格的法律追责。该裁决可能影响其他州乃至联邦层面的监管行动，并给 Meta 的商业模式和股价带来压力。 法院认定 Meta 违反了新墨西哥州的公共妨害法（public-nuisance law），相关条款涉及危害公共健康、安全或福利。Meta 表示将上诉，且该案的具体赔偿金额在不同报道中有所差异（5.67 亿至 9.42 亿美元）。
 
-hackernews · collinmanderson · Aug 6, 19:14 · [社区讨论](https://news.ycombinator.com/item?id=49201003)
+hackernews · boplicity · Aug 7, 00:06 · [社区讨论](https://news.ycombinator.com/item?id=49204352)
 
-**背景**: 终端复用器是一种软件应用，可以在单个终端界面内管理多个伪终端会话，并允许用户断开连接后让远程进程继续运行。随着 AI 编码代理崛起，这类工具也被用作多代理协作和编码任务的运行时环境。Herdr 将自己定位为“编码代理的运行时”，此次转用 Apache 许可意在消除法律上的顾虑，吸引更多开发者采用。
+**背景**: 近年来，美国多州和学区起诉 Meta、TikTok 等社交媒体公司，指控其算法推荐功能导致青少年沉迷、焦虑和抑郁。新墨西哥州 2023 年对 Meta 提起诉讼，称其未能保护未成年人。此次裁决是此类诉讼中较早的重大胜诉之一，凸显了科技公司对未成年人的法律责任。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Terminal_multiplexer">Terminal multiplexer</a></li>
-<li><a href="https://herdr.dev/">Herdr: the runtime coding agents run on</a></li>
+**社区讨论**: 评论区有人指出，对于 Meta 的全球收入而言这笔钱只是象征性惩罚，但考虑到新墨西哥州人口仅 200 多万，按比例折算该金额相当可观。也有人将 Instagram Reels 和 TikTok 比作'数字海洛因'，认为算法推荐对青少年危害严重，并担忧 Meta 的商业模式和股价前景。
 
-</ul>
-</details>
-
-**社区讨论**: 社区对这条消息态度两极：一部分人祝贺 Can 获得种子前融资，认为这是现代独立开发者的成功故事；另一部分人质疑从 AGPL 改为 Apache 的具体原因，并担心融资后开源承诺能否维持。还有评论指出 Herdr 将与 mitchellh 的 Superlogical 等产品直接竞争，并认为终端复用器/多代理编码赛道已非常拥挤，也有用户吐槽标题风格过于“LLM 化”，分散注意力。
-
-**标签**: `#Y Combinator`, `#open source`, `#developer tools`, `#AI coding`, `#terminal multiplexer`
+**标签**: `#legal`, `#meta`, `#social-media`, `#regulation`, `#mental-health`
 
 ---
 
 <a id="item-10"></a>
-## [ProvenMetal 推出美国本土 PCB 快速组装服务](https://provenmetal.com/) ⭐️ 7.0/10
+## [甲骨文禁止 OpenJDK 接受 AI 生成代码](https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code) ⭐️ 7.0/10
 
-ProvenMetal 是一家入选 YC S26 的初创公司，宣布在美国本土提供数天交付的 PCB 组装服务，替代传统数周的交期。其平台通过自动化报价、DFM 审查和元器件采购来加速流程。 此举直击硬件创业者和国防等领域依赖海外供应链的痛点，有望重振美国本土 PCB 制造能力。若成功，将显著缩短硬件迭代周期，并减少对亚洲供应链的依赖。 ProvenMetal 提供 KiCAD 和 Altium 插件，可在设计阶段自动同步 BOM 并提前采购长交期元器件，同时为合作制造商建立档案以自动匹配其格式要求。目前公司存储元器件于旧金山总部，并协调裸板制造与组装网络。
+甲骨文发布了 OpenJDK 临时政策，禁止接受 AI 生成的代码贡献，理由是担心版权和代码来源的法律问题。该政策目前为临时版本，最终版本仍在由法律团队起草中。 该政策在开源社区引发广泛讨论，因为它与甲骨文自身大力推广 AI 技术的立场形成反差，也可能影响其他开源项目对 AI 生成代码的态度。对依赖 OpenJDK 的企业和开发者来说，未来提交代码时需要更谨慎地声明代码来源。 根据 OpenJDK 官方网站上的临时政策页面，该政策的最终版本正在由甲骨文的法律团队撰写。社区用户指出，原始政策地址为 openjdk.org/legal/ai，而新闻链接本身是对 The Register 一篇更详细报道的糟糕摘要。
 
-hackernews · willcarkner · Aug 6, 15:59 · [社区讨论](https://news.ycombinator.com/item?id=49198464)
+hackernews · delduca · Aug 7, 17:36 · [社区讨论](https://news.ycombinator.com/item?id=49213754)
 
-**背景**: PCB（印刷电路板）是电子设备的核心部件，裸板指未安装元件的电路板。美国 PCB 产量占全球比例从 2000 年的 30%降至目前的 4%，而中国占 55%。传统合同制造商（CM）在报价、可制造性设计（DFM）审查和元器件采购环节效率低下，导致交付周期漫长。
+**背景**: OpenJDK 是 Java 平台标准版（Java SE）的官方参考实现，由 Sun Microsystems 于 2006 年启动，后在 2010 年被甲骨文收购后成为甲骨文主导的开源项目。它采用 GPLv2 许可证，是最流行的 Java 开发工具包发行版。考虑到甲骨文过去在 Java 版权问题上的诉讼历史，这一禁令可能与其担忧 AI 生成代码的版权归属不清晰而带来法律风险有关。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Contract_manufacturer">Contract manufacturer - Wikipedia</a></li>
-<li><a href="https://resources.pcb.cadence.com/blog/design-for-manufacturing-or-dfm-analysis-pcb-dfm-process-slp">PCB Design For Manufacturability With Allegro X | Cadence</a></li>
-<li><a href="https://www.ariat-tech.com/blog/What-Is-a-Bare-Printed-Circuit-Board.html">What Is a Bare Printed Circuit Board ?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenJDK">OpenJDK</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论反映对价格竞争力的普遍担忧，有评论指出中国 PCB 加组装每块仅需 10-20 美元，且 7 天可达。部分评论者建议提供信贷额度以帮助客户改善现金流，并指出元器件采购是真正的瓶颈。整体上，多数人希望 ProvenMetal 成功，但认为其市场定位可能局限于 ITAR 和急单需求。
+**社区讨论**: 评论区观点分歧：有用户认为甲骨文此举是出于法律策略，希望保留起诉他人使用 AI 代码的权利；也有用户理解禁令是为了减轻人类审查者的负担，避免低质量贡献涌入；还有人讽刺甲骨文的发布说明本身可能已由 AI 撰写。整体情绪既感到讽刺，又承认法律风险确实存在。
 
-**标签**: `#PCB`, `#hardware`, `#manufacturing`, `#YC`, `#supply chain`
+**标签**: `#OpenJDK`, `#AI-generated code`, `#Oracle`, `#open source`, `#policy`
 
 ---
 
 <a id="item-11"></a>
-## [AI 代理审批游戏：人类漏掉三分之一的威胁指令](https://scalex.dev/blog/ai-agent-permissions-stats/) ⭐️ 7.0/10
+## [暗夜天文应用被误判为占星术，App Store 审查引发争议](https://daringfireball.net/2026/08/app_store_rejection_of_the_week_dark_hours) ⭐️ 7.0/10
 
-一款名为 AI 代理权限审批的实验游戏累计超过 4 万次运行、40.9 万次决策。结果显示，即便事先给出警告，人类在审批 AI 代理命令时仍漏掉了约三分之一的威胁性指令。 该结果对 human-in-the-loop（人类参与）作为 AI 安全屏障的做法提出了质疑。随着 AI 代理在开发环境中执行终端命令越来越普遍，依赖人工审批命令可能无法有效阻止危险操作，影响 AI 安全工具链和权限机制的设计。 游戏设有计时器且没有真实后果，部分提示被批评存在误导性，玩家对哪些命令属于威胁存在分歧。此外，开发者指出，npm run 命令上方的历史日志往往被忽略，这些因素都限制了该结论在现实场景中的适用性。
+开发者 Godier 的暗夜天空应用 Dark Hours 被 App Store 以“占星术”为由拒绝，经层层申诉至 App Review Board 后，苹果仍维持原判，并声称该应用包含“实时塔罗牌占卜功能”，但开发者否认应用中有任何塔罗或占星内容。 这一事件凸显了 App Store 审查流程的随机性和不透明性，可能影响大量开发者的信心。它也引发了对苹果平台治理和内容审核一致性的质疑，尤其是当一个设计精良且功能正常的应用被错误归类时。 开发者经历了多级申诉，最终 App Review Board 给出的理由竟是“我们理解该应用包含实时塔罗牌占卜功能”，而应用实际上没有任何塔罗或占星相关功能。社区成员指出，真正的占星应用 Co-Star 曾被苹果选为“编辑推荐”，与此次判决形成鲜明对比。
 
-hackernews · Wirbelwind · Aug 6, 11:58 · [社区讨论](https://news.ycombinator.com/item?id=49195468)
+hackernews · _da_ · Aug 7, 18:59 · [社区讨论](https://news.ycombinator.com/item?id=49214863)
 
-**背景**: AI 代理（AI agent）执行终端命令时，常见的安全机制是要求人类先审批高风险命令，即 human-in-the-loop（人类参与）模式。然而，研究者和业界评论认为，人类审批并非可靠的安全控制，尤其在时间压力大、没有实际后果的环境中，人容易漏判或误判。这类模拟游戏通过低风险场景测试人类审批表现，帮助揭示人工监督的潜在缺陷。
+**背景**: App Store 审查是苹果对所有提交到商店的应用进行审核的流程，依据其《App Store 审核指南》判断是否批准。开发者普遍抱怨这一过程缺乏透明度，结果常常取决于具体审核员的主观判断。Dark Hours 是一款用于追踪暗夜天空或天文观测的应用，与占星术无关，因此这次拒绝显得很不合理。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://geekoven.net/tech-future/why-human-approval-of-ai-agent-commands-often-misses-threats/">Why human approval of AI agent commands often... - geekoven.net</a></li>
-<li><a href="https://cybergiz.com/playbooks/approve-ai-agents-terminal-commands/">How to approve AI agents that can run terminal commands | Cybergiz</a></li>
-<li><a href="https://aiguru.ae/insights/human-in-the-loop-is-not-a-control">Human in the Loop " Is Not a Control | AI Guru® Insights — UAE</a></li>
+**社区讨论**: 评论者纷纷表达对 App Store 审核不一致的愤怒和无奈。有用户以自己维护双平台移动应用的亲身经历，称其是“最不可靠的事情”，完全取决于遇到的审核员。还有人讽刺说，真正的占星应用 Co-Star 都能成为编辑推荐，这种决定简直是“疯狂的裁决”，甚至有人因此放弃原生开发，转而只做 Web 应用。
 
-</ul>
-</details>
-
-**社区讨论**: 评论区普遍对实验方法提出质疑，认为提示存在误导、游戏没有真实后果且有人为时间限制，因此数据不能推广到真实工作场景。也有观点认为模型厂商的“点击同意”审批只是转嫁责任的免责机制，而非真正的安全措施。游戏作者回应称这只是一个游戏，但统计数据仍有参考价值，并已吸收此前 HN 讨论中的反馈。
-
-**标签**: `#AI safety`, `#human-in-the-loop`, `#AI agents`, `#permissions`, `#human factors`
+**标签**: `#App Store`, `#iOS development`, `#developer experience`, `#platform policy`, `#content moderation`
 
 ---
 
 <a id="item-12"></a>
-## [Zig 的 Io.Threaded 设计为何值得关注](https://matklad.github.io/2026/08/06/neat-io-threaded.html) ⭐️ 7.0/10
+## [AI 需求火爆，2027 年内存产能已被预订一空](https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out) ⭐️ 7.0/10
 
-系统开发者 matklad 发表了一篇技术博客，深入分析了 Zig 新 I/O 接口中 Io.Threaded 后端的实现。该后端基于线程池与阻塞系统调用，是 Zig std.Io 的一个完整通用实现。 这篇文章有助于系统程序员理解 Zig 在并发 I/O 上的设计取舍，尤其是在线程模型与事件驱动模型之间的选择。Zig 作为一门面向底层系统编程的语言，其 I/O 抽象的发展会影响大量基础设施项目的实现方式。 std.Io.Threaded 是 Zig 新 Io 接口的线程后端，采用经典的 worker pool 结构：一个分配器加上线程池。与事件驱动的 evented 后端相比，它使用阻塞系统调用，代码更为直接且通用性更好。
+据报道，2027 年的内存产能已经全部售罄，主要原因是 AI 对高带宽内存（HBM）的需求激增。这正在压缩普通 DRAM 的供应，并推动内存价格上涨。 这一信号对 AI 基础设施和整个硬件生态至关重要，因为内存供应紧张将影响个人电脑、游戏和服务器市场的成本和可用性。未来几年，内存价格可能持续走高，波及普通消费者和企业采购。 据 Tom's Hardware 报道，HBM 每 GB 消耗的晶圆产能约为 DDR5 的三倍，因为堆叠工艺带来的良率损失以及 TSV（硅通孔）工序增加了生产周期。这意味着 HBM 产能的提升会直接挤压通用内存的供给。
 
-rss · Lobsters · Aug 6, 20:12
+hackernews · inigyou · Aug 7, 07:58 · [社区讨论](https://news.ycombinator.com/item?id=49207236)
 
-**背景**: Zig 是由 Andrew Kelley 于 2016 年发布的一门通用系统编程语言，旨在成为 C 语言的改进替代品。它要求手动内存管理，并提供打包结构体、任意宽度整数和多种指针类型等底层特性。Zig 的新 std.Io 接口为异步 I/O 与并发提供了抽象，Io.Threaded 是其中一个实现选项。
+**背景**: 高带宽内存（HBM）是一种 3D 堆叠 DRAM，通过宽数据路径为 AI 和高性能计算提供超高带宽。由于 HBM 生产占用更多晶圆产能，内存厂商在 HBM 与 DDR5 之间面临取舍，导致 HBM 扩张时普通内存供应减少、价格上涨。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://matklad.github.io/2026/08/06/neat-io-threaded.html">Zig 's Io . Threaded is Neat</a></li>
-<li><a href="https://sparkles-docs.pages.dev/research/async-io/zig-io">Zig std. Io (the new Io interface) | Sparkles</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/ram/hbm-is-eating-your-ram">Here's why HBM is coming for your PC's RAM — HBM consumes around three times the wafer capacity of DDR5 per gigabyte, as AI supercharges demand for chips and advanced packaging | Tom's Hardware</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Bandwidth_Memory">High Bandwidth Memory - Wikipedia</a></li>
+<li><a href="https://www.rambus.com/blogs/hbm3-everything-you-need-to-know/">High Bandwidth Memory (HBM): Everything You Need to Know - Rambus</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Zig`, `#concurrency`, `#async-io`, `#systems-programming`
+**社区讨论**: 评论区用户普遍对内存价格上涨表示担忧，有人指出 HBM 与 DDR5 的晶圆产能转换比例，有人考虑囤货或购买旧款内存。也有用户因 AI 对内存和存储的压力而对使用 AI 感到犹豫，认为应该等市场稳定后再依赖 AI。
+
+**标签**: `#hardware`, `#memory`, `#HBM`, `#AI infrastructure`, `#supply chain`
 
 ---
 
 <a id="item-13"></a>
-## [一段文本同时是有效 DOS COM 可执行文件](https://oldbytes.space/@gloriouscow/117045701876951834) ⭐️ 7.0/10
+## [Wyzer：用编排编程保障分布式安全的新型语言](https://github.com/Wyzer-Lang/wyzer) ⭐️ 7.0/10
 
-一个名为“The following is a valid DOS COM executable”的帖子展示了一个巧妙的文件格式技巧：一段普通文本同时也是一个有效的 DOS COM 可执行文件。该帖子由 oldbytes.space 上的用户发布，并附有指向 Lobsters 讨论的链接。 这一技巧体现了 polyglot 文件的概念，即同一文件可以被不同解析器解释为不同格式，对复古计算和文件格式爱好者极具吸引力。同时，polyglot 文件在现实中也与安全相关，因为恶意软件可能利用这类文件规避安全扫描器的检测。 COM 文件是 CP/M 和 DOS 下的可执行格式，没有文件头，加载时从内存偏移量 0x100 处开始执行。该技巧依赖于文本字节恰好对应有效 x86 机器码指令，从而让同一文件既可作为文本阅读，也可作为程序运行。
+Wyzer 是一种新的静态类型、编译型、资源导向型编程语言，通过编排式编程和 Perceus 引用计数内存管理，旨在从语言层面防止分布式死锁与跨服务正确性问题。该项目已开发数周，即将发布 0.1.0 版本。 该语言尝试将学术界的编排编程概念引入通用高级语言，弥补 Rust 等语言只保证内存安全、不保证分布式安全的空白。对于分布式系统开发者、编程语言设计者和编译器研究者而言，这是一个值得关注的新方向。 Wyzer 使用线性/仿射类型和 Perceus 引用计数来替代借用检查器与生命周期，使得 LSP 等工具更容易分析代码。目前文档和示例仍不充分，社区也对其内外部函数调用的语义表示以及超时处理等问题提出了疑问。
 
-rss · Lobsters · Aug 6, 11:37
+hackernews · v0id_isgood · Aug 7, 12:28 · [社区讨论](https://news.ycombinator.com/item?id=49209385)
 
-**背景**: COM 文件起源于 CP/M 操作系统，后被 DOS 家族继承，是一种非常紧凑的可执行格式，整个文件直接加载到内存并执行。与之相对，DOS MZ 是后来引入的 EXE 格式，带有文件头。Polyglot（多语种）文件是指单个文件能被多种程序解读为不同格式，例如同时作为文本和可执行程序使用，常被用来展示文件格式设计的巧妙之处。
+**背景**: 编排式编程（choreographic programming）是一种分布式系统编程范式，开发者从全局视角描述多方之间的消息交互，编译器自动生成各参与方的实现，并保证每条发送都有对应接收，从而在编排范围内避免死锁。Perceus 是 Koka 语言中使用的一种无垃圾回收的引用计数内存管理技术，结合唯一所有权跟踪和优化，能提供高效且可预测的内存回收。资源导向编程则将对象视为唯一所有权资源，常见于 Cadence 这类语言中。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/COM_file">COM file - Wikipedia</a></li>
-<li><a href="http://justsolve.archiveteam.org/wiki/DOS_executable_(.com)">DOS executable (.com) - Just Solve the File Format Problem</a></li>
-<li><a href="https://aperisolve.com/wiki/techniques/files-archives">Files & Archives - Magic Bytes, Polyglots , Carving... - Aperi'Solve</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Choreographic_programming">Choreographic programming</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2020/11/perceus-tr-v1.pdf">Perceus: Garbage Free Reference Counting with Reuse</a></li>
+<li><a href="https://tempo-lang.github.io/docs/introduction/choreographic-programming/">Choreographic Programming – Tempo</a></li>
 
 </ul>
 </details>
 
-**标签**: `#DOS`, `#retrocomputing`, `#executable`, `#file-format`, `#clever-hack`
+**社区讨论**: 社区整体对项目的创新性表示赞赏，认为它不是又一款“2015 年技术水准”的语言，而是真正尝试新方向。但多数评论也指出文档和示例不足，难以理解其核心机制；还有一些评论质疑它如何具体保证无分布式死锁（例如循环等待场景），以及外部函数调用的超时语义尚不明确。
+
+**标签**: `#programming-language`, `#distributed-systems`, `#choreographic-programming`, `#memory-safety`, `#compiler`
 
 ---
 
 <a id="item-14"></a>
-## [2026 年如何制作 Nintendo 64 游戏：硬核制作指南](https://phoboslab.org/log/2026/08/xibalba64-making-of) ⭐️ 7.0/10
+## [PS3 模拟器在 ARM 上实现高速运行](https://www.youtube.com/watch?v=-aI_XEwmKFk) ⭐️ 7.0/10
 
-《Xibalba64》作者发布了一篇详细的制作教程，讲解如何在 2026 年从头开发一款 Nintendo 64 游戏。文章深入探讨了 N64 硬件限制下的渲染、微码和编程挑战。 这篇文章为复古游戏开发社区提供了宝贵的实战经验，展示了在现代工具链下攻克 N64 硬件限制的新方法。它可能激励更多开发者尝试为老主机创作原生游戏，延续复古计算生态。 文章涉及 N64 的 RSP（Reality Signal Processor）和微码（microcode）等底层技术。现代开源 SDK 如 Libdragon 和 F3DEX3 微码降低了开发门槛，但自定义微码仍面临文档不足和调试困难等挑战。
+一段视频展示了 PS3 模拟器现在能在 ARM 硬件上流畅运行，标志着 PS3 模拟在 ARM 平台上的性能取得了显著进展。这一成果主要归功于 RPCS3 模拟器的持续优化。 这意味着未来 PS3 游戏可以在 Android 手机、Apple Silicon Mac 等 ARM 设备上可玩，大大拓展了 PS3 游戏库的可及性。同时，它也证明了动态二进制翻译和模拟优化技术已经成熟到可以高效跨架构运行，对模拟器开发和系统软件工程具有重要意义。 视频中使用的模拟器很可能是 RPCS3，它目前支持 Windows、Linux、macOS 和 Android，并使用 Vulkan 进行图形渲染。PS3 的 Cell 处理器架构极为复杂，包含 PowerPC 核心和 8 个协同处理单元，在 ARM 上模拟需要高效的 JIT 重编译与指令翻译技术。
 
-rss · Lobsters · Aug 6, 13:23
+rss · Lobsters · Aug 7, 17:50
 
-**背景**: Nintendo 64 主机使用 RSP 与 RDP 组成的 RCP 协处理器，游戏通常通过显示列表和微码驱动 RSP 进行图形变换。当年只有少数工作室编写自定义微码，如今 Libdragon 等开源 SDK 提供了现代编程体验。2026 年制作 N64 游戏意味着要利用这些新工具同时应对硬件限制。
+**背景**: PS3 采用 IBM 设计的 Cell 处理器，该处理器由一个 64 位 Power Architecture 核心和 8 个协同处理单元组成，设计与常规 CPU 差异巨大，因此模拟难度极高。早期 PS3 模拟器即使在 x86 平台上也性能不佳，而 ARM 架构的差异进一步增加了挑战。近年来，随着 RPCS3 等项目持续优化，以及 ARM 设备性能不断增强，PS3 模拟在 ARM 上变得可行。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://n64brew.dev/wiki/Reality_Signal_Processor">Reality Signal Processor - N64brew Wiki</a></li>
-<li><a href="https://github.com/HackerN64/F3DEX3">GitHub - HackerN64/F3DEX3: Modern microcode for N64 romhacks. Will make you want to finally ditch HLE. · GitHub</a></li>
-<li><a href="https://libdragon.dev/">Libdragon | libdragon</a></li>
+<li><a href="https://rpcs3.net/download">RPCS3 - Download</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cell_(processor)">Cell (processor) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#N64`, `#game development`, `#retro computing`, `#rendering`, `#constraints`
+**标签**: `#emulation`, `#ARM`, `#PS3`, `#performance`, `#systems`
 
 ---
 
 <a id="item-15"></a>
-## [Schrodingers-TOCTOU：运行的不是你写的程序](https://github.com/xoreaxeaxeax/schrodingers-toctou) ⭐️ 7.0/10
+## [从约束模型到可玩的解谜游戏](https://zayenz.se/blog/post/constraint-generated-puzzle-games/) ⭐️ 7.0/10
 
-GitHub 上出现了一个名为 schrodingers-toctou 的工具，用于演示 TOCTOU（检查时间到使用时间）漏洞，即实际执行的二进制文件与开发者意图运行的程序不同。该工具利用竞态条件，在程序检查与使用二进制文件之间插入替换操作，实现了一种巧妙的攻击演示。 该工具说明 TOCTOU 漏洞虽然经典，但依然在实际系统中存在隐患，尤其影响软件供应链安全。它帮助开发者和安全研究人员直观理解这类竞态条件的危害，并推动在编译、加载和运行时增加防护措施。 工具的具体实现细节有限，但从名称和摘要推断，它可能通过监控文件检查动作，并在文件打开后、执行前快速替换二进制内容，从而让内核运行被篡改的程序。这是一个面向教育或安全研究的 PoC，不适用于真实攻击场景，但展示了 TOCTOU 被利用的隐蔽性。
+这篇博客文章深入探讨了如何利用约束模型（constraint models）来生成可玩的解谜游戏。作者展示了将游戏设计问题转化为约束满足问题，并通过求解器自动生成游戏关卡的方法。 这是一种新颖的程序化内容生成（PCG）方法，为游戏设计自动化提供了新思路。该方法可以降低关卡设计成本，并启发 AI 与游戏开发交叉领域的研究。 文章可能涉及约束编程（constraint programming）技术，例如使用布尔变量定义关卡规则，并利用约束求解器生成满足条件的关卡。相关研究（如 Sturgeon 生成器）也表明，这种方法能有效控制生成关卡的表达范围。
 
-rss · Lobsters · Aug 6, 15:47
+rss · Lobsters · Aug 7, 10:54
 
-**背景**: TOCTOU（Time-of-Check to Time-of-Use）是一种由竞态条件引发的软件缺陷：程序先检查某资源的状态，再假设状态不变而使用该资源，但检查与使用之间资源可能被改动。这类漏洞历史悠久，至今仍在影响现实系统，例如 2025 年 AWS 因 DNS 管理中的 TOCTOU 竞态条件导致 DynamoDB 服务中断。
+**背景**: 约束模型是一种用数学约束描述问题的方法，通过求解器寻找满足所有约束的解。程序化内容生成（PCG）利用算法自动创建游戏内容，而约束求解可以保证生成的关卡具有可玩性。近期研究开始探索将约束求解与机器学习结合，以提升生成质量和效率。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use">Time-of-check to time-of-use - Wikipedia</a></li>
-<li><a href="https://deepstrike.io/blog/what-is-time-of-check-time-of-use-toctou">What Is Time of Check Time of Use (TOCTOU)? Explained</a></li>
+<li><a href="https://arxiv.org/html/2504.05334v1">Level Generation with Constrained Expressive Range - arXiv.org</a></li>
+<li><a href="https://www.pcgworkshop.com/archive/cooper2024constraint.pdf">Literally Unplayable: On Constraint-Based Generation of ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#TOCTOU`, `#binary`, `#exploitation`, `#race condition`
+**标签**: `#constraint programming`, `#procedural generation`, `#puzzle games`, `#game design`, `#AI`
 
 ---
 
 <a id="item-16"></a>
-## [Futhark 语言终于加入递归函数支持](https://futhark-lang.org/blog/2026-08-05-recursion.html) ⭐️ 7.0/10
+## [设备如何自行发现加密 DNS](https://blog.dundns.eu/posts/ddr-encrypted-dns-discovery/) ⭐️ 7.0/10
 
-Futhark 语言博客宣布将重新支持递归函数，这一特性曾在 2017 年被移除。该功能允许函数直接或间接调用自身，为语言增加了更灵活的表达能力。 递归是函数式编程的核心特性，此次添加对 Futhark 的 GPU 编程生态和语言设计意义重大。开发者将能更自然地实现分治算法等递归模式，而无需依赖显式循环或手工展平。 Futhark 的数据并行模型一直限制不规则嵌套并行，递归的引入需要编译器在保证性能的同时处理可能的递归调用。博客文章使用了“restoring recursion”的说法，因为 Futhark 早期草案曾支持递归，后于 2017 年移除。
+该博客文章介绍了 RFC 9462 定义的“指定解析器发现”（DDR）机制，设备可通过查询保留名称 `_dns.resolver.arpa` 自动发现当前解析器支持的加密 DNS 配置（如 DoH、DoT），无需手动设置。 DDR 让设备在只知道解析器 IP 地址的情况下自动升级到加密 DNS，大大降低了部署加密 DNS 的门槛，对网络隐私和安全具有重要意义。该机制已被 Cloudflare 等主流 DNS 服务商支持，并进入 Windows 11 等系统。 DDR 通过查询保留名称 `_dns.resolver.arpa` 来获取 SVCB 记录，以通告 DoH/DoT 等加密端点；但首次发现请求仍是明文，运营商可读取或篡改，因此安全性依赖对原始解析器的信任。另外，Windows 11 中的类似机制称为 DNR（Discovery of Network-designated Resolvers）。
 
-rss · Lobsters · Aug 6, 07:10
+rss · Lobsters · Aug 7, 14:02
 
-**背景**: Futhark 是一种受 ML 启发的高层次、纯函数式、数据并行数组编程语言，由丹麦哥本哈根大学 DIKU 开发，旨在让函数式程序在 GPU 等大规模并行硬件上高效执行。它通过 flattening 变换来编译并行代码，但为了激进的编译器优化，过去不支持不规则嵌套数据并行和递归函数。
+**背景**: 传统 DNS 查询以明文发送，可被网络运营商监视和篡改。加密 DNS（如 DoH、DoT）可保护查询内容，但用户需手动配置服务器地址。DDR（RFC 9462）提供了一种自动发现机制：当设备使用某个 DNS 解析器时，可通过查询保留名称 `_dns.resolver.arpa` 让解析器返回其支持的加密 DNS 配置，从而在保留原解析器身份的同时平滑切换到加密通道。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Futhark_(programming_language)">Futhark (programming language)</a></li>
-<li><a href="https://futhark-lang.org/blog/2026-08-05-recursion.html">Finally adding recursive functions to Futhark</a></li>
+<li><a href="https://datatracker.ietf.org/doc/rfc9462/">RFC 9462 - Discovery of Designated Resolvers</a></li>
+<li><a href="https://blog.cloudflare.com/announcing-ddr-support/">Announcing experimental DDR in 1.1.1.1 | The Cloudflare Blog</a></li>
+<li><a href="https://blog.apnic.net/2025/09/02/discovering-the-discovery-of-designated-resolvers/">Discovering the Discovery of Designated Resolvers | APNIC Blog</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Futhark`, `#functional programming`, `#GPU programming`, `#language design`, `#compiler`
+**标签**: `#DNS`, `#encryption`, `#networking`, `#privacy`, `#security`
 
 ---
 
 <a id="item-17"></a>
-## [不进行光栅化的 3D SVG 渲染器：投影纹理的新方法](https://seve.blog/p/i-made-a-3d-svg-renderer-that-projects) ⭐️ 7.0/10
+## [REpsych：让反汇编器显示骷髅的编译器](https://github.com/xoreaxeaxeax/repsych) ⭐️ 7.0/10
 
-一位开发者发布博客，介绍其用 TypeScript 从零构建的 3D 对象到 SVG 渲染器，能够在保持 SVG 矢量特性的同时，对图像纹理进行近似正确的透视投影，而无需光栅化。该技术用于在 React 中渲染电路板。 这一方法打破了传统 3D 渲染中纹理必须光栅化的惯例，生成的 SVG 文件更小且保持缩放清晰度，对 Web 图形和电路设计工具具有实用价值。它让开发者可以在矢量世界中实现接近真实的透视效果，同时避免位图带来的文件膨胀。 渲染器完全用原生 TypeScript 编写，核心技巧可大幅压缩 SVG 体积，同时获得看似合理的透视变换效果。博文发布于 2025 年 6 月 5 日，并附带了投影电路板纹理的示例。
+REpsych 是一个编译器，它故意扰乱程序的控制流，使得使用常见调试器反汇编时，会显示骷髅头或威胁性的符号。该项目已发布在 GitHub 上（用户 xoreaxeaxeax），是一种新颖的反反汇编工具。 这一技术的意义在于它开创了一种新的反反汇编思路：不是让反汇编工具崩溃或产生错误清单，而是利用符号渲染进行心理战，可能被恶意软件用来打击逆向工程师的士气。它反映出逆向工程与代码混淆之间持续的对抗，并可能激发更多创造性的防护或攻击手段。 根据仓库说明，该工具会生成 repsych_v1 和 repsych_v2 两个版本，分别采用不同的策略来确保控制流图（CFG）渲染器正确放置节点。这说明其攻击目标是反汇编工具的控制流图显示逻辑，而非直接破坏代码的可读性。
 
-rss · Lobsters · Aug 6, 11:11
+rss · Lobsters · Aug 7, 20:45
 
-**背景**: SVG 是一种基于 XML 的矢量图形格式，常用于 Web 界面和印刷，具有无限缩放和文件小的优点。传统 3D 渲染通常将纹理映射到多边形上，最终需要光栅化才能输出到屏幕，导致矢量优势消失。这位开发者在构建 React 电路板渲染工具时，发现了在 SVG 中直接进行纹理透视变换而不光栅化的方法，从而兼顾了矢量与 3D 效果。
+**背景**: 反反汇编是一种通过精心构造代码或数据，使反汇编工具产生错误程序清单的技术，常被恶意软件和软件保护程序使用。控制流混淆则是更广泛的代码混淆方法，通过改变程序的控制流结构（如 if、for、switch）使其难以理解。REpsych 利用编译器实现这些思路，并额外在反汇编结果中嵌入视觉威胁，属于心理层面的反分析手段。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://seve.blog/p/i-made-a-3d-svg-renderer-that-projects">I made a 3D SVG Renderer that projects textures without rasterization</a></li>
-<li><a href="https://stackoverflow.com/questions/49860515/using-svg-as-scalable-texture">three.js - Using SVG as scalable texture - Stack Overflow</a></li>
+<li><a href="https://github.com/xoreaxeaxeax/REpsych">GitHub - xoreaxeaxeax/ REpsych : Psychological warfare in reverse...</a></li>
+<li><a href="https://1malware1.medium.com/anti-disassembly-techniques-e012338f2ae0">ANTI - DISASSEMBLY TECHNIQUES . Disassemblers like... | Medium</a></li>
+<li><a href="http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf">ANTI - DISASSEMBLY</a></li>
 
 </ul>
 </details>
 
-**标签**: `#3D rendering`, `#SVG`, `#graphics`, `#web development`, `#textures`
+**标签**: `#reverse engineering`, `#compiler`, `#anti-disassembly`, `#security`, `#tooling`
+
+---
+
+<a id="item-18"></a>
+## [ABD 算法与法定人数复制的边界探讨](https://theconsensus.dev/p/2026/08/02/almost-consensus.html) ⭐️ 7.0/10
+
+本文深入探讨了 ABD 算法以及法定人数复制（quorum replication）中的边界情况，分析了在分布式系统中实现“几乎共识”的难点与关键细节。 该主题直接关系到分布式系统的容错性与一致性设计，对分布式数据库、存储系统及边缘计算场景的开发者具有重要参考价值，有助于理解读写操作与共识机制之间的权衡。 ABD 算法是一种无需传统共识即可实现原子共享内存的分布式算法，而法定人数复制依赖多数派节点确认来保证一致性。文章重点分析了在消息延迟、并发读写及节点故障等边界条件下协议可能出现的异常行为。
+
+rss · Lobsters · Aug 7, 13:43
+
+**背景**: ABD 算法由 Attiya、Bar-Noy 和 Dolev 提出，用于在消息传递系统中模拟共享存储，通常被视为分布式算法的基础模块。法定人数复制要求读写操作与多数节点交互，从而在部分节点失效时仍能维持数据一致性，是构建可靠分布式系统的重要技术之一。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://cs.neea.dev/distributed/abd/">ABD Algorithm - Notes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_algorithm">Distributed algorithm - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#distributed-systems`, `#consensus`, `#replication`, `#quorum`, `#abd`
 
 ---
