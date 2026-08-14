@@ -1,0 +1,801 @@
+[
+  {
+    "id": "hackernews:story:49299605",
+    "source_type": "hackernews",
+    "title": "Qwen 3.8 27B",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+    "content": "\n--- Top Comments ---\n\n[CMay]: Credit where it&#x27;s due.  Qwen 3.8 27B is only the second local model after Gemma 4 that managed to correctly reason through one of my private benchmarks.  It took 5x as many tokens to do it and 12m30s with MTP enabled, but it did do it. Gemma 4 reasoned through it more implicitly, while Qwen 3.8 reasoned more explicitly.  Laguna and Muse Glimmer failed hard on it, though they&#x27;re useful for other tasks. The VRAM usage seems way less efficient than Gemma 4 or Glimmer though, with 32K o...\n\n[simonw]: Absolutely the best pelican I&#x27;ve seen from a model that runs on my laptop:  https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer#url=ht...  Bicycle is the right shape. Pelican beak is excellent. Nice background. Most importantly, the pelican has one leg on each side of the bicycle - that&#x27;s very rare. (No chain on this bicycle though - in the reasoning trace it says &quot;already chainstay... skip chain detail; maybe a small chainring.&quot;) I ran that on an M5 Max M...\n\n[Anonyneko]: Is there any way to turn off thinking if I&#x27;m using Ollama? In my particular case, the Ollama API (the software I want no-think for is tied to Ollama&#x27;s bespoke API). If not, I&#x27;ll stick to 3.6 for the time being...\n\n[dofm]: There&#x27;s a real change (compared to 3.6) in the way it writes in thinking — it drops words like &quot;to&quot; and &quot;we&quot; in &quot;We need to&quot;, talks generally in note form, drops the&#x2F;and all over the place, avoids &quot;for&quot;. &quot;Need be helpful concise&quot;, &quot;Need maybe not overdo&quot;, &quot;Need ask!&quot; Almost caveman. I have an (unsourced, vague) suspicion that this rather unique thinking trace pattern is actually hobbling the MTP predictions, which...\n\n[satvikpendem]: As usual, the Jinja templates are messed up so use this [0] to reduce or turn off thinking, fix tool calling, keep a 100% KV cache hit rate, etc. [0]  https:&#x2F;&#x2F;huggingface.co&#x2F;froggeric&#x2F;Qwen-Fixed-Chat-Templates",
+    "author": "erdaltoprak",
+    "published_at": "2026-08-14T15:00:00Z",
+    "fetched_at": "2026-08-14T23:14:22.084232Z",
+    "metadata": {
+      "score": 799,
+      "descendants": 520,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49299605",
+      "comment_count": 5,
+      "title_zh": "Qwen 3.8 27B 开源本地大模型发布，推理能力受好评",
+      "detailed_summary_zh": "Qwen 3.8 27B（FP8）作为新的开源本地大语言模型正式发布，可在消费级硬件上运行，并展现出强大的推理能力。社区实测显示其在多个真实基准上表现出色，尤其在显存占用和效率方面引发广泛讨论。 这款模型代表了本地 AI 的重要进展，让普通用户能在自己电脑上获得接近前沿的推理性能。它也延续了 Qwen 系列开源路线，对个人开发者、研究者以及依赖本地推理的场景意义重大。 该模型采用 FP8 量化，支持 MTP（Multi-Token Prediction）加速，但社区反馈其 VRAM 使用效率低于 Gemma 4 等竞品。默认 Jinja 模板存在工具调用和思维链控制方面的问题，需借助第三方修复（如 Qwen-F）来关闭思考模式并保持 100% KV cache 命中率。",
+      "background_zh": "Qwen 是阿里云推出的大语言模型系列，包含多个参数规模的开源权重版本。本地运行大模型通常需要量化技术降低显存占用，FP8 是其中一种常见格式。推理模型（如带思考链的模型）会先生成内部推理过程再输出答案，提升复杂任务的表现，但也会增加 token 消耗和延迟。",
+      "community_discussion_zh": "社区整体反响积极，simonw 展示了模型生成的“骑自行车鹈鹕”SVG 图并称赞其对细节的把握，CMay 则指出它在私有基准上正确推理但耗时较长、VRAM 效率偏低。dofm 观察到思考链写作风格变化，satvikpendem 提醒 Jinja 模板问题并提供修复方案，反映出用户对工具链完善度仍有期待。",
+      "detailed_summary": "Qwen 3.8 27B（FP8）作为新的开源本地大语言模型正式发布，可在消费级硬件上运行，并展现出强大的推理能力。社区实测显示其在多个真实基准上表现出色，尤其在显存占用和效率方面引发广泛讨论。 这款模型代表了本地 AI 的重要进展，让普通用户能在自己电脑上获得接近前沿的推理性能。它也延续了 Qwen 系列开源路线，对个人开发者、研究者以及依赖本地推理的场景意义重大。 该模型采用 FP8 量化，支持 MTP（Multi-Token Prediction）加速，但社区反馈其 VRAM 使用效率低于 Gemma 4 等竞品。默认 Jinja 模板存在工具调用和思维链控制方面的问题，需借助第三方修复（如 Qwen-F）来关闭思考模式并保持 100% KV cache 命中率。",
+      "background": "Qwen 是阿里云推出的大语言模型系列，包含多个参数规模的开源权重版本。本地运行大模型通常需要量化技术降低显存占用，FP8 是其中一种常见格式。推理模型（如带思考链的模型）会先生成内部推理过程再输出答案，提升复杂任务的表现，但也会增加 token 消耗和延迟。",
+      "community_discussion": "社区整体反响积极，simonw 展示了模型生成的“骑自行车鹈鹕”SVG 图并称赞其对细节的把握，CMay 则指出它在私有基准上正确推理但耗时较长、VRAM 效率偏低。dofm 观察到思考链写作风格变化，satvikpendem 提醒 Jinja 模板问题并提供修复方案，反映出用户对工具链完善度仍有期待。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major new local LLM release with high community engagement (799 points, 520 comments), real-world benchmark successes, and substantive discussion about reasoning quality, efficiency, and practical usage. The model represents a significant advancement in local AI, validated by diverse user experiences.",
+    "ai_summary": "Qwen 3.8 27B is a new open-source local LLM that impresses with strong reasoning capabilities and practical usability on consumer hardware, sparking widespread community discussion.",
+    "ai_tags": [
+      "LLM",
+      "Qwen",
+      "local-model",
+      "AI",
+      "open-source"
+    ]
+  },
+  {
+    "id": "hackernews:story:49294997",
+    "source_type": "hackernews",
+    "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+    "url": "https://z.ai/blog/glm-5.3",
+    "content": "\n--- Top Comments ---\n\n[leobuskin]: I bought $18 GLM official subscription yesterday (5.2, but new model version was already leaking on some docs), set it up with Claude Code harness... and I’ve bumped to $80 plan almost immediately. It’s the first model that agreed on a proper security research (red team scenario), executed it seamlessly, including 0-days in WP plugins, RCE, 6.8 kernel exploit adaptation, etc - while playing against another GLM agent as a defender (following HF story)! I understand that such models can be used...\n\n[z4y5f3]: Apparently they are scanning OSS and popular software at scale and disclosing the vulnerabilities they found:  https:&#x2F;&#x2F;cvd.z.ai&#x2F;  Most of these are under embargo, but it seems there are a lot of CVE here from a wide range of popular software, many considered critical or high. I understand the argument of &quot;people are not actively looking&quot;, but isn&#x27;t the cost for such a scan getting lower by the week, and Anthropic&#x27;s Project Glasswing is supposed to find them ...\n\n[aliljet]: This is absolutely still shy of Sol and Fable, but only just by a hair. Ridiculous results. There&#x27;s still not a compelling economic reason to drop OpenAI courtesy of the ludicrous reset addiction that&#x27;s taken place, but it feels like we&#x27;re on the precipice. How are you all toying with running this kind of thing in a mega quantized way locally? Two weeks out from released weights, but this is still just GLM 5.2 with post-training magic.\n\n[hypfer]: I might be just reading my positive bias into that text, but is it possible that it is written less like SV marketing hype trash and more like researchers wrote it? It does feel like it respects both me and my time. Thank you, Z.AI.\nAmazing what difference it makes when the top of your org are actual university professors.\n\n[aand16]: &gt; Mythos 5 remains well ahead at 181 and 247 tasks. The pattern across the three is consistent: the further up the exploitation chain a benchmark sits, the wider the remaining gap to the closed frontier. Capability is growing fastest exactly where we are furthest behind. I appreciate they don&#x27;t just take the opportunity to self-glaze.",
+    "author": "pella",
+    "published_at": "2026-08-14T05:19:59Z",
+    "fetched_at": "2026-08-14T23:14:22.084535Z",
+    "metadata": {
+      "score": 1016,
+      "descendants": 501,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49294997",
+      "comment_count": 5,
+      "title_zh": "GLM-5.3 发布：前沿编程与新兴网络能力引热议",
+      "detailed_summary_zh": "Z.ai 发布了旗舰模型 GLM-5.3，官方称其在复杂软件工程和智能体任务上取得重大进步。该模型展现出强大的编程与网络安全能力，并配备 1,000,000 token 的上下文窗口。 GLM-5.3 是开源权重模型阵营中少见的具备前沿编程与网络攻防能力的旗舰模型，可能改变开发者对开源大模型性价比的判断。它在社区中引发关于 AI 安全、漏洞披露伦理和模型竞争格局的广泛讨论。 官方开发者文档显示，GLM-5.3 是 Z.ai 最新旗舰模型，主要面向长时间运行的编程与智能体任务。Models.dev 列出的规格包括 1,000,000 token 上下文，且该模型已可通过多个提供商使用。",
+      "background_zh": "GLM 是 Z.ai（原智谱 AI）开发的大语言模型系列，自 2025 年 7 月起以 MIT 许可证开源。'涌现能力'（emergent abilities）指模型在规模扩大后出现的、未被显式训练的能力，例如代码生成与漏洞利用。Z.ai 被列入美国实体清单，但其模型仍被国际开发者广泛使用。",
+      "community_discussion_zh": "Hacker News 上的讨论情绪复杂：有用户称 GLM-5.3 在真实红队测试中表现惊艳，包括成功利用 WordPress 插件零日漏洞与内核漏洞，并为此迅速升级订阅；也有用户认为它仍不及 Sol 和 Fable，只是 GLM 5.2 加后训练微调。另有用户注意到该团队在大规模扫描开源软件并披露漏洞（cvd.z.ai），引发对漏洞披露成本与责任的热议。",
+      "sources": [
+        {
+          "url": "https://docs.z.ai/guides/llm/glm-5.3",
+          "title": "GLM - 5 . 3 - Overview - Z.AI DEVELOPER DOCUMENT"
+        },
+        {
+          "url": "https://models.dev/models/zhipuai/glm-5.3/",
+          "title": "GLM - 5 . 3 pricing, providers, and specs | Models.dev"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/GLM_5.2",
+          "title": "GLM 5.2"
+        }
+      ],
+      "detailed_summary": "Z.ai 发布了旗舰模型 GLM-5.3，官方称其在复杂软件工程和智能体任务上取得重大进步。该模型展现出强大的编程与网络安全能力，并配备 1,000,000 token 的上下文窗口。 GLM-5.3 是开源权重模型阵营中少见的具备前沿编程与网络攻防能力的旗舰模型，可能改变开发者对开源大模型性价比的判断。它在社区中引发关于 AI 安全、漏洞披露伦理和模型竞争格局的广泛讨论。 官方开发者文档显示，GLM-5.3 是 Z.ai 最新旗舰模型，主要面向长时间运行的编程与智能体任务。Models.dev 列出的规格包括 1,000,000 token 上下文，且该模型已可通过多个提供商使用。",
+      "background": "GLM 是 Z.ai（原智谱 AI）开发的大语言模型系列，自 2025 年 7 月起以 MIT 许可证开源。'涌现能力'（emergent abilities）指模型在规模扩大后出现的、未被显式训练的能力，例如代码生成与漏洞利用。Z.ai 被列入美国实体清单，但其模型仍被国际开发者广泛使用。",
+      "community_discussion": "Hacker News 上的讨论情绪复杂：有用户称 GLM-5.3 在真实红队测试中表现惊艳，包括成功利用 WordPress 插件零日漏洞与内核漏洞，并为此迅速升级订阅；也有用户认为它仍不及 Sol 和 Fable，只是 GLM 5.2 加后训练微调。另有用户注意到该团队在大规模扫描开源软件并披露漏洞（cvd.z.ai），引发对漏洞披露成本与责任的热议。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major release of GLM-5.3 with frontier coding and emergent cyber capabilities, generating significant community discussion (501 comments) about its real-world performance, security implications, and competitive positioning. High engagement and substantive debate about vulnerability scanning and model capabilities.",
+    "ai_summary": "GLM-5.3 is a frontier AI model release demonstrating powerful coding and cybersecurity capabilities, sparking intense community discussion and adoption.",
+    "ai_tags": [
+      "AI/ML",
+      "LLM",
+      "Cybersecurity",
+      "Coding",
+      "GLM"
+    ]
+  },
+  {
+    "id": "hackernews:story:49304447",
+    "source_type": "hackernews",
+    "title": "Going Dark, and the era of law enforcement hacking",
+    "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+    "content": "\n--- Top Comments ---\n\n[Animats]: It&#x27;s worth realizing that, before computerized central offices, telephone wiretapping required running physical wires. Back when Rudi Giuliani was prosecuting organized time, not only did physical wires have to be run, the cops were billed for them as expensive private lines. His task force was spending about a million dollars a year with New York Telephone on wiretapping.\nIn one case, law enforcement didn&#x27;t pay their bill, resulting in the person being wiretapped having the wiretap...\n\n[mbroshi]: &gt; In the real world, it does feel likely that we’re going to hit some sort of a ceiling on the number of useful bugs, and probably we’ll hit it soon. This doesn&#x27;t resonate with me. I see companies adding more sloppily written features with AI. I see more bugs in the software I use, not less. While it&#x27;s plausible that software is getting both buggier and more secure, I suspect those two move in the same direction not opposite. My guess is that we&#x27;re getting better at finding ...\n\n[Insimwytim]: On one side, you have pieces like this, where seemingly there are constant fights between serious actors with large and properly distributed budgets, employing top tech and top minds; on the other - regular news of the hackz, where responsible person in charge of security with root access failed to grasp basic technical knowledge (several times), ticking every checkbox in &quot;never do this&quot; list from security best practices, which led to every customer being pwned. It&#x27;s like two p...\n\n[natecodes]: &gt; This is not a call to action for experts to rally behind a sophisticated plan. Like so many things about the AI revolution, it’s just occurring to me that we’re on a long greasy slide to a place that will look different than where we are today. heh. long greasy slide. It really does feel like that.\n\n[Lerc]: Considering from a point of view stipulating that perfectly secure software is possible.  I don&#x27;t think it follows that the limititation that it would place on intelligence is necessarily a net loss. Apart from the obvious harms of invasion of privacy, and fishing expeditions being biased to the places you decided to fish. There is the simple fact that data can be misleading, especially without context.  An interceped communication is a piece of data that is intrinsically tied to the tru...",
+    "author": "vslira",
+    "published_at": "2026-08-14T20:52:44Z",
+    "fetched_at": "2026-08-14T23:14:22.084275Z",
+    "metadata": {
+      "score": 117,
+      "descendants": 81,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49304447",
+      "comment_count": 5,
+      "title_zh": "走向黑暗：执法黑客时代的加密与监控博弈",
+      "detailed_summary_zh": "这篇来自密码学工程博客的分析文章指出，执法部门正从破解加密转向'执法黑客'手段，以应对日益普及的端到端加密。作者认为，未来合法监控将越来越依赖发现和利用软件漏洞，而非直接解密通信内容。 文章触及安全与隐私之间的核心矛盾，对政策制定者、安全研究者和公众都有重要影响。它揭示了执法黑客这一灰色地带的兴起，可能改变政府对公民通信进行监控的方式和法律边界。 作者预测可利用的软件漏洞数量将很快触及天花板，但社区评论者对此提出质疑，认为AI辅助编程可能带来更多漏洞。文章也提到，'going dark'问题不仅源于加密，还涉及其他技术因素导致政府合法监控能力下降。",
+      "background_zh": "'Going dark'（走向黑暗）指执法部门因加密等技术普及而无法再通过合法手段获取通信内容的现象。作为应对方案，'执法黑客'（law enforcement hacking）或'政府黑客'（government hacking）指执法机构通过入侵设备或利用漏洞来获取证据，而非要求解密。这一做法引发了关于法律框架、隐私保护和权力边界的广泛讨论。",
+      "community_discussion_zh": "社区评论呈现多元观点：Animats 回顾了电话时代实体搭线的历史，说明执法成本问题早已存在；mbroshi 反对'漏洞数量将见顶'的预测，认为AI催生的草率代码会让漏洞更多；Insimwytim 则讽刺了严肃攻击者与现实中糟糕安全实践的落差；natecodes 对'漫长的滑坡'表示共鸣。",
+      "sources": [
+        {
+          "url": "https://www.lawfaremedia.org/article/rethinking-encryption",
+          "title": "Rethinking Encryption | Lawfare"
+        },
+        {
+          "url": "https://www.justsecurity.org/60785/shining-light-federal-law-enforcements-computer-hacking-tools/",
+          "title": "Shining a Light on Federal Law Enforcement ’s Use of Computer..."
+        },
+        {
+          "url": "https://www.statewatch.org/media/documents/news/2017/apr/ep-study-hacking.pdf",
+          "title": "Legal Frameworks for Hacking by Law Enforcement : Identification..."
+        }
+      ],
+      "detailed_summary": "这篇来自密码学工程博客的分析文章指出，执法部门正从破解加密转向'执法黑客'手段，以应对日益普及的端到端加密。作者认为，未来合法监控将越来越依赖发现和利用软件漏洞，而非直接解密通信内容。 文章触及安全与隐私之间的核心矛盾，对政策制定者、安全研究者和公众都有重要影响。它揭示了执法黑客这一灰色地带的兴起，可能改变政府对公民通信进行监控的方式和法律边界。 作者预测可利用的软件漏洞数量将很快触及天花板，但社区评论者对此提出质疑，认为AI辅助编程可能带来更多漏洞。文章也提到，'going dark'问题不仅源于加密，还涉及其他技术因素导致政府合法监控能力下降。",
+      "background": "'Going dark'（走向黑暗）指执法部门因加密等技术普及而无法再通过合法手段获取通信内容的现象。作为应对方案，'执法黑客'（law enforcement hacking）或'政府黑客'（government hacking）指执法机构通过入侵设备或利用漏洞来获取证据，而非要求解密。这一做法引发了关于法律框架、隐私保护和权力边界的广泛讨论。",
+      "community_discussion": "社区评论呈现多元观点：Animats 回顾了电话时代实体搭线的历史，说明执法成本问题早已存在；mbroshi 反对'漏洞数量将见顶'的预测，认为AI催生的草率代码会让漏洞更多；Insimwytim 则讽刺了严肃攻击者与现实中糟糕安全实践的落差；natecodes 对'漫长的滑坡'表示共鸣。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "This is a high-value piece from a respected cryptography engineering blog discussing the shift to law enforcement hacking and the 'going dark' debate. It touches on important technical and policy issues, and the community discussion adds depth with critical viewpoints on bug prevalence and security trends. Strong relevance to security and privacy.",
+    "ai_summary": "A cryptography engineering analysis of the 'going dark' era, focusing on law enforcement hacking and the evolving balance between security and surveillance.",
+    "ai_tags": [
+      "cryptography",
+      "surveillance",
+      "security",
+      "law enforcement",
+      "privacy"
+    ]
+  },
+  {
+    "id": "hackernews:story:49296740",
+    "source_type": "hackernews",
+    "title": "Why does Opus 5 feel worse to work with?",
+    "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+    "content": "\n--- Top Comments ---\n\n[barrkel]: The single biggest annoyance with Opus 5 is that it writes too elliptically. Sentences that orbit a point, then jump to it like it&#x27;s a revealed insight. Unnecessarily abstract phraseology. Constantly using inanimate nouns as the subjects in sentences in order to unlock variety in verb choice, especially when it helps construct a sentence where the real action can &#x27;land&#x27; like a surprise at the end. It is definitely more capable, and yes, I&#x27;ve found it can make unwarranted d...\n\n[zmmmmm]: I&#x27;m with the author and others in this comment thread, speculating that effectively the balance has tipped to where humans are no longer the target audience of post training - other agents are. Whether it&#x27;s through the reasoning &#x2F; CoT, or whether it&#x27;s in handing off to subagents etc, the focus has moved to agents communicating in &quot;agent-speak&quot; to themselves or other agents. And human niceties are just kind of, noise in the way of getting work done. This will prob...\n\n[D13Fd]: I’ve been doing some heavy work on a personal project lately. I burned through the limits on Claude, the plus a few hundred dollars in credits, and ultimately decided to move to an OpenAI account just so I can keep going. I was surprised to find that OpenAI Sol is much much nicer to work with than Opus 5 or Fable at the moment. Especially on Opus 5, the way it communicates is just exhausting. It keeps “being honest” and “confessing” mistakes and just generally talking a lot. I felt like I had...\n\n[Paradigma11]: A gem Opus 5 gifted to me today:\n&quot;A devastating pair of findings, and the first is beautiful in a way worth naming: the anti-vacuity floor is what blinds the gate to a vacuous case.&quot;\n\n[MyFirstSass]: I&#x27;ve gone back to 4.8. 5 would constantly veer of in random directions if not working from 100% strict and narrow instructions. I find it weird there&#x27;s not more discussion here on HN on how the most used model now has clearly degraded in quality and it seems we&#x27;ve hit a peak and are on a downslope - because the model is clearly smaller or more economical for Anthropic no doubt about it, and the benchmaxxing they do is pure marketing bs - Fable in my view has also been not much ...",
+    "author": "numeri",
+    "published_at": "2026-08-14T10:12:48Z",
+    "fetched_at": "2026-08-14T23:14:22.084308Z",
+    "metadata": {
+      "score": 726,
+      "descendants": 661,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49296740",
+      "comment_count": 5,
+      "title_zh": "Claude Opus 5沟通风格引争议：为何让人感觉更难用？",
+      "detailed_summary_zh": "一篇名为《Why does Opus 5 feel worse to work with?》的文章批评了Claude Opus 5的沟通风格，指出其写作过于省略和抽象，经常绕着圈子表达观点。评论区用户猜测，模型的后训练（post-training）正越来越优先服务于智能体之间的交互，而非人类的可读性。 这一现象凸显了先进大语言模型在用户体验上的潜在问题：随着模型能力增强，其表达方式可能反而疏远人类用户。对于依赖LLM进行日常编程和写作的开发者与用户来说，沟通效率和质量直接影响工作效率，因此相关讨论值得关注。 用户反映Opus 5的句子以无生命名词作主语，常用抽象措辞，并频繁'诚实'地'坦白'错误，令人疲惫。一些用户因此转向其他模型，例如OpenAI的Sol，并认为其交互体验更好。",
+      "background_zh": "后训练（post-training）是在大语言模型预训练之后，通过高质量数据对模型进行微调以增强推理能力的过程。智能体到智能体（agent-to-agent）交互则指AI智能体通过API直接通信，绕过传统图形界面，这正成为AI应用的新范式。当模型被优化用于与其他智能体协作时，面向人类的沟通风格可能被视为'噪音'，从而影响人类用户的阅读体验。",
+      "community_discussion_zh": "评论区内多数用户认同文章的批评，有人表示已从Opus 5退回旧版4.8，有人则转向OpenAI的Sol。还有用户引用了一段Opus 5晦涩的输出来佐证其表达问题，并猜测模型在'智能体语言'与人类友好性之间的平衡已经发生倾斜。",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/pulse/post-training-large-language-models-llms-hidden-engine-sarvex-jatasra-yvspc",
+          "title": "Post - Training Large Language Models (LLMs): The Hidden Engine..."
+        },
+        {
+          "url": "https://theministryofai.org/how-ai-models-get-smarter-after-training-a-deep-dive-into-post-training-language-models-polms/",
+          "title": "How AI Models Get Smarter After Training : A Deep Dive into..."
+        }
+      ],
+      "detailed_summary": "一篇名为《Why does Opus 5 feel worse to work with?》的文章批评了Claude Opus 5的沟通风格，指出其写作过于省略和抽象，经常绕着圈子表达观点。评论区用户猜测，模型的后训练（post-training）正越来越优先服务于智能体之间的交互，而非人类的可读性。 这一现象凸显了先进大语言模型在用户体验上的潜在问题：随着模型能力增强，其表达方式可能反而疏远人类用户。对于依赖LLM进行日常编程和写作的开发者与用户来说，沟通效率和质量直接影响工作效率，因此相关讨论值得关注。 用户反映Opus 5的句子以无生命名词作主语，常用抽象措辞，并频繁'诚实'地'坦白'错误，令人疲惫。一些用户因此转向其他模型，例如OpenAI的Sol，并认为其交互体验更好。",
+      "background": "后训练（post-training）是在大语言模型预训练之后，通过高质量数据对模型进行微调以增强推理能力的过程。智能体到智能体（agent-to-agent）交互则指AI智能体通过API直接通信，绕过传统图形界面，这正成为AI应用的新范式。当模型被优化用于与其他智能体协作时，面向人类的沟通风格可能被视为'噪音'，从而影响人类用户的阅读体验。",
+      "community_discussion": "评论区内多数用户认同文章的批评，有人表示已从Opus 5退回旧版4.8，有人则转向OpenAI的Sol。还有用户引用了一段Opus 5晦涩的输出来佐证其表达问题，并猜测模型在'智能体语言'与人类友好性之间的平衡已经发生倾斜。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (726 points, 661 comments) with substantive discussion about AI model communication quality. The article raises important UX concerns about advanced LLMs, and commenters offer diverse viewpoints including the 'agent-speak' hypothesis and comparisons with other models. Relevant to software engineering and AI/ML practitioners.",
+    "ai_summary": "The article critiques Claude Opus 5's elliptical and abstract communication style, with commenters speculating that post-training increasingly prioritizes agent-to-agent interaction over human readability.",
+    "ai_tags": [
+      "AI",
+      "LLM",
+      "User Experience",
+      "Claude Opus",
+      "Human-Computer Interaction"
+    ]
+  },
+  {
+    "id": "hackernews:story:49299746",
+    "source_type": "hackernews",
+    "title": "Introducing Toast 1",
+    "url": "https://www.mixedbread.com/blog/toast-1",
+    "content": "\n--- Top Comments ---\n\n[trjordan]: I deeply love this idea of specialized LLMs for search. It&#x27;s also extremely confusing to me how rough Google&#x27;s entrance here is. When I, a human, need an answer to anything moderately complex, it&#x27;s unlikely that I get it on the first (pre-AI) round of google searching. Simple stuff, sure, but more likely I&#x27;ll need to go 2-5 rounds. Maybe click a few links. Double-check my assumptions. An LLM that can do that quickly seems like a slam dunk. I wonder what other problems bene...\n\n[satvikpendem]: Looks good as I use something similar with the SearXNG MCP, but a shame this isn&#x27;t an open weight model. There are some wrappers around SearXNG which seem to reduce the token counts returned thus making it easier for the calling model to understand, but a full dedicated model for search is nice. How does it compare with Perplexity, Gemini with search, and Parallel AI? Those are the cloud providers of search based models that I&#x27;ve seen so far.\n\n[blitzar]: I really wanted this to be a hardware startup - the Juicero of toast. Sadly its  another  software company.\n\n[andai]: Article should probably explain what &quot;Mixedbread Search&quot; is.\n\n[tolugenius]: I guess someone who has used a search agent (or a dedicated subagent) can speak when I&#x27;d reach for a tool like this vs either just 1) a smaller general model or 2) a non-llm approach to the problem? Like it&#x27;s interesting I&#x27;m just curious how a search agent compares to say a model with dedicated rag pipelines is that much different?",
+    "author": "mplappert",
+    "published_at": "2026-08-14T15:07:57Z",
+    "fetched_at": "2026-08-14T23:14:22.084415Z",
+    "metadata": {
+      "score": 170,
+      "descendants": 57,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49299746",
+      "comment_count": 5,
+      "title_zh": "Mixed Bread发布Toast 1：专为搜索与智能体检索打造的专用LLM",
+      "detailed_summary_zh": "Mixed Bread推出了Toast 1，这是一个专门为搜索和智能体检索任务设计的专用大语言模型（LLM）。它既可以作为独立的检索代理运行，也可以作为前沿模型旗下的子代理之一，接管整个搜索循环：从初始查询出发，将其分解为多个子查询并收集结果。 这一发布反映了AI行业从通用模型向垂直领域专用模型演进的趋势，针对搜索场景优化的LLM有望大幅提升复杂查询的效率和准确性。对于依赖检索增强生成（RAG）或构建智能体的开发者而言，Toast 1提供了一种现成的专用方案，可能改变搜索基础设施的构建方式。 Toast 1的核心能力是自主完成检索流程，包括查询分解、结果收集与综合，因此可以无缝集成到现有智能体工作流中。不过，该模型并非开放权重，这引发了社区关于其与Perplexity、Gemini with Search等云服务对比的讨论。",
+      "background_zh": "智能体检索（Agentic Retrieval）是传统检索增强生成（RAG）的进化形式，它将检索嵌入到AI系统的决策过程中，使模型能够主动规划、执行和融合多步搜索。与固定的一次性检索不同，智能体检索通过工具调用和子代理协作，更接近人类反复搜索、验证和修正思路的行为方式。Toast 1正是针对这一场景设计的专用模型。",
+      "community_discussion_zh": "社区整体反响积极，有用户表示“非常喜欢专用搜索LLM的理念”，认为它能解决传统多轮搜索的低效问题。但也有讨论指出该模型不是开放权重，且希望文章能更清楚地解释“Mixedbread Search”是什么；还有人幽默地表示希望这是一家硬件初创公司。部分用户则好奇它与Perplexity等现有搜索模型以及传统RAG管线的实际差异。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=49299746",
+          "title": "Introducing Toast 1 | Hacker News"
+        },
+        {
+          "url": "https://www.mixedbread.com/blog/toast-1",
+          "title": "Introducing Toast 1"
+        },
+        {
+          "url": "https://www.algolia.com/blog/ai/agentic-retrieval",
+          "title": "Agentic retrieval : a practical guide for enterprise AI"
+        }
+      ],
+      "detailed_summary": "Mixed Bread推出了Toast 1，这是一个专门为搜索和智能体检索任务设计的专用大语言模型（LLM）。它既可以作为独立的检索代理运行，也可以作为前沿模型旗下的子代理之一，接管整个搜索循环：从初始查询出发，将其分解为多个子查询并收集结果。 这一发布反映了AI行业从通用模型向垂直领域专用模型演进的趋势，针对搜索场景优化的LLM有望大幅提升复杂查询的效率和准确性。对于依赖检索增强生成（RAG）或构建智能体的开发者而言，Toast 1提供了一种现成的专用方案，可能改变搜索基础设施的构建方式。 Toast 1的核心能力是自主完成检索流程，包括查询分解、结果收集与综合，因此可以无缝集成到现有智能体工作流中。不过，该模型并非开放权重，这引发了社区关于其与Perplexity、Gemini with Search等云服务对比的讨论。",
+      "background": "智能体检索（Agentic Retrieval）是传统检索增强生成（RAG）的进化形式，它将检索嵌入到AI系统的决策过程中，使模型能够主动规划、执行和融合多步搜索。与固定的一次性检索不同，智能体检索通过工具调用和子代理协作，更接近人类反复搜索、验证和修正思路的行为方式。Toast 1正是针对这一场景设计的专用模型。",
+      "community_discussion": "社区整体反响积极，有用户表示“非常喜欢专用搜索LLM的理念”，认为它能解决传统多轮搜索的低效问题。但也有讨论指出该模型不是开放权重，且希望文章能更清楚地解释“Mixedbread Search”是什么；还有人幽默地表示希望这是一家硬件初创公司。部分用户则好奇它与Perplexity等现有搜索模型以及传统RAG管线的实际差异。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value announcement of a specialized LLM for search; community discussion adds insightful comparisons and questions about open-weight alternatives, though not a paradigm-shift. Strong engagement signals with 170 points and 57 comments.",
+    "ai_summary": "Mixed Bread introduces Toast 1, a specialized LLM designed for search and agentic retrieval tasks.",
+    "ai_tags": [
+      "search",
+      "LLM",
+      "AI",
+      "agents",
+      "mixedbread"
+    ]
+  },
+  {
+    "id": "hackernews:story:49303202",
+    "source_type": "hackernews",
+    "title": "Firefox is now the last major browser that still supports uBlock Origin",
+    "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+    "content": "\n--- Top Comments ---\n\n[GeekyBear]: Firefox is also the only browser that vets uBlock&#x27;s code on every update to make sure the developer hasn&#x27;t inserted spyware or malware into the extension. They don&#x27;t do it for every extension, but they do so for a wide selection of popular options. &gt; Recommended extensions differ from other extensions that are regularly reviewed by Firefox staff in that they are curated extensions that meet the highest standards of security, functionality and user experience. After receiving...\n\n[avaer]: What&#x27;s funny is that extensions were supposed to be a way to let you do the things the browser didn&#x27;t want you to do. Guess that was a bit too much freedom for Google to accept, so they had to make a store with a gate, and destroy the APIs so that they&#x27;re useless. Then they had to make up some reasons to justify that and ram it through the pipeline despite everyone&#x27;s objections, and the frog got boiled. Now we&#x27;re back to needing an actual extension system that does wh...\n\n[deweywsu]: It is possible to write your own extension and still use it in Chrome as long as it&#x27;s not bundled.  It would be a huge pain to get the source for uBlock origin and implement it locally yourself, but it might be worth the pain to block ads.\n\n[Animats]: Manifest 3 is why I finally shut down Sitetruth and Ad Limiter. Removing ads from Google Search is now possible only in Firefox.\n\n[imagetic]: Support Firefox. F** Chrome.",
+    "author": "DemiGuru",
+    "published_at": "2026-08-14T19:03:20Z",
+    "fetched_at": "2026-08-14T23:14:22.084454Z",
+    "metadata": {
+      "score": 212,
+      "descendants": 61,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49303202",
+      "comment_count": 5,
+      "title_zh": "Firefox成为仍支持uBlock Origin的唯一主流浏览器",
+      "detailed_summary_zh": "Firefox现在成为唯一仍支持uBlock Origin完整功能的主流浏览器。随着Chrome、Edge等基于Chromium的浏览器逐步淘汰Manifest V2扩展，uBlock Origin在那些浏览器中的功能受到限制或不再可用，而Firefox仍保留对相关API的支持。 这一变化对广告拦截、隐私保护和浏览器扩展生态具有重要意义。依赖uBlock Origin实现高效内容过滤的用户可能转向Firefox，同时也反映出浏览器厂商在扩展能力与安全控制之间的路线分歧。 uBlock Origin是一个免费开源的内容拦截扩展，因其低资源占用和强大的动态过滤能力而广受欢迎。谷歌的Manifest V3移除了扩展对远程代码的支持，并要求使用声明式规则，这使得uBlock Origin原本的过滤方式在Chrome系浏览器中无法完整运行；Firefox则继续支持旧版API，并允许用户安装完整版uBO。",
+      "background_zh": "浏览器扩展通过清单文件声明权限和API，Manifest V3是Chrome从2020年起推行的新扩展标准，旨在提升安全性和性能，但限制了广告拦截类扩展的动态过滤能力。Firefox和Safari也逐步支持MV3，但保留了更多兼容性，使uBlock Origin等扩展得以继续工作。uBlock Origin由Raymond Hill开发，是Adblock Plus之外最受欢迎的开源拦截工具之一。",
+      "community_discussion_zh": "评论区整体对Firefox表示支持，并批评谷歌推动Manifest V3的动机。有用户指出Firefox会对热门扩展进行人工审查以防范恶意代码；还有人称自己因Manifest V3关停了广告相关扩展，并认为“只有Firefox还能去除Google搜索中的广告”。也有人提到在Chrome中仍可手动加载未打包的扩展，但过程繁琐。",
+      "sources": [
+        {
+          "url": "https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3",
+          "title": "Extensions / Manifest V3 | Chrome for Developers"
+        },
+        {
+          "url": "https://extensionworkshop.com/documentation/develop/manifest-v3-migration-guide/",
+          "title": "Manifest V3 migration guide | Firefox Extension Workshop"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/UBlock_Origin",
+          "title": "uBlock Origin - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Firefox现在成为唯一仍支持uBlock Origin完整功能的主流浏览器。随着Chrome、Edge等基于Chromium的浏览器逐步淘汰Manifest V2扩展，uBlock Origin在那些浏览器中的功能受到限制或不再可用，而Firefox仍保留对相关API的支持。 这一变化对广告拦截、隐私保护和浏览器扩展生态具有重要意义。依赖uBlock Origin实现高效内容过滤的用户可能转向Firefox，同时也反映出浏览器厂商在扩展能力与安全控制之间的路线分歧。 uBlock Origin是一个免费开源的内容拦截扩展，因其低资源占用和强大的动态过滤能力而广受欢迎。谷歌的Manifest V3移除了扩展对远程代码的支持，并要求使用声明式规则，这使得uBlock Origin原本的过滤方式在Chrome系浏览器中无法完整运行；Firefox则继续支持旧版API，并允许用户安装完整版uBO。",
+      "background": "浏览器扩展通过清单文件声明权限和API，Manifest V3是Chrome从2020年起推行的新扩展标准，旨在提升安全性和性能，但限制了广告拦截类扩展的动态过滤能力。Firefox和Safari也逐步支持MV3，但保留了更多兼容性，使uBlock Origin等扩展得以继续工作。uBlock Origin由Raymond Hill开发，是Adblock Plus之外最受欢迎的开源拦截工具之一。",
+      "community_discussion": "评论区整体对Firefox表示支持，并批评谷歌推动Manifest V3的动机。有用户指出Firefox会对热门扩展进行人工审查以防范恶意代码；还有人称自己因Manifest V3关停了广告相关扩展，并认为“只有Firefox还能去除Google搜索中的广告”。也有人提到在Chrome中仍可手动加载未打包的扩展，但过程繁琐。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance for ad blocking, privacy, and browser extension ecosystems, with strong community discussion on implications of Chrome's Manifest V3 and Mozilla's trust model.",
+    "ai_summary": "Firefox is now the only major browser supporting uBlock Origin, underscoring the ongoing battle over ad blocking and browser extension capabilities.",
+    "ai_tags": [
+      "Firefox",
+      "uBlock Origin",
+      "Manifest V3",
+      "ad blocking",
+      "browser extensions"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a1a2644a27c1bf80",
+    "source_type": "rss",
+    "title": "RISC-V: They Should Have Known Better",
+    "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
+    "content": "<p><a href=\"https://lobste.rs/s/pu3yzg/risc_v_they_should_have_known_better\">Comments</a></p>",
+    "author": "dmitry.gr by dmitrygr",
+    "published_at": "2026-08-14T19:12:53Z",
+    "fetched_at": "2026-08-14T23:14:21.942265Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "assembly",
+        "rant",
+        "compilers"
+      ],
+      "title_zh": "RISC-V设计缺陷：他们本该更明智",
+      "detailed_summary_zh": "这篇文章对RISC-V指令集架构的设计决策提出了尖锐批评，指出其存在一些本可避免的问题。文章已在Lobsters社区引发讨论。 RISC-V作为开放指令集架构正获得广泛关注，对其设计缺陷的深入分析有助于硬件设计者理解ISA设计中的关键权衡。该批评可能促进RISC-V后续版本的改进。 文章标题暗示作者认为RISC-V某些设计选择明显不合理，但具体内容未在摘要中提供。讨论链接指向Lobsters，说明该技术社区正在积极探讨相关观点。",
+      "background_zh": "RISC-V是一个基于精简指令集计算（RISC）原则的开源指令集架构（ISA），仅用300多行代码定义基础指令。与x86和ARM不同，RISC-V允许任何人自由使用和扩展，因此成为学术界和工业界研究的热点。对任何ISA而言，设计决策都需在灵活性、复杂性和性能之间权衡。",
+      "detailed_summary": "这篇文章对RISC-V指令集架构的设计决策提出了尖锐批评，指出其存在一些本可避免的问题。文章已在Lobsters社区引发讨论。 RISC-V作为开放指令集架构正获得广泛关注，对其设计缺陷的深入分析有助于硬件设计者理解ISA设计中的关键权衡。该批评可能促进RISC-V后续版本的改进。 文章标题暗示作者认为RISC-V某些设计选择明显不合理，但具体内容未在摘要中提供。讨论链接指向Lobsters，说明该技术社区正在积极探讨相关观点。",
+      "background": "RISC-V是一个基于精简指令集计算（RISC）原则的开源指令集架构（ISA），仅用300多行代码定义基础指令。与x86和ARM不同，RISC-V允许任何人自由使用和扩展，因此成为学术界和工业界研究的热点。对任何ISA而言，设计决策都需在灵活性、复杂性和性能之间权衡。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Title suggests a critical analysis of RISC-V, a highly relevant topic in hardware/ISA design. The author is known for deep technical posts, and the presence of community comments on Lobsters indicates active discussion. Without full article text, the score reflects the likely value and community engagement.",
+    "ai_summary": "A critical examination of RISC-V architecture decisions, with community discussion on Lobsters.",
+    "ai_tags": [
+      "RISC-V",
+      "ISA",
+      "architecture",
+      "hardware",
+      "critique"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e3f8aba590131c30",
+    "source_type": "rss",
+    "title": "Curl Performance",
+    "url": "https://daniel.haxx.se/blog/2026/08/14/curl-performance-2/",
+    "content": "<p><a href=\"https://lobste.rs/s/avjfxw/curl_performance\">Comments</a></p>",
+    "author": "daniel.haxx.se via dhruvp",
+    "published_at": "2026-08-14T11:33:57Z",
+    "fetched_at": "2026-08-14T23:14:21.942361Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "performance"
+      ],
+      "title_zh": "curl 性能再探讨：Stenberg 发布新博文",
+      "detailed_summary_zh": "Daniel Stenberg 于2026年8月14日发布博客文章《curl performance 2》，延续对 curl 性能的深入探讨。文章页面仅附有 Lobsters 社区讨论链接，正文技术细节未在摘要中透露。 curl 是全球使用最广泛的开源网络工具之一，其性能直接影响无数应用和脚本的执行效率。作为 curl 的创始人和维护者，Stenberg 的技术分析对开发者优化网络操作具有重要参考价值。 博文标题中的“2”暗示这是系列文章的第二部分，可能进一步分析性能瓶颈、基准测试方法或近期优化改进。由于内容未提供正文，具体技术要点暂不可知。",
+      "background_zh": "curl 是一个通过 URL 传输数据的命令行工具和库，支持 HTTP、FTP 等多种协议，几乎在所有操作系统和编程环境中都有应用。性能优化通常涉及 DNS 解析、连接复用、TLS 握手和传输缓冲等环节；Stenberg 经常在博客中分享项目开发进展和设计决策，这篇博文应属于此类技术分享。",
+      "detailed_summary": "Daniel Stenberg 于2026年8月14日发布博客文章《curl performance 2》，延续对 curl 性能的深入探讨。文章页面仅附有 Lobsters 社区讨论链接，正文技术细节未在摘要中透露。 curl 是全球使用最广泛的开源网络工具之一，其性能直接影响无数应用和脚本的执行效率。作为 curl 的创始人和维护者，Stenberg 的技术分析对开发者优化网络操作具有重要参考价值。 博文标题中的“2”暗示这是系列文章的第二部分，可能进一步分析性能瓶颈、基准测试方法或近期优化改进。由于内容未提供正文，具体技术要点暂不可知。",
+      "background": "curl 是一个通过 URL 传输数据的命令行工具和库，支持 HTTP、FTP 等多种协议，几乎在所有操作系统和编程环境中都有应用。性能优化通常涉及 DNS 解析、连接复用、TLS 握手和传输缓冲等环节；Stenberg 经常在博客中分享项目开发进展和设计决策，这篇博文应属于此类技术分享。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Authoritative post by curl's creator on performance, a topic of broad relevance; likely technical depth and community discussion on Lobsters add value.",
+    "ai_summary": "Daniel Stenberg discusses curl performance in a technical blog post.",
+    "ai_tags": [
+      "curl",
+      "performance",
+      "networking",
+      "open-source",
+      "tools"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e23149743030a8cd",
+    "source_type": "rss",
+    "title": "We implemented the IPv8 Internet-Draft in the Linux Kernel, Musl Libc, and BGP",
+    "url": "https://goonhost.rocks/blog/implementing-ipv8-internet-draft",
+    "content": "<p><a href=\"https://lobste.rs/s/j9mwib/we_implemented_ipv8_internet_draft_linux\">Comments</a></p>",
+    "author": "goonhost.rocks via vbernat",
+    "published_at": "2026-08-14T19:05:12Z",
+    "fetched_at": "2026-08-14T23:14:21.942522Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "networking",
+        "vibecoding"
+      ],
+      "title_zh": "在Linux内核、musl libc与BGP中实现IPv8互联网草案",
+      "detailed_summary_zh": "开发者成功将IPv8互联网草案（Internet-Draft）实现于Linux内核、musl libc和BGP之中，完成了一套覆盖操作系统内核、C标准库与路由协议的全栈原型。该实现表明IPv8协议已具备从底层系统到网络路由的实际落地能力。 这是一项重大的系统级工程成果，展示了新型网络协议可以在真实基础设施中被完整实现和部署。虽然IPv8尚未成为主流标准，但此原型可能对未来的协议设计、标准化进程以及网络研究和基础设施开发产生重要影响。 实现涉及Linux内核协议栈、musl libc（轻量级C标准库）以及BGP路由协议，覆盖数据包处理、地址分配和路由交换等核心环节。该项目基于IETF草案《Internet Protocol Version 8 (IPv8)》（draft-thain-ipv8-00），该草案提出使用OAuth2 JWT令牌对所有可管理网络元素进行授权。",
+      "background_zh": "互联网协议套件（TCP/IP）由IETF维护，IPv6是当前最新版的IP协议。IPv8是一种提出中的“托管网络协议套件”，旨在改变从家庭网络到全球互联网的运营、安全与监控方式，每个可管理元素都通过OAuth2 JWT令牌授权。musl是一个面向Linux内核的C标准库，以轻量、快速、简单和符合标准著称，常用于嵌入式系统和容器环境。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/IP_protocol_family",
+          "title": "IP protocol family"
+        },
+        {
+          "url": "https://www.ietf.org/archive/id/draft-thain-ipv8-00.html",
+          "title": "Internet Protocol Version 8 (IPv8)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Musl_libc",
+          "title": "Musl libc"
+        }
+      ],
+      "detailed_summary": "开发者成功将IPv8互联网草案（Internet-Draft）实现于Linux内核、musl libc和BGP之中，完成了一套覆盖操作系统内核、C标准库与路由协议的全栈原型。该实现表明IPv8协议已具备从底层系统到网络路由的实际落地能力。 这是一项重大的系统级工程成果，展示了新型网络协议可以在真实基础设施中被完整实现和部署。虽然IPv8尚未成为主流标准，但此原型可能对未来的协议设计、标准化进程以及网络研究和基础设施开发产生重要影响。 实现涉及Linux内核协议栈、musl libc（轻量级C标准库）以及BGP路由协议，覆盖数据包处理、地址分配和路由交换等核心环节。该项目基于IETF草案《Internet Protocol Version 8 (IPv8)》（draft-thain-ipv8-00），该草案提出使用OAuth2 JWT令牌对所有可管理网络元素进行授权。",
+      "background": "互联网协议套件（TCP/IP）由IETF维护，IPv6是当前最新版的IP协议。IPv8是一种提出中的“托管网络协议套件”，旨在改变从家庭网络到全球互联网的运营、安全与监控方式，每个可管理元素都通过OAuth2 JWT令牌授权。musl是一个面向Linux内核的C标准库，以轻量、快速、简单和符合标准著称，常用于嵌入式系统和容器环境。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "A technical deep-dive implementing an Internet-Draft (IPv8) in the Linux kernel, musl libc, and BGP is a novel and highly significant engineering effort. While not a mainstream breakthrough, it demonstrates advanced systems work and could influence future protocol development. Community discussion (Lobsters) is referenced but not assessed directly.",
+    "ai_summary": "A detailed account of implementing the IPv8 Internet-Draft across Linux kernel, musl libc, and BGP, showcasing a significant systems-level prototype.",
+    "ai_tags": [
+      "IPv8",
+      "Linux Kernel",
+      "Networking",
+      "Protocol Implementation",
+      "Systems Engineering"
+    ]
+  },
+  {
+    "id": "hackernews:story:49300759",
+    "source_type": "hackernews",
+    "title": "RustDesk now supports true unattended remote access on Wayland",
+    "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+    "content": "\n--- Top Comments ---\n\n[inktype]: RustDesk still does not support encrypted connections when self hosting:  https:&#x2F;&#x2F;github.com&#x2F;rustdesk&#x2F;rustdesk&#x2F;issues&#x2F;3714\n\n[OsrsNeedsf2P]: Rustdesk is amazing. I was using it just 2 days ago and ran into this hiccup, so it&#x27;s a pleasure to see it resolved\n\n[throwaway27448]: What is rustdesk and how is it distinct from vnc? Edit: i appreciate the explanations; thank you.\n\n[NoboruWataya]: I have a Raspberry Pi hooked up to my TV and whenever I need to control it from my laptop (getting and interacting with the same screen on my laptop that I see on my TV) I have been using VNC. It is quite slow. Would this work better for that use case or is it really intended for something different? (And if the latter are there better solutions than VNC for what I want to do?)\n\n[aborsy]: I have used Remmina over SSH and Tailscale (and generally don’t trust remote desktop tools), which is mentioned in various places by my operating system provider. How does RustDesk compare with that?",
+    "author": "rustdesk",
+    "published_at": "2026-08-14T16:12:52Z",
+    "fetched_at": "2026-08-14T23:14:22.084353Z",
+    "metadata": {
+      "score": 197,
+      "descendants": 88,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49300759",
+      "comment_count": 5,
+      "title_zh": "RustDesk 现支持 Wayland 无人值守远程访问",
+      "detailed_summary_zh": "RustDesk 官方博客宣布，其远程桌面软件现已支持在 Wayland 显示服务器协议上进行真正的无人值守远程访问，填补了此前长期存在的功能空白。 这对使用 Wayland 的 Linux 用户意义重大，因为此前无人值守访问通常依赖 X11 或需要繁琐的额外配置。这一更新使 RustDesk 成为更完整的跨平台远程桌面解决方案，可能吸引更多注重开源与自托管的用户。 无人值守访问允许用户在没有现场操作员的情况下远程连接设备，对 IT 运维和技术支持非常实用。RustDesk 是开源软件，支持自托管服务器，但社区用户指出自托管时仍存在加密连接支持不足的问题（见 GitHub issue #3714）。",
+      "background_zh": "Wayland 是 Linux 上用于替代 X Window System（X11）的现代显示服务器协议，旨在提供更安全、更简单的图形环境，其安全模型默认限制远程输入注入与屏幕捕获，因此远程桌面工具往往需要专门适配。RustDesk 是一款开源远程桌面软件，用户可自建中继服务器以保持对数据的完全控制，与 TeamViewer 等商业工具形成竞争。",
+      "community_discussion_zh": "社区反应总体积极，有用户表示两天前刚遇到此问题，很高兴看到解决。同时也有用户询问 RustDesk 与 VNC 及 SSH/Remmina 在适用场景上的差异，另有用户提醒自托管时加密连接功能仍不受支持，需注意安全风险。",
+      "sources": [
+        {
+          "url": "https://rustdesk.com/",
+          "title": "RustDesk : Open-Source Remote Desktop with Self-Hosted Server..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)",
+          "title": "Wayland (display server protocol)"
+        },
+        {
+          "url": "https://www.manageengine.com/remote-desktop-management/unattended-remote-access.html",
+          "title": "Free Unattended Remote Access Software - ManageEngine Remote ..."
+        }
+      ],
+      "detailed_summary": "RustDesk 官方博客宣布，其远程桌面软件现已支持在 Wayland 显示服务器协议上进行真正的无人值守远程访问，填补了此前长期存在的功能空白。 这对使用 Wayland 的 Linux 用户意义重大，因为此前无人值守访问通常依赖 X11 或需要繁琐的额外配置。这一更新使 RustDesk 成为更完整的跨平台远程桌面解决方案，可能吸引更多注重开源与自托管的用户。 无人值守访问允许用户在没有现场操作员的情况下远程连接设备，对 IT 运维和技术支持非常实用。RustDesk 是开源软件，支持自托管服务器，但社区用户指出自托管时仍存在加密连接支持不足的问题（见 GitHub issue #3714）。",
+      "background": "Wayland 是 Linux 上用于替代 X Window System（X11）的现代显示服务器协议，旨在提供更安全、更简单的图形环境，其安全模型默认限制远程输入注入与屏幕捕获，因此远程桌面工具往往需要专门适配。RustDesk 是一款开源远程桌面软件，用户可自建中继服务器以保持对数据的完全控制，与 TeamViewer 等商业工具形成竞争。",
+      "community_discussion": "社区反应总体积极，有用户表示两天前刚遇到此问题，很高兴看到解决。同时也有用户询问 RustDesk 与 VNC 及 SSH/Remmina 在适用场景上的差异，另有用户提醒自托管时加密连接功能仍不受支持，需注意安全风险。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important update for RustDesk users, filling a significant gap (unattended access on Wayland). Community discussion is substantive, covering security concerns, comparisons to VNC/SSH, and practical use cases, which adds value.",
+    "ai_summary": "RustDesk announces support for true unattended remote access on Wayland, addressing a long-standing limitation.",
+    "ai_tags": [
+      "remote-desktop",
+      "wayland",
+      "rustdesk",
+      "open-source",
+      "self-hosting"
+    ]
+  },
+  {
+    "id": "hackernews:story:49300314",
+    "source_type": "hackernews",
+    "title": "Google is making private AI practical with homomorphic encryption",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "content": "\n--- Top Comments ---\n\n[maxo133]: Funny to read this, but google is currently number one anti-privacy big tech company. No other company makes it as difficult for its users using anonymization&#x2F;privacy software to access their services\n\n[comboy]: Huge if true, that could bring them back in the game even with inferior models.\n\n[sabretooth1405]: My master&#x27;s thesis is on a topic in this field (Privacy Preserving ML) and from my understanding HE and other techniques have very high overheads(~10^3) on inference tasks and thus aren&#x27;t very commercially viable.\n\n[meindnoch]: Great, private AI, at the cost of &gt;1000x the resource usage. Because apparently AI companies weren&#x27;t already using quite enough energy to cook the planet. The most private AI is the one running on my own hardware, not in some giant data center.\n\n[Cider9986]: This is the same Google that doesn&#x27;t have e2ee on their password manager by default. Like WTF, it&#x27;s a password manager.",
+    "author": "u1hcw9nx",
+    "published_at": "2026-08-14T15:43:10Z",
+    "fetched_at": "2026-08-14T23:14:22.084374Z",
+    "metadata": {
+      "score": 235,
+      "descendants": 146,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49300314",
+      "comment_count": 5,
+      "title_zh": "谷歌以同态加密推动私有AI实用化",
+      "detailed_summary_zh": "谷歌宣布在同态加密技术上取得进展，使私有AI推理变得更实用。这项突破意味着用户的数据可以在加密状态下参与AI模型推理，无需先解密。 此进展对隐私保护AI领域意义重大，可能让企业用户放心将敏感数据用于云端AI推理，减少数据泄露风险。若属实，谷歌即使模型性能不占优，也能凭隐私优势重新获得市场竞争力。 尽管谷歌宣称进展，但社区技术评论指出同态加密在推理任务上仍有约1000倍的计算开销，并伴随高昂的能源成本，商业化可行性存疑。此外，评论者质疑谷歌本身在隐私保护上的记录，例如其密码管理器默认未启用端到端加密。",
+      "background_zh": "同态加密（Homomorphic Encryption）是一种允许在加密数据上直接执行计算、无需先解密的加密形式，计算结果解密后与对明文计算的结果一致。它可用于隐私保护的云端存储与计算，例如在不暴露照片内容的情况下扫描兴趣点。私有AI推理则让用户输入和模型输出在远程服务器上始终保持加密，只有用户本人可见，从而降低医疗等敏感数据外包分析时的隐私门槛。",
+      "community_discussion_zh": "社区反应总体偏怀疑：有评论者讽刺谷歌是反隐私科技巨头之首，也有硕士论文研究者指出同态加密和同类技术目前推理开销过大、商业可行性低。少数人认为“若属实将意义重大”，但更多人关注其超千倍的资源消耗与能源代价，认为最私密的AI应跑在自己的硬件上。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Homomorphic_encryption",
+          "title": "Homomorphic encryption"
+        },
+        {
+          "url": "https://docs.near.ai/cloud/private-inference/",
+          "title": "Private Inference | NEAR AI"
+        },
+        {
+          "url": "https://confer.to/blog/2026/01/private-inference/",
+          "title": "Private inference | Confer Blog"
+        }
+      ],
+      "detailed_summary": "谷歌宣布在同态加密技术上取得进展，使私有AI推理变得更实用。这项突破意味着用户的数据可以在加密状态下参与AI模型推理，无需先解密。 此进展对隐私保护AI领域意义重大，可能让企业用户放心将敏感数据用于云端AI推理，减少数据泄露风险。若属实，谷歌即使模型性能不占优，也能凭隐私优势重新获得市场竞争力。 尽管谷歌宣称进展，但社区技术评论指出同态加密在推理任务上仍有约1000倍的计算开销，并伴随高昂的能源成本，商业化可行性存疑。此外，评论者质疑谷歌本身在隐私保护上的记录，例如其密码管理器默认未启用端到端加密。",
+      "background": "同态加密（Homomorphic Encryption）是一种允许在加密数据上直接执行计算、无需先解密的加密形式，计算结果解密后与对明文计算的结果一致。它可用于隐私保护的云端存储与计算，例如在不暴露照片内容的情况下扫描兴趣点。私有AI推理则让用户输入和模型输出在远程服务器上始终保持加密，只有用户本人可见，从而降低医疗等敏感数据外包分析时的隐私门槛。",
+      "community_discussion": "社区反应总体偏怀疑：有评论者讽刺谷歌是反隐私科技巨头之首，也有硕士论文研究者指出同态加密和同类技术目前推理开销过大、商业可行性低。少数人认为“若属实将意义重大”，但更多人关注其超千倍的资源消耗与能源代价，认为最私密的AI应跑在自己的硬件上。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important development in privacy-preserving AI that generated significant community discussion. However, commenters voiced skepticism about Google's privacy track record, practical overheads (~1000x), and energy costs, indicating the announcement is promising but not yet a proven breakthrough. The high engagement and diverse technical critiques add value.",
+    "ai_summary": "Google announces advances making homomorphic encryption practical for private AI inference, despite community concerns about overhead and privacy credibility.",
+    "ai_tags": [
+      "homomorphic encryption",
+      "AI",
+      "privacy",
+      "Google",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "hackernews:story:49300800",
+    "source_type": "hackernews",
+    "title": "Maximizing the value of your Claude Code sessions",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "content": "\n--- Top Comments ---\n\n[superasn]: Recently I came across the  &#x2F;handoff  skill, which I&#x27;ve been using a lot. I find it much better than &#x2F;compact. Basically: - &#x2F;handoff file creates a short document with the important context from your current session and maybe next steps as checklist. - You can then start a fresh session with &#x2F;continue file - You can also hand the work from Claude to ChatGPT, or the other way around. Very useful at time of session limits. -  Plus your handoff files becomes a useful pie...\n\n[rhaksw]: &gt; @-mention files instead of naming them Love Claude, but the @ mention is broken in the desktop app. For the same project if I type the same query &quot;@ephem&quot; I get: CLI:  https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;VZMUCOa  (good, relevant results) Desktop:  https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;QLSo4Ms  (bad, irrelevant) Opened issue for this and it was automatically closed:  https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;issues&#x2F;71421  I could have written ...\n\n[jnwatson]: Can anyone explain why the prefix cache is tied to effort? I frequently run Fable at xhigh effort to run statistical modeling way above my undergraduate understanding.  Claude Fable produces Masters-degree level output, and then I spend lots of round trips asking it to explain different parts to me. The first part absolutely uses the extra effort, but the interrogation exercise is something a much simpler model, or the same model with much less effort, could answer.\n\n[BeetleB]: &gt; @-mention files instead of naming them. The file gets attached to your message directly, which saves a Read call, or a search if Claude has to go find it. I&#x27;ve heard it argued that this is an antipattern. If the file is large, it will read the whole file. With Read or something similar, it can do a targeted search and read only the relevant portion. Is this still not the case? Also, since they mention &#x2F;context: Can anyone explain why &#x2F;context takes so long to run? It usual...\n\n[Glyptodon]: What I see is that I have to read a bunch of stuff and go through a bunch of hassle to save money when the root of it is that if I tell an AI to do work on a task while I&#x27;m busy with something else and come back later I&#x27;ve doubled my cost because the cache expires too quickly?",
+    "author": "twapi",
+    "published_at": "2026-08-14T16:15:21Z",
+    "fetched_at": "2026-08-14T23:14:22.084477Z",
+    "metadata": {
+      "score": 112,
+      "descendants": 77,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49300800",
+      "comment_count": 5,
+      "title_zh": "最大化Claude Code会话价值的实用指南",
+      "detailed_summary_zh": "Anthropic发布了一篇博客文章，介绍如何从Claude Code会话中获得更多价值，涵盖工作流优化和效率提升的具体建议。社区评论补充了诸如/handoff技巧和当前存在的限制。 Claude Code是Anthropic推出的AI编程代理工具，广泛应用于开发者社区。这篇文章提供了实用的操作建议，有助于开发者更高效地利用该工具，并引发了关于工作流和局限性的讨论。 社区用户指出/handoff技能比/compact更好，能创建带上下文的交接文档并支持跨模型（如Claude到ChatGPT）交接。但也有用户反映桌面应用的@-mention功能存在bug，且@-mention大文件可能带来性能问题。",
+      "background_zh": "Claude Code是Anthropic的命令行AI编程工具，能理解代码库、编辑文件和运行命令，帮助开发者加速开发流程。官方文档提供了常见工作流指南，而社区用户在实践中分享了不少技巧和经验，包括会话管理、上下文共享等。",
+      "community_discussion_zh": "社区整体反馈积极，有人大力推荐/handoff技能，认为它比/compact更有效。但也有用户报告桌面版@-mention失效、前缀缓存与effort关联存疑等问题，还有人对@-mention读取整文件的效率提出质疑。",
+      "sources": [
+        {
+          "url": "https://claude.com/product/claude-code",
+          "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/common-workflows",
+          "title": "Common workflows - Claude Code Docs"
+        },
+        {
+          "url": "https://www.datacamp.com/tutorial/claude-code",
+          "title": "Claude Code Tutorial: Setup and Refactoring in Practice | DataCamp"
+        }
+      ],
+      "detailed_summary": "Anthropic发布了一篇博客文章，介绍如何从Claude Code会话中获得更多价值，涵盖工作流优化和效率提升的具体建议。社区评论补充了诸如/handoff技巧和当前存在的限制。 Claude Code是Anthropic推出的AI编程代理工具，广泛应用于开发者社区。这篇文章提供了实用的操作建议，有助于开发者更高效地利用该工具，并引发了关于工作流和局限性的讨论。 社区用户指出/handoff技能比/compact更好，能创建带上下文的交接文档并支持跨模型（如Claude到ChatGPT）交接。但也有用户反映桌面应用的@-mention功能存在bug，且@-mention大文件可能带来性能问题。",
+      "background": "Claude Code是Anthropic的命令行AI编程工具，能理解代码库、编辑文件和运行命令，帮助开发者加速开发流程。官方文档提供了常见工作流指南，而社区用户在实践中分享了不少技巧和经验，包括会话管理、上下文共享等。",
+      "community_discussion": "社区整体反馈积极，有人大力推荐/handoff技能，认为它比/compact更有效。但也有用户报告桌面版@-mention失效、前缀缓存与effort关联存疑等问题，还有人对@-mention读取整文件的效率提出质疑。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Practical guidance for a widely-used AI coding tool, with community comments adding useful tips (e.g., /handoff) and reporting issues. Not groundbreaking but highly relevant and actionable for developers.",
+    "ai_summary": "Anthropic's blog post on getting more out of Claude Code sessions, with community discussion highlighting workflows and current limitations.",
+    "ai_tags": [
+      "claude-code",
+      "AI coding",
+      "productivity",
+      "LLM",
+      "workflow"
+    ]
+  },
+  {
+    "id": "hackernews:story:49299222",
+    "source_type": "hackernews",
+    "title": "Every Fucking Website (2020)",
+    "url": "https://lxe.github.io/everywebsite/",
+    "content": "\n--- Top Comments ---\n\n[jchw]: Should load much slower. Also, where is the unrelated autoplaying video that will unmute if you actually click it, that follows your scrolling and only becomes smaller when you dismiss it? Plus, it should probably have text that cuts off letting you know you can have access for just $10&#x2F;month. Plus, isn&#x27;t this website undissmissably &quot;better in the app&quot; after a few minutes of attempting to use it on a phone? Where&#x27;s that at? edit: Oh shoot! I forgot, too. This modal ne...\n\n[idopmstuff]: I started an e-commerce brand on a Shopify site. I swore to myself I would never put up one of those stupid things that pops up &quot;Someone bought X product an hour ago!&quot; messages in the corner of the screen. I ended up trying it. Boosted conversion rate meaningfully. Worth the price I pay in mild self-loathing. Chesterton&#x27;s popup, I guess.\n\n[WarmWash]: Loaded way too fast and is way too responsive. Also when I checked NoScript, it&#x27;s only loading js from lxe.github.io I expect there to be at minimum 8 domains, but often 12-18.\n\n[2b3a51]: I&#x27;m filing a bug report... Steps to reproduce:\nOpen terminal emulator and type; $ w3m  https:&#x2F;&#x2F;lxe.github.io&#x2F;everywebsite&#x2F;  I can read the same content as I can read in Firefox. What I expected to happen: See content similar to the following; Update your browser\nYour browser isn&#x27;t supported any more. To continue your search, upgrade to a\nrecent version. Learn more\n\n[kwertyoowiyop]: Needs a Google login popup, required for any site that there is no reason at all to have an account with.",
+    "author": "doubletwoyou",
+    "published_at": "2026-08-14T14:31:08Z",
+    "fetched_at": "2026-08-14T23:14:22.084557Z",
+    "metadata": {
+      "score": 703,
+      "descendants": 392,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49299222",
+      "comment_count": 5,
+      "title_zh": "讽刺网页《Every Fucking Website》：集中调侃恼人设计",
+      "detailed_summary_zh": "2020年上线的讽刺项目《Every Fucking Website》通过一个故意堆砌恼人交互的网页，集中嘲讽现代网站常见的弹窗、强制登录、缓慢加载等设计陋习。该网站引发大量讨论，在HN等社区获得703分和392条评论。 这个玩笑之所以重要，是因为它精准击中了用户对“黑暗模式”（dark patterns）的普遍反感，并引发关于转化率与用户体验之间取舍的认真讨论。网站设计者和产品团队可以从中看到，短期的欺骗式设计可能带来收益，但也会消耗用户信任。 评论者指出，这个讽刺站点其实还不够“恶心”：它缺少自动播放且取消静音的视频、阅读中断的付费墙、推广App的弹窗、无关的Google登录框，以及更像真实网站的8到18个第三方域名。在NoScript下，它只从lxe.github.io加载JavaScript，与真实网站依赖大量第三方脚本的做法形成反差。",
+      "background_zh": "黑暗模式指设计师利用人类心理和用户需求，精心制作界面来欺骗用户做并非本意的事情，例如购买保险、订阅循环账单或放弃隐私。2010年，英国UX设计师Harry Brignull首先提出这一概念；此后研究者在大量购物网站中识别出数以千计的此类模式，并有法规开始加以约束。",
+      "community_discussion_zh": "评论区整体以玩梗和补刀为主，许多用户逐条列出网站“遗漏”的恼人功能，比如过慢的加载速度、必须卸载的跟进视频和“更好用App”的弹窗。也有人提出反例：一位Shopify店主表示，自己曾发誓不用“某用户刚刚购买了X”的弹窗，但试用后转化率明显提升，只能一边自嘲一边继续使用，说明这类设计背后存在现实商业压力。",
+      "sources": [
+        {
+          "url": "https://www.uxdesigninstitute.com/blog/what-are-dark-patterns-in-ux/",
+          "title": "What are dark patterns in UX? All you need to know"
+        },
+        {
+          "url": "https://www.nngroup.com/articles/deceptive-patterns/",
+          "title": "Deceptive Patterns in UX: How to Recognize and Avoid Them - NN/G"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dark_pattern",
+          "title": "Dark pattern - Wikipedia"
+        }
+      ],
+      "detailed_summary": "2020年上线的讽刺项目《Every Fucking Website》通过一个故意堆砌恼人交互的网页，集中嘲讽现代网站常见的弹窗、强制登录、缓慢加载等设计陋习。该网站引发大量讨论，在HN等社区获得703分和392条评论。 这个玩笑之所以重要，是因为它精准击中了用户对“黑暗模式”（dark patterns）的普遍反感，并引发关于转化率与用户体验之间取舍的认真讨论。网站设计者和产品团队可以从中看到，短期的欺骗式设计可能带来收益，但也会消耗用户信任。 评论者指出，这个讽刺站点其实还不够“恶心”：它缺少自动播放且取消静音的视频、阅读中断的付费墙、推广App的弹窗、无关的Google登录框，以及更像真实网站的8到18个第三方域名。在NoScript下，它只从lxe.github.io加载JavaScript，与真实网站依赖大量第三方脚本的做法形成反差。",
+      "background": "黑暗模式指设计师利用人类心理和用户需求，精心制作界面来欺骗用户做并非本意的事情，例如购买保险、订阅循环账单或放弃隐私。2010年，英国UX设计师Harry Brignull首先提出这一概念；此后研究者在大量购物网站中识别出数以千计的此类模式，并有法规开始加以约束。",
+      "community_discussion": "评论区整体以玩梗和补刀为主，许多用户逐条列出网站“遗漏”的恼人功能，比如过慢的加载速度、必须卸载的跟进视频和“更好用App”的弹窗。也有人提出反例：一位Shopify店主表示，自己曾发誓不用“某用户刚刚购买了X”的弹窗，但试用后转化率明显提升，只能一边自嘲一边继续使用，说明这类设计背后存在现实商业压力。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Clever satire of modern web UX that resonated widely (703 points, 392 comments). Comments add real-world insights on dark patterns and conversion trade-offs, elevating it beyond a simple joke.",
+    "ai_summary": "A satirical website mocking annoying web design trends, sparking a rich community discussion on UX dark patterns.",
+    "ai_tags": [
+      "web-design",
+      "ux",
+      "satire",
+      "dark-patterns",
+      "technology"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e659f5297c81ed3c",
+    "source_type": "rss",
+    "title": "ActivityPub Won by Being Boring",
+    "url": "https://o.ee/blog/activitypub-won-by-being-boring/",
+    "content": "<p><a href=\"https://lobste.rs/s/ngz2wn/activitypub_won_by_being_boring\">Comments</a></p>",
+    "author": "o.ee via boramalper",
+    "published_at": "2026-08-14T18:44:17Z",
+    "fetched_at": "2026-08-14T23:14:21.942309Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "web",
+        "distributed"
+      ],
+      "title_zh": "ActivityPub靠“无聊”赢得协议之争",
+      "detailed_summary_zh": "这篇博文提出，ActivityPub之所以成为社交网络互操作协议的事实赢家，是因为它保持“无聊”和务实，而非追求技术上的刺激性。作者认为，这种平凡特质恰恰帮助它被广泛采用，并成为去中心化社交生态的基础协议。 这一观点为协议设计提供了反直觉的启示：在去中心化社交网络领域，标准的成功可能取决于降低采用门槛和保持兼容性，而不是技术上的炫目创新。它将影响社区对未来联邦协议和开放标准的评估方式，也解释了为什么Mastodon等平台选择了ActivityPub。 作者认为，ActivityPub的胜利源于它坚持务实、成熟且“无聊”的设计路线，避免过度工程化。该协议基于ActivityStreams 2.0格式，并通过W3C标准化，使不同实例之间能够稳定互操作。",
+      "background_zh": "ActivityPub是W3C制定的去中心化社交网络协议，建立在ActivityStreams 2.0数据格式之上，允许不同服务器（实例）之间交换内容。它源自早期的StatusNet项目，并被Mastodon等联邦平台广泛采用。在联邦网络（Fediverse）中，用户数据分布在不同服务器上，但通过统一协议可以跨站关注和互动，就像电子邮件通过SMTP跨域通信一样。这种去中心化方式被视为对抗大型平台围墙花园的重要方案。",
+      "sources": [
+        {
+          "url": "https://w3c.github.io/activitypub/",
+          "title": "ActivityPub"
+        },
+        {
+          "url": "https://nextcloud.com/blog/activitypub-the-new-standard-for-decentralized-networks/",
+          "title": "ActivityPub : the new standard for decentralized networks - Nextcloud"
+        },
+        {
+          "url": "https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network",
+          "title": "ActivityPub is the next big thing in social networks | The Verge"
+        }
+      ],
+      "detailed_summary": "这篇博文提出，ActivityPub之所以成为社交网络互操作协议的事实赢家，是因为它保持“无聊”和务实，而非追求技术上的刺激性。作者认为，这种平凡特质恰恰帮助它被广泛采用，并成为去中心化社交生态的基础协议。 这一观点为协议设计提供了反直觉的启示：在去中心化社交网络领域，标准的成功可能取决于降低采用门槛和保持兼容性，而不是技术上的炫目创新。它将影响社区对未来联邦协议和开放标准的评估方式，也解释了为什么Mastodon等平台选择了ActivityPub。 作者认为，ActivityPub的胜利源于它坚持务实、成熟且“无聊”的设计路线，避免过度工程化。该协议基于ActivityStreams 2.0格式，并通过W3C标准化，使不同实例之间能够稳定互操作。",
+      "background": "ActivityPub是W3C制定的去中心化社交网络协议，建立在ActivityStreams 2.0数据格式之上，允许不同服务器（实例）之间交换内容。它源自早期的StatusNet项目，并被Mastodon等联邦平台广泛采用。在联邦网络（Fediverse）中，用户数据分布在不同服务器上，但通过统一协议可以跨站关注和互动，就像电子邮件通过SMTP跨域通信一样。这种去中心化方式被视为对抗大型平台围墙花园的重要方案。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Offers an insightful and novel perspective on why ActivityPub succeeded as a standard, relevant to decentralized systems and protocol design. Discussion on Lobsters indicates community engagement and debate, adding value.",
+    "ai_summary": "The post argues that ActivityPub won the social web protocol race by being boring and pragmatic rather than technically exciting.",
+    "ai_tags": [
+      "ActivityPub",
+      "federated protocols",
+      "decentralization",
+      "social networking",
+      "protocol design"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0d68503870c2aaba",
+    "source_type": "rss",
+    "title": "Computing graph dominators",
+    "url": "https://neugierig.org/software/blog/2026/08/dominators.html",
+    "content": "<p><a href=\"https://lobste.rs/s/fliek2/computing_graph_dominators\">Comments</a></p>",
+    "author": "neugierig.org via fanf",
+    "published_at": "2026-08-14T10:00:04Z",
+    "fetched_at": "2026-08-14T23:14:21.942566Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "compsci"
+      ],
+      "title_zh": "计算图支配节点的算法解析",
+      "detailed_summary_zh": "一篇技术博客文章深入探讨了计算图支配节点（dominators）的问题，详细介绍了其算法和实现。该文章发表在neugierig.org，并附有Lobsters社区讨论链接。 支配节点是编译器分析和程序优化中的核心概念，尤其是在计算静态单赋值（SSA）形式时至关重要。理解其计算方法有助于开发者优化编译器设计，提高程序分析工具的效率和准确性。 文章可能涵盖了如Lengauer-Tarjan算法等近线性时间算法，以及简单的迭代算法。文章还引用了Cooper等人提出的“简单快速支配算法”，并提供了对控制流图的实际应用示例。",
+      "background_zh": "在图中，如果从起始节点到节点n的所有路径都经过节点d，则称节点d支配节点n。立即支配节点是距离节点n最近的支配节点，支配树则将这些关系组织成树结构。支配节点在编译器中被广泛用于计算SSA形式，是程序分析的基础工具之一。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dominator_(graph_theory)",
+          "title": "Dominator (graph theory) - Wikipedia"
+        },
+        {
+          "url": "https://tanujkhattar.wordpress.com/2016/01/11/dominator-tree-of-a-directed-graph/",
+          "title": "Dominator Tree of a Directed Graph – Algorithm Tutorials"
+        }
+      ],
+      "detailed_summary": "一篇技术博客文章深入探讨了计算图支配节点（dominators）的问题，详细介绍了其算法和实现。该文章发表在neugierig.org，并附有Lobsters社区讨论链接。 支配节点是编译器分析和程序优化中的核心概念，尤其是在计算静态单赋值（SSA）形式时至关重要。理解其计算方法有助于开发者优化编译器设计，提高程序分析工具的效率和准确性。 文章可能涵盖了如Lengauer-Tarjan算法等近线性时间算法，以及简单的迭代算法。文章还引用了Cooper等人提出的“简单快速支配算法”，并提供了对控制流图的实际应用示例。",
+      "background": "在图中，如果从起始节点到节点n的所有路径都经过节点d，则称节点d支配节点n。立即支配节点是距离节点n最近的支配节点，支配树则将这些关系组织成树结构。支配节点在编译器中被广泛用于计算SSA形式，是程序分析的基础工具之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The topic is a technical deep-dive into graph dominators, which is highly relevant to compilers and program analysis. The link to community comments on Lobsters indicates engagement, and the source blog is reputable. Without full content, a moderate-high score reflects likely substance and interest.",
+    "ai_summary": "An article discussing the computation of graph dominators, a fundamental concept in compiler analysis and graph algorithms.",
+    "ai_tags": [
+      "graph-algorithms",
+      "compilers",
+      "program-analysis",
+      "dominators",
+      "programming"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:3eae5d47788af78d",
+    "source_type": "rss",
+    "title": "Find out who’s tracking you with DecryptAds",
+    "url": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+    "content": "<p><a href=\"https://lobste.rs/s/dfel1t/find_out_who_s_tracking_you_with\">Comments</a></p>",
+    "author": "krebsonsecurity.com via darleaf",
+    "published_at": "2026-08-14T16:57:36Z",
+    "fetched_at": "2026-08-14T23:14:21.942630Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "privacy",
+        "web"
+      ],
+      "title_zh": "新服务DecryptAds助你识别谁在跟踪你",
+      "detailed_summary_zh": "Krebs on Security报道了名为DecryptAds的新服务，该服务旨在帮助用户发现并揭示哪些广告科技公司正在跟踪他们的在线行为。根据官方信息，DecryptAds是一个广告技术透明度平台，通过映射程序化广告供应链来追踪隐藏的数据流动。 在当前数字广告行业缺乏透明度的背景下，该工具为普通用户和研究人员提供了一种可操作的途径，以了解自己的数据如何被收集和共享。它有望推动行业问责，并帮助公众做出更明智的隐私决策。 DecryptAds利用公开文件（如ads.txt、sellers.json）分析程序化广告供应路径，可识别无效供应并发布基于证据的发现。其功能包括自动调查、发布商与广告系统画像、地理风险分析和数据经纪人指纹等。",
+      "background_zh": "程序化广告是一种通过自动化系统买卖广告的机制，涉及多个中间商，导致数据流动复杂且不透明。ads.txt和sellers.json是行业标准文件，用于声明授权的卖家，但普通用户很难解读这些信息。DecryptAds通过分析这些公开数据，帮助公众理解谁在跟踪自己以及数据如何流转。",
+      "sources": [
+        {
+          "url": "https://decryptads.com/",
+          "title": "DecryptAds — From Hidden Flows to Public Insight"
+        },
+        {
+          "url": "https://decryptads.com/blog/posts/ad-tech-transparency-launch.html",
+          "title": "The Ad Tech Industry is a Non-Transparent Mess, and DecryptAds Aims to Do Something About It — DecryptAds"
+        }
+      ],
+      "detailed_summary": "Krebs on Security报道了名为DecryptAds的新服务，该服务旨在帮助用户发现并揭示哪些广告科技公司正在跟踪他们的在线行为。根据官方信息，DecryptAds是一个广告技术透明度平台，通过映射程序化广告供应链来追踪隐藏的数据流动。 在当前数字广告行业缺乏透明度的背景下，该工具为普通用户和研究人员提供了一种可操作的途径，以了解自己的数据如何被收集和共享。它有望推动行业问责，并帮助公众做出更明智的隐私决策。 DecryptAds利用公开文件（如ads.txt、sellers.json）分析程序化广告供应路径，可识别无效供应并发布基于证据的发现。其功能包括自动调查、发布商与广告系统画像、地理风险分析和数据经纪人指纹等。",
+      "background": "程序化广告是一种通过自动化系统买卖广告的机制，涉及多个中间商，导致数据流动复杂且不透明。ads.txt和sellers.json是行业标准文件，用于声明授权的卖家，但普通用户很难解读这些信息。DecryptAds通过分析这些公开数据，帮助公众理解谁在跟踪自己以及数据如何流转。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Practical privacy-focused tool coverage with security relevance; likely useful for the community despite lacking deep technical detail in the snippet.",
+    "ai_summary": "Krebs on Security reports on DecryptAds, a new service to discover and reveal who is tracking you online.",
+    "ai_tags": [
+      "privacy",
+      "security",
+      "tracking",
+      "tools"
+    ]
+  },
+  {
+    "id": "rss:newsletter.pragmaticengineer.com_feed:f31f52960c1870d3",
+    "source_type": "rss",
+    "title": "The Pulse: Meta’s self-inflicted resignation-wave",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-metas-self-inflicted-resignation",
+    "content": "The social media giant is offering $1M+ retainer equity grants to staff who are leaving: and even this is not effective. Also: is Grok Bot the &#8220;OpenClaw moment&#8221; for managed AI agents?",
+    "author": "Gergely Orosz",
+    "published_at": "2026-08-14T16:55:55Z",
+    "fetched_at": "2026-08-14T23:14:22.606121Z",
+    "metadata": {
+      "feed_name": "The Pragmatic Engineer",
+      "category": "",
+      "tags": [],
+      "title_zh": "Meta巨额留任股权失效，Grok Bot或成AI代理转折点",
+      "detailed_summary_zh": "Meta向计划离职的员工发放超过100万美元的留任股权奖励，但效果仍然不佳。与此同时，文章提出Grok Bot是否代表着托管AI代理的“OpenClaw时刻”。 这一现象凸显大型科技公司在人才流失面前的无奈，高额股权激励已难以挽留关键员工。若托管AI代理迎来类似OpenClaw的爆发，可能重塑企业级AI应用格局，影响广泛的技术从业者和企业决策者。 留任股权奖励以RSU或PSU等形式发放，通常设有归属条件，但Meta的举措仍未能阻止离职潮。OpenClaw由Peter Steinberger开发，最初以Warelay名称发布，衍生自Clawd（现Molty），被许多人视为AI个人助理的“iPhone时刻”。",
+      "background_zh": "OpenClaw是一个基于AI的虚拟助理，由开发者Peter Steinberger创造，于2025年11月首次发布，后迅速成为现象级产品，让用户感受到AI改变技术使用方式的临界点。托管AI代理（如Claude Managed Agents）则提供完整的托管环境，让AI模型能自主执行文件读取、工具调用等任务，无需开发者自行构建智能体循环。Meta的留任股权属于股权刷新（equity refresh），旨在通过额外股票奖励激励员工继续留在公司。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OpenClaw",
+          "title": "OpenClaw - Wikipedia"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+          "title": "Claude Managed Agents overview - Claude Platform Docs"
+        },
+        {
+          "url": "https://carta.com/learn/equity/compensation/equity-refresh/",
+          "title": "Equity Refresh Grants: How to Incentivize & Retain Talent"
+        }
+      ],
+      "detailed_summary": "Meta向计划离职的员工发放超过100万美元的留任股权奖励，但效果仍然不佳。与此同时，文章提出Grok Bot是否代表着托管AI代理的“OpenClaw时刻”。 这一现象凸显大型科技公司在人才流失面前的无奈，高额股权激励已难以挽留关键员工。若托管AI代理迎来类似OpenClaw的爆发，可能重塑企业级AI应用格局，影响广泛的技术从业者和企业决策者。 留任股权奖励以RSU或PSU等形式发放，通常设有归属条件，但Meta的举措仍未能阻止离职潮。OpenClaw由Peter Steinberger开发，最初以Warelay名称发布，衍生自Clawd（现Molty），被许多人视为AI个人助理的“iPhone时刻”。",
+      "background": "OpenClaw是一个基于AI的虚拟助理，由开发者Peter Steinberger创造，于2025年11月首次发布，后迅速成为现象级产品，让用户感受到AI改变技术使用方式的临界点。托管AI代理（如Claude Managed Agents）则提供完整的托管环境，让AI模型能自主执行文件读取、工具调用等任务，无需开发者自行构建智能体循环。Meta的留任股权属于股权刷新（equity refresh），旨在通过额外股票奖励激励员工继续留在公司。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful commentary on Meta's retention struggles and an interesting parallel for AI agents, with practical industry relevance. Discussion quality not assessed as no comments provided.",
+    "ai_summary": "The Pragmatic Engineer newsletter examines Meta's ineffective $1M+ retention equity grants amidst a resignation wave and poses whether Grok Bot represents a pivotal moment for managed AI agents.",
+    "ai_tags": [
+      "Meta",
+      "retention",
+      "equity",
+      "AI agents",
+      "tech industry"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:aa5d2f437488ee22",
+    "source_type": "rss",
+    "title": "Briefing Chat: Anthropic rolls out new AI watermark — will it make a difference?",
+    "url": "https://www.nature.com/articles/d41586-026-02562-w",
+    "content": "<p>Nature, Published online: 14 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02562-w\">doi:10.1038/d41586-026-02562-w</a></p>Nature staff discuss what flagging AI content may mean for research integrity — plus, how people from different cultural backgrounds have the same ‘tickle hotspots’ on the body.",
+    "author": "Elizabeth Gibney",
+    "published_at": "2026-08-14T00:00:00Z",
+    "fetched_at": "2026-08-14T23:14:27.232405Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "Anthropic推AI水印，守护科研诚信？",
+      "detailed_summary_zh": "据《自然》2026年8月14日报道，Anthropic推出了新的AI水印技术，用于标记AI生成内容。该技术旨在帮助识别和追踪AI生成的文本，以维护研究诚信。 这项技术可能对学术出版和科研诚信产生重要影响，帮助区分人类与AI生成的内容，防止AI辅助写作被滥用。但水印的有效性和可靠性仍存争议，可能影响AI在科研中的广泛应用。 水印技术通过在文本中嵌入不易察觉的标识来追踪来源，但Anthropic的具体实现细节尚未公开。此前类似方法如SynthID-Text已显示可扩展性，但水印设计存在鲁棒性与生成质量之间的权衡。",
+      "background_zh": "AI水印是一种通过嵌入不可见标识来识别AI生成内容的技术，常用于防止深度伪造和学术不端。2024年《自然》曾报道SynthID-Text，一种可扩展的水印算法，通过集成推测采样在保持生成质量的同时实现高检测率。水印方法通常通过扰动输出分布来嵌入信息，但会面临与生成质量的权衡。",
+      "sources": [
+        {
+          "url": "https://blog.ml.cmu.edu/2024/09/27/no-free-lunch-in-llm-watermarking-trade-offs-in-watermarking-design-choices/",
+          "title": "No Free Lunch in LLM Watermarking: Trade-offs in Watermarking Design Choices – Machine Learning Blog | ML@CMU | Carnegie Mellon University"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-024-08025-4",
+          "title": "Scalable watermarking for identifying large language model outputs | Nature"
+        }
+      ],
+      "detailed_summary": "据《自然》2026年8月14日报道，Anthropic推出了新的AI水印技术，用于标记AI生成内容。该技术旨在帮助识别和追踪AI生成的文本，以维护研究诚信。 这项技术可能对学术出版和科研诚信产生重要影响，帮助区分人类与AI生成的内容，防止AI辅助写作被滥用。但水印的有效性和可靠性仍存争议，可能影响AI在科研中的广泛应用。 水印技术通过在文本中嵌入不易察觉的标识来追踪来源，但Anthropic的具体实现细节尚未公开。此前类似方法如SynthID-Text已显示可扩展性，但水印设计存在鲁棒性与生成质量之间的权衡。",
+      "background": "AI水印是一种通过嵌入不可见标识来识别AI生成内容的技术，常用于防止深度伪造和学术不端。2024年《自然》曾报道SynthID-Text，一种可扩展的水印算法，通过集成推测采样在保持生成质量的同时实现高检测率。水印方法通常通过扰动输出分布来嵌入信息，但会面临与生成质量的权衡。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important news from a reputable source discussing a significant AI development (Anthropic's watermark) with implications for research integrity. Not groundbreaking, but high relevance to AI policy and academic publishing. No community discussion provided to assess.",
+    "ai_summary": "Nature's briefing discusses Anthropic's new AI watermark and questions its effectiveness for research integrity.",
+    "ai_tags": [
+      "AI watermark",
+      "Anthropic",
+      "research integrity",
+      "AI detection",
+      "policy"
+    ]
+  }
+]
