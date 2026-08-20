@@ -1,0 +1,916 @@
+[
+  {
+    "id": "hackernews:story:49374269",
+    "source_type": "hackernews",
+    "title": "Malicious Rust crate Arrayref runs a build-time payload",
+    "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+    "content": "<a href=\"https:&#x2F;&#x2F;blog.rust-lang.org&#x2F;2026&#x2F;08&#x2F;20&#x2F;supply-chain-attack-on-arrayref&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;blog.rust-lang.org&#x2F;2026&#x2F;08&#x2F;20&#x2F;supply-chain-attack-on...</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;rustsec&#x2F;advisory-db&#x2F;issues&#x2F;3161\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rustsec&#x2F;advisory-db&#x2F;issues&#x2F;3161</a>\n\n\n--- Top Comments ---\n\n[cube00]: GitHub really needs something finer-grain then just pretending the repo never existed during these incidents. [1] The bad package version has also just disappeared from crates.io [2] with no indication its been yanked. There&#x27;s no security advisory there either [3] &quot;No advisories found for this crate.&quot; I feel crates.io was unprepared for a security incident like this since they&#x27;re managing the response [4] [1]:  https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260820145918...\n\n[cosmic_cheese]: I think we should be taking a more “batteries included” approach to language and library design. The entire reason we’re in this mess is because we’ve decided it’s ok or maybe even preferable if stdlibs are rail thin, rendering base languages near-unusable. I can very easily build a highly functional, pleasant to use Apple platform app with 5 or fewer top level dependencies. In many cases, I reach for between 0-2 total. There’s no reason why this can’t be replicated elsewhere. The key is to m...\n\n[ramimac]: Thread on the post from main rust blog:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49372853  Direct post link:  https:&#x2F;&#x2F;blog.rust-lang.org&#x2F;2026&#x2F;08&#x2F;20&#x2F;supply-chain-attack-on...  Initial report:  https:&#x2F;&#x2F;github.com&#x2F;rustsec&#x2F;advisory-db&#x2F;issues&#x2F;3161  Other vendor posts: *  https:&#x2F;&#x2F;www.stepsecurity.io&#x2F;blog&#x2F;arrayref-rust-crate-supply-...  *  https:&#x2F;&#x2F;research.jfrog.com&#x2F;post&#x2F;arrayref-proc-macr...\n\n[jakubadamw]: Cargo desperately needs sandboxing for build.rs scripts. It’s been attempted before, but didn’t go very far¹. ¹  https:&#x2F;&#x2F;rust-lang.github.io&#x2F;goals&#x2F;2024h2&#x2F;sandboxed-build-scr...\n\n[hbbio]: Rust suffers from the same faults as the JS ecosystem. Any significant crate imports hundreds if not thousands of dependencies. The probability that one of the authors gets targeted by AI-assisted attacks is just too high. Also most of these dependencies provide a breadth of features that the end package does probably not need.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/dns8du/supply_chain_attack_on_arrayref\">Comments</a></p>",
+    "author": "abhisek",
+    "published_at": "2026-08-20T13:23:12Z",
+    "fetched_at": "2026-08-20T23:18:31.184442Z",
+    "metadata": {
+      "score": 356,
+      "descendants": 349,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49374269",
+      "comment_count": 5,
+      "title_zh": "恶意 Rust crate 'arrayref' 在编译时执行载荷",
+      "detailed_summary_zh": "2026年8月20日，恶意 Rust crate 'arrayref' 通过构建脚本在编译时下载并执行远程载荷，影响 Linux、macOS 和 Windows 平台。攻击者还利用合法发布者账号同时污染了另外两个 crate，构成一次典型的构建时供应链攻击。 此次事件再次凸显 Rust 生态系统的供应链安全风险：开发者一旦依赖被恶意提权的 crate，其开发机和 CI 系统都可能在构建时被远程执行代码。它引发了关于 crates.io 应急响应、安全公告流程以及 Cargo 构建脚本沙箱化的广泛讨论。 攻击利用 David Roundy 的 crates.io 发布者账号，在 'arrayref' 等三个 crate 中植入恶意 proc-macro1 构建脚本。安全团队还恢复了面向 Linux x86-64、Windows x86-64 和 macOS ARM64 的三个阶段二后门载荷。",
+      "background_zh": "Rust crate 在编译时可运行 build.rs 构建脚本，proc-macro 类 crate 也会在编译期执行代码，这使 crates.io 成为供应链攻击的高价值目标。RustSec 咨询数据库（RustSec Advisory Database）由 Rust 安全代码工作组维护，用于发布针对 crates.io 上 crate 的安全公告，但该事件中相关 crate 未能及时获得公告。",
+      "community_discussion_zh": "社区普遍批评 GitHub 和 crates.io 的事件响应：恶意版本从 crates.io 消失但没有明确标记 yanked，也没有安全公告，说明平台对安全事件准备不足。也有开发者呼吁 Cargo 为 build.rs 提供沙箱机制，并认为 Rust 依赖过多导致与 JS 生态存在类似弱点；另一些人则主张标准库应更'电池内置'化，以减少第三方依赖。",
+      "sources": [
+        {
+          "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+          "title": "Rust Supply Chain Attack Puts Build - Time Malware in Crates with..."
+        },
+        {
+          "url": "https://socket.dev/blog/popular-rust-crates-compromised",
+          "title": "Popular Rust Crates Compromised in Build - Time Supply Chain Attack"
+        },
+        {
+          "url": "https://rustsec.org/",
+          "title": "About RustSec › RustSec Advisory Database"
+        }
+      ],
+      "detailed_summary": "2026年8月20日，恶意 Rust crate 'arrayref' 通过构建脚本在编译时下载并执行远程载荷，影响 Linux、macOS 和 Windows 平台。攻击者还利用合法发布者账号同时污染了另外两个 crate，构成一次典型的构建时供应链攻击。 此次事件再次凸显 Rust 生态系统的供应链安全风险：开发者一旦依赖被恶意提权的 crate，其开发机和 CI 系统都可能在构建时被远程执行代码。它引发了关于 crates.io 应急响应、安全公告流程以及 Cargo 构建脚本沙箱化的广泛讨论。 攻击利用 David Roundy 的 crates.io 发布者账号，在 'arrayref' 等三个 crate 中植入恶意 proc-macro1 构建脚本。安全团队还恢复了面向 Linux x86-64、Windows x86-64 和 macOS ARM64 的三个阶段二后门载荷。",
+      "background": "Rust crate 在编译时可运行 build.rs 构建脚本，proc-macro 类 crate 也会在编译期执行代码，这使 crates.io 成为供应链攻击的高价值目标。RustSec 咨询数据库（RustSec Advisory Database）由 Rust 安全代码工作组维护，用于发布针对 crates.io 上 crate 的安全公告，但该事件中相关 crate 未能及时获得公告。",
+      "community_discussion": "社区普遍批评 GitHub 和 crates.io 的事件响应：恶意版本从 crates.io 消失但没有明确标记 yanked，也没有安全公告，说明平台对安全事件准备不足。也有开发者呼吁 Cargo 为 build.rs 提供沙箱机制，并认为 Rust 依赖过多导致与 JS 生态存在类似弱点；另一些人则主张标准库应更'电池内置'化，以减少第三方依赖。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "This is a significant supply-chain security incident affecting the Rust ecosystem, with a malicious crate executing a build-time payload. It has very high engagement (356 points, 349 comments) and substantive community discussion covering crates.io incident response, security advisories, and broader ecosystem design implications.",
+    "ai_summary": "Malicious Rust crate arrayref runs a build-time payload, sparking extensive community debate on supply-chain security and ecosystem response.",
+    "ai_tags": [
+      "rust",
+      "supply-chain-security",
+      "malware",
+      "crates.io",
+      "security"
+    ]
+  },
+  {
+    "id": "hackernews:story:49376265",
+    "source_type": "hackernews",
+    "title": "Linux 7.2",
+    "url": "https://www.igalia.com/2026/08/19/Linux-72-Released.html",
+    "content": "\n--- Top Comments ---\n\n[mort96]: Does anyone understand how HDMI 2.1 support is now no problem? I remember that 2.1 support in AMD&#x27;s open source driver was blocked by the HDMI forum, but I haven&#x27;t heard any news about them unblocking it. What changed?\n\n[yipinwong]: Who is the main audience for this type of content? Genuinely curious because I am not a serious Linux user. What type of info do you get out of this for those who read this?\nSo i can glance your insight?\n\n[sbinnee]: I clicked this one with no hype. I am now exited to update the kernel of my raspberry pi 4.\n\n[OtomotO]: Okay, so ELI 5 why I would now use HDMI instead of DP? All my monitors support DP, my GPU has more ports for DP ... I am genuinely interested as I&#x27;ve never even considered using HDMI for my Desktop.\n\n[hndbwksam7]: Great context, thanks for adding it",
+    "author": "mariuz",
+    "published_at": "2026-08-20T15:46:18Z",
+    "fetched_at": "2026-08-20T23:18:31.184536Z",
+    "metadata": {
+      "score": 178,
+      "descendants": 58,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49376265",
+      "comment_count": 5,
+      "title_zh": "Linux 7.2 发布：新增 HDMI 2.1 等硬件支持",
+      "detailed_summary_zh": "Linux 7.2 内核正式发布，带来多项新特性和硬件支持改进。社区讨论焦点集中在 HDMI 2.1 支持以及其他技术变化上。 作为开源软件领域的重大里程碑，该版本对硬件兼容性和系统性能有重要影响，将影响广泛的 Linux 用户和开发者。 社区用户对 HDMI 2.1 支持如何在 AMD 开源驱动中实现表示疑问，因为此前该功能受 HDMI 论坛限制。其他讨论涉及内容受众以及 HDMI 与 DisplayPort 的对比。",
+      "background_zh": "HDMI 2.1 是一种高速多媒体接口标准，支持 8K 分辨率、动态 HDR 和 eARC 等功能。Linux 内核是操作系统的核心组件，负责管理硬件资源，新版本通常会加入对新硬件的支持。",
+      "community_discussion_zh": "评论中，用户 mort96 询问 HDMI 2.1 支持为何不再受阻碍；OtomotO 询问桌面用户为何选择 HDMI 而非 DisplayPort；sbinnee 表示期待更新树莓派 4 的内核。整体讨论气氛积极，但也不乏技术疑问。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/HDMI_2.1",
+          "title": "HDMI 2.1"
+        },
+        {
+          "url": "https://grokipedia.com/page/HDMI_21",
+          "title": "HDMI 2.1"
+        }
+      ],
+      "detailed_summary": "Linux 7.2 内核正式发布，带来多项新特性和硬件支持改进。社区讨论焦点集中在 HDMI 2.1 支持以及其他技术变化上。 作为开源软件领域的重大里程碑，该版本对硬件兼容性和系统性能有重要影响，将影响广泛的 Linux 用户和开发者。 社区用户对 HDMI 2.1 支持如何在 AMD 开源驱动中实现表示疑问，因为此前该功能受 HDMI 论坛限制。其他讨论涉及内容受众以及 HDMI 与 DisplayPort 的对比。",
+      "background": "HDMI 2.1 是一种高速多媒体接口标准，支持 8K 分辨率、动态 HDR 和 eARC 等功能。Linux 内核是操作系统的核心组件，负责管理硬件资源，新版本通常会加入对新硬件的支持。",
+      "community_discussion": "评论中，用户 mort96 询问 HDMI 2.1 支持为何不再受阻碍；OtomotO 询问桌面用户为何选择 HDMI 而非 DisplayPort；sbinnee 表示期待更新树莓派 4 的内核。整体讨论气氛积极，但也不乏技术疑问。"
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major Linux kernel release with significant community interest and discussion (58 comments, 178 points). The release is a major milestone in open-source software, with technical implications for hardware support and performance. Community comments provide valuable context and technical discussion.",
+    "ai_summary": "Linux 7.2 is released, bringing new features and hardware support, with notable community discussion around HDMI 2.1 and other technical changes.",
+    "ai_tags": [
+      "linux",
+      "kernel",
+      "open-source",
+      "release",
+      "hardware"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:7d6292bc84d55261",
+    "source_type": "rss",
+    "title": "Bun 1.4",
+    "url": "https://bun.com/blog/bun-v1.4",
+    "content": "<p><a href=\"https://lobste.rs/s/eesu8d/bun_1_4\">Comments</a></p>",
+    "author": "bun.com via simonw",
+    "published_at": "2026-08-20T14:37:52Z",
+    "fetched_at": "2026-08-20T23:18:31.056979Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "javascript",
+        "vibecoding"
+      ],
+      "title_zh": "Bun 1.4 发布：JavaScript 运行时迎来主版本更新",
+      "detailed_summary_zh": "Bun 1.4 正式发布，这是这一 JavaScript 运行时与工具链的重要主版本更新。新版本带来了新功能和多项改进，进一步强化 Bun 作为一体化开发工具的能力。 Bun 正在成为 Node.js 的有力替代者，集运行时、打包器、转译器、任务运行器和 npm 客户端于一身，主版本更新会影响大量 JavaScript/TypeScript 开发者的日常工具链。其性能优势与一体化设计有望继续推动 JavaScript 生态向更快的开发体验演进。 Bun 内置打包器、转译器、测试运行器和 Node.js 兼容的包管理器，开发时无需依赖大量 node_modules。由于本次公告的详细更新日志有限，具体的新特性与改动需以官方发布说明为准。",
+      "background_zh": "Bun 是一个专为速度设计的 JavaScript 运行时，提供原生打包、转译、任务运行和 npm 客户端功能，目标是成为 Node.js 的替代品。它通过将多种工具整合到单一命令行工具中，简化项目依赖和开发流程。",
+      "sources": [
+        {
+          "url": "https://bun.sh/?ref=cassey.dev",
+          "title": "Bun — A fast all-in-one JavaScript runtime"
+        },
+        {
+          "url": "https://github.com/oven-sh/bun",
+          "title": "GitHub - oven-sh/ bun : Incredibly fast JavaScript runtime , bundler..."
+        }
+      ],
+      "detailed_summary": "Bun 1.4 正式发布，这是这一 JavaScript 运行时与工具链的重要主版本更新。新版本带来了新功能和多项改进，进一步强化 Bun 作为一体化开发工具的能力。 Bun 正在成为 Node.js 的有力替代者，集运行时、打包器、转译器、任务运行器和 npm 客户端于一身，主版本更新会影响大量 JavaScript/TypeScript 开发者的日常工具链。其性能优势与一体化设计有望继续推动 JavaScript 生态向更快的开发体验演进。 Bun 内置打包器、转译器、测试运行器和 Node.js 兼容的包管理器，开发时无需依赖大量 node_modules。由于本次公告的详细更新日志有限，具体的新特性与改动需以官方发布说明为准。",
+      "background": "Bun 是一个专为速度设计的 JavaScript 运行时，提供原生打包、转译、任务运行和 npm 客户端功能，目标是成为 Node.js 的替代品。它通过将多种工具整合到单一命令行工具中，简化项目依赖和开发流程。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major version release of a widely-used JavaScript runtime/toolkit, indicating significant updates; community discussion on Lobsters adds value and validation.",
+    "ai_summary": "Bun 1.4 is released, bringing new features and improvements to the JavaScript runtime.",
+    "ai_tags": [
+      "bun",
+      "javascript",
+      "runtime",
+      "release",
+      "tooling"
+    ]
+  },
+  {
+    "id": "hackernews:story:49378957",
+    "source_type": "hackernews",
+    "title": "The August 17 outage, and the work ahead",
+    "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+    "content": "\n--- Top Comments ---\n\n[cube00]: &gt; Errors in those services triggered a client-side retry loop that increased traffic during recovery Symptomic of a wider trend to avoid showing the user any error at all costs, even if that means they sit watching a spinner for 7 hours. &gt; Delayed replies to a single internal endpoint triggered a latent retry bug in VS Code that amplified traffic by approximately 10x and caused delayed recovery for the Copilot Token Service. The detailed root analysis tries to pass this off as a &quot;b...\n\n[altcognito]: Distributing across different services wouldn&#x27;t be a bad idea.... I still can&#x27;t help but feel a little grateful for what they do across the free side of things. I know it isn&#x27;t altruism, and I know nobody needs to defend a billion dollar corporation but... Name another service that does what they do for FREE (and no ads) at this scale. It isn&#x27;t easy. Wikipedia has probably more usage, but is a simpler endeavor. (except the moderation part, that&#x27;s just amazing) Open St...\n\n[blakesterz]: &quot;Since April, monthly commits have grown from 1.4 billion to 2.9 billion. &quot;\n  \nWow, that is some incredible growth in a really short time.\n\n[aesthetics1]: &gt; Since April, monthly commits have grown from 1.4 billion to 2.9 billion Bonkers. You can tell the entire industry is in a &quot;productivity panic&quot; and here&#x27;s more proof. There&#x27;s a velocity zealot crying tears of joy somewhere.\n\n[Quarrelsome]: Are retries bad?  \nThese are the sort of reason they make me generally uncomfortable. I appreciate they might be useful in scenarios where connectivity is inherently problematic (e.g. mobile connectivity), but for a super connected and very desktoppy service I&#x27;d rather not retry much, if at all. As it obscures it when stuff has genuinely gone wrong, and this worst case scenario is tragic. I feel like I&#x27;m mildly stupid in trying to out retries as heresy but I&#x27;m not sure.",
+    "author": "0xedb",
+    "published_at": "2026-08-20T19:22:24Z",
+    "fetched_at": "2026-08-20T23:18:31.184275Z",
+    "metadata": {
+      "score": 214,
+      "descendants": 254,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49378957",
+      "comment_count": 5,
+      "title_zh": "GitHub 8月17日宕机：重试风暴与 VS Code 潜在缺陷引发",
+      "detailed_summary_zh": "GitHub 于 8 月 17 日发生多小时的严重宕机，根因是内部服务错误触发客户端重试循环，且 VS Code 中潜伏的重试缺陷将流量放大约 10 倍，导致 Copilot Token Service 恢复延迟。 此次事件凸显了分布式系统中重试策略和客户端错误处理设计的脆弱性，对依赖 GitHub 和 Copilot 的开发者及团队产生了直接影响。它也为业界提供了关于如何避免类似级联故障的重要经验教训，尤其是需要引入熔断、退避等机制。 据博客文章和社区讨论，延迟响应单个内部端点便触发了 VS Code 中潜伏的重试缺陷，使流量放大近 10 倍，并推迟了 Copilot Token Service 的恢复。这并非传统意义上的级联故障，而是重试风暴——大量重复请求压垮依赖服务，提示在设计重试策略时应设置预算和熔断机制。",
+      "background_zh": "重试风暴（retry storm）是指在服务出现错误或超时后，客户端或服务端不断重试请求，导致流量急剧放大，最终压垮下游系统的现象。熔断器（circuit breaker）模式是常用的防护手段，它可以主动检测服务健康状态，在故障时快速失败而不是继续重试，从而避免级联故障。GitHub 的这次事件正是一个具体案例，说明即使有完善的分布式基础设施，重试策略和客户端行为若缺乏约束，仍可能引发大规模宕机。",
+      "community_discussion_zh": "社区评论对 GitHub 的透明度表示认可，但普遍对重试策略提出质疑：有观点批评客户端为‘不惜一切代价避免显示错误’而无限重试，导致用户长时间面对加载动画；也有人认为在超级互联的桌面场景中应尽量减少重试，以免掩盖真实故障。此外，评论还提到 GitHub 免费服务规模可观，月度提交量从 4 月的 14 亿涨至 29 亿，显示出行业整体的‘效率焦虑’。",
+      "sources": [
+        {
+          "url": "https://medium.com/@Rajjj/retry-storm-how-a-single-user-crashed-30-ecs-tasks-at-production-98c84c17331c",
+          "title": "Retry Storm : How A Single User Crashed 30 ECS Tasks At... | Medium"
+        },
+        {
+          "url": "https://dash.fi/blog/retry-storm",
+          "title": "The Operational Waste Created by Retry Storms - Dash.fi..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Circuit_breaker_pattern",
+          "title": "Circuit breaker pattern"
+        }
+      ],
+      "detailed_summary": "GitHub 于 8 月 17 日发生多小时的严重宕机，根因是内部服务错误触发客户端重试循环，且 VS Code 中潜伏的重试缺陷将流量放大约 10 倍，导致 Copilot Token Service 恢复延迟。 此次事件凸显了分布式系统中重试策略和客户端错误处理设计的脆弱性，对依赖 GitHub 和 Copilot 的开发者及团队产生了直接影响。它也为业界提供了关于如何避免类似级联故障的重要经验教训，尤其是需要引入熔断、退避等机制。 据博客文章和社区讨论，延迟响应单个内部端点便触发了 VS Code 中潜伏的重试缺陷，使流量放大近 10 倍，并推迟了 Copilot Token Service 的恢复。这并非传统意义上的级联故障，而是重试风暴——大量重复请求压垮依赖服务，提示在设计重试策略时应设置预算和熔断机制。",
+      "background": "重试风暴（retry storm）是指在服务出现错误或超时后，客户端或服务端不断重试请求，导致流量急剧放大，最终压垮下游系统的现象。熔断器（circuit breaker）模式是常用的防护手段，它可以主动检测服务健康状态，在故障时快速失败而不是继续重试，从而避免级联故障。GitHub 的这次事件正是一个具体案例，说明即使有完善的分布式基础设施，重试策略和客户端行为若缺乏约束，仍可能引发大规模宕机。",
+      "community_discussion": "社区评论对 GitHub 的透明度表示认可，但普遍对重试策略提出质疑：有观点批评客户端为‘不惜一切代价避免显示错误’而无限重试，导致用户长时间面对加载动画；也有人认为在超级互联的桌面场景中应尽量减少重试，以免掩盖真实故障。此外，评论还提到 GitHub 免费服务规模可观，月度提交量从 4 月的 14 亿涨至 29 亿，显示出行业整体的‘效率焦虑’。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Detailed postmortem of a major GitHub outage with community discussion highlighting retry-loop design issues and reliability lessons. High relevance to software engineering and systems reliability.",
+    "ai_summary": "GitHub's August 17 outage was triggered by a retry storm amplified by a latent VS Code bug, leading to a multi-hour disruption and lessons for resilience.",
+    "ai_tags": [
+      "outage",
+      "postmortem",
+      "reliability",
+      "GitHub",
+      "retry-storm"
+    ]
+  },
+  {
+    "id": "hackernews:story:49372583",
+    "source_type": "hackernews",
+    "title": "AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint",
+    "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
+    "content": "\n--- Top Comments ---\n\n[lxgr]: I wish such shenanigans would simply trigger the little speaker icon most browser display on tabs these days. Given that they don&#x27;t (at least in my experience), I&#x27;m assuming &quot;playing silent audio&quot; is a sufficiently common thing for websites to do to have motivated browsers into doing the slightly more complicated thing of actually analyzing audio streams for content... Now I wonder, does this also allow websites to continue running in the background on mobile browsers? Pla...\n\n[mgerdts]: With my previous hearing aid I noticed that visiting a wide variety of web sites would cause a change in the amplification of environmental noise. I always assumed it was doing something with Bluetooth, and probably not for a good reason. This is with an iPhone 13 and one Kirkland&#x2F;phonak hearing aid. I haven’t noticed this recently, but I also now have two newer Phonak hearing aids and a few iOS updates have happened. Maybe the silent Bluetooth shenanigans are less disruptive to my new a...\n\n[patspam]: I noticed in the last few weeks that if I’d recently opened the AliExpress iOS app (ie. it was backgrounded) my car audio would freak out thinking I was giving it an audio command. Killing the AliExpress app immediately fixed the problem. After seeing it happen more than once I assumed it was something dodgey and uninstalled the app.\n\n[tomrittervg]: WebAudio fingerprinting is largely mitigated (in Firefox, potentially other browsers) - I wrote a quick overview that talks about the current distribution of values as well as our more recent efforts.   https:&#x2F;&#x2F;ritter.vg&#x2F;blog-webaudio_alibaba.html\n\n[forestry]: So Apple will remove them from the App Store. Thats their whole argument for their closed system - they’ll protect users from malicious apps. Right?\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/b0olmy/aliexpress_keeps_multipoint_bluetooth\">Comments</a></p>",
+    "author": "emctech",
+    "published_at": "2026-08-20T10:08:52Z",
+    "fetched_at": "2026-08-20T23:18:31.184376Z",
+    "metadata": {
+      "score": 835,
+      "descendants": 277,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49372583",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "browsers",
+        "privacy"
+      ],
+      "merged_sources": [
+        "rss",
+        "hackernews"
+      ],
+      "title_zh": "速卖通静默WebAudio指纹识别干扰蓝牙多点连接",
+      "detailed_summary_zh": "安全研究员发现，阿里速卖通（AliExpress）网站在后台静默运行WebAudio音频指纹识别脚本，该操作会干扰蓝牙多点连接（multipoint），导致用户耳机或助听器的多设备连接出现异常。 该发现意义重大：WebAudio指纹识别是高度稳定的追踪技术，且来自全球访问量巨大的电商平台，影响面极广；同时它干扰蓝牙硬件功能，暴露出网页脚本对本地设备资源的干预能力，引发隐私与可用性双重担忧。 技术上，网站利用Web Audio API播放静默音频，测量设备音频渲染的微小差异以生成唯一标识，且不会触发浏览器标签页的扬声器图标，难以被用户察觉。社区用户还报告，阿里速卖通iOS App在后台运行时也会干扰车载蓝牙和助听器，终止进程即可恢复。",
+      "background_zh": "WebAudio指纹识别是一种浏览器指纹追踪技术，网站通过Web Audio API让设备渲染音频信号，再分析处理链中的硬件差异（如采样率、滤波器响应）来生成唯一标识符，与Canvas、WebGL、字体等信号共同用于识别访客。蓝牙多点连接（Bluetooth Multipoint）允许一副耳机或助听器同时保持与两个设备的连接并自动切换，是常见无线音频功能。当网页持续进行静默音频播放时，系统可能误判音频通道被占用，进而干扰蓝牙链路的正常调度。",
+      "community_discussion_zh": "社区讨论中，多数用户表达了对隐私侵犯的担忧，并分享了类似遭遇：有人访问大量网站时助听器环境音增益变化，有人卸载阿里速卖通App后车载蓝牙即恢复正常。开发者指出Firefox等浏览器已在缓解WebAudio指纹识别，但效果有限；也有人质疑苹果App Store为何没有阻止此类行为。",
+      "sources": [
+        {
+          "url": "https://fingerprint.com/blog/audio-fingerprinting/",
+          "title": "Audio Fingerprinting: What It Is + How It Works with Web API"
+        },
+        {
+          "url": "https://shokz.com/blogs/news/bluetooth-multipoint-vs-dual-audio",
+          "title": "Bluetooth Multipoint vs Dual Audio: What's the Difference?"
+        },
+        {
+          "url": "https://github.com/brave/brave-browser/issues/16179",
+          "title": "Increase range / amount of farbling for WebAudio · Issue #16179..."
+        }
+      ],
+      "detailed_summary": "安全研究员发现，阿里速卖通（AliExpress）网站在后台静默运行WebAudio音频指纹识别脚本，该操作会干扰蓝牙多点连接（multipoint），导致用户耳机或助听器的多设备连接出现异常。 该发现意义重大：WebAudio指纹识别是高度稳定的追踪技术，且来自全球访问量巨大的电商平台，影响面极广；同时它干扰蓝牙硬件功能，暴露出网页脚本对本地设备资源的干预能力，引发隐私与可用性双重担忧。 技术上，网站利用Web Audio API播放静默音频，测量设备音频渲染的微小差异以生成唯一标识，且不会触发浏览器标签页的扬声器图标，难以被用户察觉。社区用户还报告，阿里速卖通iOS App在后台运行时也会干扰车载蓝牙和助听器，终止进程即可恢复。",
+      "background": "WebAudio指纹识别是一种浏览器指纹追踪技术，网站通过Web Audio API让设备渲染音频信号，再分析处理链中的硬件差异（如采样率、滤波器响应）来生成唯一标识符，与Canvas、WebGL、字体等信号共同用于识别访客。蓝牙多点连接（Bluetooth Multipoint）允许一副耳机或助听器同时保持与两个设备的连接并自动切换，是常见无线音频功能。当网页持续进行静默音频播放时，系统可能误判音频通道被占用，进而干扰蓝牙链路的正常调度。",
+      "community_discussion": "社区讨论中，多数用户表达了对隐私侵犯的担忧，并分享了类似遭遇：有人访问大量网站时助听器环境音增益变化，有人卸载阿里速卖通App后车载蓝牙即恢复正常。开发者指出Firefox等浏览器已在缓解WebAudio指纹识别，但效果有限；也有人质疑苹果App Store为何没有阻止此类行为。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value investigative report revealing a novel privacy-invasive fingerprinting technique from a major e-commerce platform, with widespread user impact (breaking Bluetooth multipoint) and strong community engagement (277 comments) discussing technical details and workarounds.",
+    "ai_summary": "AliExpress is found to be running silent WebAudio fingerprinting that interferes with Bluetooth multipoint connections, raising significant privacy and usability concerns.",
+    "ai_tags": [
+      "privacy",
+      "fingerprinting",
+      "web-audio",
+      "bluetooth",
+      "security"
+    ]
+  },
+  {
+    "id": "hackernews:story:49373456",
+    "source_type": "hackernews",
+    "title": "Show HN: I trained a 125M model to autocomplete piano on-device",
+    "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+    "content": "I trained a 125M-parameter transformer to autocomplete piano performances in real time (~108 notes&#x2F;sec on an iPhone 15).<p>The idea is basically GitHub Copilot or Tabnine, except instead of prompting it with code, you prompt it by playing a few notes on a MIDI piano. The model then continues what you played, entirely on-device.<p>The app is free if anyone wants to try it. Happy to answer questions about the model, training, Core ML, or the many things that didn&#x27;t work.\n\n\n--- Top Comments ---\n\n[tom_vidal]: This sort of “autocomplete” is actually fundamental to how classical composers were trained. For anyone interested, I’d highly recommend reading Robert Gjerdingen’s article Gebrauchs-Formulas.  https:&#x2F;&#x2F;www.researchgate.net&#x2F;publication&#x2F;259731561_Gebrauchs...  You can also listen to the transcript of four Russian composers, including Rachmaninoff, playing this pattern recognition and generation game at a dinner party in the late 1800’s:  https:&#x2F;&#x2F;youtu.be&#x2F;PlFPO...\n\n[joshuamerrill]: Classical pianist and software product designer here. I see so much in common with this project and the numerous AI-based UX design tools out there. Whether it&#x27;s music or UI, now that the &quot;generation&quot; portion of the work costs zero, all that remains is taste. And so much of taste comes from exploring and killing off possibilities that turn out to be dead-ends. I love the idea that models like these will help us find the dead ends faster, or even produce a gem here and there. P....\n\n[jasonjmcghee]: I think this is a great project and very HN. Not sure why the comments are so focused on the deliverable- you learned way more and had a much more interesting experience. One think I didn&#x27;t see mentioned in the post- maybe I missed it- how large was the data? How many samples did you use to pretrain and post-train\n\n[goda90]: Reminds me of this project to generate every melody possible algorithmically in order to fight music copyright lawsuits. \n https:&#x2F;&#x2F;allthemusic.info&#x2F;\n\n[karmelapple]: Hearing the start of Für Elise, and then it being taken in an incredibly different direction, is surprisingly disconcerting.",
+    "author": "simedw",
+    "published_at": "2026-08-20T12:04:38Z",
+    "fetched_at": "2026-08-20T23:18:31.184517Z",
+    "metadata": {
+      "score": 469,
+      "descendants": 103,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49373456",
+      "comment_count": 5,
+      "title_zh": "训练125M参数Transformer在iPhone上实时自动续写钢琴曲",
+      "detailed_summary_zh": "开发者训练了一个125M参数的Transformer模型，用户通过MIDI钢琴弹奏几个音符作为提示，模型即可在设备端实时续写整段钢琴曲，在iPhone 15上速度约为每秒108个音符。该项目类似于GitHub Copilot或Tabnine的代码自动补全，但面向音乐创作，且完全在本地运行。 这是Transformer在端侧音乐生成领域的一次新颖应用，展示了设备端推理的可行性和创意工具的潜力。它将生成成本降至接近零，可能推动更多AI辅助创作工具的出现，让人类的品味与探索成为创作中的关键环节。 项目使用约125M参数的小型Transformer对MIDI序列建模，而非原始音频；应用免费提供，支持在iPhone上实时推理。作者在帖子中表示愿意回答关于模型训练、Core ML转换等方面的问题，并提到尝试中遇到了许多失败。",
+      "background_zh": "MIDI（乐器数字接口）是一种让电子乐器、计算机和音频设备之间交换演奏数据的标准协议，记录的是音符的音高、时长和力度等信息，而非具体声音。Core ML是苹果的机器学习框架，允许开发者在iOS设备本地运行模型，无需联网。本项目利用Transformer的自回归能力，根据用户弹奏的前几个音符预测后续乐句，从而实现类似音乐自动补全的功能。",
+      "community_discussion_zh": "评论区整体反响积极，认为这个项目很有Hacker News精神。有用户将这种自动补全与古典作曲家的训练方法联系起来，并推荐了相关阅读；也有音乐领域从业者指出，生成成本归零后，品味和探索试错才是关键。还有人好奇训练数据的规模，并提到听到《致爱丽丝》被引向不同方向时感到既惊喜又不安。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Core_ML",
+          "title": "Core ML"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/MIDI",
+          "title": "MIDI"
+        }
+      ],
+      "detailed_summary": "开发者训练了一个125M参数的Transformer模型，用户通过MIDI钢琴弹奏几个音符作为提示，模型即可在设备端实时续写整段钢琴曲，在iPhone 15上速度约为每秒108个音符。该项目类似于GitHub Copilot或Tabnine的代码自动补全，但面向音乐创作，且完全在本地运行。 这是Transformer在端侧音乐生成领域的一次新颖应用，展示了设备端推理的可行性和创意工具的潜力。它将生成成本降至接近零，可能推动更多AI辅助创作工具的出现，让人类的品味与探索成为创作中的关键环节。 项目使用约125M参数的小型Transformer对MIDI序列建模，而非原始音频；应用免费提供，支持在iPhone上实时推理。作者在帖子中表示愿意回答关于模型训练、Core ML转换等方面的问题，并提到尝试中遇到了许多失败。",
+      "background": "MIDI（乐器数字接口）是一种让电子乐器、计算机和音频设备之间交换演奏数据的标准协议，记录的是音符的音高、时长和力度等信息，而非具体声音。Core ML是苹果的机器学习框架，允许开发者在iOS设备本地运行模型，无需联网。本项目利用Transformer的自回归能力，根据用户弹奏的前几个音符预测后续乐句，从而实现类似音乐自动补全的功能。",
+      "community_discussion": "评论区整体反响积极，认为这个项目很有Hacker News精神。有用户将这种自动补全与古典作曲家的训练方法联系起来，并推荐了相关阅读；也有音乐领域从业者指出，生成成本归零后，品味和探索试错才是关键。还有人好奇训练数据的规模，并提到听到《致爱丽丝》被引向不同方向时感到既惊喜又不安。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical project with strong community engagement (469 points, 103 comments). The on-device music autocomplete is a novel application of transformers, and the discussion adds depth with historical context and thoughtful questions about data and methodology. Not a paradigm shift but a solid, interesting achievement.",
+    "ai_summary": "Trained a 125M-parameter transformer to autocomplete piano performances in real time on an iPhone, demonstrating on-device music generation similar to code autocomplete.",
+    "ai_tags": [
+      "transformer",
+      "music generation",
+      "on-device ML",
+      "Core ML",
+      "creative AI"
+    ]
+  },
+  {
+    "id": "hackernews:story:49374287",
+    "source_type": "hackernews",
+    "title": "DiffusionGemma Technical Report",
+    "url": "https://arxiv.org/abs/2608.00146",
+    "content": "\n--- Top Comments ---\n\n[kamranjon]: Just wanted to share this, I found it was a really nice resource to understand how diffusion Gemma worked:  https:&#x2F;&#x2F;newsletter.maartengrootendorst.com&#x2F;p&#x2F;a-visual-guide-...  The really interesting thing to me was that they didn’t need to train this model from scratch they just used their existing MOE checkpoint: “To convert a decoder-only model (Gemma 4 26B A4B) into a denoiser, we can make use of something it is not directly using when generating tokens, namely the logits ...\n\n[mmastrac]: I re-implemented this one for macOS over the last couple of months:  https:&#x2F;&#x2F;github.com&#x2F;mmastrac&#x2F;diffgemma  I like the model a lot and it&#x27;s fairly good at reasoning. You can also really bend it to your needs. It&#x27;s designed for machines with more compute than memory bandwidth but IMO does really well on metal. I&#x27;ve got it up to ~15tok&#x2F;s on M3-class machines, but I wager there&#x27;s a bunch of perf on M5 that I just don&#x27;t have hardware access to unl...\n\n[mike_hearn]: If these models get good at coding it&#x27;s going to force a rethink of how languages, compilers and test suite runners work. &quot;AI changes everything&quot; is a cliché by this point \nbut I think it&#x27;s actually true. If your model can reason and write code at 1500 toks&#x2F;sec, then you should end up totally bottlenecked on CPU time the entire time a prompt is active. If you aren&#x27;t, then you&#x27;re losing wall time versus competitors. But our whole development stack is based ar...\n\n[anentropic]: Appealing results... do we think there is scope to close the accuracy gap against AR models? or even leverage the &quot;Bidirectional Reasoning and Self-Correction&quot; into an overall advantage?\n\n[jermaustin1]: I&#x27;m very interested in Diffusion text models. The concept of taking noise and adding words starting randomly all over the response, and filling in the noise from there on breaks my brain. I&#x27;m sure I have a fundamental misunderstanding of the technology, though.",
+    "author": "gmays",
+    "published_at": "2026-08-20T13:24:32Z",
+    "fetched_at": "2026-08-20T23:18:31.184671Z",
+    "metadata": {
+      "score": 123,
+      "descendants": 32,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49374287",
+      "comment_count": 5,
+      "title_zh": "DiffusionGemma技术报告：将Gemma MoE改造为扩散语言模型",
+      "detailed_summary_zh": "DiffusionGemma技术报告提出了一种方法，将现有的Gemma MoE（混合专家）模型检查点转换为扩散语言模型，无需从头训练。该模型支持快速并行令牌生成和灵活推理。 这一方法有望显著提升推理速度，尤其适合计算能力强而内存带宽受限的硬件环境。它开创了利用已有检查点构建扩散模型的先例，可能影响未来的LLM架构设计和部署效率。 转换过程利用了Gemma模型在生成令牌时不直接使用的logits，将其作为去噪器的输入。社区成员已在macOS上重新实现该模型，并在M3级机器上达到约15 token/s的生成速度。",
+      "background_zh": "扩散语言模型（DLM）是一种新型文本生成范式，通过从噪声到文本的转换过程生成内容，而不是像自回归模型那样逐词预测。混合专家（MoE）架构则通过多个专家网络提升模型容量，同时控制计算成本。DiffusionGemma将这两者结合，复用了现有Gemma MoE检查点。",
+      "community_discussion_zh": "社区对该技术报告反响积极，有成员分享了可视化图解资源并称赞其复用现有MoE检查点的思路；另一成员在macOS上独立重新实现了DiffusionGemma并测得了不错的性能。也有人对扩散模型与自回归模型之间的准确率差距表示关注，并探讨双向推理与自我纠正能否带来整体优势。",
+      "sources": [
+        {
+          "url": "https://grokipedia.com/page/diffusion-language-model",
+          "title": "Diffusion language model"
+        },
+        {
+          "url": "https://huggingface.co/blog/ProCreations/diffusion-language-model",
+          "title": "Diffusion Language Models : The New Paradigm"
+        },
+        {
+          "url": "https://medium.com/ramses-engineering/not-one-brain-but-many-how-mixture-of-experts-moe-makes-ai-smarter-and-faster-568f41220852",
+          "title": "Not One Brain, But Many: How Mixture of Experts ( MoE )... | Medium"
+        }
+      ],
+      "detailed_summary": "DiffusionGemma技术报告提出了一种方法，将现有的Gemma MoE（混合专家）模型检查点转换为扩散语言模型，无需从头训练。该模型支持快速并行令牌生成和灵活推理。 这一方法有望显著提升推理速度，尤其适合计算能力强而内存带宽受限的硬件环境。它开创了利用已有检查点构建扩散模型的先例，可能影响未来的LLM架构设计和部署效率。 转换过程利用了Gemma模型在生成令牌时不直接使用的logits，将其作为去噪器的输入。社区成员已在macOS上重新实现该模型，并在M3级机器上达到约15 token/s的生成速度。",
+      "background": "扩散语言模型（DLM）是一种新型文本生成范式，通过从噪声到文本的转换过程生成内容，而不是像自回归模型那样逐词预测。混合专家（MoE）架构则通过多个专家网络提升模型容量，同时控制计算成本。DiffusionGemma将这两者结合，复用了现有Gemma MoE检查点。",
+      "community_discussion": "社区对该技术报告反响积极，有成员分享了可视化图解资源并称赞其复用现有MoE检查点的思路；另一成员在macOS上独立重新实现了DiffusionGemma并测得了不错的性能。也有人对扩散模型与自回归模型之间的准确率差距表示关注，并探讨双向推理与自我纠正能否带来整体优势。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Technical report on a notable diffusion-based LLM variant, with active community discussion including a reimplementation and performance insights. High value for ML practitioners, though not a paradigm shift.",
+    "ai_summary": "DiffusionGemma technical report describes converting an existing Gemma MoE checkpoint into a diffusion language model, enabling fast token generation and flexible reasoning.",
+    "ai_tags": [
+      "diffusion-models",
+      "Gemma",
+      "LLM",
+      "technical-report",
+      "machine-learning"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:dcf1bba9134e80be",
+    "source_type": "rss",
+    "title": "Open-sourcing OpenPubkey SSH (OPKSSH): integrating single sign-on with SSH",
+    "url": "https://www.ethanheilman.com/x/33/index.html",
+    "content": "<p><a href=\"https://lobste.rs/s/n7kpm6/open_sourcing_openpubkey_ssh_opkssh\">Comments</a></p>",
+    "author": "ethanheilman.com by EthanHeilman",
+    "published_at": "2026-08-20T15:24:43Z",
+    "fetched_at": "2026-08-20T23:18:31.057124Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "web",
+        "cryptography"
+      ],
+      "title_zh": "开源 OPKSSH：将单点登录与 SSH 集成",
+      "detailed_summary_zh": "项目方宣布开源 OPKSSH（OpenPubkey SSH），该工具将单点登录（SSO）与 SSH 认证集成，使 SSH 登录可以使用现有的身份提供商（如 Google、Okta 等）进行认证，而无需管理单独的 SSH 密钥。 这解决了 SSH 密钥管理的长期痛点，提高安全性和易用性。对系统管理员和开发人员影响重大，因为可以减少密钥分发和轮换的负担，同时提升审计和合规能力。 OPKSSH 不需要修改 SSH 服务器或客户端的代码，只需在 SSH 服务器配置文件中添加两行配置。它基于 OpenPubkey 协议，将 OpenID Connect 身份提供商转变为证书颁发机构，从而将身份绑定到公钥。",
+      "background_zh": "传统 SSH 认证依赖用户管理公钥和私钥，分发和轮换麻烦且容易出错。OpenPubkey 协议利用 OpenID Connect 身份提供商来绑定身份与公钥，而 OPKSSH 则将此能力应用到 SSH 场景，用户可以继续使用习惯的 SSO 流程，同时保持 SSH 的兼容性。",
+      "community_discussion_zh": "根据新闻摘要，Lobsters 社区对该话题表现出兴趣，但具体评论内容未在材料中提供。",
+      "sources": [
+        {
+          "url": "https://github.com/openpubkey/opkssh",
+          "title": "GitHub - openpubkey/ opkssh : opkssh (OpenPubkey SSH ) · GitHub"
+        },
+        {
+          "url": "https://github.com/openpubkey/openpubkey",
+          "title": "GitHub - openpubkey/openpubkey: Reference implementation of OpenPubkey · GitHub"
+        },
+        {
+          "url": "https://blog.cloudflare.com/open-sourcing-openpubkey-ssh-opkssh-integrating-single-sign-on-with-ssh/",
+          "title": "Open-sourcing OpenPubkey SSH ( OPKSSH )... | Cloudflare Blog"
+        }
+      ],
+      "detailed_summary": "项目方宣布开源 OPKSSH（OpenPubkey SSH），该工具将单点登录（SSO）与 SSH 认证集成，使 SSH 登录可以使用现有的身份提供商（如 Google、Okta 等）进行认证，而无需管理单独的 SSH 密钥。 这解决了 SSH 密钥管理的长期痛点，提高安全性和易用性。对系统管理员和开发人员影响重大，因为可以减少密钥分发和轮换的负担，同时提升审计和合规能力。 OPKSSH 不需要修改 SSH 服务器或客户端的代码，只需在 SSH 服务器配置文件中添加两行配置。它基于 OpenPubkey 协议，将 OpenID Connect 身份提供商转变为证书颁发机构，从而将身份绑定到公钥。",
+      "background": "传统 SSH 认证依赖用户管理公钥和私钥，分发和轮换麻烦且容易出错。OpenPubkey 协议利用 OpenID Connect 身份提供商来绑定身份与公钥，而 OPKSSH 则将此能力应用到 SSH 场景，用户可以继续使用习惯的 SSO 流程，同时保持 SSH 的兼容性。",
+      "community_discussion": "根据新闻摘要，Lobsters 社区对该话题表现出兴趣，但具体评论内容未在材料中提供。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Open-sourcing OPKSSH is a significant development for SSH authentication, addressing a common pain point by integrating SSO. This has broad implications for security and usability in systems engineering. The Lobsters discussion indicates community interest, though the actual comment quality is not visible in the provided content.",
+    "ai_summary": "Announces the open-source release of OPKSSH, a tool that integrates single sign-on (SSO) with SSH for improved authentication.",
+    "ai_tags": [
+      "security",
+      "ssh",
+      "open-source",
+      "authentication",
+      "sso"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:348762fc9df3726e",
+    "source_type": "rss",
+    "title": "Why compiling Rust to WebAssembly is slow",
+    "url": "https://00f.net/2026/08/19/why-compiling-rust-to-webassembly-is-slow/",
+    "content": "<p><a href=\"https://lobste.rs/s/vcqcgl/why_compiling_rust_webassembly_is_slow\">Comments</a></p>",
+    "author": "00f.net via fanf",
+    "published_at": "2026-08-20T12:32:22Z",
+    "fetched_at": "2026-08-20T23:18:31.057171Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rust",
+        "wasm"
+      ],
+      "title_zh": "Rust编译到WebAssembly为何缓慢",
+      "detailed_summary_zh": "这篇文章深入剖析了Rust在编译到WebAssembly目标时耗时较长的根本原因，并可能提供了新的基准测试或分析结果。文章发布后引发了社区讨论，说明该话题受到广泛关注。 编译速度一直是Rust开发者使用WebAssembly时的主要痛点，此文章有助于社区理解瓶颈所在，从而推动工具链和编译流程的改进。对于依赖Rust和Wasm构建应用的开发者来说，理解这些原因可以指导他们优化构建策略。 文章标题虽未提供具体技术细节，但根据摘要可知其重点在于解释编译缓慢的原因，可能涉及LLVM后端处理、优化阶段或链接等方面。文中还附有Lobsters讨论链接，供读者参与进一步交流。",
+      "background_zh": "Rust是一种注重性能和内存安全的系统编程语言，而WebAssembly是一种在浏览器和服务器环境中运行的字节码格式。将Rust编译为WebAssembly通常依赖LLVM后端，整个编译过程包括前端解析、中间代码生成、优化和代码生成等多个阶段，这些阶段在Wasm目标上可能比原生目标更耗时。编译速度问题在Rust社区中并非新话题，但针对Wasm的专门分析仍具价值。",
+      "detailed_summary": "这篇文章深入剖析了Rust在编译到WebAssembly目标时耗时较长的根本原因，并可能提供了新的基准测试或分析结果。文章发布后引发了社区讨论，说明该话题受到广泛关注。 编译速度一直是Rust开发者使用WebAssembly时的主要痛点，此文章有助于社区理解瓶颈所在，从而推动工具链和编译流程的改进。对于依赖Rust和Wasm构建应用的开发者来说，理解这些原因可以指导他们优化构建策略。 文章标题虽未提供具体技术细节，但根据摘要可知其重点在于解释编译缓慢的原因，可能涉及LLVM后端处理、优化阶段或链接等方面。文中还附有Lobsters讨论链接，供读者参与进一步交流。",
+      "background": "Rust是一种注重性能和内存安全的系统编程语言，而WebAssembly是一种在浏览器和服务器环境中运行的字节码格式。将Rust编译为WebAssembly通常依赖LLVM后端，整个编译过程包括前端解析、中间代码生成、优化和代码生成等多个阶段，这些阶段在Wasm目标上可能比原生目标更耗时。编译速度问题在Rust社区中并非新话题，但针对Wasm的专门分析仍具价值。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Technical deep-dive into a known pain point (slow Rust-to-Wasm compilation) with community discussion linked on Lobsters, indicating high interest and validation. Likely offers novel analysis or benchmarks.",
+    "ai_summary": "Explores the reasons behind slow compilation times when targeting WebAssembly from Rust, a relevant systems programming concern.",
+    "ai_tags": [
+      "Rust",
+      "WebAssembly",
+      "compilation",
+      "performance",
+      "tooling"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e05ccf82debd4227",
+    "source_type": "rss",
+    "title": "X.Org Server 26.1 RC1 Prepares For First Feature Release In Five Years",
+    "url": "https://www.phoronix.com/news/X.Org-Server-26.1-RC1",
+    "content": "<p><a href=\"https://lobste.rs/s/exrno8/x_org_server_26_1_rc1_prepares_for_first\">Comments</a></p>",
+    "author": "phoronix.com via achyudh",
+    "published_at": "2026-08-20T13:32:05Z",
+    "fetched_at": "2026-08-20T23:18:31.057211Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "unix",
+        "release"
+      ],
+      "title_zh": "X.Org Server 26.1 RC1 发布：五年来首个功能版本",
+      "detailed_summary_zh": "X.Org Server 26.1 的候选版本（RC1）发布，这是该项目五年来的首个功能版本。该版本标志着这个传统显示服务器重新进入积极的开发阶段。 X.Org Server 仍是 Linux 图形栈中重要的组成部分，尤其对旧版 X11 应用和某些硬件支持至关重要。此次功能更新可能延长 X.Org 的生命周期，同时让 Wayland 过渡期更加平稳。 26.1 RC1 是正式发布前的候选版本，预计在测试后推出稳定版。作为功能版本，它包含新特性和改进，具体内容需参考发布说明。",
+      "background_zh": "X.Org Server 是 X Window System（X11）的开源参考实现，由 X.Org 基金会维护，负责管理 Linux 桌面环境的显示和窗口。随着 Wayland 成为新一代显示服务器协议，X.Org 长期处于维护模式，此次功能发布表明项目仍保持活跃。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/X.Org_Server",
+          "title": "X.Org Server"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Display_server",
+          "title": "Display server"
+        }
+      ],
+      "detailed_summary": "X.Org Server 26.1 的候选版本（RC1）发布，这是该项目五年来的首个功能版本。该版本标志着这个传统显示服务器重新进入积极的开发阶段。 X.Org Server 仍是 Linux 图形栈中重要的组成部分，尤其对旧版 X11 应用和某些硬件支持至关重要。此次功能更新可能延长 X.Org 的生命周期，同时让 Wayland 过渡期更加平稳。 26.1 RC1 是正式发布前的候选版本，预计在测试后推出稳定版。作为功能版本，它包含新特性和改进，具体内容需参考发布说明。",
+      "background": "X.Org Server 是 X Window System（X11）的开源参考实现，由 X.Org 基金会维护，负责管理 Linux 桌面环境的显示和窗口。随着 Wayland 成为新一代显示服务器协议，X.Org 长期处于维护模式，此次功能发布表明项目仍保持活跃。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Significant milestone: X.Org Server's first feature release in five years, marking renewed activity in a critical but often maintenance-mode component of the Linux graphics stack. Discussion on Lobsters adds community context.",
+    "ai_summary": "X.Org Server 26.1 RC1 marks the project's first feature release in five years, signaling renewed development for the legacy display server.",
+    "ai_tags": [
+      "X.Org",
+      "Linux graphics",
+      "display server",
+      "open source",
+      "release"
+    ]
+  },
+  {
+    "id": "rss:newsletter.pragmaticengineer.com_feed:eca88545b0d2e08a",
+    "source_type": "rss",
+    "title": "The Pulse: We need to talk about migrations with AI",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-we-need-to-talk-about-migrations",
+    "content": "Asana completed a testing framework migration in two weeks, that they would have delayed for years more, and they&#8217;re not alone. Also: AI startups could make Gartner much less relevant, and more",
+    "author": "Gergely Orosz",
+    "published_at": "2026-08-20T17:53:01Z",
+    "fetched_at": "2026-08-20T23:18:31.417122Z",
+    "metadata": {
+      "feed_name": "The Pragmatic Engineer",
+      "category": "",
+      "tags": [],
+      "title_zh": "AI 加速技术迁移，传统分析机构面临冲击",
+      "detailed_summary_zh": "Asana 借助 AI 在两周内完成了原本可能拖延数年的测试框架迁移。Gergely Orosz 在文章中讨论了这一案例，并指出 AI 初创公司可能削弱 Gartner 等传统分析机构的影响力。 这表明 AI 能显著加速大型工程迁移，改变团队对技术债的优先级判断。同时，AI 驱动的洞察工具正在挑战传统分析机构的地位，可能重塑企业采购技术产品的决策方式。 文章强调 Asana 并非特例，其他公司也在用 AI 加速类似迁移。Orosz 还提到 AI 初创公司能提供更实时、更便宜的分析，使 Gartner 的魔力象限等传统报告相关性下降。",
+      "background_zh": "技术迁移（如更换测试框架）通常风险高、耗时长，团队常因优先级冲突而无限期推迟。AI 工具能自动处理重复性编码和测试重构，降低迁移成本。Gartner 等分析机构长期通过专家研究和报告影响企业采购，但 AI 生成洞察的效率和灵活性可能改变这一格局。",
+      "detailed_summary": "Asana 借助 AI 在两周内完成了原本可能拖延数年的测试框架迁移。Gergely Orosz 在文章中讨论了这一案例，并指出 AI 初创公司可能削弱 Gartner 等传统分析机构的影响力。 这表明 AI 能显著加速大型工程迁移，改变团队对技术债的优先级判断。同时，AI 驱动的洞察工具正在挑战传统分析机构的地位，可能重塑企业采购技术产品的决策方式。 文章强调 Asana 并非特例，其他公司也在用 AI 加速类似迁移。Orosz 还提到 AI 初创公司能提供更实时、更便宜的分析，使 Gartner 的魔力象限等传统报告相关性下降。",
+      "background": "技术迁移（如更换测试框架）通常风险高、耗时长，团队常因优先级冲突而无限期推迟。AI 工具能自动处理重复性编码和测试重构，降低迁移成本。Gartner 等分析机构长期通过专家研究和报告影响企业采购，但 AI 生成洞察的效率和灵活性可能改变这一格局。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value analysis from a respected engineering commentator, highlighting a concrete case of AI drastically accelerating a migration (Asana's testing framework in two weeks) and discussing broader industry disruption (Gartner relevance). Offers practical insights and strategic implications for engineering leaders.",
+    "ai_summary": "Gergely Orosz discusses how AI is enabling rapid migrations like Asana's testing framework overhaul and how AI startups may disrupt traditional analyst firms.",
+    "ai_tags": [
+      "AI",
+      "software engineering",
+      "migrations",
+      "testing",
+      "industry analysis"
+    ]
+  },
+  {
+    "id": "hackernews:story:49379550",
+    "source_type": "hackernews",
+    "title": "Aaron Swartz was prosecuted for scraping, while Meta does it without consequence",
+    "url": "https://blog.curiousquail.com/im-upset-again-about-a-co-creator-of-rss-being-prosecuted-for-something-meta-is-doing-with-little-consequence/",
+    "content": "\n--- Top Comments ---\n\n[milkytron]: The part that still bothers me so much about the US vs Swartz case is that JSTOR didn&#x27;t pursue civil litigation against Aaron. It was the US government that pursued him. There was little for the government to lose in the case. In a case vs Meta, at the scale it has reached, it could have wide ranging economic implications limiting the investment in AI, which the US is absolutely not willing to pursue at this point in time (or possibly ever). Basically, being a rich public company provide...\n\n[sillysaurusx]: He wasn’t prosecuted for scraping. He trespassed into a room with a router, plugged his laptop into it, downloaded papers as quickly as possible, and then rotated his MAC address to dodge the bans that the admin was trying to place on him. That’s very different from downloading a webpage on the open internet. I’m not saying he should or shouldn’t have been prosecuted, but there’s some kind of rose tinted glasses filter around what happened with Aaron, like he just was browsing the web and was...\n\n[tptacek]: I don&#x27;t think it matters much for the argument, which is valid (or not) regardless of whether you get the precise facts about the Swartz prosecution right, but Swartz was not facing 35 years. That&#x27;s the statutory maximum sentence you&#x27;d get if you ignored the sentencing guidelines and grouped none of the charges, which is not how anything works. The prosecutors threatening Swartz and his attorneys claimed they&#x27;d pursue something like 7 years. But Swartz&#x27;s own (well reg...\n\n[mcv]: I recently came to the conclusion that it was never about copyright. It&#x27;s about corporate control, about punishing contempt for business model. Aaron Swartz was punished because he disrespected a business model. All the kids sued by the MAFIAA were punished because they disrespected a business model. Copyright was merely the mechanism to make it stick. But AI companies and Meta can disrespect copyright all they want, because in their case, it serves a corporate business model, and those ...\n\n[mukmuk]: The attorneys who did this were Carmen Ortiz, Stephen P. Heymann, and Scott Garland. To their everlasting shame.",
+    "author": "speckx",
+    "published_at": "2026-08-20T20:07:26Z",
+    "fetched_at": "2026-08-20T23:18:31.184349Z",
+    "metadata": {
+      "score": 610,
+      "descendants": 114,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49379550",
+      "comment_count": 5,
+      "title_zh": "斯沃茨因抓取数据被诉，Meta却免于追责",
+      "detailed_summary_zh": "一篇博客文章对比了Aaron Swartz因抓取学术论文而被联邦政府起诉，而Meta大规模抓取数据却几乎不受法律后果，引发了关于法律双重标准的激烈讨论。文章指出，同样是数据抓取行为，不同的主体却面临截然不同的司法待遇。 这凸显了美国在数据抓取和AI训练数据获取上的法律不平等，可能影响未来AI监管和科技伦理的走向。该讨论关系到科技公司、内容创作者以及普通互联网用户的权利平衡。 评论中纠正了一些事实：Swartz并非单纯抓取公开网页，而是侵入物理设施并使用路由器、轮换MAC地址规避封禁，这与Meta抓取公开网站数据有本质区别。此外，Swartz当时实际面临的刑期约为7年，而非经常被引用的35年法定最高刑期。",
+      "background_zh": "美国《计算机欺诈和滥用法案》（CFAA）是1986年颁布的网络安全法律，用于打击黑客行为，曾多次修订，Swartz案正是基于该法起诉。网络抓取（web scraping）是指用软件自动提取网站数据，而robots.txt是网站用来告知爬虫哪些内容可以访问的标准协议，但该协议并无强制法律效力。",
+      "community_discussion_zh": "评论者们普遍认为此案反映的是企业控制和利益问题，mcv指出核心不在版权而在商业模式受挑战。milkytron强调政府起诉个体风险小，而起诉Meta可能冲击整个AI投资。sillysaurusx则提醒大家不应美化Swartz的行为，指出其入侵私有网络与公开抓取不同。tptacek还纠正了关于刑期的常见误解。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act",
+          "title": "Computer Fraud and Abuse Act - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Web_scraping",
+          "title": "Web scraping - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Robots.txt",
+          "title": "robots . txt - Wikipedia"
+        }
+      ],
+      "detailed_summary": "一篇博客文章对比了Aaron Swartz因抓取学术论文而被联邦政府起诉，而Meta大规模抓取数据却几乎不受法律后果，引发了关于法律双重标准的激烈讨论。文章指出，同样是数据抓取行为，不同的主体却面临截然不同的司法待遇。 这凸显了美国在数据抓取和AI训练数据获取上的法律不平等，可能影响未来AI监管和科技伦理的走向。该讨论关系到科技公司、内容创作者以及普通互联网用户的权利平衡。 评论中纠正了一些事实：Swartz并非单纯抓取公开网页，而是侵入物理设施并使用路由器、轮换MAC地址规避封禁，这与Meta抓取公开网站数据有本质区别。此外，Swartz当时实际面临的刑期约为7年，而非经常被引用的35年法定最高刑期。",
+      "background": "美国《计算机欺诈和滥用法案》（CFAA）是1986年颁布的网络安全法律，用于打击黑客行为，曾多次修订，Swartz案正是基于该法起诉。网络抓取（web scraping）是指用软件自动提取网站数据，而robots.txt是网站用来告知爬虫哪些内容可以访问的标准协议，但该协议并无强制法律效力。",
+      "community_discussion": "评论者们普遍认为此案反映的是企业控制和利益问题，mcv指出核心不在版权而在商业模式受挑战。milkytron强调政府起诉个体风险小，而起诉Meta可能冲击整个AI投资。sillysaurusx则提醒大家不应美化Swartz的行为，指出其入侵私有网络与公开抓取不同。tptacek还纠正了关于刑期的常见误解。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value opinion piece connecting historical legal precedent to current AI scraping debates, sparking substantive community discussion with factual corrections and nuanced viewpoints. Relevant to tech ethics, law, and AI policy.",
+    "ai_summary": "A thought-provoking essay highlighting the disparity between Aaron Swartz's prosecution for scraping and Meta's unpunished scraping practices, igniting community debate on legal double standards.",
+    "ai_tags": [
+      "scraping",
+      "legal",
+      "AI ethics",
+      "Meta",
+      "Aaron Swartz"
+    ]
+  },
+  {
+    "id": "hackernews:story:49378768",
+    "source_type": "hackernews",
+    "title": "Show HN: Huzzah – a novel approach to coding with AI",
+    "url": "https://www.danielvaughn.dev/posts/huzzah/",
+    "content": "Hello everyone. I&#x27;ve been working on this experimental editor called Huzzah.<p>I&#x27;ve been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They&#x27;re great, but I&#x27;m finding it more and more tedious to write full sentences for every change I want. Not only that, but it seems there&#x27;s a complexity limit for codebases - beyond a certain point the agent begins confusing itself.<p>I&#x27;d like to go back to writing code, but I don&#x27;t want to go all the way back to fully manual coding. So I&#x27;ve come up with this interaction paradigm where you:<p><pre><code>  1. write pseudocode in whatever way makes the most sense to you\n  2. on save, the editor synchronizes your work to real source code\n  3. the pseudocode is persisted alongside the generated code, making your prompt effectively a stored record of intent.\n</code></pre>\nIt may not work for every use case, but in my initial playthroughs I&#x27;ve found it very enjoyable.<p>Right now it&#x27;s just a proof of concept - installation instructions are here in the readme: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;danielvaughn&#x2F;hz\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;danielvaughn&#x2F;hz</a><p>You can also watch a video of it in action here: <a href=\"https:&#x2F;&#x2F;x.com&#x2F;danielvaughn&#x2F;status&#x2F;2090456808431165715\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;danielvaughn&#x2F;status&#x2F;2090456808431165715</a><p>Cheers!\n\n\n--- Top Comments ---\n\n[reticulates]: I think you’re probably missing why it’s exhausting. The problem is not writing English, it’s the rate of change. Programming is meditative, it is a thinking process, the code you output is an artifact of your thinking. Agent-based development… there is no thinking, no meditation, you’re delegating the thinking to a machine, you’re just barking what you want at it, incessantly, endlessly. For businesses it makes sense to abandon programming in favor of delegating to agents that can do more in...\n\n[avaer]: I think the reverse direction is more important: taking a massive complex problem&#x2F;codebase and decomposing it to short pseudocode. Then you could edit the pseudocode and compile it back into the system. That&#x27;s the way software engineers working on large projects work anyway: you first gather context on the state of the system and read it at a level you can understand. Then you propose a change on the simplified representation, and then holistically update the machine-runnable format...\n\n[ramigb]: As I was reading and seeing the video, which is easier to demonstrate as you guessed, I was asking my self the same questions you answered in the &quot;Caveats&quot; section. I love that you are trying something and you shared it, I relate very much to some parts of the post minus the fatigue part maybe I am it&#x27;s because I am a very chatty person in general so prompting is not a problem who knows! I had my own attempts to improve working with AI but to my fault I rarely commit to a proje...\n\n[amiune]: I like the pseudocode approach I think there is some gold there. I been thinking a lot about it ( https:&#x2F;&#x2F;www.generativenetworks.com&#x2F;blog&#x2F;do-we-still-need-to-... ) but working on small apps I never need it only in bigger apps or when you need an extra level of precision in the prompt\n\n[quasarj]: I&#x27;m confused, it looks like you&#x27;ve just written a new terse language that now costs money to compile?",
+    "author": "danielvaughn",
+    "published_at": "2026-08-20T19:05:36Z",
+    "fetched_at": "2026-08-20T23:18:31.184467Z",
+    "metadata": {
+      "score": 180,
+      "descendants": 102,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49378768",
+      "comment_count": 5,
+      "title_zh": "Huzzah：伪代码与真实代码同步的 AI 编程编辑器",
+      "detailed_summary_zh": "开发者 Daniel Vaughn 发布了一款实验性编辑器 Huzzah，允许开发者用伪代码编写程序，保存时自动同步生成真实源代码，并将伪代码作为意图记录持久化保存。这是 AI 编程交互模式的一种全新尝试，目前仅作为概念验证发布。 Huzzah 提出了一种介于全手动编码与完全委托给 AI 代理之间的中间路线，或能缓解开发者对反复用自然语言描述需求的疲惫感。同时，它也为大模型在大型代码库中因复杂度上升而混淆的问题提供了新的解决思路。 Huzzah 的工作原理是：开发者以任意方式书写伪代码，保存时编辑器将其同步为真实代码，伪代码与生成代码一同持久化。作者指出它可能不适用于所有场景，且目前仅提供安装说明和演示视频，尚未成为成熟工具。",
+      "background_zh": "近年来，AI 编程代理（coding agents）可以接受自然语言指令直接生成或修改代码，但开发者反映在大型项目中需要反复写长句描述，且代理容易出现混淆。伪代码是一种非正式、接近自然语言但结构化的代码描述方式，常用于算法设计；Huzzah 试图把伪代码当作持久化的工作产物，让开发者既保留思考过程，又利用 AI 生成最终代码。Huzzah 原为英语中的感叹词，意为“好哇”，这里用作项目名。",
+      "community_discussion_zh": "评论区的讨论较为多元。有用户认为疲劳的根源并非写英文本身，而是失去思考过程；也有用户提出反向思路更关键：先将大型复杂代码库分解为短伪代码，再编辑伪代码并编译回系统。另有评论认为这相当于发明了一种新的简洁语言，但还需付费编译，也有人表示喜欢伪代码方向并认为其中存在价值。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Huzzah",
+          "title": "Huzzah"
+        }
+      ],
+      "detailed_summary": "开发者 Daniel Vaughn 发布了一款实验性编辑器 Huzzah，允许开发者用伪代码编写程序，保存时自动同步生成真实源代码，并将伪代码作为意图记录持久化保存。这是 AI 编程交互模式的一种全新尝试，目前仅作为概念验证发布。 Huzzah 提出了一种介于全手动编码与完全委托给 AI 代理之间的中间路线，或能缓解开发者对反复用自然语言描述需求的疲惫感。同时，它也为大模型在大型代码库中因复杂度上升而混淆的问题提供了新的解决思路。 Huzzah 的工作原理是：开发者以任意方式书写伪代码，保存时编辑器将其同步为真实代码，伪代码与生成代码一同持久化。作者指出它可能不适用于所有场景，且目前仅提供安装说明和演示视频，尚未成为成熟工具。",
+      "background": "近年来，AI 编程代理（coding agents）可以接受自然语言指令直接生成或修改代码，但开发者反映在大型项目中需要反复写长句描述，且代理容易出现混淆。伪代码是一种非正式、接近自然语言但结构化的代码描述方式，常用于算法设计；Huzzah 试图把伪代码当作持久化的工作产物，让开发者既保留思考过程，又利用 AI 生成最终代码。Huzzah 原为英语中的感叹词，意为“好哇”，这里用作项目名。",
+      "community_discussion": "评论区的讨论较为多元。有用户认为疲劳的根源并非写英文本身，而是失去思考过程；也有用户提出反向思路更关键：先将大型复杂代码库分解为短伪代码，再编辑伪代码并编译回系统。另有评论认为这相当于发明了一种新的简洁语言，但还需付费编译，也有人表示喜欢伪代码方向并认为其中存在价值。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (180 points, 102 comments) with thoughtful discussion about the novel pseudocode-centric AI editor paradigm. It offers a fresh take on human-AI coding interaction, though it is experimental and not yet a proven breakthrough.",
+    "ai_summary": "Huzzah is an experimental editor that lets developers write pseudocode and synchronizes it to real code, offering a middle ground between manual coding and AI agents.",
+    "ai_tags": [
+      "AI",
+      "coding",
+      "editor",
+      "pseudocode",
+      "developer-tools"
+    ]
+  },
+  {
+    "id": "hackernews:story:49375996",
+    "source_type": "hackernews",
+    "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+    "url": "https://github.com/zachahn/vomit",
+    "content": "\n--- Top Comments ---\n\n[trefoiled]: I&#x27;ve been grappling with this for weeks, not just in Claude but in Codex as well, which isn&#x27;t quite as bad but still annoying. AGENTS.md does very little, agents will consistently violate the communication preferences, especially as the session drags on. It&#x27;s incredible to me that there&#x27;s no good way to reliably change the way an LLM responds to you that a workaround like this would even be necessary. It seems like such a failure to live up to the promises of the product. ...\n\n[bob1029]: At some point one has to wonder if it&#x27;s still worth using anthropic&#x27;s models if we need to babysit 100% of its output with another vendor&#x27;s model. Why not just use that other vendor&#x27;s model for everything? I can&#x27;t help but feel the circumstances that enable this kind of front page article are vestigial from the days when OAI was super bad and Anthropic was beyond reproach. This change-over-time is why I avoid getting tribal with technology vendors. Assigning ideologic...\n\n[user102030]: Looks like a wrapper around this prompt: You are an editor. You&#x27;ll be given a message with strange characteristics: - Weird subject and verb combinations - Subjects that should be objects - Very roundabout reasoning, peppered with pseudo-epiphanies - A distracting beat to the flow of the message - Self-praise Remove these characteristics, and rewrite it in a clear, conversational style. Keep the intent of the message, and take care not to lose any of the details. A few specific rules: - ...\n\n[imalerba]: I like the &quot;Claudish to English&quot; name better.  https:&#x2F;&#x2F;github.com&#x2F;gvzdv&#x2F;claudish-to-english\n\n[bmurphy1976]: I&#x27;m not sure I want another layer of indirection personally, and I&#x27;m guessing an updated Claude model will reign this in at some point.  I have however created a skill I call &quot;deslop&quot; and I invoke it to clean up Claude output when it goes off the rails.  Here&#x27;s the skill if anybody is curious:  https:&#x2F;&#x2F;gist.github.com&#x2F;bmurphy1976&#x2F;47ad81a842ab4b1628ef5974...  A small preview:       *Meta commentary.* Sentences about the document, the diagram, the re...",
+    "author": "Bluestein",
+    "published_at": "2026-08-20T15:26:02Z",
+    "fetched_at": "2026-08-20T23:18:31.184594Z",
+    "metadata": {
+      "score": 163,
+      "descendants": 172,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49375996",
+      "comment_count": 5,
+      "title_zh": "Vomit：用另一个LLM清理Claude 5的冗长输出",
+      "detailed_summary_zh": "开发者zachahn发布了开源工具Vomit，它利用另一个独立的LLM对Claude 5生成的冗长或表达生硬的文本进行清理和重写，使回复更简洁自然。该工具相当于在Claude的输出之后增加了一道“LLM后处理”环节，以修正模型不理想的回应风格。 这款工具反映出当前LLM在输出风格控制上的明显短板——即使用户通过提示词或说明文件设定偏好，模型仍可能生成啰嗦、绕弯的内容。Vomit这类变通方案的出现，凸显了改进模型指令遵守能力的迫切性，对AI工具链的开发者体验有直接影响。 根据社区讨论，Vomit的核心是一条编辑提示词，要求目标模型去掉奇怪的主谓搭配、伪顿悟式的绕弯推理、干扰节奏的措辞和自我表扬等特征，并以清晰、对话式的风格重写，同时保留原意与细节。另有开发者提到其他类似方案，如“claudish-to-english”和自定义“deslop”技能。",
+      "background_zh": "大语言模型在生成文本时经常出现冗余、绕弯等风格问题，Anthropic的Claude因其特有的“Claudish”表达方式而常被开发者吐槽。尽管系统提示词和AGENTS.md等机制可以帮助设定沟通偏好，但模型在长会话中往往难以稳定遵守，导致用户需要额外手段进行修正。Vomit正是利用第二个LLM作为后处理编辑器，以“以AI治AI”的方式改善最终输出。",
+      "community_discussion_zh": "评论者普遍对LLM输出风格控制不力表示沮丧，有人提到在Codex中也遇到类似问题，并认为这种工作应由模型本身解决。也有质疑声音认为，如果必须依赖另一个厂商的模型来收拾Claude的文本，那还不如直接使用那个模型。部分用户则分享了替代方案或自定义技能，总体讨论氛围是“共鸣中带有无奈”，并寄望未来模型更新能收敛这类问题。",
+      "sources": [
+        {
+          "url": "https://github.com/jgavinray/total-recall",
+          "title": "GitHub - jgavinray/total-recall: my own mcp server to vomit llm ..."
+        }
+      ],
+      "detailed_summary": "开发者zachahn发布了开源工具Vomit，它利用另一个独立的LLM对Claude 5生成的冗长或表达生硬的文本进行清理和重写，使回复更简洁自然。该工具相当于在Claude的输出之后增加了一道“LLM后处理”环节，以修正模型不理想的回应风格。 这款工具反映出当前LLM在输出风格控制上的明显短板——即使用户通过提示词或说明文件设定偏好，模型仍可能生成啰嗦、绕弯的内容。Vomit这类变通方案的出现，凸显了改进模型指令遵守能力的迫切性，对AI工具链的开发者体验有直接影响。 根据社区讨论，Vomit的核心是一条编辑提示词，要求目标模型去掉奇怪的主谓搭配、伪顿悟式的绕弯推理、干扰节奏的措辞和自我表扬等特征，并以清晰、对话式的风格重写，同时保留原意与细节。另有开发者提到其他类似方案，如“claudish-to-english”和自定义“deslop”技能。",
+      "background": "大语言模型在生成文本时经常出现冗余、绕弯等风格问题，Anthropic的Claude因其特有的“Claudish”表达方式而常被开发者吐槽。尽管系统提示词和AGENTS.md等机制可以帮助设定沟通偏好，但模型在长会话中往往难以稳定遵守，导致用户需要额外手段进行修正。Vomit正是利用第二个LLM作为后处理编辑器，以“以AI治AI”的方式改善最终输出。",
+      "community_discussion": "评论者普遍对LLM输出风格控制不力表示沮丧，有人提到在Codex中也遇到类似问题，并认为这种工作应由模型本身解决。也有质疑声音认为，如果必须依赖另一个厂商的模型来收拾Claude的文本，那还不如直接使用那个模型。部分用户则分享了替代方案或自定义技能，总体讨论氛围是“共鸣中带有无奈”，并寄望未来模型更新能收敛这类问题。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Addresses a common pain point with LLM output style, introducing a practical workaround. The discussion is substantive, with users sharing similar frustrations and debating model choices, indicating community-validated relevance.",
+    "ai_summary": "A tool that uses a separate LLM to clean up verbose or awkward output from Claude, highlighting ongoing issues with controlling LLM response styles.",
+    "ai_tags": [
+      "LLM",
+      "AI tooling",
+      "developer experience",
+      "Claude",
+      "workflow"
+    ]
+  },
+  {
+    "id": "hackernews:story:49376332",
+    "source_type": "hackernews",
+    "title": "How to compromise your system with a job interview",
+    "url": "https://www.codedge.de/posts/how-to-compromise-your-system-with-a-job-interview",
+    "content": "\n--- Top Comments ---\n\n[shahbaby]: If a company is not even willing to have a real person speak to you at the start of the recruitment process, what does that say about them? Or about the legitimacy of that job posting? Or about the people you would be working with if you did get hired? Regardless if you get an offer or not, you will invest a significant amount of finite time in each interview cycle and if you do get an offer, you&#x27;ll be investing even more time into that company. So no matter who you are, protect your tim...\n\n[john_strinlai]: out of the list under  &quot;Before you start with the test, you might be suspicious about the following:&quot;  there is only one that is important: only interact with people using an official email address. the rest  can  be used as yellow&#x2F;red flags, but simply asking for confirmation via an official email address will thwart the vast majority of scams (including other ones, like someone claiming to be from Intuit calling about your QuickBooks or whatever).\n\n[forinti]: &gt; “A relevant opportunity” with part-time remote work and a great hourly compensation That is so suspicious at the moment.\n\n[aliasxneo]: I get enough legit and illegitimate ones every week on LinkedIn that it&#x27;s become really easy to tell the difference. Hard to pinpoint in a comment because it&#x27;s mostly a gut feeling. But, in rough order: 1. Look at the person&#x27;s LinkedIn profile contacting you and examine their post history. In one comical scenario the &quot;recruiter&quot; had a long 4 year gap where they were writing comments in English and all of the sudden they switched to Spanish. Mostly short, pointless com...\n\n[mapmeld]: Since no one mentioned it - this seems to be a major and real problem in the crypto job space. In their job market it&#x27;s more believable that a &#x27;stealth startup&#x27; is reaching out and doing a code challenge from an unfamiliar email or repo, and crypto devs are likely to have a wallet or passwords accessible on their system. They are willing to go above and beyond the regular spam or AI conversations to get access.",
+    "author": "codedge",
+    "published_at": "2026-08-20T15:50:57Z",
+    "fetched_at": "2026-08-20T23:18:31.184621Z",
+    "metadata": {
+      "score": 110,
+      "descendants": 87,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49376332",
+      "comment_count": 5,
+      "title_zh": "假面试如何攻陷你的系统：安全指南与防范要点",
+      "detailed_summary_zh": "一篇新的安全指南详细展示了攻击者如何利用虚假的工作面试来入侵求职者的系统，并列举了求职过程中应警惕的可疑迹象。该指南在技术社区引发热议，讨论聚焦于如何识别和避免此类骗局。 此类攻击利用求职者的信任和求职压力，具有极强的迷惑性，可能导致敏感信息泄露或系统被植入恶意软件。随着远程办公和线上招聘的普及，越来越多的求职者面临此类威胁，了解其手法规避风险至关重要。 指南指出，整个攻击链通常始于一个看似合法的招聘信息或面试邀请，攻击者会逐步引导受害者执行恶意代码或提交敏感信息。社区评论强调，最重要的防御手段是仅与使用官方邮箱地址的人互动，并通过官方渠道核实招聘信息的真实性。",
+      "background_zh": "此类攻击属于pretexting（虚假情境）社会工程学攻击，攻击者编造一个可信的故事来操纵受害者泄露信息或执行危险操作。与直接的技术攻击不同，社会工程学攻击更侧重于利用人的心理弱点，例如对权威的服从、求职压力或对机会的渴望。",
+      "community_discussion_zh": "社区讨论普遍认为此类骗局日益增多，尤其在加密货币等岗位领域，\"隐形创业公司\"的伪装使骗局更难识别。多位评论者分享了实用建议，如检查联系人的领英档案和发帖历史、使用官方邮箱验证，以及依靠直觉识别明显可疑的招聘邀约。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Pretexting",
+          "title": "Pretexting"
+        },
+        {
+          "url": "https://www.crowdstrike.com/en-us/cybersecurity-101/social-engineering/spear-phishing/",
+          "title": "What is Spear Phishing ? Definition with Examples | CrowdStrike"
+        }
+      ],
+      "detailed_summary": "一篇新的安全指南详细展示了攻击者如何利用虚假的工作面试来入侵求职者的系统，并列举了求职过程中应警惕的可疑迹象。该指南在技术社区引发热议，讨论聚焦于如何识别和避免此类骗局。 此类攻击利用求职者的信任和求职压力，具有极强的迷惑性，可能导致敏感信息泄露或系统被植入恶意软件。随着远程办公和线上招聘的普及，越来越多的求职者面临此类威胁，了解其手法规避风险至关重要。 指南指出，整个攻击链通常始于一个看似合法的招聘信息或面试邀请，攻击者会逐步引导受害者执行恶意代码或提交敏感信息。社区评论强调，最重要的防御手段是仅与使用官方邮箱地址的人互动，并通过官方渠道核实招聘信息的真实性。",
+      "background": "此类攻击属于pretexting（虚假情境）社会工程学攻击，攻击者编造一个可信的故事来操纵受害者泄露信息或执行危险操作。与直接的技术攻击不同，社会工程学攻击更侧重于利用人的心理弱点，例如对权威的服从、求职压力或对机会的渴望。",
+      "community_discussion": "社区讨论普遍认为此类骗局日益增多，尤其在加密货币等岗位领域，\"隐形创业公司\"的伪装使骗局更难识别。多位评论者分享了实用建议，如检查联系人的领英档案和发帖历史、使用官方邮箱验证，以及依靠直觉识别明显可疑的招聘邀约。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Provides practical, timely security advice about job interview scams with actionable red flags, and the HN discussion adds valuable tips on verification methods and spotting fraudulent recruiters.",
+    "ai_summary": "A security guide explaining how attackers use fake job interviews to compromise systems, with community discussion on identifying and avoiding such scams.",
+    "ai_tags": [
+      "security",
+      "social engineering",
+      "job scams",
+      "phishing",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:7ae90a41ba0f3a50",
+    "source_type": "rss",
+    "title": "How a joke domain purchase turned into geopolitical warfare",
+    "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+    "content": "<p><a href=\"https://lobste.rs/s/sfi9te/how_joke_domain_purchase_turned_into\">Comments</a></p>",
+    "author": "sprocketfox.io via zzkt",
+    "published_at": "2026-08-20T12:21:41Z",
+    "fetched_at": "2026-08-20T23:18:31.057044Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "title_zh": "玩笑域名购买如何演变为地缘政治冲突",
+      "detailed_summary_zh": "安全研究者 xssfox 在一篇发布于 2026 年 8 月 19 日的文章中，讲述了一个原本作为玩笑购买的域名如何意外卷入地缘政治冲突的经过。文章详细描述了这次普通购买行为逐步升级为国际事件的整个过程。 这则故事说明了即使像域名这样看似无足轻重的技术资产，也可能在地缘政治角力中扮演重要角色。它凸显了互联网治理、网络安全与国际紧张局势之间日益交汇的风险，提醒人们技术操作的实际影响可能远超预期。 文章发布在 sprocketfox.io 上，从 URL 中的“sondehub”提示来看，该域名可能与一个共享气象气球追踪数据的社区相关，暗示冲突可能涉及遥测或监控领域。作者作为安全研究者，从自身经历揭示了域名所有权可能引发的连锁反应。",
+      "background_zh": "域名是互联网资源的唯一标识符，拥有域名即意味着对相关网络服务的控制权。在地缘政治对抗中，网络行动、信息战和外交纠纷较为常见，看似普通的数字资产也可能成为被争夺的目标或攻击工具。近年来，曾有多起域名和服务服务器在国际冲突期间被扣押或争夺的案例。",
+      "detailed_summary": "安全研究者 xssfox 在一篇发布于 2026 年 8 月 19 日的文章中，讲述了一个原本作为玩笑购买的域名如何意外卷入地缘政治冲突的经过。文章详细描述了这次普通购买行为逐步升级为国际事件的整个过程。 这则故事说明了即使像域名这样看似无足轻重的技术资产，也可能在地缘政治角力中扮演重要角色。它凸显了互联网治理、网络安全与国际紧张局势之间日益交汇的风险，提醒人们技术操作的实际影响可能远超预期。 文章发布在 sprocketfox.io 上，从 URL 中的“sondehub”提示来看，该域名可能与一个共享气象气球追踪数据的社区相关，暗示冲突可能涉及遥测或监控领域。作者作为安全研究者，从自身经历揭示了域名所有权可能引发的连锁反应。",
+      "background": "域名是互联网资源的唯一标识符，拥有域名即意味着对相关网络服务的控制权。在地缘政治对抗中，网络行动、信息战和外交纠纷较为常见，看似普通的数字资产也可能成为被争夺的目标或攻击工具。近年来，曾有多起域名和服务服务器在国际冲突期间被扣押或争夺的案例。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "The title suggests an intriguing intersection of technical domain purchasing and geopolitical conflict, likely from a known security researcher. The lobste.rs discussion indicates community interest and possible insightful commentary, but without the full article content the depth and novelty cannot be fully assessed.",
+    "ai_summary": "A story about how a seemingly innocuous domain purchase became entangled with geopolitical warfare.",
+    "ai_tags": [
+      "security",
+      "geopolitics",
+      "domain names",
+      "analysis"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:a5def502682b2223",
+    "source_type": "rss",
+    "title": "Everyone Says Assembly Is Untyped—Everyone Is Wrong",
+    "url": "https://www.gingerbill.org/article/2026/08/20/designing-odins-inline-asm/",
+    "content": "<p><a href=\"https://lobste.rs/s/wphnca/everyone_says_assembly_is_untyped\">Comments</a></p>",
+    "author": "gingerbill.org via rrampage",
+    "published_at": "2026-08-20T17:22:35Z",
+    "fetched_at": "2026-08-20T23:18:31.057084Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "assembly",
+        "plt"
+      ],
+      "title_zh": "汇编语言并非无类型：Odin 内联汇编设计反驳传统认知",
+      "detailed_summary_zh": "GingerBill 发布文章《Everyone Says Assembly Is Untyped—Everyone Is Wrong》，论证汇编语言也能具备类型系统，并以其设计的 Odin 内联汇编为例。文中指出，汇编并非天生无类型，通过语言设计可以引入类型约束。 该观点挑战了系统编程与编程语言社区中长期存在的“汇编无类型”共识，可能启发更多在低层代码中应用类型安全机制的研究与实践。对 PL 和系统开发者而言，这是一次高价值的视角更新。 文章基于 Odin 的内联汇编设计展开：Odin 内联汇编采用上下文无关语法，但不同指令集架构（ISA）的助记符并不通用，仅语法形式统一。Odin 本身是一门注重高性能、现代系统与内置数据类型的通用编程语言。",
+      "background_zh": "传统上，汇编语言被认为只提供指令助记符和寄存器操作，没有数据类型的概念。不过，计算机科学中早有“类型化汇编语言（TAL）”的研究方向，通过在汇编指令中标注数据类别来强制类型安全。Odin 语言的内联汇编设计将这个理念落到实际语言中，为低层编程提供更安全的抽象。",
+      "sources": [
+        {
+          "url": "https://odin-lang.org/docs/inline-asm/",
+          "title": "Inline asm Templates Overview | Odin Programming Language"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Typed_assembly_language",
+          "title": "Typed assembly language - Wikipedia"
+        }
+      ],
+      "detailed_summary": "GingerBill 发布文章《Everyone Says Assembly Is Untyped—Everyone Is Wrong》，论证汇编语言也能具备类型系统，并以其设计的 Odin 内联汇编为例。文中指出，汇编并非天生无类型，通过语言设计可以引入类型约束。 该观点挑战了系统编程与编程语言社区中长期存在的“汇编无类型”共识，可能启发更多在低层代码中应用类型安全机制的研究与实践。对 PL 和系统开发者而言，这是一次高价值的视角更新。 文章基于 Odin 的内联汇编设计展开：Odin 内联汇编采用上下文无关语法，但不同指令集架构（ISA）的助记符并不通用，仅语法形式统一。Odin 本身是一门注重高性能、现代系统与内置数据类型的通用编程语言。",
+      "background": "传统上，汇编语言被认为只提供指令助记符和寄存器操作，没有数据类型的概念。不过，计算机科学中早有“类型化汇编语言（TAL）”的研究方向，通过在汇编指令中标注数据类别来强制类型安全。Odin 语言的内联汇编设计将这个理念落到实际语言中，为低层编程提供更安全的抽象。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Provocative and technically relevant topic about type systems in assembly, likely a deep-dive with novel perspective. No content body provided, but the title suggests high-value discussion for PL/systems enthusiasts.",
+    "ai_summary": "Argues that assembly can be typed, using Odin's inline asm design as an example.",
+    "ai_tags": [
+      "assembly",
+      "type-systems",
+      "programming-languages",
+      "odin",
+      "inline-asm"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:58f4ed1556433419",
+    "source_type": "rss",
+    "title": "Zero-Knowledge Proofs Aren’t Age Verification Silver Bullets",
+    "url": "https://www.eff.org/deeplinks/2026/08/zkps-arent-age-verification-silver-bullets",
+    "content": "<p><a href=\"https://lobste.rs/s/yigyaq/zero_knowledge_proofs_aren_t_age\">Comments</a></p>",
+    "author": "eff.org via jana",
+    "published_at": "2026-08-20T20:48:12Z",
+    "fetched_at": "2026-08-20T23:18:31.057193Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "privacy",
+        "cryptography"
+      ],
+      "title_zh": "零知识证明并非年龄验证的万能灵药",
+      "detailed_summary_zh": "电子前沿基金会（EFF）2026年8月发文指出，零知识证明（ZKP）并非年龄验证的“银弹”，并强调了其实际应用中的诸多限制。文章提醒政策制定者与开发者不要过度依赖这项技术。 随着各国收紧年龄验证法规，ZKP常被视为兼顾隐私与合规的解决方案。EFF的警示有助于防止在不成熟的条件下大规模部署ZKP，从而避免给用户隐私和系统安全性带来新的风险。 文章指出，ZKP虽然能在不透露出生日期等具体信息的情况下证明年龄，但系统仍然依赖可信的身份凭证签发方，且该签发方或验证环节可能获取用户的使用行为信息。此外，法律要求往往包含ZKP无法消除的留存、审计或问责义务。",
+      "background_zh": "零知识证明是一种密码学方法，允许一方在完全不披露秘密本身的前提下，向另一方证明自己确实知道该秘密，例如用“环形山洞”比喻：证明者知道咒语，但不必说出咒语就能通过。ZKP在区块链领域有ZK-SNARKs、ZK-STARKs等常见实现，可用作隐私保护、身份验证等场景的基础技术。在年龄验证场景中，它能让用户证明“已满18岁”而无需出示完整身份信息。",
+      "sources": [
+        {
+          "url": "https://www.circularise.com/blogs/zero-knowledge-proofs-explained-in-3-examples",
+          "title": "Zero - knowledge proofs explained in 3 examples"
+        },
+        {
+          "url": "https://www.expressvpn.com/blog/zero-knowledge-proofs-explained/",
+          "title": "What Is a zero - knowledge proof and why it matters | ExpressVPN"
+        }
+      ],
+      "detailed_summary": "电子前沿基金会（EFF）2026年8月发文指出，零知识证明（ZKP）并非年龄验证的“银弹”，并强调了其实际应用中的诸多限制。文章提醒政策制定者与开发者不要过度依赖这项技术。 随着各国收紧年龄验证法规，ZKP常被视为兼顾隐私与合规的解决方案。EFF的警示有助于防止在不成熟的条件下大规模部署ZKP，从而避免给用户隐私和系统安全性带来新的风险。 文章指出，ZKP虽然能在不透露出生日期等具体信息的情况下证明年龄，但系统仍然依赖可信的身份凭证签发方，且该签发方或验证环节可能获取用户的使用行为信息。此外，法律要求往往包含ZKP无法消除的留存、审计或问责义务。",
+      "background": "零知识证明是一种密码学方法，允许一方在完全不披露秘密本身的前提下，向另一方证明自己确实知道该秘密，例如用“环形山洞”比喻：证明者知道咒语，但不必说出咒语就能通过。ZKP在区块链领域有ZK-SNARKs、ZK-STARKs等常见实现，可用作隐私保护、身份验证等场景的基础技术。在年龄验证场景中，它能让用户证明“已满18岁”而无需出示完整身份信息。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful analysis from EFF cautioning against over-reliance on ZKPs for age verification; relevant to privacy and security, but not a breakthrough. The presence of discussion threads increases value.",
+    "ai_summary": "EFF argues that zero-knowledge proofs are not a silver bullet for age verification, highlighting their practical limitations.",
+    "ai_tags": [
+      "zero-knowledge proofs",
+      "age verification",
+      "privacy",
+      "security",
+      "analysis"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:2846541cf314ab7d",
+    "source_type": "rss",
+    "title": "Reverse-engineering Find My People to stalk ̶m̶y̶ ̶e̶x̶ a friend, cause I can",
+    "url": "https://zerotistic.blog/posts/find-my-people-linux/",
+    "content": "<p><a href=\"https://lobste.rs/s/ope7za/reverse_engineering_find_my_people_stalk\">Comments</a></p>",
+    "author": "zerotistic.blog via yashgarg",
+    "published_at": "2026-08-20T09:02:49Z",
+    "fetched_at": "2026-08-20T23:18:31.057258Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "reversing"
+      ],
+      "title_zh": "逆向工程 Apple Find My People 协议以追踪朋友",
+      "detailed_summary_zh": "这篇博客文章详细记录了作者逆向工程 Apple 的 Find My People 功能的过程，成功在 Linux 上实现了对朋友的定位追踪。该文章以幽默的方式呈现技术细节，但展示了对 Apple 私有位置共享协议的非官方访问能力。 该研究意味着 Find My People 协议可从非 Apple 平台访问，可能为未被授权的定位追踪开方便之门，对用户隐私构成潜在威胁。同时，它加深了安全研究社区对 Apple Find My 网络内部机制的理解，有助于发现和修复隐私漏洞。 作者可能实现了与 Apple 服务器通信的 Linux 客户端，利用了类似 Apple 设备的身份验证和密钥交换机制。文章标题中的删除线和幽默语气表明，该研究更多是出于技术挑战而非实际恶意目的。",
+      "background_zh": "Apple 的 Find My 网络利用众包定位，由超过十亿台 Apple 设备组成，任何开启离线查找的设备都会自动且静默地参与。Find My People 功能允许用户与选定的联系人共享自己的位置，而该协议使用每小时轮换的密钥来保护位置数据隐私。逆向工程这类协议有助于安全研究人员理解 Apple 的隐私保护措施及潜在的攻击面。",
+      "sources": [
+        {
+          "url": "https://cc-sw.com/find-my-and-find-hub-network-research/",
+          "title": "Find My and Find Hub Network Research | Caesar Creek Software"
+        },
+        {
+          "url": "https://positive.security/blog/send-my",
+          "title": "Send My: Arbitrary data transmission via Apple 's Find My network"
+        },
+        {
+          "url": "https://crypto.stackexchange.com/questions/102249/apple-find-my-key-rotation",
+          "title": "key derivation - Apple \" Find My \" Key Rotation - Cryptography Stack..."
+        }
+      ],
+      "detailed_summary": "这篇博客文章详细记录了作者逆向工程 Apple 的 Find My People 功能的过程，成功在 Linux 上实现了对朋友的定位追踪。该文章以幽默的方式呈现技术细节，但展示了对 Apple 私有位置共享协议的非官方访问能力。 该研究意味着 Find My People 协议可从非 Apple 平台访问，可能为未被授权的定位追踪开方便之门，对用户隐私构成潜在威胁。同时，它加深了安全研究社区对 Apple Find My 网络内部机制的理解，有助于发现和修复隐私漏洞。 作者可能实现了与 Apple 服务器通信的 Linux 客户端，利用了类似 Apple 设备的身份验证和密钥交换机制。文章标题中的删除线和幽默语气表明，该研究更多是出于技术挑战而非实际恶意目的。",
+      "background": "Apple 的 Find My 网络利用众包定位，由超过十亿台 Apple 设备组成，任何开启离线查找的设备都会自动且静默地参与。Find My People 功能允许用户与选定的联系人共享自己的位置，而该协议使用每小时轮换的密钥来保护位置数据隐私。逆向工程这类协议有助于安全研究人员理解 Apple 的隐私保护措施及潜在的攻击面。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Reverse-engineering Apple's Find My People protocol is a technically deep and novel approach that could have privacy/security implications. The Lobste.rs discussion likely adds insightful technical commentary. It's not groundbreaking but is high-value for security researchers.",
+    "ai_summary": "A blog post detailing the reverse-engineering of Apple's Find My People feature, humorously framed as stalking a friend.",
+    "ai_tags": [
+      "reverse-engineering",
+      "security",
+      "privacy",
+      "apple",
+      "protocol-analysis"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:e97effc5d529f4d1",
+    "source_type": "rss",
+    "title": "Emacs 31.1 will release on 8/24",
+    "url": "https://github.com/emacs-mirror/emacs/blob/062dcd2aead00c3b47c14ff5b6c40313f7a775f5/etc/HISTORY#L246",
+    "content": "<p>Biggest thing for me is that tree-sitter's ABI is being bumped to 15 -- fixes compatibility issues with <em>several</em> upstream grammars.</p>\n<p>For the impatient, RC1 has been posted: <a href=\"https://lists.gnu.org/archive/html/emacs-devel/2026-08/msg00599.html\" rel=\"ugc\">https://lists.gnu.org/archive/html/emacs-devel/2026-08/msg00599.html</a></p>\n<p><a href=\"https://lobste.rs/s/ikhwaz/emacs_31_1_will_release_on_8_24\">Comments</a></p>",
+    "author": "github.com via pgn",
+    "published_at": "2026-08-20T16:58:11Z",
+    "fetched_at": "2026-08-20T23:18:31.057318Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "emacs"
+      ],
+      "title_zh": "Emacs 31.1 将于8月24日发布，tree-sitter ABI 升至15",
+      "detailed_summary_zh": "Emacs 31.1 定于2026年8月24日正式发布，目前RC1已放出。本次更新将tree-sitter的ABI版本提升至15，以修复与多个上游语法解析器的兼容性问题。 作为广泛使用的开源编辑器，Emacs 的版本更新直接影响众多开发者的日常工具链。tree-sitter ABI 的升级将改善语法高亮与解析的稳定性，提升整体编辑体验。 本次ABI版本从14跳升至15，解决了多个上游官方语法包的二进制兼容问题。RC1已通过GNU邮件列表公布，用户可提前下载测试新特性。",
+      "background_zh": "tree-sitter 是一个开源的增量解析库，能将源代码解析为具体语法树，并支持实时编辑时的增量更新，现已被 Emacs、Neovim、Zed 等编辑器广泛集成。ABI（应用二进制接口）定义了编译后的程序与库之间的二进制接口，版本不一致可能导致加载失败或运行时错误。Emacs 31.1 的 ABI 升级是为了与最新的 tree-sitter 语法库保持同步，避免因接口变动而引发的兼容性问题。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tree-sitter_(parser_generator)",
+          "title": "Tree-sitter (parser generator)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Application_binary_interface",
+          "title": "Application binary interface - Wikipedia"
+        },
+        {
+          "url": "https://tree-sitter.github.io/tree-sitter/using-parsers/",
+          "title": "Using Parsers - Tree - sitter"
+        }
+      ],
+      "detailed_summary": "Emacs 31.1 定于2026年8月24日正式发布，目前RC1已放出。本次更新将tree-sitter的ABI版本提升至15，以修复与多个上游语法解析器的兼容性问题。 作为广泛使用的开源编辑器，Emacs 的版本更新直接影响众多开发者的日常工具链。tree-sitter ABI 的升级将改善语法高亮与解析的稳定性，提升整体编辑体验。 本次ABI版本从14跳升至15，解决了多个上游官方语法包的二进制兼容问题。RC1已通过GNU邮件列表公布，用户可提前下载测试新特性。",
+      "background": "tree-sitter 是一个开源的增量解析库，能将源代码解析为具体语法树，并支持实时编辑时的增量更新，现已被 Emacs、Neovim、Zed 等编辑器广泛集成。ABI（应用二进制接口）定义了编译后的程序与库之间的二进制接口，版本不一致可能导致加载失败或运行时错误。Emacs 31.1 的 ABI 升级是为了与最新的 tree-sitter 语法库保持同步，避免因接口变动而引发的兼容性问题。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Emacs 31.1 is a significant release for a widely-used editor, with a concrete date and an important tree-sitter ABI fix. No actual comment discussion was provided, only a link, so that aspect is neutral.",
+    "ai_summary": "Emacs 31.1 will be released on August 24, with RC1 available now, featuring a tree-sitter ABI bump to 15 to improve grammar compatibility.",
+    "ai_tags": [
+      "Emacs",
+      "release",
+      "tree-sitter",
+      "editor",
+      "open-source"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:877e0eaabbc99980",
+    "source_type": "rss",
+    "title": "Understanding the limitations of Pubsub systems",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3713082.3730397",
+    "content": "<p><a href=\"https://lobste.rs/s/psxjb4/understanding_limitations_pubsub\">Comments</a></p>",
+    "author": "dl.acm.org via typesanitizer",
+    "published_at": "2026-08-20T05:24:48Z",
+    "fetched_at": "2026-08-20T23:18:31.057335Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "pdf",
+        "distributed"
+      ],
+      "title_zh": "剖析发布/订阅系统的局限性",
+      "detailed_summary_zh": "一篇题为《Understanding the limitations of Pubsub systems》的研究论文被发布，深入分析了发布/订阅（pub/sub）消息模式在分布式系统中的固有局限。该论文目前在ACM数字图书馆可获取。 发布/订阅是分布式系统和消息中间件的核心设计模式，对其局限性的系统梳理能帮助架构师在选型时规避陷阱。该论文的讨论对分布式系统研究和工程实践均有参考价值。 论文发布于ACM，数据标识为10.1145/3713082.3730397，具体内容、实验细节和结论在现有信息中未展示。其标签涵盖pubsub、分布式系统、消息传递和研究，说明该工作属于技术型学术论文。",
+      "background_zh": "发布/订阅（pub/sub）是一种异步消息传递模式，发送者（发布者）不直接向接收者（订阅者）发送消息，而是将消息发布到中间件，由订阅者按主题或条件订阅。这种模式在微服务、事件驱动架构和物联网中得到广泛应用，但也存在消息丢失、重复投递、顺序性保证和可扩展性等方面的经典挑战。该论文正是对这类系统局限性的专门探讨。",
+      "community_discussion_zh": "提供的资料中未包含具体评论内容，因此无法归纳社区讨论观点。",
+      "detailed_summary": "一篇题为《Understanding the limitations of Pubsub systems》的研究论文被发布，深入分析了发布/订阅（pub/sub）消息模式在分布式系统中的固有局限。该论文目前在ACM数字图书馆可获取。 发布/订阅是分布式系统和消息中间件的核心设计模式，对其局限性的系统梳理能帮助架构师在选型时规避陷阱。该论文的讨论对分布式系统研究和工程实践均有参考价值。 论文发布于ACM，数据标识为10.1145/3713082.3730397，具体内容、实验细节和结论在现有信息中未展示。其标签涵盖pubsub、分布式系统、消息传递和研究，说明该工作属于技术型学术论文。",
+      "background": "发布/订阅（pub/sub）是一种异步消息传递模式，发送者（发布者）不直接向接收者（订阅者）发送消息，而是将消息发布到中间件，由订阅者按主题或条件订阅。这种模式在微服务、事件驱动架构和物联网中得到广泛应用，但也存在消息丢失、重复投递、顺序性保证和可扩展性等方面的经典挑战。该论文正是对这类系统局限性的专门探讨。",
+      "community_discussion": "提供的资料中未包含具体评论内容，因此无法归纳社区讨论观点。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Paper on pubsub limitations addresses an important distributed systems topic, likely offering technical depth, but the summary and discussion are not visible in the provided content, so impact cannot be fully assessed.",
+    "ai_summary": "A research paper discussing the limitations of publish/subscribe systems.",
+    "ai_tags": [
+      "pubsub",
+      "distributed-systems",
+      "messaging",
+      "research"
+    ]
+  }
+]
