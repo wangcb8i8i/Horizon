@@ -1,0 +1,632 @@
+[
+  {
+    "id": "rss:lobste.rs_rss:5383e9ce370247c6",
+    "source_type": "rss",
+    "title": "Enabling the next-generation trait solver on nightly",
+    "url": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
+    "content": "<p><a href=\"https://lobste.rs/s/3giezs/enabling_next_generation_trait_solver_on\">Comments</a></p>",
+    "author": "blog.rust-lang.org by jana",
+    "published_at": "2026-08-21T15:15:16Z",
+    "fetched_at": "2026-08-21T23:15:50.237755Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "rust"
+      ],
+      "title_zh": "Rust 在 nightly 上启用新一代 trait solver",
+      "detailed_summary_zh": "Rust 官方宣布，经过近四年的积极开发，新一代 trait solver 已在 nightly 版本上默认启用，并计划在未来几个月内完成稳定化。这被认为是 Rust 编译器自首次发布以来最大的单一变更。 新一代 trait solver 将取代现有类型系统中负责证明 trait 约束、规范化关联类型等核心组件，可修复旧实现中的大量 bug 和不健全问题，同时改善编译时间。这为 Rust 未来的语言功能开发铺平道路，并影响所有 Rust 使用者。 该 solver 目前在 rustc_trait_selection 模块中以 WIP 状态开发，nightly 默认启用是为了暴露剩余问题。它旨在完全替换现有的 select 和 fulfill 实现，候选来源主要包括用户编写的 impl 和参数环境中的约束。",
+      "background_zh": "trait solver 是 Rust 编译器中用于验证泛型代码 trait 约束是否满足的机制。旧有实现存在许多缺陷、效率低下以及需要大规模修改的粗糙之处。新一代 solver 采用递归证明目标的方式，为每个目标检查可能的候选者，并递归证明其嵌套目标。",
+      "sources": [
+        {
+          "url": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
+          "title": "Enabling the next-generation trait solver on nightly | Rust Blog"
+        },
+        {
+          "url": "https://rust-lang.github.io/rust-project-goals/2024h2/next-solver.html",
+          "title": "Next-generation trait solver - Rust Project Goals"
+        },
+        {
+          "url": "https://rustc-dev-guide.rust-lang.org/solve/trait-solving.html",
+          "title": "Next-gen trait solving - Rust Compiler Development Guide"
+        }
+      ],
+      "detailed_summary": "Rust 官方宣布，经过近四年的积极开发，新一代 trait solver 已在 nightly 版本上默认启用，并计划在未来几个月内完成稳定化。这被认为是 Rust 编译器自首次发布以来最大的单一变更。 新一代 trait solver 将取代现有类型系统中负责证明 trait 约束、规范化关联类型等核心组件，可修复旧实现中的大量 bug 和不健全问题，同时改善编译时间。这为 Rust 未来的语言功能开发铺平道路，并影响所有 Rust 使用者。 该 solver 目前在 rustc_trait_selection 模块中以 WIP 状态开发，nightly 默认启用是为了暴露剩余问题。它旨在完全替换现有的 select 和 fulfill 实现，候选来源主要包括用户编写的 impl 和参数环境中的约束。",
+      "background": "trait solver 是 Rust 编译器中用于验证泛型代码 trait 约束是否满足的机制。旧有实现存在许多缺陷、效率低下以及需要大规模修改的粗糙之处。新一代 solver 采用递归证明目标的方式，为每个目标检查可能的候选者，并递归证明其嵌套目标。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Major milestone for Rust's compiler: enabling the new trait solver on nightly is a significant technical advancement with broad implications for future language features and compile-time performance. The linked discussion on Lobsters adds community insights and debate, increasing value.",
+    "ai_summary": "Rust announces the enablement of its next-generation trait solver on nightly, marking a significant step forward for the language's type system.",
+    "ai_tags": [
+      "rust",
+      "compiler",
+      "trait-solver",
+      "type-system",
+      "nightly"
+    ]
+  },
+  {
+    "id": "hackernews:story:49389430",
+    "source_type": "hackernews",
+    "title": "Felony Bench",
+    "url": "https://www.felonybench.com/",
+    "content": "\n--- Top Comments ---\n\n[rfw300]: The way that OpenAI has communicated around the HuggingFace incident makes me feel crazy. You created a machine that undertook a malicious campaign of harm against an innocent third-party! You should be doing deep introspection about how your company culture and approach to R&amp;D produces criminal outcomes. Instead, they treat their own felonious behavior like it is an uncontrollable act of God. From Greg Brockman&#x27;s post a few days ago: &gt; The OpenAI-Hugging Face incident (opens in a...\n\n[lxe]: Let&#x27;s say I am &quot;User&quot;. I subscribe through a &quot;Third Party&quot; to use &quot;AI Agent&quot; allowing an &quot;LLM&quot; to run. I want to accomplish some legal non-nefarious task, and run the agent. The agentic loop causes a CFAA-violating behavior. Who gets prosecuted? 1. User 2. The third party model host with whom I have the account 3. The developer of the harness &#x2F;agent software 4. The developer of the LLM model\n\n[beej71]: A computer can never be held accountable. Therefore a computer must never commit a felony.\n\n[john_strinlai]: &gt; Felony Bench counts unique instances where AI agents inadvertently compromise or affect third-party entities.  a bit silly, as one typically has to prove intent (which is why security researchers don&#x27;t get slapped with felonies all the time). &quot;inadvertently&quot; and the existence of guardrails&#x2F;sandboxes&#x2F;etc make it pretty unconvincing that these incidents were intentionally malicious. still a fun thing to track, but the name is just a bit overstated.\n\n[ang_cire]: Nonviolent felonies are tools of oppression. Edit: since this is apparently somewhat controversial, perhaps some explanation is in order. &quot;Felony&quot; has no set definition of which crimes it must apply to, it is entirely based on the discretion of the locality setting the laws. What is a felony in one place can often be a misdemeanor in another. This is especially true for nonviolent crimes. It&#x27;s also been shown in studies that nonviolent felonies are imposed against minorities at...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/pywde0/felony_bench_be_ai_do_crime\">Comments</a></p>",
+    "author": "colinprince",
+    "published_at": "2026-08-21T15:17:04Z",
+    "fetched_at": "2026-08-21T23:15:50.030195Z",
+    "metadata": {
+      "score": 444,
+      "descendants": 205,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49389430",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "ai"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Felony Bench：追踪AI代理意外伤害事件的网站引发责任热议",
+      "detailed_summary_zh": "Felony Bench是一个新上线的网站，专门记录AI代理在运行中无意间对第三方造成损害的独立事件。该网站因OpenAI与HuggingFace相关事件而备受关注，并引发了关于AI代理法律责任归属的广泛讨论。 随着代理式AI的快速普及，此类意外事件将越来越多，而现有法律体系（如CFAA）尚未明确AI代理自主行为的责任归属。该网站的出现有助于推动AI安全与法律责任议题的公共讨论，对政策制定者和AI开发者具有重要参考价值。 网站以“Felony”（重罪）命名，强调其记录的是“非故意”造成的损害，但社区评论指出“重罪”一词可能过于夸大，因为法律通常需要证明主观意图。网站上还讨论了当AI代理导致CFAA违规时，用户、第三方平台、Agent软件开发者以及LLM开发者中究竟谁应承担刑事责任。",
+      "background_zh": "代理式AI指能够在有限监督下自主决策并执行任务的人工智能系统，它不同于传统聊天机器人，可以设定目标、规划并采取实际行动。美国《计算机欺诈与滥用法》（CFAA）是规范未经授权访问计算机系统的联邦法律，但AI代理的自主行为是否构成“未经授权访问”仍然存在法律争议。专家普遍认为，部署AI代理的个人或企业应承担法律责任，但许多部署者并不清楚自己的法律风险。",
+      "community_discussion_zh": "社区评论整体对AI代理的法律责任表示担忧。有用户批评OpenAI等公司在事件发生后推卸责任，将其行为包装成“不可控的天灾”；也有人具体讨论了在AI代理导致CFAA违规时，用户、平台、开发者等多方中谁应被起诉。部分评论认为“Felony”一词过于夸大，因为“无意”行为和护栏机制通常意味着不构成故意犯罪。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AI_agent",
+          "title": "AI agent - Wikipedia"
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/agentic-ai",
+          "title": "What is Agentic AI? | IBM"
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2026/aug/13/ai-agents-arent-legally-responsible-for-any-harm-that-they-cause-experts-say-so-who-is",
+          "title": "AI agents aren’t legally responsible for any harm that they ..."
+        },
+        {
+          "url": "https://www.bakermckenzie.com/en/insight/publications/2026/06/united-states-legal-accountability-for-ai-agents",
+          "title": "United States: Legal Accountability for AI Agents"
+        }
+      ],
+      "detailed_summary": "Felony Bench是一个新上线的网站，专门记录AI代理在运行中无意间对第三方造成损害的独立事件。该网站因OpenAI与HuggingFace相关事件而备受关注，并引发了关于AI代理法律责任归属的广泛讨论。 随着代理式AI的快速普及，此类意外事件将越来越多，而现有法律体系（如CFAA）尚未明确AI代理自主行为的责任归属。该网站的出现有助于推动AI安全与法律责任议题的公共讨论，对政策制定者和AI开发者具有重要参考价值。 网站以“Felony”（重罪）命名，强调其记录的是“非故意”造成的损害，但社区评论指出“重罪”一词可能过于夸大，因为法律通常需要证明主观意图。网站上还讨论了当AI代理导致CFAA违规时，用户、第三方平台、Agent软件开发者以及LLM开发者中究竟谁应承担刑事责任。",
+      "background": "代理式AI指能够在有限监督下自主决策并执行任务的人工智能系统，它不同于传统聊天机器人，可以设定目标、规划并采取实际行动。美国《计算机欺诈与滥用法》（CFAA）是规范未经授权访问计算机系统的联邦法律，但AI代理的自主行为是否构成“未经授权访问”仍然存在法律争议。专家普遍认为，部署AI代理的个人或企业应承担法律责任，但许多部署者并不清楚自己的法律风险。",
+      "community_discussion": "社区评论整体对AI代理的法律责任表示担忧。有用户批评OpenAI等公司在事件发生后推卸责任，将其行为包装成“不可控的天灾”；也有人具体讨论了在AI代理导致CFAA违规时，用户、平台、开发者等多方中谁应被起诉。部分评论认为“Felony”一词过于夸大，因为“无意”行为和护栏机制通常意味着不构成故意犯罪。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value discussion on AI accountability and legal liability, sparked by the OpenAI/HuggingFace incident. The topic is timely and significant for AI safety and policy, with substantive community debate on intent, CFAA violations, and agent responsibility. Strong engagement (205 comments) with diverse viewpoints elevates its importance.",
+    "ai_summary": "Felony Bench is a site tracking incidents where AI agents inadvertently harm third parties, prompting a rich community debate on legal responsibility and the implications of autonomous AI actions.",
+    "ai_tags": [
+      "AI ethics",
+      "AI safety",
+      "legal liability",
+      "agentic AI",
+      "CFAA"
+    ]
+  },
+  {
+    "id": "hackernews:story:49386895",
+    "source_type": "hackernews",
+    "title": "Felony charges for citizen deleting phone data at US Border",
+    "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+    "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;SflVC\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;SflVC</a><p><a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=_2rokxux5cU\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=_2rokxux5cU</a>\n\n\n--- Top Comments ---\n\n[btbuildem]: The naivete of some of the comments here is astounding. It doesn&#x27;t matter whether you&#x27;re right, it doesn&#x27;t matter whether it&#x27;s the law, it&#x27;s irrelevant that you have rights, etc. Those things are of the past now, for the US. I think it would be easier to understand the playing field and choose your actions accordingly, if you accept the US has entered its East Germany &#x2F; late 20th century Soviet era -- except of course with 1000x more invasive and effective survei...\n\n[Zak]: For exactly the border search scenario, I wish smartphones could be imaged and restored as easily as PCs. Imagine booting the phone from a flash drive, making an encrypted image of the phone on said drive, and writing a fresh OS before reaching the border. There&#x27;s no deception required to protect sensitive data or avoid the seizure of an expensive phone. Consent to unlocking the phone, refuse to unlock the drive. The drive gets seized and you go on your way (if you&#x27;re a US citizen e...\n\n[patcon]: I used to play around on projects adjacent to Tor and TailsOS, and had an idea for a setup I was researching. It&#x27;s a little intense and probably has annoying failure modes, but sharing in case anyone else finds it helpful: - Tasker is an automation app for setting up rules for triggers and actions. It allows extension apps to be created to add new triggers and actions. - someone at one point made an extension to add an action for wiping or factory resetting when triggered - there was an ...\n\n[zmmmmm]: If you initiate a wipe before approaching immigration, which swaps the whole phone contents to an encrypted backup that you physically can&#x27;t decrypt without a key that (say) a friend knows. Then you would be offering immigration the device in an unaltered state between when they request it and when they receive it. Any request for an alternative pass code or whether the pass code given will alter the state of the device can be honestly answered. I am curious if this is still obstruction ...\n\n[simonebrunozzi]: All Archive pages, when accessed from Italy, now are blocked by the Government: &quot;PAGINA INTERDETTA DAL CENTRO NAZIONALE PER IL CONTRASTO DELLA PEDOPORNOGRAFIA ONLINE (C.N.C.P.O.)&quot; “PAGE BLOCKED BY THE NATIONAL CENTER FOR COMBATING ONLINE CHILD PORNOGRAPHY (C.N.C.P.O.)” Oh, we live in an interesting age.",
+    "author": "floathub",
+    "published_at": "2026-08-21T12:10:13Z",
+    "fetched_at": "2026-08-21T23:15:50.030229Z",
+    "metadata": {
+      "score": 435,
+      "descendants": 576,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49386895",
+      "comment_count": 5,
+      "title_zh": "美国公民边境删手机数据面临重罪指控",
+      "detailed_summary_zh": "美国公民Samuel Tunick因在边境检查期间删除手机数据而面临重罪指控，该事件由《纽约时报》报道并引发广泛关注。此案凸显了边境搜查中数字设备隐私权与政府监控之间的激烈冲突。 该案件可能为边境电子设备搜查的法律边界确立重要先例，直接影响所有入境美国旅客的数字隐私权益。若删除行为被认定为犯罪，将大幅扩大政府在边境的执法权力，对公民自由构成深远威胁。 目前公开信息有限，但据社区讨论和报道，指控可能涉及妨碍司法或销毁证据等罪名。案件的关键在于删除行为发生在边境官员要求检查之后还是之前，以及公民是否有权在边境拒绝解锁设备或删除数据。",
+      "background_zh": "美国法律赋予海关和边境保护局（CBP）在边境搜查电子设备的广泛权力，通常无需搜查令。然而，公民是否有权在搜查前删除个人数据，以及此行为是否构成犯罪，一直是法律争议的焦点，本案可能成为测试这一界限的标志性案件。",
+      "community_discussion_zh": "社区评论整体情绪悲观，不少用户认为美国已进入类似东德或苏联时代的监控社会，法律权利在边境形同虚设。部分技术用户提出实用防护方案，如使用加密备份和远程擦除工具，但有人指出这些做法可能被视为规避法律而引发更大风险。",
+      "detailed_summary": "美国公民Samuel Tunick因在边境检查期间删除手机数据而面临重罪指控，该事件由《纽约时报》报道并引发广泛关注。此案凸显了边境搜查中数字设备隐私权与政府监控之间的激烈冲突。 该案件可能为边境电子设备搜查的法律边界确立重要先例，直接影响所有入境美国旅客的数字隐私权益。若删除行为被认定为犯罪，将大幅扩大政府在边境的执法权力，对公民自由构成深远威胁。 目前公开信息有限，但据社区讨论和报道，指控可能涉及妨碍司法或销毁证据等罪名。案件的关键在于删除行为发生在边境官员要求检查之后还是之前，以及公民是否有权在边境拒绝解锁设备或删除数据。",
+      "background": "美国法律赋予海关和边境保护局（CBP）在边境搜查电子设备的广泛权力，通常无需搜查令。然而，公民是否有权在搜查前删除个人数据，以及此行为是否构成犯罪，一直是法律争议的焦点，本案可能成为测试这一界限的标志性案件。",
+      "community_discussion": "社区评论整体情绪悲观，不少用户认为美国已进入类似东德或苏联时代的监控社会，法律权利在边境形同虚设。部分技术用户提出实用防护方案，如使用加密备份和远程擦除工具，但有人指出这些做法可能被视为规避法律而引发更大风险。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (435 points, 576 comments) and significant implications for privacy, digital rights, and border search legality. The discussion includes substantive technical and legal viewpoints, making it a high-value topic for the tech community.",
+    "ai_summary": "A US citizen faces felony charges for deleting phone data during a border search, raising critical questions about privacy rights and government surveillance.",
+    "ai_tags": [
+      "privacy",
+      "border search",
+      "civil liberties",
+      "legal",
+      "surveillance"
+    ]
+  },
+  {
+    "id": "hackernews:story:49392200",
+    "source_type": "hackernews",
+    "title": "Scientists release biggest 2D map of the universe",
+    "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+    "content": "Direct link to Legacy Survey Sky Viewer: <a href=\"https:&#x2F;&#x2F;viewer.legacysurvey.org\" rel=\"nofollow\">https:&#x2F;&#x2F;viewer.legacysurvey.org</a>\n\n\n--- Top Comments ---\n\n[anigbrowl]: Researchers expect it will remain the most comprehensive 2D map of our universe for years to come.  Most likely. I doubt there is going to be any serious investment in astronomy over the next decade given economic headwinds and a deteriorating strategic situation. The big money will be going into defense and economic sovereignty and building&#x2F;launching new high powered telescopes will not be a priority. Optical&#x2F;sensor advances will be prioritized for earth observation (commercial, mi...\n\n[flockonus]: I knew the universe was nothing but a brick wall, now we have proof!  https:&#x2F;&#x2F;viewer.legacysurvey.org&#x2F;?ra=80.3728&amp;dec=-69.4497&amp;lay...  &#x2F;jk\n\n[KaiMagnus]: I&#x27;ve got some crazy feelings browsing this. Are there any particularily detailed areas? But maybe the humbling reality is just: The closer we look, the more galaxies appear where we thought was black void…\n\n[hn_throwaway_99]: I read the article but didn&#x27;t watch the videos yet, but I&#x27;m curious as to what would be needed to make this a 3D map. That is, I&#x27;m assuming this 2D map records the position of all of these objects in the sky, but not the distance from Earth. But I thought that calculating the distance of objects is relatively straightforward, e.g. you hear all the time &quot;Galaxy X is 2 billion lightyears away&quot; or whatever. Would it just be really computationally expensive to calculate t...\n\n[doodlebugging]: That&#x27;s impressive. Though I think there&#x27;s too much space on this plane. I&#x27;m wondering whether it is actually a 2D view since it obviously isn&#x27;t planar. To paraphrase Samuel L Jackson - &quot;I have had it with this m&#x27;f&#x27;ing space on a plane!  Everybody strap in I&#x27;m about to open some f&#x27;in&#x27; windows.&quot; Proceeds to crank open an array of telescopes to get another 3D perspective of a 4D universe so we can project it onto our 2D viewing devices as if...",
+    "author": "NKosmatos",
+    "published_at": "2026-08-21T18:36:34Z",
+    "fetched_at": "2026-08-21T23:15:50.030258Z",
+    "metadata": {
+      "score": 117,
+      "descendants": 37,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49392200",
+      "comment_count": 5,
+      "title_zh": "科学家发布迄今最大的宇宙二维地图",
+      "detailed_summary_zh": "2026年8月10日，科学家通过传统巡天（Legacy Survey）项目发布了迄今最大的宇宙二维地图，并提供了交互式天空查看器供公众探索。 该地图覆盖约3.1万平方度的天区，可能成为未来多年内最全面的二维宇宙地图，对天文学研究和公众科学教育都具有重要意义。 此地图由暗能量光谱仪（DESI）合作团队制作，覆盖光学和红外波段，包含海量天体的位置与亮度数据；但它是二维投影，不包含距离信息，因此无法直接呈现宇宙的三维结构。",
+      "background_zh": "传统巡天项目（Legacy Survey）是暗能量光谱仪（DESI）合作的一部分，利用多个望远镜的观测数据对天区进行大规模成像，生成源星表。通过叠加不同波段的观测，科学家可以发现非常暗淡的天体。此前已有类似巡天如斯隆数字巡天等，但本次发布的地图在覆盖范围和深度上都有显著提升。",
+      "community_discussion_zh": "社区讨论整体充满惊叹与幽默，许多用户被地图的细节震撼，并感叹原本看似空无一物的区域其实隐藏着大量星系。部分用户提出了技术性问题，比如如何将二维地图扩展为三维、以及距离测量的可行性；也有人对天文学领域的未来投资表示悲观，认为经济和战略压力可能阻碍新一代望远镜的建设。",
+      "sources": [
+        {
+          "url": "https://www.legacysurvey.org/",
+          "title": "Index | Legacy Survey"
+        }
+      ],
+      "detailed_summary": "2026年8月10日，科学家通过传统巡天（Legacy Survey）项目发布了迄今最大的宇宙二维地图，并提供了交互式天空查看器供公众探索。 该地图覆盖约3.1万平方度的天区，可能成为未来多年内最全面的二维宇宙地图，对天文学研究和公众科学教育都具有重要意义。 此地图由暗能量光谱仪（DESI）合作团队制作，覆盖光学和红外波段，包含海量天体的位置与亮度数据；但它是二维投影，不包含距离信息，因此无法直接呈现宇宙的三维结构。",
+      "background": "传统巡天项目（Legacy Survey）是暗能量光谱仪（DESI）合作的一部分，利用多个望远镜的观测数据对天区进行大规模成像，生成源星表。通过叠加不同波段的观测，科学家可以发现非常暗淡的天体。此前已有类似巡天如斯隆数字巡天等，但本次发布的地图在覆盖范围和深度上都有显著提升。",
+      "community_discussion": "社区讨论整体充满惊叹与幽默，许多用户被地图的细节震撼，并感叹原本看似空无一物的区域其实隐藏着大量星系。部分用户提出了技术性问题，比如如何将二维地图扩展为三维、以及距离测量的可行性；也有人对天文学领域的未来投资表示悲观，认为经济和战略压力可能阻碍新一代望远镜的建设。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major scientific data release of the most comprehensive 2D map of the universe, with an interactive viewer and substantial community discussion on Hacker News. While not directly software engineering, it has high technical/academic relevance and engages users with the underlying data and tools. Discussion includes thoughtful questions about 3D mapping and future investment, adding to its value.",
+    "ai_summary": "Scientists release the biggest 2D map of the universe via the Legacy Survey, with an interactive viewer available.",
+    "ai_tags": [
+      "astronomy",
+      "universe mapping",
+      "scientific dataset",
+      "legacy survey",
+      "data visualization"
+    ]
+  },
+  {
+    "id": "hackernews:story:49387570",
+    "source_type": "hackernews",
+    "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
+    "url": "https://lina.sh/blog/hijacking-e164-arpa",
+    "content": "\n--- Top Comments ---\n\n[toast0]: &gt; It never really took off though, and even back in its early days it saw barely any use. Over the years it just deteriorated further, and today it&#x27;s basically completely dead. It&#x27;s actually not completely dead... It&#x27;s just (almost) completely non-public. You can subscribe to services to get number porting information where the interface is basically e164.arpa&#x2F;ENUM queries to a private nameserver over a VPN. I don&#x27;t know the details, the cost was high enough that i...\n\n[dmd]: I&#x27;m mostly amazed the author didn&#x27;t land in jail, which is the normally the response to reporting this kind of thing to authorities.\n\n[chaz6]: It is a shame they did not actually set up a SIP server and see if any of those requests turned into actual call terminations. There is another schema called TRIP [1] - telephony routing over ip that uses a number format &quot;1234*1455&quot; designed to be entered on a standard phone keypad. When I registered my ITAD (internet telephony administrative domain, the RHS of a TRIP number) I was lucky enough to get one that matches my local dialling code!  https:&#x2F;&#x2F;tripresurgence.org&#x2...\n\n[cryptolobster]: It&#x27;s funny how such holes can remain for years, and no one notices until someone stumbles upon them. It&#x27;s interesting that no serious organization wanted to address the issue until it was discovered that the military was involved. It&#x27;s a shame the author wasn&#x27;t rewarded but at least the story can now be told over a beer.\n\n[dkga]: I enjoyed reading this much more than anything I read here recently. In particular I like how it absolutely shows that somethings just… fall through the cracks!\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/dyswyz/i_accidentally_logged_hundreds\">Comments</a></p>",
+    "author": "gavide",
+    "published_at": "2026-08-21T13:11:28Z",
+    "fetched_at": "2026-08-21T23:15:50.030305Z",
+    "metadata": {
+      "score": 396,
+      "descendants": 43,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49387570",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "意外记录数十万通军事基地电话查询，暴露e164.arpa安全隐患",
+      "detailed_summary_zh": "作者无意中记录了数十万次针对军事基地电话号码的ENUM查询，揭示出e164.arpa基础设施中一个长期被忽视的安全漏洞。该事件最初未被重视，直到涉及军方后才引发关注。 这一发现凸显了电信基础设施中潜在的重大安全风险，可能影响军事和政府通信的隐私与安全。它还说明了一些关键互联网基础设施长期缺乏维护和监管，容易被意外或恶意利用。 ENUM协议通过将E.164电话号码映射到DNS域名（如e164.arpa）来实现电话号码的网络寻址。作者记录到的查询表明，尽管该域基本处于“死亡”状态，但仍存在非公开的私人服务，且军方号码的查询量巨大，说明实际使用并未完全消失。",
+      "background_zh": "ENUM是IETF制定的标准（RFC 2916、RFC 6116），用于将传统电话号码映射到域名系统（DNS），以便在互联网上路由呼叫。e164.arpa是专门为电话号码映射保留的顶级域，各国通过RIPE等机构管理其委派。该技术曾有希望实现统一通信寻址，但始终未广泛普及，逐渐被边缘化。",
+      "community_discussion_zh": "评论区观点多样：有人指出e164.arpa并非完全废弃，而是通过VPN等私有方式继续使用；有人对作者没有因此被捕感到惊讶，认为这通常是对此类报告的正常反应；还有人希望作者能进一步搭建SIP服务器测试实际呼叫，并感叹这类漏洞能多年无人察觉，直到偶然发现才被正视。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Telephone_number_mapping",
+          "title": "Telephone number mapping - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/E.164",
+          "title": "E.164 - Wikipedia"
+        },
+        {
+          "url": "https://www.networkworld.com/article/883692/lan-wan-what-is-enum.html",
+          "title": "What is ENUM? | Network World"
+        }
+      ],
+      "detailed_summary": "作者无意中记录了数十万次针对军事基地电话号码的ENUM查询，揭示出e164.arpa基础设施中一个长期被忽视的安全漏洞。该事件最初未被重视，直到涉及军方后才引发关注。 这一发现凸显了电信基础设施中潜在的重大安全风险，可能影响军事和政府通信的隐私与安全。它还说明了一些关键互联网基础设施长期缺乏维护和监管，容易被意外或恶意利用。 ENUM协议通过将E.164电话号码映射到DNS域名（如e164.arpa）来实现电话号码的网络寻址。作者记录到的查询表明，尽管该域基本处于“死亡”状态，但仍存在非公开的私人服务，且军方号码的查询量巨大，说明实际使用并未完全消失。",
+      "background": "ENUM是IETF制定的标准（RFC 2916、RFC 6116），用于将传统电话号码映射到域名系统（DNS），以便在互联网上路由呼叫。e164.arpa是专门为电话号码映射保留的顶级域，各国通过RIPE等机构管理其委派。该技术曾有希望实现统一通信寻址，但始终未广泛普及，逐渐被边缘化。",
+      "community_discussion": "评论区观点多样：有人指出e164.arpa并非完全废弃，而是通过VPN等私有方式继续使用；有人对作者没有因此被捕感到惊讶，认为这通常是对此类报告的正常反应；还有人希望作者能进一步搭建SIP服务器测试实际呼叫，并感叹这类漏洞能多年无人察觉，直到偶然发现才被正视。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value security research exposing a serious, long-unnoticed flaw in telecom infrastructure. The strong community engagement (396 points, 43 comments) includes technical discussion and debate about implications, adding credibility and depth.",
+    "ai_summary": "Author accidentally logged hundreds of thousands of ENUM queries for military base phone numbers, revealing a dormant but significant security vulnerability in the e164.arpa infrastructure.",
+    "ai_tags": [
+      "security",
+      "telecom",
+      "ENUM",
+      "vulnerability",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "hackernews:story:49386163",
+    "source_type": "hackernews",
+    "title": "DeepSeek-v4-flash-vision-exp",
+    "url": "https://api-docs.deepseek.com/guides/vision/",
+    "content": "\n--- Top Comments ---\n\n[ciberado]: DS being unable to precisely view Playwright screenshots is the only thing I really miss from Sonnet. This is promising. &gt; Images are converted into tokens based on their dimensions, and these tokens are billed together with your text tokens. &gt; Before inference, every image is automatically resized: &gt; - Images with a total pixel count below roughly 384×384 are scaled up while preserving their aspect ratio. &gt; - Larger images are scaled down while preserving their aspect ratio so th...\n\n[leumon]: It fails the simple clock test for me which Qwen3.8 27B got (nearly) right.\ngiven an image of a clock  https:&#x2F;&#x2F;files.catbox.moe&#x2F;kgwa5e.png  I asked it &quot;what time does the clock show?&quot; (both on reasoning: high) DS answered: The clock shows *5:10* (and 45 seconds).\nHere is the breakdown:\n*   *Hour hand (red, shortest):* Pointing at the *5*.\n*   *Minute hand (green, longest):* Pointing at the *2*, which represents 10 minutes.\n*   *Second hand (blue, medium):* Pointing at...\n\n[LorenDB]: I&#x27;ve heard that DeepSeek v4 Flash 0731 has frequently assumed that it has vision capabilities and then resorts to inventing text-based image analysis tools when it finds that it actually can&#x27;t see. In that case, this is a great upgrade for the model. Anecdotally, I had to tell 0731 to refrain from viewing screenshots since it kept breaking its sessions by trying to read images.\n\n[zmmmmm]: &gt; Larger images are scaled down while preserving their aspect ratio, so that the total pixel count after resizing is roughly that of an 800×800 image. It&#x27;s useful but for OCR and a lot of other applications it needs to be a bit higher (eg: putting in a full A4 &#x2F; Letter sized page)\n\n[meetpateltech]: News announcement with benchmarks:  https:&#x2F;&#x2F;api-docs.deepseek.com&#x2F;news&#x2F;news260821&#x2F;",
+    "author": "dares2573",
+    "published_at": "2026-08-21T10:33:56Z",
+    "fetched_at": "2026-08-21T23:15:50.030337Z",
+    "metadata": {
+      "score": 440,
+      "descendants": 141,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49386163",
+      "comment_count": 5,
+      "title_zh": "DeepSeek发布v4-flash-vision-exp视觉语言模型",
+      "detailed_summary_zh": "DeepSeek正式发布新的视觉语言模型v4-flash-vision-exp，支持将图像输入转换为token并与文本token一起计费。该模型在推理前会自动缩放图像，以适应不同尺寸的输入。 此次发布弥补了DeepSeek此前模型缺乏原生视觉能力的短板，对依赖截图理解或多模态输入的工具链意义重大。它标志着DeepSeek在大语言模型之外向多模态AI方向迈出重要一步，可能影响开发者对DeepSeek API的选择。 图像按像素数量转换为token，约384×384以下的小图会被放大，大图则按比例缩小至约800×800像素的总量。社区测试显示，该模型在简单时钟读数任务上出错（答成5:10），而Qwen3.8 27B几乎答对，说明其视觉推理仍有局限。",
+      "background_zh": "DeepSeek是一家中国AI公司，专注于开发开源权重的大语言模型，例如DeepSeek-V4和DeepSeek-R1。视觉语言模型（VLM）是能同时理解图像和文本的多模态AI系统，扩展了纯文本大语言模型的能力。此前DeepSeek v4 Flash 0731版本经常假设自己具备视觉能力并虚构图像分析工具，这次推出的vision系列正是为了补上这一空缺。",
+      "community_discussion_zh": "社区对此褒贬不一。有开发者表示终于有了能查看Playwright截图的模型，前景令人期待；但也有人测试发现它连最基本的时钟识别都失败，而Qwen3.8 27B能几乎答对。还有用户指出，DeepSeek旧版模型常假装有视觉能力导致会话崩溃，因此这次升级值得肯定；另外有人觉得800×800的分辨率对OCR和整页A4文档仍然不够。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/DeepSeek",
+          "title": "DeepSeek - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Vision-language_model",
+          "title": "Vision-language model - Wikipedia"
+        },
+        {
+          "url": "https://huggingface.co/blog/vlms",
+          "title": "Vision Language Models Explained - Hugging Face"
+        }
+      ],
+      "detailed_summary": "DeepSeek正式发布新的视觉语言模型v4-flash-vision-exp，支持将图像输入转换为token并与文本token一起计费。该模型在推理前会自动缩放图像，以适应不同尺寸的输入。 此次发布弥补了DeepSeek此前模型缺乏原生视觉能力的短板，对依赖截图理解或多模态输入的工具链意义重大。它标志着DeepSeek在大语言模型之外向多模态AI方向迈出重要一步，可能影响开发者对DeepSeek API的选择。 图像按像素数量转换为token，约384×384以下的小图会被放大，大图则按比例缩小至约800×800像素的总量。社区测试显示，该模型在简单时钟读数任务上出错（答成5:10），而Qwen3.8 27B几乎答对，说明其视觉推理仍有局限。",
+      "background": "DeepSeek是一家中国AI公司，专注于开发开源权重的大语言模型，例如DeepSeek-V4和DeepSeek-R1。视觉语言模型（VLM）是能同时理解图像和文本的多模态AI系统，扩展了纯文本大语言模型的能力。此前DeepSeek v4 Flash 0731版本经常假设自己具备视觉能力并虚构图像分析工具，这次推出的vision系列正是为了补上这一空缺。",
+      "community_discussion": "社区对此褒贬不一。有开发者表示终于有了能查看Playwright截图的模型，前景令人期待；但也有人测试发现它连最基本的时钟识别都失败，而Qwen3.8 27B能几乎答对。还有用户指出，DeepSeek旧版模型常假装有视觉能力导致会话崩溃，因此这次升级值得肯定；另外有人觉得800×800的分辨率对OCR和整页A4文档仍然不够。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Important release of a new vision-language model from DeepSeek, generating significant community discussion (440 points, 141 comments). While some tests show vision limitations, the update addresses a known gap and could impact AI tooling. Discussion includes both positive and critical technical feedback, adding value.",
+    "ai_summary": "DeepSeek releases a new vision-capable model (v4-flash-vision-exp), sparking community debate over its capabilities and improvements.",
+    "ai_tags": [
+      "DeepSeek",
+      "vision-language-model",
+      "multimodal AI",
+      "LLM",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "hackernews:story:49383026",
+    "source_type": "hackernews",
+    "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+    "url": "https://annas-archive.gl/blog/physical-destruction.html",
+    "content": "\n--- Top Comments ---\n\n[thread_id]: I don&#x27;t see any mention of Project Ocean - AKA Google books. Before AI they endevoured to digitize books in a massive online library.  This inccluded rare and out of print books many which are archived at libraries.  Because they had to preserve the books and return them in the condition they received then they created elaborate technology to accomplish this.  The project was met with significant legal challenges from authors and publishers which was eventually overcome.  The legal prece...\n\n[cladopa]: It is not a big deal. Since the invention of the printing press any important\n book has been duplicated by thousands, tens of thousands or even million of units. Just taking one of those and &quot;destroying them&quot;(it is not destroyed, a digital copy with the ability of doing millions of copies is stored somewhere) is not problematic for Humanity. By the way, I always search for second hand books. Most of the books there are garbage. Most people clean their shelves with the books they don...\n\n[ezfe]: I dislike these AI companies but let&#x27;s be clear here: the copyright holders are the ones locking these books up. If they don&#x27;t want to print more copies, then they could release the copyright on them. Instead, they enforce the copyright and force AI companies to shred books they want to ingest. edit: Also, an AI company would only ever care to purchase, scan, destroy a book once. Presumably many books have more than one copy.\n\n[NishanStepak]: Nondestructive scanning can cost 10x as much.  This is about cost.  It is not about preservation.  Google never destroyed the books it scanned.  Amazon and Anthropic are attempting to save money.  They are not considering whether or not a book is rare.  They are treating books as a commodity.  Rare books are rare.  It is easy enough to identify when there are a limited number of copies of a book.  The issue is saving money on items which cannot be easily acquired.  There are plenty of books w...\n\n[ziyadb]: I was surprised to read that Anthropic (and probably other data &#x2F; model companies) are doing this and it&#x27;s extremely disappointing, as working towards the benefit of humanity is not an exclusive right &#x2F; domain of theirs but rather, is a shared responsibility and mission carried by all of humanity itself as a collective responsibility. Thus, the preservation of this knowledge, its availability, and accessibility are the most important things that we must ensure continue. From a ...",
+    "author": "Cider9986",
+    "published_at": "2026-08-21T02:37:47Z",
+    "fetched_at": "2026-08-21T23:15:50.030426Z",
+    "metadata": {
+      "score": 494,
+      "descendants": 827,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49383026",
+      "comment_count": 5,
+      "title_zh": "AI公司销毁实体书，稀有书籍亟需抢救性扫描",
+      "detailed_summary_zh": "安娜的档案（Anna's Archive）博客发文警告，AI公司为获取训练数据正在购买并销毁实体书籍，呼吁在珍稀书籍被毁前尽快进行扫描数字化。作者指出，这一行为正演变为一场文化遗产保存危机。 这一现象凸显了AI训练数据获取方式与文化遗产保存之间的深刻冲突，可能影响图书馆、研究者和公众对稀有知识的长期可获取性。它也再次引发关于版权法、合理使用与大规模数字化之间关系的伦理与法律争议，推动行业重新审视AI数据采集的可持续性和合规性。 社区讨论指出，Google Books（Project Ocean）早前以非破坏性方式大规模扫描图书，而部分AI公司（如Amazon、Anthropic）为节省成本选择购买后直接销毁扫描，非破坏性扫描的成本可能高出10倍。珍稀图书通常副本有限，本可被识别并优先保护，但当前做法并未考虑这些因素，而是将书籍单纯视为可消耗的数据来源。",
+      "background_zh": "大规模数字化（Mass Digitization）指将实体书籍、手稿等文化物品批量扫描为数字格式并构建数字图书馆，Google Books等早期项目已开展此类实践，以推动知识公开获取。AI数据获取（AI Data Sourcing）则是为训练机器学习模型而收集、整理数据集的过程，当受版权保护的纸质书无法合法获得电子版时，部分公司便选择购买实体书再物理销毁处理，从而引发保存危机。",
+      "community_discussion_zh": "评论观点分歧明显：有人认为版权方拒绝再版或开放版权是根本症结，迫使AI公司只能通过销毁图书来获取内容；也有人认为印刷品存世量大，销毁个别副本对文明无碍；而更多批评者强调这纯粹是为了节省成本，并非为了保存知识，并指出Google等早期项目均采用非破坏性扫描。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mass_digitization",
+          "title": "Mass digitization"
+        },
+        {
+          "url": "https://aifeeders.com/ai-data-sourcing-guide/",
+          "title": "AI Data Sourcing: Your Guide to Effective Data Acquisition"
+        }
+      ],
+      "detailed_summary": "安娜的档案（Anna's Archive）博客发文警告，AI公司为获取训练数据正在购买并销毁实体书籍，呼吁在珍稀书籍被毁前尽快进行扫描数字化。作者指出，这一行为正演变为一场文化遗产保存危机。 这一现象凸显了AI训练数据获取方式与文化遗产保存之间的深刻冲突，可能影响图书馆、研究者和公众对稀有知识的长期可获取性。它也再次引发关于版权法、合理使用与大规模数字化之间关系的伦理与法律争议，推动行业重新审视AI数据采集的可持续性和合规性。 社区讨论指出，Google Books（Project Ocean）早前以非破坏性方式大规模扫描图书，而部分AI公司（如Amazon、Anthropic）为节省成本选择购买后直接销毁扫描，非破坏性扫描的成本可能高出10倍。珍稀图书通常副本有限，本可被识别并优先保护，但当前做法并未考虑这些因素，而是将书籍单纯视为可消耗的数据来源。",
+      "background": "大规模数字化（Mass Digitization）指将实体书籍、手稿等文化物品批量扫描为数字格式并构建数字图书馆，Google Books等早期项目已开展此类实践，以推动知识公开获取。AI数据获取（AI Data Sourcing）则是为训练机器学习模型而收集、整理数据集的过程，当受版权保护的纸质书无法合法获得电子版时，部分公司便选择购买实体书再物理销毁处理，从而引发保存危机。",
+      "community_discussion": "评论观点分歧明显：有人认为版权方拒绝再版或开放版权是根本症结，迫使AI公司只能通过销毁图书来获取内容；也有人认为印刷品存世量大，销毁个别副本对文明无碍；而更多批评者强调这纯粹是为了节省成本，并非为了保存知识，并指出Google等早期项目均采用非破坏性扫描。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High community engagement (494 points, 827 comments) with substantive discussion on AI training data practices, copyright, and cultural preservation. Raises important ethical and legal questions about the destruction of physical books, making it highly relevant to AI/ML and information systems debates.",
+    "ai_summary": "The author urges scanning rare books before AI companies destroy physical copies, highlighting a preservation crisis.",
+    "ai_tags": [
+      "AI",
+      "book scanning",
+      "copyright",
+      "cultural preservation",
+      "data sourcing"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b3e14ec315d32feb",
+    "source_type": "rss",
+    "title": "The road to ACID transactions in Cassandra 6",
+    "url": "https://theconsensus.dev/p/2026/08/16/transactions-in-cassandra.html",
+    "content": "<p><a href=\"https://lobste.rs/s/c9xng0/road_acid_transactions_cassandra_6\">Comments</a></p>",
+    "author": "theconsensus.dev by eatonphil",
+    "published_at": "2026-08-21T12:08:34Z",
+    "fetched_at": "2026-08-21T23:15:50.238034Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "databases",
+        "java",
+        "distributed"
+      ],
+      "title_zh": "Cassandra 6 通往 ACID 事务之路",
+      "detailed_summary_zh": "这篇文章探讨了在 Apache Cassandra 6 中实现 ACID 事务的路径，标志着这一分布式数据库在事务能力上的重大架构进展。 ACID 事务对 Cassandra 这类以最终一致性著称的 NoSQL 数据库而言是重要里程碑，可能影响依赖强一致性的应用场景。该进展有望引发社区对分布式数据库一致性与可用性权衡的广泛讨论。 文章提到了相关社区讨论和架构探索方向，但具体技术方案（如事务协议、隔离级别实现）尚未在摘要中披露。需要阅读原文或后续文档才能了解完整的实现细节。",
+      "background_zh": "Cassandra 是一个分布式 NoSQL 数据库，传统上提供最终一致性，并不原生支持完整的 ACID 事务。ACID 事务要求原子性、一致性、隔离性和持久性，在分布式系统中实现难度较高。Cassandra 6 如果成功引入 ACID 事务，将代表其一致性模型的一次重大演进。",
+      "detailed_summary": "这篇文章探讨了在 Apache Cassandra 6 中实现 ACID 事务的路径，标志着这一分布式数据库在事务能力上的重大架构进展。 ACID 事务对 Cassandra 这类以最终一致性著称的 NoSQL 数据库而言是重要里程碑，可能影响依赖强一致性的应用场景。该进展有望引发社区对分布式数据库一致性与可用性权衡的广泛讨论。 文章提到了相关社区讨论和架构探索方向，但具体技术方案（如事务协议、隔离级别实现）尚未在摘要中披露。需要阅读原文或后续文档才能了解完整的实现细节。",
+      "background": "Cassandra 是一个分布式 NoSQL 数据库，传统上提供最终一致性，并不原生支持完整的 ACID 事务。ACID 事务要求原子性、一致性、隔离性和持久性，在分布式系统中实现难度较高。Cassandra 6 如果成功引入 ACID 事务，将代表其一致性模型的一次重大演进。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "ACID transactions in Cassandra represent a significant architectural advancement for a widely-used distributed database, generating substantial community interest and technical discussion.",
+    "ai_summary": "Article explores the path to implementing ACID transactions in Cassandra 6, a major milestone for the database.",
+    "ai_tags": [
+      "Cassandra",
+      "ACID",
+      "Distributed Systems",
+      "Database",
+      "Transactions"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:a04910a3bb567ab8",
+    "source_type": "rss",
+    "title": "Why we must stop talking about artificial general intelligence — and instead build ‘pro-worker’ AI",
+    "url": "https://www.nature.com/articles/d41586-026-02566-6",
+    "content": "<p>Nature, Published online: 21 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02566-6\">doi:10.1038/d41586-026-02566-6</a></p>Rather than racing to replace people, we should build AI tools that amplify human expertise and expand opportunity.",
+    "author": "Daron Acemoglu",
+    "published_at": "2026-08-21T00:00:00Z",
+    "fetched_at": "2026-08-21T23:15:52.852214Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "停止空谈通用人工智能，构建‘亲工人’AI",
+      "detailed_summary_zh": "经济学家达龙·阿西莫格鲁在《自然》杂志发表评论文章，主张人工智能社群应放弃通用人工智能（AGI）竞赛，转而开发能够增强人类技能、扩大经济机会的‘亲工人’AI工具。 这一观点为AI政策与未来工作讨论提供了重要经济学视角，可能影响研究人员、政策制定者对企业AI部署方向的思考，推动AI发展更注重人力资本而非单纯替代人力。 该评论在线发表于2026年8月21日，DOI为10.1038/d41586-026-02566-6。阿西莫格鲁认为当前‘技术取代人’的方向错误，应把AI用于放大人类专业知识和拓展机会。",
+      "background_zh": "通用人工智能（AGI）指能像人类一样执行任何智力任务的人工智能，近年来成为科技行业的热门目标与投资话题。‘亲工人AI’是指与人类互补、增强人类技能的人工智能，例如让工人判断力和专业知识变得更受重视。阿西莫格鲁是麻省理工学院经济学家，长期研究技术变革与不平等问题。",
+      "sources": [
+        {
+          "url": "https://mitsloan.mit.edu/ideas-made-to-matter/working-definitions/what-is-pro-worker-ai",
+          "title": "What is pro-worker AI? - MIT Sloan"
+        },
+        {
+          "url": "https://mitsloan.mit.edu/ideas-made-to-matter/pro-worker-ai-explained",
+          "title": "Pro-worker AI, explained - MIT Sloan"
+        },
+        {
+          "url": "https://www.brookings.edu/articles/building-pro-worker-ai/",
+          "title": "Building pro-worker AI - Brookings"
+        }
+      ],
+      "detailed_summary": "经济学家达龙·阿西莫格鲁在《自然》杂志发表评论文章，主张人工智能社群应放弃通用人工智能（AGI）竞赛，转而开发能够增强人类技能、扩大经济机会的‘亲工人’AI工具。 这一观点为AI政策与未来工作讨论提供了重要经济学视角，可能影响研究人员、政策制定者对企业AI部署方向的思考，推动AI发展更注重人力资本而非单纯替代人力。 该评论在线发表于2026年8月21日，DOI为10.1038/d41586-026-02566-6。阿西莫格鲁认为当前‘技术取代人’的方向错误，应把AI用于放大人类专业知识和拓展机会。",
+      "background": "通用人工智能（AGI）指能像人类一样执行任何智力任务的人工智能，近年来成为科技行业的热门目标与投资话题。‘亲工人AI’是指与人类互补、增强人类技能的人工智能，例如让工人判断力和专业知识变得更受重视。阿西莫格鲁是麻省理工学院经济学家，长期研究技术变革与不平等问题。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Insightful commentary by a prominent economist in a top journal, advocating a shift from AGI hype to pro-worker AI. Provides a novel perspective on AI's societal impact, though it is opinion rather than technical breakthrough. No discussion quality available.",
+    "ai_summary": "Daron Acemoglu argues that the AI community should abandon the AGI race and instead focus on developing tools that augment human skills and broaden economic opportunity.",
+    "ai_tags": [
+      "AI policy",
+      "AGI",
+      "Future of work",
+      "Economics",
+      "AI ethics"
+    ]
+  },
+  {
+    "id": "hackernews:story:49388154",
+    "source_type": "hackernews",
+    "title": "Kagi added a setting for removing paywalled links from search results",
+    "url": "https://kagi.com/changelog#11296",
+    "content": "\n--- Top Comments ---\n\n[delis-thumbs-7e]: I think this is amazing. Love Kagi. I’m happy to pay for a good search. Nobody speaks about their AI Assistant, but it is really good. They somehow harnessed it so that it mainly searches info first and sticks to the verifiable data. I prefer it to Claude or any other, because it actually answers the question I need without fluff or “Great question! Here’s some plausible nonsense you can trip over instead of doing actual research!”.\n\n[frereubu]: The one thing I find slightly grating about links to Kagi blogs is the top comments are almost always &quot;I use Kagi and it&#x27;s great!&quot; rather than about the content of the blog. And I&#x27;m a happy Kagi subscriber! I get that this is an option, but what it really shows to me is how broken the model for journalism is. In my view you almost always only get good-quality journalism if you pay for it. (Somehow - e.g. the BBC is paid for by the licence fee, although I&#x27;m a bit despa...\n\n[tempest_]: I&#x27;ve been enjoying Kagi for the last couple years. Even as LLMs slurp up most of the internet and replace search I think Kagi is still useful. Reddit has recently blocked access to old reddit without an account and the ability to filter out stuff like that is useful.\n\n[getfacl]: This makes sense to me as a Kagi user. The chance that I&#x27;m going to subscribe to read an article I found via a search is zero.\n\n[SamBam]: Hmmm, so if you are looking for some news item, you&#x27;ll only find AI-written clickbait articles covered in pop-up ads, rather than any news sites that employ journalists?",
+    "author": "speckx",
+    "published_at": "2026-08-21T13:56:37Z",
+    "fetched_at": "2026-08-21T23:15:50.030283Z",
+    "metadata": {
+      "score": 951,
+      "descendants": 326,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49388154",
+      "comment_count": 5,
+      "title_zh": "Kagi 新增设置：从搜索结果中移除付费墙链接",
+      "detailed_summary_zh": "Kagi 搜索引擎新增了一项设置，允许用户从搜索结果中过滤掉带有付费墙（paywall）的链接。该功能已列入 Kagi 官方更新日志（changelog #11296）。 这一小更新反映了付费墙与搜索体验之间的深层矛盾，也引发了关于新闻业商业模式和搜索质量的广泛讨论。对于 Kagi 这类付费搜索引擎而言，该设置进一步强化了其“以用户为中心”的差异化定位。 该设置默认行为尚不明确，但用户可主动开启以隐藏需要订阅才能阅读的网页。Kagi 本身是付费无广告搜索引擎，其商业模式不依赖广告点击，因此有动力优先满足用户对干净、可访问内容的偏好。",
+      "background_zh": "Kagi 是一家位于加州帕洛阿尔托的付费搜索引擎公司，其名称源自日语“鍵”（kagi），意为“钥匙”。与依赖广告收入的传统搜索引擎不同，Kagi 直接向用户收费，承诺不追踪用户搜索查询，也不出售用户注意力给广告商。",
+      "community_discussion_zh": "评论区整体对 Kagi 持正面态度，许多用户表示欣赏这一功能并愿意为优质搜索付费。但也有观点指出，过滤付费链接可能让用户只能看到低质量、AI生成的点击诱饵内容，同时凸显了新闻业依赖付费订阅的困境。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kagi_(search_engine)",
+          "title": "Kagi (search engine)"
+        },
+        {
+          "url": "https://kagi.com/?ref=russbrown.design",
+          "title": "Kagi Search - A Premium Search Engine"
+        }
+      ],
+      "detailed_summary": "Kagi 搜索引擎新增了一项设置，允许用户从搜索结果中过滤掉带有付费墙（paywall）的链接。该功能已列入 Kagi 官方更新日志（changelog #11296）。 这一小更新反映了付费墙与搜索体验之间的深层矛盾，也引发了关于新闻业商业模式和搜索质量的广泛讨论。对于 Kagi 这类付费搜索引擎而言，该设置进一步强化了其“以用户为中心”的差异化定位。 该设置默认行为尚不明确，但用户可主动开启以隐藏需要订阅才能阅读的网页。Kagi 本身是付费无广告搜索引擎，其商业模式不依赖广告点击，因此有动力优先满足用户对干净、可访问内容的偏好。",
+      "background": "Kagi 是一家位于加州帕洛阿尔托的付费搜索引擎公司，其名称源自日语“鍵”（kagi），意为“钥匙”。与依赖广告收入的传统搜索引擎不同，Kagi 直接向用户收费，承诺不追踪用户搜索查询，也不出售用户注意力给广告商。",
+      "community_discussion": "评论区整体对 Kagi 持正面态度，许多用户表示欣赏这一功能并愿意为优质搜索付费。但也有观点指出，过滤付费链接可能让用户只能看到低质量、AI生成的点击诱饵内容，同时凸显了新闻业依赖付费订阅的困境。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (951 points, 326 comments) and substantive discussion about paywalls, journalism economics, and search quality. The feature is a small but valuable update to a niche search engine, and the community debate elevates its significance beyond the trivial change.",
+    "ai_summary": "Kagi adds a setting to remove paywalled links from search results, prompting a lively discussion about the value of paid journalism and search engine design.",
+    "ai_tags": [
+      "Kagi",
+      "search engines",
+      "paywalls",
+      "journalism",
+      "feature update"
+    ]
+  },
+  {
+    "id": "hackernews:story:49386699",
+    "source_type": "hackernews",
+    "title": "I'm becoming AI-blind",
+    "url": "https://cymerys.com/w/im-becoming-ai-blind",
+    "content": "\n--- Top Comments ---\n\n[causal]: There&#x27;s some psychological mechanism by which my brain immediately recognizes AI generated text and just short-circuits to &quot;there is no information here&quot;. And when I force myself to read AI-generated text I realize I&#x27;m making my brain do creative work to impart meaning to the words. It is exhausting because my brain is literally trying to do a just-in-time rewrite of the text into something valuable. Something is deeply wrong with AI generated output, and I say this as som...\n\n[davidgh]: My son is currently learning Romanian and I was trying to help him with verbs. I don’t know Romanian but recalled when learning a foreign language for the first time it really helped me to break down how a verb form or tense worked in English, then learn the equivalent in the new language. So I wanted to make some charts and pages that he could use as learning resources. I used Claude to help. I don’t know how to quite describe it, but because the text was polished and well constructed my bra...\n\n[datsci_est_2015]: I also find it impossible to parse half the comments that Claude tries to sneak into our pull requests. I’ve never had an issue understanding code comments written by humans like this before. The structure of the information is like a waterfall that leaves me unable to swim to the surface and grab the air of comprehension. So, “Please write a one-liner comment manually to replace these 5 lines of AI generated comment” is a common refrain in my PR reviews to colleagues.\n\n[chrysoprace]: I find this struggle with coding too. When Claude spits out a plan I have to really focus to not skim over the details. It&#x27;s also difficult to parse the plan because I have to work backwards to determine if the high level context matches my understanding of what Claude will do.\n\n[SamBam]: That last image is bizarre. The quiche, cream and even the salad look like they&#x27;ve been given the trypophobia treatment. Which might even make sense, because there were always (still are?) those horrible ads in the chumbox area of news sites that used trypophobia and other creepy body-horror stuff to get you to click. [1] So maybe the hope is that you don&#x27;t really look closely at the quiche, but some reptilian party of the brain gets oddly activated and drives you towards the restau...",
+    "author": "rcymerys",
+    "published_at": "2026-08-21T11:48:05Z",
+    "fetched_at": "2026-08-21T23:15:50.030401Z",
+    "metadata": {
+      "score": 224,
+      "descendants": 231,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49386699",
+      "comment_count": 5,
+      "title_zh": "我正在变得‘AI盲’：对生成文本的认知排斥",
+      "detailed_summary_zh": "作者在文章中描述了一种新的认知困境：面对AI生成的文本，大脑会自动将其标记为‘没有信息’而拒绝深入处理，即便强迫阅读也感到极度疲惫，并认为这些文本常常缺乏实质内容。 这一现象揭示了AI生成内容在效率之外的另一面：其‘完美’的文本结构可能增加读者的认知负荷，影响代码审查、学习等实际场景。随着AI内容无处不在，理解并应对这种‘AI盲’状态将成为人与AI协作的关键问题。 文章得到231条评论的强烈共鸣，多位评论者给出了具体例子：Claude生成的代码评审注释难以解析，AI生成的学习资料虽然精炼却让大脑需要额外工作才能赋予意义；还有评论者指出，阅读AI生成的计划时不得不强迫自己不要略读细节。",
+      "background_zh": "‘AI盲’指一种对AI生成文本的认知排斥现象：读者的大脑会迅速识别出文本的非人类特征，并自动降低处理优先级，导致阅读时需付出额外的‘创造性劳动’来重构意义。这一讨论也属于更广泛的AI对人类心理影响的话题，例如媒体中已出现过‘AI诱发精神病’（AI-induced psychosis）的说法，尽管它描述的是不同的错觉与妄想现象。",
+      "community_discussion_zh": "评论区的整体情绪是认同与共鸣，许多人在代码评审和学习材料中遇到了类似体验。例如，有开发者反馈Claude试图‘塞进’PR的注释很难理解，需要明确要求改为手写一句；还有人发现AI生成的学习图表虽结构工整，反而增加了理解负担。也有评论者提到文中的图片触发了密集恐惧反应，但并未深入展开。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AI-induced_psychosis",
+          "title": "AI-induced psychosis"
+        }
+      ],
+      "detailed_summary": "作者在文章中描述了一种新的认知困境：面对AI生成的文本，大脑会自动将其标记为‘没有信息’而拒绝深入处理，即便强迫阅读也感到极度疲惫，并认为这些文本常常缺乏实质内容。 这一现象揭示了AI生成内容在效率之外的另一面：其‘完美’的文本结构可能增加读者的认知负荷，影响代码审查、学习等实际场景。随着AI内容无处不在，理解并应对这种‘AI盲’状态将成为人与AI协作的关键问题。 文章得到231条评论的强烈共鸣，多位评论者给出了具体例子：Claude生成的代码评审注释难以解析，AI生成的学习资料虽然精炼却让大脑需要额外工作才能赋予意义；还有评论者指出，阅读AI生成的计划时不得不强迫自己不要略读细节。",
+      "background": "‘AI盲’指一种对AI生成文本的认知排斥现象：读者的大脑会迅速识别出文本的非人类特征，并自动降低处理优先级，导致阅读时需付出额外的‘创造性劳动’来重构意义。这一讨论也属于更广泛的AI对人类心理影响的话题，例如媒体中已出现过‘AI诱发精神病’（AI-induced psychosis）的说法，尽管它描述的是不同的错觉与妄想现象。",
+      "community_discussion": "评论区的整体情绪是认同与共鸣，许多人在代码评审和学习材料中遇到了类似体验。例如，有开发者反馈Claude试图‘塞进’PR的注释很难理解，需要明确要求改为手写一句；还有人发现AI生成的学习图表虽结构工整，反而增加了理解负担。也有评论者提到文中的图片触发了密集恐惧反应，但并未深入展开。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Insightful commentary on AI-generated text's cognitive toll, with strong community engagement (231 comments) featuring concrete examples and diverse perspectives on similar experiences, raising important questions about human-AI interaction and content quality.",
+    "ai_summary": "The author describes becoming cognitively unable to easily process AI-generated text, finding it exhausting and often lacking real substance, a sentiment echoed by many commenters in code reviews and learning materials.",
+    "ai_tags": [
+      "AI-generated content",
+      "human-AI interaction",
+      "cognitive load",
+      "tech culture",
+      "writing"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:0ac4d58e6dcfce35",
+    "source_type": "rss",
+    "title": "Data races and the memory model in Go",
+    "url": "https://func25.dev/posts/go-memory-visibility/",
+    "content": "<p><a href=\"https://lobste.rs/s/chhsuf/data_races_memory_model_go\">Comments</a></p>",
+    "author": "func25.dev by func25",
+    "published_at": "2026-08-21T13:11:08Z",
+    "fetched_at": "2026-08-21T23:15:50.238054Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "go"
+      ],
+      "title_zh": "Go 内存模型与数据竞争解析",
+      "detailed_summary_zh": "一篇名为《Data races and the memory model in Go》的技术文章，深入剖析了 Go 的内存模型以及数据竞争对并发正确性的影响。文章通过具体细节解释了并发程序中读写操作何时可见、何时有序。 数据竞争是 Go 并发编程中隐蔽而严重的错误，可能导致程序行为不确定。该文章帮助开发者理解 Go 内存模型的正式规则，避免写出看似正确实则存在竞态的程序，对构建可靠的并发系统具有重要意义。 文章重点介绍了 Go 内存模型中的 happens-before 关系以及同步原语（如 channel、mutex、atomic）提供的保证。文中还区分了数据竞争与竞态条件，指出数据竞争是违反语言内存模型的具体技术问题，而竞态条件则更广义。",
+      "background_zh": "Go 的内存模型与 C/C++ 类似，规定了并发环境下内存操作的可见性与顺序规则，核心概念是 happens-before。数据竞争指多个 goroutine 同时访问同一内存位置且至少有一个是写操作，且没有通过同步机制限制顺序。理解这些规则对于正确使用 Go 的并发特性至关重要。",
+      "community_discussion_zh": "由于内容摘要未包含具体评论，无法总结社区讨论。但该文章来自个人博客，可能缺乏广泛社区验证。",
+      "sources": [
+        {
+          "url": "https://go.dev/ref/mem",
+          "title": "The Go Memory Model - The Go Programming Language"
+        },
+        {
+          "url": "https://dev.to/devflex-pro/go-from-zero-to-depth-part-2-go-memory-model-explained-simply-but-correctly-1n63",
+          "title": "Go Memory Model Explained Simply (But Correctly)"
+        },
+        {
+          "url": "https://sreee2001.github.io/Go/part3-topics/advanced/memory-model/",
+          "title": "Go Memory Model and Happens-Before - Go Quick Reference"
+        }
+      ],
+      "detailed_summary": "一篇名为《Data races and the memory model in Go》的技术文章，深入剖析了 Go 的内存模型以及数据竞争对并发正确性的影响。文章通过具体细节解释了并发程序中读写操作何时可见、何时有序。 数据竞争是 Go 并发编程中隐蔽而严重的错误，可能导致程序行为不确定。该文章帮助开发者理解 Go 内存模型的正式规则，避免写出看似正确实则存在竞态的程序，对构建可靠的并发系统具有重要意义。 文章重点介绍了 Go 内存模型中的 happens-before 关系以及同步原语（如 channel、mutex、atomic）提供的保证。文中还区分了数据竞争与竞态条件，指出数据竞争是违反语言内存模型的具体技术问题，而竞态条件则更广义。",
+      "background": "Go 的内存模型与 C/C++ 类似，规定了并发环境下内存操作的可见性与顺序规则，核心概念是 happens-before。数据竞争指多个 goroutine 同时访问同一内存位置且至少有一个是写操作，且没有通过同步机制限制顺序。理解这些规则对于正确使用 Go 的并发特性至关重要。",
+      "community_discussion": "由于内容摘要未包含具体评论，无法总结社区讨论。但该文章来自个人博客，可能缺乏广泛社区验证。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical deep-dive on Go's memory model and data races, a subtle but important topic for concurrent programming. The subject is non-trivial and likely provides valuable insight, though it comes from a personal blog and lacks broader community validation in the provided excerpt.",
+    "ai_summary": "An article explaining Go's memory model and the implications of data races for concurrent correctness.",
+    "ai_tags": [
+      "Go",
+      "memory model",
+      "data races",
+      "concurrency"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b2e1dbc6f47f6a1f",
+    "source_type": "rss",
+    "title": "The Atproto Spaces Alpha is Live",
+    "url": "https://atproto.com/blog/atproto-spaces-alpha",
+    "content": "<p><a href=\"https://lobste.rs/s/faggqv/atproto_spaces_alpha_is_live\">Comments</a></p>",
+    "author": "atproto.com via srxl",
+    "published_at": "2026-08-21T12:32:51Z",
+    "fetched_at": "2026-08-21T23:15:50.238144Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release",
+        "distributed"
+      ],
+      "title_zh": "AT Protocol 推出 Spaces 功能 Alpha 版本",
+      "detailed_summary_zh": "AT Protocol 官方博客宣布，其全新功能 Spaces 已进入 alpha 测试阶段并正式上线。该功能旨在为去中心化社交网络提供新的交互和发布能力。 Spaces 是 AT Protocol 发展的重要里程碑，可能为去中心化社交网络生态带来新的交互模式。作为 alpha 版本，其后续迭代方向和对开发者的影响值得关注。 该公告发布于 atproto.com 官方博客，目前 Spaces 仍处于早期 alpha 阶段，具体功能细节和潜在限制尚未完全公开。感兴趣的开发者可访问博客链接了解进一步信息。",
+      "background_zh": "AT Protocol（Authenticated Transfer Protocol）是一套用于去中心化社交网络发布和分发数据的开放标准，Bluesky 等应用基于它构建。它定义了用户身份、关注关系和数据格式，使不同应用能够互操作，并支持用户自由迁移数据。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AT_Protocol",
+          "title": "AT Protocol - Wikipedia"
+        },
+        {
+          "url": "https://atproto.com/",
+          "title": "AT Protocol"
+        },
+        {
+          "url": "https://docs.bsky.app/docs/advanced-guides/atproto",
+          "title": "The AT Protocol | Bluesky"
+        }
+      ],
+      "detailed_summary": "AT Protocol 官方博客宣布，其全新功能 Spaces 已进入 alpha 测试阶段并正式上线。该功能旨在为去中心化社交网络提供新的交互和发布能力。 Spaces 是 AT Protocol 发展的重要里程碑，可能为去中心化社交网络生态带来新的交互模式。作为 alpha 版本，其后续迭代方向和对开发者的影响值得关注。 该公告发布于 atproto.com 官方博客，目前 Spaces 仍处于早期 alpha 阶段，具体功能细节和潜在限制尚未完全公开。感兴趣的开发者可访问博客链接了解进一步信息。",
+      "background": "AT Protocol（Authenticated Transfer Protocol）是一套用于去中心化社交网络发布和分发数据的开放标准，Bluesky 等应用基于它构建。它定义了用户身份、关注关系和数据格式，使不同应用能够互操作，并支持用户自由迁移数据。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Significant announcement of a new Atproto feature (Spaces) entering alpha, which could impact the decentralized social web ecosystem. Alpha stage tempers immediate impact, but it's an important milestone for the protocol.",
+    "ai_summary": "The AT Protocol announces the launch of its Spaces feature in alpha.",
+    "ai_tags": [
+      "atproto",
+      "bluesky",
+      "decentralized-web",
+      "protocol",
+      "social-web"
+    ]
+  },
+  {
+    "id": "rss:www.nature.com_nature.rss:a05aa880d388b4e7",
+    "source_type": "rss",
+    "title": "Sleuth identifies dozens of studies that used the wrong antibody",
+    "url": "https://www.nature.com/articles/d41586-026-02352-4",
+    "content": "<p>Nature, Published online: 21 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02352-4\">doi:10.1038/d41586-026-02352-4</a></p>The case is the latest example of a scientific workhorse being misused in experiments.",
+    "author": "Holly Else",
+    "published_at": "2026-08-21T00:00:00Z",
+    "fetched_at": "2026-08-21T23:15:52.852235Z",
+    "metadata": {
+      "feed_name": "Nature",
+      "category": "",
+      "tags": [],
+      "title_zh": "调查发现数十项研究用错抗体",
+      "detailed_summary_zh": "一项新调查识别出数十项研究使用了错误的抗体，暴露出这一常见科研工具被广泛误用的问题。这一案例由《自然》于2026年8月21日在线报道，是该工具被误用的最新例证。 抗体是生命科学实验中的重要试剂，使用错误抗体会导致实验结果不可靠，进一步加剧科学界的可重复性危机。该发现提醒科研人员必须重视抗体验证，以保障研究结论的可靠性。 报道中的“侦探”通过系统排查找出多篇论文使用错误抗体，但文章未披露具体研究数量及学科范围。该案例凸显了科研工作中常见工具被误用的系统性问题。",
+      "background_zh": "抗体验证是确保抗体特异性识别目标蛋白的关键环节，使用未经验证的抗体可能产生无法重复的实验数据。自2010年代初以来，科学界对“可重复性危机”日益关注，即许多已发表的研究结果难以被独立复制，而抗体等试剂的误用被认为是原因之一。",
+      "sources": [
+        {
+          "url": "https://www.neobiotechnologies.com/resources/antibody-validation-methods/",
+          "title": "Guide to Antibody Validation Techniques - NeoBiotechnologies"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Reproducibility_crisis",
+          "title": "Reproducibility crisis"
+        }
+      ],
+      "detailed_summary": "一项新调查识别出数十项研究使用了错误的抗体，暴露出这一常见科研工具被广泛误用的问题。这一案例由《自然》于2026年8月21日在线报道，是该工具被误用的最新例证。 抗体是生命科学实验中的重要试剂，使用错误抗体会导致实验结果不可靠，进一步加剧科学界的可重复性危机。该发现提醒科研人员必须重视抗体验证，以保障研究结论的可靠性。 报道中的“侦探”通过系统排查找出多篇论文使用错误抗体，但文章未披露具体研究数量及学科范围。该案例凸显了科研工作中常见工具被误用的系统性问题。",
+      "background": "抗体验证是确保抗体特异性识别目标蛋白的关键环节，使用未经验证的抗体可能产生无法重复的实验数据。自2010年代初以来，科学界对“可重复性危机”日益关注，即许多已发表的研究结果难以被独立复制，而抗体等试剂的误用被认为是原因之一。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important academic finding on research reproducibility and antibody misuse, but outside core software/AI domains; no discussion provided.",
+    "ai_summary": "An investigation reveals dozens of studies used incorrect antibodies, highlighting widespread misuse of a common scientific tool.",
+    "ai_tags": [
+      "scientific-integrity",
+      "reproducibility",
+      "antibodies",
+      "research-methods"
+    ]
+  }
+]
