@@ -1,0 +1,604 @@
+[
+  {
+    "id": "hackernews:story:49554643",
+    "source_type": "hackernews",
+    "title": "GPT-6 Astra",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "content": "System Card: <a href=\"https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-6-astra\" rel=\"nofollow\">https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-6-astra</a><p>Related ongoing threads:<p><i>OpenAI&#x27;s GPT-6 Astra on ARC-AGI-3</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49555691\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49555691</a><p><i>GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49556147\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49556147</a>\n\n\n--- Top Comments ---\n\n[dang]: Related:  OpenAI begins rolling out GPT-6 Astra  -  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49554273  How about we stick to that one for talking about the rollout, and this one for talking about the model?\n\n[intenex]: The ARC-AGI-3 scorecard is extremely misleading given that it clearly states itself that &quot;with [the responses API] harness, we estimate Sol would score in the ballpark of ~30%.&quot; but it shows a score of 7.8% for GPT-5.6 Sol presumably since if they updated the percentage for GPT-5.6 Sol to the score it would receive with the responses API harness they used for GPT-6 Astra they&#x27;d have to do the same for the percentage they show for Opus 5 which would similarly be much higher. Reg...\n\n[abixb]: I want to take a step back: So, this is GPT-6 -- the natural number version release comparable to GPT-4 and GPT-5 from the past few years. The ARC-AGI-3 score is obviously impressive at 99.9% (we&#x27;ll need to wait for more details on how they used the response API harness on GPT-6 Astra, wrt reasoning retention and compaction), but every other benchmarks seems to be a relatively modest improvement, comparable with any of the &#x27;point&#x27; updates from AI labs. If this is truly AGI (sub...\n\n[manlymuppet]: I have nothing to say about the actual model, but unrelated--why do so many of these demos include people buying things autonomously? Even if I did trust an AI to get everything right, it&#x27;s not like the AI can read my mind. If I was ordering food normally and without AI, I would want more control over the process--looking over the options, prices, thinking about what I really want. People don&#x27;t know what they really want until they&#x27;ve thought about it a bit, so why do AI compan...\n\n[astrobiased]: I can’t help but notice how much this echoes Francois Chollet’s On the Measure of Intelligence:  https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1911.01547  Most of frontier-model progress still looks like skill acquisition optimization: broader benchmark coverage and performance, more domains absorbed into the training distribution, and increasingly strong performance within that surface area. It seems more about coverage-driven competence. Somewhat analogous to overfitting at scale. The harder qu...\n\n--- From hackernews ---\n\n--- Top Comments ---\n\n[at1as]: I like Erdos problems as a benchmark. Models continue to solve them, but a pretty tepid rate now that the low hanging fruit has been taken. From  https:&#x2F;&#x2F;epoch.ai&#x2F;latest&#x2F;announcing-frontiermath-erdos  &gt; Only GPT-6 Astra solved anything: 2 of the 68 problems. It disproved problem 74 by finding a counterexample, at a cost of $218 and 15 hours of working time, and it proved problem 126, at a cost of $247 and 16 hours &gt; Across all attempts, GPT-6 Astra solved 5 of the 68...\n\n[modeless]: $360 per puzzle. When they tested people it took about 10 minutes per puzzle. If price&#x2F;performance keeps falling at the same rate it has been, this will cost less than US minimum wage humans within two years. Three for Phillipines minimum wage.\n\n[malfist]: Is solving a snake like puzzle game in the least number of moves really what defines intelligence?\n\n[Betelbuddy]: &quot;For a cost comparison, during our controlled testing, human participants were paid $115 per 90-minute session, plus $5 per game completed. Participants attempted approximately nine games per session, roughly $12.78 per attempted game before bonuses. Most of this fee pays for the participant’s time and willingness to take the test, rather than the energy their brain uses (a closer proxy to compare with AI). If we look at only the brain’s energy, and price it as electricity, the estimate ...\n\n[an0malous]: Was OpenAI able to run ARC-AGI-3 tests previously so that they could build a custom harness for the specific tests in the set? Even with the standard harness, if they knew the problems ahead of them they could have used supervised reinforcement learning to teach the model how to solve these specific tests.",
+    "author": "kibae",
+    "published_at": "2026-09-03T18:41:05Z",
+    "fetched_at": "2026-09-04T00:34:50.745173Z",
+    "metadata": {
+      "score": 1230,
+      "descendants": 967,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49554643",
+      "comment_count": 5,
+      "title_zh": "OpenAI发布GPT-6 Astra，ARC-AGI-3得分99.9%",
+      "detailed_summary_zh": "OpenAI宣布推出新一代旗舰模型GPT-6 Astra，其在ARC-AGI-3基准上达到99.9%的得分。发布同时附带了详细的系统卡，并引发大量社区讨论。 作为GPT系列的主要版本更新，GPT-6 Astra的发布可能显著影响AI研究、产品方向和行业竞争格局。围绕其ARC-AGI-3得分和“AGI”定义的广泛讨论，也使这次发布成为反思前沿模型评估方式的重要节点。 有评论指出，ARC-AGI-3分数是在特定Responses API harness下测得，若用相同设置衡量旧模型GPT-5.6 Sol，其得分可能从显示的7.8%上升至约30%，因此直接跨模型对比可能具有误导性。此外，除ARC-AGI-3外，GPT-6 Astra在其他主流基准上的提升被认为“相对适中”。",
+      "background_zh": "ARC-AGI-3是2026年推出的首个交互式推理基准，要求AI智能体在新型抽象回合制环境中探索、实时推断目标并规划行动，人类可接近100%完成而此前AI得分很低。系统卡则是一种标准化文档，说明AI系统的架构、训练数据、安全特征和局限性，帮助用户理解模型的用途和风险。GPT-6是OpenAI旗舰AI模型系列的最新版本，延续了GPT-4、GPT-5以来的大版本演进路径。",
+      "community_discussion_zh": "社区反应总体积极但伴随质疑：有评论对ARC-AGI-3接近满分表示认可，也有声音认为该分数因评估条件不一致而被夸大，并质疑这是否真的代表通用智能。还有人批评演示中频繁使用AI替人购物，以及除了该基准外其他指标提升有限，认为前沿模型的进步仍更像“技能习得”而非真正智能。",
+      "sources": [
+        {
+          "url": "https://arcprize.org/arc-agi/3",
+          "title": "ARC-AGI-3"
+        },
+        {
+          "url": "https://www.redhat.com/en/blog/security-beyond-model-introducing-ai-system-cards",
+          "title": "Security beyond the model: Introducing AI system cards"
+        }
+      ],
+      "detailed_summary": "OpenAI宣布推出新一代旗舰模型GPT-6 Astra，其在ARC-AGI-3基准上达到99.9%的得分。发布同时附带了详细的系统卡，并引发大量社区讨论。 作为GPT系列的主要版本更新，GPT-6 Astra的发布可能显著影响AI研究、产品方向和行业竞争格局。围绕其ARC-AGI-3得分和“AGI”定义的广泛讨论，也使这次发布成为反思前沿模型评估方式的重要节点。 有评论指出，ARC-AGI-3分数是在特定Responses API harness下测得，若用相同设置衡量旧模型GPT-5.6 Sol，其得分可能从显示的7.8%上升至约30%，因此直接跨模型对比可能具有误导性。此外，除ARC-AGI-3外，GPT-6 Astra在其他主流基准上的提升被认为“相对适中”。",
+      "background": "ARC-AGI-3是2026年推出的首个交互式推理基准，要求AI智能体在新型抽象回合制环境中探索、实时推断目标并规划行动，人类可接近100%完成而此前AI得分很低。系统卡则是一种标准化文档，说明AI系统的架构、训练数据、安全特征和局限性，帮助用户理解模型的用途和风险。GPT-6是OpenAI旗舰AI模型系列的最新版本，延续了GPT-4、GPT-5以来的大版本演进路径。",
+      "community_discussion": "社区反应总体积极但伴随质疑：有评论对ARC-AGI-3接近满分表示认可，也有声音认为该分数因评估条件不一致而被夸大，并质疑这是否真的代表通用智能。还有人批评演示中频繁使用AI替人购物，以及除了该基准外其他指标提升有限，认为前沿模型的进步仍更像“技能习得”而非真正智能。"
+    },
+    "ai_score": 10.0,
+    "ai_reason": "Major release of a new flagship GPT model from OpenAI, with massive community engagement (967 comments, score 1230) and substantive discussion about benchmark validity and implications. Despite some criticism of misleading benchmarks, the announcement is a significant industry event likely to influence AI research and development.",
+    "ai_summary": "OpenAI announces GPT-6 Astra, a new flagship model with state-of-the-art ARC-AGI-3 performance and a detailed system card, generating extensive community discussion.",
+    "ai_tags": [
+      "OpenAI",
+      "GPT-6",
+      "AI",
+      "large language models",
+      "AGI"
+    ]
+  },
+  {
+    "id": "hackernews:story:49550375",
+    "source_type": "hackernews",
+    "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+    "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+    "content": "These are my notes from porting my Amiga game, which I originally built in Baghdad in 1993 in MC68000 assembly, to Godot, using Claude Fable 5 during last July holiday.  It took an evening! Getting the feel right and shipping it took a few more weekends and evenings.<p>I spent the last few weeks analyzing what Claude did, feeding it my 33 years of memory of how I built the game, my notes and the git repos. It wrote the first draft of the article, and I edited line by line over a week. The screenshots of my 1993 map editor is the first I have run it since then. The one thing I never verified myself is the 108-byte explanation.<p>&quot;Before starting everything, the model assembled the code using vasm on my Mac, and kept going till the binary is byte-identical to the binaries I had in my original game. Even after that, the there was mismatch of about 108 bytes. I originally used AsmOne  which assembles into memory, and the game saved into the disk by saving that memory after running the game. So the original shipped files are a snapshot of the game that had already been running, not clean asm-one output.&quot;<p>Please post any questions. I am also releasing the original game for free.\n\n\n--- Top Comments ---\n\n[mattjoyce]: A few weeks ago I downloaded a memory dump of a zx81 game, and ask Claude to build it in Go.\nIt nailed it.  Converted the binary back to basic and then to go.   My idea was that the game would be unknown to llm training and perhaps a nice bench. What a crazy thing it is to be first at the advent of personal computing, and then in the inflection point where AI treats that first experience as archeology.\n\n[btbuildem]: &gt; one copy of the Amiga Hardware Reference Manual aka The Book... my, this brings back dusty memories Babylonian Twins has such strong &quot;Gods: Into the Wonderful&quot; vibes, I wonder if that game was an inspiration for you  https:&#x2F;&#x2F;www.lemonamiga.com&#x2F;game&#x2F;gods-into-the-wonderful   https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=1kAXGjUwHyA\n\n[dannyobrien]: I just wanted to add how much in awe I am at you creating this game in &#x27;93 in assembly. Around the same time I was trying to write a game on the Atari ST, and the dedication to the project -- especially when documentation was so thin on the ground, pre-Internet -- is extraordinary. Do you have any stories from debugging the game? I always found that the most dispiriting part, after the endless hope of handcrafting the code that I was  sure  would work first time...\n\n[hedgehog]: This is fantastic. It would be interesting to have Claude Code export an engineering guide for doing similar ports, including descriptions of the tooling it built to do it. I&#x27;ve done some reversing from binary but never with results this good.\n\n[glimshe]: Great work! I&#x27;m planning to do that to another forgotten game (not mine) and it&#x27;s great to see that this is now quite possible.",
+    "author": "rabahs",
+    "published_at": "2026-09-03T14:28:18Z",
+    "fetched_at": "2026-09-04T00:34:50.745274Z",
+    "metadata": {
+      "score": 179,
+      "descendants": 57,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49550375",
+      "comment_count": 5,
+      "title_zh": "用LLM把1993年Amiga汇编游戏移植到Godot",
+      "detailed_summary_zh": "一位开发者利用大语言模型（文中称Claude Fable 5）将自己1993年在巴格达用MC68000汇编语言编写的Amiga游戏移植到了Godot引擎，核心移植只花了一个晚上就完成。他还将原版游戏免费公开发布，并详细记录了整个过程。 这展示了LLM在逆向工程与复古软件移植方面的惊人能力：它能够直接阅读和理解30年前的底层汇编代码，并转换为现代引擎可用的形式。对于复古计算爱好者、游戏历史保护者以及希望拯救老旧软件的人来说，这种方法可能开创一种全新的可行路径。 模型先用vasm汇编器在Mac上反复汇编原始代码，直到生成的二进制与原游戏文件字节级一致；不过仍存在约108字节的差异，原因是原作者当年使用AsmOne在内存中汇编，发布的文件实为游戏运行后的内存快照而非纯净汇编输出。移植后，开发者又花了数周分析Claude的行为并逐行编辑由Claude起草的文章，以确保技术细节准确。",
+      "background_zh": "MC68000是摩托罗拉推出的16/32位处理器，被Commodore Amiga等80至90年代的个人电脑广泛使用，汇编语言则是一种逐条对应机器指令的低级编程语言。Godot是一款开源跨平台游戏引擎，而vasm是可移植重定向汇编器，AsmOne则是Amiga平台流行的汇编集成开发环境。近年来，LLM被越来越多地用于代码生成与翻译，但直接用于解读老式汇编游戏仍属少见而新颖的尝试。",
+      "community_discussion_zh": "评论区整体反应积极且充满共鸣。有人分享了自己让Claude把ZX81内存转储还原成Basic再转成Go的成功经历，认为这相当于把早期个人计算体验变成了“考古学”；也有人对作者在1993年前互联网时代仅凭一本硬件手册编写汇编游戏的毅力表示钦佩，并好奇当时如何调试。还有评论者表示自己正在计划用类似方法移植另一款被遗忘的非本人作品，并希望得到可复用的工程指南。",
+      "sources": [
+        {
+          "url": "http://sun.hasenbraten.de/vasm/",
+          "title": "vasm portable and retargetable assembler"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Amiga_programming_languages",
+          "title": "Amiga programming languages - Wikipedia"
+        },
+        {
+          "url": "https://manualzz.com/doc/o/rtewj/vasm-assembler-system-general",
+          "title": "vasm Assembler User Manual | Manualzz"
+        }
+      ],
+      "detailed_summary": "一位开发者利用大语言模型（文中称Claude Fable 5）将自己1993年在巴格达用MC68000汇编语言编写的Amiga游戏移植到了Godot引擎，核心移植只花了一个晚上就完成。他还将原版游戏免费公开发布，并详细记录了整个过程。 这展示了LLM在逆向工程与复古软件移植方面的惊人能力：它能够直接阅读和理解30年前的底层汇编代码，并转换为现代引擎可用的形式。对于复古计算爱好者、游戏历史保护者以及希望拯救老旧软件的人来说，这种方法可能开创一种全新的可行路径。 模型先用vasm汇编器在Mac上反复汇编原始代码，直到生成的二进制与原游戏文件字节级一致；不过仍存在约108字节的差异，原因是原作者当年使用AsmOne在内存中汇编，发布的文件实为游戏运行后的内存快照而非纯净汇编输出。移植后，开发者又花了数周分析Claude的行为并逐行编辑由Claude起草的文章，以确保技术细节准确。",
+      "background": "MC68000是摩托罗拉推出的16/32位处理器，被Commodore Amiga等80至90年代的个人电脑广泛使用，汇编语言则是一种逐条对应机器指令的低级编程语言。Godot是一款开源跨平台游戏引擎，而vasm是可移植重定向汇编器，AsmOne则是Amiga平台流行的汇编集成开发环境。近年来，LLM被越来越多地用于代码生成与翻译，但直接用于解读老式汇编游戏仍属少见而新颖的尝试。",
+      "community_discussion": "评论区整体反应积极且充满共鸣。有人分享了自己让Claude把ZX81内存转储还原成Basic再转成Go的成功经历，认为这相当于把早期个人计算体验变成了“考古学”；也有人对作者在1993年前互联网时代仅凭一本硬件手册编写汇编游戏的毅力表示钦佩，并好奇当时如何调试。还有评论者表示自己正在计划用类似方法移植另一款被遗忘的非本人作品，并希望得到可复用的工程指南。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Novel use of an LLM to port a vintage assembly game to a modern engine is highly interesting and technically unique, with strong community engagement and insightful comments sharing similar experiences.",
+    "ai_summary": "A developer describes using an LLM to port his 1993 Amiga 68000 assembly game to Godot, highlighting the surprising effectiveness and the nostalgic yet forward-looking process.",
+    "ai_tags": [
+      "LLM",
+      "Godot",
+      "retrocomputing",
+      "assembly",
+      "porting"
+    ]
+  },
+  {
+    "id": "hackernews:story:49544762",
+    "source_type": "hackernews",
+    "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
+    "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+    "content": "\n--- Top Comments ---\n\n[thataccount]: I don&#x27;t know what the fascination is with these AI versus human tournaments is. I&#x27;m old enough to remember the whole &quot;Deep Blue&quot; vs Kasparov exhibition, and I didn&#x27;t really understand the fascination with all that either. That humans can make sufficiently strong calculators has never been a dispute in my mind. If the human wins over the calculator, good, but if the calculator wins, okay. What does that tell us exactly? The human had a bad day? The machine had a good one?\n\n[rao-v]: It’s worth understanding that Shin Jinse has been significantly stronger than his nearest human opponents for a while now, more so than Magnus was even at his very peak. In go ELO like scoring he’s something like 120 points over the next strongest player. No other player has ever broken a 3800 rating let alone 3850. Ke Jie (the previous long time champion) peaked at 3755. Shin Jinseo’s strength graph is the most absurd straight line.  https:&#x2F;&#x2F;www.goratings.org&#x2F;en&#x2F;  2 stone...\n\n[thangalin]: In Go, there are exchanges of plays called &quot;joseki&quot;. Professionals consider the outcome of joseki to be an equal result for both players. Most joseki are only a handful of moves, but some, such as the &quot;flying knife&quot; joseki have variations that continue for upwards of 50 moves. A traditional 19x19 go board has 361 intersections. Shin&#x27;s genius was to play out a complex variation of the flying knife joseki that was, in essence, a one-way path to reach an equal board posi...\n\n[PenanceAU]: The headline is a bit misleading, though perhaps not intentionally. Shin took a 2-stone handicap from KataGo which means that Shin is the weaker of the two. But to give that more context, Shin is also the strongest human player to have ever lived in raw strength terms by a good margin, and is known as replicating AI move-for-move more closely than anyone else. If they were to play even then there’s no chance any human could win (and pretty much all pros agree with that). Lee Sedol beating Alp...\n\n[xhevahir]: &gt; &quot;This series taught me that rather than trying to imitate AI, it is far more important to build the board according to my own style.&quot; It&#x27;s never made sense to me that so many go players study AI go play in the hope of emulating it in a human game. We&#x27;re not machines. We can&#x27;t do thousands of Monte Carlo tree searches per second.",
+    "author": "gmays",
+    "published_at": "2026-09-03T01:11:22Z",
+    "fetched_at": "2026-09-04T00:34:50.745401Z",
+    "metadata": {
+      "score": 178,
+      "descendants": 51,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49544762",
+      "comment_count": 5,
+      "title_zh": "围棋大师申真谞让两子击败AI KataGo",
+      "detailed_summary_zh": "韩国围棋九段棋手申真谞（Shin Jinseo）在让两子的情况下击败了顶级开源围棋AI KataGo，这被视为人类棋手利用AI系统盲区的一次罕见胜利。 这一结果说明即使强大如KataGo的围棋AI也存在可被针对性利用的弱点，对于AI鲁棒性研究具有参考价值。同时，它再次引发关于人机对弈意义和人类创造力价值的讨论。 对局中申真谞采用了复杂的“飞刀”定式变化，这一变化近乎单行道，迫使KataGo进入对其不利的进程，最终让两子的大劣势得以扭转。让两子意味着申真谞在开局时已落后两枚棋子的价值，而KataGo仍需贴目，这反映了人类顶尖棋手与顶级AI之间仍存在明显棋力差距。",
+      "background_zh": "KataGo是由David Wu开发并于2019年发布的开源计算机围棋程序，棋力已达顶尖职业水准。围棋中的让子是平衡不同水平棋手间差距的常见机制，职业高手之间几乎不适用，更不用说人与顶级AI之间。申真谞被普遍视为有史以来最强的人类棋手之一，其棋风以高度接近AI着称，但这次他展示了人类棋手在对弈中独有的战略创造力和对定式深层理解的价值。",
+      "community_discussion_zh": "评论区中，有用户对人机对决的意义表示质疑，认为这就像“深蓝”与卡斯帕罗夫的对弈一样，输赢说明不了太多；也有用户强调申真谞在人类棋手中的统治力是历史级的，并具体解释了他用“飞刀”定式复杂变化赢下对局的巧妙之处。还有评论指出标题易让人误解，因为“让两子”意味申真谞本是较弱一方，如果分先（不让子）人类依然不可能战胜KataGo。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/KataGo",
+          "title": "KataGo - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Handicapping_in_Go",
+          "title": "Handicapping in Go - Wikipedia"
+        },
+        {
+          "url": "https://github.com/lightvector/KataGo",
+          "title": "GitHub - lightvector/KataGo: GTP engine and self-play ..."
+        }
+      ],
+      "detailed_summary": "韩国围棋九段棋手申真谞（Shin Jinseo）在让两子的情况下击败了顶级开源围棋AI KataGo，这被视为人类棋手利用AI系统盲区的一次罕见胜利。 这一结果说明即使强大如KataGo的围棋AI也存在可被针对性利用的弱点，对于AI鲁棒性研究具有参考价值。同时，它再次引发关于人机对弈意义和人类创造力价值的讨论。 对局中申真谞采用了复杂的“飞刀”定式变化，这一变化近乎单行道，迫使KataGo进入对其不利的进程，最终让两子的大劣势得以扭转。让两子意味着申真谞在开局时已落后两枚棋子的价值，而KataGo仍需贴目，这反映了人类顶尖棋手与顶级AI之间仍存在明显棋力差距。",
+      "background": "KataGo是由David Wu开发并于2019年发布的开源计算机围棋程序，棋力已达顶尖职业水准。围棋中的让子是平衡不同水平棋手间差距的常见机制，职业高手之间几乎不适用，更不用说人与顶级AI之间。申真谞被普遍视为有史以来最强的人类棋手之一，其棋风以高度接近AI着称，但这次他展示了人类棋手在对弈中独有的战略创造力和对定式深层理解的价值。",
+      "community_discussion": "评论区中，有用户对人机对决的意义表示质疑，认为这就像“深蓝”与卡斯帕罗夫的对弈一样，输赢说明不了太多；也有用户强调申真谞在人类棋手中的统治力是历史级的，并具体解释了他用“飞刀”定式复杂变化赢下对局的巧妙之处。还有评论指出标题易让人误解，因为“让两子”意味申真谞本是较弱一方，如果分先（不让子）人类依然不可能战胜KataGo。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High value: a notable human victory over a top AI system via handicap reveals strategic insight into AI blind spots. The community comments add valuable context about the player's dominance and the specific joseki exploit used, indicating substantive discussion.",
+    "ai_summary": "Go grandmaster Shin Jinseo defeats KataGo with a two-stone handicap, showcasing human creativity in exploiting AI weaknesses.",
+    "ai_tags": [
+      "Go",
+      "AI robustness",
+      "KataGo",
+      "human vs machine"
+    ]
+  },
+  {
+    "id": "hackernews:story:49548395",
+    "source_type": "hackernews",
+    "title": "Audacity 4.0",
+    "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+    "content": "\n--- Top Comments ---\n\n[Lautzi]: I highly recommend this video [1] by the Head of Software at Muse who had a big part in the development of Audacity 4.0. Some great insights and really fun to watch! [1]  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=QYM3TWf_G38\n\n[dbcooper]: Release video looking at the new UI (Qt6 based):  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BTQymidLYIM\n\n[boomlinde]: I&#x27;ve given up on Audacity because it hasn&#x27;t kept up technically with how a typical home studio Linux system does audio, and looking at the change log it seems like they haven&#x27;t addressed any of the problems I have with it in version 4. You&#x27;d think, well, it supports JACK, so you&#x27;re gold on both JACK and Pipewire, but they only do this in an extremely annoying way. It doesn&#x27;t create a persistent JACK client. Only when you start playback or recording does it tempor...\n\n[ancientstraits]: I have been using Audacity 3 for making music with samples for a few years. And it sort of worked, but there were a lot of things that were inconvenient, like the project sometimes not saving, or getting a &quot;clicking&quot; noise across clips that I had to remove by manually fading in&#x2F;out each end of the clip. I tried the Audacity 4 beta a while ago, and it seemed super clean and like it fixed a lot of stuff. I am pretty concerned about the encroaching audio.com things (even though th...\n\n[pelagicAustral]: Whatever happened with the post-telemetry fork debacle projects? Tenacity, Sneedacity, or something...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/j03x8u/audacity_4_0_0_released\">Comments</a></p>",
+    "author": "ClydeN",
+    "published_at": "2026-09-03T10:53:08Z",
+    "fetched_at": "2026-09-04T00:34:50.745423Z",
+    "metadata": {
+      "score": 1037,
+      "descendants": 232,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49548395",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "release"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "Audacity 4.0 发布：Qt6 界面全面换新",
+      "detailed_summary_zh": "Audacity 4.0 正式发布，界面从 wxWidgets 迁移到 Qt6，带来大量 UI 和易用性改进。该版本还引入了原生 ARM64 支持，并针对 Windows ASIO 音频驱动提供支持。 这是 Audacity 多年来的首个 4.0 大版本，标志着这个广泛使用的开源音频编辑器转向更现代的 Qt6 框架，有望提升跨平台体验和长期可维护性。对音乐人、播客制作者和开源音频社区都有重要影响。 Audacity 4.0 使用 Qt6 工具包重构了用户界面，并复用了 MuseScore Studio 4 项目中积累的框架经验。此外，该版本提供原生 ARM64 支持，并在 Windows 上启用了 ASIO 音频驱动支持。",
+      "background_zh": "Audacity 是一款自由开源的数字音频编辑器，支持 Windows、macOS、Linux 等平台，是此类工具中最流行的选择之一。它长期使用 wxWidgets 搭建界面，此次转向 Qt6 这种更现代的跨平台框架，目标是让界面更统一、更易于维护。此前 Audacity 在 2021 年被 Muse Group 收购并加入遥测功能，曾引发社区争议并出现 Tenacity 等分支。",
+      "community_discussion_zh": "社区对此次大版本更新褒贬不一。部分用户对新界面和开发团队的视频分享表示认可，但也有长期用户抱怨 Audacity 仍未解决 JACK/Pipewire 集成等技术问题，担心向 audio.com 云端服务倾斜以及遥测和分支事件重演。",
+      "sources": [
+        {
+          "url": "https://www.phoronix.com/news/Audacity-4.0-Released",
+          "title": "Audacity 4.0 Audio Editor Released With Qt6 Based UI - Phoronix"
+        },
+        {
+          "url": "https://www.linuxcompatible.org/story/audacity-40-beta-4-ships-with-qt6-ui-windows-asio-and-legacy-imports",
+          "title": "Audacity 4.0 Beta 4 Ships With Qt6 UI, Windows ASIO, and Legacy Imports"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Audacity_(audio_editor)",
+          "title": "Audacity (audio editor) - Wikipedia"
+        }
+      ],
+      "detailed_summary": "Audacity 4.0 正式发布，界面从 wxWidgets 迁移到 Qt6，带来大量 UI 和易用性改进。该版本还引入了原生 ARM64 支持，并针对 Windows ASIO 音频驱动提供支持。 这是 Audacity 多年来的首个 4.0 大版本，标志着这个广泛使用的开源音频编辑器转向更现代的 Qt6 框架，有望提升跨平台体验和长期可维护性。对音乐人、播客制作者和开源音频社区都有重要影响。 Audacity 4.0 使用 Qt6 工具包重构了用户界面，并复用了 MuseScore Studio 4 项目中积累的框架经验。此外，该版本提供原生 ARM64 支持，并在 Windows 上启用了 ASIO 音频驱动支持。",
+      "background": "Audacity 是一款自由开源的数字音频编辑器，支持 Windows、macOS、Linux 等平台，是此类工具中最流行的选择之一。它长期使用 wxWidgets 搭建界面，此次转向 Qt6 这种更现代的跨平台框架，目标是让界面更统一、更易于维护。此前 Audacity 在 2021 年被 Muse Group 收购并加入遥测功能，曾引发社区争议并出现 Tenacity 等分支。",
+      "community_discussion": "社区对此次大版本更新褒贬不一。部分用户对新界面和开发团队的视频分享表示认可，但也有长期用户抱怨 Audacity 仍未解决 JACK/Pipewire 集成等技术问题，担心向 audio.com 云端服务倾斜以及遥测和分支事件重演。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Major release (4.0) of a widely-used open-source audio editor with a significant Qt6 UI overhaul and fixes. High engagement (1037 points, 232 comments) and substantive community discussion covering technical limitations, project direction, and concerns about telemetry/forks, giving it broad relevance.",
+    "ai_summary": "Audacity 4.0 released with a new Qt6-based interface and various improvements, but faces mixed reactions over unresolved technical limitations and future direction.",
+    "ai_tags": [
+      "audacity",
+      "audio-editing",
+      "open-source",
+      "ui",
+      "release"
+    ]
+  },
+  {
+    "id": "hackernews:story:49548452",
+    "source_type": "hackernews",
+    "title": "Google Antigravity TOS: 3rd party usage can get Google account suspended",
+    "url": "https://twitter.com/GergelyOrosz/status/2095453567955968398",
+    "content": "\n--- Top Comments ---\n\n[nairboon]: Just for reference, stuff like this is exactly why some people oppose the forced Apple&#x2F;Google requirement in government systems like the new eIDs (eIDAS) in Europe. If you&#x27;re forced to use Apple&#x2F;Google for digital identification, playing around with your Google account and get it banned can have disproportional consequences. Suddenly you&#x27;re locked out of all online government systems.\n\n[Havoc]: Banning the entire account rather than AI access is wildly user hostile. People have years of emails and calendars on their accounts. And then you get to fight the support bots and eventually go to the actual unofficial Google support - asking hn whether anyone knows someone with a pulse at Google.\n\n[simonsarris]: &gt; The wording is confusing but the account in question is the Antigravity account. We will change the ToS wording here to make that clearer. - Varun Mohan on the antigravity team  https:&#x2F;&#x2F;x.com&#x2F;_mohansolo&#x2F;status&#x2F;2095529407033000260\n\n[danschuller]: Apart from the products not being very competitive this is the main reason I&#x27;m reluctant to use any Google models &#x2F; AI products. The account is way to precious thing to lose based on some AI classifier misfiring and then you know there&#x27;s good route to get it reenabled.\n\n[hmokiguess]: The larger issue here is the fact that access to an account can hold you hostage and impact your life in essential services. We should really find a way to break the tightly coupling to these platforms, including mobile carriers, and not have to live in fear. Having a real representative of each platform in a government branch under regular hours that citizens can access with their documents so that any issues with it can be dealt is a good first step.",
+    "author": "tosh",
+    "published_at": "2026-09-03T11:01:04Z",
+    "fetched_at": "2026-09-04T00:34:50.745441Z",
+    "metadata": {
+      "score": 269,
+      "descendants": 186,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49548452",
+      "comment_count": 5,
+      "title_zh": "Antigravity条款引争议：第三方使用或致Google账号封禁",
+      "detailed_summary_zh": "Google Antigravity 的服务条款警告，通过第三方方式使用该服务可能导致用户整个 Google 账号被暂停。该警告引发广泛关注，随后 Antigravity 团队成员回应称相关措辞存在歧义并承诺修改。 此事件放大了用户对 Google AI 产品采用的安全顾虑：一旦账号被封，用户可能失去 Gmail、日历等多年积累的数据，且申诉渠道不畅。它还可能影响欧洲 eIDAS 等依赖 Google/Apple 账号进行数字身份认证的政府服务场景。 用户指出整段 ToS 并未明确区分“Antigravity 账号”与整个 Google 账号；Antigravity 团队工程师 Varun Mohan 回应称封禁范围实际上仅限该产品账号，并称会优化措辞。这一澄清尚未体现在公开条款中，相关争议仍在发酵。",
+      "background_zh": "Google Antigravity 是 Google 推出的软件开发生态平台，提供面向聊天与智能体的开发环境、IDE、命令行工具和 SDK，用于调度自主 AI 智能体完成代码生成与执行等任务。这类平台在开发者社区受到关注，但属于 Google 较新的 AI 产品线，其账号政策与整体 Google 账号体系的绑定关系受到密切审视。",
+      "community_discussion_zh": "多数社区评论批评 Google 将 AI 服务与整个 Google 账号绑定的做法，认为封禁风险极高且对用户不友好，并担心影响依赖 Google 账号的政府服务和个人数据资产。也有评论引用官方澄清，指出原条款可能仅指 Antigravity 子账号，但大家仍认为需要明确界限和可靠的人工申诉渠道。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Google_Antigravity",
+          "title": "Google Antigravity - Wikipedia"
+        },
+        {
+          "url": "https://dev.to/manikandan/what-is-google-antigravity-complete-guide-features-limits-real-examples-k67",
+          "title": "What Is Google Antigravity? Complete Guide, Features, Limits ..."
+        }
+      ],
+      "detailed_summary": "Google Antigravity 的服务条款警告，通过第三方方式使用该服务可能导致用户整个 Google 账号被暂停。该警告引发广泛关注，随后 Antigravity 团队成员回应称相关措辞存在歧义并承诺修改。 此事件放大了用户对 Google AI 产品采用的安全顾虑：一旦账号被封，用户可能失去 Gmail、日历等多年积累的数据，且申诉渠道不畅。它还可能影响欧洲 eIDAS 等依赖 Google/Apple 账号进行数字身份认证的政府服务场景。 用户指出整段 ToS 并未明确区分“Antigravity 账号”与整个 Google 账号；Antigravity 团队工程师 Varun Mohan 回应称封禁范围实际上仅限该产品账号，并称会优化措辞。这一澄清尚未体现在公开条款中，相关争议仍在发酵。",
+      "background": "Google Antigravity 是 Google 推出的软件开发生态平台，提供面向聊天与智能体的开发环境、IDE、命令行工具和 SDK，用于调度自主 AI 智能体完成代码生成与执行等任务。这类平台在开发者社区受到关注，但属于 Google 较新的 AI 产品线，其账号政策与整体 Google 账号体系的绑定关系受到密切审视。",
+      "community_discussion": "多数社区评论批评 Google 将 AI 服务与整个 Google 账号绑定的做法，认为封禁风险极高且对用户不友好，并担心影响依赖 Google 账号的政府服务和个人数据资产。也有评论引用官方澄清，指出原条款可能仅指 Antigravity 子账号，但大家仍认为需要明确界限和可靠的人工申诉渠道。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High importance due to significant implications for AI product adoption and account safety, with a rich discussion highlighting risks like government service lockout and user-hostile account bans, providing diverse viewpoints and debate.",
+    "ai_summary": "Google's Antigravity ToS warns that third-party usage can lead to suspension of the entire Google account, sparking concerns about overreach and account lockout risks.",
+    "ai_tags": [
+      "Google",
+      "AI",
+      "Terms of Service",
+      "Account Suspension",
+      "Policy"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:53beeaa7606ff817",
+    "source_type": "rss",
+    "title": "How Swiss Tables Work in Go’s Built-in Map",
+    "url": "https://victoriametrics.com/blog/go-swiss-table-map/",
+    "content": "<p><a href=\"https://lobste.rs/s/2avct0/how_swiss_tables_work_go_s_built_map\">Comments</a></p>",
+    "author": "victoriametrics.com by func25",
+    "published_at": "2026-09-03T10:50:44Z",
+    "fetched_at": "2026-09-04T00:34:50.707823Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "go"
+      ],
+      "title_zh": "解析Go内置map的Swiss Tables实现",
+      "detailed_summary_zh": "一篇来自VictoriaMetrics博客的技术深度文章详细解释了Go 1.24起内置map重写为基于Swiss Tables的数据结构后的内部工作原理，包括槽位分组、元数据设计以及查找流程。 map是Go中使用最广泛的内置数据结构，此次改造让Go哈希表的吞吐量和内存效率显著改善，对依赖大量键值读写性能的服务器程序、缓存和数据处理系统都将带来实际影响。 Swiss Tables将哈希表按8个槽位分成逻辑组，每组使用额外的元数据字节记录条目状态与哈希前缀，并借助SIMD指令加速组内扫描。Go实现还保留了原有的随机迭代顺序与删除tombstone语义，并在扩容时沿用渐进式移动策略。",
+      "background_zh": "哈希表通过哈希函数将键映射到存储桶中，Go旧版map采用链式桶结构，每个桶固定可容纳8对键值，冲突时通过溢出桶链接。Swiss Tables源自Google Abseil C++库，采用平铺布局与紧凑元数据设计，能有效提升缓存命中率和CPU利用率。Go 1.24把内置map改成了与Swiss Tables兼容的实现，但对上层开发者API完全透明。",
+      "sources": [
+        {
+          "url": "https://abseil.io/about/design/swisstables",
+          "title": "abseil / Swiss Tables Design Notes"
+        },
+        {
+          "url": "https://go.dev/blog/maps",
+          "title": "Go maps in action - The Go Programming Language"
+        },
+        {
+          "url": "https://pkg.go.dev/internal/runtime/maps",
+          "title": "maps package - internal/runtime/maps - Go Packages"
+        }
+      ],
+      "detailed_summary": "一篇来自VictoriaMetrics博客的技术深度文章详细解释了Go 1.24起内置map重写为基于Swiss Tables的数据结构后的内部工作原理，包括槽位分组、元数据设计以及查找流程。 map是Go中使用最广泛的内置数据结构，此次改造让Go哈希表的吞吐量和内存效率显著改善，对依赖大量键值读写性能的服务器程序、缓存和数据处理系统都将带来实际影响。 Swiss Tables将哈希表按8个槽位分成逻辑组，每组使用额外的元数据字节记录条目状态与哈希前缀，并借助SIMD指令加速组内扫描。Go实现还保留了原有的随机迭代顺序与删除tombstone语义，并在扩容时沿用渐进式移动策略。",
+      "background": "哈希表通过哈希函数将键映射到存储桶中，Go旧版map采用链式桶结构，每个桶固定可容纳8对键值，冲突时通过溢出桶链接。Swiss Tables源自Google Abseil C++库，采用平铺布局与紧凑元数据设计，能有效提升缓存命中率和CPU利用率。Go 1.24把内置map改成了与Swiss Tables兼容的实现，但对上层开发者API完全透明。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Detailed technical deep-dive into Go's map internals with Swiss Tables, a recent significant change. High relevance to Go developers and systems programming. Community discussion is indicated via Lobsters link, adding credibility.",
+    "ai_summary": "Explains the design and implementation of Swiss Tables in Go's built-in map.",
+    "ai_tags": [
+      "go",
+      "swiss-table",
+      "map",
+      "internals",
+      "algorithm"
+    ]
+  },
+  {
+    "id": "hackernews:story:49554520",
+    "source_type": "hackernews",
+    "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "content": "\n--- Top Comments ---\n\n[nostrebored]: 150k TPM limit on public endpoint means that it&#x27;s likely unusable for many coding tasks. When we&#x27;ve tried Cerebras in the past, our problem has always been rates. We&#x27;d love to not deal with dedicated and to have access to a more flexible rate pool. Even trying it out, it seems like our account has gotten moved to some limbo where we can no longer add billing information. ```\nBilling access restricted\nSelf-serve billing is not available on Enterprise accounts. Please contact you...\n\n[gpugreg]: I was wondering whether this was any good for programming, but it is too fast for its own good. There is a limit of 450,000 tokens per minute. I hit this limit in about 90 seconds and burned through $1.10 while doing so. This is because cached tokens count towards the token limit. For comparison, I ran the same task with DeepSeek-V4-Flash, which finished in 172 seconds and cost $0.024 with a final context window size of 55217 tokens, while Qwen3.8-27B was not even close to being done with a 6...\n\n[jasongill]: It would be great if they made their inference capacity for this model available via OpenRouter; the fastest provider on OpenRouter right now is at ~80tps  https:&#x2F;&#x2F;openrouter.ai&#x2F;qwen&#x2F;qwen3.8-27b#providers  They do appear to host other models on OpenRouter so maybe Qwen3.8 will be there soon:  https:&#x2F;&#x2F;openrouter.ai&#x2F;provider&#x2F;cerebras\n\n[pllbnk]: Just a couple days ago I learned about ninfer ( https:&#x2F;&#x2F;github.com&#x2F;Neroued&#x2F;ninfer ) and on RTX 5090 I can now get ~200 tok&#x2F;s and over 400 tok&#x2F;s on concurrent requests which is plenty fast for a local model of this strength.\n\n[hexa00]: Just tried it on a medium size coding&#x2F;debug problem on an existing codebase, observations:\n - Input doesn&#x27;t look faster than other models, it spends a lot of time reading\n  Read about 5M tokens\n - Output is awesome, super fast as you expect from the 1500t&#x2F;sec I think that&#x27;s correct \n - Tool call is failing more than say DS4, which leads to time wasted on retries (complex tools like browser control for example)\n - Shell commands are still somewhat of a bottleneck The net ef...",
+    "author": "altertable",
+    "published_at": "2026-09-03T18:32:13Z",
+    "fetched_at": "2026-09-04T00:34:50.745218Z",
+    "metadata": {
+      "score": 429,
+      "descendants": 126,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49554520",
+      "comment_count": 5,
+      "title_zh": "Qwen 3.8 27B登陆Cerebras，最高1500 tokens/s",
+      "detailed_summary_zh": "阿里巴巴的Qwen 3.8 27B大语言模型现已通过Cerebras推理平台提供，官方标注输出速度最高可达1500 tokens/s。该消息公布后，早期用户反馈暴露出速率上限和计费流程方面的现实问题。 Cerebras以晶圆级处理器提供远超GPU的推理速度，此次让Qwen 3.8 27B这类中等规模开放模型达到每秒1500 token的输出速率，对需要高吞吐和低延迟的应用具有吸引力。但实测中的速率限制与计费障碍提醒开发者，通用公共端点距离稳健的规模化服务仍有差距。 根据社区报告，公共端点的TPM（每分钟token数）限额在不同账号类型下相差很大，有用户遇到150,000 TPM，也有用户遇到450,000 TPM。此外，缓存token会计入限制，有用户90秒内用完配额并产生约1.10美元开销，且企业账号无法自助式计费，甚至遇到无法更新账单信息的情况。",
+      "background_zh": "Cerebras是一家人工智能芯片初创公司，其核心产品是巨型晶圆级芯片（如CS-4），宣称能提供比传统GPU快数十倍的AI推理性能。Qwen（通义千问）是阿里巴巴云推出的系列大语言模型，以开源、支持多语言（特别是中文）著称，部分模型权重可在Hugging Face等平台获取。此次部署的Qwen 3.8 27B属于该系列中约270亿参数的中高端规模模型，能够在Cerebras专用架构上直接运行。",
+      "community_discussion_zh": "社区对Cerebras的高速输出印象深刻，但普遍批评速率限制和计费体验，认为这些问题让模型难以用于实际编码等长任务。有开发者称公共端点150k TPM配额很快就耗尽，还有开发者表示自己90秒内烧掉45万token配额并花费1.1美元，同样的任务改用DeepSeek-V4-Flash仅需0.024美元且更快完成。另有声音建议Cerebras将模型接入OpenRouter以便使用，并指出本地RTX 5090配合ninfer也能获得每秒数百token的速度，从而降低了对该云服务的依赖。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cerebras_Systems",
+          "title": "Cerebras Systems - Wikipedia"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Qwen",
+          "title": "Qwen - Wikipedia"
+        },
+        {
+          "url": "https://www.cerebras.ai/",
+          "title": "Cerebras"
+        }
+      ],
+      "detailed_summary": "阿里巴巴的Qwen 3.8 27B大语言模型现已通过Cerebras推理平台提供，官方标注输出速度最高可达1500 tokens/s。该消息公布后，早期用户反馈暴露出速率上限和计费流程方面的现实问题。 Cerebras以晶圆级处理器提供远超GPU的推理速度，此次让Qwen 3.8 27B这类中等规模开放模型达到每秒1500 token的输出速率，对需要高吞吐和低延迟的应用具有吸引力。但实测中的速率限制与计费障碍提醒开发者，通用公共端点距离稳健的规模化服务仍有差距。 根据社区报告，公共端点的TPM（每分钟token数）限额在不同账号类型下相差很大，有用户遇到150,000 TPM，也有用户遇到450,000 TPM。此外，缓存token会计入限制，有用户90秒内用完配额并产生约1.10美元开销，且企业账号无法自助式计费，甚至遇到无法更新账单信息的情况。",
+      "background": "Cerebras是一家人工智能芯片初创公司，其核心产品是巨型晶圆级芯片（如CS-4），宣称能提供比传统GPU快数十倍的AI推理性能。Qwen（通义千问）是阿里巴巴云推出的系列大语言模型，以开源、支持多语言（特别是中文）著称，部分模型权重可在Hugging Face等平台获取。此次部署的Qwen 3.8 27B属于该系列中约270亿参数的中高端规模模型，能够在Cerebras专用架构上直接运行。",
+      "community_discussion": "社区对Cerebras的高速输出印象深刻，但普遍批评速率限制和计费体验，认为这些问题让模型难以用于实际编码等长任务。有开发者称公共端点150k TPM配额很快就耗尽，还有开发者表示自己90秒内烧掉45万token配额并花费1.1美元，同样的任务改用DeepSeek-V4-Flash仅需0.024美元且更快完成。另有声音建议Cerebras将模型接入OpenRouter以便使用，并指出本地RTX 5090配合ninfer也能获得每秒数百token的速度，从而降低了对该云服务的依赖。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Notable announcement of fast inference speeds for Qwen 3.8 on Cerebras, but community comments reveal significant rate limit and billing concerns that temper its practical value. The discussion adds insightful real-world usage feedback.",
+    "ai_summary": "Qwen 3.8 27B is available on Cerebras at up to 1500 tokens/s, though users report restrictive token limits and billing issues.",
+    "ai_tags": [
+      "Qwen",
+      "Cerebras",
+      "LLM Inference",
+      "Performance",
+      "AI"
+    ]
+  },
+  {
+    "id": "hackernews:story:49550772",
+    "source_type": "hackernews",
+    "title": ".name Termination",
+    "url": "https://neil.fraser.name/news/2026/09/03/",
+    "content": "\n--- Top Comments ---\n\n[nneonneo]: It seems like the right thing they should do is discontinue  new  registrations but continue to honour existing ones (+ continuing to reserve any 2LD that has a 3LD registered on top). It’s a bit insane that they can decide to just terminate all existing 3LD registrations. One would  hope  that they’d at least continue to reserve the 2LDs for some period to avoid domain squatting, but this isn’t mentioned in the proposal and I doubt Verisign would graciously do so.\n\n[jl6]: I can only assume somebody was asleep on the job when this scheme was approved, because the outcome is in direct contradiction to ICANN’s mission statement: &gt; Its enduring mission is to ensure the stable, secure operation of the Internet&#x27;s unique identifier systems.  https:&#x2F;&#x2F;www.icann.org&#x2F;resources&#x2F;pages&#x2F;about-icann  Arbitrary termination of service is not stability. Enabling name hijacking is not security. The answer cannot be a rival name scheme based on dec...\n\n[dvt]: I freaked out for a second because I&#x27;ve owned `dvt.name` for like 15 years. `.name` is  not  getting terminated, so it&#x27;s important to be precise here. The third-level x.y.name (where you&#x27;re the `x`) is getting terminated, and the respective `y.name` domains are going to be released. Still a crappy thing for people, but it does not affect owned second-level domains.\n\n[nanolith]: This risk factor is similar to one I brought up during architectural review of an IoT company I helped to build. It&#x27;s why the identity certificates our devices used were entirely disconnected from domain names, and why the discovery protocol I put together did not rely on registered domains, but could use these as an untrusted part of discovery. Domain names are leased. Things that are leased can disappear. The company leasing these assets could go bankrupt. They could weasel their way o...\n\n[akersten]: It kind of seems like an insane TLD structure to begin with, right? I always thought .co.uk was bad (you&#x27;re just pinning yourself to whoever owns the .co. part, but at least browsers have some suffix list where you can&#x27;t, I don&#x27;t know, hijack some login cookie for all of .co.). Joe Smith and John Smith can independently register joe.smith.name and john.smith.name, do browsers have a wildcard suffix list for the 2nd level of `.name` specifically, or can Joe set a cookie on all o...\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/6tsncg/name_termination\">Comments</a></p>",
+    "author": "pavel_lishin",
+    "published_at": "2026-09-03T14:54:39Z",
+    "fetched_at": "2026-09-04T00:34:50.745250Z",
+    "metadata": {
+      "score": 1286,
+      "descendants": 369,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49550772",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "web"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": ".name三级域名面临终止，引发安全与稳定性质疑",
+      "detailed_summary_zh": "Verisign与ICANN近日提出提案，拟终止所有现有的.name三级域名（形如x.y.name）注册，并释放对应的二级域名。该提案直接影响现有注册者，对长期使用这些域名作为个人身份或个人网站的用户构成不确定性。 此举关乎众多.name注册者的既有权益，若执行将导致大量三级域名失效，且二级域名释放后可能引发域名抢注或劫持风险。同时，这一政策与ICANN保障互联网唯一标识系统稳定与安全的核心使命相冲突，可能削弱公众对域名体系可靠性的信任。 受影响的注册形式为三级域名，例如user.example.name中的“user”部分，而父级域名example.name将被释放供重新注册。该提案未提及对现有三级域名注册者的宽限或续期措施，也未说明是否在释放二级域名前预留一定保护期，从而增加了域名抢注的可能性。",
+      "background_zh": "三级域名是位于二级域名之下的子域名，例如在user.example.name中，“example.name”为二级域名，“user”为三级域名。.name是面向个人的通用顶级域，长期以来允许注册三级域名以提供“姓名.名字”这类结构。域名劫持是指未经授权夺取域名控制权的行为，释放已存在的域名若无防护措施，就可能成为劫持与抢注的温床。",
+      "community_discussion_zh": "社区评论中，许多用户对任意终止现有注册表达担忧，认为这与ICANN“确保稳定、安全运行”的使命相悖；也有用户澄清，此次终止仅针对三级域名，已注册二级域名（如dvt.name）不受影响，但整体仍是糟糕的处理方式。还有人指出域名本质上是租赁资产，可能消失，因此关键系统不应过度依赖域名。",
+      "sources": [
+        {
+          "url": "https://lemire.name/",
+          "title": "Free third level domains in the lemire. name namespace! Personalize..."
+        },
+        {
+          "url": "https://www.networksolutions.com/blog/protecting-yourself-domain-hijacking/",
+          "title": "Domain Hijacking: What It Is and How To Prevent It"
+        }
+      ],
+      "detailed_summary": "Verisign与ICANN近日提出提案，拟终止所有现有的.name三级域名（形如x.y.name）注册，并释放对应的二级域名。该提案直接影响现有注册者，对长期使用这些域名作为个人身份或个人网站的用户构成不确定性。 此举关乎众多.name注册者的既有权益，若执行将导致大量三级域名失效，且二级域名释放后可能引发域名抢注或劫持风险。同时，这一政策与ICANN保障互联网唯一标识系统稳定与安全的核心使命相冲突，可能削弱公众对域名体系可靠性的信任。 受影响的注册形式为三级域名，例如user.example.name中的“user”部分，而父级域名example.name将被释放供重新注册。该提案未提及对现有三级域名注册者的宽限或续期措施，也未说明是否在释放二级域名前预留一定保护期，从而增加了域名抢注的可能性。",
+      "background": "三级域名是位于二级域名之下的子域名，例如在user.example.name中，“example.name”为二级域名，“user”为三级域名。.name是面向个人的通用顶级域，长期以来允许注册三级域名以提供“姓名.名字”这类结构。域名劫持是指未经授权夺取域名控制权的行为，释放已存在的域名若无防护措施，就可能成为劫持与抢注的温床。",
+      "community_discussion": "社区评论中，许多用户对任意终止现有注册表达担忧，认为这与ICANN“确保稳定、安全运行”的使命相悖；也有用户澄清，此次终止仅针对三级域名，已注册二级域名（如dvt.name）不受影响，但整体仍是糟糕的处理方式。还有人指出域名本质上是租赁资产，可能消失，因此关键系统不应过度依赖域名。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Important policy/technical development affecting existing .name third-level domain registrations, with high community engagement (369 comments) and detailed discussion of ICANN/Verisign actions and risks like domain squatting. Not groundbreaking but highly relevant to the DNS/domain community.",
+    "ai_summary": "Verisign/ICANN propose terminating existing third-level .name registrations and releasing second-level domains, causing concern among registrants and discussion on stability and hijacking risks.",
+    "ai_tags": [
+      "DNS",
+      "ICANN",
+      "domain policy",
+      "Verisign",
+      "Internet governance"
+    ]
+  },
+  {
+    "id": "hackernews:story:49551760",
+    "source_type": "hackernews",
+    "title": "K2 Horizon: A connected fleet of six open models",
+    "url": "https://ifm.ai/blog/k2/",
+    "content": "\n--- Top Comments ---\n\n[jjordan]: Fully open models really need to be a big part of the AI future. That includes all source code, open training data, how it&#x27;s organized, fed to the model, processed, etc. Until that becomes a thing you&#x27;re always going to be left wondering what exactly lies underneath the closed model you are using, leaving open the possibility for societal manipulation.\n\n[a11r]: It is great to see another player introduce a fully open stack. Nvidia&#x27;s Nemotron is the only other prominent one I know of. All that said, the headline claims do not match the self-reported performance. For example, the dense 32B model is significantly behind Qwen3.8 27B (chart towards the bottom of  https:&#x2F;&#x2F;ifm.ai&#x2F;blog&#x2F;k2 ). Gemma4 31B is not in the comparison set. This is the most important sweet spot for self hosted open-weight models today and real competition he...\n\n[cogman10]: My quick review of the 3.7B model (because I was interested) is that it&#x27;s not to be trusted for coding. It failed my basic test I like to ask models and generated incorrect code.  When prompted about the bug, it preceded to start hallucinating non-existent APIs.  After doing that it got caught in a loop trying to desk check the solution that didn&#x27;t work.\n\n[cesarvarela]: I find it funny that while these releases are a technological miracle, the charts in the doc use tiny fonts and are hard to read. Goes with the idea that coding might be solved, but taste isn&#x27;t.\n\n[piinbinary]: A bit off topic, but I think I&#x27;m starting to get model fatigue. These come out 10x faster than new Javascript frameworks were coming out 10 years ago (at least new models are far easier to adopt).",
+    "author": "karimf",
+    "published_at": "2026-09-03T15:36:43Z",
+    "fetched_at": "2026-09-04T00:34:50.745312Z",
+    "metadata": {
+      "score": 244,
+      "descendants": 81,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49551760",
+      "comment_count": 5,
+      "title_zh": "IFM发布K2 Horizon：六款全开放模型",
+      "detailed_summary_zh": "IFM发布了K2 Horizon模型家族，包含六个完全开放的基础模型，公开了权重、训练数据与代码。官方称这是AI史上规模最大的一次全开源模型发布。 该发布为开源AI生态注入新活力，使开发者不仅能使用模型权重，还能获取训练数据和代码，便于审查和自定义部署。社区反应热烈，但初步测试显示部分型号性能与现有开源模型仍有差距，影响其在自托管场景的竞争力。 社区测评显示，K2 Horizon中的稠密32B模型表现明显落后于Qwen3.8 27B；3.7B小模型在编码测试中生成错误代码，并虚构不存在的API。系列还包含规模约379B参数的K2-Horizon-375B-A23B大模型，相关权重与资源已上传Hugging Face。",
+      "background_zh": "开放模型指以公开权重、数据或训练配方发布的AI模型，开发者可以在自有基础设施上检查、定制和部署，与只能通过API使用的封闭模型形成对比。完全开放（fully open）更进一步要求训练数据与源代码也公开，有助于外界理解模型构建过程并降低被操纵风险。IFM全称Institute of Foundation Models，隶属阿布扎比的MBZUAI人工智能大学，K2 Horizon是其基础模型系列。",
+      "community_discussion_zh": "评论区整体认可开放模型的方向，但普遍对性能持保留态度。有用户指出32B模型明显不如Qwen3.8 27B，与宣传不符；另有用户测试3.7B模型后认为其编码不可信，会出现幻觉API并陷入循环。还有人调侃文档图表字体太小，也有用户表示对模型的快速迭代感到“疲劳”。",
+      "sources": [
+        {
+          "url": "https://ifm.ai/blog/k2",
+          "title": "Introducing K2 Horizon: Frontier Performance, Radically Open"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/glossary/open-models/",
+          "title": "What are Open Models? | NVIDIA Glossary"
+        },
+        {
+          "url": "https://huggingface.co/collections/IFM/k2-horizon",
+          "title": "K2 Horizon - a IFM Collection - Hugging Face"
+        }
+      ],
+      "detailed_summary": "IFM发布了K2 Horizon模型家族，包含六个完全开放的基础模型，公开了权重、训练数据与代码。官方称这是AI史上规模最大的一次全开源模型发布。 该发布为开源AI生态注入新活力，使开发者不仅能使用模型权重，还能获取训练数据和代码，便于审查和自定义部署。社区反应热烈，但初步测试显示部分型号性能与现有开源模型仍有差距，影响其在自托管场景的竞争力。 社区测评显示，K2 Horizon中的稠密32B模型表现明显落后于Qwen3.8 27B；3.7B小模型在编码测试中生成错误代码，并虚构不存在的API。系列还包含规模约379B参数的K2-Horizon-375B-A23B大模型，相关权重与资源已上传Hugging Face。",
+      "background": "开放模型指以公开权重、数据或训练配方发布的AI模型，开发者可以在自有基础设施上检查、定制和部署，与只能通过API使用的封闭模型形成对比。完全开放（fully open）更进一步要求训练数据与源代码也公开，有助于外界理解模型构建过程并降低被操纵风险。IFM全称Institute of Foundation Models，隶属阿布扎比的MBZUAI人工智能大学，K2 Horizon是其基础模型系列。",
+      "community_discussion": "评论区整体认可开放模型的方向，但普遍对性能持保留态度。有用户指出32B模型明显不如Qwen3.8 27B，与宣传不符；另有用户测试3.7B模型后认为其编码不可信，会出现幻觉API并陷入循环。还有人调侃文档图表字体太小，也有用户表示对模型的快速迭代感到“疲劳”。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Release of a fully open model family is significant for the open-source AI ecosystem, and the discussion (81 comments, 244 points) is active. However, community benchmarks show mixed performance for some models, with a critical review of the small model, preventing a top score. Overall high-value but with caveats.",
+    "ai_summary": "IFM announces K2 Horizon, a family of six fully open models, but community testing suggests mixed performance compared to existing alternatives.",
+    "ai_tags": [
+      "open source",
+      "AI",
+      "machine learning",
+      "model release",
+      "open models"
+    ]
+  },
+  {
+    "id": "hackernews:story:49544618",
+    "source_type": "hackernews",
+    "title": "GPS glitched across the US by as much as 33 feet",
+    "url": "https://www.sciencealert.com/gps-glitched-across-the-us-by-as-much-as-33-feet-scientists-have-never-seen-this-before",
+    "content": "\n--- Top Comments ---\n\n[chaps]: This is exactly the sort of thing that leads to people getting reincarcerated after their electronic monitoring devices mistakenly report them leaving their homes. Some reporting I did on the topic a few years back:  https:&#x2F;&#x2F;chicagoreader.com&#x2F;news&#x2F;many-on-house-arrest-in-cook-...\n\n[nwbear90]: An interesting warning as Austin is blanketed by Cybercabs. I think a town full of golden driverless cars 33 feet from where they think they should be is terrifying.\n\n[MarkusQ]: TFA article claims: &quot;Indeed, the solar storm of May 2024 is estimated to have cost the US agricultural industry $500 million due to disruptions in precision navigation.&quot; This seems hard to believe.  The link provided hand waves through how it maybe could happen, and ends with an Economist just SWAGing that it could have been maybe a dollar an acre or so. &quot;He estimates that affected farms lost about $1 per acre. Nationally, this equates to an estimated half-billion dollars in lo...\n\n[1e1a]: Wouldn&#x27;t RTK help mitigate this, as the base stations would also be affected by the atmospheric disturbance?\n\n[ashleyn]: Somehow, Selective Availability returned.",
+    "author": "thread_id",
+    "published_at": "2026-09-03T00:49:07Z",
+    "fetched_at": "2026-09-04T00:34:50.745353Z",
+    "metadata": {
+      "score": 106,
+      "descendants": 51,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49544618",
+      "comment_count": 5,
+      "title_zh": "太阳风暴致美国GPS定位偏差达33英尺",
+      "detailed_summary_zh": "一场太阳风暴导致美国各地的GPS定位误差最高达到约33英尺（10米），科学家表示此前从未见过这种规模如此大、误差如此明显的GPS异常。事件再次凸显太阳活动对卫星导航系统的直接干扰。 对自动驾驶、精准农业、电子监控等依赖厘米级或车道级定位的应用而言，10米级偏差足以引发误导甚至安全事故。此次事件也提示关键基础设施应重视空间天气风险，并考虑在导航系统中加入太阳风暴预警与冗余手段。 异常并非来自GPS卫星或接收机故障，而是太阳风暴影响电离层，使信号传播延迟发生剧烈变化。由于该扰动覆盖范围很大，RTK等依赖附近基准站的差分修正方案也会受同一片电离层区域影响，因此无法完全消除这类区域性偏差。",
+      "background_zh": "GPS接收机利用多颗卫星信号到达时间差计算位置，信号在到达地面之前需要穿过地球高层大气中的电离层。太阳风暴（地磁暴）会注入高能带电粒子，使电离层电子密度出现剧烈且不规则的波动，造成所谓的电离层闪烁，引起GPS信号幅度和相位抖动。GPS信号到达地面时已经非常微弱，对这类电离层扰动极其敏感，严重时可将定位精度从几米恶化到几十米。太阳活动极大期前后及春秋分前后，地磁扰动更频繁，此类导航异常也更容易出现。",
+      "community_discussion_zh": "评论者对影响给出了不同角度的担忧：有网友列举称，GPS误差可能让居家监禁的电子脚镣误判佩戴者离开住所，导致当事人被错误收监；也有人担心奥斯汀遍布Cybercab自动驾驶出租车时，车辆集体偏移33英尺会带来恐怖风险。还有网友对“太阳风暴给美国农业造成5亿美元损失”的估算表示怀疑，并讨论RTK基准站同样受大气扰动影响，因此难以完全纠正此类错误；有人则调侃这像是GPS的选择可用性（Selective Availability）政策又回来了。",
+      "sources": [
+        {
+          "url": "https://agupubs.pericles-prod.literatumonline.com/doi/full/10.1029/2006SW000260",
+          "title": "GPS and ionospheric scintillations - Kintner - 2007 - Space Weather..."
+        },
+        {
+          "url": "https://www.sws.bom.gov.au/Satellite/6/3",
+          "title": "SWS - Section Information - About Ionospheric Scintillation"
+        },
+        {
+          "url": "https://precisionagirrigation.extension.uga.edu/2025/06/potential-impacts-of-solar-storms-on-gps-rtk-accuracy-and-operations/",
+          "title": "Potential Impacts of Solar Storms on GPS/RTK Accuracy and ..."
+        }
+      ],
+      "detailed_summary": "一场太阳风暴导致美国各地的GPS定位误差最高达到约33英尺（10米），科学家表示此前从未见过这种规模如此大、误差如此明显的GPS异常。事件再次凸显太阳活动对卫星导航系统的直接干扰。 对自动驾驶、精准农业、电子监控等依赖厘米级或车道级定位的应用而言，10米级偏差足以引发误导甚至安全事故。此次事件也提示关键基础设施应重视空间天气风险，并考虑在导航系统中加入太阳风暴预警与冗余手段。 异常并非来自GPS卫星或接收机故障，而是太阳风暴影响电离层，使信号传播延迟发生剧烈变化。由于该扰动覆盖范围很大，RTK等依赖附近基准站的差分修正方案也会受同一片电离层区域影响，因此无法完全消除这类区域性偏差。",
+      "background": "GPS接收机利用多颗卫星信号到达时间差计算位置，信号在到达地面之前需要穿过地球高层大气中的电离层。太阳风暴（地磁暴）会注入高能带电粒子，使电离层电子密度出现剧烈且不规则的波动，造成所谓的电离层闪烁，引起GPS信号幅度和相位抖动。GPS信号到达地面时已经非常微弱，对这类电离层扰动极其敏感，严重时可将定位精度从几米恶化到几十米。太阳活动极大期前后及春秋分前后，地磁扰动更频繁，此类导航异常也更容易出现。",
+      "community_discussion": "评论者对影响给出了不同角度的担忧：有网友列举称，GPS误差可能让居家监禁的电子脚镣误判佩戴者离开住所，导致当事人被错误收监；也有人担心奥斯汀遍布Cybercab自动驾驶出租车时，车辆集体偏移33英尺会带来恐怖风险。还有网友对“太阳风暴给美国农业造成5亿美元损失”的估算表示怀疑，并讨论RTK基准站同样受大气扰动影响，因此难以完全纠正此类错误；有人则调侃这像是GPS的选择可用性（Selective Availability）政策又回来了。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High-value real-world incident highlighting GPS vulnerability to solar weather, with implications for autonomous vehicles and other precision systems. Community discussion adds depth by exploring impacts on electronic monitoring, cost estimates, and potential mitigations like RTK.",
+    "ai_summary": "A solar storm caused GPS positioning errors of up to 33 feet across the US, raising concerns for autonomous vehicles and other precision-dependent systems.",
+    "ai_tags": [
+      "GPS",
+      "solar storm",
+      "autonomous vehicles",
+      "infrastructure",
+      "navigation"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b57c88ffc991aa72",
+    "source_type": "rss",
+    "title": "CERN transitioning industrial computers to Debian after being a longtime RHEL institution",
+    "url": "https://www.phoronix.com/news/CERN-Goes-Debian-Leaving-RHEL",
+    "content": "<p><a href=\"https://lobste.rs/s/fxk56i/cern_transitioning_industrial\">Comments</a></p>",
+    "author": "phoronix.com via ema-pe",
+    "published_at": "2026-09-03T08:28:28Z",
+    "fetched_at": "2026-09-04T00:34:50.707616Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux"
+      ],
+      "title_zh": "CERN将工业计算机从RHEL迁移至Debian",
+      "detailed_summary_zh": "欧洲核子研究中心（CERN）宣布将其用于加速器控制的工业计算机系统从长期使用的Red Hat Enterprise Linux（RHEL）迁移到Debian Linux。这一转变发生在CERN作为RHEL长期企业用户多年之后。 CERN作为全球知名的科研机构，其系统迁移决定在企业Linux生态中具有重要信号意义，尤其正值Red Hat近期调整RHEL源码获取政策引发争议之际。该变化可能影响其他大型机构对Linux发行版的选择，并受到系统管理员和开源倡导者的广泛关注。 此次迁移针对的是CERN的工业加速器控制计算机和嵌入式系统，即运行加速器综合体的一层，而非普通办公电脑。具体迁移时间表和涉及机器数量尚未在公告中详细说明。",
+      "background_zh": "RHEL是Red Hat推出的企业级Linux发行版，长期以来被许多大型机构用于关键任务环境。Debian是一个由社区维护的通用Linux发行版，以其稳定性和自由软件原则著称。近年来，Red Hat限制RHEL源代码的公开访问，引发部分开源社区不满，促使一些机构重新评估其Linux发行版选择。CERN是粒子物理研究领域的世界级实验室，运行着大型强子对撞机等复杂加速器设施。",
+      "sources": [
+        {
+          "url": "https://www.phoronix.com/news/CERN-Goes-Debian-Leaving-RHEL",
+          "title": "CERN Transitioning Industrial Computers To Debian After... - Phoronix"
+        },
+        {
+          "url": "https://www.fosslinux.com/160765/why-cern-is-switching-from-rhel-to-debian.htm",
+          "title": "Why CERN Is Switching from RHEL to Debian: A Beginner Guide"
+        }
+      ],
+      "detailed_summary": "欧洲核子研究中心（CERN）宣布将其用于加速器控制的工业计算机系统从长期使用的Red Hat Enterprise Linux（RHEL）迁移到Debian Linux。这一转变发生在CERN作为RHEL长期企业用户多年之后。 CERN作为全球知名的科研机构，其系统迁移决定在企业Linux生态中具有重要信号意义，尤其正值Red Hat近期调整RHEL源码获取政策引发争议之际。该变化可能影响其他大型机构对Linux发行版的选择，并受到系统管理员和开源倡导者的广泛关注。 此次迁移针对的是CERN的工业加速器控制计算机和嵌入式系统，即运行加速器综合体的一层，而非普通办公电脑。具体迁移时间表和涉及机器数量尚未在公告中详细说明。",
+      "background": "RHEL是Red Hat推出的企业级Linux发行版，长期以来被许多大型机构用于关键任务环境。Debian是一个由社区维护的通用Linux发行版，以其稳定性和自由软件原则著称。近年来，Red Hat限制RHEL源代码的公开访问，引发部分开源社区不满，促使一些机构重新评估其Linux发行版选择。CERN是粒子物理研究领域的世界级实验室，运行着大型强子对撞机等复杂加速器设施。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "CERN's institutional shift from RHEL to Debian is a significant signal in the enterprise Linux ecosystem, especially amid recent RHEL policy changes. It has broad relevance for system administrators and open-source advocates, though it is not a complete paradigm shift.",
+    "ai_summary": "CERN is moving its industrial computers from RHEL to Debian after being a longtime Red Hat enterprise user.",
+    "ai_tags": [
+      "Linux",
+      "Debian",
+      "RHEL",
+      "CERN",
+      "open source"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:b7a827f865f9f953",
+    "source_type": "rss",
+    "title": "NES dumping over audio",
+    "url": "https://mathstodon.xyz/@JordiGH/117209252363385093",
+    "content": "<p><a href=\"https://lobste.rs/s/rlswbt/nes_dumping_over_audio\">Comments</a></p>",
+    "author": "mathstodon.xyz by JordiGH",
+    "published_at": "2026-09-03T21:40:36Z",
+    "fetched_at": "2026-09-04T00:34:50.707708Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "games",
+        "retrocomputing"
+      ],
+      "title_zh": "通过音频输出接口提取NES卡带数据",
+      "detailed_summary_zh": "一名开发者发布了一种新颖的技术，能够通过NES主机的音频输出端口来转储卡带数据，并分享了相关讨论链接。该帖子描述了如何利用音频信号作为数据传输媒介来完成ROM提取。 这项技术展示了一种极具创意的逆向工程思路，将声学数据传输应用于复古硬件，可能为无法直接读取卡带的场景提供新方法。它虽非重大突破，但对复古计算与硬件黑客社群具有启发性。 帖子来自mathstodon.xyz用户JordiGH，并附有lobste.rs讨论链接。该方法本质上类似传统的音频耦合器，将数字数据调制成可听的音频信号输出，再在另一端解调还原。",
+      "background_zh": "NES卡带通常通过72针接口并行读取，而音频输出仅用于产生声音信号。声学数据传输并非新概念，早期调制解调器就曾使用音频耦合器通过电话线传输数据。利用音频端口传输数据可以绕过某些硬件访问限制，是硬件黑客常用的技能。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Acoustic_data_transmission",
+          "title": "Acoustic data transmission - Wikipedia"
+        },
+        {
+          "url": "https://etim.net.au/nesrgb5/audio.html",
+          "title": "Audio NESRGB5 - etim.net.au"
+        }
+      ],
+      "detailed_summary": "一名开发者发布了一种新颖的技术，能够通过NES主机的音频输出端口来转储卡带数据，并分享了相关讨论链接。该帖子描述了如何利用音频信号作为数据传输媒介来完成ROM提取。 这项技术展示了一种极具创意的逆向工程思路，将声学数据传输应用于复古硬件，可能为无法直接读取卡带的场景提供新方法。它虽非重大突破，但对复古计算与硬件黑客社群具有启发性。 帖子来自mathstodon.xyz用户JordiGH，并附有lobste.rs讨论链接。该方法本质上类似传统的音频耦合器，将数字数据调制成可听的音频信号输出，再在另一端解调还原。",
+      "background": "NES卡带通常通过72针接口并行读取，而音频输出仅用于产生声音信号。声学数据传输并非新概念，早期调制解调器就曾使用音频耦合器通过电话线传输数据。利用音频端口传输数据可以绕过某些硬件访问限制，是硬件黑客常用的技能。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Interesting technical deep-dive on a novel retrocomputing hack (dumping NES cartridges via audio), likely with insightful community discussion. Niche but creative and relevant to systems/hardware hacking, though not a major breakthrough.",
+    "ai_summary": "A post describing a technique for dumping NES game data over audio output, shared with links to discussion.",
+    "ai_tags": [
+      "retrocomputing",
+      "hardware hacking",
+      "NES",
+      "audio",
+      "reverse engineering"
+    ]
+  },
+  {
+    "id": "rss:newsletter.pragmaticengineer.com_feed:46e1b0cfa24acdb5",
+    "source_type": "rss",
+    "title": "The Pulse: tech companies move to open AI models",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-tech-companies-move-to",
+    "content": "Cost-saving efforts reveal that moving simpler workloads to open AI models is the easiest way to save ~50% on AI bills. Also: automated software maintenance experience, and more",
+    "author": "Gergely Orosz",
+    "published_at": "2026-09-03T17:00:14Z",
+    "fetched_at": "2026-09-04T00:34:51.086624Z",
+    "metadata": {
+      "feed_name": "The Pragmatic Engineer",
+      "category": "",
+      "tags": [],
+      "title_zh": "科技公司转向开源AI模型以削减50%成本",
+      "detailed_summary_zh": "Pragmatic Engineer通讯指出，科技公司正通过将简单工作负载迁移到开源AI模型，来节省约50%的AI账单。该报道还分享了自动化软件维护的相关经验。 这一趋势对工程领导者和AI从业者具有重要意义，表明开源模型在成本敏感型场景中正成为商业模型的可行替代方案，并推动AI成本优化成为行业优先事项。 报道强调“简单工作负载”是迁移到开源模型最直接的切入点，可实现约50%的成本节省，但未披露具体模型名称或性能数据。消息还附带讨论了自动化软件维护的实践案例。",
+      "background_zh": "随着生成式AI商用API调用成本高昂，企业开始探索开源模型以降低支出。开源AI模型通常由社区或厂商开放权重，可自行部署，从而避免按调用付费。此类优化做法正从实验走向主流工程实践。",
+      "detailed_summary": "Pragmatic Engineer通讯指出，科技公司正通过将简单工作负载迁移到开源AI模型，来节省约50%的AI账单。该报道还分享了自动化软件维护的相关经验。 这一趋势对工程领导者和AI从业者具有重要意义，表明开源模型在成本敏感型场景中正成为商业模型的可行替代方案，并推动AI成本优化成为行业优先事项。 报道强调“简单工作负载”是迁移到开源模型最直接的切入点，可实现约50%的成本节省，但未披露具体模型名称或性能数据。消息还附带讨论了自动化软件维护的实践案例。",
+      "background": "随着生成式AI商用API调用成本高昂，企业开始探索开源模型以降低支出。开源AI模型通常由社区或厂商开放权重，可自行部署，从而避免按调用付费。此类优化做法正从实验走向主流工程实践。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Provides practical, timely insight into the industry trend of moving simple AI workloads to open models for ~50% cost savings, relevant to engineering leaders and AI practitioners. The Pragmatic Engineer newsletter has a strong reputation and usually includes thoughtful analysis, though no direct comments are shown here.",
+    "ai_summary": "This newsletter highlights how tech companies are cutting AI costs by ~50% by shifting simpler workloads to open AI models, alongside notes on automated software maintenance.",
+    "ai_tags": [
+      "AI/ML",
+      "cost optimization",
+      "open source models",
+      "software engineering",
+      "industry trends"
+    ]
+  }
+]
