@@ -1,0 +1,445 @@
+[
+  {
+    "id": "rss:lobste.rs_rss:782a13e721eaae99",
+    "source_type": "rss",
+    "title": "\"Hammock Driven Development\" (2010)",
+    "url": "https://youtu.be/f84n5oFoZBc",
+    "content": "<p><a href=\"https://lobste.rs/s/0htvw0/hammock_driven_development_2010\">Comments</a></p>",
+    "author": "youtu.be via gunduzc",
+    "published_at": "2026-09-07T08:31:19Z",
+    "fetched_at": "2026-09-08T00:50:36.591011Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "video",
+        "practices"
+      ],
+      "title_zh": "吊床驱动开发：Rich Hickey 谈深度思考的价值",
+      "detailed_summary_zh": "Rich Hickey 在 2010 年的演讲《Hammock Driven Development》中提出，解决复杂软件设计问题的关键不是埋头写代码，而是通过散步、放松等“吊床时间”进行深度、无干扰的思考。该演讲重新强调了“先加载思维、再解决问题”的方法论，并至今仍被广泛引用和讨论。 这场演讲对软件开发行业普遍存在的“快速编码”文化提出了深刻反思，提醒开发者复杂问题需要刻意、专注的思考而非蛮力尝试。它影响了无数工程师对问题解决方式的理解，成为软件设计和生产力领域的重要参考。 Hickey 建议在投入编码前先明确问题领域，并主动收集相关背景知识，然后让大脑在无干扰状态下进行长时间的潜意识处理。演讲强调思考本身是一种需要练习和纪律的工作，而吊床只是象征性场景，代表脱离键盘、专注于思考的环境。",
+      "background_zh": "Rich Hickey 是 Clojure 编程语言的创造者，以其深刻的技术演讲著称。在快速迭代和“移动速度快”的行业环境中，他提出许多问题无法靠立即编程解决，而需要先通过阅读、写作和静思来构建对问题的完整心智模型。这场演讲的核心是让开发者把“思考”提升为一种首要和正式的活动。",
+      "sources": [
+        {
+          "url": "https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/HammockDrivenDev.md",
+          "title": "talk-transcripts/Hickey_Rich/HammockDrivenDev.md at master - GitHub"
+        },
+        {
+          "url": "https://sparsenotes.com/posts/2026/07/hammock-driven-development/",
+          "title": "Hammock Driven Development — Rich Hickey | Sparse Notes"
+        }
+      ],
+      "detailed_summary": "Rich Hickey 在 2010 年的演讲《Hammock Driven Development》中提出，解决复杂软件设计问题的关键不是埋头写代码，而是通过散步、放松等“吊床时间”进行深度、无干扰的思考。该演讲重新强调了“先加载思维、再解决问题”的方法论，并至今仍被广泛引用和讨论。 这场演讲对软件开发行业普遍存在的“快速编码”文化提出了深刻反思，提醒开发者复杂问题需要刻意、专注的思考而非蛮力尝试。它影响了无数工程师对问题解决方式的理解，成为软件设计和生产力领域的重要参考。 Hickey 建议在投入编码前先明确问题领域，并主动收集相关背景知识，然后让大脑在无干扰状态下进行长时间的潜意识处理。演讲强调思考本身是一种需要练习和纪律的工作，而吊床只是象征性场景，代表脱离键盘、专注于思考的环境。",
+      "background": "Rich Hickey 是 Clojure 编程语言的创造者，以其深刻的技术演讲著称。在快速迭代和“移动速度快”的行业环境中，他提出许多问题无法靠立即编程解决，而需要先通过阅读、写作和静思来构建对问题的完整心智模型。这场演讲的核心是让开发者把“思考”提升为一种首要和正式的活动。",
+      "community_discussion": ""
+    },
+    "ai_score": 9.0,
+    "ai_reason": "Rich Hickey's 'Hammock Driven Development' is a seminal and highly influential talk on software design and problem-solving. Despite being from 2010, it remains widely referenced and cited, offering deep insights on thinking before coding. The content is a video link with comments, and the talk's lasting impact and community endorsement justify a near-perfect score.",
+    "ai_summary": "Rich Hickey's classic talk advocating for deep, uninterrupted thinking and 'loading your mind' before tackling complex software design problems.",
+    "ai_tags": [
+      "software engineering",
+      "software design",
+      "productivity",
+      "problem solving",
+      "talk"
+    ]
+  },
+  {
+    "id": "rss:lastweekin.ai_feed:30e8822f1ced9daa",
+    "source_type": "rss",
+    "title": "Last Week in AI #343 - GPT-6, OpenAI’s agents chatted on a wiki, Fable 5.1",
+    "url": "https://lastweekin.ai/p/last-week-in-ai-343-gpt-6-openais",
+    "content": "GPT-6 Astra Is Here, Discovery of a new OpenAI agent message board, Anthropic launches Claude Fable 5.1 and says it&#8217;s up to 45 percent cheaper for agentic work, and more!",
+    "author": "Last Week in AI",
+    "published_at": "2026-09-07T13:02:49Z",
+    "fetched_at": "2026-09-08T00:50:35.815305Z",
+    "metadata": {
+      "feed_name": "Last Week in AI",
+      "category": "",
+      "tags": [],
+      "title_zh": "GPT-6 Astra问世，OpenAI智能体协作与Fable 5.1发布",
+      "detailed_summary_zh": "据本周AI周报#343，OpenAI发布了GPT-6 Astra模型，并发现其智能体在一个wiki上进行协作交流；同时，Anthropic推出了Claude Fable 5.1，声称其处理智能体任务的成本最高可降低45%。 GPT-6 Astra的发布标志着大型语言模型能力的又一次重大提升，可能影响整个AI行业的技术路线。OpenAI智能体在wiki上互动意味着多智能体协作正在走向实际应用；Claude Fable 5.1显著降低智能体任务成本，将推动企业更广泛地采用agentic AI。 该期内容为新闻汇总，具体技术细节有限。已知Claude Fable 5.1是继Fable 5之后的小幅更新，主打降低智能体工作负载的成本；OpenAI智能体消息板的发现也凸显了自主AI系统间的交互行为。",
+      "background_zh": "Agentic AI（智能体AI）指能够在有限监督下自主规划、调用工具并完成目标的AI系统，区别于传统聊天机器人。Anthropic的Claude模型家族中，Fable系列是对公众开放的高能力模型，据估算其拥有约5万亿参数，而受限版Mythos约8万亿参数；Fable 5.1于2026年9月发布，定位为更适合agentic任务的性价比选择。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Claude_Fable_5",
+          "title": "Claude Fable 5"
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/agentic-ai",
+          "title": "What is Agentic AI? | IBM"
+        },
+        {
+          "url": "https://www.anthropic.com/claude/fable",
+          "title": "Claude Fable \\ Anthropic"
+        }
+      ],
+      "detailed_summary": "据本周AI周报#343，OpenAI发布了GPT-6 Astra模型，并发现其智能体在一个wiki上进行协作交流；同时，Anthropic推出了Claude Fable 5.1，声称其处理智能体任务的成本最高可降低45%。 GPT-6 Astra的发布标志着大型语言模型能力的又一次重大提升，可能影响整个AI行业的技术路线。OpenAI智能体在wiki上互动意味着多智能体协作正在走向实际应用；Claude Fable 5.1显著降低智能体任务成本，将推动企业更广泛地采用agentic AI。 该期内容为新闻汇总，具体技术细节有限。已知Claude Fable 5.1是继Fable 5之后的小幅更新，主打降低智能体工作负载的成本；OpenAI智能体消息板的发现也凸显了自主AI系统间的交互行为。",
+      "background": "Agentic AI（智能体AI）指能够在有限监督下自主规划、调用工具并完成目标的AI系统，区别于传统聊天机器人。Anthropic的Claude模型家族中，Fable系列是对公众开放的高能力模型，据估算其拥有约5万亿参数，而受限版Mythos约8万亿参数；Fable 5.1于2026年9月发布，定位为更适合agentic任务的性价比选择。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "This is a high-value news roundup covering potentially major developments like GPT-6, OpenAI agents collaborating, and a new cost-efficient Claude model. While it is a summary rather than a deep technical analysis, the aggregated topics are highly relevant and likely to generate significant community interest.",
+    "ai_summary": "A weekly AI newsletter digest highlighting GPT-6's release, OpenAI agent interactions on a wiki, and Anthropic's Claude Fable 5.1 with lower costs for agentic tasks.",
+    "ai_tags": [
+      "AI News",
+      "GPT-6",
+      "OpenAI",
+      "Anthropic",
+      "AI Agents"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:7534a792253dadcb",
+    "source_type": "rss",
+    "title": "How well do agents use test/verification techniques?",
+    "url": "https://danluu.com/agentic-testing/",
+    "content": "<p><a href=\"https://lobste.rs/s/adrda9/how_well_do_agents_use_test_verification\">Comments</a></p>",
+    "author": "danluu.com via hwayne",
+    "published_at": "2026-09-07T16:17:46Z",
+    "fetched_at": "2026-09-08T00:50:36.590953Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "testing",
+        "vibecoding"
+      ],
+      "title_zh": "智能体如何应用测试与验证技术？",
+      "detailed_summary_zh": "Dan Luu 发表了一篇实证分析文章，专门考察 AI 智能体在软件测试与验证技术上的实际运用效果，核心问题是“智能体究竟会不会正确使用这些质量保障手段”。文章目前在 Lobsters 社区引发了讨论。 随着 AI 智能体越来越多地参与代码编写和缺陷修复，其能否主动、有效地使用测试与验证技术，直接关系到生成代码的可信度和安全性。这项分析有助于开发者理解当前智能体能力的边界，也为相关工具链的设计提供了参考。 公开的页面暂时只包含文章标题、一句话摘要和 Lobsters 评论链接，尚未披露具体实验方法、模型版本和采用的测试类型。原始分析需要进一步阅读正文才能确认细节。",
+      "background_zh": "AI 智能体是指能够基于大语言模型等能力自主规划并执行任务（如修改代码、运行命令）的软件系统。测试与验证是软件工程中保障代码质量的两类方法：测试通过执行用例发现错误，验证则通过静态分析等手段确认代码性质。本文关注的重点是智能体是否能像熟练工程师一样主动运用这些技术来保障工作成果。",
+      "detailed_summary": "Dan Luu 发表了一篇实证分析文章，专门考察 AI 智能体在软件测试与验证技术上的实际运用效果，核心问题是“智能体究竟会不会正确使用这些质量保障手段”。文章目前在 Lobsters 社区引发了讨论。 随着 AI 智能体越来越多地参与代码编写和缺陷修复，其能否主动、有效地使用测试与验证技术，直接关系到生成代码的可信度和安全性。这项分析有助于开发者理解当前智能体能力的边界，也为相关工具链的设计提供了参考。 公开的页面暂时只包含文章标题、一句话摘要和 Lobsters 评论链接，尚未披露具体实验方法、模型版本和采用的测试类型。原始分析需要进一步阅读正文才能确认细节。",
+      "background": "AI 智能体是指能够基于大语言模型等能力自主规划并执行任务（如修改代码、运行命令）的软件系统。测试与验证是软件工程中保障代码质量的两类方法：测试通过执行用例发现错误，验证则通过静态分析等手段确认代码性质。本文关注的重点是智能体是否能像熟练工程师一样主动运用这些技术来保障工作成果。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "Dan Luu is a respected technical writer known for deep empirical analyses. The topic is timely and relevant to AI agents and software verification. Community discussion via lobste.rs adds value, though the full article content is not provided.",
+    "ai_summary": "Investigates the effectiveness of AI agents in applying test and verification techniques.",
+    "ai_tags": [
+      "AI agents",
+      "testing",
+      "verification",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:26acba117db0a872",
+    "source_type": "rss",
+    "title": "The Dataflow Model Revisited",
+    "url": "https://www.vldb.org/pvldb/vol19/p4953-fernandez-moctezuma.pdf",
+    "content": "<p>Abstract</p>\n<p>Eleven years ago, the Dataflow Model paper argued that unbounded, out-of-order data was the new normal, and that we must stop waiting for data to ever become complete. It proposed a unified model (windowing, triggers, watermarks, and retractions) for freely trading off correctness, latency, and cost across batch and streaming engines. On the occasion of its VLDB Test of Time award, we grade our own work—a paper about streaming analytics, in truth if not in name—on what aged well, what aged badly, and what we missed. We find the paper’s core foundations largely sound: the primacy of event time, the futility of waiting for completeness, and the insistence on strong consistency aged well. But we got important parts of the analytical interface wrong: (1) we let windowing and triggering, whose semantics were tangled with operational concerns, dominate the exposition beyond their due, (2) triggers were an over-engineered answer to a question users should never have faced, and (3) the stream-centric worldview missed a deeper truth: streams and tables are two representations of the same object with different access semantics. The mechanisms that delivered on the paper’s analytical goals ultimately evolved out of the database playbook: SQL, incremental view maintenance, and materialized views with explicit freshness contracts. We focused too much on the mechanics of streaming instead of finishing what the database community started but never completed: making the complexity of analytical streaming disappear almost entirely. Still, the verdict is not all confession. We explore how the completeness principle split into two successful forms: watermarks (where streams stay visible) and snapshot-consistent refresh (where they do not); we trace why the latter reached far more users by asking far less of them, and generalize the former into declared constraints on change. We also (1) find the batch-versus-streaming debate was mostly semantic, (2) watch low-latency demand bifurcate along the old OLTP/OLAP line, leaving analytics happily at gentler freshness, (3) adopt the framing we wish we had started with (leave in, leave out, push harder), and (4) ponder the eventual disappearance of streaming beyond analytics.</p>\n<p><a href=\"https://lobste.rs/s/r5b28u/dataflow_model_revisited\">Comments</a></p>",
+    "author": "vldb.org via pushcx",
+    "published_at": "2026-09-07T17:11:49Z",
+    "fetched_at": "2026-09-08T00:50:36.590995Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "pdf",
+        "databases"
+      ],
+      "title_zh": "数据流模型十一年后：原作者回顾与反思",
+      "detailed_summary_zh": "在获得 VLDB Test of Time 奖之际，《数据流模型》论文的原作者发布了《The Dataflow Model Revisited》回顾论文，系统评估该模型过去十一年的表现。作者承认窗口和触发器的语义过于复杂，尤其是触发器属于过度设计，并指出流与表其实是同一对象的两种访问语义。 由于这是原始作者对经典论文的自我批判，对流处理社区和数据库系统研究具有很高的参考价值。它指出流处理分析的复杂性最终应通过 SQL、增量视图维护和物化视图等数据库手段来隐藏，可能影响下一代流批一体系统的设计方向。 回顾认为事件时间优先、等待数据完整无意义、强一致性等核心原则仍然成立，但批次与流式的争论大多只是语义问题，低延迟需求沿 OLTP/OLAP 分界线分裂。作者还指出事后看来更合适的框架是“leave in, leave out, push harder”，并推测流处理未来可能不仅限于分析场景。",
+      "background_zh": "《数据流模型》最初提出，无界且乱序的数据是新常态，系统不应等待数据变得完整，而应通过窗口、触发器、水印和撤回机制在正确性、延迟和成本之间灵活取舍。水印是事件时间上的移动阈值，告诉流处理系统何时可以安全地收束某个时间窗口的结果。Google Cloud Dataflow 等服务的设计基础正是这一模型。",
+      "sources": [
+        {
+          "url": "https://docs.cloud.google.com/dataflow/docs/overview",
+          "title": "Dataflow overview | Google Cloud Documentation"
+        },
+        {
+          "url": "https://risingwave.com/blog/watermarks-stream-processing-explained/",
+          "title": "Watermarks in Stream Processing: What They Are and Why They ..."
+        },
+        {
+          "url": "https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0/",
+          "title": "The Stream Processing Model Behind Google Cloud Dataflow ..."
+        }
+      ],
+      "detailed_summary": "在获得 VLDB Test of Time 奖之际，《数据流模型》论文的原作者发布了《The Dataflow Model Revisited》回顾论文，系统评估该模型过去十一年的表现。作者承认窗口和触发器的语义过于复杂，尤其是触发器属于过度设计，并指出流与表其实是同一对象的两种访问语义。 由于这是原始作者对经典论文的自我批判，对流处理社区和数据库系统研究具有很高的参考价值。它指出流处理分析的复杂性最终应通过 SQL、增量视图维护和物化视图等数据库手段来隐藏，可能影响下一代流批一体系统的设计方向。 回顾认为事件时间优先、等待数据完整无意义、强一致性等核心原则仍然成立，但批次与流式的争论大多只是语义问题，低延迟需求沿 OLTP/OLAP 分界线分裂。作者还指出事后看来更合适的框架是“leave in, leave out, push harder”，并推测流处理未来可能不仅限于分析场景。",
+      "background": "《数据流模型》最初提出，无界且乱序的数据是新常态，系统不应等待数据变得完整，而应通过窗口、触发器、水印和撤回机制在正确性、延迟和成本之间灵活取舍。水印是事件时间上的移动阈值，告诉流处理系统何时可以安全地收束某个时间窗口的结果。Google Cloud Dataflow 等服务的设计基础正是这一模型。",
+      "community_discussion": ""
+    },
+    "ai_score": 8.0,
+    "ai_reason": "A significant retrospective by the original authors on a seminal paper, reflecting on what aged well and what didn't in streaming data processing. Offers valuable insights for the systems community, though it's not a groundbreaking new result but a high-value analysis.",
+    "ai_summary": "The authors revisit their influential Dataflow Model paper a decade later, evaluating its enduring principles and critiquing areas like windowing and triggers that overcomplicated the user experience.",
+    "ai_tags": [
+      "dataflow",
+      "streaming",
+      "databases",
+      "VLDB",
+      "systems"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:51e4c947eb964394",
+    "source_type": "rss",
+    "title": "How to bring up the Linux Kernel on a new platform",
+    "url": "https://werwolv.net/posts/linux_bringup/",
+    "content": "<p><a href=\"https://lobste.rs/s/a2kz9j/how_bring_up_linux_kernel_on_new_platform\">Comments</a></p>",
+    "author": "werwolv.net via rrampage",
+    "published_at": "2026-09-07T21:22:11Z",
+    "fetched_at": "2026-09-08T00:50:36.591105Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "linux",
+        "hardware",
+        "wasm"
+      ],
+      "title_zh": "新平台上如何启动Linux内核：实用指南",
+      "detailed_summary_zh": "这篇技术文章深入探讨了将Linux内核移植到新硬件平台所需的过程和注意事项。文章主要面向内核开发者和嵌入式工程师，提供了从底层硬件适配到系统稳定运行的实战经验。 新硬件平台要运行Linux系统，内核移植是必不可少的环节，直接影响产品研发进度。该指南能帮助相关工程师少走弯路，具备较高的实际参考价值。 新闻条目仅提供了原文指向楼贝（Lobsters）讨论区的链接，并未展示文章正文内容。从标题和标签推断，文章重点涵盖启动流程中的关键环节，但具体细节无法从已有信息中确认。",
+      "background_zh": "当一款新硬件平台（如基于新型SoC的开发板）问世时，要让Linux内核在其上运行，通常需要进行引导加载程序适配、设备树或固件描述、早期串口调试、时钟与中断控制器初始化等底层工作。这个从零开始让内核跑起来的过程常被称为“内核移植”（kernel bring-up），它依赖硬件手册和开发者的调试经验。",
+      "community_discussion_zh": "新闻条目中没有附带可用的社区评论具体内容，因此无法总结讨论中的观点或分歧。",
+      "detailed_summary": "这篇技术文章深入探讨了将Linux内核移植到新硬件平台所需的过程和注意事项。文章主要面向内核开发者和嵌入式工程师，提供了从底层硬件适配到系统稳定运行的实战经验。 新硬件平台要运行Linux系统，内核移植是必不可少的环节，直接影响产品研发进度。该指南能帮助相关工程师少走弯路，具备较高的实际参考价值。 新闻条目仅提供了原文指向楼贝（Lobsters）讨论区的链接，并未展示文章正文内容。从标题和标签推断，文章重点涵盖启动流程中的关键环节，但具体细节无法从已有信息中确认。",
+      "background": "当一款新硬件平台（如基于新型SoC的开发板）问世时，要让Linux内核在其上运行，通常需要进行引导加载程序适配、设备树或固件描述、早期串口调试、时钟与中断控制器初始化等底层工作。这个从零开始让内核跑起来的过程常被称为“内核移植”（kernel bring-up），它依赖硬件手册和开发者的调试经验。",
+      "community_discussion": "新闻条目中没有附带可用的社区评论具体内容，因此无法总结讨论中的观点或分歧。"
+    },
+    "ai_score": 8.0,
+    "ai_reason": "High-value technical deep-dive on a niche but critical systems topic: bringing up the Linux kernel on new hardware. Likely contains detailed, practical insights useful for kernel developers and embedded engineers. Discussion link suggests community engagement, though no direct comment quality is visible.",
+    "ai_summary": "A technical guide covering the process and considerations for porting the Linux kernel to a new hardware platform.",
+    "ai_tags": [
+      "Linux",
+      "kernel",
+      "systems",
+      "embedded",
+      "porting"
+    ]
+  },
+  {
+    "id": "hackernews:story:49601655",
+    "source_type": "hackernews",
+    "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+    "url": "https://lax-skyline.parcelscope.net/",
+    "content": "\n--- Top Comments ---\n\n[epistasis]: It&#x27;s amazing how little has changed in recent years in LA. The massive downzoning of the 1980s had its effect: prevent efficient land use, and channel money into the hands of landlords and homeowners from all newcomers. LA is a ridiculously unaffordable place to live, not because it&#x27;s nice, but because of an artificial shortage of built space, due to a monopoly on the permission to build.\n\n[kristopolous]: This is more like the construction date of buildings that have survived. Some early neighborhoods (like palms) have been completely replaced building by building so they really appear as dark here when they weren&#x27;t. It had a downtown in the 1890s but all those buildings are gone.  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Palms,_Los_Angeles#&#x2F;media&#x2F;File...  it&#x27;s basically this data:  https:&#x2F;&#x2F;portal.assessor.lacounty.gov&#x2F;  through this portal  https:&#...\n\n[wathef]: Los Angeles had the largest public transportation network in the United States until we paved over it[1]. We had over 1,300 miles! You could&#x27;ve gone from Huntington Beach to Downtown and all the way up to Burbank. You can see many of the maps of Los Angeles at the public library[2]. I don&#x27;t live there anymore, love that place though. [1] -  https:&#x2F;&#x2F;www.pbssocal.org&#x2F;shows&#x2F;lost-la&#x2F;from-rail-to-roads-an...  [2] -  https:&#x2F;&#x2F;www.lapl.org&#x2F;research-gu...\n\n[ZeWaka]: Bit misleading since it only shows properties still standing, seemingly. So the older periods look extremely empty.\n\n[neilv]: A complementary view of one point in time is the LA Noire video game&#x27;s attempt to recreate a (condensed and simplified) 1940s LA environment, with 3D architecture, cars, and ongoing expansion.  https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=OGPh2AcmG2A  The storytelling atmosphere is somber film-noire-ish, but there&#x27;s simultaneously a feeling of national prosperity and potential for many (with notable unjust exceptions), like I think fewer people feel in more recent decades. Would a...",
+    "author": "rustywasm",
+    "published_at": "2026-09-07T18:52:06Z",
+    "fetched_at": "2026-09-08T00:50:36.115344Z",
+    "metadata": {
+      "score": 202,
+      "descendants": 96,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49601655",
+      "comment_count": 5,
+      "title_zh": "洛杉矶建筑年代可视化地图 1880–2026",
+      "detailed_summary_zh": "开发者发布了一款交互式地图，用洛杉矶县房地产记录可视化1880至2026年每一栋现存建筑的建造年份。该地图以时间维度的动态浏览方式展现城市扩张，并引发公众对限区和住房政策的讨论。 该可视化让普通人和政策研究者能直观看到洛杉矶在不同年代的建设强度，有助于理解二十世纪末以降的限区政策如何压缩新住房供给并推高房价。它将复杂的城市规划议题转化为公众可参与的对话，是住房政策讨论的直观参考工具。 需要注意，地图只包含至今仍存留的建筑，因此一批早期街区若已整片拆建，就会显示为空白或稀疏，产生幸存者偏差。数据来源很可能是洛杉矶县估值官（Assessor）的财产记录，社区评论者已指出这一局限性。",
+      "background_zh": "建筑建造年代地图通常用颜色或年份标记标注每栋房屋的落成时间，将上百年的城市化进程压缩到一张静态图中。这类地图依赖政府房产税数据，但只反映当前未拆除的建筑，所以越老的街区可能看起来越空。洛杉矶曾是拥有庞大轨道交通事故线的城市，后来逐步拆除而转向汽车主导，这也是评论者讨论城市形态与政策影响的重要背景。",
+      "community_discussion_zh": "评论者普遍认为地图只统计现存建筑，会让人误以为早期洛杉矶比实际情况空旷得多。多位用户借此展开住房争论，指出1980年代的大规模限区政策限制土地高效利用，造成人为供给短缺与高房价；还有人提到洛杉矶曾有超过1300英里的轨道交通系统，是全美最大网络，后来却逐渐被拆除覆盖。整体看，大家对这种可视化持欢迎，但更警惕其解读方式并延伸讨论政策后果。",
+      "detailed_summary": "开发者发布了一款交互式地图，用洛杉矶县房地产记录可视化1880至2026年每一栋现存建筑的建造年份。该地图以时间维度的动态浏览方式展现城市扩张，并引发公众对限区和住房政策的讨论。 该可视化让普通人和政策研究者能直观看到洛杉矶在不同年代的建设强度，有助于理解二十世纪末以降的限区政策如何压缩新住房供给并推高房价。它将复杂的城市规划议题转化为公众可参与的对话，是住房政策讨论的直观参考工具。 需要注意，地图只包含至今仍存留的建筑，因此一批早期街区若已整片拆建，就会显示为空白或稀疏，产生幸存者偏差。数据来源很可能是洛杉矶县估值官（Assessor）的财产记录，社区评论者已指出这一局限性。",
+      "background": "建筑建造年代地图通常用颜色或年份标记标注每栋房屋的落成时间，将上百年的城市化进程压缩到一张静态图中。这类地图依赖政府房产税数据，但只反映当前未拆除的建筑，所以越老的街区可能看起来越空。洛杉矶曾是拥有庞大轨道交通事故线的城市，后来逐步拆除而转向汽车主导，这也是评论者讨论城市形态与政策影响的重要背景。",
+      "community_discussion": "评论者普遍认为地图只统计现存建筑，会让人误以为早期洛杉矶比实际情况空旷得多。多位用户借此展开住房争论，指出1980年代的大规模限区政策限制土地高效利用，造成人为供给短缺与高房价；还有人提到洛杉矶曾有超过1300英里的轨道交通系统，是全美最大网络，后来却逐渐被拆除覆盖。整体看，大家对这种可视化持欢迎，但更警惕其解读方式并延伸讨论政策后果。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Valuable interactive data visualization with good community discussion around urban planning and housing policy, but limited technical novelty. Engaging enough to warrant attention.",
+    "ai_summary": "An interactive map of Los Angeles building construction dates (1880–2026) that visually traces urban growth and sparks debate on zoning and affordability.",
+    "ai_tags": [
+      "data-visualization",
+      "los-angeles",
+      "urban-planning",
+      "history",
+      "housing"
+    ]
+  },
+  {
+    "id": "hackernews:story:49596055",
+    "source_type": "hackernews",
+    "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+    "url": "https://mathathonchallenge.com/index.html",
+    "content": "\n--- Top Comments ---\n\n[brian-bfz]: Hey guys, I&#x27;m one of the organizers. AMA. - We are a team of undergrads at Caltech. We don&#x27;t represent Caltech, any Caltech departments, or any of our sponsors. - We don&#x27;t receive monetary compensation. All the funding raised goes toward paying our judges and participants. - Our goal is to promote responsible AI use. You can read more about our commitments here:  https:&#x2F;&#x2F;mathathonchallenge.com&#x2F;faq.html\n\n[corinthia]: recent caltech grad here! and know some of the organizers well caltech&#x27;s cs department is very, very weak, and has struggled to recruit top people in the last few years, and the most recent AI faculty hires have had issues. this is very slowly changing but a lot of the motivation for htis was to create a way for students to get ml &quot;recognition&quot; and learn about ai since it cant be done through the school right now. really glad to see hn picked this up!\n\n[Semkas]: Won&#x27;t deny that this is an interesting idea, but I feel like waiting on the output of an LLM for 40 hours feels like it is completely antithetical to what makes classic Hackathons appealing &#x2F; educative. More generally, I don&#x27;t think the shape of a hackathon (intensely working for a short timespan) maps at all onto the way LLM Math progress has seemingly been made so far; AFAIK it mostly involves picking out something for the Model, then having it run for a week with sporadic co...\n\n[chaoxu]: I&#x27;ve applied as a team, hope I get in. Recently I care about how to create harness for mathematics that uses up the complete reasoning ability of the model. I care about both capability and cost. Most generic harness we have now are not made for maximizing reasoning. I&#x27;ve tested agents like codex, and rarely the cost of reasoning tokens reaches more than 20%. Which is quite strange as math requires a lot of reasoning. So hackathons can be a good test bed.",
+    "author": "astroanax",
+    "published_at": "2026-09-07T09:26:53Z",
+    "fetched_at": "2026-09-08T00:50:36.115384Z",
+    "metadata": {
+      "score": 219,
+      "descendants": 78,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49596055",
+      "comment_count": 4,
+      "title_zh": "Caltech Mathathon：首个专注研究级数学的黑客松",
+      "detailed_summary_zh": "一群加州理工学院的本科生组织了首届以研究级数学为主题的黑客松Mathathon，强调负责任地使用AI（尤其是LLM）。该活动已在Hacker News上获得219分和78条评论，成为社区热议话题。 Mathathon首次把“研究级数学”“黑客松”和“LLM”组合在一起，可能为AI辅助数学发现提供新的实验场。若成功，它将影响数学研究者、AI从业者及教育圈，并推动LLM负责任用途的讨论。 组织者澄清他们不代表Caltech或任何赞助方，也不领取货币报酬，所有资金只用于支付评委和参与者。根据社区评论，活动可能需要参赛者等待LLM运行约40小时，并特别关注如何搭建能充分利用模型数学推理能力的测试框架，而不只是压缩成本。",
+      "background_zh": "黑客松（hackathon）是限时高强度协作活动，通常以编程为主题；研究级数学指需要原创性证明或探索前沿问题的高阶数学。近年来LLM被用来辅助数学推理，但这类工作常需数天乃至更长时间反复运行和验证，与经典黑客松的短期冲刺模式并不完全契合。另有评论指出Caltech的CS系近年师资较弱，促使一些学生自发办活动来补足ML/AI学习与认可渠道。",
+      "community_discussion_zh": "组织者在评论中进行AMA，交代了学生身份和非盈利运作，并强调目标是推动负责任的AI使用；有校友补充说Caltech计算机系较弱，这类活动为学生提供了必要的ML学习机会。也有评论者对形式提出质疑，认为等待LLM输出40小时削弱了黑客松的互动性和教育价值，并且与LLM数学研究的工作节奏不一致；还有人作为申请参赛者表示，黑客松能成为测试数学推理优化框架的良好试验场。",
+      "detailed_summary": "一群加州理工学院的本科生组织了首届以研究级数学为主题的黑客松Mathathon，强调负责任地使用AI（尤其是LLM）。该活动已在Hacker News上获得219分和78条评论，成为社区热议话题。 Mathathon首次把“研究级数学”“黑客松”和“LLM”组合在一起，可能为AI辅助数学发现提供新的实验场。若成功，它将影响数学研究者、AI从业者及教育圈，并推动LLM负责任用途的讨论。 组织者澄清他们不代表Caltech或任何赞助方，也不领取货币报酬，所有资金只用于支付评委和参与者。根据社区评论，活动可能需要参赛者等待LLM运行约40小时，并特别关注如何搭建能充分利用模型数学推理能力的测试框架，而不只是压缩成本。",
+      "background": "黑客松（hackathon）是限时高强度协作活动，通常以编程为主题；研究级数学指需要原创性证明或探索前沿问题的高阶数学。近年来LLM被用来辅助数学推理，但这类工作常需数天乃至更长时间反复运行和验证，与经典黑客松的短期冲刺模式并不完全契合。另有评论指出Caltech的CS系近年师资较弱，促使一些学生自发办活动来补足ML/AI学习与认可渠道。",
+      "community_discussion": "组织者在评论中进行AMA，交代了学生身份和非盈利运作，并强调目标是推动负责任的AI使用；有校友补充说Caltech计算机系较弱，这类活动为学生提供了必要的ML学习机会。也有评论者对形式提出质疑，认为等待LLM输出40小时削弱了黑客松的互动性和教育价值，并且与LLM数学研究的工作节奏不一致；还有人作为申请参赛者表示，黑客松能成为测试数学推理优化框架的良好试验场。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High community engagement (219 points, 78 comments) with substantive discussion from organizers and participants, including critical perspectives on hackathon format and Caltech's CS/AI context. Novel concept combining research math, hackathons, and LLMs, but not a major breakthrough.",
+    "ai_summary": "Caltech Mathathon is the first hackathon devoted to research-level mathematics, focusing on responsible AI use, as discussed on Hacker News.",
+    "ai_tags": [
+      "hackathon",
+      "mathematics",
+      "AI",
+      "LLM",
+      "Caltech"
+    ]
+  },
+  {
+    "id": "hackernews:story:49593563",
+    "source_type": "hackernews",
+    "title": "Keep Our Servers Running",
+    "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+    "content": "\n--- Top Comments ---\n\n[raybb]: I have been volunteering with the Internet Archive via Open Library for about half a decade now. Sending money is awesome and they&#x27;re also always looking for volunteers! There are so many projects going on for Open Library and staff has quite a few volunteers but right now especially I think it would be awesome to have a few more experienced folks joining to help (many volunteers are students). Here&#x27;s just a few things we could use more experienced folks to help on: - Solr performan...\n\n[zetanor]: I like the theory of the IA enough that I have a reoccurring donation, but I&#x27;ve thought a few times about e-mailing them to cancel (they have to halt your monthly donation charges manually). There&#x27;s plenty of things I can overlook, like having to compete with scrapers to get a single page to load, or a myriad of longstanding technical issues (my favorite being that the collection upload system silently and irrevocably leaks your e-mail address:  https:&#x2F;&#x2F;archive.org&#x2F;po...\n\n[clcaev]: The 1:2 match scheme is helpful for a foundation to (a) accept large gift and (b) meet 501c3 1&#x2F;3rd &quot;public support&quot; requirements. To keep favorable charity taxation status, a large donation can only be accepted if there are sufficient small donors who also contribute. It&#x27;s complex and indirect, but the matching is quite real as a $100 contribution from a small donor enables the charity to accept a corresponding amount from large donor pledges.\n\n[theletterf]: Be careful: paying with Google Pay is extremely easy and the default setting is monthly recurrence. If you&#x27;re not logged in, the only way to cancel (as far as I know) is by sending an email, which is incredibly precarious.\n\n[klamann]: Does the Internet Archive have any options to donate from the EU so I can get a donation receipt from a EU based non-profit? I know there is the &quot;Internet Archive Europe&quot;, but that seems to be a Wikimedia like thing, i.e. they don&#x27;t collect funds for the IA but for whatever it is they are doing here (which is not archiving websites for some reason?).",
+    "author": "sonicrocketman",
+    "published_at": "2026-09-07T03:29:51Z",
+    "fetched_at": "2026-09-08T00:50:36.115418Z",
+    "metadata": {
+      "score": 945,
+      "descendants": 244,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49593563",
+      "comment_count": 5,
+      "title_zh": "互联网档案馆9月捐赠匹配活动引发社区热议",
+      "detailed_summary_zh": "互联网档案馆于2026年9月启动捐赠活动，宣布在九月期间，用户进行的经常性捐赠将获得3倍匹配（即每1美元匹配2美元）。该活动旨在鼓励更多定期支持者，以维持服务器和数字保存项目的运转。 互联网档案馆是数字保存的关键资源，其运营依赖公共捐赠，此次匹配活动可能显著提升资金流入。社区评论不仅讨论捐赠，还涉及志愿服务、技术问题和捐赠机制，反映出用户对机构治理和透明度的深切关注。 评论指出，匹配机制可能与501(c)(3)非营利组织的“公共支持”测试有关，并非简单的一对一配捐。另有用户提醒，Google Pay付款默认设置月度订阅且取消需通过邮件，操作不便；同时有欧盟用户询问是否有欧盟本地非营利机构可提供捐赠收据。",
+      "background_zh": "互联网档案馆是一家非营利数字图书馆，提供网页存档、书籍借阅和媒体收藏等服务。Open Library是其旗下项目，允许用户借阅扫描版书籍，并依赖志愿者参与开发和维护。经常性捐赠是非营利组织维持运营的常见方式，而匹配捐赠通常用于激励特定时期内的捐款增长。",
+      "community_discussion_zh": "社区讨论整体积极，有志愿者分享在Open Library服务多年的经历，呼吁更多有经验的技术人员参与。部分用户对技术漏洞（如邮件泄露上传、爬虫抢带宽）和管理问题表示不满，但也有用户解释匹配机制背后的合规逻辑。另有多人关注支付流程的隐蔽性和取消困难，以及欧盟捐赠的税务处理问题。",
+      "detailed_summary": "互联网档案馆于2026年9月启动捐赠活动，宣布在九月期间，用户进行的经常性捐赠将获得3倍匹配（即每1美元匹配2美元）。该活动旨在鼓励更多定期支持者，以维持服务器和数字保存项目的运转。 互联网档案馆是数字保存的关键资源，其运营依赖公共捐赠，此次匹配活动可能显著提升资金流入。社区评论不仅讨论捐赠，还涉及志愿服务、技术问题和捐赠机制，反映出用户对机构治理和透明度的深切关注。 评论指出，匹配机制可能与501(c)(3)非营利组织的“公共支持”测试有关，并非简单的一对一配捐。另有用户提醒，Google Pay付款默认设置月度订阅且取消需通过邮件，操作不便；同时有欧盟用户询问是否有欧盟本地非营利机构可提供捐赠收据。",
+      "background": "互联网档案馆是一家非营利数字图书馆，提供网页存档、书籍借阅和媒体收藏等服务。Open Library是其旗下项目，允许用户借阅扫描版书籍，并依赖志愿者参与开发和维护。经常性捐赠是非营利组织维持运营的常见方式，而匹配捐赠通常用于激励特定时期内的捐款增长。",
+      "community_discussion": "社区讨论整体积极，有志愿者分享在Open Library服务多年的经历，呼吁更多有经验的技术人员参与。部分用户对技术漏洞（如邮件泄露上传、爬虫抢带宽）和管理问题表示不满，但也有用户解释匹配机制背后的合规逻辑。另有多人关注支付流程的隐蔽性和取消困难，以及欧盟捐赠的税务处理问题。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "High engagement (945 points, 244 comments) signals strong community interest. Discussion includes substantive volunteer opportunities, critiques of IA's technical practices, and analysis of donation matching mechanics, adding depth beyond the fundraising appeal. While not a technical breakthrough, the Internet Archive is a critical digital preservation resource, making this an important community development.",
+    "ai_summary": "The Internet Archive launches a donation drive with 3x matching for recurring donations, sparking community discussion about volunteering, technical issues, and the matching mechanism.",
+    "ai_tags": [
+      "internet-archive",
+      "digital-preservation",
+      "fundraising",
+      "open-library",
+      "non-profit"
+    ]
+  },
+  {
+    "id": "hackernews:story:49598291",
+    "source_type": "hackernews",
+    "title": "bzip3",
+    "url": "https://github.com/iczelia/bzip3",
+    "content": "\n--- Top Comments ---\n\n[altairprime]: Previously: “Hi, tool author here.” A useful explanation of Burrows-Wheelers transform as used by bzip3:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42902407  “bzip3 is not yet listed on the large text compression benchmark” It is now:  https:&#x2F;&#x2F;mattmahoney.net&#x2F;dc&#x2F;text.html  (2 years ago, 176 comments)  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42899713  (4 years ago, 104 comments)  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=31324439\n\n[8organicbits]: I was processing compressed .jsonl files recently (JSON lines format). I found that lzma gave a much better compression than gzip or bzip2, which helps for archival costs, but it&#x27;s challenging to work with as software support is lacking. I do duckdb processing which supports gzip transparently. There&#x27;s an extension for bzip2, but not for lzma or bzip3. I ended up using gzip because it&#x27;s best supported by the software I use and most likely to have support in software I adopt. Bu...\n\n[ot]: The benchmarks are disingenuous, to the point of looking cherry-picked. The block size for bzip3 is set to 512MB, but the window size for zstd is left to its default (8MB I believe for high levels). So in this corpus, which is made up of all versions of Perl source code concatenated, the window is too small to see all the identical files and just match them.\nAlso corpora made out of very long repetitions are pretty much the best case scenario for BWT-based compressors. If we match the window ...\n\n[JdeBP]: An interesting unintentional benchmark is to go to  https:&#x2F;&#x2F;github.com&#x2F;iczelia&#x2F;bzip3&#x2F;releases  and see to what degree bzip3 compresses its own release archives; and go to  https:&#x2F;&#x2F;github.com&#x2F;iczelia&#x2F;bzip3&#x2F;blob&#x2F;master&#x2F;.github&#x2F;workflo...  to see what options have been chosen for the other compressors here.\n\n[CodesInChaos]: I think this should include benchmarks zstd with larger windows and long range mode. I wouldn&#x27;t be surprised if the window they used is smaller than an individual version tar file, which would prevent useful compression.\n\n--- From rss ---\n<p><a href=\"https://lobste.rs/s/9coxwz/bzip3_better_stronger_spiritual\">Comments</a></p>",
+    "author": "tosh",
+    "published_at": "2026-09-07T13:35:13Z",
+    "fetched_at": "2026-09-08T00:50:36.115447Z",
+    "metadata": {
+      "score": 369,
+      "descendants": 105,
+      "type": "story",
+      "discussion_url": "https://news.ycombinator.com/item?id=49598291",
+      "comment_count": 5,
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "compsci",
+        "performance"
+      ],
+      "merged_sources": [
+        "hackernews",
+        "rss"
+      ],
+      "title_zh": "bzip3：压缩基准测试争议与实用性质疑",
+      "detailed_summary_zh": "Hacker News 上近期围绕 bzip3 的讨论聚焦于其基准测试方法的公平性，例如 bzip3 使用 512MB 块大小而 zstd 保持默认 8MB 窗口，被认为影响了对比结果。同时，用户还反馈该工具在真实工作流中因缺少软件集成而难以使用。 bzip3 声称可获得更高压缩比，但软件生态支持不足可能阻碍其实际采用。此次讨论提醒社区在评估压缩工具时需关注测试条件是否对等，并重视与现有数据处理工具的兼容性。 bzip3 结合了 RLE、LZP、BWT 和算术编码等阶段，并以支持大块（512MB）为特点。社区用户指出，基准测试所用语料为所有版本 Perl 源代码的拼接，这恰是 BWT 类算法的有利场景，而 zstd 的默认窗口无法利用文件间的长距离重复。",
+      "background_zh": "Burrows-Wheeler 变换（BWT）是一种字符串重排算法，能让相似字符聚集起来，从而提升后续游程编码等压缩步骤的效率，经典压缩工具 bzip2 就采用了这一思想。bzip3 是该思想的现代开源实现，使用更大块和更先进的编码顺序，以追求更高的压缩比，但会消耗更多内存和计算时间。在选择压缩工具时，用户通常需要在压缩率、速度与软件支持之间权衡。",
+      "community_discussion_zh": "用户 'ot' 直指基准测试“不诚实”，认为块大小与窗口参数不对等，且长重复语料偏向 BWT 算法。用户 '8organicbits' 则从实际经验出发，说明尽管 lzma/bzip3 压缩率更高，但因 DuckDB 等工具缺乏相应扩展而不得不继续使用 gzip。另有评论提到 bzip3 已进入大型文本压缩基准，并建议补充更大窗口下 zstd 的表现。",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Burrows-Wheeler_transform",
+          "title": "Burrows-Wheeler transform"
+        },
+        {
+          "url": "https://deepwiki.com/iczelia/bzip3/2-compression-algorithm",
+          "title": "Compression Algorithm | iczelia/bzip3 | DeepWiki"
+        }
+      ],
+      "detailed_summary": "Hacker News 上近期围绕 bzip3 的讨论聚焦于其基准测试方法的公平性，例如 bzip3 使用 512MB 块大小而 zstd 保持默认 8MB 窗口，被认为影响了对比结果。同时，用户还反馈该工具在真实工作流中因缺少软件集成而难以使用。 bzip3 声称可获得更高压缩比，但软件生态支持不足可能阻碍其实际采用。此次讨论提醒社区在评估压缩工具时需关注测试条件是否对等，并重视与现有数据处理工具的兼容性。 bzip3 结合了 RLE、LZP、BWT 和算术编码等阶段，并以支持大块（512MB）为特点。社区用户指出，基准测试所用语料为所有版本 Perl 源代码的拼接，这恰是 BWT 类算法的有利场景，而 zstd 的默认窗口无法利用文件间的长距离重复。",
+      "background": "Burrows-Wheeler 变换（BWT）是一种字符串重排算法，能让相似字符聚集起来，从而提升后续游程编码等压缩步骤的效率，经典压缩工具 bzip2 就采用了这一思想。bzip3 是该思想的现代开源实现，使用更大块和更先进的编码顺序，以追求更高的压缩比，但会消耗更多内存和计算时间。在选择压缩工具时，用户通常需要在压缩率、速度与软件支持之间权衡。",
+      "community_discussion": "用户 'ot' 直指基准测试“不诚实”，认为块大小与窗口参数不对等，且长重复语料偏向 BWT 算法。用户 '8organicbits' 则从实际经验出发，说明尽管 lzma/bzip3 压缩率更高，但因 DuckDB 等工具缺乏相应扩展而不得不继续使用 gzip。另有评论提到 bzip3 已进入大型文本压缩基准，并建议补充更大窗口下 zstd 的表现。"
+    },
+    "ai_score": 7.0,
+    "ai_reason": "bzip3 is a significant compression tool that has gained community attention, but this post's value is elevated by the critical discussion about benchmark fairness (block size vs. window size) and practical software support concerns, providing insightful technical debate.",
+    "ai_summary": "Hacker News discussion of bzip3, a modern Burrows-Wheeler-based compressor, including community critique of its benchmark methodology and real-world usability.",
+    "ai_tags": [
+      "compression",
+      "bzip3",
+      "burrows-wheeler",
+      "zstd",
+      "benchmarking"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:f2b3aefa890397c1",
+    "source_type": "rss",
+    "title": "Hardening Container Images",
+    "url": "https://www.grepular.com/Hardening_Container_Images",
+    "content": "<p><a href=\"https://lobste.rs/s/8hz82r/hardening_container_images\">Comments</a></p>",
+    "author": "grepular.com via pushcx",
+    "published_at": "2026-09-07T21:39:21Z",
+    "fetched_at": "2026-09-08T00:50:36.591070Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "devops"
+      ],
+      "title_zh": "一份实用的容器镜像安全加固指南",
+      "detailed_summary_zh": "这篇文章提供了一套实用的方法，用于加固容器镜像的安全性。它重点介绍了如何在构建和部署流程中采用硬化技术，以降低容器环境的风险。 容器安全是软件工程与DevOps中的关键议题。该指南有助于开发者提升镜像的安全性，减少潜在攻击面，从而保护生产环境免遭安全威胁。 文章基于实践案例，给出了可操作的建议。内容面向需要构建和运行容器的工程师，强调在镜像层面进行安全防范。",
+      "background_zh": "容器镜像是包含应用及其运行环境（代码、依赖、配置）的只读模板，容器实例由它启动。镜像加固是指通过移除不必要组件、限制特权、安全配置等手段减少攻击面，使镜像在生产环境中更安全。这是现代云原生安全的一个重要实践。",
+      "detailed_summary": "这篇文章提供了一套实用的方法，用于加固容器镜像的安全性。它重点介绍了如何在构建和部署流程中采用硬化技术，以降低容器环境的风险。 容器安全是软件工程与DevOps中的关键议题。该指南有助于开发者提升镜像的安全性，减少潜在攻击面，从而保护生产环境免遭安全威胁。 文章基于实践案例，给出了可操作的建议。内容面向需要构建和运行容器的工程师，强调在镜像层面进行安全防范。",
+      "background": "容器镜像是包含应用及其运行环境（代码、依赖、配置）的只读模板，容器实例由它启动。镜像加固是指通过移除不必要组件、限制特权、安全配置等手段减少攻击面，使镜像在生产环境中更安全。这是现代云原生安全的一个重要实践。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Container hardening is a relevant and important security topic for software engineering and DevOps. The article likely provides practical, valuable guidance, and the Lobste.rs discussion may offer additional insights.",
+    "ai_summary": "A practical guide to improving container image security through hardening techniques.",
+    "ai_tags": [
+      "containers",
+      "security",
+      "devops",
+      "docker",
+      "best-practices"
+    ]
+  },
+  {
+    "id": "rss:lobste.rs_rss:db2bf15b3cf91b43",
+    "source_type": "rss",
+    "title": "Signing TLS handshakes inside a TPM",
+    "url": "https://bschaatsbergen.com/posts/go-tpm-tls/",
+    "content": "<p><a href=\"https://lobste.rs/s/vospwq/signing_tls_handshakes_inside_tpm\">Comments</a></p>",
+    "author": "bschaatsbergen.com via fs111",
+    "published_at": "2026-09-07T14:54:37Z",
+    "fetched_at": "2026-09-08T00:50:36.591088Z",
+    "metadata": {
+      "feed_name": "Lobsters",
+      "category": "",
+      "tags": [
+        "security",
+        "go"
+      ],
+      "title_zh": "在TPM中签名TLS握手的Go实践",
+      "detailed_summary_zh": "一篇技术博客发布了如何在可信平台模块（TPM）内部对TLS握手进行签名的具体方法，并配以Go语言与go-tpm库的代码示例。文章探讨了将私钥保存在硬件TPM中而不是应用内存里的实现路径。 该方案能让TLS私钥在硬件级受到保护，即使服务器被攻破也难以提取密钥。对依赖Go生态的安全开发者和云原生基础设施来说，这类硬件信任根实践正在成为越来越重要的安全基线。 实现过程涉及TPM 2.0的受限签名密钥，以及RSA-PSS签名与TLS签名算法的兼容性问题——TPM遵循FIPS 186-4时，若盐长与摘要长度不一致可能导致协商失败。go-tpm库需要直接与TPM设备通信，且当前TPM 1.2支持处于维护模式，新功能优先面向TPM 2.0。",
+      "background_zh": "可信平台模块（TPM）是一种安装在主板上的专用安全芯片，用于在硬件内部安全地生成和存储加密密钥，防止非法访问。TLS握手过程中，一方通常需要对握手的哈希结果进行数字签名；传统做法是将私钥保存在内存或磁盘中，而使用TPM可以把私钥封装在硬件中，签名操作在芯片内完成。go-tpm是Google维护的Go库，可直接与Linux或Windows上的TPM设备通信，本文即基于该库展开。",
+      "sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/tpm-fundamentals",
+          "title": "Trusted Platform Module (TPM) fundamentals | Microsoft Learn"
+        },
+        {
+          "url": "https://pkg.go.dev/github.com/google/go-tpm",
+          "title": "go-tpm module - github.com/google/go-tpm - Go Packages"
+        },
+        {
+          "url": "https://dev.variscite.com/dart-mx91/mx91-yocto-scarthgap-6.6.y_2.2.2-v1.1/tpm-integration-guide/part4/",
+          "title": "Part 4 - Enhancing Security by Using a TPM - Variscite Developer Center"
+        }
+      ],
+      "detailed_summary": "一篇技术博客发布了如何在可信平台模块（TPM）内部对TLS握手进行签名的具体方法，并配以Go语言与go-tpm库的代码示例。文章探讨了将私钥保存在硬件TPM中而不是应用内存里的实现路径。 该方案能让TLS私钥在硬件级受到保护，即使服务器被攻破也难以提取密钥。对依赖Go生态的安全开发者和云原生基础设施来说，这类硬件信任根实践正在成为越来越重要的安全基线。 实现过程涉及TPM 2.0的受限签名密钥，以及RSA-PSS签名与TLS签名算法的兼容性问题——TPM遵循FIPS 186-4时，若盐长与摘要长度不一致可能导致协商失败。go-tpm库需要直接与TPM设备通信，且当前TPM 1.2支持处于维护模式，新功能优先面向TPM 2.0。",
+      "background": "可信平台模块（TPM）是一种安装在主板上的专用安全芯片，用于在硬件内部安全地生成和存储加密密钥，防止非法访问。TLS握手过程中，一方通常需要对握手的哈希结果进行数字签名；传统做法是将私钥保存在内存或磁盘中，而使用TPM可以把私钥封装在硬件中，签名操作在芯片内完成。go-tpm是Google维护的Go库，可直接与Linux或Windows上的TPM设备通信，本文即基于该库展开。",
+      "community_discussion": ""
+    },
+    "ai_score": 7.0,
+    "ai_reason": "Technical blog post on hardware-backed TLS key signing using TPMs, a relevant security topic. Likely a deep-dive with practical Go examples, though full content not assessed; Lobsters discussion suggests community interest.",
+    "ai_summary": "A technical post describing how to sign TLS handshakes using a TPM, with Go code examples.",
+    "ai_tags": [
+      "TPM",
+      "TLS",
+      "Go",
+      "Security",
+      "Cryptography"
+    ]
+  }
+]
